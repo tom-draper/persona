@@ -25,7 +25,7 @@ python3 main.py <location> --age --location --language
 ### Example
 
 ```bash
-main.py england
+python3 main.py england
 
 > England
 Age: 48
