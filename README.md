@@ -61,6 +61,6 @@ Location: Blackburn with Darwen, North West
 
 The data is carefully sourced from reputable surveyors for each country. Citations for each feature for each country can be found in the `README.md` in `/data`.
 
-## Note
+## Limitations
 
 Persona generated are approximations. If multiple features are generated for a single persona, they have been generated under the assumption that are independent of each other. This naive approach is not ideal, as for example, knowing a person's age could help you better predict their religion, however, the availability of accurate and large scale data necessary for the joint probabilities for all feature combinations makes this highly difficult to achieve. As a result, occasionally personas will be generated that have a combination of features that seems extremely unlikely. More realistic approximations are generated the fewer the number of included features.
