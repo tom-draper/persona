@@ -40,10 +40,10 @@ Location: Blackburn with Darwen, North West
 ### Locations
 
 - [ ] United States of America
-- [ ] United Kingdom
+- [x] United Kingdom
 - [x] England
 - [x] Wales
-- [ ] Scotland
+- [x] Scotland
 - [x] Northern Ireland
 - [ ] France
 - [ ] Germany
