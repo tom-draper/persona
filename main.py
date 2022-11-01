@@ -1,12 +1,13 @@
 import os
 import json
 import numpy as np
+from colorama import Fore
 
 
 def pprint(data):
     for sample in data:
         for k, v in sample.items():
-            print(f'{k.title()}: {v}')
+            print(Fore.YELLOW + k.title() + ': ' + Fore.WHITE + str(v))
     
 def get_file_path(target):
     target_file = f'{target.lower()}.json'
@@ -70,17 +71,16 @@ def gen_samples(data, N=1) -> list[dict]:
 
 def run():
     target = 'england'
-    print(f'Target: {target.title()}')
+    print(Fore.CYAN + target.title() + Fore.WHITE)
     target_path = get_file_path(target)
     
     if target_path:
-        print('Found', target_path)
         with open(target_path, 'r') as f:
             data = json.load(f)
             sample = gen_samples(data)
             pprint(sample)
     else:
-        print('File not found')
+        print('Location not found')
 
 
 if __name__ == '__main__':
