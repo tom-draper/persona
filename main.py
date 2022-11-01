@@ -71,7 +71,7 @@ def gen_samples(data, N=1) -> list[dict]:
 
 def run():
     target = 'england'
-    print(Fore.CYAN + target.title() + Fore.WHITE)
+    print(Fore.CYAN + '> ' + target.title() + Fore.WHITE)
     target_path = get_file_path(target)
     
     if target_path:
@@ -81,6 +81,8 @@ def run():
             pprint(sample)
     else:
         print('Location not found')
+
+
 
 
 if __name__ == '__main__':
