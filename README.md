@@ -4,17 +4,24 @@ A easy tool to probabilistically generate personas based on an input location us
 
 ## Usage
 
-First install the Python dependencies with:
+First install the Python dependencies listed inside the `requirements.txt` file.
 
 ```py
 python3 -m pip install -r requirements.txt
 ```
 
-Then run the program with:
+Then run the program.
 
 ```py
 python3 main.py <location>
 ```
+
+The persona can be limited to specific features using flags.
+
+```py
+python3 main.py <location> --age --location --language
+```
+
 
 ### Example
 
