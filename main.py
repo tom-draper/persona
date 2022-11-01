@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import numpy as np
 from colorama import Fore
@@ -25,6 +26,7 @@ def gen_age(age_data) -> int:
         low, high = map(int, age.split('-'))
         age = np.random.randint(low, high+1)  # Assume uniform likelihood within age range
     elif '+' in age:
+        age = int(age.replace('+', ''))
         age = np.random.randint(age, age+15)
 
     return int(age)
@@ -70,7 +72,9 @@ def gen_samples(data, N=1) -> list[dict]:
     return samples
 
 def run():
-    target = 'england'
+    if len(sys.argv) == 1:
+        return
+    target = sys.argv[1]
     print(Fore.CYAN + '> ' + target.title() + Fore.WHITE)
     target_path = get_file_path(target)
     

@@ -27,3 +27,5 @@ https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/b
 Religion taken from 2011 ONS Census data "Religion in England and Wales 2011".
 
 https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religioninenglandandwales2011/2012-12-11
+
+Relationship taken from 2011 ONS Census data
