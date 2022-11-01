@@ -1,6 +1,6 @@
 # Persona
 
-A tool to probabilistically generate representative personas, with features including age, sex, sexuality and ethnicity, based on an input location using real world demographic data. Originally inspired for building representative and inclusive characters for stories.
+A tool to probabilistically generate representative personas, with features including age, sex, sexuality and ethnicity, based on an input location using real world demographic data. This project was originally intended for building representative and inclusive characters for stories.
 
 ## Note
 

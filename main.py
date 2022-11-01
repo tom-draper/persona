@@ -23,7 +23,7 @@ def gen_age(age_data) -> int:
     age = np.random.choice(list(age_data.keys()), p=list(age_data.values()))
     if '-' in age:
         low, high = map(int, age.split('-'))
-        age = np.random.randint(low, high+1)
+        age = np.random.randint(low, high+1)  # Assume uniform likelihood within age range
     elif '+' in age:
         age = np.random.randint(age, age+15)
 
