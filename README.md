@@ -44,7 +44,7 @@ Location: Blackburn with Darwen, North West
 - [x] England
 - [x] Wales
 - [ ] Scotland
-- [ ] Northern Ireland
+- [x] Northern Ireland
 - [ ] France
 - [ ] Germany
 - [ ] Spain
