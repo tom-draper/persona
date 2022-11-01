@@ -57,16 +57,17 @@ def gen_feature(data) -> str:
     return selected
 
 
-def gen_samples(data, N=1) -> list[dict]:
+def gen_samples(data, enabled_features=None, N=1) -> list[dict]:
     samples = []
     for _ in range(N):
         sample = {}
         for feature, _data in data.items():
             feature = feature.lower()
-            if feature == 'age':
-                sample[feature] = gen_age(_data)
-            else:
-                sample[feature] = gen_feature(_data)
+            if enabled_features is not None and feature in enabled_features:
+                if feature == 'age':
+                    sample[feature] = gen_age(_data)
+                else:
+                    sample[feature] = gen_feature(_data)
         samples.append(sample)
         
     return samples
@@ -75,13 +76,24 @@ def run():
     if len(sys.argv) == 1:
         return
     target = sys.argv[1]
+    
+    all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
+                    'language', 'location', 'relationship'}
+    enabled_features = set()
+    for arg in sys.argv:
+        arg = arg.replace('-', '')
+        if arg in all_features:
+            enabled_features.add(arg)
+    if len(enabled_features) == 0:
+        enabled_features = None
+    
     print(Fore.CYAN + '> ' + target.title() + Fore.WHITE)
     target_path = get_file_path(target)
     
     if target_path:
         with open(target_path, 'r') as f:
             data = json.load(f)
-            sample = gen_samples(data)
+            sample = gen_samples(data, enabled_features)
             pprint(sample)
     else:
         print('Location not found')
