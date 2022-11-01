@@ -22,7 +22,6 @@ The persona can be limited to specific features using flags.
 python3 main.py <location> --age --location --language
 ```
 
-
 ### Example
 
 ```bash
@@ -57,6 +56,10 @@ Location: Blackburn with Darwen, North West
 - [ ] Russia
 - [ ] China
 - [ ] India
+
+## Data
+
+The data is carefully sourced from reputable surveyors for each country. Citations for each feature for each country can be found in the `README.md` in `/data`.
 
 ## Note
 
