@@ -1,14 +1,23 @@
 # Persona
 
-A tool to probabilistically generate representative personas, with features including age, sex, sexuality and ethnicity, based on an input location using real world demographic data. This project was originally intended for building representative and inclusive characters for stories.
+A easy tool to probabilistically generate personas based on an input location using real world demographic data, with features including age, sex, sexuality and ethnicity. This project was originally intended for building representative and inclusive characters for stories.
 
 ## Usage
 
+First install the Python dependencies with:
+
 ```py
-main.py <location>
+python3 -m pip install -r requirements.txt
+```
+
+Then run the program with:
+
+```py
+python3 main.py <location>
 ```
 
 ### Example
+
 ```bash
 main.py england
 
@@ -24,20 +33,19 @@ Location: Blackburn with Darwen, North West
 
 ### Locations
 
+- [ ] United States of America
+- [ ] United Kingdom
 - [x] England
 - [x] Wales
 - [ ] Scotland
 - [ ] Northern Ireland
-- [ ] Ireland
 - [ ] France
 - [ ] Germany
 - [ ] Spain
 - [ ] Italy
-- [ ] Portugal
-- [ ] USA
+- [ ] Ireland
 - [ ] Canada
 - [ ] Brazil
-- [ ] Columbia
 - [ ] Mexico
 - [ ] Russia
 - [ ] China
