@@ -22,6 +22,12 @@ The persona can be limited to specific features using flags.
 python3 main.py <location> --age --location --language
 ```
 
+The number of personas generated can be increased using the `-n` flag.
+
+```py
+python3 main.py <location> -n <count>
+```
+
 ### Example
 
 ```bash

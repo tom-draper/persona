@@ -114,6 +114,14 @@ def has_subcountries(target: str) -> bool:
     return target == 'united_kingdom' or target == 'united_states'
 
 
+def get_count() -> int:
+    count = 1
+    for i, arg in enumerate(sys.argv):
+        if arg == '-n' or arg == '-N' and i < len(sys.argv) - 1:
+            count = int(sys.argv[i+1])
+            
+    return count
+
 def get_enabled_features() -> set[str]:
     all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
                     'language', 'location', 'relationship'}
@@ -172,10 +180,11 @@ def run():
     # Collect arguments
     target = get_target_country()
     enabled_features = get_enabled_features()
+    N = get_count()
 
     # Generate samples
     print(Fore.CYAN + '> ' + target.title() + Fore.WHITE)
-    samples = gen_samples(target, enabled_features)
+    samples = gen_samples(target, enabled_features, N)
     pprint(samples)
 
 
