@@ -22,7 +22,7 @@ def get_file_path(target: str) -> str:
         files = _dir[2]
         if len(files) > 0 and target_file == files[0]:
             target_path = f'{_dir[0]}\\{target_file}'
-            
+
     return target_path
 
 
@@ -122,10 +122,10 @@ def get_enabled_features() -> set[str]:
         arg = arg.replace('-', '')
         if arg in all_features:
             enabled_features.add(arg)
-            
+
     if len(enabled_features) == 0:
         enabled_features = all_features
-        
+
     return enabled_features
 
 
@@ -145,7 +145,7 @@ def gen_samples(target: str, enabled_features: set[str], N: int = 1):
     for _ in range(N):
         if select_subcountry:
             target = get_subcountry(original_target)
-            
+
         if target_path := get_file_path(target):
             if target_path in cache:  # If already read, take from cache
                 data = cache[target_path]
@@ -161,14 +161,14 @@ def gen_samples(target: str, enabled_features: set[str], N: int = 1):
             samples.append(sample)
         else:
             print('Location not found')
-    
+
     return samples
 
 
 def run():
     if len(sys.argv) < 2:
         return
-    
+
     # Collect arguments
     target = get_target_country()
     enabled_features = get_enabled_features()
