@@ -6,7 +6,7 @@ import numpy as np
 from colorama import Fore
 
 
-def pprint(data):
+def pprint(data: dict[str, float]):
     for i, sample in enumerate(data):
         if len(data) > 1:
             print(Fore.CYAN + f'Persona {i+1}')
@@ -15,7 +15,7 @@ def pprint(data):
         print()
 
 
-def get_file_path(target):
+def get_file_path(target: str) -> str:
     target_file = f'{target.lower().replace(" ", "_")}.json'
     target_path = None
     for _dir in os.walk('data'):
@@ -77,19 +77,17 @@ def gen_feature(data: list[tuple[str, float]]) -> str | None:
     return selected
 
 
-def gen_samples(data, enabled_features, N=1) -> list[dict]:
-    samples = []
-    for _ in range(N):
-        sample = {}
-        for feature, _data in data.items():
-            feature = feature.lower()
-            if feature in enabled_features:
-                if feature == 'age':
-                    sample[feature] = gen_age(_data)
-                elif feature != 'relationship' or sample['age'] >= 16:
-                    sample[feature] = gen_feature(_data)
-        samples.append(sample)
-    return samples
+def gen_sample(data: dict[str, float], enabled_features: set[str]) -> dict[str, str]:
+    sample = {}
+    for feature, _data in data.items():
+        feature = feature.lower()
+        if feature in enabled_features:
+            if feature == 'age':
+                sample[feature] = gen_age(_data)
+            elif feature != 'relationship' or sample['age'] >= 16:
+                sample[feature] = gen_feature(_data)
+
+    return sample
 
 
 alias = {
@@ -99,7 +97,7 @@ alias = {
 }
 
 
-def get_subcountry(target):
+def get_subcountry(target: str) -> str:
     target_path = get_file_path(target)
     if target_path:
         with open(target_path, 'r') as f:
@@ -111,7 +109,7 @@ def get_subcountry(target):
     raise ValueError('Location not found.')
 
 
-def has_subcountries(target):
+def has_subcountries(target: str) -> bool:
     target = target.replace(' ', '_')
     return target == 'united_kingdom' or target == 'united_states'
 
@@ -124,44 +122,60 @@ def get_enabled_features() -> set[str]:
         arg = arg.replace('-', '')
         if arg in all_features:
             enabled_features.add(arg)
+            
     if len(enabled_features) == 0:
         enabled_features = all_features
+        
     return enabled_features
 
 
-def get_target_country():
+def get_target_country() -> str:
     target = sys.argv[1].replace('-', ' ').replace('_', ' ')
     if target in alias:
         target = alias[target]
     return target
 
 
-def run():
-    if len(sys.argv) == 1:
-        return
-    target = get_target_country()
+def gen_samples(target: str, enabled_features: set[str], N: int = 1):
+    original_target = target
+    select_subcountry = has_subcountries(target)
 
+    samples = []
+    cache = {}
+    for _ in range(N):
+        if select_subcountry:
+            target = get_subcountry(original_target)
+            
+        if target_path := get_file_path(target):
+            if target_path in cache:  # If already read, take from cache
+                data = cache[target_path]
+            else:
+                with open(target_path, 'r') as f:
+                    data = json.load(f)
+                    cache[target_path] = data  # Cache data to avoid re-reading
+
+            sample = gen_sample(data, enabled_features)
+            if select_subcountry:  # Append original target location
+                sample['location'] += f', {target.title()}'
+            samples.append(sample)
+        else:
+            print('Location not found')
+    
+    return samples
+
+
+def run():
+    if len(sys.argv) < 2:
+        return
+    
+    # Collect arguments
+    target = get_target_country()
     enabled_features = get_enabled_features()
 
+    # Generate samples
     print(Fore.CYAN + '> ' + target.title() + Fore.WHITE)
-
-    subcountries = False
-    if has_subcountries(target):
-        target = get_subcountry(target)
-        subcountries = True
-
-    target_path = get_file_path(target)
-
-    if target_path:
-        with open(target_path, 'r') as f:
-            data = json.load(f)
-            samples = gen_samples(data, enabled_features, 500)
-            if subcountries:
-                for sample in samples:
-                    sample['location'] += f', {target.title()}'
-            pprint(samples)
-    else:
-        print('Location not found')
+    samples = gen_samples(target, enabled_features)
+    pprint(samples)
 
 
 if __name__ == '__main__':
