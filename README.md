@@ -1,6 +1,6 @@
 # Persona
 
-A easy tool to probabilistically generate personas based on an input location using real world demographic data, with features including age, sex, sexuality and ethnicity. This project was originally intended for building representative and inclusive characters for stories.
+A tool for probabilistically generating character profiles based on a given location using real world demographic data, with features including age, sex, sexuality, ethnicity and religion. This project was originally intended for building representative and inclusive characters for stories.
 
 ## Usage
 
@@ -25,7 +25,7 @@ python3 main.py <location> --age --location --language
 ### Example
 
 ```bash
-main.py england
+python3 main.py england
 
 > England
 Age: 48
@@ -40,10 +40,10 @@ Location: Blackburn with Darwen, North West
 ### Locations
 
 - [ ] United States of America
-- [ ] United Kingdom
+- [x] United Kingdom
 - [x] England
 - [x] Wales
-- [ ] Scotland
+- [x] Scotland
 - [x] Northern Ireland
 - [ ] France
 - [ ] Germany
@@ -63,4 +63,4 @@ The data is carefully sourced from reputable organisations for each country. Cit
 
 ## Limitations
 
-Persona generated are approximations. If multiple features are generated for a single persona, they have been generated under the assumption that are independent of each other. This naive approach is not ideal, as for example, knowing a person's age could help you better predict their religion, however, the availability of accurate and large scale data necessary for the joint probabilities for all feature combinations makes this highly difficult to achieve. As a result, occasionally personas will be generated that have a combination of features that seems extremely unlikely. More realistic approximations are generated the fewer the number of included features.
+The personas generated are approximations. If multiple features are generated for a single persona, then they have been generated under the assumption that are entirely independent of each other. This naive approach is not ideal, as, for example, knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations makes this highly difficult to achieve. As a result, occasionally personas will be generated that have a combination of features that may seem extremely unlikely.
