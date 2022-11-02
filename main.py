@@ -155,7 +155,8 @@ def gen_samples(target: str, enabled_features: set[str], N: int = 1):
                     cache[target_path] = data  # Cache data to avoid re-reading
 
             sample = gen_sample(data, enabled_features)
-            if select_subcountry:  # Append original target location
+            if select_subcountry:
+                # Append original target location
                 sample['location'] += f', {target.title()}'
             samples.append(sample)
         else:
