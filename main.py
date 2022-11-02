@@ -1,35 +1,35 @@
-from cgitb import enable
+import json
 import os
 import sys
-import json
+
 import numpy as np
 from colorama import Fore
 
 
 def pprint(data):
-    for sample in data:
+    for i, sample in enumerate(data):
+        if len(data) > 1:
+            print(Fore.CYAN + f'Persona {i+1}')
         for k, v in sample.items():
             print(Fore.YELLOW + k.title() + ': ' + Fore.WHITE + str(v))
+        print()
 
 
 def get_file_path(target):
-    target_file = f'{target.lower()}.json'
+    target_file = f'{target.lower().replace(" ", "_")}.json'
     target_path = None
     for _dir in os.walk('data'):
         files = _dir[2]
         if len(files) > 0 and target_file == files[0]:
             target_path = f'{_dir[0]}\\{target_file}'
-
+            
     return target_path
 
 
-def gen_age(age_data) -> int:
+def gen_age(age_data: dict[str, float]) -> int:
     ages = list(age_data.keys())
-    probabilities = np.array(list(age_data.values()))
-    if probabilities.sum() == 0.0:
-        return None
-    probabilities /= probabilities.sum()
-    age = np.random.choice(ages, p=probabilities)
+    p = probabilities_from_dict(age_data)
+    age = np.random.choice(ages, p=p)
     if '-' in age:
         low, high = map(int, age.split('-'))
         # Assume uniform likelihood within age range
@@ -53,16 +53,27 @@ def collapsed_dict(d: dict, path: list[str],
     return collapsed
 
 
-def gen_feature(data) -> str:
+def probabilities_from_dict(d: dict[str, float]) -> np.array:
+    probabilities = np.array(list(d.values()), dtype=np.float64)
+    if probabilities.sum() == 0.0:
+        raise ValueError('Probabilities sum to 0')
+    probabilities /= probabilities.sum()
+    return probabilities
+
+
+def probabilities_from_list(l: list[tuple[str, float]]) -> np.array:
+    probabilities = np.array([x[1] for x in l], dtype=np.float64)
+    if probabilities.sum() == 0.0:
+        raise ValueError('Probabilities sum to 0')
+    probabilities /= probabilities.sum()
+    return probabilities
+
+
+def gen_feature(data: list[tuple[str, float]]) -> str | None:
     collapsed = collapsed_dict(data, [], [])
     options = [', '.join(reversed(x[0])) for x in collapsed]
-    probabilities = np.array([x[1] for x in collapsed], dtype=np.float64)
-
-    if probabilities.sum() == 0.0:
-        return None
-
-    probabilities /= probabilities.sum()
-    selected = np.random.choice(options, p=probabilities)
+    p = probabilities_from_list(collapsed)
+    selected = np.random.choice(options, p=p)
     return selected
 
 
@@ -75,16 +86,18 @@ def gen_samples(data, enabled_features, N=1) -> list[dict]:
             if feature in enabled_features:
                 if feature == 'age':
                     sample[feature] = gen_age(_data)
-                else:
+                elif feature != 'relationship' or sample['age'] >= 16:
                     sample[feature] = gen_feature(_data)
         samples.append(sample)
     return samples
 
+
 alias = {
-    'uk': 'united_kingdom',
-    'usa': 'united_states',
-    'uae': 'united_arab_emirates'
+    'uk': 'united kingdom',
+    'usa': 'united states',
+    'uae': 'united arab emirates'
 }
+
 
 def get_subcountry(target):
     target_path = get_file_path(target)
@@ -92,13 +105,16 @@ def get_subcountry(target):
         with open(target_path, 'r') as f:
             data = json.load(f)
             countries = list(data.keys())
-            probabilities = list(data.values())
-            selected = np.random.choice(countries, p=probabilities)
-            return selected.lower().replace(' ', '_')
-    return None
+            p = probabilities_from_dict(data)
+            selected = np.random.choice(countries, p=p)
+            return selected.lower()
+    raise ValueError('Location not found.')
+
 
 def has_subcountries(target):
+    target = target.replace(' ', '_')
     return target == 'united_kingdom' or target == 'united_states'
+
 
 def get_enabled_features() -> set[str]:
     all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
@@ -112,29 +128,34 @@ def get_enabled_features() -> set[str]:
         enabled_features = all_features
     return enabled_features
 
+
+def get_target_country():
+    target = sys.argv[1].replace('-', ' ').replace('_', ' ')
+    if target in alias:
+        target = alias[target]
+    return target
+
+
 def run():
     if len(sys.argv) == 1:
         return
-    target = sys.argv[1].replace('-', '_')
-    
-    if target in alias:
-        target = alias[target]
-        
+    target = get_target_country()
+
     enabled_features = get_enabled_features()
-    
+
     print(Fore.CYAN + '> ' + target.title() + Fore.WHITE)
-    
+
     subcountries = False
     if has_subcountries(target):
         target = get_subcountry(target)
         subcountries = True
-        
+
     target_path = get_file_path(target)
-    
+
     if target_path:
         with open(target_path, 'r') as f:
             data = json.load(f)
-            samples = gen_samples(data, enabled_features)
+            samples = gen_samples(data, enabled_features, 500)
             if subcountries:
                 for sample in samples:
                     sample['location'] += f', {target.title()}'
