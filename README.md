@@ -2,6 +2,11 @@
 
 A tool for probabilistically generating character profiles based on a given location using real world demographic data, with features including age, sex, sexuality, ethnicity and religion. This project was originally intended for building representative and inclusive characters for stories.
 
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/41476809/200122324-9926bdab-5b86-4282-b4d4-72a996ad38ce.png">
+</p>
+
 ## Usage
 
 First install the Python dependencies listed inside the `requirements.txt` file.
