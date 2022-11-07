@@ -4,7 +4,7 @@ A tool for probabilistically generating character profiles based on a given loca
 
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/41476809/200123017-5f26766a-330f-415c-89d0-71f3bafc50af.png">
+	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
 </p>
 
 ## Usage
