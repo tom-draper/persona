@@ -1,16 +1,15 @@
 from fastapi import FastAPI
-from main import gen_samples
+from src.main import gen_samples
 
 app = FastAPI()
 
 
 @app.get("/")
-def root():
+def test():
     return {"Hello": "World"}
 
 @app.get("/{location}")
 def gen_persona(location: str):
-    print(location)
     return gen_samples(location)
 
 @app.get("/{location}/{N}")
