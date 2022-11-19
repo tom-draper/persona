@@ -11,31 +11,31 @@ A tool for probabilistically generating character profiles based on a given loca
 First install the Python dependencies listed inside the `requirements.txt` file.
 
 ```py
-python3 -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 Then run the program.
 
 ```py
-python3 main.py <location>
+python src/main.py <location>
 ```
 
 The persona can be limited to specific features using flags.
 
 ```py
-python3 main.py <location> --age --location --language
+python src/main.py <location> --age --location --language
 ```
 
 The number of personas generated can be increased using the `-n` flag.
 
 ```py
-python3 main.py <location> -n <count>
+python src/main.py <location> -n <count>
 ```
 
 ### Example
 
 ```bash
-python3 main.py england
+python src/main.py england
 
 > England
 Age: 48
