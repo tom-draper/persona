@@ -5,6 +5,9 @@ import sys
 import numpy as np
 from colorama import Fore
 
+all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
+                'language', 'location', 'relationship'}
+
 
 def pprint(data: dict[str, float]):
     for i, sample in enumerate(data):
@@ -77,11 +80,11 @@ def gen_feature(data: list[tuple[str, float]]) -> str | None:
     return selected
 
 
-def gen_sample(data: dict[str, float], enabled_features: set[str]) -> dict[str, str]:
+def gen_sample(data: dict[str, float], enabled_features: set[str]|None) -> dict[str, str]:
     sample = {}
     for feature, _data in data.items():
         feature = feature.lower()
-        if feature in enabled_features:
+        if enabled_features is None or feature in enabled_features:
             if feature == 'age':
                 sample[feature] = gen_age(_data)
             elif feature != 'relationship' or sample['age'] >= 16:
@@ -119,21 +122,16 @@ def get_count() -> int:
     for i, arg in enumerate(sys.argv):
         if arg == '-n' or arg == '-N' and i < len(sys.argv) - 1:
             count = int(sys.argv[i+1])
-            
+
     return count
 
-def get_enabled_features() -> set[str]:
-    all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
-                    'language', 'location', 'relationship'}
-    enabled_features = set()
+
+def get_enabled_features() -> set[str]|None:
+    enabled_features = None
     for arg in sys.argv:
         arg = arg.replace('-', '')
         if arg in all_features:
             enabled_features.add(arg)
-
-    if len(enabled_features) == 0:
-        enabled_features = all_features
-
     return enabled_features
 
 
@@ -144,7 +142,22 @@ def get_target_country() -> str:
     return target
 
 
-def gen_samples(target: str, enabled_features: set[str], N: int = 1):
+def gen_samples(
+        target: str, 
+        enabled_features: set[str]|None = None,
+        N: int = 1
+    ):
+    """
+    Returns randomly generated persona(s) for the given target location, 
+    constrained by any optional enabled features.
+    
+    Arguments
+        target: str - Target location.
+        enabled_features: set[str]|None - Set of features to include in the 
+            persona. If None, all features are included. Defaults to None.
+        N: int - The number of personas to generate from the given target 
+            location. Defaults to 1.
+    """
     original_target = target
     select_subcountry = has_subcountries(target)
 
