@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.main import gen_samples
+from src.lib.generate import gen_samples
 
 app = FastAPI()
 
