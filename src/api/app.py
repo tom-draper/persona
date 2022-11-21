@@ -12,12 +12,12 @@ def format_location(location: str) -> str:
 
 @app.get("/")
 async def test():
-    return {"Hello": "World"}
+    return "Live"
 
 
 @app.get("/countries/")
+@app.get("/locations/")
 async def countries():
-    print('Here')
     return get_countries()
 
 
