@@ -1,9 +1,9 @@
 import sys
+from typing import Union
 
 from colorama import Fore
 
 from lib.generate import gen_samples
-
 
 all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
                 'language', 'location', 'relationship'}
@@ -35,7 +35,7 @@ def get_count() -> int:
     return count
 
 
-def get_enabled_features() -> set[str] | None:
+def get_enabled_features() -> Union[set[str], None]:
     enabled_features = None
     for arg in sys.argv:
         arg = arg.replace('-', '')

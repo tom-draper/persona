@@ -1,6 +1,8 @@
-import numpy as np
 import json
 import os
+from typing import Union
+
+import numpy as np
 
 
 def has_subcountries(target: str) -> bool:
@@ -62,8 +64,8 @@ def gen_age(age_data: dict[str, float]) -> int:
     return int(age)
 
 
-def collapsed_dict(d: dict, path: list[str],
-                   collapsed: list[tuple[list[str], float]]) -> list[tuple[list[str], float]]:
+def collapsed_dict(d: dict, path: list[str], collapsed: list[tuple[list[str], float]]
+                   ) -> list[tuple[list[str], float]]:
     for k, v in d.items():
         new_path = path + [k]
         if type(v) is not dict:
@@ -74,7 +76,7 @@ def collapsed_dict(d: dict, path: list[str],
     return collapsed
 
 
-def gen_feature(data: list[tuple[str, float]]) -> str | None:
+def gen_feature(data: list[tuple[str, float]]) -> Union[str, None]:
     collapsed = collapsed_dict(data, [], [])
     options = [', '.join(reversed(x[0])) for x in collapsed]
     p = probabilities_from_list(collapsed)
@@ -82,7 +84,7 @@ def gen_feature(data: list[tuple[str, float]]) -> str | None:
     return selected
 
 
-def gen_sample(data: dict[str, float], enabled_features: set[str] | None) -> dict[str, str]:
+def gen_sample(data: dict[str, float], enabled_features: Union[set[str], None]) -> dict[str, str]:
     sample = {}
     for feature, _data in data.items():
         feature = feature.lower()
@@ -97,7 +99,7 @@ def gen_sample(data: dict[str, float], enabled_features: set[str] | None) -> dic
 
 def gen_samples(
     target: str,
-    enabled_features: set[str] | None = None,
+    enabled_features: Union[set[str], None] = None,
     N: int = 1
 ):
     """
