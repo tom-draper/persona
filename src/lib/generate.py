@@ -5,18 +5,6 @@ from typing import Union
 import numpy as np
 
 
-# def is_composition(target: str) -> bool:
-#     composition = False
-#     target = target.lower().replace(' ', '_')
-#     for _dir in os.walk('data'):
-#         _, final_dir = os.path.split(_dir[0])
-#         if final_dir == target:
-#             composition = 'composite.json' in _dir[2]
-#             break
-
-#     return composition
-
-
 def probabilities_from_dict(d: dict[str, float]) -> np.array:
     probabilities = np.array(list(d.values()), dtype=np.float64)
     if probabilities.sum() == 0.0:
