@@ -54,8 +54,6 @@ https://persona-api.vercel.app/locations/
   "london",
   "northern_ireland",
   "scotland",
-  "edinbrough",
-  "glasgow",
   "wales"
 ]
 
