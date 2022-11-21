@@ -85,8 +85,21 @@ def build_composite_readme_content(path: str, filename: str, data: dict) -> str:
     _, location = os.path.split(path)
     
     title = location.replace('_', ' ').title()
-    gen_composite_graph(path, data)  
-    content = f'# {title}\n\n![{title}](img/{location}.png)'
+    gen_composite_graph(path, data)
+    content = f'# {title}'
+    
+    content += '\n\nComposite: Made up of '
+    
+    locations = list(data.keys())
+    
+    if len(locations) > 2:
+        content += ', '.join(locations[:-1]) + ", and " + str(locations[-1])
+    elif len(locations) == 2:
+        content += ' and '.join(locations)
+    elif len(locations) == 1:
+        content += locations[0]
+    
+    content += '.\n\n\![{title}](img/{location}.png)'
     return content
 
 
