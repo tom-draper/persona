@@ -22,18 +22,21 @@ def gen_graphs(path: str, data: dict) -> list[dict]:
         if type(value) is not dict:
             break
         
+        # Build bars data
         d = flatten_dict(value)
         labels = list(d.keys())
         x = list(range(len(labels)))
         y = list(d.values())
         
-        fig = plt.figure(figsize=(10, 6))
+        # Create plot
+        fig = plt.figure(figsize=(12, 8))
         plt.bar(x, y, align='center', alpha=0.5)
         plt.xticks(x, labels)
         plt.ylabel('Probability')
         plt.title(feature.title())
         plt.tight_layout()
 
+        # Create dir for images if not exist
         img_dir = os.path.join(path, 'img')
         if not os.path.exists(img_dir):
             os.makedirs(img_dir)

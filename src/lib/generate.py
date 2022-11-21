@@ -5,7 +5,7 @@ from typing import Union
 import numpy as np
 
 
-def has_subcountries(target: str) -> bool:
+def is_composition(target: str) -> bool:
     target = target.replace(' ', '_')
     return target == 'united_kingdom' or target == 'united_states'
 
@@ -26,7 +26,7 @@ def probabilities_from_list(l: list[tuple[str, float]]) -> np.array:
     return probabilities
 
 
-def get_subcountry(target: str) -> str:
+def select_child(target: str) -> str:
     target_path = get_file_path(target)
     if target_path:
         with open(target_path, 'r') as f:
@@ -116,13 +116,13 @@ def gen_samples(
             location. Defaults to 1.
     """
     original_target = target
-    select_subcountry = has_subcountries(target)
+    composite = is_composition(target)
 
     samples = []
     cache = {}
     for _ in range(N):
-        if select_subcountry:
-            target = get_subcountry(original_target)
+        if composite:
+            target = select_child(original_target)
 
         if target_path := get_file_path(target):
             if target_path in cache:  # If already read, take from cache
@@ -133,7 +133,7 @@ def gen_samples(
                     cache[target_path] = data  # Cache data to avoid re-reading
 
             sample = gen_sample(data, enabled_features)
-            if select_subcountry:
+            if composite:
                 # Append original target location
                 sample['location'] += f', {target.title()}'
             samples.append(sample)
