@@ -142,6 +142,7 @@ The demographic data is carefully sourced from reputable organisations for each 
 - [ ] `spain`
 - [ ] `italy`
 - [ ] `ireland`
+- [ ] `australia`
 - [ ] `canada`
 - [ ] `brazil`
 - [ ] `mexico`
