@@ -10,7 +10,7 @@ A tool for probabilistically generating character profiles based on a given loca
 
 ### Generate Persona
 
-```bash
+```
 https://persona-api.vercel.app/<location>/
 ```
 
@@ -34,7 +34,7 @@ https://persona-api.vercel.app/<location>/
 
 Multiple personas from the same location can be generated at once by providing a `count` query parameter.
 
-```bash
+```
 https://persona-api.vercel.app/<location>/?count=5
 ```
 
@@ -63,7 +63,7 @@ https://persona-api.vercel.app/locations/
 
 For a given location, all possible features available to generate can be listed with the `/<location>/features/` endpoint.
 
-```bash
+```
 https://persona-api.vercel.app/<location>/features/
 ```
 
