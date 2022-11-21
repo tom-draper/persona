@@ -43,8 +43,10 @@ def get_file_path(target: str) -> str:
     target_path = None
     for _dir in os.walk('data'):
         files = _dir[2]
-        if len(files) > 0 and target_file == files[0]:
-            target_path = os.path.join(_dir[0], target_file)
+        for f in files:
+            if target_file == f:
+                target_path = os.path.join(_dir[0], target_file)
+                break
 
     return target_path
 
