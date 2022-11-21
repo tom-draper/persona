@@ -131,7 +131,7 @@ The demographic data is carefully sourced from reputable organisations for each 
 
 ### Locations
 
-- [ ] `united_stats_of_america` / `usa`
+- [ ] `united_states_of_america` / `usa`
 - [x] `united_kingdom` / `uk`
 - [x] `england`
 - [x] `wales`
