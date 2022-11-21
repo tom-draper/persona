@@ -1,12 +1,22 @@
 # Persona
 
-A tool for probabilistically generating character profiles based on a given location using real-world demographic data, with features including age, sex, sexuality, ethnicity and religion. This project was originally intended for building representative and inclusive characters for stories.
+A tool for probabilistically generating character profiles based on a given location using real-world demographic data, with features including age, sex, sexuality, ethnicity and religion. This project was born out of a lack of tools for building representative and inclusive characters for stories.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
 </p>
 
-## Usage
+## REST API
+
+### Endpoints
+
+```bash
+https://persona-api.vercel.app/
+```
+
+## Command-line Tool
+
+#### Installation
 
 First install the Python dependencies listed inside the `requirements.txt` file.
 
@@ -14,7 +24,9 @@ First install the Python dependencies listed inside the `requirements.txt` file.
 python -m pip install -r requirements.txt
 ```
 
-Then run the program.
+#### Run program
+
+Then run `main.py` from the root directory.
 
 ```py
 python src/main.py <location>
