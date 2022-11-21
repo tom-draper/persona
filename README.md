@@ -133,24 +133,25 @@ The demographic data is carefully sourced from reputable organisations for each 
 
 ### Locations
 
-- [ ] united_stats_of_america / usa
-- [x] united_kingdom / uk
-- [x] england
-- [x] wales
-- [x] scotland
-- [x] northern_ireland
-- [ ] france
-- [ ] germany
-- [ ] spain
-- [ ] italy
-- [ ] ireland
-- [ ] canada
-- [ ] brazil
-- [ ] mexico
-- [ ] russia
-- [ ] china
-- [ ] india
+- [ ] `united_stats_of_america` / `usa`
+- [x] `united_kingdom` / `uk`
+- [x] `england`
+- [x] `wales`
+- [x] `scotland`
+- [x] `northern_ireland`
+- [ ] `france`
+- [ ] `germany`
+- [ ] `spain`
+- [ ] `italy`
+- [ ] `ireland`
+- [ ] `canada`
+- [ ] `brazil`
+- [ ] `mexico`
+- [ ] `russia`
+- [ ] `china`
+- [ ] `india`
+- [ ] `nigeria`
 
 ## Limitations
 
-The personas generated are approximations. If multiple features are generated for a single persona, then they have been generated under the assumption that are entirely independent of each other. This naive approach is not ideal, as, for example, knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations makes this highly difficult to achieve. As a result, occasionally personas will be generated that have a combination of features that may seem extremely unlikely.
+Any personas generated are approximations. Features generated for a single persona are generated under the assumption that each feature is independent from one another. This naive approach is not ideal, as, for example, knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations is exponentially harder to achieve. As a result, occasionally personas will be generated that have a combination of features that may seem extremely unlikely.
