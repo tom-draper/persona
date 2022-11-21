@@ -131,6 +131,8 @@ The demographic data is carefully sourced from reputable organisations for each 
 
 ### Locations
 
+Currently Persona works for 6 countries.
+
 - [ ] `united_states_of_america` / `usa`
 - [x] `united_kingdom` / `uk`
 - [x] `england`
@@ -142,7 +144,7 @@ The demographic data is carefully sourced from reputable organisations for each 
 - [ ] `spain`
 - [ ] `italy`
 - [ ] `ireland`
-- [ ] `australia`
+- [X] `australia`
 - [ ] `canada`
 - [ ] `brazil`
 - [ ] `mexico`
