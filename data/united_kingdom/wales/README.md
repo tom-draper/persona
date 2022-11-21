@@ -1,5 +1,37 @@
 # Wales
 
+## Age
+
+![Age](img/age.png)
+
+## Sex
+
+![Sex](img/sex.png)
+
+## Sexuality
+
+![Sexuality](img/sexuality.png)
+
+## Ethnicity
+
+![Ethnicity](img/ethnicity.png)
+
+## Religion
+
+![Religion](img/religion.png)
+
+## Language
+
+![Language](img/language.png)
+
+## Relationship
+
+![Relationship](img/relationship.png)
+
+## Location
+
+![Location](img/location.png)
+
 ## Sources
 
 Age, sex and location taken from 2021 ONS Census data "Population and household estimates, England and Wales: Census 2021".

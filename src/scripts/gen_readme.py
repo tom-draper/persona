@@ -4,45 +4,58 @@ import re
 import matplotlib.pyplot as plt
 
 
+
+def flatten_dict(d: dict, parent_key: str = '', sep: str =', ') -> dict:
+    items = []
+    for k, v in d.items():
+        new_key = k + sep + parent_key if parent_key else k
+        if type(v) is dict:
+            items.extend(flatten_dict(v, new_key, sep=sep).items())
+        else:
+            items.append((new_key, v))
+    return dict(items)
+    
+
 def gen_graphs(path: str, data: dict) -> list[dict]:
     graphs = []
     for feature, value in data.items():
         if type(value) is not dict:
             break
         
-        labels = list(value.keys())
+        d = flatten_dict(value)
+        labels = list(d.keys())
         x = list(range(len(labels)))
-        y = list(value.values())
+        y = list(d.values())
+        
+        fig = plt.figure(figsize=(10, 6))
         plt.bar(x, y, align='center', alpha=0.5)
         plt.xticks(x, labels)
         plt.ylabel('Probability')
         plt.title(feature.title())
+        plt.tight_layout()
 
-        img_dir = re.sub(r'^data', 'img', path)
+        img_dir = os.path.join(path, 'img')
         if not os.path.exists(img_dir):
             os.makedirs(img_dir)
             
         img_path = os.path.join(img_dir, feature)
-        print(img_path, img_dir)
+        print(img_path + '.png')
+        
         plt.savefig(img_path)
-        plt.show()
+        plt.close(fig)
 
-        graphs.append({
-            'title': feature.title(),
-            'path': img_path
-        })
+        graphs.append(feature)
     
     return graphs
 
 
 def build_readme_content(path: str, filename: str, data: dict, sources: str) -> str:
     title = filename.replace('.json', '').replace('_', ' ').title()
-    print(data)
     graphs = gen_graphs(path, data)
     content = f'# {title}'
     
-    for graph in graphs:
-        content += f'## {graph["title"]}\n\n![{graph["title"]}]({graph["path"]})'
+    for feature in graphs:
+        content += f'\n\n## {feature.title()}\n\n![{feature.title()}](img/{feature}.png)'
     
     content += '\n\n' + sources
     return content
