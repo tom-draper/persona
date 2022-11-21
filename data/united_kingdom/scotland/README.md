@@ -29,3 +29,7 @@
 ![Location](img/location.png)
 
 ## Sources
+
+https://en.wikipedia.org/wiki/Demography_of_Scotland
+
+https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/
