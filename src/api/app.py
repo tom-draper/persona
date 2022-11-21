@@ -15,10 +15,10 @@ async def test():
     return {"Hello": "World"}
 
 
-@app.get("/{location}/")
-async def gen_personas(location: str, count: int = 1):
-    location = format_location(location)
-    return gen_samples(location, N=count)
+@app.get("/countries/")
+async def countries():
+    print('Here')
+    return get_countries()
 
 
 @app.get("/{location}/features")
@@ -27,6 +27,7 @@ async def features(location: str):
     return get_features(location)
 
 
-@app.get("/countries/")
-async def countries():
-    return get_countries()
+@app.get("/{location}/")
+async def gen_personas(location: str, count: int = 1):
+    location = format_location(location)
+    return gen_samples(location, N=count)
