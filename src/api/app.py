@@ -5,11 +5,6 @@ from src.lib.util import get_countries, get_features
 app = FastAPI()
 
 
-def format_location(location: str) -> str:
-    location = location.replace('-', '_').lower()
-    return location
-
-
 @app.get("/")
 async def test():
     return "Live"
@@ -21,7 +16,12 @@ async def countries():
     return get_countries()
 
 
-@app.get("/{location}/features")
+def format_location(location: str) -> str:
+    location = location.replace('-', '_').lower()
+    return location
+
+
+@app.get("/{location}/features/")
 async def features(location: str):
     location = format_location(location)
     return get_features(location)
