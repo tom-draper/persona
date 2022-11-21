@@ -8,7 +8,7 @@ A tool for probabilistically generating character profiles based on a given loca
 
 ## REST API
 
-### Generate New Persona
+### Generate Persona
 
 ```bash
 https://persona-api.vercel.app/<location>/
