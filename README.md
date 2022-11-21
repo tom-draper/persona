@@ -127,7 +127,7 @@ Location: Blackburn with Darwen, North West
 
 ## Data
 
-The demographic data is carefully sourced from reputable organisations for each country. Citations for each feature for each country can be found in the `README.md` in `/data`.
+The demographic data is carefully sourced from reputable organisations for each country. Citations for each feature for each country can be found in the `README.md` for each country in `/data`.
 
 ### Locations
 
