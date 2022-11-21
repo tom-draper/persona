@@ -8,31 +8,96 @@ A tool for probabilistically generating character profiles based on a given loca
 
 ## REST API
 
-### Endpoints
+### Generate New Persona
 
 ```bash
-https://persona-api.vercel.app/
+https://persona-api.vercel.app/<location>/
 ```
+
+```bash
+> curl https://persona-api.vercel.app/england/
+[
+  {
+    "age": 21,
+    "sex": "Female",
+    "sexuality": "Heterosexual",
+    "ethnicity": "British, White",
+    "religion": "Christian",
+    "language": "English",
+    "location": "Oldham, North West"
+  }
+]
+
+```
+
+### List Locations
+
+All locations currently included can be listed with the `/locations/` endpoint.
+
+```bash
+https://persona-api.vercel.app/locations/
+```
+
+```bash
+> curl https://persona-api.vercel.app/locations/
+[
+  "united_kingdom",
+  "england",
+  "london",
+  "northern_ireland",
+  "scotland",
+  "edinbrough",
+  "glasgow",
+  "wales"
+]
+
+```
+
+### Location Features
+
+For a given location, all possible features available to generate can be listed with the `/<location>/features/` endpoint.
+
+```bash
+https://persona-api.vercel.app/<location>/features/
+```
+
+```bash
+> curl https://persona-api.vercel.app/england/features/
+[
+  "age",
+  "sex",
+  "sexuality",
+  "religion",
+  "ethnicity",
+  "language",
+  "location"
+]
+```
+
+### Example
+
+
+
 
 ## Command-line Tool
 
-#### Installation
+### Installation
 
-First install the Python dependencies listed inside the `requirements.txt` file.
+Install Python dependencies from the `requirements.txt` file.
 
 ```py
 python -m pip install -r requirements.txt
 ```
 
-#### Run program
+### Run
 
-Then run `main.py` from the root directory.
+Run `main.py` from the root directory.
 
 ```py
 python src/main.py <location>
 ```
 
-The persona can be limited to specific features using flags.
+The generated persona can be limited to only specific features using flags.
 
 ```py
 python src/main.py <location> --age --location --language
