@@ -25,7 +25,8 @@ def get_file_path(target: str) -> str:
     for _dir in os.walk('data'):
         files = _dir[2]
         if len(files) > 0 and target_file == files[0]:
-            target_path = f'{_dir[0]}\\{target_file}'
+            # target_path = f'{_dir[0]}\\{target_file}'
+            target_path = os.path.join(_dir[0], target_file)
 
     return target_path
 
