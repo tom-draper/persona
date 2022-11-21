@@ -1,11 +1,50 @@
 import os
 import json
 import re
+import matplotlib.pyplot as plt
 
 
-def build_readme_content(filename: str, data: dict, sources: str) -> str:
+def gen_graphs(path: str, data: dict) -> list[dict]:
+    graphs = []
+    for feature, value in data.items():
+        if type(value) is not dict:
+            break
+        
+        labels = list(value.keys())
+        x = list(range(len(labels)))
+        y = list(value.values())
+        plt.bar(x, y, align='center', alpha=0.5)
+        plt.xticks(x, labels)
+        plt.ylabel('Probability')
+        plt.title(feature.title())
+
+        img_dir = re.sub(r'^data', 'img', path)
+        if not os.path.exists(img_dir):
+            os.makedirs(img_dir)
+            
+        img_path = os.path.join(img_dir, feature)
+        print(img_path, img_dir)
+        plt.savefig(img_path)
+        plt.show()
+
+        graphs.append({
+            'title': feature.title(),
+            'path': img_path
+        })
+    
+    return graphs
+
+
+def build_readme_content(path: str, filename: str, data: dict, sources: str) -> str:
     title = filename.replace('.json', '').replace('_', ' ').title()
-    content = f'# {title}' + '\n\n' + sources
+    print(data)
+    graphs = gen_graphs(path, data)
+    content = f'# {title}'
+    
+    for graph in graphs:
+        content += f'## {graph["title"]}\n\n![{graph["title"]}]({graph["path"]})'
+    
+    content += '\n\n' + sources
     return content
 
 
@@ -26,7 +65,7 @@ def gen_data_readme(path: str, target_file: str):
 
         readme_file_path = os.path.join(path, 'README.md')
         sources = get_sources(readme_file_path)
-        readme = build_readme_content(target_file, data, sources)
+        readme = build_readme_content(path, target_file, data, sources)
 
         with open(readme_file_path, 'w') as f:
             f.write(readme)
