@@ -5,14 +5,14 @@ app = FastAPI()
 
 
 @app.get("/")
-def test():
+async def test():
     return {"Hello": "World"}
 
 @app.get("/{location}")
-def gen_persona(location: str):
+async def gen_persona(location: str):
     return gen_samples(location)
 
 @app.get("/{location}/{N}")
-def gen_multiple_personas(location: str, N: int):
+async def gen_multiple_personas(location: str, N: int):
     print(location, N)
     return gen_samples(location, N=N)
