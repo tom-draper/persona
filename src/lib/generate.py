@@ -5,9 +5,16 @@ from typing import Union
 import numpy as np
 
 
-def is_composition(target: str) -> bool:
-    target = target.replace(' ', '_')
-    return target == 'united_kingdom' or target == 'united_states'
+# def is_composition(target: str) -> bool:
+#     composition = False
+#     target = target.lower().replace(' ', '_')
+#     for _dir in os.walk('data'):
+#         _, final_dir = os.path.split(_dir[0])
+#         if final_dir == target:
+#             composition = 'composite.json' in _dir[2]
+#             break
+
+#     return composition
 
 
 def probabilities_from_dict(d: dict[str, float]) -> np.array:
@@ -26,16 +33,13 @@ def probabilities_from_list(l: list[tuple[str, float]]) -> np.array:
     return probabilities
 
 
-def select_child(target: str) -> str:
-    target_path = get_file_path(target)
-    if target_path:
-        with open(target_path, 'r') as f:
-            data = json.load(f)
-            countries = list(data.keys())
-            p = probabilities_from_dict(data)
-            selected = np.random.choice(countries, p=p)
-            return selected.lower()
-    raise ValueError('Location not found.')
+def select_sublocation(target: str, composite_path: str) -> str:
+    with open(composite_path, 'r') as f:
+        data = json.load(f)
+        countries = list(data.keys())
+        p = probabilities_from_dict(data)
+        selected = np.random.choice(countries, p=p)
+        return selected.lower()
 
 
 def get_file_path(target: str) -> str:
@@ -49,6 +53,18 @@ def get_file_path(target: str) -> str:
                 break
 
     return target_path
+
+
+def get_composite_path(target: str) -> str:
+    target = target.lower().replace(' ', '_')
+    composite_path = None
+    for _dir in os.walk('data'):
+        _, final_dir = os.path.split(_dir[0])
+        if final_dir == target and 'composite.json' in _dir[2]:
+            composite_path = os.path.join(_dir[0], 'composite.json')
+            break
+
+    return composite_path
 
 
 def gen_age(age_data: dict[str, float]) -> int:
@@ -100,7 +116,7 @@ def gen_sample(data: dict[str, float], enabled_features: Union[set[str], None]) 
 
 
 def gen_samples(
-    target: str,
+    location: str,
     enabled_features: Union[set[str], None] = None,
     N: int = 1
 ):
@@ -115,27 +131,30 @@ def gen_samples(
         N: int - The number of personas to generate from the given target 
             location. Defaults to 1.
     """
-    original_target = target
-    composite = is_composition(target)
+    original_location = location
+    
+    # Check if target is a composite of real location targets (e.g. uk, usa)
+    composite_path = get_composite_path(location)
+    composite = composite_path is not None
 
     samples = []
     cache = {}
     for _ in range(N):
         if composite:
-            target = select_child(original_target)
+            location = select_sublocation(original_location, composite_path)
 
-        if target_path := get_file_path(target):
-            if target_path in cache:  # If already read, take from cache
-                data = cache[target_path]
+        if location_path := get_file_path(location):
+            if location_path in cache:  # If already read, take from cache
+                data = cache[location_path]
             else:
-                with open(target_path, 'r') as f:
+                with open(location_path, 'r') as f:
                     data = json.load(f)
-                    cache[target_path] = data  # Cache data to avoid re-reading
+                    cache[location_path] = data  # Cache data to avoid re-reading
 
             sample = gen_sample(data, enabled_features)
             if composite:
-                # Append original target location
-                sample['location'] += f', {target.title()}'
+                # Append the selected sublocation
+                sample['location'] += f', {location.title()}'
             samples.append(sample)
         else:
             print('Location not found')
