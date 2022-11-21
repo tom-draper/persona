@@ -72,7 +72,7 @@ def probabilities_from_list(l: list[tuple[str, float]]) -> np.array:
     return probabilities
 
 
-def gen_feature(data: list[tuple[str, float]]) -> str | None:
+def gen_feature(data: list[tuple[str, float]]) -> str:
     collapsed = collapsed_dict(data, [], [])
     options = [', '.join(reversed(x[0])) for x in collapsed]
     p = probabilities_from_list(collapsed)
