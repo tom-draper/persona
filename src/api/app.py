@@ -22,11 +22,11 @@ async def gen_personas(location: str, count: int = 1):
 
 
 @app.get("/{location}/features")
-async def gen_personas(location: str):
+async def features(location: str):
     location = format_location(location)
     return get_features(location)
 
 
 @app.get("/countries/")
-async def gen_personas():
+async def countries():
     return get_countries()
