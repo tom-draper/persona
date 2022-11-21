@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+from typing import Union
 
 import numpy as np
 from colorama import Fore
@@ -44,8 +45,8 @@ def gen_age(age_data: dict[str, float]) -> int:
     return int(age)
 
 
-def collapsed_dict(d: dict, path: list[str],
-                   collapsed: list[tuple[list[str], float]]) -> list[tuple[list[str], float]]:
+def collapsed_dict(d: dict, path: list[str], collapsed: list[tuple[list[str], float]]
+                   ) -> list[tuple[list[str], float]]:
     for k, v in d.items():
         new_path = path + [k]
         if type(v) is not dict:
@@ -80,7 +81,7 @@ def gen_feature(data: list[tuple[str, float]]) -> str:
     return selected
 
 
-def gen_sample(data: dict[str, float], enabled_features: set[str]|None) -> dict[str, str]:
+def gen_sample(data: dict[str, float], enabled_features: Union[set[str], None]) -> dict[str, str]:
     sample = {}
     for feature, _data in data.items():
         feature = feature.lower()
@@ -126,7 +127,7 @@ def get_count() -> int:
     return count
 
 
-def get_enabled_features() -> set[str]|None:
+def get_enabled_features() -> Union[set[str], None]:
     enabled_features = None
     for arg in sys.argv:
         arg = arg.replace('-', '')
@@ -144,7 +145,7 @@ def get_target_country() -> str:
 
 def gen_samples(
         target: str, 
-        enabled_features: set[str]|None = None,
+        enabled_features: Union[set[str], None] = None,
         N: int = 1
     ):
     """
