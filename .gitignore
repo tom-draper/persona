@@ -1,3 +1,5 @@
 tempCodeRunnerFile.py
-scripts
 __pycache__
+src/scripts/*
+
+!src/scripts/gen_readme.py
