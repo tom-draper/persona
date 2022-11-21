@@ -82,22 +82,17 @@ https://persona-api.vercel.app/<location>/features/
 ]
 ```
 
-### Example
-
-
-
-
 ## Command-line Tool
 
 ### Installation
 
-Install Python dependencies from the `requirements.txt` file.
+Install Python dependencies from `requirements.txt`.
 
 ```py
 python -m pip install -r requirements.txt
 ```
 
-### Run
+### Generate Persona
 
 Run `main.py` from the root directory.
 
@@ -105,13 +100,13 @@ Run `main.py` from the root directory.
 python src/main.py <location>
 ```
 
-The generated persona can be limited to only specific features using flags.
+The generated persona can be limited to specific features using the feature flags to include.
 
 ```py
 python src/main.py <location> --age --location --language
 ```
 
-The number of personas generated can be increased using the `-n` flag.
+Multiple personas can be generated at once using the `-n` flag.
 
 ```py
 python src/main.py <location> -n <count>
@@ -132,29 +127,29 @@ Language: English
 Location: Blackburn with Darwen, North West
 ```
 
-### Locations
-
-- [ ] United States of America
-- [x] United Kingdom
-- [x] England
-- [x] Wales
-- [x] Scotland
-- [x] Northern Ireland
-- [ ] France
-- [ ] Germany
-- [ ] Spain
-- [ ] Italy
-- [ ] Ireland
-- [ ] Canada
-- [ ] Brazil
-- [ ] Mexico
-- [ ] Russia
-- [ ] China
-- [ ] India
-
 ## Data
 
 The demographic data is carefully sourced from reputable organisations for each country. Citations for each feature for each country can be found in the `README.md` in `/data`.
+
+### Locations
+
+- [ ] united_stats_of_america / usa
+- [x] united_kingdom / uk
+- [x] england
+- [x] wales
+- [x] scotland
+- [x] northern_ireland
+- [ ] france
+- [ ] germany
+- [ ] spain
+- [ ] italy
+- [ ] ireland
+- [ ] canada
+- [ ] brazil
+- [ ] mexico
+- [ ] russia
+- [ ] china
+- [ ] india
 
 ## Limitations
 
