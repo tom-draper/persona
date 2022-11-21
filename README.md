@@ -1,6 +1,6 @@
 # Persona
 
-A tool for probabilistically generating character profiles based on a given location using real-world demographic data, with features including age, sex, sexuality, ethnicity and religion. This project was born out of a lack of tools for building representative and inclusive characters for stories.
+A tool for probabilistically generating character profiles based on a given location using real-world demographic data, with features including age, sex, sexuality, ethnicity and religion. This project was born out of a lack of tools for building representative, inclusive and realistic characters for stories.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
