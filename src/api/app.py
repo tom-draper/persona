@@ -5,7 +5,7 @@ from src.lib.util import get_countries, get_features
 app = FastAPI()
 
 
-def format_location(county: str) -> str:
+def format_location(location: str) -> str:
     location = location.replace('-', '_').lower()
     return location
 
