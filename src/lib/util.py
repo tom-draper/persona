@@ -24,7 +24,6 @@ def get_features(country: str) -> list[str]:
     for _dir in os.walk('data'):
         files = _dir[2]
         for f in files:
-            print(f)
             if f == target_file:
                 return _get_features(os.path.join(_dir[0], target_file))
 
