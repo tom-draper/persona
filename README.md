@@ -30,6 +30,14 @@ https://persona-api.vercel.app/<location>/
 
 ```
 
+#### Count Query
+
+Multiple personas from the same location can be generated at once by providing a `count` query parameter.
+
+```bash
+https://persona-api.vercel.app/<location>/?count=5
+```
+
 ### List Locations
 
 All locations currently included can be listed with the `/locations/` endpoint.
