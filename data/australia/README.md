@@ -1,7 +1,19 @@
 # Australia
 
-## Source
+## Age
 
-Age and sex data sourced from 2021 census.
+![Age](img/age.png)
 
-https://www.abs.gov.au/statistics/people/population/population-census/2021
+## Sex
+
+![Sex](img/sex.png)
+
+## Religion
+
+![Religion](img/religion.png)
+
+## Language
+
+![Language](img/language.png)
+
+## Sources
