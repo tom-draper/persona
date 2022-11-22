@@ -1,6 +1,6 @@
 # Persona
 
-A tool for probabilistically generating character profiles based on a given location using real-world demographic data, with features including age, sex, sexuality, ethnicity and religion. This project was born out of a lack of tools for building representative and inclusive characters for stories.
+A tool for probabilistically generating random character profiles based from a given location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative, inclusive and realistic characters for stories.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
@@ -10,7 +10,7 @@ A tool for probabilistically generating character profiles based on a given loca
 
 ### Generate Persona
 
-```bash
+```
 https://persona-api.vercel.app/<location>/
 ```
 
@@ -34,7 +34,7 @@ https://persona-api.vercel.app/<location>/
 
 Multiple personas from the same location can be generated at once by providing a `count` query parameter.
 
-```bash
+```
 https://persona-api.vercel.app/<location>/?count=5
 ```
 
@@ -63,7 +63,7 @@ https://persona-api.vercel.app/locations/
 
 For a given location, all possible features available to generate can be listed with the `/<location>/features/` endpoint.
 
-```bash
+```
 https://persona-api.vercel.app/<location>/features/
 ```
 
@@ -127,9 +127,11 @@ Location: Blackburn with Darwen, North West
 
 ## Data
 
-The demographic data is carefully sourced from reputable organisations for each country. Citations for each feature for each country can be found in the `README.md` for each country in `/data`.
+The demographic data is carefully sourced from reputable organisations for each country. Sources for each country can be found alongside the data in each `README.md` in `/data`.
 
 ### Locations
+
+Currently 6 countries are available for persona generation. More countries and features will continue to be included in future.
 
 - [ ] `united_states_of_america` / `usa`
 - [x] `united_kingdom` / `uk`
@@ -142,8 +144,8 @@ The demographic data is carefully sourced from reputable organisations for each 
 - [ ] `spain`
 - [ ] `italy`
 - [ ] `ireland`
-- [ ] `australia`
-- [ ] `canada`
+- [X] `australia`
+- [X] `canada`
 - [ ] `brazil`
 - [ ] `mexico`
 - [ ] `russia`

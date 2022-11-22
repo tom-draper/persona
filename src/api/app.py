@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 async def test():
-    return "Live"
+    return "Persona - Live"
 
 
 @app.get("/countries/")
