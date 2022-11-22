@@ -145,7 +145,7 @@ Currently 6 countries are available for persona generation. More countries and f
 - [ ] `italy`
 - [ ] `ireland`
 - [X] `australia`
-- [ ] `canada`
+- [X] `canada`
 - [ ] `brazil`
 - [ ] `mexico`
 - [ ] `russia`
