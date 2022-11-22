@@ -131,7 +131,7 @@ The demographic data is carefully sourced from reputable organisations for each 
 
 ### Locations
 
-Currently Persona works for 6 countries.
+Currently 6 countries are available for persona generation. More countries and features will continue to be included in future.
 
 - [ ] `united_states_of_america` / `usa`
 - [x] `united_kingdom` / `uk`
