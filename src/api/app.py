@@ -1,33 +1,33 @@
+
 from fastapi import FastAPI
-from src.lib.generate import gen_samples
-from src.lib.util import get_countries, get_features
+
+from src.lib.api_helper import load_location_data, get_features, format_location
+from src.lib.generate import gen_api_samples
 
 app = FastAPI()
 
 
-@app.get("/")
+data = load_location_data()
+
+
+@app.get("/v1/")
 async def test():
-    return "Persona - Live"
+    return "Persona v1 - Live"
 
 
-@app.get("/countries/")
-@app.get("/locations/")
+@app.get("/v1/countries/")
+@app.get("/v1/locations/")
 async def countries():
-    return get_countries()
+    return list(data.keys())
 
 
-def format_location(location: str) -> str:
-    location = location.replace('-', '_').lower()
-    return location
-
-
-@app.get("/{location}/features/")
+@app.get("/v1/{location}/features/")
 async def features(location: str):
     location = format_location(location)
     return get_features(location)
 
 
-@app.get("/{location}/")
+@app.get("/v1/{location}/")
 async def gen_personas(location: str, count: int = 1):
     location = format_location(location)
-    return gen_samples(location, N=count)
+    return gen_api_samples(location, data, N=count)

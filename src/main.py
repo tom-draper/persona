@@ -44,7 +44,7 @@ def get_enabled_features() -> Union[set[str], None]:
     return enabled_features
 
 
-def get_target_country() -> str:
+def get_target_location() -> str:
     target = sys.argv[1].replace('-', ' ').replace('_', ' ')
     if target in alias:
         target = alias[target]
@@ -56,7 +56,7 @@ def run():
         return
 
     # Collect arguments
-    target = get_target_country()
+    target = get_target_location()
     enabled_features = get_enabled_features()
     N = get_count()
 
