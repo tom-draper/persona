@@ -11,11 +11,11 @@ A tool for probabilistically generating random character profiles based from a g
 ### Generate Persona
 
 ```
-https://persona-api.vercel.app/<location>/
+https://persona-api.vercel.app/v1/<location>/
 ```
 
 ```bash
-> curl https://persona-api.vercel.app/england/
+> curl https://persona-api.vercel.app/v1/england/
 [
   {
     "age": 21,
@@ -35,7 +35,7 @@ https://persona-api.vercel.app/<location>/
 Multiple personas from the same location can be generated at once by providing a `count` query parameter.
 
 ```
-https://persona-api.vercel.app/<location>/?count=5
+https://persona-api.vercel.app/v1/<location>/?count=5
 ```
 
 ### List Locations
@@ -43,11 +43,11 @@ https://persona-api.vercel.app/<location>/?count=5
 All locations currently included can be listed with the `/locations/` endpoint.
 
 ```bash
-https://persona-api.vercel.app/locations/
+https://persona-api.vercel.app/v1/locations/
 ```
 
 ```bash
-> curl https://persona-api.vercel.app/locations/
+> curl https://persona-api.vercel.app/v1/locations/
 [
   "united_kingdom",
   "england",
@@ -64,11 +64,11 @@ https://persona-api.vercel.app/locations/
 For a given location, all possible features available to generate can be listed with the `/<location>/features/` endpoint.
 
 ```
-https://persona-api.vercel.app/<location>/features/
+https://persona-api.vercel.app/v1/<location>/features/
 ```
 
 ```bash
-> curl https://persona-api.vercel.app/england/features/
+> curl https://persona-api.vercel.app/v1/england/features/
 [
   "age",
   "sex",
@@ -127,7 +127,7 @@ Location: Blackburn with Darwen, North West
 
 ## Data
 
-The demographic data is carefully sourced from reputable organisations for each country. Sources for each country can be found alongside the data in each `README.md` in `/data`.
+The demographic data is carefully sourced from reputable organisations for each location. Sources for each location can be found alongside the data in each `README.md` in `/data`.
 
 ### Locations
 
