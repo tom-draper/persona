@@ -6,7 +6,6 @@ from src.lib.util import format_location
 
 app = FastAPI()
 
-
 data = load_location_data()
 
 
