@@ -15,7 +15,8 @@ https://persona-api.vercel.app/v1/<location>/
 ```
 
 ```bash
-> curl https://persona-api.vercel.app/v1/england/
+$ curl https://persona-api.vercel.app/v1/england/
+
 [
   {
     "age": 21,
@@ -47,7 +48,8 @@ https://persona-api.vercel.app/v1/locations/
 ```
 
 ```bash
-> curl https://persona-api.vercel.app/v1/locations/
+$ curl https://persona-api.vercel.app/v1/locations/
+
 [
   "united_kingdom",
   "england",
@@ -68,7 +70,8 @@ https://persona-api.vercel.app/v1/<location>/features/
 ```
 
 ```bash
-> curl https://persona-api.vercel.app/v1/england/features/
+$ curl https://persona-api.vercel.app/v1/england/features/
+
 [
   "age",
   "sex",
