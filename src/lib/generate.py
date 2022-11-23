@@ -21,7 +21,7 @@ def probabilities_from_list(l: list[tuple[str, float]]) -> np.array:
     return probabilities
 
 
-def select_sublocation(target: str, composite_path: str) -> str:
+def select_sublocation(composite_path: str) -> str:
     with open(composite_path, 'r') as f:
         data = json.load(f)
         countries = list(data.keys())
@@ -35,10 +35,12 @@ def get_file_path(target: str) -> str:
     target_path = None
     for _dir in os.walk('data'):
         files = _dir[2]
-        for f in files:
-            if target_file == f:
-                target_path = os.path.join(_dir[0], target_file)
-                break
+        _, cur_dir = os.path.split(_dir[0])
+        if cur_dir == target:
+            for f in files:
+                if target_file == f:
+                    target_path = os.path.join(_dir[0], target_file)
+                    break
 
     return target_path
 
@@ -47,8 +49,8 @@ def get_composite_path(target: str) -> str:
     target = target.lower().replace(' ', '_')
     composite_path = None
     for _dir in os.walk('data'):
-        _, final_dir = os.path.split(_dir[0])
-        if final_dir == target and 'composite.json' in _dir[2]:
+        _, cur_dir = os.path.split(_dir[0])
+        if cur_dir == target and 'composite.json' in _dir[2]:
             composite_path = os.path.join(_dir[0], 'composite.json')
             break
 
@@ -119,8 +121,6 @@ def gen_samples(
         N: int - The number of personas to generate from the given target 
             location. Defaults to 1.
     """
-    original_location = location
-    
     # Check if target is a composite of real location targets (e.g. uk, usa)
     composite_path = get_composite_path(location)
     composite = composite_path is not None
@@ -129,7 +129,7 @@ def gen_samples(
     cache = {}
     for _ in range(N):
         if composite:
-            location = select_sublocation(original_location, composite_path)
+            location = select_sublocation(composite_path)
 
         if location_path := get_file_path(location):
             if location_path in cache:  # If already read, take from cache
