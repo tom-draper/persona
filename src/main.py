@@ -3,17 +3,8 @@ from typing import Union
 
 from colorama import Fore
 
+from lib.util import all_features, alias, format_location
 from lib.generate import gen_samples
-
-all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
-                'language', 'location', 'relationship'}
-
-
-alias = {
-    'uk': 'united kingdom',
-    'usa': 'united states',
-    'uae': 'united arab emirates'
-}
 
 
 def pprint(data: dict[str, float]):
@@ -44,19 +35,12 @@ def get_enabled_features() -> Union[set[str], None]:
     return enabled_features
 
 
-def get_target_location() -> str:
-    target = sys.argv[1].replace('-', ' ').replace('_', ' ')
-    if target in alias:
-        target = alias[target]
-    return target
-
-
 def run():
     if len(sys.argv) < 2:
         return
 
     # Collect arguments
-    target = get_target_location()
+    target = format_location(sys.argv[1])
     enabled_features = get_enabled_features()
     N = get_count()
 

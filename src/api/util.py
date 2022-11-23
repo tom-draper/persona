@@ -1,6 +1,7 @@
 import os
 import json
 
+
 def load_location_data() -> dict[dict]:
     data = {}
     for _dir in os.walk('data'):
@@ -15,14 +16,9 @@ def load_location_data() -> dict[dict]:
                             'composite': composite,
                             'data': json.load(_f)
                         }
-                except json.decoder.JSONDecodeError as e:
-                    print(e)
+                except json.decoder.JSONDecodeError:
+                    pass
     return data
-
-    
-def format_location(location: str) -> str:
-    location = location.replace('-', '_').lower()
-    return location
 
 
 def get_features(location: str, data: dict[dict]) -> list[str]:
