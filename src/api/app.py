@@ -1,8 +1,8 @@
+from fastapi import FastAPI, HTTPException
 
-from fastapi import FastAPI
-
-from src.lib.api_helper import load_location_data, get_features, format_location
+from src.api.util import get_features, load_location_data
 from src.lib.generate import gen_api_samples
+from src.lib.util import format_location
 
 app = FastAPI()
 
@@ -24,10 +24,14 @@ async def countries():
 @app.get("/v1/{location}/features/")
 async def features(location: str):
     location = format_location(location)
+    if location not in data:
+        raise HTTPException(status_code=404, detail="Location not found")
     return get_features(location)
 
 
 @app.get("/v1/{location}/")
 async def gen_personas(location: str, count: int = 1):
     location = format_location(location)
+    if location not in data:
+        raise HTTPException(status_code=404, detail="Location not found")
     return gen_api_samples(location, data, N=count)

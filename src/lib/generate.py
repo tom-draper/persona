@@ -129,12 +129,6 @@ def gen_api_samples(
         N: int - The number of personas to generate from the given target 
             location. Defaults to 1.
     """
-    print(location, data.keys())
-    if location not in data:
-        print('Location not found')
-        return
-    
-
     # Check if target is a composite of real location targets (e.g. uk, usa)
     composite = data[location]['composite']
     original_location = location  # Copy only required if composite location
@@ -155,7 +149,7 @@ def gen_api_samples(
 
     return samples
 
-    
+
 def gen_samples(
     location: str,
     enabled_features: Union[set[str], None] = None,
@@ -188,7 +182,8 @@ def gen_samples(
             else:
                 with open(location_path, 'r') as f:
                     data = json.load(f)
-                    cache[location_path] = data  # Cache data to avoid re-reading
+                    # Cache data to avoid re-reading
+                    cache[location_path] = data
 
             sample = gen_sample(data, enabled_features)
             if composite:
