@@ -21,13 +21,17 @@ def probabilities_from_list(l: list[tuple[str, float]]) -> np.array:
     return probabilities
 
 
+def _select_sublocation(data: dict):
+    countries = list(data.keys())
+    p = probabilities_from_dict(data)
+    selected = np.random.choice(countries, p=p)
+    return selected.lower()
+
+
 def select_sublocation(composite_path: str) -> str:
     with open(composite_path, 'r') as f:
         data = json.load(f)
-        countries = list(data.keys())
-        p = probabilities_from_dict(data)
-        selected = np.random.choice(countries, p=p)
-        return selected.lower()
+        return _select_sublocation(data)
 
 
 def get_file_path(target: str) -> str:
@@ -105,11 +109,58 @@ def gen_sample(data: dict[str, float], enabled_features: Union[set[str], None]) 
     return sample
 
 
+def gen_api_samples(
+    location: str,
+    data: dict[dict],
+    enabled_features: Union[set[str], None] = None,
+    N: int = 1
+) -> list[dict]:
+    """
+    Returns randomly generated persona(s) for the given target location, 
+    constrained by any optional enabled features.
+    Used by the API with preloaded location data.
+
+    Arguments
+        target: str - Target location.
+        data: dict[dict] - Preloaded location data dict containing all locations.
+            All locations are of form {'composite': bool', 'data': dict}.
+        enabled_features: set[str]|None - Set of features to include in the 
+            persona. If None, all features are included. Defaults to None.
+        N: int - The number of personas to generate from the given target 
+            location. Defaults to 1.
+    """
+    print(location, data.keys())
+    if location not in data:
+        print('Location not found')
+        return
+    
+
+    # Check if target is a composite of real location targets (e.g. uk, usa)
+    composite = data[location]['composite']
+    original_location = location  # Copy only required if composite location
+
+    samples = []
+    for _ in range(N):
+        if composite:
+            location = _select_sublocation(data[original_location]['data'])
+
+        if location in data:
+            sample = gen_sample(data[location]['data'], enabled_features)
+            if composite:
+                # Append the selected sublocation
+                sample['location'] += f', {location.title()}'
+            samples.append(sample)
+        else:
+            print('Location not found')
+
+    return samples
+
+    
 def gen_samples(
     location: str,
     enabled_features: Union[set[str], None] = None,
     N: int = 1
-):
+) -> list[dict]:
     """
     Returns randomly generated persona(s) for the given target location, 
     constrained by any optional enabled features.
