@@ -1,4 +1,5 @@
 tempCodeRunnerFile.py
+.env
 __pycache__
 src/scripts/*
 

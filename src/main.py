@@ -3,7 +3,7 @@ from typing import Union
 
 from colorama import Fore
 
-from lib.util import all_features, alias, format_location
+from lib.util import all_features, format_location
 from lib.generate import gen_samples
 
 

@@ -1,3 +1,6 @@
+from os import getenv
+
+from api_analytics.fastapi import Analytics
 from fastapi import FastAPI, HTTPException
 
 from src.api.util import get_features, load_location_data
@@ -5,6 +8,9 @@ from src.lib.generate import gen_api_samples
 from src.lib.util import format_location
 
 app = FastAPI()
+
+api_key = getenv('API_KEY')
+app.add_middleware(Analytics, api_key=api_key)
 
 data = load_location_data()
 
