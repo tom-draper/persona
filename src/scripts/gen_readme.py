@@ -28,7 +28,7 @@ def gen_composite_graph(path: str, data: dict) -> list[dict]:
     # Create plot
     fig = plt.figure(figsize=(12, 8))
     plt.bar(x, y, align='center', alpha=0.5)
-    plt.xticks(x, labels, rotation=-45, fontsize=9)
+    plt.xticks(x, labels, rotation=-60, fontsize=9)
     plt.ylabel('Probability')
     plt.title(location.title())
     plt.tight_layout()
@@ -91,7 +91,7 @@ def printed_list_format(lst: list[str]):
     return ''
 
 
-def build_composite_readme_content(path: str, filename: str, data: dict) -> str:
+def build_composite_readme_content(path: str, data: dict) -> str:
     _, location = os.path.split(path)
 
     title = location.replace('_', ' ').title()
@@ -139,7 +139,7 @@ def gen_data_readme(path: str, target_file: str):
         print(Fore.YELLOW + f'Generating {readme_file_path}...' + Fore.WHITE)
         
         if target_file == 'composite.json':
-            readme = build_composite_readme_content(path, target_file, data)
+            readme = build_composite_readme_content(path, data)
         else:
             sources = get_sources(readme_file_path)
             readme = build_readme_content(path, target_file, data, sources)
