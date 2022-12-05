@@ -150,6 +150,12 @@ def gen_api_samples(
     return samples
 
 
+def correct_working_dir():
+    # If not in root folder containing /data, must be in src
+    if not os.path.isdir('data'):
+        os.chdir('../')
+
+
 def gen_samples(
     location: str,
     enabled_features: Union[set[str], None] = None,
@@ -166,6 +172,8 @@ def gen_samples(
         N: int - The number of personas to generate from the given target 
             location. Defaults to 1.
     """
+    correct_working_dir()
+    
     # Check if target is a composite of real location targets (e.g. uk, usa)
     composite_path = get_composite_path(location)
     composite = composite_path is not None
