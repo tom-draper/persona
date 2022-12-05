@@ -60,7 +60,7 @@ def gen_graphs(path: str, data: dict) -> list[dict]:
         # Create plot
         fig = plt.figure(figsize=(12, 8))
         plt.bar(x, y, align='center', alpha=0.5)
-        plt.xticks(x, labels, rotation=-45, fontsize=9)
+        plt.xticks(x, labels, rotation=-60, fontsize=9)
         plt.ylabel('Probability')
         plt.title(feature.title())
         plt.tight_layout()
