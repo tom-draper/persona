@@ -1,7 +1,9 @@
-import os
 import json
+import os
 import re
+
 import matplotlib.pyplot as plt
+from colorama import Fore
 
 
 def flatten_dict(d: dict, parent_key: str = '', sep: str = ', ') -> dict:
@@ -37,7 +39,7 @@ def gen_composite_graph(path: str, data: dict) -> list[dict]:
         os.makedirs(img_dir)
 
     img_path = os.path.join(img_dir, location)
-    print(img_path + '.png')
+    print(f'    {img_path}.png')
 
     plt.savefig(img_path)
     plt.close(fig)
@@ -69,7 +71,7 @@ def gen_graphs(path: str, data: dict) -> list[dict]:
             os.makedirs(img_dir)
 
         img_path = os.path.join(img_dir, feature)
-        print(f'Generating {img_path}.png...')
+        print(f'    {img_path}.png')
 
         plt.savefig(img_path)
         plt.close(fig)
@@ -134,13 +136,14 @@ def gen_data_readme(path: str, target_file: str):
 
         readme_file_path = os.path.join(path, 'README.md')
 
+        print(Fore.YELLOW + f'Generating {readme_file_path}...' + Fore.WHITE)
+        
         if target_file == 'composite.json':
             readme = build_composite_readme_content(path, target_file, data)
         else:
             sources = get_sources(readme_file_path)
             readme = build_readme_content(path, target_file, data, sources)
 
-        print(f'Generating {readme_file_path}...')
         with open(readme_file_path, 'w') as f:
             f.write(readme)
     except json.JSONDecodeError:
