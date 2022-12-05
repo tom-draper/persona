@@ -134,7 +134,7 @@ The demographic data is carefully sourced from reputable census data for each lo
 
 ### Locations
 
-The list of locations currently available can be found [here](data/README.md). More locations and features will continue to be included in future.
+The full list of locations currently available can be found [here](data/README.md). It includes countries, groups of locations (e.g. UK, USA), and cities. More locations and features will continue to be added in future.
 
 ## Limitations
 
