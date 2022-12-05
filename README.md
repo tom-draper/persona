@@ -90,7 +90,7 @@ $ curl https://persona-api.vercel.app/v1/england/features/
 Install Python dependencies from `requirements.txt`.
 
 ```py
-python -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Generate Persona
