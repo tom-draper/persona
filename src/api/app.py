@@ -3,9 +3,9 @@ from os import getenv
 from api_analytics.fastapi import Analytics
 from fastapi import FastAPI, HTTPException
 
-from src.api.util import get_features, load_location_data
+from api.handler import get_features, load_location_data
 from src.lib.generate import gen_api_samples
-from src.lib.util import clean_location
+from lib.format import clean_location
 
 app = FastAPI()
 
@@ -31,6 +31,8 @@ async def features(location: str):
     location = clean_location(location)
     if location not in data:
         raise HTTPException(status_code=404, detail="Location not found")
+    elif location == 'global':
+        raise HTTPException(status_code=404, detail="Features not found")
     return get_features(location, data)
 
 

@@ -1,5 +1,4 @@
-all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
-                'language', 'location', 'relationship', 'place of birth'}
+
 
 alias = {
     'uk': 'united_kingdom',
