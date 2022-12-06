@@ -87,7 +87,7 @@ $ curl https://persona-api.vercel.app/v1/england/features/
     "ethnicity",
     "language",
     "location"
-]
+  ]
 }
 ```
 
