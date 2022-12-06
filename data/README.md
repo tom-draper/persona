@@ -30,8 +30,8 @@
 - [ ] `iran`
 - [ ] `turkey`
 - [ ] `thailand`
-- [ ] `south africa`
-- [ ] `south korea`
+- [ ] `south_africa`
+- [ ] `south_korea`
 - [ ] `ukraine`
 - [ ] `poland`
 - [ ] `morocco`
@@ -39,7 +39,7 @@
 - [ ] `norway`
 - [ ] `finland`
 - [ ] `sweden`
-- [ ] `new zealand`
+- [ ] `new_zealand`
 
 ## US States
 
