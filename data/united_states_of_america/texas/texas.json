@@ -1,0 +1,22 @@
+{
+    "religion": {
+        "Protestantism": 0.5,
+        "Roman Catholicism": 0.23,
+        "Mormonism": 0.01,
+        "No religion": 0.18,
+        "Judaism": 0.01
+    },
+    "language": {
+        "English": 0.6793,
+        "Spanish": 0.2921,
+        "Vietnamese": 0.0075,
+        "Mandarin/Cantonese": 0.0056,
+        "German": 0.0033,
+        "Tagalog": 0.0029,
+        "French": 0.0025,
+        "Korean": 0.0024,
+        "Urdu": 0.0024,
+        "Hindi": 0.0023,
+        "Arabic": 0.0021
+    }
+}

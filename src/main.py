@@ -3,8 +3,11 @@ from typing import Union
 
 from colorama import Fore
 
-from lib.util import all_features, clean_location
+from lib.format import all_features, clean_location
 from lib.generate import gen_samples
+
+all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
+                'language', 'location', 'relationship', 'place of birth'}
 
 
 def pprint(data: dict[str, float]):

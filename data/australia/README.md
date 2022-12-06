@@ -1,5 +1,9 @@
 # Australia
 
+## Location
+
+![Location](img/location.png)
+
 ## Age
 
 ![Age](img/age.png)
@@ -15,6 +19,10 @@
 ## Language
 
 ![Language](img/language.png)
+
+## Place Of Birth
+
+![Place Of Birth](img/place of birth.png)
 
 ## Sources
 

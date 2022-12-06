@@ -1,5 +1,12 @@
 # Data
 
+## Cities
+
+- [X] `london`
+- [ ] `paris`
+- [ ] `berlin`
+- [ ] `madrid`
+
 ## Countries
 
 - [x] `england`
@@ -43,16 +50,15 @@
 
 ## US States
 
-- [ ] `california`
 - [ ] `alabama`
 - [ ] `alaska`
 - [ ] `arizona`
 - [ ] `arkansas`
-- [ ] `california`
+- [X] `california`
 - [ ] `colorado`
 - [ ] `connecticut`
 - [ ] `delaware`
-- [ ] `florida`
+- [X] `florida`
 - [ ] `georgia`
 - [ ] `hawaii`
 - [ ] `idaho`
@@ -86,7 +92,7 @@
 - [ ] `south_carolina`
 - [ ] `south_dakota`
 - [ ] `tennessee`
-- [ ] `texas`
+- [X] `texas`
 - [ ] `utah`
 - [ ] `vermont`
 - [ ] `virginia`
@@ -95,22 +101,15 @@
 - [ ] `wisconsin`
 - [ ] `wyoming`
 
-## Groups of Countries
+## Composite Locations
 
 A random sub-location is selected, weighted by population.
 
 - [ ] `united_states_of_america` / `usa`
 - [x] `united_kingdom` / `uk`
 
-## Cities
-
-- [X] `london`
-- [ ] `paris`
-- [ ] `berlin`
-- [ ] `madrid`
-
 ## Global
 
-Currently only picks a random country, weighted by population, and returns that location. Eventually, with more countries added, a persona from the chosen country should be generated.
+Currently the `global` location only picks a random country, weighted by population, and returns that location. Eventually, with more countries added, global should become a composite, and a persona from the chosen country should be generated instead using that country's data.
 
 - [X] `global`

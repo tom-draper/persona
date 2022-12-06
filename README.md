@@ -3,7 +3,7 @@
 A tool for probabilistically generating random character profiles based from a given location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative, inclusive and realistic characters for stories.
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
+	<img width=300 src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
 </p>
 
 ## REST API
@@ -41,7 +41,7 @@ https://persona-api.vercel.app/v1/<location>/?count=5
 
 ### List Locations
 
-All locations currently included can be listed with the `/locations/` endpoint.
+All locations currently included can be listed with the `/v1/locations/` endpoint.
 
 ```bash
 https://persona-api.vercel.app/v1/locations/
@@ -66,7 +66,7 @@ $ curl https://persona-api.vercel.app/v1/locations/
 
 ### Location Features
 
-For a given location, all possible features available to generate can be listed with the `/<location>/features/` endpoint.
+Currently, not all features are available for each location. For a given location, all features available for generation can be retrieved with the `/v1/<location>/features/` endpoint.
 
 ```
 https://persona-api.vercel.app/v1/<location>/features/
@@ -156,4 +156,4 @@ To contribute:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new pull request
 
-When contributing data, keep content, directory structure and JSON formatting consistent and remember to note your source (including URL) in `data/.../<location>/README.md`. Sources should be from reputable organisations conducting census research.
+When contributing data, keep content, directory structure and JSON formatting consistent and remember to note your source (including URL) in `data/.../<location>/README.md`. Sources should be from reputable organisations conducting census research. Do not worry if percentages do not sum to 1 exactly, all feature probabilities are normalised during generation.

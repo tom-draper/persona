@@ -22,8 +22,9 @@ def load_location_data() -> dict[dict]:
 
 
 def get_features(location: str, data: dict[dict]) -> list[str]:
-    if data[location]['composite']:
-        return {subloc: list(subloc_data.keys())
-                for subloc, subloc_data in data[location]['data'].items()}
+    if location == 'global':
+        return []
+    elif data[location]['composite']:
+        return {subloc: list(data[subloc]['data'].keys()) for subloc in data[location]['data']}
     else:
         return {location: list(data[location]['data'].keys())}
