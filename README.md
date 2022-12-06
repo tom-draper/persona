@@ -53,13 +53,16 @@ $ curl https://persona-api.vercel.app/v1/locations/
 [
   "australia",
   "canada",
+  "global",
   "united_kingdom",
   "england",
   "london",
   "northern_ireland",
   "scotland",
   "wales",
-  "global"
+  "california",
+  "florida",
+  "texas"
 ]
 
 ```
@@ -75,16 +78,17 @@ https://persona-api.vercel.app/v1/<location>/features/
 ```bash
 $ curl https://persona-api.vercel.app/v1/england/features/
 
-[
-  "age",
-  "sex",
-  "sexuality",
-  "religion",
-  "ethnicity",
-  "language",
-  "location",
-  "place of birth"
+{
+  "england": [
+    "age",
+    "sex",
+    "sexuality",
+    "religion",
+    "ethnicity",
+    "language",
+    "location"
 ]
+}
 ```
 
 ## Command-line Tool
