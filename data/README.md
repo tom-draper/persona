@@ -29,4 +29,7 @@ A random subcountry is selected, weighted by population.
 
 ## Cities
 
-- [ ] `london`
+- [X] `london`
+- [ ] `paris`
+- [ ] `berlin`
+- [ ] `madrid`

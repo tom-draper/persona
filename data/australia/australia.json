@@ -1,4 +1,14 @@
 {
+    "location": {
+        "New South Wales": 0.32,
+        "Victoria": 0.26,
+        "Queensland": 0.2,
+        "Western Australia": 0.1,
+        "South Australia": 0.07,
+        "Tasmania": 0.02,
+        "Australian Capital Territory": 0.002,
+        "Northern Territory": 0.001
+    },
     "age": {
         "0-4": 0.05757893725730925,
         "5-9": 0.062390408352570016,
@@ -40,5 +50,25 @@
         "Vietnamese": 0.013,
         "Cantonese": 0.012,
         "Punjabi": 0.009
+    },
+    "place of birth": {
+        "Australia:": 0.7884384321413022,
+        "England": 0.04182608142983207,
+        "India": 0.030713995106548656,
+        "China": 0.02575266322998054,
+        "New Zealand": 0.024211299557652406,
+        "Philippines": 0.013429968692806868,
+        "Vietnam": 0.011594600168533958,
+        "South Africa": 0.008730647022530716,
+        "Malaysia": 0.007447402315807041,
+        "Italy": 0.0074158400302306166,
+        "Sri Lanka": 0.006303377553680746,
+        "Scotland": 0.005623275153520254,
+        "Nepal": 0.005615060312068856,
+        "United States": 0.0047321810360817455,
+        "Germany": 0.004666894664546949,
+        "South Korea": 0.004607228974005215,
+        "Hong Kong": 0.004539348442012083,
+        "Greece": 0.004351704168859092
     }
 }
