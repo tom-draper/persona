@@ -51,12 +51,15 @@ https://persona-api.vercel.app/v1/locations/
 $ curl https://persona-api.vercel.app/v1/locations/
 
 [
+  "australia",
+  "canada",
   "united_kingdom",
   "england",
   "london",
   "northern_ireland",
   "scotland",
-  "wales"
+  "wales",
+  "global"
 ]
 
 ```
@@ -79,7 +82,8 @@ $ curl https://persona-api.vercel.app/v1/england/features/
   "religion",
   "ethnicity",
   "language",
-  "location"
+  "location",
+  "place of birth"
 ]
 ```
 
@@ -116,16 +120,16 @@ python src/main.py <location> -n <count>
 ### Example
 
 ```bash
-python src/main.py england
+python src/main.py united_kingdom
 
-> England
+> United Kingdom
 Age: 48
 Sex: Female
 Sexuality: Heterosexual
 Ethnicity: British, White
 Religion: No religion
 Language: English
-Location: Blackburn with Darwen, North West
+Location: Blackburn with Darwen, North West, England
 ```
 
 ## Data

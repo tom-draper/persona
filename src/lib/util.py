@@ -9,7 +9,7 @@ alias = {
 }
 
 
-def format_location(location: str) -> str:
+def clean_location(location: str) -> str:
     location = location.replace('-', '_').lower()
     if location in alias:
         location = alias[location]
