@@ -9,12 +9,12 @@
 
 ## Countries
 
-- [x] `england`
-- [x] `wales`
-- [x] `scotland`
-- [x] `northern_ireland`
-- [ ] `france`
-- [ ] `germany`
+- [X] `england`
+- [X] `wales`
+- [X] `scotland`
+- [X] `northern_ireland`
+- [X] `france`
+- [X] `germany`
 - [ ] `spain`
 - [ ] `italy`
 - [ ] `ireland`

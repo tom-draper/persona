@@ -53,6 +53,7 @@ $ curl https://persona-api.vercel.app/v1/locations/
 [
   "australia",
   "canada",
+  "germany",
   "global",
   "united_kingdom",
   "england",
@@ -160,4 +161,4 @@ To contribute:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new pull request
 
-When contributing data, keep content, directory structure and JSON formatting consistent and remember to note your source (including URL) in `data/.../<location>/README.md`. Sources should be from reputable organisations conducting census research. Do not worry if percentages do not sum to 1 exactly, all feature probabilities are normalised during generation.
+When contributing data, keep content, directory structure and JSON formatting consistent and remember to note your source (including URL) in `data/.../<location>/README.md`. Sources should be from reputable organisations conducting census research. Avoid "Other" as a feature attribute. Do not worry if percentages do not sum to 1 exactly, all feature probabilities are normalised during generation.
