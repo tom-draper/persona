@@ -1,7 +1,9 @@
-import os
 import json
+import os
 import re
+
 import matplotlib.pyplot as plt
+from colorama import Fore
 
 
 def flatten_dict(d: dict, parent_key: str = '', sep: str = ', ') -> dict:
@@ -26,7 +28,7 @@ def gen_composite_graph(path: str, data: dict) -> list[dict]:
     # Create plot
     fig = plt.figure(figsize=(12, 8))
     plt.bar(x, y, align='center', alpha=0.5)
-    plt.xticks(x, labels, rotation=-45, fontsize=9)
+    plt.xticks(x, labels, rotation=-60, fontsize=9)
     plt.ylabel('Probability')
     plt.title(location.title())
     plt.tight_layout()
@@ -37,7 +39,7 @@ def gen_composite_graph(path: str, data: dict) -> list[dict]:
         os.makedirs(img_dir)
 
     img_path = os.path.join(img_dir, location)
-    print(img_path + '.png')
+    print(f'    {img_path}.png')
 
     plt.savefig(img_path)
     plt.close(fig)
@@ -58,7 +60,7 @@ def gen_graphs(path: str, data: dict) -> list[dict]:
         # Create plot
         fig = plt.figure(figsize=(12, 8))
         plt.bar(x, y, align='center', alpha=0.5)
-        plt.xticks(x, labels, rotation=-45, fontsize=9)
+        plt.xticks(x, labels, rotation=-60, fontsize=9)
         plt.ylabel('Probability')
         plt.title(feature.title())
         plt.tight_layout()
@@ -69,7 +71,7 @@ def gen_graphs(path: str, data: dict) -> list[dict]:
             os.makedirs(img_dir)
 
         img_path = os.path.join(img_dir, feature)
-        print(f'Generating {img_path}.png...')
+        print(f'    {img_path}.png')
 
         plt.savefig(img_path)
         plt.close(fig)
@@ -89,7 +91,7 @@ def printed_list_format(lst: list[str]):
     return ''
 
 
-def build_composite_readme_content(path: str, filename: str, data: dict) -> str:
+def build_composite_readme_content(path: str, data: dict) -> str:
     _, location = os.path.split(path)
 
     title = location.replace('_', ' ').title()
@@ -134,13 +136,14 @@ def gen_data_readme(path: str, target_file: str):
 
         readme_file_path = os.path.join(path, 'README.md')
 
+        print(Fore.YELLOW + f'Generating {readme_file_path}...' + Fore.WHITE)
+        
         if target_file == 'composite.json':
-            readme = build_composite_readme_content(path, target_file, data)
+            readme = build_composite_readme_content(path, data)
         else:
             sources = get_sources(readme_file_path)
             readme = build_readme_content(path, target_file, data, sources)
 
-        print(f'Generating {readme_file_path}...')
         with open(readme_file_path, 'w') as f:
             f.write(readme)
     except json.JSONDecodeError:

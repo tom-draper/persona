@@ -3,7 +3,7 @@ from typing import Union
 
 from colorama import Fore
 
-from lib.util import all_features, format_location
+from lib.util import all_features, clean_location
 from lib.generate import gen_samples
 
 
@@ -35,17 +35,22 @@ def get_enabled_features() -> Union[set[str], None]:
     return enabled_features
 
 
+def format_location(location: str) -> str:
+    # Format location for display
+    return location.replace('_', ' ').title()
+
+
 def run():
     if len(sys.argv) < 2:
         return
 
     # Collect arguments
-    target = format_location(sys.argv[1])
+    target = clean_location(sys.argv[1])
     enabled_features = get_enabled_features()
     N = get_count()
 
     # Generate samples
-    print(Fore.CYAN + '> ' + target.title() + Fore.WHITE)
+    print(Fore.CYAN + '> ' + format_location(target) + Fore.WHITE)
     samples = gen_samples(target, enabled_features, N)
     pprint(samples)
 
