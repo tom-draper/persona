@@ -4,7 +4,8 @@ all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
 alias = {
     'uk': 'united_kingdom',
     'usa': 'united_states',
-    'uae': 'united_arab_emirates'
+    'uae': 'united_arab_emirates',
+    'world': 'global',
 }
 
 

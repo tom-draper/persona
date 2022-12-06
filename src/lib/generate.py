@@ -129,20 +129,20 @@ def gen_api_samples(
         N: int - The number of personas to generate from the given target 
             location. Defaults to 1.
     """
-    # Check if target is a composite of real location targets (e.g. uk, usa)
+    # Check if target is a composite of other location targets (e.g. uk, usa)
     composite = data[location]['composite']
-    original_location = location  # Copy only required if composite location
+    target = location  # Copy only required if composite location
 
     samples = []
     for _ in range(N):
         if composite:
-            location = _select_sublocation(data[original_location]['data'])
+            target = _select_sublocation(data[location]['data'])
 
-        if location in data:
-            sample = gen_sample(data[location]['data'], enabled_features)
+        if target in data:
+            sample = gen_sample(data[target]['data'], enabled_features)
             if composite:
                 # Append the selected sublocation
-                sample['location'] += f', {location.title()}'
+                sample['location'] += f', {target.title()}'
             samples.append(sample)
         else:
             print('Location not found')
@@ -174,7 +174,7 @@ def gen_samples(
     """
     correct_working_dir()
     
-    # Check if target is a composite of real location targets (e.g. uk, usa)
+    # Check if target is a composite of other location targets (e.g. uk, usa)
     composite_path = get_composite_path(location)
     composite = composite_path is not None
 

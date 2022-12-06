@@ -19,6 +19,27 @@
 - [ ] `china`
 - [ ] `india`
 - [ ] `nigeria`
+- [ ] `indonesia`
+- [ ] `pakistan`
+- [ ] `bangladesh`
+- [ ] `japan`
+- [ ] `philippines`
+- [ ] `ethiopia`
+- [ ] `egypt`
+- [ ] `vietnam`
+- [ ] `iran`
+- [ ] `turkey`
+- [ ] `thailand`
+- [ ] `south africa`
+- [ ] `south korea`
+- [ ] `ukraine`
+- [ ] `poland`
+- [ ] `morocco`
+- [ ] `greece`
+- [ ] `norway`
+- [ ] `finland`
+- [ ] `sweden`
+- [ ] `new zealand`
 
 ## US States
 
@@ -87,3 +108,9 @@ A random sub-location is selected, weighted by population.
 - [ ] `paris`
 - [ ] `berlin`
 - [ ] `madrid`
+
+## Global
+
+Currently only picks a random country, weighted by population, and returns that location. Eventually, with more countries added, a persona from the chosen country should be generated.
+
+- [X] `global`
