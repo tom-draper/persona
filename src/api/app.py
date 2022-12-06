@@ -3,9 +3,9 @@ from os import getenv
 from api_analytics.fastapi import Analytics
 from fastapi import FastAPI, HTTPException
 
-from api.handler import get_features, load_location_data
+from src.api.handler import get_features, load_location_data
 from src.lib.generate import gen_api_samples
-from lib.format import clean_location
+from src.lib.format import clean_location
 
 app = FastAPI()
 
