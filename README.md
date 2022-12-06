@@ -3,7 +3,7 @@
 A tool for probabilistically generating random character profiles based from a given location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative, inclusive and realistic characters for stories.
 
 <p align="center">
-	<img width=300 src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
+	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
 </p>
 
 ## REST API
@@ -53,6 +53,7 @@ $ curl https://persona-api.vercel.app/v1/locations/
 [
   "australia",
   "canada",
+  "germany",
   "global",
   "united_kingdom",
   "england",
@@ -87,7 +88,7 @@ $ curl https://persona-api.vercel.app/v1/england/features/
     "ethnicity",
     "language",
     "location"
-]
+  ]
 }
 ```
 
@@ -160,4 +161,4 @@ To contribute:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new pull request
 
-When contributing data, keep content, directory structure and JSON formatting consistent and remember to note your source (including URL) in `data/.../<location>/README.md`. Sources should be from reputable organisations conducting census research. Do not worry if percentages do not sum to 1 exactly, all feature probabilities are normalised during generation.
+When contributing data, keep content, directory structure and JSON formatting consistent and remember to note your source (including URL) in `data/.../<location>/README.md`. Sources should be from reputable organisations conducting census research. Avoid "Other" as a feature attribute. Do not worry if percentages do not sum to 1 exactly, all feature probabilities are normalised during generation.

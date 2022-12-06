@@ -28,7 +28,6 @@
         "Heterosexual": 0.933,
         "Homosexual": 0.018,
         "Bisexual": 0.013,
-        "Other": 0.006,
         "Unsure": 0.029
     },
     "ethnicity": {
@@ -42,17 +41,14 @@
             "Pakistani": 0.008,
             "Bangladeshi": 0.001,
             "Chinese": 0.005,
-            "Filipino": 0.0023,
-            "Other": 0.0028
+            "Filipino": 0.0023
         },
         "Black": {
             "Caribbean": 0.001,
-            "African": 0.0042,
-            "Other": 0.0016
+            "African": 0.0042
         },
         "Mixed": 0.0076,
-        "Arab": 0.001,
-        "Other": 0.0019
+        "Arab": 0.001
     },
     "religion": {
         "Roman Catholic": 0.423,

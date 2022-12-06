@@ -48,11 +48,11 @@
     "religion": {
         "Christian": 0.4066,
         "No religion": 0.2705,
-        "Muslim": 0.1499,
-        "Hindu": 0.0515,
-        "Jewish": 0.0165,
-        "Sikh": 0.0099,
-        "Buddhist": 0.0088
+        "Islam": 0.1499,
+        "Hinduism": 0.0515,
+        "Judaism": 0.0165,
+        "Sikhism": 0.0099,
+        "Buddhism": 0.0088
     },
     "place of birth": {
         "United Kingdom": 0.7115114086069384,

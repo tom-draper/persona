@@ -28,39 +28,33 @@
         "Heterosexual": 0.933,
         "Homosexual": 0.018,
         "Bisexual": 0.013,
-        "Other": 0.006,
         "Unsure": 0.029
     },
     "ethnicity": {
         "White": {
             "British": 0.798,
             "Irish": 0.01,
-            "Gypsy": 0.001,
-            "Other": 0.046
+            "Gypsy": 0.001
         },
         "Asian": {
             "Indian": 0.026,
             "Pakistani": 0.021,
             "Bangladeshi": 0.008,
-            "Chinese": 0.007,
-            "Other": 0.016
+            "Chinese": 0.007
         },
         "Black": {
             "Caribbean": 0.011,
-            "African": 0.018,
-            "Other": 0.003
+            "African": 0.018
         },
-        "Arab": 0.004,
-        "Other": 0.006
+        "Arab": 0.004
     },
     "religion": {
-        "Christian": 0.5938,
-        "Muslim": 0.0502,
-        "Hindu": 0.0152,
-        "Sikh": 0.0079,
-        "Jewish": 0.0049,
-        "Buddhist": 0.0045,
-        "Other religion": 0.0043,
+        "Christianity": 0.5938,
+        "Islam": 0.0502,
+        "Hinduism": 0.0152,
+        "Sikhism": 0.0079,
+        "Judaism": 0.0049,
+        "Buddhism": 0.0045,
         "No religion": 0.3192
     },
     "language": {
@@ -85,8 +79,7 @@
         "Romanian": 0.0013,
         "Russian": 0.0013,
         "Welsh": 0.0002,
-        "Cornish": 0.0,
-        "Other": 0.0237
+        "Cornish": 0.0
     },
     "location": {
         "North East": {
