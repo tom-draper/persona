@@ -1,7 +1,6 @@
 import os
 import json
 
-
 def load_location_data() -> dict[dict]:
     data = {}
     for _dir in os.walk('data'):
@@ -21,10 +20,14 @@ def load_location_data() -> dict[dict]:
     return data
 
 
+def clean_location(location: str) -> str:
+    return location.replace(' ', '_').lower()
+
+
 def get_features(location: str, data: dict[dict]) -> list[str]:
     if location == 'global':
         return []
     elif data[location]['composite']:
-        return {subloc: list(data[subloc]['data'].keys()) for subloc in data[location]['data']}
+        return {clean_location(subloc): list(data[clean_location(subloc)]['data'].keys()) for subloc in data[location]['data']}
     else:
         return {location: list(data[location]['data'].keys())}
