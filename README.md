@@ -147,7 +147,7 @@ The full list of locations currently available can be found [here](data/README.m
 
 ## Limitations
 
-Personas generated are basic approximations. Features generated for a single persona are generated under the assumption that each feature is independent from one another. This naive approach is not ideal, as, for example, knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations is exponentially harder to achieve. As a result, very occasionally personas will be generated that have a combination of features that may seem extremely unlikely. The fewer feature included in the persona, the less likely this is to occur.
+Personas generated are basic <b>approximations</b>. Character features are generated under the assumption that each feature is independent from one another. This naive approach is not ideal; knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations is exponentially harder to achieve. As a result, very occasionally personas will be generated that have a combination of features that may seem extremely unlikely. The fewer features included in the persona, the less likely this is to occur.
 
 ## Contributions
 
