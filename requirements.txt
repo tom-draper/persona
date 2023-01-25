@@ -2,4 +2,4 @@ colorama==0.4.4
 numpy==1.22.3
 fastapi==0.87.0
 uvicorn==0.19.0
-api-analytics==1.0.16
+api-analytics==1.0.19
