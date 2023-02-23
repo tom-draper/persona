@@ -1,5 +1,7 @@
 # Persona
 
+**Make your characters from a known location more realistic.** 
+
 A REST API and command-line tool for probabilistically generating random character profiles from a given input location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative and realistic characters for stories.
 
 <p align="center">
