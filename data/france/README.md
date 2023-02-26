@@ -1,5 +1,5 @@
 # France
-1 features location.
+**1 features:** location.
 
 ## Location
 

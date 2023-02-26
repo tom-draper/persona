@@ -1,5 +1,5 @@
 # Australia
-6 features location, age, sex, religion, language, place of birth.
+**6 features:** location, age, sex, religion, language and place of birth.
 
 ## Location
 

@@ -1,5 +1,5 @@
 # London
-4 features ethnicity, language, religion, place of birth.
+**4 features:** ethnicity, language, religion and place of birth.
 
 ## Ethnicity
 

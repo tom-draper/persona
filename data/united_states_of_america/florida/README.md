@@ -1,5 +1,5 @@
 # Florida
-2 features religion, language.
+**2 features:** religion and language.
 
 ## Religion
 

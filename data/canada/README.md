@@ -1,5 +1,5 @@
 # Canada
-3 features age, relationship, language.
+**3 features:** age, relationship and language.
 
 ## Age
 

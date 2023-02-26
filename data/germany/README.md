@@ -1,5 +1,5 @@
 # Germany
-3 features location, religion, language.
+**3 features:** location, religion and language.
 
 ## Location
 

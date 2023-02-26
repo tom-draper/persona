@@ -1,5 +1,5 @@
 # Northern Ireland
-7 features age, sex, sexuality, ethnicity, religion, language, location.
+**7 features:** age, sex, sexuality, ethnicity, religion, language and location.
 
 ## Age
 
