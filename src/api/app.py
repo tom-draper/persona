@@ -22,9 +22,9 @@ async def test():
         "name": "Persona API (v1)",
         "description": "A REST API for probabilistically generating character profiles using real-world demographic data.",
         "github": "https://github.com/tom-draper/persona",
-        "countries": countries(),
+        "countries": await countries(),
         "example": "https://persona-api.vercel.app/v1/united_kingdom",
-        "example_response": gen_personas("united_kingdom")
+        "example_response": await gen_personas("united_kingdom")
     }
 
 
