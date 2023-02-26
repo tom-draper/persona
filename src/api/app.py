@@ -16,8 +16,16 @@ data = load_location_data()
 
 
 @app.get("/v1/")
+@app.get("/v1/help")
 async def test():
-    return "Persona v1 - Live"
+    return {
+        "name": "Persona API (v1)",
+        "description": "A REST API for probabilistically generating character profiles using real-world demographic data.",
+        "github": "https://github.com/tom-draper/persona",
+        "countries": countries(),
+        "example": "https://persona-api.vercel.app/v1/united_kingdom",
+        "example_response": gen_personas("united_kingdom")
+    }
 
 
 @app.get("/v1/countries/")
