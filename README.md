@@ -1,5 +1,7 @@
 # Persona
 
+**Make your characters from a known location more representative & realistic.** 
+
 A REST API and command-line tool for probabilistically generating random character profiles from a given input location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative and realistic characters for stories.
 
 <p align="center">
@@ -147,7 +149,7 @@ The full list of locations currently available can be found [here](data/README.m
 
 ## Limitations
 
-Personas generated are basic <b>approximations</b>. Character features are generated under the assumption that each feature is independent from one another. This naive approach is not ideal; knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations is exponentially harder to achieve. As a result, very occasionally personas will be generated that have a combination of features that may seem extremely unlikely. The fewer features included in the persona, the less likely this is to occur.
+Personas generated are basic <b>approximations</b>. Character features are generated under the assumption that each feature is independent from one another. This naive approach is not ideal; knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations is exponentially harder to achieve. As a result, generated characters should be taken with a pinch of salt, and very occasionally personas will be generated that have a combination of features that may seem extremely unlikely. Obviously, the fewer features included in the persona, the less likely this is to occur.
 
 ## Contributions
 
