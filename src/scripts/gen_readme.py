@@ -107,7 +107,7 @@ def build_composite_readme_content(path: str, data: dict) -> str:
     return content
 
 
-def build_readme_content(path: str, filename: str, data: dict, sources: str) -> str:
+def build_readme_content(path: str, data: dict, filename: str) -> str:
     title = filename.replace('.json', '').replace('_', ' ').title()
     graphs = gen_graphs(path, data)
     content = f'# {title}'
@@ -115,6 +115,8 @@ def build_readme_content(path: str, filename: str, data: dict, sources: str) -> 
     for feature in graphs:
         content += f'\n\n## {feature.title()}\n\n![{feature.title()}](img/{feature}.png)'
 
+    readme_file_path = os.path.join(path, 'README.md')
+    sources = get_sources(readme_file_path)
     content += '\n\n' + sources
     return content
 
@@ -137,12 +139,11 @@ def gen_data_readme(path: str, target_file: str):
         readme_file_path = os.path.join(path, 'README.md')
 
         print(Fore.YELLOW + f'Generating {readme_file_path}...' + Fore.WHITE)
-        
+
         if target_file == 'composite.json':
             readme = build_composite_readme_content(path, data)
         else:
-            sources = get_sources(readme_file_path)
-            readme = build_readme_content(path, target_file, data, sources)
+            readme = build_readme_content(path, data, target_file)
 
         with open(readme_file_path, 'w') as f:
             f.write(readme)
