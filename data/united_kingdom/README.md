@@ -2,4 +2,4 @@
 
 Composite: Made up of England, Scotland, Wales, and Northern Ireland.
 
-\![{title}](img/{location}.png)
+\![United Kingdom](img/united_kingdom.png)

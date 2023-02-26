@@ -1,4 +1,5 @@
 # Texas
+2 features religion, language.
 
 ## Religion
 
