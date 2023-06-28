@@ -1,4 +1,5 @@
 # California
+**2 features:** religion and language.
 
 ## Religion
 

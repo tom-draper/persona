@@ -1,4 +1,5 @@
 # Wales
+**8 features:** age, sex, sexuality, ethnicity, religion, language, relationship and location.
 
 ## Age
 

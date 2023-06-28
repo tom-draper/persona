@@ -1,4 +1,5 @@
 # Global
+**1 features:** location.
 
 ## Location
 

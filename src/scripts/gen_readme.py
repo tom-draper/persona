@@ -103,7 +103,7 @@ def build_composite_readme_content(path: str, data: dict) -> str:
     locations = list(data.keys())
     content += printed_list_format(locations)
 
-    content += '.\n\n\![{title}](img/{location}.png)'
+    content += f'.\n\n\![{title}](img/{location}.png)'
     return content
 
 
@@ -112,6 +112,14 @@ def build_readme_content(path: str, data: dict, filename: str) -> str:
     graphs = gen_graphs(path, data)
     content = f'# {title}'
 
+    content += f'\n**{len(graphs)} features:** '
+    for i, feature in enumerate(graphs):
+        if i == len(graphs) - 1:
+            content += f'{feature.lower()}.'
+        elif i == len(graphs) - 2:
+            content += f'{feature.lower()} and '
+        else:
+            content += f'{feature.lower()}, '
     for feature in graphs:
         content += f'\n\n## {feature.title()}\n\n![{feature.title()}](img/{feature}.png)'
 

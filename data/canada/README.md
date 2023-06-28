@@ -1,4 +1,5 @@
 # Canada
+**3 features:** age, relationship and language.
 
 ## Age
 
