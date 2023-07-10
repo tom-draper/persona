@@ -17,7 +17,7 @@ data = load_location_data()
 
 @app.get("/v1/")
 @app.get("/v1/help")
-async def test():
+async def test() -> dict[str, str | dict]:
     return {
         "name": "Persona API (v1)",
         "description": "A REST API for probabilistically generating character profiles using real-world demographic data.",
@@ -30,12 +30,12 @@ async def test():
 
 @app.get("/v1/countries/")
 @app.get("/v1/locations/")
-async def countries():
+async def countries() -> list[dict]:
     return list(data.keys())
 
 
 @app.get("/v1/{location}/features/")
-async def features(location: str):
+async def features(location: str) -> list[str]:
     location = clean_location(location)
     if location not in data:
         raise HTTPException(status_code=404, detail="Location not found")
@@ -45,7 +45,7 @@ async def features(location: str):
 
 
 @app.get("/v1/{location}/")
-async def gen_personas(location: str, count: int = 1):
+async def gen_personas(location: str, count: int = 1) -> list[dict]:
     location = clean_location(location)
     if location not in data:
         raise HTTPException(status_code=404, detail="Location not found")
