@@ -2,7 +2,7 @@
 
 **Make your characters more representative and realistic.** 
 
-A REST API and command-line tool for probabilistically generating random character profiles from a given input location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative and realistic characters for stories.
+A REST API and CLI tool for probabilistically generating random character profiles from a given input location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative and realistic characters for stories.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
@@ -141,7 +141,7 @@ Location: Blackburn with Darwen, North West, England
 
 ## Data
 
-The demographic data is carefully sourced from reputable census data for each location. Sources for each location can be found alongside the data in each `README.md` in `/data`.
+The demographic data is carefully sourced from reputable census data for each location. Sources for each location can be found alongside the data in each `README.md` in `/data`. The data is stored in a raw JSON format to make it as transparent, accessible and modifiable as possible.
 
 ### Locations
 
@@ -150,6 +150,10 @@ The full list of locations currently available can be found [here](data/README.m
 ## Limitations
 
 Personas generated are basic <b>approximations</b>. Character features are naively generated under the assumption that each feature is independent from one another. This assumption is not true; knowing a person's age could help you better predict their religion. However, the sourcing of accurate and large scale data necessary for the joint probabilities for all feature combinations is exponentially harder to achieve. As a result, generated characters should be taken with a pinch of salt, and very occasionally personas will be generated that have a combination of features that may seem extremely unlikely or even impossible. Obviously, the fewer features included in the persona, the easier it is to approximate, and the less likely this is to occur.
+
+Demographic data can change quite rapidly, and surveys take a long time to conduct, so the data used to generate profiles will always be somewhat outdated. Although, I still believe using outdated data in this way is an improvement over manual character creation in terms of representation as it will bypass any biases or misconceptions you may hold.
+
+With this aim, this project is only as good as its data. There will certainly be minorities that make up a tiny proportion of the population that are missing from survey data (or grouped into an 'other' category) and therefore cannot surface during character generation. Improvement to data is an imperative and continuous goal for this project.
 
 ## Contributions
 
