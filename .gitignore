@@ -1,6 +1,8 @@
 tempCodeRunnerFile.py
 .env
 __pycache__
+*.egg-info
+.venv
 src/scripts/*
 
 !src/scripts/gen_readme.py
