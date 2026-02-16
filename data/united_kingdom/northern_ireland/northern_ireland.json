@@ -1,4 +1,14 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "Census 2021 main statistics for Northern Ireland (phase 1), NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/statistics/census/2021-census"
+            }
+        ]
+    },
     "age": {
         "0-4": 0.04991150442477876,
         "5-9": 0.05660498793242156,

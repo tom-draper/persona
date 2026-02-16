@@ -1,4 +1,13 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "United Nations World Population Prospects",
+                "url": "https://population.un.org/wpp/"
+            }
+        ]
+    },
     "location": {
         "China": 0.180644647222055088064962546923,
         "India": 0.175911261286703868300662634283,

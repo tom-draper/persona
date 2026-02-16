@@ -1,4 +1,13 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "INSEE - Institut National de la Statistique et des Études Économiques",
+                "url": "https://www.insee.fr/fr/statistiques/3303318?sommaire=3353488"
+            }
+        ]
+    },
     "location": {
         "Paris": 0.3273349741913152,
         "Lyon": 0.05985638779542032,

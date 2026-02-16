@@ -1,4 +1,18 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "National, state and territory population, Australian Bureau of Statistics",
+                "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/sep-2020"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Estimated resident population by country of birth, Australian Bureau of Statistics",
+                "url": "https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21"
+            }
+        ]
+    },
     "location": {
         "New South Wales": 0.32,
         "Victoria": 0.26,

@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/main.py
+src/api/app.py
+src/api/handler.py
+src/lib/format.py
+src/lib/generate.py
+src/persona.egg-info/PKG-INFO
+src/persona.egg-info/SOURCES.txt
+src/persona.egg-info/dependency_links.txt
+src/persona.egg-info/entry_points.txt
+src/persona.egg-info/requires.txt
+src/persona.egg-info/top_level.txt
+src/scripts/gen_readme.py
+tests/test_generate.py

@@ -1,9 +1,13 @@
-import os
 import json
+import os
+from pathlib import Path
 
-def load_location_data() -> dict[dict]:
+DATA_DIR = Path(__file__).parent.parent.parent / 'data'
+
+
+def load_location_data() -> dict:
     data = {}
-    for _dir in os.walk('data'):
+    for _dir in os.walk(str(DATA_DIR)):
         files = _dir[2]
         _, location = os.path.split(_dir[0])
         for f in files:
@@ -24,10 +28,21 @@ def clean_location(location: str) -> str:
     return location.replace(' ', '_').lower()
 
 
-def get_features(location: str, data: dict[dict]) -> list[str]:
+def get_features(location: str, data: dict) -> dict:
     if location == 'global':
-        return []
+        return {}
     elif data[location]['composite']:
-        return {clean_location(subloc): list(data[clean_location(subloc)]['data'].keys()) for subloc in data[location]['data']}
+        return {
+            clean_location(subloc): [
+                k for k in data[clean_location(subloc)]['data'].keys()
+                if k != '_meta'
+            ]
+            for subloc in data[location]['data']
+        }
     else:
-        return {location: list(data[location]['data'].keys())}
+        return {
+            location: [
+                k for k in data[location]['data'].keys()
+                if k != '_meta'
+            ]
+        }

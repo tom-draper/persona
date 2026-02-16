@@ -1,4 +1,26 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location"],
+                "name": "Population and household estimates, England and Wales: Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Sexual orientation, UK: 2020, ONS",
+                "year": 2020,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
+            },
+            {
+                "features": ["ethnicity", "religion", "language"],
+                "name": "Religion in England and Wales 2011, ONS",
+                "year": 2011,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religioninenglandandwales2011/2012-12-11"
+            }
+        ]
+    },
     "age": {
         "0-4": 0.054470010515172654,
         "5-9": 0.0592779581446562,

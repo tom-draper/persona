@@ -1,4 +1,13 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "sexuality", "ethnicity", "religion", "language", "location"],
+                "name": "Demography of Scotland, Scotland's Census 2011, National Records of Scotland",
+                "url": "https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/"
+            }
+        ]
+    },
     "age": {
         "0-4": 0.0552934515946405,
         "5-9": 0.05095301000188715,

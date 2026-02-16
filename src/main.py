@@ -1,16 +1,18 @@
-import sys
+import argparse
 from typing import Union
 
 from colorama import Fore
 
-from lib.format import all_features, clean_location
+from lib.format import clean_location
 from lib.generate import gen_samples
 
-all_features = {'age', 'sex', 'religion', 'sexuality', 'ethnicity', 'religion',
-                'language', 'location', 'relationship', 'place of birth'}
+ALL_FEATURES = {
+    'age', 'sex', 'religion', 'sexuality', 'ethnicity',
+    'language', 'location', 'relationship', 'place of birth',
+}
 
 
-def pprint(data: dict[str, float]):
+def pprint(data: list[dict]):
     for i, sample in enumerate(data):
         if len(data) > 1:
             print(Fore.CYAN + f'Persona {i+1}')
@@ -20,39 +22,45 @@ def pprint(data: dict[str, float]):
             print()
 
 
-def get_count() -> int:
-    count = 1
-    for i, arg in enumerate(sys.argv):
-        if arg == '-n' or arg == '-N' and i < len(sys.argv) - 1:
-            count = int(sys.argv[i+1])
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description='Generate realistic personas from real-world demographic data.',
+        epilog='Example: python main.py england -n 3 --age --sex',
+    )
+    parser.add_argument(
+        'target',
+        help='Target location (e.g. england, united_kingdom, australia)',
+    )
+    parser.add_argument(
+        '-n', type=int, default=1, metavar='COUNT',
+        help='Number of personas to generate (default: 1)',
+    )
+    for feature in sorted(ALL_FEATURES):
+        flag = '--' + feature.replace(' ', '-')
+        parser.add_argument(flag, action='store_true', help=f'Include {feature}')
+    return parser
 
-    return count
 
-
-def get_enabled_features() -> Union[set[str], None]:
-    enabled_features = None
-    for arg in sys.argv:
-        arg = arg.replace('-', '')
-        if arg in all_features:
-            enabled_features.add(arg)
-    return enabled_features
+def get_enabled_features(args: argparse.Namespace) -> Union[set[str], None]:
+    enabled = set()
+    for feature in ALL_FEATURES:
+        if getattr(args, feature.replace(' ', '_'), False):
+            enabled.add(feature)
+    return enabled if enabled else None
 
 
 def format_location(location: str) -> str:
-    # Format location for display
     return location.replace('_', ' ').title()
 
 
 def run():
-    if len(sys.argv) < 2:
-        return
+    parser = build_parser()
+    args = parser.parse_args()
 
-    # Collect arguments
-    target = clean_location(sys.argv[1])
-    enabled_features = get_enabled_features()
-    N = get_count()
+    target = clean_location(args.target)
+    enabled_features = get_enabled_features(args)
+    N = args.n
 
-    # Generate samples
     print(Fore.CYAN + '> ' + format_location(target) + Fore.WHITE)
     samples = gen_samples(target, enabled_features, N)
     pprint(samples)

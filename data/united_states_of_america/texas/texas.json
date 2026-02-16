@@ -1,4 +1,18 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["religion"],
+                "name": "Religious Landscape Study - Texas, Pew Research Center",
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/texas/"
+            },
+            {
+                "features": ["language"],
+                "name": "Language Mapper, Modern Language Association",
+                "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+            }
+        ]
+    },
     "religion": {
         "Protestantism": 0.5,
         "Roman Catholicism": 0.23,

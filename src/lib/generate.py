@@ -1,8 +1,11 @@
 import json
 import os
+from pathlib import Path
 from typing import Union
 
 import numpy as np
+
+DATA_DIR = Path(__file__).parent.parent.parent / 'data'
 
 
 def probabilities_from_dict(d: dict[str, float]) -> np.array:
@@ -34,10 +37,11 @@ def select_sublocation(composite_path: str) -> str:
         return _select_sublocation(data)
 
 
-def get_file_path(target: str) -> str:
-    target_file = f'{target.lower().replace(" ", "_")}.json'
+def get_file_path(target: str) -> Union[str, None]:
+    target = target.lower().replace(' ', '_')
+    target_file = f'{target}.json'
     target_path = None
-    for _dir in os.walk('data'):
+    for _dir in os.walk(str(DATA_DIR)):
         files = _dir[2]
         _, cur_dir = os.path.split(_dir[0])
         if cur_dir == target:
@@ -49,10 +53,10 @@ def get_file_path(target: str) -> str:
     return target_path
 
 
-def get_composite_path(target: str) -> str:
+def get_composite_path(target: str) -> Union[str, None]:
     target = target.lower().replace(' ', '_')
     composite_path = None
-    for _dir in os.walk('data'):
+    for _dir in os.walk(str(DATA_DIR)):
         _, cur_dir = os.path.split(_dir[0])
         if cur_dir == target and 'composite.json' in _dir[2]:
             composite_path = os.path.join(_dir[0], 'composite.json')
@@ -70,8 +74,8 @@ def gen_age(age_data: dict[str, float]) -> int:
         # Assume uniform likelihood within age range
         age = np.random.randint(low, high+1)
     elif '+' in age:
-        age = int(age.replace('+', ''))
-        age = np.random.randint(age, age+15)
+        low = int(age.replace('+', ''))
+        age = np.random.randint(low, max(low + 1, 101))  # cap at 100
 
     return int(age)
 
@@ -88,7 +92,7 @@ def collapsed_dict(d: dict, path: list[str], collapsed: list[tuple[list[str], fl
     return collapsed
 
 
-def gen_feature(data: list[tuple[str, float]]) -> Union[str, None]:
+def gen_feature(data: dict) -> str:
     collapsed = collapsed_dict(data, [], [])
     options = [', '.join(reversed(x[0])) for x in collapsed]
     p = probabilities_from_list(collapsed)
@@ -96,14 +100,16 @@ def gen_feature(data: list[tuple[str, float]]) -> Union[str, None]:
     return selected
 
 
-def gen_sample(data: dict[str, float], enabled_features: Union[set[str], None]) -> dict[str, str]:
+def gen_sample(data: dict, enabled_features: Union[set[str], None]) -> dict[str, str]:
     sample = {}
     for feature, _data in data.items():
         feature = feature.lower()
+        if feature == '_meta':
+            continue
         if enabled_features is None or feature in enabled_features:
             if feature == 'age':
                 sample[feature] = gen_age(_data)
-            elif feature != 'relationship' or sample['age'] >= 16:
+            elif feature != 'relationship' or sample.get('age', 16) >= 16:
                 sample[feature] = gen_feature(_data)
 
     return sample
@@ -141,19 +147,15 @@ def gen_api_samples(
         if target in data:
             sample = gen_sample(data[target]['data'], enabled_features)
             if composite:
-                # Append the selected sublocation
-                sample['location'] += f', {target.title()}'
+                if 'location' in sample:
+                    sample['location'] += f', {target.title()}'
+                else:
+                    sample['location'] = target.title()
             samples.append(sample)
         else:
             print('Location not found')
 
     return samples
-
-
-def correct_working_dir():
-    # If not in root folder containing /data, must be in src
-    if not os.path.isdir('data'):
-        os.chdir('../')
 
 
 def gen_samples(
@@ -172,8 +174,6 @@ def gen_samples(
         N: int - The number of personas to generate from the given target 
             location. Defaults to 1.
     """
-    correct_working_dir()
-    
     # Check if target is a composite of other location targets (e.g. uk, usa)
     composite_path = get_composite_path(location)
     composite = composite_path is not None
@@ -181,10 +181,9 @@ def gen_samples(
     samples = []
     cache = {}
     for _ in range(N):
-        if composite:
-            location = select_sublocation(composite_path)
+        target = select_sublocation(composite_path) if composite else location
 
-        if location_path := get_file_path(location):
+        if location_path := get_file_path(target):
             if location_path in cache:  # If already read, take from cache
                 data = cache[location_path]
             else:
@@ -195,8 +194,12 @@ def gen_samples(
 
             sample = gen_sample(data, enabled_features)
             if composite:
-                # Append the selected sublocation
-                sample['location'] += f', {location.title()}'
+                # Append the selected sublocation to location if present,
+                # or set it so the caller always knows which region was chosen
+                if 'location' in sample:
+                    sample['location'] += f', {target.title()}'
+                else:
+                    sample['location'] = target.title()
             samples.append(sample)
         else:
             print('Location not found')

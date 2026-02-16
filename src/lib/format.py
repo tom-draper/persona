@@ -2,7 +2,7 @@
 
 alias = {
     'uk': 'united_kingdom',
-    'usa': 'united_states',
+    'usa': 'united_states_of_america',
     'uae': 'united_arab_emirates',
     'world': 'global',
 }

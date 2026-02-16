@@ -1,4 +1,23 @@
 {
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "Bevölkerung nach Nationalität und Bundesländern, Destatis",
+                "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html"
+            },
+            {
+                "features": ["language"],
+                "name": "Migrationshintergrund, Destatis (Federal Statistical Office)",
+                "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/Publikationen/Downloads-Migration/migrationshintergrund-2010220217004.pdf"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religionszugehörigkeiten 2020, Fowid",
+                "url": "https://fowid.de/meldung/religionszugehoerigkeiten-2020"
+            }
+        ]
+    },
     "location": {
         "North Rhine-Westphalia": 0.21534370889604498,
         "Bavaria": 0.15830663490968286,
