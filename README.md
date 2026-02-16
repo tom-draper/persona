@@ -10,6 +10,14 @@ A REST API and CLI tool for probabilistically generating random character profil
 
 ## REST API
 
+### Running Locally
+
+```bash
+uvicorn persona.api.app:app --reload
+```
+
+The API will be available at `http://localhost:8000`. Interactive docs (Swagger UI) are served at `http://localhost:8000/docs`.
+
 ### Generate Persona
 
 ```
@@ -35,10 +43,26 @@ $ curl https://persona-api.vercel.app/v1/england/
 
 #### Count Query
 
-Multiple personas from the same location can be generated at once by providing a `count` query parameter.
+Multiple personas from the same location can be generated at once by providing a `count` query parameter (max 100).
 
 ```
 https://persona-api.vercel.app/v1/<location>/?count=5
+```
+
+#### Feature Filtering
+
+Limit the response to specific features using the `features` query parameter.
+
+```
+https://persona-api.vercel.app/v1/<location>/?features=age,sex,religion
+```
+
+#### Reproducible Output
+
+Pass a `seed` integer to get the same persona(s) back every time.
+
+```
+https://persona-api.vercel.app/v1/<location>/?seed=42
 ```
 
 ### List Locations
@@ -98,36 +122,68 @@ $ curl https://persona-api.vercel.app/v1/england/features/
 
 ### Installation
 
-Install Python dependencies from `requirements.txt`.
+**With [uv](https://docs.astral.sh/uv/) (recommended):**
 
-```py
-pip install -r requirements.txt
+```bash
+uv tool install .
+```
+
+**With pip:**
+
+```bash
+pip install .
+persona <location>
+```
+
+Or without installing, using a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install .
+persona <location>
 ```
 
 ### Generate Persona
 
-Run `main.py` from the root directory.
-
-```py
-python src/main.py <location>
+```bash
+persona <location>
 ```
 
-The generated persona can be limited to specific features using the feature flags to include.
+Limit to specific features using feature flags:
 
-```py
-python src/main.py <location> --age --location --language
+```bash
+persona <location> --age --sex --language
 ```
 
-Multiple personas can be generated at once using the `-n` flag.
+Generate multiple personas at once with `-n`:
 
-```py
-python src/main.py <location> -n <count>
+```bash
+persona <location> -n <count>
+```
+
+Output as JSON (useful for scripting):
+
+```bash
+persona <location> --json
+```
+
+Use `--seed` for reproducible output:
+
+```bash
+persona <location> --seed 42
+```
+
+List all available locations:
+
+```bash
+persona --list
 ```
 
 ### Example
 
 ```bash
-python src/main.py united_kingdom
+persona united_kingdom
 
 > United Kingdom
 Age: 48
@@ -141,11 +197,11 @@ Location: Blackburn with Darwen, North West, England
 
 ## Data
 
-The demographic data is carefully sourced from reputable census data for each location. Sources for each location can be found alongside the data in each `README.md` in `/data`. The data is stored in a raw JSON format to make it as transparent, accessible and modifiable as possible.
+The demographic data is carefully sourced from reputable census data for each location. Sources for each location can be found alongside the data in each `README.md` in `src/persona/data/`. The data is stored in a raw JSON format to make it as transparent, accessible and modifiable as possible.
 
 ### Locations
 
-The full list of locations currently available can be found [here](data/README.md). It includes countries, groups of locations (e.g. UK, USA), and cities. More locations and features will continue to be added in future.
+The full list of locations currently available can be found [here](src/persona/data/README.md). It includes countries, groups of locations (e.g. UK, USA), and cities. More locations and features will continue to be added in future.
 
 ## Limitations
 

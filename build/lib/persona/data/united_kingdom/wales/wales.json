@@ -1,0 +1,132 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location"],
+                "name": "Population and household estimates, England and Wales: Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Sexual orientation, UK: 2020, ONS",
+                "year": 2020,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
+            },
+            {
+                "features": ["ethnicity", "religion"],
+                "name": "Religion in England and Wales 2011, ONS",
+                "year": 2011,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religioninenglandandwales2011/2012-12-11"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.04991150442477876,
+        "5-9": 0.05660498793242156,
+        "10-14": 0.05882542236524537,
+        "15-19": 0.05654062751407884,
+        "20-24": 0.060402252614641994,
+        "25-29": 0.06001609010458568,
+        "30-34": 0.06313757039420756,
+        "35-39": 0.0599195494770716,
+        "40-44": 0.056444086886564764,
+        "45-49": 0.05988736926790024,
+        "50-55": 0.06941271118262268,
+        "55-59": 0.07166532582461786,
+        "60-64": 0.06423169750603379,
+        "65-69": 0.057152051488334674,
+        "70-74": 0.05834271922767498,
+        "75-79": 0.042316975060337894,
+        "80-84": 0.028672566371681415,
+        "85-89": 0.016991150442477877,
+        "90+": 0.009557522123893806
+    },
+    "sex": {
+        "Male": 0.48946098149637973,
+        "Female": 0.5105711987127917
+    },
+    "sexuality": {
+        "Heterosexual": 0.933,
+        "Homosexual": 0.018,
+        "Bisexual": 0.013,
+        "Unsure": 0.029
+    },
+    "ethnicity": {
+        "White": {
+            "British": 0.932,
+            "Irish": 0.005,
+            "Gypsy": 0.0001
+        },
+        "Asian": {
+            "Indian": 0.006,
+            "Pakistani": 0.004,
+            "Bangladeshi": 0.003,
+            "Chinese": 0.004
+        },
+        "Black": {
+            "Caribbean": 0.001,
+            "African": 0.004
+        },
+        "Mixed": {
+            "White and Caribean": 0.004,
+            "White and African": 0.001,
+            "White and Asian": 0.003
+        },
+        "Arab": 0.003
+    },
+    "religion": {
+        "Christianity": 0.576,
+        "Islam": 0.015,
+        "Hinduism": 0.003,
+        "Sikhism": 0.001,
+        "Judaism": 0.001,
+        "Buddhism": 0.003,
+        "No religion": 0.321
+    },
+    "language": {
+        "English": 0.733,
+        "English/Welsh": 0.146,
+        "Polish": 0.058,
+        "Arabic": 0.023,
+        "Bengali": 0.018,
+        "Tagalog/Filipino": 0.009,
+        "Portuguese": 0.008,
+        "Urdu": 0.008,
+        "French": 0.007,
+        "German": 0.007,
+        "Italian": 0.007
+    },
+    "relationship": {
+        "Married": 0.466,
+        "Single": 0.335,
+        "Divorced": 0.097,
+        "Widowed": 0.079,
+        "Separated": 0.022,
+        "Civil partnership": 0.002
+    },
+    "location": {
+        "Isle of Anglesey": 0.022172164119066775,
+        "Gwynedd": 0.03777956556717619,
+        "Conwy": 0.03694288012872084,
+        "Denbighshire": 0.03082864038616251,
+        "Flintshire": 0.0498793242156074,
+        "Wrexham": 0.04347546259050684,
+        "Powys": 0.04286403861625101,
+        "Ceredigion": 0.023008849557522124,
+        "Pembrokeshire": 0.03971037811745776,
+        "Carmarthenshire": 0.060466613032984715,
+        "Swansea": 0.07674979887369268,
+        "Neath Port Talbot": 0.04579243765084473,
+        "Bridgend": 0.04682220434432824,
+        "Vale of Glamorgan": 0.04241351568785197,
+        "Cardiff": 0.11662107803700723,
+        "Rhondda Cynon Taf": 0.0764923572003218,
+        "Merthyr Tydfil": 0.01892196299275945,
+        "Caerphilly": 0.05660498793242156,
+        "Blaenau Gwent": 0.021528559935639582,
+        "Torfaen": 0.029702333065164923,
+        "Monmouthshire": 0.02992759452936444,
+        "Newport": 0.051359613837489944
+    }
+}

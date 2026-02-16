@@ -2,9 +2,10 @@
 Basic sanity tests for the persona generation logic.
 Run with: pytest
 """
+import numpy as np
 import pytest
 
-from lib.generate import (
+from persona.lib.generate import (
     _parse_age_bucket,
     collapsed_dict,
     gen_age,
@@ -54,25 +55,28 @@ def test_probabilities_from_list_zero_raises():
 # ---------------------------------------------------------------------------
 
 def test_gen_age_range_returns_int_in_bounds():
+    rng = np.random.default_rng()
     age_data = {'25-29': 1.0}
     for _ in range(20):
-        age = gen_age(age_data)
+        age = gen_age(age_data, rng)
         assert isinstance(age, int)
         assert 25 <= age <= 29
 
 
 def test_gen_age_open_ended_capped_at_100():
+    rng = np.random.default_rng()
     age_data = {'65+': 1.0}
     for _ in range(30):
-        age = gen_age(age_data)
+        age = gen_age(age_data, rng)
         assert isinstance(age, int)
         assert 65 <= age <= 100
 
 
 def test_gen_age_high_open_ended_does_not_exceed_100():
+    rng = np.random.default_rng()
     age_data = {'90+': 1.0}
     for _ in range(30):
-        age = gen_age(age_data)
+        age = gen_age(age_data, rng)
         assert 90 <= age <= 100
 
 
@@ -105,17 +109,20 @@ def test_collapsed_dict_deep_nesting():
 # ---------------------------------------------------------------------------
 
 def test_gen_feature_flat():
-    feature = gen_feature({'Male': 0.49, 'Female': 0.51})
+    rng = np.random.default_rng()
+    feature = gen_feature({'Male': 0.49, 'Female': 0.51}, rng)
     assert feature in ('Male', 'Female')
 
 
 def test_gen_feature_nested_joins_path():
-    feature = gen_feature({'White': {'British': 1.0}})
+    rng = np.random.default_rng()
+    feature = gen_feature({'White': {'British': 1.0}}, rng)
     assert feature == 'British, White'
 
 
 def test_gen_feature_returns_native_str():
-    feature = gen_feature({'Male': 0.49, 'Female': 0.51})
+    rng = np.random.default_rng()
+    feature = gen_feature({'Male': 0.49, 'Female': 0.51}, rng)
     assert type(feature) is str
 
 
@@ -174,16 +181,19 @@ def test_gen_samples_invalid_location_raises():
 # ---------------------------------------------------------------------------
 
 def test_parse_age_bucket_range():
-    assert 25 <= _parse_age_bucket('25-29') <= 29
+    rng = np.random.default_rng()
+    assert 25 <= _parse_age_bucket('25-29', rng) <= 29
 
 
 def test_parse_age_bucket_open_ended():
-    age = _parse_age_bucket('65+')
+    rng = np.random.default_rng()
+    age = _parse_age_bucket('65+', rng)
     assert 65 <= age <= 100
 
 
 def test_parse_age_bucket_exact():
-    assert _parse_age_bucket('5') == 5
+    rng = np.random.default_rng()
+    assert _parse_age_bucket('5', rng) == 5
 
 
 # ---------------------------------------------------------------------------
@@ -192,7 +202,7 @@ def test_parse_age_bucket_exact():
 
 @pytest.fixture(scope='module')
 def api_data():
-    from api.handler import load_location_data
+    from persona.api.handler import load_location_data
     return load_location_data()
 
 
@@ -261,7 +271,7 @@ def test_list_locations_excludes_meta():
 # ---------------------------------------------------------------------------
 
 def test_clean_location_aliases():
-    from lib.format import clean_location
+    from persona.lib.format import clean_location
     assert clean_location('uk') == 'united_kingdom'
     assert clean_location('usa') == 'united_states_of_america'
     assert clean_location('united_states') == 'united_states_of_america'
@@ -275,3 +285,31 @@ def test_gen_samples_relationship_only_if_age_16_plus():
         sample = gen_samples('england', N=1)[0]
         if sample.get('age', 16) < 16:
             assert 'relationship' not in sample
+
+
+# ---------------------------------------------------------------------------
+# Seed reproducibility
+# ---------------------------------------------------------------------------
+
+def test_gen_samples_seed_is_reproducible():
+    a = gen_samples('england', N=3, seed=42)
+    b = gen_samples('england', N=3, seed=42)
+    assert a == b
+
+
+def test_gen_samples_different_seeds_differ():
+    a = gen_samples('england', N=1, seed=1)
+    b = gen_samples('england', N=1, seed=2)
+    assert a != b
+
+
+def test_gen_api_samples_seed_is_reproducible(api_data):
+    a = gen_api_samples('england', api_data, N=3, seed=99)
+    b = gen_api_samples('england', api_data, N=3, seed=99)
+    assert a == b
+
+
+def test_gen_api_samples_composite_seed_is_reproducible(api_data):
+    a = gen_api_samples('united_kingdom', api_data, N=5, seed=7)
+    b = gen_api_samples('united_kingdom', api_data, N=5, seed=7)
+    assert a == b

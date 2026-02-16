@@ -1,0 +1,74 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "Bevölkerung nach Nationalität und Bundesländern, Destatis",
+                "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html"
+            },
+            {
+                "features": ["language"],
+                "name": "Migrationshintergrund, Destatis (Federal Statistical Office)",
+                "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/Publikationen/Downloads-Migration/migrationshintergrund-2010220217004.pdf"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religionszugehörigkeiten 2020, Fowid",
+                "url": "https://fowid.de/meldung/religionszugehoerigkeiten-2020"
+            }
+        ]
+    },
+    "location": {
+        "North Rhine-Westphalia": 0.21534370889604498,
+        "Bavaria": 0.15830663490968286,
+        "Baden-Württemberg": 0.1336500045340346,
+        "Lower Saxony": 0.096435708182325,
+        "Hesse": 0.07562751687576327,
+        "Rhineland-Palatinate": 0.04933477759274816,
+        "Saxony": 0.048572101073554634,
+        "Berlin": 0.04418067111497029,
+        "Schleswig-Holstein": 0.035104588668873275,
+        "Brandenburg": 0.03048961662827274,
+        "Saxony-Anhalt": 0.02606112388025324,
+        "Thuringia": 0.025335606261456128,
+        "Hamburg": 0.022272934370005385,
+        "Mecklenburg-Vorpommern": 0.01935626704257586,
+        "Saarland": 0.011801801321246995,
+        "Bremen": 0.008126938648192602
+    },
+    "religion": {
+        "No religion": 0.407,
+        "Roman Catholicism": 0.267,
+        "Evangelical Church": 0.243,
+        "Islam": 0.035,
+        "Orthodox Church": 0.019
+    },
+    "language": {
+        "German": 7.472281185910243e-8,
+        "Albanian": 4.844870594355768e-10,
+        "Arabic": 0.11338860602559557,
+        "Bosnian": 0.018634117670599106,
+        "Bulgarian": 0.01984533531918805,
+        "Chinese": 0.013137052957772372,
+        "Danish": 0.0017702411787069152,
+        "English": 0.07127550009004159,
+        "French": 0.018727288258952104,
+        "Greek": 0.027298982387427694,
+        "Italian": 0.04686480594155676,
+        "Croatian": 0.03680238239943324,
+        "Kurdish": 0.0439765177026139,
+        "Macedonian": 0.006242429419650701,
+        "Dutch": 0.007267305891533652,
+        "Pahto": 0.0028882882389428617,
+        "Persian": 0.028603370624369632,
+        "Polish": 0.0854374295196969,
+        "Portuguese": 0.014068758841302327,
+        "Romanian": 0.05459796477485539,
+        "Russian": 0.14376221782867213,
+        "Serbian": 0.01965899414248206,
+        "Spanish": 0.0271126412107217,
+        "Turkish": 0.16975681197915787,
+        "Hungarian": 0.016863876491892194,
+        "Vietnamese": 0.012019005897536425
+    }
+}

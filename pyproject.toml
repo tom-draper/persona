@@ -17,7 +17,13 @@ dependencies = [
 ]
 
 [project.scripts]
-persona = "main:run"
+persona = "persona.cli:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+persona = ["data/**/*"]
 
 [dependency-groups]
 dev = ["pytest>=8"]
