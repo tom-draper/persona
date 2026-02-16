@@ -5,11 +5,15 @@ Run with: pytest
 import pytest
 
 from lib.generate import (
+    _parse_age_bucket,
     collapsed_dict,
     gen_age,
+    gen_api_samples,
     gen_feature,
     gen_sample,
     gen_samples,
+    list_locations,
+    preprocess_location_data,
     probabilities_from_dict,
     probabilities_from_list,
 )
@@ -77,7 +81,7 @@ def test_gen_age_high_open_ended_does_not_exceed_100():
 # ---------------------------------------------------------------------------
 
 def test_collapsed_dict_flat():
-    result = collapsed_dict({'a': 0.5, 'b': 0.5}, [], [])
+    result = collapsed_dict({'a': 0.5, 'b': 0.5})
     assert len(result) == 2
     keys = [r[0] for r in result]
     assert ['a'] in keys and ['b'] in keys
@@ -85,13 +89,13 @@ def test_collapsed_dict_flat():
 
 def test_collapsed_dict_nested():
     d = {'White': {'British': 0.8, 'Irish': 0.1}, 'Asian': {'Indian': 0.1}}
-    result = collapsed_dict(d, [], [])
+    result = collapsed_dict(d)
     assert len(result) == 3
 
 
 def test_collapsed_dict_deep_nesting():
     d = {'A': {'B': {'C': 1.0}}}
-    result = collapsed_dict(d, [], [])
+    result = collapsed_dict(d)
     assert len(result) == 1
     assert result[0][0] == ['A', 'B', 'C']
 
@@ -108,6 +112,11 @@ def test_gen_feature_flat():
 def test_gen_feature_nested_joins_path():
     feature = gen_feature({'White': {'British': 1.0}})
     assert feature == 'British, White'
+
+
+def test_gen_feature_returns_native_str():
+    feature = gen_feature({'Male': 0.49, 'Female': 0.51})
+    assert type(feature) is str
 
 
 # ---------------------------------------------------------------------------
@@ -155,9 +164,109 @@ def test_gen_samples_uk_composite():
         assert 'age' in sample
 
 
-def test_gen_samples_invalid_location_returns_empty():
-    samples = gen_samples('nonexistent_place', N=1)
-    assert samples == []
+def test_gen_samples_invalid_location_raises():
+    with pytest.raises(ValueError, match="not found"):
+        gen_samples('nonexistent_place', N=1)
+
+
+# ---------------------------------------------------------------------------
+# _parse_age_bucket
+# ---------------------------------------------------------------------------
+
+def test_parse_age_bucket_range():
+    assert 25 <= _parse_age_bucket('25-29') <= 29
+
+
+def test_parse_age_bucket_open_ended():
+    age = _parse_age_bucket('65+')
+    assert 65 <= age <= 100
+
+
+def test_parse_age_bucket_exact():
+    assert _parse_age_bucket('5') == 5
+
+
+# ---------------------------------------------------------------------------
+# preprocess_location_data + gen_api_samples
+# ---------------------------------------------------------------------------
+
+@pytest.fixture(scope='module')
+def api_data():
+    from api.handler import load_location_data
+    return load_location_data()
+
+
+def test_preprocess_adds_processed_key(api_data):
+    assert 'processed' in api_data['england']
+
+
+def test_preprocess_composite_adds_subloc_keys(api_data):
+    assert 'subloc_keys' in api_data['united_kingdom']
+    assert 'subloc_probs' in api_data['united_kingdom']
+
+
+def test_gen_api_samples_england(api_data):
+    samples = gen_api_samples('england', api_data, N=1)
+    assert len(samples) == 1
+    sample = samples[0]
+    assert 'age' in sample
+    assert isinstance(sample['age'], int)
+    assert 0 <= sample['age'] <= 100
+    assert type(sample['sex']) is str
+
+
+def test_gen_api_samples_count(api_data):
+    samples = gen_api_samples('england', api_data, N=5)
+    assert len(samples) == 5
+
+
+def test_gen_api_samples_meta_not_in_output(api_data):
+    samples = gen_api_samples('england', api_data, N=3)
+    for sample in samples:
+        assert '_meta' not in sample
+
+
+def test_gen_api_samples_uk_composite(api_data):
+    samples = gen_api_samples('united_kingdom', api_data, N=3)
+    assert len(samples) == 3
+    for sample in samples:
+        assert 'age' in sample
+        assert 'location' in sample
+
+
+# ---------------------------------------------------------------------------
+# list_locations
+# ---------------------------------------------------------------------------
+
+def test_list_locations_returns_sorted_list():
+    locs = list_locations()
+    assert isinstance(locs, list)
+    assert locs == sorted(locs)
+
+
+def test_list_locations_includes_expected():
+    locs = list_locations()
+    assert 'england' in locs
+    assert 'united_kingdom' in locs  # composite
+    assert 'australia' in locs
+
+
+def test_list_locations_excludes_meta():
+    locs = list_locations()
+    assert '_meta' not in locs
+
+
+# ---------------------------------------------------------------------------
+# clean_location aliases
+# ---------------------------------------------------------------------------
+
+def test_clean_location_aliases():
+    from lib.format import clean_location
+    assert clean_location('uk') == 'united_kingdom'
+    assert clean_location('usa') == 'united_states_of_america'
+    assert clean_location('united_states') == 'united_states_of_america'
+    assert clean_location('United States') == 'united_states_of_america'
+    assert clean_location('world') == 'global'
 
 
 def test_gen_samples_relationship_only_if_age_16_plus():

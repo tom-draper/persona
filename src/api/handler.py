@@ -2,6 +2,9 @@ import json
 import os
 from pathlib import Path
 
+from lib.format import clean_location
+from lib.generate import preprocess_location_data
+
 DATA_DIR = Path(__file__).parent.parent.parent / 'data'
 
 
@@ -21,11 +24,7 @@ def load_location_data() -> dict:
                         }
                 except json.decoder.JSONDecodeError:
                     pass
-    return data
-
-
-def clean_location(location: str) -> str:
-    return location.replace(' ', '_').lower()
+    return preprocess_location_data(data)
 
 
 def get_features(location: str, data: dict) -> dict:

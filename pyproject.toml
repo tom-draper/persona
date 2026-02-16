@@ -21,6 +21,7 @@ persona = "main:run"
 
 [dependency-groups]
 dev = ["pytest>=8"]
+scripts = ["matplotlib>=3.6"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
