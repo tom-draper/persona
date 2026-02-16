@@ -1,6 +1,3 @@
-from os import getenv
-
-from api_analytics.fastapi import Analytics
 from fastapi import FastAPI, HTTPException, Query, Response
 
 from persona.api.handler import get_features, load_location_data
@@ -8,9 +5,6 @@ from persona.lib.generate import gen_api_samples
 from persona.lib.format import clean_location
 
 app = FastAPI()
-
-api_key = getenv('API_KEY')
-app.add_middleware(Analytics, api_key=api_key)
 
 data = load_location_data()
 

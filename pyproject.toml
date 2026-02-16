@@ -10,10 +10,13 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "colorama>=0.4.6",
-    "numpy>=1.24",
-    "fastapi>=0.109.0",
-    "uvicorn>=0.27.0",
-    "fastapi-analytics>=1.1.4",
+    "numpy>=2.0",
+]
+
+[project.optional-dependencies]
+api = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
 ]
 
 [project.scripts]
@@ -26,7 +29,7 @@ where = ["src"]
 persona = ["data/**/*"]
 
 [dependency-groups]
-dev = ["pytest>=8"]
+dev = ["persona[api]", "pytest>=9.0"]
 scripts = ["matplotlib>=3.6"]
 
 [tool.pytest.ini_options]
