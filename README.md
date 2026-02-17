@@ -213,14 +213,10 @@ With this aim, this project is only as good as its data. There will certainly be
 
 ## Contributions
 
-Contributions are very welcome for data or general improvements.
+Contributions, issues and feature requests are welcome.
 
-To contribute:
-
-1. Fork the repo.
+1. Fork it (https://github.com/tom-draper/persona)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am "Add some feature"`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new pull request
-
-When contributing data, keep content, directory structure and JSON formatting consistent and remember to note your source (including URL) in `data/.../<location>/README.md`. Sources should be from reputable organisations conducting census research. Avoid "Other" as a feature attribute. Do not worry if percentages do not sum to 1 exactly, all feature probabilities are normalised during generation.
