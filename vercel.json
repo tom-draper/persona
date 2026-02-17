@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "src/persona/api/app.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "src/persona/api/app.py"
+        }
+    ]
+}
