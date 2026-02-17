@@ -10,14 +10,6 @@ A REST API and CLI tool for probabilistically generating random character profil
 
 ## REST API
 
-### Running Locally
-
-```bash
-uvicorn persona.api.app:app --reload
-```
-
-The API will be available at `http://localhost:8000`. Interactive docs (Swagger UI) are served at `http://localhost:8000/docs`.
-
 ### Generate Persona
 
 ```
