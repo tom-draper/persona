@@ -11,10 +11,6 @@ requires-python = ">=3.10"
 dependencies = [
     "colorama>=0.4.6",
     "numpy>=2.0",
-]
-
-[project.optional-dependencies]
-api = [
     "fastapi>=0.115.0",
     "uvicorn>=0.30.0",
 ]

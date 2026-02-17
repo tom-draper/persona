@@ -1,5 +1,4 @@
 {
-    "installCommand": "uv sync --extra api",
     "builds": [
         {
             "src": "src/persona/api/app.py",
