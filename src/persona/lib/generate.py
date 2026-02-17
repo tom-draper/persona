@@ -23,6 +23,48 @@ def select_sublocation(composite_path: Path, rng: np.random.Generator) -> str:
     return str(rng.choice(keys, p=p)).lower()
 
 
+def resolve_location(location: str, rng: np.random.Generator) -> tuple[str, list[str]]:
+    """
+    Recursively resolve composite locations until a leaf data file is reached.
+
+    Returns (leaf_name, location_labels) where location_labels is an ordered
+    list of sublocation names traversed (innermost first) to append to the
+    persona's location field.
+
+    Examples (with uk→england composite, england→yorkshire composite):
+        resolve_location('united_kingdom', rng) → ('yorkshire', ['yorkshire', 'england'])
+        resolve_location('england', rng)        → ('yorkshire', ['yorkshire'])
+        resolve_location('yorkshire', rng)      → ('yorkshire', [])
+    """
+    composite_path = get_composite_path(location)
+    if composite_path is None:
+        return location, []
+    sublocation = select_sublocation(composite_path, rng)
+    leaf, sub_labels = resolve_location(sublocation, rng)
+    return leaf, sub_labels + [sublocation]
+
+
+def resolve_api_location(
+    location: str,
+    data: dict,
+    rng: np.random.Generator,
+) -> tuple[str, list[str]]:
+    """
+    Recursively resolve composite locations using preloaded data.
+    Returns (leaf_name, location_labels) — see resolve_location for details.
+    """
+    if not data[location]['composite']:
+        return location, []
+    sublocation = str(rng.choice(
+        data[location]['subloc_keys'],
+        p=data[location]['subloc_probs'],
+    ))
+    if sublocation not in data:
+        raise ValueError(f"Sublocation '{sublocation}' not found in preloaded data")
+    leaf, sub_labels = resolve_api_location(sublocation, data, rng)
+    return leaf, sub_labels + [sublocation]
+
+
 @functools.cache
 def list_locations() -> list[str]:
     """Return all location names that have data (regular or composite)."""
@@ -156,20 +198,9 @@ def gen_api_samples(
         seed: int|None - Random seed for reproducible output. Defaults to None.
     """
     rng = np.random.default_rng(seed)
-    composite = data[location]['composite']
-
     samples = []
     for _ in range(N):
-        if composite:
-            target = str(rng.choice(
-                data[location]['subloc_keys'],
-                p=data[location]['subloc_probs'],
-            ))
-        else:
-            target = location
-
-        if target not in data:
-            raise ValueError(f"Sublocation '{target}' not found in preloaded data")
+        target, location_labels = resolve_api_location(location, data, rng)
 
         sample: dict[str, str | int] = {}
         for feature, proc in data[target]['processed'].items():
@@ -181,11 +212,11 @@ def gen_api_samples(
             elif feature not in ('relationship', 'marital status', 'occupation') or sample.get('age', 16) >= 16:
                 sample[feature] = str(rng.choice(proc['options'], p=proc['probs']))
 
-        if composite:
+        for label in location_labels:
             if 'location' in sample:
-                sample['location'] += f', {target.title()}'
+                sample['location'] += f', {label.title()}'
             else:
-                sample['location'] = target.title()
+                sample['location'] = label.title()
 
         samples.append(sample)
 
@@ -210,13 +241,10 @@ def gen_samples(
         seed: int|None - Random seed for reproducible output. Defaults to None.
     """
     rng = np.random.default_rng(seed)
-    composite_path = get_composite_path(location)
-    composite = composite_path is not None
-
     samples = []
     cache: dict[Path, dict] = {}
     for _ in range(N):
-        target = select_sublocation(composite_path, rng) if composite else location
+        target, location_labels = resolve_location(location, rng)
 
         location_path = get_file_path(target)
         if location_path is None:
@@ -229,11 +257,11 @@ def gen_samples(
             cache[location_path] = file_data
 
         sample = gen_sample(file_data, enabled_features, rng)
-        if composite:
+        for label in location_labels:
             if 'location' in sample:
-                sample['location'] += f', {target.title()}'
+                sample['location'] += f', {label.title()}'
             else:
-                sample['location'] = target.title()
+                sample['location'] = label.title()
         samples.append(sample)
 
     return samples
