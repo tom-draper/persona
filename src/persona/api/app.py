@@ -1,4 +1,5 @@
 from contextlib import asynccontextmanager
+from importlib.metadata import version
 
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import RedirectResponse
@@ -49,7 +50,8 @@ async def root():
 async def help(request: Request) -> dict[str, str | list | dict]:
     data = request.app.state.data
     return {
-        "name": "Persona API (v1)",
+        "name": "Persona",
+        "version": version("persona"),
         "description": "A REST API for probabilistically generating character profiles using real-world demographic data.",
         "github": "https://github.com/tom-draper/persona",
         "locations": sorted(data.keys()),
