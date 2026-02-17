@@ -10,6 +10,7 @@ from persona.lib.generate import gen_samples, list_locations
 ALL_FEATURES = {
     'age', 'sex', 'religion', 'sexuality', 'ethnicity',
     'language', 'location', 'relationship', 'place of birth',
+    'occupation', 'education', 'marital status', 'housing tenure', 'country of birth',
 }
 
 

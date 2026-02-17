@@ -18,6 +18,36 @@
                 "name": "Religion in England and Wales 2011, ONS",
                 "year": 2011,
                 "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religioninenglandandwales2011/2012-12-11"
+            },
+            {
+                "features": ["occupation"],
+                "name": "Occupation (TS063), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS063/editions/2021/versions/1"
+            },
+            {
+                "features": ["education"],
+                "name": "Highest level of qualification (TS067), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS067/editions/2021/versions/1"
+            },
+            {
+                "features": ["marital status"],
+                "name": "Legal partnership status (TS002), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS002/editions/2021/versions/3"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Tenure of household (TS054), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS054/editions/2021/versions/1"
+            },
+            {
+                "features": ["country of birth"],
+                "name": "International migration, England and Wales: Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/internationalmigrationenglandandwales/census2021"
             }
         ]
     },
@@ -102,6 +132,53 @@
         "Russian": 0.0013,
         "Welsh": 0.0002,
         "Cornish": 0.0
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.129,
+        "Professional occupations": 0.203,
+        "Associate professional and technical": 0.133,
+        "Administrative and secretarial": 0.093,
+        "Skilled trades": 0.102,
+        "Caring, leisure and other service": 0.093,
+        "Sales and customer service": 0.075,
+        "Process, plant and machine operatives": 0.069,
+        "Elementary occupations": 0.105
+    },
+    "education": {
+        "No qualifications": 0.181,
+        "Level 1": 0.097,
+        "Level 2": 0.133,
+        "Apprenticeship": 0.053,
+        "Level 3": 0.169,
+        "Level 4+": 0.339,
+        "Other": 0.028
+    },
+    "marital status": {
+        "Single (never married)": 0.379,
+        "Married or in civil partnership": 0.442,
+        "Separated": 0.022,
+        "Divorced": 0.090,
+        "Widowed": 0.061
+    },
+    "housing tenure": {
+        "Owned outright": 0.325,
+        "Owned with mortgage": 0.288,
+        "Shared ownership": 0.010,
+        "Social rented": 0.171,
+        "Private rented": 0.204,
+        "Lives rent free": 0.001
+    },
+    "country of birth": {
+        "UK": 0.832,
+        "India": 0.0154,
+        "Poland": 0.0125,
+        "Pakistan": 0.0105,
+        "Romania": 0.009,
+        "Ireland": 0.0055,
+        "Italy": 0.0046,
+        "USA": 0.0034,
+        "Jamaica": 0.0024,
+        "Other": 0.1047
     },
     "location": {
         "North East": {

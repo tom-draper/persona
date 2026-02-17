@@ -5,6 +5,18 @@
                 "features": ["age", "sex", "sexuality", "ethnicity", "religion", "language", "location"],
                 "name": "Demography of Scotland, Scotland's Census 2011, National Records of Scotland",
                 "url": "https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Housing, Scotland's Census 2022, National Records of Scotland",
+                "year": 2022,
+                "url": "https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-housing/"
+            },
+            {
+                "features": ["occupation", "education", "marital status", "country of birth"],
+                "name": "Scotland's Census 2022 (estimated from national averages), National Records of Scotland",
+                "year": 2022,
+                "url": "https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-education-labour-market-and-travel-to-work/"
             }
         ]
     },
@@ -81,6 +93,50 @@
         "French": 0.002931681770484783,
         "British Sign Language": 0.002512669604697106,
         "German": 0.002268880708238822
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.113,
+        "Professional occupations": 0.225,
+        "Associate professional and technical": 0.130,
+        "Administrative and secretarial": 0.092,
+        "Skilled trades": 0.112,
+        "Caring, leisure and other service": 0.105,
+        "Sales and customer service": 0.070,
+        "Process, plant and machine operatives": 0.062,
+        "Elementary occupations": 0.091
+    },
+    "education": {
+        "No qualifications": 0.148,
+        "Level 1": 0.089,
+        "Level 2": 0.128,
+        "Apprenticeship": 0.057,
+        "Level 3": 0.168,
+        "Level 4+": 0.325,
+        "Other": 0.085
+    },
+    "marital status": {
+        "Single (never married)": 0.389,
+        "Married or in civil partnership": 0.427,
+        "Separated": 0.022,
+        "Divorced": 0.092,
+        "Widowed": 0.065
+    },
+    "housing tenure": {
+        "Owned outright": 0.339,
+        "Owned with mortgage": 0.284,
+        "Shared ownership": 0.009,
+        "Social rented": 0.225,
+        "Private rented": 0.129,
+        "Lives rent free": 0.014
+    },
+    "country of birth": {
+        "Scotland": 0.833,
+        "Rest of UK": 0.065,
+        "Poland": 0.0137,
+        "Republic of Ireland": 0.008,
+        "India": 0.0042,
+        "Pakistan": 0.005,
+        "Other": 0.071
     },
     "location": {
         "Aberdeen City": 0.042073458596921916,

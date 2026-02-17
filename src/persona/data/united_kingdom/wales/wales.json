@@ -18,6 +18,36 @@
                 "name": "Religion in England and Wales 2011, ONS",
                 "year": 2011,
                 "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religioninenglandandwales2011/2012-12-11"
+            },
+            {
+                "features": ["occupation"],
+                "name": "Occupation (TS063), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS063/editions/2021/versions/1"
+            },
+            {
+                "features": ["education"],
+                "name": "Highest level of qualification (TS067), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS067/editions/2021/versions/1"
+            },
+            {
+                "features": ["marital status"],
+                "name": "Legal partnership status (TS002), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS002/editions/2021/versions/3"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Tenure of household (TS054), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS054/editions/2021/versions/1"
+            },
+            {
+                "features": ["country of birth"],
+                "name": "International migration, England and Wales: Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/internationalmigrationenglandandwales/census2021"
             }
         ]
     },
@@ -104,6 +134,50 @@
         "Widowed": 0.079,
         "Separated": 0.022,
         "Civil partnership": 0.002
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.105,
+        "Professional occupations": 0.182,
+        "Associate professional and technical": 0.118,
+        "Administrative and secretarial": 0.094,
+        "Skilled trades": 0.122,
+        "Caring, leisure and other service": 0.112,
+        "Sales and customer service": 0.084,
+        "Process, plant and machine operatives": 0.079,
+        "Elementary occupations": 0.105
+    },
+    "education": {
+        "No qualifications": 0.199,
+        "Level 1": 0.087,
+        "Level 2": 0.144,
+        "Apprenticeship": 0.056,
+        "Level 3": 0.172,
+        "Level 4+": 0.315,
+        "Other": 0.027
+    },
+    "marital status": {
+        "Single (never married)": 0.372,
+        "Married or in civil partnership": 0.439,
+        "Separated": 0.020,
+        "Divorced": 0.099,
+        "Widowed": 0.071
+    },
+    "housing tenure": {
+        "Owned outright": 0.380,
+        "Owned with mortgage": 0.280,
+        "Shared ownership": 0.003,
+        "Social rented": 0.165,
+        "Private rented": 0.170,
+        "Lives rent free": 0.002
+    },
+    "country of birth": {
+        "UK": 0.925,
+        "Poland": 0.009,
+        "India": 0.006,
+        "Romania": 0.005,
+        "Pakistan": 0.004,
+        "Ireland": 0.004,
+        "Other": 0.047
     },
     "location": {
         "Isle of Anglesey": 0.022172164119066775,

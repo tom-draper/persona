@@ -100,7 +100,7 @@ def gen_sample(
         if enabled_features is None or feature in enabled_features:
             if feature == 'age':
                 sample[feature] = gen_age(_data, rng)
-            elif feature != 'relationship' or sample.get('age', 16) >= 16:
+            elif feature not in ('relationship', 'marital status', 'occupation') or sample.get('age', 16) >= 16:
                 sample[feature] = gen_feature(_data, rng)
     return sample
 
@@ -178,7 +178,7 @@ def gen_api_samples(
             if feature == 'age':
                 bucket = str(rng.choice(proc['keys'], p=proc['probs']))
                 sample['age'] = _parse_age_bucket(bucket, rng)
-            elif feature != 'relationship' or sample.get('age', 16) >= 16:
+            elif feature not in ('relationship', 'marital status', 'occupation') or sample.get('age', 16) >= 16:
                 sample[feature] = str(rng.choice(proc['options'], p=proc['probs']))
 
         if composite:

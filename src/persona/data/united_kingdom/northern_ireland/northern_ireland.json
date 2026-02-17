@@ -6,6 +6,12 @@
                 "name": "Census 2021 main statistics for Northern Ireland (phase 1), NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/statistics/census/2021-census"
+            },
+            {
+                "features": ["occupation", "education", "marital status", "housing tenure", "country of birth"],
+                "name": "Census 2021 main statistics for Northern Ireland (phase 2 & 3), NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/statistics/census-2021-results/main-statistics"
             }
         ]
     },
@@ -81,6 +87,47 @@
         "Latvian": 0.0009,
         "Russian": 0.0009,
         "Hungarian": 0.0012
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.108,
+        "Professional occupations": 0.205,
+        "Associate professional and technical": 0.125,
+        "Administrative and secretarial": 0.098,
+        "Skilled trades": 0.120,
+        "Caring, leisure and other service": 0.105,
+        "Sales and customer service": 0.079,
+        "Process, plant and machine operatives": 0.075,
+        "Elementary occupations": 0.085
+    },
+    "education": {
+        "No qualifications": 0.193,
+        "Level 1": 0.088,
+        "Level 2": 0.136,
+        "Apprenticeship": 0.037,
+        "Level 3": 0.155,
+        "Level 4+": 0.316,
+        "Other": 0.075
+    },
+    "marital status": {
+        "Single (never married)": 0.390,
+        "Married or in civil partnership": 0.465,
+        "Separated": 0.021,
+        "Divorced": 0.060,
+        "Widowed": 0.064
+    },
+    "housing tenure": {
+        "Owned outright": 0.325,
+        "Owned with mortgage": 0.315,
+        "Shared ownership": 0.008,
+        "Social rented": 0.155,
+        "Private rented": 0.192,
+        "Lives rent free": 0.005
+    },
+    "country of birth": {
+        "UK": 0.900,
+        "Republic of Ireland": 0.040,
+        "Poland": 0.014,
+        "Other": 0.046
     },
     "location": {
         "Antrim and Newtownabbey": 0.0765357888791099,
