@@ -2,6 +2,12 @@
     "_meta": {
         "sources": [
             {
+                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "year": 2021,
+                "url": "https://censusreporter.org/profiles/04000US12-florida/"
+            },
+            {
                 "features": ["religion"],
                 "name": "Religious Landscape Study - Florida, Pew Research Center",
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/florida/"
@@ -12,6 +18,65 @@
                 "url": "https://www.mla.org/Resources/Research/Language-Mapper"
             }
         ]
+    },
+    "age": {
+        "0-4": 0.048,
+        "5-9": 0.053,
+        "10-14": 0.054,
+        "15-19": 0.058,
+        "20-24": 0.062,
+        "25-29": 0.068,
+        "30-34": 0.068,
+        "35-39": 0.066,
+        "40-44": 0.061,
+        "45-49": 0.063,
+        "50-54": 0.068,
+        "55-59": 0.069,
+        "60-64": 0.066,
+        "65-69": 0.061,
+        "70-74": 0.053,
+        "75-79": 0.039,
+        "80-84": 0.026,
+        "85+": 0.017
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "race": {
+        "White": 0.491,
+        "Hispanic or Latino": 0.287,
+        "Black or African American": 0.143,
+        "Asian": 0.030,
+        "Two or more races": 0.041,
+        "Native American": 0.003,
+        "Other": 0.005
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.380,
+        "Service": 0.210,
+        "Sales and office": 0.220,
+        "Natural resources, construction and maintenance": 0.100,
+        "Production, transportation and material moving": 0.090
+    },
+    "education": {
+        "Less than high school": 0.103,
+        "High school diploma or equivalent": 0.255,
+        "Some college, no degree": 0.205,
+        "Associate's degree": 0.103,
+        "Bachelor's degree": 0.208,
+        "Graduate or professional degree": 0.126
+    },
+    "marital status": {
+        "Never married": 0.320,
+        "Married": 0.496,
+        "Separated": 0.018,
+        "Divorced": 0.122,
+        "Widowed": 0.044
+    },
+    "housing tenure": {
+        "Owner occupied": 0.680,
+        "Renter occupied": 0.320
     },
     "religion": {
         "Protestantism": 0.46,

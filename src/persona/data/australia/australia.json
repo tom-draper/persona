@@ -2,13 +2,27 @@
     "_meta": {
         "sources": [
             {
-                "features": ["location"],
-                "name": "National, state and territory population, Australian Bureau of Statistics",
-                "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/sep-2020"
+                "features": ["age", "sex", "marital status", "occupation", "education", "housing tenure", "location"],
+                "name": "2021 Census QuickStats, Australian Bureau of Statistics",
+                "year": 2021,
+                "url": "https://abs.gov.au/census/find-census-data/quickstats/2021/AUS"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religious affiliation in Australia, Australian Bureau of Statistics",
+                "year": 2021,
+                "url": "https://www.abs.gov.au/articles/religious-affiliation-australia"
+            },
+            {
+                "features": ["language"],
+                "name": "Cultural diversity in Australia, Australian Bureau of Statistics",
+                "year": 2021,
+                "url": "https://www.abs.gov.au/statistics/people/people-and-communities/snapshot-australia/latest-release"
             },
             {
                 "features": ["place of birth"],
                 "name": "Estimated resident population by country of birth, Australian Bureau of Statistics",
+                "year": 2021,
                 "url": "https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21"
             }
         ]
@@ -64,6 +78,38 @@
         "Vietnamese": 0.013,
         "Cantonese": 0.012,
         "Punjabi": 0.009
+    },
+    "marital status": {
+        "Married": 0.465,
+        "Never married": 0.365,
+        "Divorced": 0.088,
+        "Widowed": 0.050,
+        "Separated": 0.032
+    },
+    "occupation": {
+        "Professionals": 0.240,
+        "Managers": 0.137,
+        "Technicians and Trades": 0.129,
+        "Clerical and Administrative": 0.127,
+        "Community and Personal Service": 0.115,
+        "Labourers": 0.090,
+        "Sales Workers": 0.082,
+        "Machinery Operators and Drivers": 0.063
+    },
+    "education": {
+        "Bachelor degree or higher": 0.263,
+        "Diploma or Advanced Diploma": 0.094,
+        "Certificate III/IV": 0.161,
+        "Year 12": 0.149,
+        "Year 10-11": 0.146,
+        "No qualifications": 0.080,
+        "Other": 0.024
+    },
+    "housing tenure": {
+        "Owned outright": 0.310,
+        "Owned with mortgage": 0.350,
+        "Rented": 0.306,
+        "Other": 0.034
     },
     "place of birth": {
         "Australia:": 0.7884384321413022,

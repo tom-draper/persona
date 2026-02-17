@@ -2,6 +2,18 @@
     "_meta": {
         "sources": [
             {
+                "features": ["age", "sex", "marital status"],
+                "name": "Bevölkerung und Erwerbstätigkeit, Destatis",
+                "year": 2021,
+                "url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Current-Population/_node.html"
+            },
+            {
+                "features": ["education", "occupation", "housing tenure"],
+                "name": "Zensus 2022, Destatis (German Federal Statistical Office)",
+                "year": 2022,
+                "url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Census2022/_node.html"
+            },
+            {
                 "features": ["location"],
                 "name": "Bevölkerung nach Nationalität und Bundesländern, Destatis",
                 "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html"
@@ -17,6 +29,30 @@
                 "url": "https://fowid.de/meldung/religionszugehoerigkeiten-2020"
             }
         ]
+    },
+    "age": {
+        "0-4": 0.046,
+        "5-9": 0.048,
+        "10-14": 0.047,
+        "15-19": 0.044,
+        "20-24": 0.054,
+        "25-29": 0.066,
+        "30-34": 0.072,
+        "35-39": 0.052,
+        "40-44": 0.059,
+        "45-49": 0.059,
+        "50-54": 0.072,
+        "55-59": 0.087,
+        "60-64": 0.073,
+        "65-69": 0.062,
+        "70-74": 0.058,
+        "75-79": 0.041,
+        "80-84": 0.029,
+        "85+": 0.031
+    },
+    "sex": {
+        "Male": 0.490,
+        "Female": 0.510
     },
     "location": {
         "North Rhine-Westphalia": 0.21534370889604498,
@@ -42,6 +78,38 @@
         "Evangelical Church": 0.243,
         "Islam": 0.035,
         "Orthodox Church": 0.019
+    },
+    "marital status": {
+        "Single (never married)": 0.320,
+        "Married or in civil partnership": 0.450,
+        "Separated": 0.023,
+        "Divorced": 0.104,
+        "Widowed": 0.103
+    },
+    "education": {
+        "No formal qualification": 0.020,
+        "Lower secondary (Hauptschulabschluss)": 0.158,
+        "Middle secondary (Mittlere Reife)": 0.246,
+        "Vocational training (Berufsausbildung)": 0.290,
+        "Upper secondary (Abitur/Fachabitur)": 0.083,
+        "University degree": 0.174,
+        "Other": 0.029
+    },
+    "occupation": {
+        "Management and executives": 0.050,
+        "Professionals": 0.150,
+        "Technicians and associate professionals": 0.170,
+        "Clerical support workers": 0.100,
+        "Service and sales workers": 0.170,
+        "Skilled agricultural workers": 0.020,
+        "Craft and related trades": 0.150,
+        "Plant and machine operators": 0.070,
+        "Elementary occupations": 0.080,
+        "Other": 0.040
+    },
+    "housing tenure": {
+        "Owner-occupied": 0.425,
+        "Rented": 0.575
     },
     "language": {
         "German": 7.472281185910243e-8,

@@ -2,11 +2,90 @@
     "_meta": {
         "sources": [
             {
+                "features": ["age", "sex", "marital status", "education", "occupation", "housing tenure"],
+                "name": "Recensement de la population 2021, INSEE",
+                "year": 2021,
+                "url": "https://www.insee.fr/fr/statistiques/serie/000436389"
+            },
+            {
+                "features": ["language"],
+                "name": "Enquête sur les pratiques linguistiques 2017, INSEE",
+                "year": 2017,
+                "url": "https://www.insee.fr/fr/statistiques/2588632"
+            },
+            {
                 "features": ["location"],
                 "name": "INSEE - Institut National de la Statistique et des Études Économiques",
                 "url": "https://www.insee.fr/fr/statistiques/3303318?sommaire=3353488"
             }
         ]
+    },
+    "age": {
+        "0-4": 0.055,
+        "5-9": 0.059,
+        "10-14": 0.062,
+        "15-19": 0.062,
+        "20-24": 0.064,
+        "25-29": 0.065,
+        "30-34": 0.066,
+        "35-39": 0.067,
+        "40-44": 0.065,
+        "45-49": 0.071,
+        "50-54": 0.069,
+        "55-59": 0.065,
+        "60-64": 0.063,
+        "65-69": 0.055,
+        "70-74": 0.046,
+        "75-79": 0.031,
+        "80-84": 0.021,
+        "85+": 0.019
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "language": {
+        "French": 0.876,
+        "Arabic": 0.052,
+        "Portuguese": 0.017,
+        "Spanish": 0.013,
+        "Berber/Amazigh": 0.012,
+        "Turkish": 0.009,
+        "Italian": 0.007,
+        "German": 0.005,
+        "Other": 0.009
+    },
+    "marital status": {
+        "Single (never married)": 0.290,
+        "Married": 0.430,
+        "Civil partnership (PACS)": 0.070,
+        "Divorced": 0.110,
+        "Widowed": 0.100
+    },
+    "education": {
+        "No qualifications": 0.150,
+        "CEP/BEPC (primary/lower secondary)": 0.120,
+        "CAP/BEP (vocational certificate)": 0.230,
+        "Baccalauréat": 0.170,
+        "Short higher education (BTS/DUT)": 0.140,
+        "Bachelor's degree": 0.080,
+        "Master's degree or Grande école": 0.110
+    },
+    "occupation": {
+        "Management and executives": 0.190,
+        "Intermediate professions": 0.250,
+        "Employees (clerical and service)": 0.270,
+        "Manual workers": 0.190,
+        "Artisans, traders and entrepreneurs": 0.062,
+        "Farmers": 0.013,
+        "Other": 0.025
+    },
+    "housing tenure": {
+        "Owner-occupied (outright)": 0.285,
+        "Owner with mortgage": 0.295,
+        "Private rented": 0.230,
+        "Social rented (HLM)": 0.160,
+        "Other": 0.030
     },
     "location": {
         "Paris": 0.3273349741913152,
