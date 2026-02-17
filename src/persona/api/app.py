@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, HTTPException, Query, Request, Response
+from fastapi.responses import RedirectResponse
 
 from persona.api.handler import get_features, load_location_data
 from persona.lib.format import clean_location
@@ -36,6 +37,11 @@ def _location_not_found(data: dict) -> HTTPException:
             "available": sorted(data.keys()),
         },
     )
+
+
+@app.get("/")
+async def root():
+    return RedirectResponse(url="/v1", status_code=308)
 
 
 @app.get("/v1/")
