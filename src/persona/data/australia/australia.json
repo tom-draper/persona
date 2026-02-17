@@ -1,0 +1,134 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "occupation", "education", "housing tenure", "location"],
+                "name": "2021 Census QuickStats, Australian Bureau of Statistics",
+                "year": 2021,
+                "url": "https://abs.gov.au/census/find-census-data/quickstats/2021/AUS"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religious affiliation in Australia, Australian Bureau of Statistics",
+                "year": 2021,
+                "url": "https://www.abs.gov.au/articles/religious-affiliation-australia"
+            },
+            {
+                "features": ["language"],
+                "name": "Cultural diversity in Australia, Australian Bureau of Statistics",
+                "year": 2021,
+                "url": "https://www.abs.gov.au/statistics/people/people-and-communities/snapshot-australia/latest-release"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Estimated resident population by country of birth, Australian Bureau of Statistics",
+                "year": 2021,
+                "url": "https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21"
+            }
+        ]
+    },
+    "location": {
+        "New South Wales": 0.32,
+        "Victoria": 0.26,
+        "Queensland": 0.2,
+        "Western Australia": 0.1,
+        "South Australia": 0.07,
+        "Tasmania": 0.02,
+        "Australian Capital Territory": 0.002,
+        "Northern Territory": 0.001
+    },
+    "age": {
+        "0-4": 0.05757893725730925,
+        "5-9": 0.062390408352570016,
+        "10-14": 0.06246565580971338,
+        "15-19": 0.05734273183120056,
+        "20-24": 0.06213083805999862,
+        "25-29": 0.06968850699526008,
+        "30-34": 0.07289071307920383,
+        "35-39": 0.07232968094055467,
+        "40-44": 0.06485689648648264,
+        "45-49": 0.06435026436520372,
+        "50-54": 0.06336614720353623,
+        "55-59": 0.06065074850569092,
+        "60-64": 0.057747290167175225,
+        "65-69": 0.05107465405247088,
+        "70-74": 0.045658567868997524,
+        "75-79": 0.03233005226099138,
+        "80-84": 0.02181499698734828,
+        "85+": 0.021332909776292812
+    },
+    "sex": {
+        "male": 0.493460965278,
+        "female": 0.506539034722
+    },
+    "religion": {
+        "No religion": 0.389,
+        "Catholic": 0.200,
+        "Protestant": 0.181,
+        "Orthodox": 0.021,
+        "Christian": 0.037,
+        "Islam": 0.032,
+        "Hindu": 0.027,
+        "Buddhist": 0.024
+    },
+    "language": {
+        "English": 0.72,
+        "Mandarin": 0.027,
+        "Arabic": 0.014,
+        "Vietnamese": 0.013,
+        "Cantonese": 0.012,
+        "Punjabi": 0.009
+    },
+    "marital status": {
+        "Married": 0.465,
+        "Never married": 0.365,
+        "Divorced": 0.088,
+        "Widowed": 0.050,
+        "Separated": 0.032
+    },
+    "occupation": {
+        "Professionals": 0.240,
+        "Managers": 0.137,
+        "Technicians and Trades": 0.129,
+        "Clerical and Administrative": 0.127,
+        "Community and Personal Service": 0.115,
+        "Labourers": 0.090,
+        "Sales Workers": 0.082,
+        "Machinery Operators and Drivers": 0.063
+    },
+    "education": {
+        "Bachelor degree or higher": 0.263,
+        "Diploma or Advanced Diploma": 0.094,
+        "Certificate III/IV": 0.161,
+        "Year 12": 0.149,
+        "Year 10-11": 0.146,
+        "No qualifications": 0.080,
+        "Other": 0.024
+    },
+    "housing tenure": {
+        "Owned outright": 0.310,
+        "Owned with mortgage": 0.350,
+        "Rented": 0.306,
+        "Other": 0.034
+    },
+    "place of birth": {
+        "Australia:": 0.7884384321413022,
+        "England": 0.04182608142983207,
+        "India": 0.030713995106548656,
+        "China": 0.02575266322998054,
+        "New Zealand": 0.024211299557652406,
+        "Philippines": 0.013429968692806868,
+        "Vietnam": 0.011594600168533958,
+        "South Africa": 0.008730647022530716,
+        "Malaysia": 0.007447402315807041,
+        "Italy": 0.0074158400302306166,
+        "Sri Lanka": 0.006303377553680746,
+        "Scotland": 0.005623275153520254,
+        "Nepal": 0.005615060312068856,
+        "United States": 0.0047321810360817455,
+        "Germany": 0.004666894664546949,
+        "South Korea": 0.004607228974005215,
+        "Hong Kong": 0.004539348442012083,
+        "Greece": 0.004351704168859092
+    }
+}

@@ -1,0 +1,142 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "education", "occupation", "housing tenure"],
+                "name": "Recensement de la population 2021, INSEE",
+                "year": 2021,
+                "url": "https://www.insee.fr/fr/statistiques/serie/000436389"
+            },
+            {
+                "features": ["language"],
+                "name": "Enquête sur les pratiques linguistiques 2017, INSEE",
+                "year": 2017,
+                "url": "https://www.insee.fr/fr/statistiques/2588632"
+            },
+            {
+                "features": ["location"],
+                "name": "INSEE - Institut National de la Statistique et des Études Économiques",
+                "url": "https://www.insee.fr/fr/statistiques/3303318?sommaire=3353488"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.055,
+        "5-9": 0.059,
+        "10-14": 0.062,
+        "15-19": 0.062,
+        "20-24": 0.064,
+        "25-29": 0.065,
+        "30-34": 0.066,
+        "35-39": 0.067,
+        "40-44": 0.065,
+        "45-49": 0.071,
+        "50-54": 0.069,
+        "55-59": 0.065,
+        "60-64": 0.063,
+        "65-69": 0.055,
+        "70-74": 0.046,
+        "75-79": 0.031,
+        "80-84": 0.021,
+        "85+": 0.019
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "language": {
+        "French": 0.876,
+        "Arabic": 0.052,
+        "Portuguese": 0.017,
+        "Spanish": 0.013,
+        "Berber/Amazigh": 0.012,
+        "Turkish": 0.009,
+        "Italian": 0.007,
+        "German": 0.005,
+        "Other": 0.009
+    },
+    "marital status": {
+        "Single (never married)": 0.290,
+        "Married": 0.430,
+        "Civil partnership (PACS)": 0.070,
+        "Divorced": 0.110,
+        "Widowed": 0.100
+    },
+    "education": {
+        "No qualifications": 0.150,
+        "CEP/BEPC (primary/lower secondary)": 0.120,
+        "CAP/BEP (vocational certificate)": 0.230,
+        "Baccalauréat": 0.170,
+        "Short higher education (BTS/DUT)": 0.140,
+        "Bachelor's degree": 0.080,
+        "Master's degree or Grande école": 0.110
+    },
+    "occupation": {
+        "Management and executives": 0.190,
+        "Intermediate professions": 0.250,
+        "Employees (clerical and service)": 0.270,
+        "Manual workers": 0.190,
+        "Artisans, traders and entrepreneurs": 0.062,
+        "Farmers": 0.013,
+        "Other": 0.025
+    },
+    "housing tenure": {
+        "Owner-occupied (outright)": 0.285,
+        "Owner with mortgage": 0.295,
+        "Private rented": 0.230,
+        "Social rented (HLM)": 0.160,
+        "Other": 0.030
+    },
+    "location": {
+        "Paris": 0.3273349741913152,
+        "Lyon": 0.05985638779542032,
+        "Marseilles": 0.0457692240689456,
+        "Toulouse": 0.03476192728561629,
+        "Bordeaux": 0.031753519335834625,
+        "Small": 0.03094226648756299,
+        "Nice": 0.02627191458101171,
+        "Nantes": 0.024794285725180675,
+        "Strasbourg": 0.020385532238779706,
+        "Rennes": 0.018800819365115573,
+        "Grenoble": 0.018022762562372195,
+        "Rouen": 0.017335674938680688,
+        "Toulon": 0.01626880470442552,
+        "Montpellier": 0.015654246914276082,
+        "Douai": 0.014096305045070227,
+        "Avignon": 0.013783306296360034,
+        "SaintEtienne": 0.013518312529302823,
+        "Tours": 0.012868939374331067,
+        "Clermont-Ferrand": 0.012513054782381378,
+        "Nancy": 0.011370128777411583,
+        "Orléans": 0.011317918789204667,
+        "Caen": 0.01092121168021275,
+        "Angers": 0.010795244309966652,
+        "Metz": 0.010175906916094423,
+        "Dijon": 0.010050853677707873,
+        "Bethune": 0.009672194143428804,
+        "Valenciennes": 0.009659735832085783,
+        "LeMans": 0.009072053518607142,
+        "Reims": 0.00841690827389365,
+        "Perpignan": 0.008378279673314346,
+        "Brest": 0.008327192761392023,
+        "Geneva": 0.008226455430469525,
+        "Pointe-à-Pitre": 0.00818623362864929,
+        "Bayonne": 0.007766856049540514,
+        "Amiens": 0.00772812297674869,
+        "LeHavre": 0.007592100156047532,
+        "Mulhouse": 0.007455372147911863,
+        "Limoges": 0.007412904193522446,
+        "Nimes": 0.006962890138092154,
+        "Poitiers": 0.006807043715065309,
+        "Dunkirk": 0.0067293686250566205,
+        "Besancon": 0.006544217746417889,
+        "Pau": 0.00634987331307739,
+        "Annecy": 0.006113844466941375,
+        "chamber": 0.005831638902871479,
+        "SaintNazaire": 0.005738084036559737,
+        "Lorient": 0.005691149895085086,
+        "LaRochelle": 0.0055921102376160405,
+        "Saint-Denis": 0.005301781959022708,
+        "Troyes": 0.005080065806001944
+    }
+}

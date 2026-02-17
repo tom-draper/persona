@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "persona"
+version = "0.1.0"
+description = "Generate realistic character profiles from real-world demographic data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "colorama>=0.4.6",
+    "numpy>=2.0",
+]
+
+[project.optional-dependencies]
+api = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+]
+
+[project.scripts]
+persona = "persona.cli:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+persona = ["data/**/*"]
+
+[dependency-groups]
+dev = ["persona[api]", "pytest>=9.0"]
+scripts = ["matplotlib>=3.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

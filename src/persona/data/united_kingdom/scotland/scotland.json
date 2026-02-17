@@ -1,0 +1,175 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "sexuality", "ethnicity", "religion", "language", "location"],
+                "name": "Demography of Scotland, Scotland's Census 2011, National Records of Scotland",
+                "url": "https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Housing, Scotland's Census 2022, National Records of Scotland",
+                "year": 2022,
+                "url": "https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-housing/"
+            },
+            {
+                "features": ["occupation", "education", "marital status", "country of birth"],
+                "name": "Scotland's Census 2022 (estimated from national averages), National Records of Scotland",
+                "year": 2022,
+                "url": "https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-education-labour-market-and-travel-to-work/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0552934515946405,
+        "5-9": 0.05095301000188715,
+        "10-14": 0.05510473674278166,
+        "15-19": 0.062464615965276464,
+        "20-24": 0.06869220607661823,
+        "25-29": 0.06529533874315908,
+        "30-34": 0.0607661822985469,
+        "35-39": 0.06416304963200604,
+        "40-44": 0.07435365163238347,
+        "45-49": 0.07756180411398376,
+        "50-54": 0.07095678429892432,
+        "55-59": 0.062464615965276464,
+        "60-64": 0.06359690507642951,
+        "65-69": 0.04944329118701642,
+        "70-74": 0.04170598226080392,
+        "75-79": 0.03359124363087375,
+        "80-84": 0.023211926778637478,
+        "85-89": 0.01339875448197773,
+        "90+": 0.006982449518777128
+    },
+    "sex": {
+        "Male": 0.484835895305,
+        "Female": 0.515164104695
+    },
+    "sexuality": {
+        "Heterosexual": 0.933,
+        "Homosexual": 0.018,
+        "Bisexual": 0.013,
+        "Unsure": 0.029
+    },
+    "ethnicity": {
+        "White": {
+            "Scottish": 0.762,
+            "British": 0.064,
+            "Irish": 0.002,
+            "Polish": 0.024,
+            "Gypsy": 0.002
+        },
+        "Asian": {
+            "Indian": 0.011,
+            "Pakistani": 0.021,
+            "Bangladeshi": 0.002,
+            "Chinese": 0.007
+        },
+        "Black": {
+            "Caribbean": 0.002,
+            "African": 0.014
+        },
+        "Mixed": 0.016,
+        "Arab": 0.006
+    },
+    "religion": {
+        "Church of Scotland": 0.324,
+        "Roman Catholic": 0.159,
+        "Christianity": 0.055,
+        "Hinduism": 0.014,
+        "Buddhism": 0.002,
+        "Sikhism": 0.002,
+        "Judaism": 0.001,
+        "No religion": 0.436
+    },
+    "language": {
+        "English": 0.9504051987982169,
+        "Scots": 0.011190431606588875,
+        "Polish": 0.010863441729842608,
+        "Cantonese/Mandarin": 0.005489460340398266,
+        "Gaelic": 0.005006894654727961,
+        "Urdu": 0.004690129476764071,
+        "Punjabi": 0.004641211310040534,
+        "French": 0.002931681770484783,
+        "British Sign Language": 0.002512669604697106,
+        "German": 0.002268880708238822
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.113,
+        "Professional occupations": 0.225,
+        "Associate professional and technical": 0.130,
+        "Administrative and secretarial": 0.092,
+        "Skilled trades": 0.112,
+        "Caring, leisure and other service": 0.105,
+        "Sales and customer service": 0.070,
+        "Process, plant and machine operatives": 0.062,
+        "Elementary occupations": 0.091
+    },
+    "education": {
+        "No qualifications": 0.148,
+        "Level 1": 0.089,
+        "Level 2": 0.128,
+        "Apprenticeship": 0.057,
+        "Level 3": 0.168,
+        "Level 4+": 0.325,
+        "Other": 0.085
+    },
+    "marital status": {
+        "Single (never married)": 0.389,
+        "Married or in civil partnership": 0.427,
+        "Separated": 0.022,
+        "Divorced": 0.092,
+        "Widowed": 0.065
+    },
+    "housing tenure": {
+        "Owned outright": 0.339,
+        "Owned with mortgage": 0.284,
+        "Shared ownership": 0.009,
+        "Social rented": 0.225,
+        "Private rented": 0.129,
+        "Lives rent free": 0.014
+    },
+    "country of birth": {
+        "Scotland": 0.833,
+        "Rest of UK": 0.065,
+        "Poland": 0.0137,
+        "Republic of Ireland": 0.008,
+        "India": 0.0042,
+        "Pakistan": 0.005,
+        "Other": 0.071
+    },
+    "location": {
+        "Aberdeen City": 0.042073458596921916,
+        "Aberdeenshire": 0.04777641393636106,
+        "Angus": 0.021905391370031158,
+        "Argyll and Bute": 0.016655651024454727,
+        "City of Edinburgh": 0.09000094419790389,
+        "Clackmannanshire": 0.009706354451893117,
+        "Dumfries and Galloway": 0.02857142857142857,
+        "Dundee City": 0.027816070248324047,
+        "East Ayrshire": 0.023170616561231233,
+        "East Dunbartonshire": 0.01982815598149372,
+        "East Lothian": 0.018827306203380228,
+        "East Renfrewshire": 0.017108866018317438,
+        "Falkirk": 0.029458974601076385,
+        "Fife": 0.06896421489944292,
+        "Glasgow City": 0.11201963931640072,
+        "Highland": 0.04382966669813993,
+        "Inverclyde": 0.01539042583325465,
+        "Midlothian": 0.015711453120574072,
+        "Moray": 0.017618732886412993,
+        "Na h-Eileanan Siar": 0.005230856387498819,
+        "North Ayrshire": 0.02609763006326126,
+        "North Lanarkshire": 0.06379001038617695,
+        "Orkney Islands": 0.004041167028609197,
+        "Perth and Kinross": 0.02770276649985837,
+        "Renfrewshire": 0.033028042677745256,
+        "Scottish Borders": 0.021508828250401284,
+        "Shetland Islands": 0.004381078274006232,
+        "South Ayrshire": 0.02130110471154754,
+        "South Lanarkshire": 0.059257860447549805,
+        "Stirling": 0.017033330186006987,
+        "West Dunbartonshire": 0.017127749976395053,
+        "West Lothian": 0.03306581059390048
+    }
+}

@@ -1,0 +1,101 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "year": 2021,
+                "url": "https://censusreporter.org/profiles/04000US48-texas/"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religious Landscape Study - Texas, Pew Research Center",
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/texas/"
+            },
+            {
+                "features": ["language"],
+                "name": "Language Mapper, Modern Language Association",
+                "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.066,
+        "5-9": 0.070,
+        "10-14": 0.070,
+        "15-19": 0.073,
+        "20-24": 0.076,
+        "25-29": 0.079,
+        "30-34": 0.075,
+        "35-39": 0.069,
+        "40-44": 0.063,
+        "45-49": 0.061,
+        "50-54": 0.060,
+        "55-59": 0.057,
+        "60-64": 0.049,
+        "65-69": 0.038,
+        "70-74": 0.028,
+        "75-79": 0.017,
+        "80-84": 0.011,
+        "85+": 0.008
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "race": {
+        "White": 0.378,
+        "Hispanic or Latino": 0.403,
+        "Black or African American": 0.120,
+        "Asian": 0.060,
+        "Two or more races": 0.033,
+        "Native American": 0.002,
+        "Other": 0.004
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.390,
+        "Service": 0.180,
+        "Sales and office": 0.220,
+        "Natural resources, construction and maintenance": 0.110,
+        "Production, transportation and material moving": 0.100
+    },
+    "education": {
+        "Less than high school": 0.148,
+        "High school diploma or equivalent": 0.216,
+        "Some college, no degree": 0.214,
+        "Associate's degree": 0.075,
+        "Bachelor's degree": 0.231,
+        "Graduate or professional degree": 0.116
+    },
+    "marital status": {
+        "Never married": 0.330,
+        "Married": 0.508,
+        "Separated": 0.021,
+        "Divorced": 0.110,
+        "Widowed": 0.031
+    },
+    "housing tenure": {
+        "Owner occupied": 0.623,
+        "Renter occupied": 0.377
+    },
+    "religion": {
+        "Protestantism": 0.5,
+        "Roman Catholicism": 0.23,
+        "Mormonism": 0.01,
+        "No religion": 0.18,
+        "Judaism": 0.01
+    },
+    "language": {
+        "English": 0.6793,
+        "Spanish": 0.2921,
+        "Vietnamese": 0.0075,
+        "Mandarin/Cantonese": 0.0056,
+        "German": 0.0033,
+        "Tagalog": 0.0029,
+        "French": 0.0025,
+        "Korean": 0.0024,
+        "Urdu": 0.0024,
+        "Hindi": 0.0023,
+        "Arabic": 0.0021
+    }
+}

@@ -1,0 +1,145 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "Census 2021 main statistics for Northern Ireland (phase 1), NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/statistics/census/2021-census"
+            },
+            {
+                "features": ["occupation", "education", "marital status", "housing tenure", "country of birth"],
+                "name": "Census 2021 main statistics for Northern Ireland (phase 2 & 3), NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/statistics/census-2021-results/main-statistics"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.04991150442477876,
+        "5-9": 0.05660498793242156,
+        "10-14": 0.05882542236524537,
+        "15-19": 0.05654062751407884,
+        "20-24": 0.060402252614641994,
+        "25-29": 0.06001609010458568,
+        "30-34": 0.06313757039420756,
+        "35-39": 0.0599195494770716,
+        "40-44": 0.056444086886564764,
+        "45-49": 0.05988736926790024,
+        "50-55": 0.06941271118262268,
+        "55-59": 0.07166532582461786,
+        "60-64": 0.06423169750603379,
+        "65-69": 0.057152051488334674,
+        "70-74": 0.05834271922767498,
+        "75-79": 0.042316975060337894,
+        "80-84": 0.028672566371681415,
+        "85-89": 0.016991150442477877,
+        "90+": 0.009557522123893806
+    },
+    "sex": {
+        "Male": 0.48946098149637973,
+        "Female": 0.5105711987127917
+    },
+    "sexuality": {
+        "Heterosexual": 0.933,
+        "Homosexual": 0.018,
+        "Bisexual": 0.013,
+        "Unsure": 0.029
+    },
+    "ethnicity": {
+        "White": {
+            "British": 0.9655,
+            "Gypsy": 0.0014,
+            "Roma": 0.0008
+        },
+        "Asian": {
+            "Indian": 0.0052,
+            "Pakistani": 0.008,
+            "Bangladeshi": 0.001,
+            "Chinese": 0.005,
+            "Filipino": 0.0023
+        },
+        "Black": {
+            "Caribbean": 0.001,
+            "African": 0.0042
+        },
+        "Mixed": 0.0076,
+        "Arab": 0.001
+    },
+    "religion": {
+        "Roman Catholic": 0.423,
+        "Presbyterian Church in Ireland": 0.166,
+        "Church of Ireland": 0.115,
+        "Methodist Church in Ireland": 0.024,
+        "Christian": 0.069,
+        "No religion": 0.174
+    },
+    "language": {
+        "English": 0.9163,
+        "English/Irish": 0.0374,
+        "Polish": 0.011,
+        "Lithuanian": 0.0049,
+        "Irish": 0.0032,
+        "Portuguese": 0.0027,
+        "Slovak": 0.0013,
+        "Chinese": 0.0018,
+        "Tagalog/Filipino": 0.0007,
+        "Latvian": 0.0009,
+        "Russian": 0.0009,
+        "Hungarian": 0.0012
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.108,
+        "Professional occupations": 0.205,
+        "Associate professional and technical": 0.125,
+        "Administrative and secretarial": 0.098,
+        "Skilled trades": 0.120,
+        "Caring, leisure and other service": 0.105,
+        "Sales and customer service": 0.079,
+        "Process, plant and machine operatives": 0.075,
+        "Elementary occupations": 0.085
+    },
+    "education": {
+        "No qualifications": 0.193,
+        "Level 1": 0.088,
+        "Level 2": 0.136,
+        "Apprenticeship": 0.037,
+        "Level 3": 0.155,
+        "Level 4+": 0.316,
+        "Other": 0.075
+    },
+    "marital status": {
+        "Single (never married)": 0.390,
+        "Married or in civil partnership": 0.465,
+        "Separated": 0.021,
+        "Divorced": 0.060,
+        "Widowed": 0.064
+    },
+    "housing tenure": {
+        "Owned outright": 0.325,
+        "Owned with mortgage": 0.315,
+        "Shared ownership": 0.008,
+        "Social rented": 0.155,
+        "Private rented": 0.192,
+        "Lives rent free": 0.005
+    },
+    "country of birth": {
+        "UK": 0.900,
+        "Republic of Ireland": 0.040,
+        "Poland": 0.014,
+        "Other": 0.046
+    },
+    "location": {
+        "Antrim and Newtownabbey": 0.0765357888791099,
+        "Armagh City, Banbridge and Craigavon": 0.11489011782941663,
+        "Belfast": 0.1814956585705466,
+        "Causeway Coast and Glens": 0.07447870006699331,
+        "Derry City and Strabane": 0.07921289424251579,
+        "Fermanagh and Omagh": 0.061377435075597356,
+        "Lisburn and Castlereagh": 0.07834592194622145,
+        "Mid and East Antrim": 0.0730326953643254,
+        "Mid Ulster": 0.07896961656179805,
+        "Newry, Mourne and Down": 0.0956685538639379,
+        "Ards and North Down": 0.08599261759953762
+    }
+}
