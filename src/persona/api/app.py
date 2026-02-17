@@ -1,12 +1,10 @@
-from fastapi import FastAPI, HTTPException, Query, Response
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI, HTTPException, Query, Request, Response
 
 from persona.api.handler import get_features, load_location_data
-from persona.lib.generate import gen_api_samples
 from persona.lib.format import clean_location
-
-app = FastAPI()
-
-data = load_location_data()
+from persona.lib.generate import gen_api_samples
 
 _EXAMPLE_RESPONSE = [
     {
@@ -21,7 +19,16 @@ _EXAMPLE_RESPONSE = [
 ]
 
 
-def _location_not_found() -> HTTPException:
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    app.state.data = load_location_data()
+    yield
+
+
+app = FastAPI(lifespan=lifespan)
+
+
+def _location_not_found(data: dict) -> HTTPException:
     return HTTPException(
         status_code=404,
         detail={
@@ -33,7 +40,8 @@ def _location_not_found() -> HTTPException:
 
 @app.get("/v1/")
 @app.get("/v1/help")
-async def help() -> dict[str, str | list | dict]:
+async def help(request: Request) -> dict[str, str | list | dict]:
+    data = request.app.state.data
     return {
         "name": "Persona API (v1)",
         "description": "A REST API for probabilistically generating character profiles using real-world demographic data.",
@@ -46,16 +54,17 @@ async def help() -> dict[str, str | list | dict]:
 
 @app.get("/v1/countries/")
 @app.get("/v1/locations/")
-async def locations(response: Response) -> list[str]:
+async def locations(request: Request, response: Response) -> list[str]:
     response.headers["Cache-Control"] = "public, max-age=3600"
-    return sorted(data.keys())
+    return sorted(request.app.state.data.keys())
 
 
 @app.get("/v1/{location}/features/")
-async def features(location: str, response: Response) -> dict:
+async def features(location: str, request: Request, response: Response) -> dict:
+    data = request.app.state.data
     location = clean_location(location)
     if location not in data:
-        raise _location_not_found()
+        raise _location_not_found(data)
     elif location == 'global':
         raise HTTPException(status_code=404, detail="Features not found")
     response.headers["Cache-Control"] = "public, max-age=3600"
@@ -65,6 +74,7 @@ async def features(location: str, response: Response) -> dict:
 @app.get("/v1/{location}/")
 def gen_personas(
     location: str,
+    request: Request,
     count: int = Query(default=1, ge=1, le=100),
     features: str | None = Query(
         default=None,
@@ -72,8 +82,9 @@ def gen_personas(
     ),
     seed: int | None = Query(default=None, description="Random seed for reproducible output"),
 ) -> list[dict]:
+    data = request.app.state.data
     location = clean_location(location)
     if location not in data:
-        raise _location_not_found()
+        raise _location_not_found(data)
     enabled_features = {f.strip() for f in features.split(',')} if features else None
     return gen_api_samples(location, data, enabled_features=enabled_features, N=count, seed=seed)

@@ -1,5 +1,5 @@
 import json
-import os
+import warnings
 from pathlib import Path
 
 from persona.lib.format import clean_location
@@ -10,20 +10,17 @@ DATA_DIR = Path(__file__).parent.parent / 'data'
 
 def load_location_data() -> dict:
     data = {}
-    for _dir in os.walk(str(DATA_DIR)):
-        files = _dir[2]
-        _, location = os.path.split(_dir[0])
-        for f in files:
-            if f.endswith('.json'):
-                try:
-                    with open(os.path.join(_dir[0], f)) as _f:
-                        composite = f == 'composite.json'
-                        data[location] = {
-                            'composite': composite,
-                            'data': json.load(_f)
-                        }
-                except json.decoder.JSONDecodeError:
-                    pass
+    for path in DATA_DIR.rglob('*.json'):
+        location = path.parent.name
+        composite = path.name == 'composite.json'
+        try:
+            with open(path) as f:
+                data[location] = {
+                    'composite': composite,
+                    'data': json.load(f)
+                }
+        except json.JSONDecodeError:
+            warnings.warn(f"Skipping {path}: invalid JSON", stacklevel=2)
     return preprocess_location_data(data)
 
 

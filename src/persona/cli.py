@@ -1,7 +1,6 @@
 import argparse
 import json
 import sys
-from typing import Union
 
 from colorama import Fore, Style
 
@@ -58,7 +57,7 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def get_enabled_features(args: argparse.Namespace) -> Union[set[str], None]:
+def get_enabled_features(args: argparse.Namespace) -> set[str] | None:
     enabled = set()
     for feature in ALL_FEATURES:
         if getattr(args, feature.replace(' ', '_'), False):

@@ -14,9 +14,8 @@ from persona.lib.generate import (
     gen_sample,
     gen_samples,
     list_locations,
+    normalise_weights,
     preprocess_location_data,
-    probabilities_from_dict,
-    probabilities_from_list,
 )
 
 
@@ -24,30 +23,20 @@ from persona.lib.generate import (
 # Probability helpers
 # ---------------------------------------------------------------------------
 
-def test_probabilities_from_dict_sums_to_one():
-    p = probabilities_from_dict({'a': 0.3, 'b': 0.3, 'c': 0.4})
+def test_normalise_weights_sums_to_one():
+    p = normalise_weights([0.3, 0.3, 0.4])
     assert abs(p.sum() - 1.0) < 1e-9
 
 
-def test_probabilities_from_dict_normalises_unequal_weights():
-    p = probabilities_from_dict({'a': 1.0, 'b': 1.0})
+def test_normalise_weights_normalises_unequal_weights():
+    p = normalise_weights([1.0, 1.0])
     assert abs(p.sum() - 1.0) < 1e-9
     assert abs(p[0] - 0.5) < 1e-9
 
 
-def test_probabilities_from_dict_zero_raises():
+def test_normalise_weights_zero_raises():
     with pytest.raises(ValueError):
-        probabilities_from_dict({'a': 0.0})
-
-
-def test_probabilities_from_list_sums_to_one():
-    p = probabilities_from_list([('a', 0.6), ('b', 0.4)])
-    assert abs(p.sum() - 1.0) < 1e-9
-
-
-def test_probabilities_from_list_zero_raises():
-    with pytest.raises(ValueError):
-        probabilities_from_list([('a', 0.0)])
+        normalise_weights([0.0])
 
 
 # ---------------------------------------------------------------------------
@@ -313,3 +302,185 @@ def test_gen_api_samples_composite_seed_is_reproducible(api_data):
     a = gen_api_samples('united_kingdom', api_data, N=5, seed=7)
     b = gen_api_samples('united_kingdom', api_data, N=5, seed=7)
     assert a == b
+
+
+# ---------------------------------------------------------------------------
+# normalise_weights — additional
+# ---------------------------------------------------------------------------
+
+def test_normalise_weights_single_value():
+    p = normalise_weights([5.0])
+    assert abs(p[0] - 1.0) < 1e-9
+
+
+def test_normalise_weights_accepts_generator():
+    p = normalise_weights(x for x in [0.25, 0.25, 0.5])
+    assert abs(p.sum() - 1.0) < 1e-9
+    assert len(p) == 3
+
+
+# ---------------------------------------------------------------------------
+# collapsed_dict — edge cases
+# ---------------------------------------------------------------------------
+
+def test_collapsed_dict_empty():
+    assert collapsed_dict({}) == []
+
+
+def test_collapsed_dict_single_entry():
+    result = collapsed_dict({'a': 1.0})
+    assert result == [(['a'], 1.0)]
+
+
+# ---------------------------------------------------------------------------
+# gen_sample — direct unit tests
+# ---------------------------------------------------------------------------
+
+def test_gen_sample_excludes_meta():
+    rng = np.random.default_rng(0)
+    data = {'_meta': {'sources': []}, 'sex': {'Male': 0.5, 'Female': 0.5}}
+    sample = gen_sample(data, None, rng)
+    assert '_meta' not in sample
+    assert 'sex' in sample
+
+
+def test_gen_sample_enabled_features_filter():
+    rng = np.random.default_rng(0)
+    data = {'age': {'20-29': 1.0}, 'sex': {'Male': 1.0}, 'religion': {'None': 1.0}}
+    sample = gen_sample(data, {'age', 'sex'}, rng)
+    assert 'religion' not in sample
+    assert 'age' in sample
+    assert 'sex' in sample
+
+
+def test_gen_sample_relationship_gated_below_16():
+    data = {'age': {'0-10': 1.0}, 'relationship': {'Single': 1.0}}
+    for _ in range(10):
+        sample = gen_sample(data, None, np.random.default_rng())
+        assert 'relationship' not in sample
+
+
+# ---------------------------------------------------------------------------
+# get_file_path / get_composite_path
+# ---------------------------------------------------------------------------
+
+def test_get_file_path_known_location():
+    from persona.lib.generate import get_file_path
+    path = get_file_path('england')
+    assert path is not None
+    assert path.name == 'england.json'
+    assert path.exists()
+
+
+def test_get_file_path_unknown_location():
+    from persona.lib.generate import get_file_path
+    assert get_file_path('nonexistent_xyz') is None
+
+
+def test_get_composite_path_composite_location():
+    from persona.lib.generate import get_composite_path
+    path = get_composite_path('united_kingdom')
+    assert path is not None
+    assert path.name == 'composite.json'
+    assert path.exists()
+
+
+def test_get_composite_path_non_composite():
+    from persona.lib.generate import get_composite_path
+    assert get_composite_path('england') is None
+
+
+# ---------------------------------------------------------------------------
+# select_sublocation
+# ---------------------------------------------------------------------------
+
+def test_select_sublocation_returns_known_location():
+    from persona.lib.generate import get_composite_path, select_sublocation
+    path = get_composite_path('united_kingdom')
+    rng = np.random.default_rng(0)
+    subloc = select_sublocation(path, rng)
+    assert isinstance(subloc, str)
+    assert subloc in list_locations()
+
+
+# ---------------------------------------------------------------------------
+# gen_api_samples — additional
+# ---------------------------------------------------------------------------
+
+def test_gen_api_samples_enabled_features(api_data):
+    samples = gen_api_samples('england', api_data, enabled_features={'age', 'sex'}, N=3)
+    assert len(samples) == 3
+    for sample in samples:
+        assert set(sample.keys()) <= {'age', 'sex'}
+        assert 'religion' not in sample
+
+
+# ---------------------------------------------------------------------------
+# handler.get_features
+# ---------------------------------------------------------------------------
+
+def test_get_features_regular_location(api_data):
+    from persona.api.handler import get_features
+    result = get_features('england', api_data)
+    assert 'england' in result
+    assert 'age' in result['england']
+    assert '_meta' not in result['england']
+
+
+def test_get_features_composite_location(api_data):
+    from persona.api.handler import get_features
+    result = get_features('united_kingdom', api_data)
+    assert isinstance(result, dict)
+    assert len(result) > 1  # multiple sublocations
+
+
+def test_get_features_global_returns_empty(api_data):
+    from persona.api.handler import get_features
+    result = get_features('global', api_data)
+    assert result == {}
+
+
+# ---------------------------------------------------------------------------
+# CLI helpers
+# ---------------------------------------------------------------------------
+
+def test_get_enabled_features_returns_none_when_no_flags():
+    from persona.cli import build_parser, get_enabled_features
+    args = build_parser().parse_args(['england'])
+    assert get_enabled_features(args) is None
+
+
+def test_get_enabled_features_returns_set_when_flags_set():
+    from persona.cli import build_parser, get_enabled_features
+    args = build_parser().parse_args(['england', '--age', '--sex'])
+    assert get_enabled_features(args) == {'age', 'sex'}
+
+
+def test_format_location_underscores_and_title():
+    from persona.cli import format_location
+    assert format_location('united_kingdom') == 'United Kingdom'
+    assert format_location('england') == 'England'
+
+
+# ---------------------------------------------------------------------------
+# clean_location — additional
+# ---------------------------------------------------------------------------
+
+def test_clean_location_hyphen_to_underscore():
+    from persona.lib.format import clean_location
+    assert clean_location('united-kingdom') == 'united_kingdom'
+
+
+def test_clean_location_no_alias_passthrough():
+    from persona.lib.format import clean_location
+    assert clean_location('England') == 'england'
+    assert clean_location('AUSTRALIA') == 'australia'
+
+
+# ---------------------------------------------------------------------------
+# _parse_age_bucket — additional
+# ---------------------------------------------------------------------------
+
+def test_parse_age_bucket_zero():
+    rng = np.random.default_rng()
+    assert _parse_age_bucket('0', rng) == 0

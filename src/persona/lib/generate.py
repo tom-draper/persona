@@ -1,65 +1,52 @@
+import functools
 import json
-import os
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Union
 
 import numpy as np
 
 DATA_DIR = Path(__file__).parent.parent / 'data'
 
 
-def probabilities_from_dict(d: dict[str, float]) -> np.ndarray:
-    probabilities = np.array(list(d.values()), dtype=np.float64)
-    if probabilities.sum() == 0.0:
+def normalise_weights(weights: Iterable[float]) -> np.ndarray:
+    p = np.array(list(weights), dtype=np.float64)
+    if p.sum() == 0.0:
         raise ValueError('Probabilities sum to 0')
-    probabilities /= probabilities.sum()
-    return probabilities
+    return p / p.sum()
 
 
-def probabilities_from_list(l: list[tuple[str, float]]) -> np.ndarray:
-    probabilities = np.array([x[1] for x in l], dtype=np.float64)
-    if probabilities.sum() == 0.0:
-        raise ValueError('Probabilities sum to 0')
-    probabilities /= probabilities.sum()
-    return probabilities
-
-
-def select_sublocation(composite_path: str, rng: np.random.Generator) -> str:
-    with open(composite_path, 'r') as f:
+def select_sublocation(composite_path: Path, rng: np.random.Generator) -> str:
+    with open(composite_path) as f:
         data = json.load(f)
     keys = np.array(list(data.keys()))
-    p = probabilities_from_dict(data)
+    p = normalise_weights(data.values())
     return str(rng.choice(keys, p=p)).lower()
 
 
+@functools.cache
 def list_locations() -> list[str]:
     """Return all location names that have data (regular or composite)."""
     locations = []
-    for _dir in os.walk(str(DATA_DIR)):
-        _, cur_dir = os.path.split(_dir[0])
-        files = _dir[2]
-        if f'{cur_dir}.json' in files or 'composite.json' in files:
-            locations.append(cur_dir)
+    for path in DATA_DIR.rglob('*.json'):
+        name = path.parent.name
+        if path.name in (f'{name}.json', 'composite.json'):
+            locations.append(name)
     return sorted(locations)
 
 
-def get_file_path(target: str) -> Union[str, None]:
+def get_file_path(target: str) -> Path | None:
     target = target.lower().replace(' ', '_')
-    target_file = f'{target}.json'
-    for _dir in os.walk(str(DATA_DIR)):
-        files = _dir[2]
-        _, cur_dir = os.path.split(_dir[0])
-        if cur_dir == target and target_file in files:
-            return os.path.join(_dir[0], target_file)
+    for path in DATA_DIR.rglob(f'{target}.json'):
+        if path.parent.name == target:
+            return path
     return None
 
 
-def get_composite_path(target: str) -> Union[str, None]:
+def get_composite_path(target: str) -> Path | None:
     target = target.lower().replace(' ', '_')
-    for _dir in os.walk(str(DATA_DIR)):
-        _, cur_dir = os.path.split(_dir[0])
-        if cur_dir == target and 'composite.json' in _dir[2]:
-            return os.path.join(_dir[0], 'composite.json')
+    for path in DATA_DIR.rglob('composite.json'):
+        if path.parent.name == target:
+            return path
     return None
 
 
@@ -88,7 +75,7 @@ def _parse_age_bucket(bucket: str, rng: np.random.Generator) -> int:
 
 def gen_age(age_data: dict[str, float], rng: np.random.Generator) -> int:
     ages = np.array(list(age_data.keys()))
-    p = probabilities_from_dict(age_data)
+    p = normalise_weights(age_data.values())
     bucket = str(rng.choice(ages, p=p))
     return _parse_age_bucket(bucket, rng)
 
@@ -96,13 +83,13 @@ def gen_age(age_data: dict[str, float], rng: np.random.Generator) -> int:
 def gen_feature(data: dict, rng: np.random.Generator) -> str:
     collapsed = collapsed_dict(data)
     options = np.array([', '.join(reversed(x[0])) for x in collapsed])
-    p = probabilities_from_list(collapsed)
+    p = normalise_weights(x[1] for x in collapsed)
     return str(rng.choice(options, p=p))
 
 
 def gen_sample(
     data: dict,
-    enabled_features: Union[set[str], None],
+    enabled_features: set[str] | None,
     rng: np.random.Generator,
 ) -> dict[str, str | int]:
     sample = {}
@@ -128,7 +115,7 @@ def preprocess_location_data(data: dict) -> dict:
         if entry['composite']:
             keys = list(entry['data'].keys())
             entry['subloc_keys'] = np.array([k.lower().replace(' ', '_') for k in keys])
-            entry['subloc_probs'] = probabilities_from_dict(entry['data'])
+            entry['subloc_probs'] = normalise_weights(entry['data'].values())
         else:
             processed: dict[str, dict] = {}
             for feature, feature_data in entry['data'].items():
@@ -137,13 +124,13 @@ def preprocess_location_data(data: dict) -> dict:
                 if feature == 'age':
                     processed['age'] = {
                         'keys': np.array(list(feature_data.keys())),
-                        'probs': probabilities_from_dict(feature_data),
+                        'probs': normalise_weights(feature_data.values()),
                     }
                 else:
                     col = collapsed_dict(feature_data)
                     processed[feature] = {
                         'options': np.array([', '.join(reversed(x[0])) for x in col]),
-                        'probs': probabilities_from_list(col),
+                        'probs': normalise_weights(x[1] for x in col),
                     }
             entry['processed'] = processed
     return data
@@ -152,7 +139,7 @@ def preprocess_location_data(data: dict) -> dict:
 def gen_api_samples(
     location: str,
     data: dict,
-    enabled_features: Union[set[str], None] = None,
+    enabled_features: set[str] | None = None,
     N: int = 1,
     seed: int | None = None,
 ) -> list[dict]:
@@ -207,7 +194,7 @@ def gen_api_samples(
 
 def gen_samples(
     location: str,
-    enabled_features: Union[set[str], None] = None,
+    enabled_features: set[str] | None = None,
     N: int = 1,
     seed: int | None = None,
 ) -> list[dict]:
@@ -227,7 +214,7 @@ def gen_samples(
     composite = composite_path is not None
 
     samples = []
-    cache: dict[str, dict] = {}
+    cache: dict[Path, dict] = {}
     for _ in range(N):
         target = select_sublocation(composite_path, rng) if composite else location
 
@@ -237,7 +224,7 @@ def gen_samples(
         if location_path in cache:
             file_data = cache[location_path]
         else:
-            with open(location_path, 'r') as f:
+            with open(location_path) as f:
                 file_data = json.load(f)
             cache[location_path] = file_data
 
