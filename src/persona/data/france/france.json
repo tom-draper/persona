@@ -17,6 +17,24 @@
                 "features": ["location"],
                 "name": "INSEE - Institut National de la Statistique et des Études Économiques",
                 "url": "https://www.insee.fr/fr/statistiques/3303318?sommaire=3353488"
+            },
+            {
+                "features": ["religion"],
+                "name": "Baromètre politique IFOP 2021",
+                "year": 2021,
+                "url": "https://www.ifop.com/publication/la-france-une-nation-en-qute-de-sens/"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Tableau de bord de l'immigration en France, INSEE",
+                "year": 2021,
+                "url": "https://www.insee.fr/fr/statistiques/3633212"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Enquête sur la sexualité en France, INED",
+                "year": 2006,
+                "url": "https://www.ined.fr/fr/tout-savoir-population/memos-demo/faq/prevalence-homosexualite-france/"
             }
         ]
     },
@@ -138,5 +156,33 @@
         "LaRochelle": 0.0055921102376160405,
         "Saint-Denis": 0.005301781959022708,
         "Troyes": 0.005080065806001944
+    },
+    "religion": {
+        "Catholic": 0.413,
+        "No religion": 0.393,
+        "Muslim": 0.095,
+        "Protestant": 0.030,
+        "Other Christian": 0.018,
+        "Buddhist": 0.012,
+        "Jewish": 0.009,
+        "Other": 0.030
+    },
+    "place of birth": {
+        "France": 0.870,
+        "Algeria": 0.016,
+        "Morocco": 0.014,
+        "Portugal": 0.011,
+        "Sub-Saharan Africa": 0.025,
+        "Tunisia": 0.008,
+        "Turkey": 0.006,
+        "Italy": 0.005,
+        "Spain": 0.005,
+        "Other": 0.040
+    },
+    "sexuality": {
+        "Heterosexual": 0.930,
+        "Homosexual": 0.016,
+        "Bisexual": 0.025,
+        "Other": 0.029
     }
 }

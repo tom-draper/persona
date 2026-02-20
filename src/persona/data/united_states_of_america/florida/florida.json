@@ -2,7 +2,7 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
+                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure", "location"],
                 "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US12-florida/"
@@ -16,6 +16,18 @@
                 "features": ["language"],
                 "name": "Language Mapper, Modern Language Association",
                 "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "LGBT Identification in U.S., Gallup",
+                "year": 2022,
+                "url": "https://news.gallup.com/poll/389792/lgbt-identification-ticks-up.aspx"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "year": 2021,
+                "url": "https://censusreporter.org/profiles/04000US12-florida/"
             }
         ]
     },
@@ -104,5 +116,35 @@
         "Mandarin/Cantonese": 0.002,
         "Russian": 0.0018,
         "Polish": 0.0014
+    },
+    "sexuality": {
+        "Heterosexual": 0.940,
+        "Gay or Lesbian": 0.030,
+        "Bisexual": 0.020,
+        "Other": 0.010
+    },
+    "place of birth": {
+        "Florida": 0.352,
+        "Other US state": 0.485,
+        "Cuba": 0.040,
+        "Haiti": 0.015,
+        "Colombia": 0.010,
+        "Dominican Republic": 0.008,
+        "Jamaica": 0.008,
+        "Mexico": 0.008,
+        "Venezuela": 0.007,
+        "Other": 0.067
+    },
+    "location": {
+        "Miami-Fort Lauderdale": 0.287,
+        "Tampa-St. Petersburg": 0.148,
+        "Orlando": 0.125,
+        "Jacksonville": 0.069,
+        "North Port-Sarasota": 0.037,
+        "Cape Coral-Fort Myers": 0.037,
+        "Deltona-Daytona Beach": 0.032,
+        "Lakeland": 0.032,
+        "Palm Bay-Melbourne": 0.028,
+        "Other": 0.205
     }
 }

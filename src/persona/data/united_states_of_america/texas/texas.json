@@ -2,7 +2,7 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
+                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure", "location"],
                 "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US48-texas/"
@@ -16,6 +16,18 @@
                 "features": ["language"],
                 "name": "Language Mapper, Modern Language Association",
                 "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "LGBT Identification in U.S., Gallup",
+                "year": 2022,
+                "url": "https://news.gallup.com/poll/389792/lgbt-identification-ticks-up.aspx"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "year": 2021,
+                "url": "https://censusreporter.org/profiles/04000US48-texas/"
             }
         ]
     },
@@ -97,5 +109,36 @@
         "Urdu": 0.0024,
         "Hindi": 0.0023,
         "Arabic": 0.0021
+    },
+    "sexuality": {
+        "Heterosexual": 0.943,
+        "Gay or Lesbian": 0.028,
+        "Bisexual": 0.020,
+        "Other": 0.009
+    },
+    "place of birth": {
+        "Texas": 0.617,
+        "Other US state": 0.137,
+        "Mexico": 0.143,
+        "El Salvador": 0.014,
+        "Honduras": 0.011,
+        "India": 0.010,
+        "Guatemala": 0.009,
+        "Vietnam": 0.007,
+        "China": 0.007,
+        "Nigeria": 0.005,
+        "Other": 0.040
+    },
+    "location": {
+        "Dallas-Fort Worth": 0.265,
+        "Houston": 0.252,
+        "San Antonio": 0.090,
+        "Austin": 0.079,
+        "McAllen": 0.031,
+        "El Paso": 0.028,
+        "Corpus Christi": 0.017,
+        "Lubbock": 0.010,
+        "Amarillo": 0.010,
+        "Other": 0.218
     }
 }

@@ -1,6 +1,19 @@
 {
     "_meta": {
-        "sources": []
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "occupation", "education", "housing tenure", "location"],
+                "name": "Census 2021, Office for National Statistics",
+                "year": 2021,
+                "url": "https://www.nomisweb.co.uk/sources/census_2021_bulk"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Sexual orientation, England and Wales, Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualorientationenglandandwales/census2021"
+            }
+        ]
     },
     "ethnicity": {
         "White": {
@@ -88,5 +101,105 @@
         "Spain": 0.00493250049043187,
         "Uganda": 0.004417804787082457,
         "Brazil": 0.0043107139876943186
+    },
+    "age": {
+        "0-4": 0.053,
+        "5-9": 0.052,
+        "10-14": 0.048,
+        "15-19": 0.053,
+        "20-24": 0.082,
+        "25-29": 0.101,
+        "30-34": 0.099,
+        "35-39": 0.083,
+        "40-44": 0.068,
+        "45-49": 0.058,
+        "50-54": 0.054,
+        "55-59": 0.049,
+        "60-64": 0.040,
+        "65-69": 0.033,
+        "70-74": 0.029,
+        "75-79": 0.019,
+        "80-84": 0.013,
+        "85-89": 0.008,
+        "90+": 0.004
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "sexuality": {
+        "Heterosexual": 0.864,
+        "Gay or Lesbian": 0.052,
+        "Bisexual": 0.041,
+        "Pansexual": 0.014,
+        "Unsure": 0.029
+    },
+    "marital status": {
+        "Single (never married)": 0.439,
+        "Married or in civil partnership": 0.381,
+        "Separated": 0.021,
+        "Divorced": 0.096,
+        "Widowed": 0.063
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.128,
+        "Professional occupations": 0.265,
+        "Associate professional and technical": 0.139,
+        "Administrative and secretarial": 0.090,
+        "Skilled trades": 0.053,
+        "Caring, leisure and other service": 0.072,
+        "Sales and customer service": 0.073,
+        "Process, plant and machine operatives": 0.027,
+        "Elementary occupations": 0.093
+    },
+    "education": {
+        "No qualifications": 0.099,
+        "Level 1": 0.083,
+        "Level 2": 0.112,
+        "Apprenticeship": 0.014,
+        "Level 3": 0.141,
+        "Level 4+": 0.515,
+        "Other": 0.036
+    },
+    "housing tenure": {
+        "Owned outright": 0.209,
+        "Owned with mortgage": 0.264,
+        "Social rented": 0.232,
+        "Private rented": 0.295
+    },
+    "location": {
+        "City of London": 0.001,
+        "Barking and Dagenham": 0.025,
+        "Barnet": 0.045,
+        "Bexley": 0.028,
+        "Brent": 0.037,
+        "Bromley": 0.037,
+        "Camden": 0.030,
+        "Croydon": 0.044,
+        "Ealing": 0.040,
+        "Enfield": 0.037,
+        "Greenwich": 0.033,
+        "Hackney": 0.029,
+        "Hammersmith and Fulham": 0.021,
+        "Haringey": 0.029,
+        "Harrow": 0.029,
+        "Havering": 0.029,
+        "Hillingdon": 0.034,
+        "Hounslow": 0.032,
+        "Islington": 0.027,
+        "Kensington and Chelsea": 0.018,
+        "Kingston upon Thames": 0.020,
+        "Lambeth": 0.036,
+        "Lewisham": 0.034,
+        "Merton": 0.024,
+        "Newham": 0.040,
+        "Redbridge": 0.034,
+        "Richmond upon Thames": 0.022,
+        "Southwark": 0.034,
+        "Sutton": 0.023,
+        "Tower Hamlets": 0.035,
+        "Waltham Forest": 0.031,
+        "Wandsworth": 0.037,
+        "Westminster": 0.028
     }
 }

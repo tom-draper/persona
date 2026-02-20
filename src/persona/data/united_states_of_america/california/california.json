@@ -2,7 +2,7 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
+                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure", "location"],
                 "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US06-california/"
@@ -16,6 +16,18 @@
                 "features": ["language"],
                 "name": "Language Mapper, Modern Language Association",
                 "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "LGBT Identification in U.S., Gallup",
+                "year": 2022,
+                "url": "https://news.gallup.com/poll/389792/lgbt-identification-ticks-up.aspx"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "year": 2021,
+                "url": "https://censusreporter.org/profiles/04000US06-california/"
             }
         ]
     },
@@ -105,5 +117,37 @@
         "Hindi": 0.0038,
         "Arabic": 0.0038,
         "French": 0.0036
+    },
+    "sexuality": {
+        "Heterosexual": 0.910,
+        "Gay or Lesbian": 0.044,
+        "Bisexual": 0.035,
+        "Other": 0.011
+    },
+    "place of birth": {
+        "California": 0.534,
+        "Other US state": 0.212,
+        "Mexico": 0.101,
+        "Philippines": 0.023,
+        "China": 0.022,
+        "India": 0.016,
+        "Vietnam": 0.015,
+        "El Salvador": 0.010,
+        "South Korea": 0.009,
+        "Guatemala": 0.009,
+        "Other": 0.049
+    },
+    "location": {
+        "Los Angeles": 0.334,
+        "San Francisco Bay Area": 0.119,
+        "Riverside-San Bernardino": 0.116,
+        "San Diego": 0.084,
+        "Sacramento": 0.061,
+        "San Jose": 0.051,
+        "Fresno": 0.025,
+        "Bakersfield": 0.023,
+        "Oxnard-Ventura": 0.020,
+        "Stockton": 0.020,
+        "Other": 0.147
     }
 }

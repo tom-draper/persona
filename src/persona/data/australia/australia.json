@@ -24,6 +24,12 @@
                 "name": "Estimated resident population by country of birth, Australian Bureau of Statistics",
                 "year": 2021,
                 "url": "https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "General Social Survey 2020, Australian Bureau of Statistics",
+                "year": 2020,
+                "url": "https://www.abs.gov.au/statistics/people/people-and-communities/general-social-survey-summary-results-australia/2020"
             }
         ]
     },
@@ -130,5 +136,11 @@
         "South Korea": 0.004607228974005215,
         "Hong Kong": 0.004539348442012083,
         "Greece": 0.004351704168859092
+    },
+    "sexuality": {
+        "Heterosexual": 0.953,
+        "Gay or Lesbian": 0.020,
+        "Bisexual": 0.022,
+        "Other": 0.005
     }
 }

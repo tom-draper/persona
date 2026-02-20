@@ -27,6 +27,18 @@
                 "features": ["religion"],
                 "name": "Religionszugehörigkeiten 2020, Fowid",
                 "url": "https://fowid.de/meldung/religionszugehoerigkeiten-2020"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Zensus 2022, Destatis (German Federal Statistical Office)",
+                "year": 2022,
+                "url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Census2022/_node.html"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Sozio-oekonomisches Panel (SOEP), DIW Berlin",
+                "year": 2020,
+                "url": "https://www.diw.de/de/diw_01.c.841562.de/nachrichten/sexuelle_orientierung_und_psychische_gesundheit_in_deutschland.html"
             }
         ]
     },
@@ -138,5 +150,24 @@
         "Turkish": 0.16975681197915787,
         "Hungarian": 0.016863876491892194,
         "Vietnamese": 0.012019005897536425
+    },
+    "place of birth": {
+        "Germany": 0.755,
+        "Turkey": 0.030,
+        "Poland": 0.022,
+        "Ukraine": 0.017,
+        "Russia": 0.013,
+        "Romania": 0.012,
+        "Kazakhstan": 0.010,
+        "Syria": 0.011,
+        "Italy": 0.008,
+        "Afghanistan": 0.005,
+        "Other": 0.117
+    },
+    "sexuality": {
+        "Heterosexual": 0.930,
+        "Gay or Lesbian": 0.020,
+        "Bisexual": 0.030,
+        "Other": 0.020
     }
 }

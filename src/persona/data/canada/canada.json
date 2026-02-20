@@ -24,6 +24,18 @@
                 "name": "Statistics Canada Census 2011",
                 "year": 2011,
                 "url": "https://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/details/page.cfm?Lang=E&Geo1=PR&Code1=01&Geo2=PR&Code2=01&Data=Count&SearchText=Canada&SearchType=Begins&SearchPR=01&B1=All&Custom=&TABID=1"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Canadian Community Health Survey, Statistics Canada",
+                "year": 2018,
+                "url": "https://www150.statcan.gc.ca/n1/pub/45-28-0001/2020001/article/00016-eng.htm"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Census of Population 2021, Statistics Canada",
+                "year": 2021,
+                "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm?Lang=E"
             }
         ]
     },
@@ -224,5 +236,25 @@
         "Urdu": 0.005239713877661171,
         "Vietnamese": 0.004393111959464991,
         "Yiddish": 0.00046105236984860014
+    },
+    "sexuality": {
+        "Heterosexual": 0.948,
+        "Gay or Lesbian": 0.017,
+        "Bisexual": 0.016,
+        "Other": 0.019
+    },
+    "place of birth": {
+        "Canada": 0.772,
+        "India": 0.035,
+        "Philippines": 0.025,
+        "China": 0.024,
+        "United States": 0.016,
+        "United Kingdom": 0.016,
+        "Pakistan": 0.012,
+        "Iran": 0.010,
+        "Syria": 0.008,
+        "Korea": 0.007,
+        "France": 0.007,
+        "Other": 0.068
     }
 }
