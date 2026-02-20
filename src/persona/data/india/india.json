@@ -1,0 +1,140 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "religion", "language", "housing tenure"],
+                "name": "Census of India 2011, Office of the Registrar General and Census Commissioner",
+                "year": 2011,
+                "url": "https://censusindia.gov.in/census.website/"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Periodic Labour Force Survey 2021-22, MOSPI",
+                "year": 2022,
+                "url": "https://mospi.gov.in/sites/default/files/publication_reports/PLFS_2021-22_0.pdf"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Census of India 2011 – Migration tables",
+                "year": 2011,
+                "url": "https://censusindia.gov.in/census.website/data/census-tables"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "India Health Monitor, Population Council",
+                "year": 2021,
+                "url": "https://www.popcouncil.org/research/india-health-monitor"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.088,
+        "5-9": 0.090,
+        "10-14": 0.091,
+        "15-19": 0.090,
+        "20-24": 0.088,
+        "25-29": 0.081,
+        "30-34": 0.070,
+        "35-39": 0.062,
+        "40-44": 0.056,
+        "45-49": 0.051,
+        "50-54": 0.043,
+        "55-59": 0.035,
+        "60-64": 0.030,
+        "65-69": 0.023,
+        "70-74": 0.018,
+        "75-79": 0.011,
+        "80-84": 0.007,
+        "85+": 0.006
+    },
+    "sex": {
+        "Male": 0.519,
+        "Female": 0.481
+    },
+    "location": {
+        "Uttar Pradesh": 0.165,
+        "Maharashtra": 0.093,
+        "Bihar": 0.086,
+        "West Bengal": 0.075,
+        "Tamil Nadu": 0.060,
+        "Madhya Pradesh": 0.060,
+        "Rajasthan": 0.057,
+        "Karnataka": 0.050,
+        "Gujarat": 0.050,
+        "Andhra Pradesh": 0.041,
+        "Telangana": 0.029,
+        "Odisha": 0.035,
+        "Kerala": 0.027,
+        "Other": 0.172
+    },
+    "religion": {
+        "Hindu": 0.797,
+        "Muslim": 0.145,
+        "Christian": 0.024,
+        "Sikh": 0.018,
+        "Buddhist": 0.007,
+        "Jain": 0.004,
+        "Other": 0.005
+    },
+    "language": {
+        "Hindi": 0.437,
+        "Bengali": 0.083,
+        "Marathi": 0.070,
+        "Telugu": 0.070,
+        "Tamil": 0.062,
+        "Gujarati": 0.046,
+        "Urdu": 0.046,
+        "Kannada": 0.039,
+        "Odia": 0.033,
+        "Punjabi": 0.028,
+        "Other": 0.086
+    },
+    "marital status": {
+        "Never married": 0.318,
+        "Married": 0.617,
+        "Widowed": 0.049,
+        "Divorced or separated": 0.016
+    },
+    "education": {
+        "No education (illiterate)": 0.258,
+        "Literate, no formal schooling": 0.094,
+        "Primary (up to 5th standard)": 0.169,
+        "Middle (6th–8th standard)": 0.120,
+        "Secondary/High school": 0.140,
+        "Higher secondary/Intermediate": 0.094,
+        "Graduate and above": 0.125
+    },
+    "occupation": {
+        "Management and executives": 0.030,
+        "Professionals": 0.080,
+        "Technicians and associate professionals": 0.060,
+        "Clerical and office workers": 0.080,
+        "Sales workers": 0.110,
+        "Service workers": 0.100,
+        "Agriculture and related": 0.290,
+        "Craft and trade": 0.100,
+        "Plant and machine operators": 0.070,
+        "Elementary occupations": 0.080
+    },
+    "housing tenure": {
+        "Owned": 0.868,
+        "Rented": 0.106,
+        "Other": 0.026
+    },
+    "place of birth": {
+        "India (same state)": 0.700,
+        "India (different state)": 0.278,
+        "Nepal": 0.005,
+        "Bangladesh": 0.005,
+        "Pakistan": 0.003,
+        "Sri Lanka": 0.002,
+        "Myanmar": 0.002,
+        "Other": 0.005
+    },
+    "sexuality": {
+        "Heterosexual": 0.940,
+        "Gay or Lesbian": 0.020,
+        "Bisexual": 0.025,
+        "Other": 0.015
+    }
+}

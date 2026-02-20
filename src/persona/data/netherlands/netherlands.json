@@ -1,0 +1,136 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "place of birth"],
+                "name": "Bevolkingsstatistieken 2022, CBS",
+                "year": 2022,
+                "url": "https://www.cbs.nl/nl-nl/dossier/bevolking"
+            },
+            {
+                "features": ["education", "occupation", "housing tenure"],
+                "name": "Arbeid in cijfers 2022, CBS",
+                "year": 2022,
+                "url": "https://www.cbs.nl/nl-nl/publicatie/2022/30/arbeid-in-cijfers-2022"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religie in Nederland 2022, CBS",
+                "year": 2022,
+                "url": "https://www.cbs.nl/nl-nl/longread/rapportages/2022/religie-in-nederland-2022"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Leefstijlmonitor 2020, CBS / RIVM",
+                "year": 2020,
+                "url": "https://www.cbs.nl/nl-nl/nieuws/2020/11/een-op-de-twaalf-nederlanders-is-niet-heteroseksueel"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.052,
+        "5-9": 0.055,
+        "10-14": 0.054,
+        "15-19": 0.059,
+        "20-24": 0.065,
+        "25-29": 0.067,
+        "30-34": 0.068,
+        "35-39": 0.067,
+        "40-44": 0.061,
+        "45-49": 0.064,
+        "50-54": 0.070,
+        "55-59": 0.071,
+        "60-64": 0.064,
+        "65-69": 0.055,
+        "70-74": 0.049,
+        "75-79": 0.033,
+        "80-84": 0.022,
+        "85+": 0.022
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "location": {
+        "South Holland": 0.207,
+        "North Holland": 0.164,
+        "North Brabant": 0.145,
+        "Gelderland": 0.118,
+        "Utrecht": 0.075,
+        "Overijssel": 0.067,
+        "Limburg": 0.063,
+        "Friesland": 0.037,
+        "Groningen": 0.034,
+        "Drenthe": 0.029,
+        "Flevoland": 0.024,
+        "Zeeland": 0.022
+    },
+    "religion": {
+        "No religion": 0.545,
+        "Catholic": 0.194,
+        "Protestant": 0.148,
+        "Muslim": 0.051,
+        "Hindu": 0.015,
+        "Buddhist": 0.010,
+        "Other": 0.037
+    },
+    "language": {
+        "Dutch": 0.870,
+        "Frisian": 0.025,
+        "Turkish": 0.025,
+        "Arabic": 0.020,
+        "English": 0.020,
+        "German": 0.010,
+        "Other": 0.030
+    },
+    "marital status": {
+        "Single (never married)": 0.424,
+        "Married or registered partnership": 0.440,
+        "Divorced": 0.078,
+        "Widowed": 0.058
+    },
+    "education": {
+        "Primary or no qualification": 0.132,
+        "Lower secondary (VMBO)": 0.200,
+        "Intermediate vocational (MBO)": 0.240,
+        "Upper secondary (HAVO/VWO)": 0.120,
+        "Higher professional (HBO)": 0.190,
+        "University degree (WO)": 0.118
+    },
+    "occupation": {
+        "Management": 0.070,
+        "Professionals": 0.180,
+        "Technicians and associate professionals": 0.160,
+        "Clerical support": 0.080,
+        "Service and sales": 0.200,
+        "Agriculture": 0.030,
+        "Craft and trades": 0.100,
+        "Plant and machine operators": 0.060,
+        "Elementary occupations": 0.080,
+        "Other": 0.040
+    },
+    "housing tenure": {
+        "Owner occupied": 0.570,
+        "Social rented": 0.280,
+        "Private rented": 0.150
+    },
+    "place of birth": {
+        "Netherlands": 0.769,
+        "Morocco": 0.023,
+        "Turkey": 0.021,
+        "Suriname": 0.021,
+        "Germany": 0.014,
+        "Netherlands Antilles/Aruba": 0.011,
+        "Indonesia": 0.010,
+        "Belgium": 0.009,
+        "Poland": 0.009,
+        "Syria": 0.008,
+        "Other": 0.105
+    },
+    "sexuality": {
+        "Heterosexual": 0.921,
+        "Gay or Lesbian": 0.024,
+        "Bisexual": 0.027,
+        "Other": 0.028
+    }
+}

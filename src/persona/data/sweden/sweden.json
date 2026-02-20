@@ -1,0 +1,148 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "place of birth"],
+                "name": "Befolkningsstatistik 2022, Statistiska centralbyrån (SCB)",
+                "year": 2022,
+                "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/befolkning/befolkningens-sammansattning/befolkningsstatistik/"
+            },
+            {
+                "features": ["education", "occupation", "housing tenure"],
+                "name": "Arbetskraftsundersökning 2022, SCB",
+                "year": 2022,
+                "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/arbetsmarknad/arbetskraftsundersokningar/arbetskraftsundersokningarna-aku/"
+            },
+            {
+                "features": ["religion"],
+                "name": "Trossamfund och religiös tillhörighet, SCB",
+                "year": 2021,
+                "url": "https://www.scb.se/hitta-statistik/statistik-efter-amne/demokrati/val-till-riksdag-landsting-och-kommun/val-till-riksdagen/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Hälsa på lika villkor, Folkhälsomyndigheten",
+                "year": 2022,
+                "url": "https://www.folkhalsomyndigheten.se/folkhalsorapportering-statistik/statistikdatabaser-och-visualisering/nationella-folkhalsoenkaten/halsa-pa-lika-villkor/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.058,
+        "5-9": 0.060,
+        "10-14": 0.060,
+        "15-19": 0.059,
+        "20-24": 0.061,
+        "25-29": 0.069,
+        "30-34": 0.071,
+        "35-39": 0.069,
+        "40-44": 0.063,
+        "45-49": 0.065,
+        "50-54": 0.068,
+        "55-59": 0.069,
+        "60-64": 0.061,
+        "65-69": 0.054,
+        "70-74": 0.050,
+        "75-79": 0.036,
+        "80-84": 0.024,
+        "85+": 0.023
+    },
+    "sex": {
+        "Male": 0.501,
+        "Female": 0.499
+    },
+    "location": {
+        "Stockholm County": 0.233,
+        "Västra Götaland County": 0.175,
+        "Skåne County": 0.139,
+        "Östergötland County": 0.050,
+        "Uppsala County": 0.041,
+        "Jönköping County": 0.037,
+        "Halland County": 0.032,
+        "Örebro County": 0.028,
+        "Södermanland County": 0.026,
+        "Gävleborg County": 0.026,
+        "Dalarna County": 0.025,
+        "Värmland County": 0.027,
+        "Västmanland County": 0.027,
+        "Västernorrland County": 0.022,
+        "Västerbotten County": 0.027,
+        "Norrbotten County": 0.025,
+        "Kronoberg County": 0.019,
+        "Blekinge County": 0.015,
+        "Kalmar County": 0.024,
+        "Jämtland County": 0.013,
+        "Gotland County": 0.006
+    },
+    "religion": {
+        "No religion": 0.570,
+        "Church of Sweden (Lutheran)": 0.340,
+        "Catholic": 0.020,
+        "Muslim": 0.020,
+        "Orthodox": 0.015,
+        "Other": 0.035
+    },
+    "language": {
+        "Swedish": 0.880,
+        "Arabic": 0.022,
+        "Persian/Dari": 0.010,
+        "Somali": 0.010,
+        "Finnish": 0.010,
+        "Polish": 0.009,
+        "Kurdish": 0.007,
+        "Tigrinya": 0.007,
+        "Other": 0.045
+    },
+    "marital status": {
+        "Single (never married)": 0.435,
+        "Married": 0.370,
+        "Divorced": 0.120,
+        "Widowed": 0.075
+    },
+    "education": {
+        "Pre-primary or primary": 0.060,
+        "Lower secondary (Grundskola)": 0.130,
+        "Upper secondary (Gymnasieskola)": 0.360,
+        "Post-secondary non-tertiary": 0.020,
+        "Short-cycle tertiary": 0.040,
+        "Bachelor's or equivalent": 0.220,
+        "Master's or PhD": 0.170
+    },
+    "occupation": {
+        "Managers": 0.060,
+        "Professionals": 0.220,
+        "Technicians and associate professionals": 0.160,
+        "Clerical support": 0.060,
+        "Service and sales": 0.180,
+        "Agriculture": 0.020,
+        "Craft and trades": 0.110,
+        "Plant and machine operators": 0.070,
+        "Elementary occupations": 0.090,
+        "Other": 0.030
+    },
+    "housing tenure": {
+        "Owner occupied": 0.503,
+        "Tenant-owner cooperative": 0.245,
+        "Social/public rented": 0.082,
+        "Private rented": 0.165,
+        "Other": 0.005
+    },
+    "place of birth": {
+        "Sweden": 0.804,
+        "Syria": 0.018,
+        "Iraq": 0.014,
+        "Poland": 0.012,
+        "Somalia": 0.011,
+        "Iran": 0.011,
+        "Finland": 0.010,
+        "Eritrea": 0.008,
+        "Bosnia and Herzegovina": 0.007,
+        "Other": 0.105
+    },
+    "sexuality": {
+        "Heterosexual": 0.926,
+        "Gay or Lesbian": 0.022,
+        "Bisexual": 0.032,
+        "Other": 0.020
+    }
+}

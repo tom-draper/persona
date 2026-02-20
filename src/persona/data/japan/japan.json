@@ -1,0 +1,136 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "occupation", "housing tenure"],
+                "name": "Population Census 2020, Statistics Bureau of Japan",
+                "year": 2020,
+                "url": "https://www.stat.go.jp/english/data/kokusei/2020/index.html"
+            },
+            {
+                "features": ["education"],
+                "name": "Survey on Living Standards, Ministry of Health, Labour and Welfare",
+                "year": 2022,
+                "url": "https://www.mhlw.go.jp/toukei/list/20-21.html"
+            },
+            {
+                "features": ["religion"],
+                "name": "Survey on Religious Consciousness, NHK Broadcasting Culture Research Institute",
+                "year": 2018,
+                "url": "https://www.nhk.or.jp/bunken/research/yoron/pdf/20190401_7.pdf"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Statistics on Foreign Residents, Ministry of Justice Japan",
+                "year": 2022,
+                "url": "https://www.moj.go.jp/isa/publications/press/13_00028.html"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "LGBT Survey, Dentsu Diversity Lab",
+                "year": 2020,
+                "url": "https://www.dentsu.co.jp/news/release/2021/0408-010364.html"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.038,
+        "5-9": 0.040,
+        "10-14": 0.042,
+        "15-19": 0.045,
+        "20-24": 0.053,
+        "25-29": 0.053,
+        "30-34": 0.054,
+        "35-39": 0.057,
+        "40-44": 0.071,
+        "45-49": 0.083,
+        "50-54": 0.073,
+        "55-59": 0.062,
+        "60-64": 0.055,
+        "65-69": 0.062,
+        "70-74": 0.066,
+        "75-79": 0.052,
+        "80-84": 0.039,
+        "85+": 0.055
+    },
+    "sex": {
+        "Male": 0.487,
+        "Female": 0.513
+    },
+    "location": {
+        "Tokyo": 0.110,
+        "Kanagawa": 0.074,
+        "Osaka": 0.070,
+        "Aichi": 0.059,
+        "Saitama": 0.059,
+        "Chiba": 0.050,
+        "Hyogo": 0.044,
+        "Fukuoka": 0.040,
+        "Hokkaido": 0.042,
+        "Shizuoka": 0.029,
+        "Hiroshima": 0.022,
+        "Kyoto": 0.020,
+        "Miyagi": 0.018,
+        "Niigata": 0.018,
+        "Nagano": 0.016,
+        "Other": 0.329
+    },
+    "religion": {
+        "No specific religion": 0.620,
+        "Buddhist": 0.200,
+        "Shinto": 0.090,
+        "Christian": 0.010,
+        "Other": 0.080
+    },
+    "language": {
+        "Japanese": 0.985,
+        "Korean": 0.005,
+        "Chinese": 0.004,
+        "English": 0.002,
+        "Other": 0.004
+    },
+    "marital status": {
+        "Single (never married)": 0.319,
+        "Married": 0.537,
+        "Divorced": 0.078,
+        "Widowed": 0.066
+    },
+    "education": {
+        "Junior high school or less": 0.137,
+        "High school (Kotogakko)": 0.395,
+        "Vocational school (Senmon gakko)": 0.125,
+        "Junior college (Tanki-daigaku)": 0.092,
+        "University degree": 0.211,
+        "Graduate degree": 0.040
+    },
+    "occupation": {
+        "Managers and executives": 0.049,
+        "Professionals and technical": 0.213,
+        "Clerical": 0.176,
+        "Service": 0.129,
+        "Sales": 0.098,
+        "Agriculture, forestry, fishery": 0.034,
+        "Craft and production process": 0.153,
+        "Transport and machine operators": 0.063,
+        "Labour": 0.085
+    },
+    "housing tenure": {
+        "Owner occupied": 0.629,
+        "Rented": 0.365,
+        "Other": 0.006
+    },
+    "place of birth": {
+        "Japan": 0.977,
+        "China": 0.007,
+        "Korea": 0.007,
+        "Vietnam": 0.002,
+        "Philippines": 0.002,
+        "Other": 0.005
+    },
+    "sexuality": {
+        "Heterosexual": 0.912,
+        "Gay or Lesbian": 0.025,
+        "Bisexual": 0.033,
+        "Other": 0.030
+    }
+}

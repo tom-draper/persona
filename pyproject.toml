@@ -17,6 +17,7 @@ dependencies = [
 
 [project.scripts]
 persona = "persona.cli:run"
+persona-generate-docs = "persona.scripts.generate_docs:generate_docs"
 
 [tool.setuptools.packages.find]
 where = ["src"]

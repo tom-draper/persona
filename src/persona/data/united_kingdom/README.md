@@ -1,5 +1,5 @@
 # United Kingdom
 
-Composite: Made up of England, Scotland, Wales, and Northern Ireland.
+Composite location — randomly selects a sub-location weighted by population: England, Scotland, Wales, and Northern Ireland.
 
-\![United Kingdom](img/united_kingdom.png)
+![United Kingdom](img/united_kingdom.png)

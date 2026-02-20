@@ -1,0 +1,144 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "race", "housing tenure"],
+                "name": "Censo Demográfico 2022, IBGE",
+                "year": 2022,
+                "url": "https://censo2022.ibge.gov.br/"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Pesquisa Nacional por Amostra de Domicílios Contínua (PNADC) 2022, IBGE",
+                "year": 2022,
+                "url": "https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html"
+            },
+            {
+                "features": ["religion"],
+                "name": "Censo Demográfico 2010 / Pesquisa Social Brasileira 2022, IBGE",
+                "year": 2022,
+                "url": "https://www.ibge.gov.br/estatisticas/sociais/populacao/9662-censo-demografico-2010.html"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Pesquisa Nacional de Saúde (PNS) 2019, IBGE/MS",
+                "year": 2019,
+                "url": "https://www.ibge.gov.br/estatisticas/sociais/saude/9160-pesquisa-nacional-de-saude.html"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.060,
+        "5-9": 0.065,
+        "10-14": 0.070,
+        "15-19": 0.075,
+        "20-24": 0.079,
+        "25-29": 0.078,
+        "30-34": 0.075,
+        "35-39": 0.073,
+        "40-44": 0.065,
+        "45-49": 0.059,
+        "50-54": 0.055,
+        "55-59": 0.050,
+        "60-64": 0.043,
+        "65-69": 0.034,
+        "70-74": 0.026,
+        "75-79": 0.018,
+        "80-84": 0.010,
+        "85+": 0.007
+    },
+    "sex": {
+        "Male": 0.488,
+        "Female": 0.512
+    },
+    "location": {
+        "São Paulo": 0.217,
+        "Minas Gerais": 0.099,
+        "Rio de Janeiro": 0.083,
+        "Bahia": 0.072,
+        "Paraná": 0.057,
+        "Rio Grande do Sul": 0.055,
+        "Pernambuco": 0.045,
+        "Ceará": 0.045,
+        "Pará": 0.040,
+        "Santa Catarina": 0.038,
+        "Goiás": 0.035,
+        "Maranhão": 0.034,
+        "Distrito Federal": 0.015,
+        "Mato Grosso": 0.018,
+        "Mato Grosso do Sul": 0.014,
+        "Other": 0.133
+    },
+    "race": {
+        "Branco (White)": 0.435,
+        "Pardo (Brown/Mixed)": 0.468,
+        "Preto (Black)": 0.089,
+        "Amarelo (Asian)": 0.005,
+        "Indígena (Indigenous)": 0.003
+    },
+    "religion": {
+        "Catholic": 0.505,
+        "Evangelical": 0.311,
+        "No religion": 0.108,
+        "Spiritist (Kardecist)": 0.030,
+        "Afro-Brazilian religions": 0.015,
+        "Other Christian": 0.015,
+        "Other": 0.016
+    },
+    "language": {
+        "Portuguese": 0.965,
+        "Spanish": 0.012,
+        "German dialects": 0.009,
+        "Italian dialects": 0.006,
+        "English": 0.002,
+        "Other": 0.006
+    },
+    "marital status": {
+        "Single (never married)": 0.347,
+        "Married": 0.362,
+        "Civil union (união estável)": 0.140,
+        "Widowed": 0.068,
+        "Divorced": 0.054,
+        "Separated": 0.029
+    },
+    "education": {
+        "No education": 0.068,
+        "Incomplete primary": 0.187,
+        "Complete primary": 0.083,
+        "Incomplete lower secondary": 0.111,
+        "Complete lower secondary": 0.098,
+        "Incomplete upper secondary": 0.051,
+        "Complete upper secondary": 0.248,
+        "Incomplete university": 0.048,
+        "University degree": 0.106
+    },
+    "occupation": {
+        "Management": 0.040,
+        "Professionals": 0.077,
+        "Technicians and associate professionals": 0.083,
+        "Administrative": 0.087,
+        "Personal services": 0.110,
+        "Sales": 0.089,
+        "Agriculture": 0.097,
+        "Craft and trades": 0.115,
+        "Plant and machine operators": 0.090,
+        "Elementary occupations": 0.140,
+        "Other": 0.072
+    },
+    "housing tenure": {
+        "Owner occupied": 0.712,
+        "Rented": 0.191,
+        "Borrowed or other": 0.097
+    },
+    "place of birth": {
+        "Brazil": 0.995,
+        "Other South America": 0.002,
+        "Other": 0.003
+    },
+    "sexuality": {
+        "Heterosexual": 0.939,
+        "Gay or Lesbian": 0.020,
+        "Bisexual": 0.036,
+        "Other": 0.005
+    }
+}

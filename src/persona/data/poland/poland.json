@@ -1,0 +1,130 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "place of birth"],
+                "name": "Narodowy Spis Powszechny Ludności i Mieszkań 2021, GUS",
+                "year": 2021,
+                "url": "https://stat.gov.pl/spisy-powszechne/nsp-2021/"
+            },
+            {
+                "features": ["education", "occupation", "housing tenure"],
+                "name": "Badanie Aktywności Ekonomicznej Ludności (BAEL) 2022, GUS",
+                "year": 2022,
+                "url": "https://stat.gov.pl/obszary-tematyczne/rynek-pracy/pracujacy-bezrobotni-bierni-zawodowo-wedlug-bael/"
+            },
+            {
+                "features": ["religion"],
+                "name": "Wyznania religijne, GUS",
+                "year": 2021,
+                "url": "https://stat.gov.pl/obszary-tematyczne/inne-opracowania/wyznania-religijne-w-polsce/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Badanie społeczne CBOS, Centrum Badania Opinii Społecznej",
+                "year": 2021,
+                "url": "https://www.cbos.pl/SPISKOM.POL/2021/K_068_21.PDF"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.046,
+        "5-9": 0.054,
+        "10-14": 0.055,
+        "15-19": 0.051,
+        "20-24": 0.049,
+        "25-29": 0.058,
+        "30-34": 0.070,
+        "35-39": 0.076,
+        "40-44": 0.070,
+        "45-49": 0.064,
+        "50-54": 0.071,
+        "55-59": 0.069,
+        "60-64": 0.063,
+        "65-69": 0.057,
+        "70-74": 0.050,
+        "75-79": 0.033,
+        "80-84": 0.023,
+        "85+": 0.021
+    },
+    "sex": {
+        "Male": 0.483,
+        "Female": 0.517
+    },
+    "location": {
+        "Masovian (Mazowieckie)": 0.137,
+        "Silesian (Śląskie)": 0.120,
+        "Greater Poland (Wielkopolskie)": 0.090,
+        "Lesser Poland (Małopolskie)": 0.087,
+        "Lower Silesian (Dolnośląskie)": 0.076,
+        "Lodz (Łódzkie)": 0.065,
+        "Pomeranian (Pomorskie)": 0.060,
+        "Lublin (Lubelskie)": 0.056,
+        "Subcarpathian (Podkarpackie)": 0.054,
+        "Kuyavian-Pomeranian (Kujawsko-Pomorskie)": 0.052,
+        "Warmian-Masurian (Warmińsko-Mazurskie)": 0.036,
+        "West Pomeranian (Zachodniopomorskie)": 0.043,
+        "Holy Cross (Świętokrzyskie)": 0.032,
+        "Podlaskie": 0.031,
+        "Lubusz (Lubuskie)": 0.027,
+        "Opole (Opolskie)": 0.026
+    },
+    "religion": {
+        "Catholic": 0.880,
+        "No religion": 0.085,
+        "Orthodox": 0.014,
+        "Protestant": 0.007,
+        "Other": 0.014
+    },
+    "language": {
+        "Polish": 0.972,
+        "Silesian": 0.012,
+        "Kashubian": 0.005,
+        "German": 0.004,
+        "Other": 0.007
+    },
+    "marital status": {
+        "Single (never married)": 0.354,
+        "Married": 0.524,
+        "Divorced": 0.056,
+        "Widowed": 0.066
+    },
+    "education": {
+        "No qualifications": 0.013,
+        "Primary": 0.095,
+        "Lower secondary (Gymnasium)": 0.107,
+        "Vocational (Zasadnicze)": 0.228,
+        "Upper secondary (Matura)": 0.269,
+        "Post-secondary non-tertiary": 0.039,
+        "University degree": 0.249
+    },
+    "occupation": {
+        "Managers": 0.040,
+        "Professionals": 0.170,
+        "Technicians and associate professionals": 0.140,
+        "Clerical support": 0.090,
+        "Service and sales": 0.160,
+        "Agriculture": 0.070,
+        "Craft and trades": 0.150,
+        "Plant and machine operators": 0.090,
+        "Elementary occupations": 0.090
+    },
+    "housing tenure": {
+        "Owner occupied": 0.810,
+        "Rented": 0.110,
+        "Cooperative/other": 0.080
+    },
+    "place of birth": {
+        "Poland": 0.970,
+        "Ukraine": 0.010,
+        "Germany": 0.005,
+        "Russia/Belarus": 0.005,
+        "Other": 0.010
+    },
+    "sexuality": {
+        "Heterosexual": 0.956,
+        "Gay or Lesbian": 0.012,
+        "Bisexual": 0.022,
+        "Other": 0.010
+    }
+}

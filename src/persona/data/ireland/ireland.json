@@ -1,0 +1,131 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "place of birth", "sexuality"],
+                "name": "Census 2022, Central Statistics Office Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/census/census2022/"
+            },
+            {
+                "features": ["education", "occupation", "housing tenure"],
+                "name": "Labour Force Survey 2022, CSO Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-lfs/"
+            },
+            {
+                "features": ["religion"],
+                "name": "Census 2022 – Religion, CSO Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cp8iter/cp8iter/"
+            },
+            {
+                "features": ["language"],
+                "name": "Census 2022 – Irish language, CSO Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cp10esil/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.051,
+        "5-9": 0.055,
+        "10-14": 0.055,
+        "15-19": 0.058,
+        "20-24": 0.068,
+        "25-29": 0.079,
+        "30-34": 0.080,
+        "35-39": 0.079,
+        "40-44": 0.072,
+        "45-49": 0.068,
+        "50-54": 0.069,
+        "55-59": 0.060,
+        "60-64": 0.051,
+        "65-69": 0.041,
+        "70-74": 0.033,
+        "75-79": 0.023,
+        "80-84": 0.015,
+        "85+": 0.014
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "location": {
+        "Leinster": 0.549,
+        "Munster": 0.282,
+        "Connacht": 0.104,
+        "Ulster (Republic of Ireland)": 0.065
+    },
+    "religion": {
+        "Catholic": 0.695,
+        "No religion": 0.140,
+        "Church of Ireland": 0.030,
+        "Muslim": 0.014,
+        "Orthodox Christian": 0.015,
+        "Other Christian": 0.020,
+        "Other": 0.086
+    },
+    "language": {
+        "English": 0.839,
+        "Irish": 0.061,
+        "Polish": 0.027,
+        "French": 0.015,
+        "Spanish": 0.012,
+        "Other": 0.046
+    },
+    "marital status": {
+        "Single (never married)": 0.397,
+        "Married": 0.420,
+        "Divorced": 0.055,
+        "Widowed": 0.046,
+        "Separated": 0.050,
+        "Civil partnership": 0.032
+    },
+    "education": {
+        "No formal education": 0.040,
+        "Primary": 0.120,
+        "Lower secondary (Junior Certificate)": 0.150,
+        "Upper secondary (Leaving Certificate)": 0.270,
+        "Post Leaving Cert / vocational": 0.060,
+        "Third level non-degree": 0.080,
+        "Third level degree": 0.200,
+        "Postgraduate": 0.080
+    },
+    "occupation": {
+        "Managers and directors": 0.110,
+        "Professionals": 0.200,
+        "Associate professional and technical": 0.120,
+        "Administrative and secretarial": 0.100,
+        "Skilled trades": 0.080,
+        "Caring and personal services": 0.090,
+        "Sales and customer service": 0.100,
+        "Process, plant and machine operatives": 0.060,
+        "Elementary occupations": 0.100,
+        "Other": 0.040
+    },
+    "housing tenure": {
+        "Owner occupied (outright)": 0.282,
+        "Owner with mortgage": 0.404,
+        "Private rented": 0.195,
+        "Social rented": 0.119
+    },
+    "place of birth": {
+        "Ireland": 0.817,
+        "United Kingdom": 0.046,
+        "Poland": 0.028,
+        "Lithuania": 0.012,
+        "Romania": 0.011,
+        "India": 0.010,
+        "Brazil": 0.008,
+        "Germany": 0.007,
+        "France": 0.006,
+        "Other": 0.055
+    },
+    "sexuality": {
+        "Heterosexual": 0.913,
+        "Gay or Lesbian": 0.019,
+        "Bisexual": 0.030,
+        "Other": 0.038
+    }
+}

@@ -1,0 +1,148 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "ethnicity", "place of birth"],
+                "name": "Census 2018, Stats NZ",
+                "year": 2018,
+                "url": "https://www.stats.govt.nz/2018-census/"
+            },
+            {
+                "features": ["education", "occupation", "housing tenure"],
+                "name": "Household Labour Force Survey 2022, Stats NZ",
+                "year": 2022,
+                "url": "https://www.stats.govt.nz/topics/labour-market"
+            },
+            {
+                "features": ["religion"],
+                "name": "Census 2018 – Religious affiliation, Stats NZ",
+                "year": 2018,
+                "url": "https://www.stats.govt.nz/information-releases/religious-affiliation-2018-census-of-population-and-dwellings"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "New Zealand Health Survey, Ministry of Health",
+                "year": 2021,
+                "url": "https://www.health.govt.nz/publication/new-zealand-health-survey-annual-update-key-findings-2020-21"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.061,
+        "5-9": 0.064,
+        "10-14": 0.063,
+        "15-19": 0.063,
+        "20-24": 0.071,
+        "25-29": 0.073,
+        "30-34": 0.070,
+        "35-39": 0.067,
+        "40-44": 0.060,
+        "45-49": 0.062,
+        "50-54": 0.064,
+        "55-59": 0.063,
+        "60-64": 0.055,
+        "65-69": 0.048,
+        "70-74": 0.038,
+        "75-79": 0.025,
+        "80-84": 0.017,
+        "85+": 0.015
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "location": {
+        "Auckland": 0.328,
+        "Canterbury": 0.118,
+        "Wellington": 0.114,
+        "Waikato": 0.094,
+        "Bay of Plenty": 0.063,
+        "Otago": 0.050,
+        "Manawatu-Whanganui": 0.044,
+        "Northland": 0.034,
+        "Hawke's Bay": 0.033,
+        "Taranaki": 0.027,
+        "Nelson-Tasman-Marlborough": 0.041,
+        "Southland": 0.023,
+        "Gisborne": 0.013,
+        "West Coast": 0.010
+    },
+    "ethnicity": {
+        "European": 0.705,
+        "Maori": 0.168,
+        "Asian": 0.157,
+        "Pacific peoples": 0.086,
+        "Middle Eastern, Latin American, African": 0.016,
+        "Other": 0.004
+    },
+    "religion": {
+        "No religion": 0.483,
+        "Christian": 0.370,
+        "Hindu": 0.027,
+        "Islam": 0.014,
+        "Buddhist": 0.013,
+        "Maori Christian": 0.016,
+        "Other": 0.077
+    },
+    "language": {
+        "English": 0.853,
+        "Maori": 0.041,
+        "Samoan": 0.024,
+        "Hindi": 0.018,
+        "Mandarin": 0.015,
+        "Yue (Cantonese)": 0.012,
+        "French": 0.013,
+        "Other": 0.024
+    },
+    "marital status": {
+        "Single (never married)": 0.379,
+        "Married or civil union": 0.443,
+        "Separated": 0.035,
+        "Divorced": 0.079,
+        "Widowed": 0.064
+    },
+    "education": {
+        "No qualifications": 0.148,
+        "Lower secondary": 0.118,
+        "Upper secondary or sixth form": 0.101,
+        "Post-school vocational": 0.225,
+        "Bachelor's degree": 0.202,
+        "Postgraduate": 0.121,
+        "Other": 0.085
+    },
+    "occupation": {
+        "Managers": 0.116,
+        "Professionals": 0.202,
+        "Technicians and trades": 0.124,
+        "Community and personal services": 0.098,
+        "Clerical and administrative": 0.096,
+        "Sales": 0.090,
+        "Machinery operators and drivers": 0.067,
+        "Labourers": 0.098,
+        "Primary industry workers": 0.068,
+        "Other": 0.041
+    },
+    "housing tenure": {
+        "Owner occupied": 0.644,
+        "Rented": 0.328,
+        "Other": 0.028
+    },
+    "place of birth": {
+        "New Zealand": 0.726,
+        "United Kingdom": 0.058,
+        "India": 0.042,
+        "China": 0.036,
+        "Australia": 0.022,
+        "South Africa": 0.018,
+        "Samoa": 0.017,
+        "Philippines": 0.015,
+        "Fiji": 0.011,
+        "Other": 0.055
+    },
+    "sexuality": {
+        "Heterosexual": 0.926,
+        "Gay or Lesbian": 0.026,
+        "Bisexual": 0.033,
+        "Other": 0.015
+    }
+}

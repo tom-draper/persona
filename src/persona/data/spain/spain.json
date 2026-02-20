@@ -1,0 +1,153 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location"],
+                "name": "Estadística del Padrón Continuo 2022, INE",
+                "year": 2022,
+                "url": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177012&menu=ultiDatos&idp=1254734710990"
+            },
+            {
+                "features": ["education", "occupation", "housing tenure"],
+                "name": "Encuesta de Población Activa 2022, INE",
+                "year": 2022,
+                "url": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176918&menu=ultiDatos&idp=1254735976595"
+            },
+            {
+                "features": ["religion"],
+                "name": "Barómetro del CIS, Centro de Investigaciones Sociológicas",
+                "year": 2022,
+                "url": "https://www.cis.es/cis/opencms/ES/NoticiasNovedades/2022/barometro_octubre_2022.html"
+            },
+            {
+                "features": ["language"],
+                "name": "Encuesta sobre el uso de lenguas en España, INE",
+                "year": 2022,
+                "url": "https://www.ine.es/prensa/ule_2022.pdf"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Estadística de Migraciones 2022, INE",
+                "year": 2022,
+                "url": "https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736177000&menu=ultiDatos&idp=1254735573002"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Barómetro del CIS - Orientación sexual, CIS",
+                "year": 2021,
+                "url": "https://www.cis.es/cis/export/sites/default/-Archivos/Marginales/3320_3339/3321/es3321.pdf"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.042,
+        "5-9": 0.045,
+        "10-14": 0.047,
+        "15-19": 0.048,
+        "20-24": 0.052,
+        "25-29": 0.054,
+        "30-34": 0.059,
+        "35-39": 0.070,
+        "40-44": 0.077,
+        "45-49": 0.078,
+        "50-54": 0.073,
+        "55-59": 0.068,
+        "60-64": 0.062,
+        "65-69": 0.056,
+        "70-74": 0.050,
+        "75-79": 0.039,
+        "80-84": 0.027,
+        "85+": 0.032
+    },
+    "sex": {
+        "Male": 0.489,
+        "Female": 0.511
+    },
+    "location": {
+        "Andalusia": 0.183,
+        "Catalonia": 0.160,
+        "Community of Madrid": 0.140,
+        "Valencian Community": 0.108,
+        "Galicia": 0.056,
+        "Castile and León": 0.049,
+        "Basque Country": 0.047,
+        "Canary Islands": 0.046,
+        "Castile-La Mancha": 0.041,
+        "Murcia": 0.031,
+        "Aragon": 0.029,
+        "Extremadura": 0.022,
+        "Principality of Asturias": 0.022,
+        "Balearic Islands": 0.025,
+        "Navarre": 0.013,
+        "Cantabria": 0.013,
+        "La Rioja": 0.007,
+        "Ceuta": 0.002,
+        "Melilla": 0.002
+    },
+    "religion": {
+        "Catholic": 0.585,
+        "Non-believer/Atheist": 0.275,
+        "Agnostic": 0.080,
+        "Muslim": 0.020,
+        "Other Christian": 0.020,
+        "Other": 0.020
+    },
+    "language": {
+        "Spanish (Castilian)": 0.740,
+        "Catalan/Valencian": 0.150,
+        "Galician": 0.040,
+        "Basque (Euskera)": 0.017,
+        "Other": 0.053
+    },
+    "marital status": {
+        "Single (never married)": 0.354,
+        "Married": 0.451,
+        "Separated": 0.018,
+        "Divorced": 0.074,
+        "Widowed": 0.103
+    },
+    "education": {
+        "No education": 0.074,
+        "Primary": 0.172,
+        "Lower secondary (ESO)": 0.206,
+        "Upper secondary (Bachillerato/vocational)": 0.241,
+        "Short-cycle higher education": 0.107,
+        "University degree": 0.200
+    },
+    "occupation": {
+        "Management and executives": 0.050,
+        "Professionals": 0.150,
+        "Technicians and associate professionals": 0.120,
+        "Administrative and secretarial": 0.100,
+        "Service and sales": 0.220,
+        "Agriculture": 0.040,
+        "Craft and trades": 0.110,
+        "Plant and machine operators": 0.080,
+        "Elementary occupations": 0.130
+    },
+    "housing tenure": {
+        "Owner occupied (outright)": 0.420,
+        "Owner with mortgage": 0.270,
+        "Private rented": 0.230,
+        "Social/other": 0.080
+    },
+    "place of birth": {
+        "Spain": 0.854,
+        "Romania": 0.020,
+        "Morocco": 0.019,
+        "United Kingdom": 0.009,
+        "Colombia": 0.009,
+        "Italy": 0.008,
+        "Venezuela": 0.007,
+        "China": 0.006,
+        "Ecuador": 0.006,
+        "Germany": 0.005,
+        "Other": 0.057
+    },
+    "sexuality": {
+        "Heterosexual": 0.921,
+        "Homosexual": 0.018,
+        "Bisexual": 0.027,
+        "Other": 0.034
+    }
+}

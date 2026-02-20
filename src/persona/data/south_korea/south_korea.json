@@ -1,0 +1,136 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "housing tenure"],
+                "name": "Population and Housing Census 2020, Statistics Korea (KOSTAT)",
+                "year": 2020,
+                "url": "https://www.kostat.go.kr/board.es?mid=a10301010000&bid=204"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Economically Active Population Survey 2022, Statistics Korea",
+                "year": 2022,
+                "url": "https://www.kostat.go.kr/board.es?mid=a10301010000&bid=221"
+            },
+            {
+                "features": ["religion"],
+                "name": "Social Survey 2021, Statistics Korea",
+                "year": 2021,
+                "url": "https://www.kostat.go.kr/board.es?mid=a10301010000&bid=203"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Immigration Statistics 2022, Korea Immigration Service",
+                "year": 2022,
+                "url": "https://www.immigration.go.kr/immigration/1569/subview.do"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "LGBT Survey, Korean Social Science Data Archive",
+                "year": 2020,
+                "url": "https://www.kssda.or.kr/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.039,
+        "5-9": 0.043,
+        "10-14": 0.045,
+        "15-19": 0.046,
+        "20-24": 0.058,
+        "25-29": 0.065,
+        "30-34": 0.067,
+        "35-39": 0.065,
+        "40-44": 0.072,
+        "45-49": 0.078,
+        "50-54": 0.078,
+        "55-59": 0.074,
+        "60-64": 0.067,
+        "65-69": 0.054,
+        "70-74": 0.042,
+        "75-79": 0.031,
+        "80-84": 0.020,
+        "85+": 0.016
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "location": {
+        "Seoul": 0.186,
+        "Gyeonggi": 0.263,
+        "Busan": 0.066,
+        "Incheon": 0.057,
+        "Daegu": 0.047,
+        "South Chungcheong": 0.042,
+        "North Gyeongsang": 0.051,
+        "South Gyeongsang": 0.063,
+        "Daejeon": 0.028,
+        "Gwangju": 0.028,
+        "Ulsan": 0.022,
+        "North Chungcheong": 0.032,
+        "North Jeolla": 0.036,
+        "South Jeolla": 0.036,
+        "Gangwon": 0.030,
+        "Jeju": 0.012,
+        "Sejong": 0.006
+    },
+    "religion": {
+        "No religion": 0.563,
+        "Protestant": 0.198,
+        "Buddhist": 0.159,
+        "Catholic": 0.077,
+        "Other": 0.003
+    },
+    "language": {
+        "Korean": 0.985,
+        "Chinese": 0.006,
+        "Vietnamese": 0.003,
+        "Other": 0.006
+    },
+    "marital status": {
+        "Single (never married)": 0.321,
+        "Married": 0.548,
+        "Divorced": 0.069,
+        "Widowed": 0.062
+    },
+    "education": {
+        "Below high school": 0.156,
+        "High school": 0.352,
+        "Associate's degree": 0.099,
+        "University degree": 0.320,
+        "Graduate degree": 0.073
+    },
+    "occupation": {
+        "Managers": 0.043,
+        "Professionals and related": 0.210,
+        "Technicians and associate professionals": 0.109,
+        "Clerical support": 0.134,
+        "Service": 0.118,
+        "Sales": 0.110,
+        "Agriculture and fishery": 0.052,
+        "Craft and manufacturing": 0.107,
+        "Equipment operators": 0.068,
+        "Elementary occupations": 0.049
+    },
+    "housing tenure": {
+        "Owner occupied": 0.576,
+        "Jeonse (lump-sum lease)": 0.141,
+        "Monthly rented": 0.202,
+        "Other": 0.081
+    },
+    "place of birth": {
+        "South Korea": 0.972,
+        "China": 0.013,
+        "Vietnam": 0.005,
+        "United States": 0.003,
+        "Other": 0.007
+    },
+    "sexuality": {
+        "Heterosexual": 0.963,
+        "Gay or Lesbian": 0.014,
+        "Bisexual": 0.015,
+        "Other": 0.008
+    }
+}

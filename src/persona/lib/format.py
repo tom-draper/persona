@@ -5,6 +5,10 @@ alias = {
     'united_states': 'united_states_of_america',
     'uae': 'united_arab_emirates',
     'world': 'global',
+    'nz': 'new_zealand',
+    'korea': 'south_korea',
+    'brasil': 'brazil',
+    'nippon': 'japan',
 }
 
 

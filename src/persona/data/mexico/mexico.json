@@ -1,0 +1,135 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location", "religion", "language", "housing tenure"],
+                "name": "Censo de Población y Vivienda 2020, INEGI",
+                "year": 2020,
+                "url": "https://www.inegi.org.mx/programas/ccpv/2020/"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Encuesta Nacional de Ocupación y Empleo (ENOE) 2022, INEGI",
+                "year": 2022,
+                "url": "https://www.inegi.org.mx/programas/enoe/15ymas/"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Encuesta Nacional sobre Discriminación 2022, CONAPRED/INEGI",
+                "year": 2022,
+                "url": "https://www.inegi.org.mx/programas/enadis/2022/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Encuesta Nacional sobre Diversidad Sexual y de Género (ENDISEG) 2021, INEGI",
+                "year": 2021,
+                "url": "https://www.inegi.org.mx/programas/endiseg/2021/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.072,
+        "5-9": 0.080,
+        "10-14": 0.081,
+        "15-19": 0.086,
+        "20-24": 0.087,
+        "25-29": 0.078,
+        "30-34": 0.070,
+        "35-39": 0.067,
+        "40-44": 0.061,
+        "45-49": 0.056,
+        "50-54": 0.050,
+        "55-59": 0.043,
+        "60-64": 0.035,
+        "65-69": 0.028,
+        "70-74": 0.021,
+        "75-79": 0.014,
+        "80-84": 0.009,
+        "85+": 0.006
+    },
+    "sex": {
+        "Male": 0.486,
+        "Female": 0.514
+    },
+    "location": {
+        "State of Mexico": 0.123,
+        "Mexico City (CDMX)": 0.073,
+        "Jalisco": 0.064,
+        "Veracruz": 0.064,
+        "Puebla": 0.058,
+        "Guanajuato": 0.054,
+        "Chiapas": 0.046,
+        "Nuevo León": 0.042,
+        "Michoacán": 0.036,
+        "Oaxaca": 0.031,
+        "Chihuahua": 0.031,
+        "Guerrero": 0.027,
+        "Tamaulipas": 0.027,
+        "Sonora": 0.022,
+        "Other": 0.302
+    },
+    "religion": {
+        "Catholic": 0.775,
+        "Protestant/Evangelical": 0.113,
+        "No religion": 0.086,
+        "Jehovah's Witness": 0.013,
+        "Other": 0.013
+    },
+    "language": {
+        "Spanish": 0.936,
+        "Nahuatl": 0.016,
+        "Yucatec Maya": 0.009,
+        "Zapotec": 0.005,
+        "Mixtec": 0.005,
+        "Other indigenous": 0.015,
+        "Other": 0.014
+    },
+    "marital status": {
+        "Single (never married)": 0.338,
+        "Married": 0.358,
+        "Civil union (free union)": 0.184,
+        "Separated": 0.054,
+        "Divorced": 0.036,
+        "Widowed": 0.030
+    },
+    "education": {
+        "No education": 0.048,
+        "Incomplete primary": 0.126,
+        "Complete primary": 0.180,
+        "Lower secondary (secundaria)": 0.198,
+        "Upper secondary (preparatoria)": 0.188,
+        "Short-cycle tertiary": 0.060,
+        "University degree (licenciatura)": 0.140,
+        "Graduate degree": 0.040,
+        "Other": 0.020
+    },
+    "occupation": {
+        "Management": 0.038,
+        "Professionals": 0.098,
+        "Technicians and associate professionals": 0.084,
+        "Administrative": 0.080,
+        "Sales": 0.178,
+        "Services": 0.162,
+        "Agriculture": 0.124,
+        "Craft and trades": 0.111,
+        "Plant and machine operators": 0.073,
+        "Elementary occupations": 0.052
+    },
+    "housing tenure": {
+        "Owner occupied": 0.640,
+        "Rented": 0.155,
+        "Borrowed or other": 0.205
+    },
+    "place of birth": {
+        "Mexico": 0.975,
+        "United States": 0.012,
+        "Central America": 0.005,
+        "Other": 0.008
+    },
+    "sexuality": {
+        "Heterosexual": 0.932,
+        "Gay or Lesbian": 0.025,
+        "Bisexual": 0.030,
+        "Other": 0.013
+    }
+}
