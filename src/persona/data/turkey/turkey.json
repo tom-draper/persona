@@ -1,0 +1,138 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure"],
+                "name": "Adrese Dayalı Nüfus Kayıt Sistemi 2023, Türkiye İstatistik Kurumu (TUIK)",
+                "year": 2023,
+                "url": "https://www.tuik.gov.tr/Home/Index"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Hanehalkı İşgücü Araştırması 2022, TUIK",
+                "year": 2022,
+                "url": "https://www.tuik.gov.tr/Home/Index"
+            },
+            {
+                "features": ["religion"],
+                "name": "WIN/Gallup International Global Index of Religiosity and Atheism 2019",
+                "year": 2019,
+                "url": "https://www.wingia.com/"
+            },
+            {
+                "features": ["language"],
+                "name": "Ethnologue / KONDA Research - Languages of Turkey 2020",
+                "year": 2020,
+                "url": "https://konda.com.tr/en/"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Göç İstatistikleri 2022, TUIK",
+                "year": 2022,
+                "url": "https://www.tuik.gov.tr/Home/Index"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "ILGA-Europe Rainbow Map 2023 / Kaos GL Survey 2022",
+                "year": 2022,
+                "url": "https://rainbow-europe.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.072,
+        "5-9": 0.080,
+        "10-14": 0.081,
+        "15-19": 0.082,
+        "20-24": 0.079,
+        "25-29": 0.072,
+        "30-34": 0.070,
+        "35-39": 0.069,
+        "40-44": 0.063,
+        "45-49": 0.058,
+        "50-54": 0.054,
+        "55-59": 0.047,
+        "60-64": 0.040,
+        "65-69": 0.033,
+        "70-74": 0.026,
+        "75-79": 0.017,
+        "80-84": 0.010,
+        "85+": 0.007
+    },
+    "sex": {
+        "Male": 0.502,
+        "Female": 0.498
+    },
+    "location": {
+        "Istanbul": 0.186,
+        "Ankara": 0.063,
+        "Izmir": 0.053,
+        "Bursa": 0.036,
+        "Antalya": 0.030,
+        "Adana": 0.027,
+        "Konya": 0.026,
+        "Gaziantep": 0.027,
+        "Mersin": 0.023,
+        "Kocaeli": 0.024,
+        "Şanlıurfa": 0.020,
+        "Diyarbakır": 0.019,
+        "Hatay": 0.018,
+        "Manisa": 0.017,
+        "Other": 0.411
+    },
+    "religion": {
+        "Muslim (Sunni)": 0.820,
+        "Muslim (Alevi)": 0.130,
+        "No religion": 0.030,
+        "Christian": 0.003,
+        "Other": 0.017
+    },
+    "language": {
+        "Turkish": 0.840,
+        "Kurdish": 0.130,
+        "Arabic": 0.013,
+        "Other": 0.017
+    },
+    "marital status": {
+        "Married": 0.570,
+        "Single (never married)": 0.340,
+        "Divorced": 0.050,
+        "Widowed": 0.040
+    },
+    "education": {
+        "No education": 0.080,
+        "Primary (5 years)": 0.150,
+        "Primary (8 years)": 0.250,
+        "Upper secondary": 0.280,
+        "Short-cycle tertiary": 0.060,
+        "University degree": 0.150,
+        "Graduate degree": 0.030
+    },
+    "occupation": {
+        "Service and sales": 0.180,
+        "Craft and trades": 0.160,
+        "Elementary": 0.130,
+        "Professionals": 0.120,
+        "Agriculture": 0.110,
+        "Plant and machine operators": 0.090,
+        "Technicians": 0.080,
+        "Administrative": 0.070,
+        "Management": 0.060
+    },
+    "housing tenure": {
+        "Owner occupied": 0.600,
+        "Rented": 0.320,
+        "Other": 0.080
+    },
+    "place of birth": {
+        "Turkey": 0.965,
+        "Syria": 0.015,
+        "Other": 0.020
+    },
+    "sexuality": {
+        "Heterosexual": 0.960,
+        "Bisexual": 0.020,
+        "Gay or Lesbian": 0.015,
+        "Other": 0.005
+    }
+}

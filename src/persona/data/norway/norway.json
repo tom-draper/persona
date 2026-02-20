@@ -1,0 +1,135 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Folke- og boligtelling 2021, Statistisk sentralbyrå (SSB)",
+                "year": 2021,
+                "url": "https://www.ssb.no/en/befolkning/folketelling"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Arbeidskraftundersøkelsen 2022, SSB",
+                "year": 2022,
+                "url": "https://www.ssb.no/en/arbeid-og-lonn/sysselsetting/statistikk/arbeidskraftundersokelsen"
+            },
+            {
+                "features": ["religion"],
+                "name": "Tros- og livssynssamfunn 2022, SSB",
+                "year": 2022,
+                "url": "https://www.ssb.no/en/kultur-og-fritid/religion-og-livssyn/statistikk/trus-og-livssynssamfunn"
+            },
+            {
+                "features": ["language"],
+                "name": "Innvandring og innvandrere 2022, SSB",
+                "year": 2022,
+                "url": "https://www.ssb.no/en/befolkning/innvandrere/statistikk/innvandrere-og-norskfodte-med-innvandrerforeldre"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Levekårsundersøkelsen om seksuell orientering 2020, SSB",
+                "year": 2020,
+                "url": "https://www.ssb.no/sosiale-forhold-og-kriminalitet/artikler-og-publikasjoner/seksuell-orientering-og-levekaar"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.053,
+        "5-9": 0.059,
+        "10-14": 0.062,
+        "15-19": 0.060,
+        "20-24": 0.065,
+        "25-29": 0.070,
+        "30-34": 0.071,
+        "35-39": 0.067,
+        "40-44": 0.060,
+        "45-49": 0.067,
+        "50-54": 0.072,
+        "55-59": 0.067,
+        "60-64": 0.057,
+        "65-69": 0.050,
+        "70-74": 0.045,
+        "75-79": 0.030,
+        "80-84": 0.020,
+        "85+": 0.018
+    },
+    "sex": {
+        "Male": 0.502,
+        "Female": 0.498
+    },
+    "location": {
+        "Oslo": 0.125,
+        "Akershus": 0.115,
+        "Vestland": 0.108,
+        "Rogaland": 0.084,
+        "Trøndelag": 0.080,
+        "Innlandet": 0.074,
+        "Vestfold og Telemark": 0.060,
+        "Østfold": 0.058,
+        "Agder": 0.055,
+        "Møre og Romsdal": 0.052,
+        "Buskerud": 0.053,
+        "Nordland": 0.045,
+        "Troms og Finnmark": 0.040,
+        "Other": 0.051
+    },
+    "religion": {
+        "Church of Norway (Lutheran)": 0.650,
+        "No religion": 0.180,
+        "Islam": 0.037,
+        "Roman Catholic": 0.030,
+        "Other Christian": 0.030,
+        "Other": 0.073
+    },
+    "language": {
+        "Norwegian": 0.860,
+        "English": 0.015,
+        "Polish": 0.013,
+        "Lithuanian": 0.008,
+        "Somali": 0.007,
+        "Other": 0.097
+    },
+    "marital status": {
+        "Single (never married)": 0.460,
+        "Married": 0.400,
+        "Divorced": 0.090,
+        "Widowed": 0.050
+    },
+    "education": {
+        "Primary or lower secondary": 0.280,
+        "Upper secondary": 0.420,
+        "Short-cycle tertiary": 0.050,
+        "Bachelor's degree": 0.180,
+        "Graduate degree": 0.070
+    },
+    "occupation": {
+        "Professionals": 0.220,
+        "Service and sales": 0.180,
+        "Technicians": 0.150,
+        "Administrative": 0.100,
+        "Management": 0.090,
+        "Craft and trades": 0.090,
+        "Plant and machine operators": 0.070,
+        "Elementary": 0.070,
+        "Agriculture": 0.020,
+        "Other": 0.010
+    },
+    "housing tenure": {
+        "Owner occupied": 0.780,
+        "Rented": 0.220
+    },
+    "place of birth": {
+        "Norway": 0.855,
+        "Other EU/Europe": 0.065,
+        "Asia": 0.035,
+        "Africa": 0.015,
+        "Americas": 0.010,
+        "Other": 0.020
+    },
+    "sexuality": {
+        "Heterosexual": 0.940,
+        "Bisexual": 0.030,
+        "Gay or Lesbian": 0.020,
+        "Other": 0.010
+    }
+}

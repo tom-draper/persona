@@ -1,0 +1,134 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Sčítání lidu, domů a bytů 2021, Český statistický úřad (CZSO)",
+                "year": 2021,
+                "url": "https://www.czso.cz/csu/czso/census-2021"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Výběrové šetření pracovních sil 2022, CZSO",
+                "year": 2022,
+                "url": "https://www.czso.cz/csu/czso/labour-force-survey"
+            },
+            {
+                "features": ["religion"],
+                "name": "Sčítání lidu - Náboženská víra 2021, CZSO",
+                "year": 2021,
+                "url": "https://www.czso.cz/csu/czso/census-2021"
+            },
+            {
+                "features": ["language"],
+                "name": "Sčítání lidu - Mateřský jazyk 2021, CZSO",
+                "year": 2021,
+                "url": "https://www.czso.cz/csu/czso/census-2021"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.052,
+        "5-9": 0.056,
+        "10-14": 0.057,
+        "15-19": 0.054,
+        "20-24": 0.052,
+        "25-29": 0.057,
+        "30-34": 0.074,
+        "35-39": 0.077,
+        "40-44": 0.073,
+        "45-49": 0.068,
+        "50-54": 0.069,
+        "55-59": 0.061,
+        "60-64": 0.060,
+        "65-69": 0.055,
+        "70-74": 0.050,
+        "75-79": 0.031,
+        "80-84": 0.020,
+        "85+": 0.016
+    },
+    "sex": {
+        "Female": 0.509,
+        "Male": 0.491
+    },
+    "location": {
+        "Central Bohemia": 0.137,
+        "Prague": 0.129,
+        "South Moravia": 0.115,
+        "Moravian-Silesian": 0.111,
+        "Ústí nad Labem": 0.074,
+        "Olomouc": 0.060,
+        "Zlín": 0.052,
+        "South Bohemia": 0.057,
+        "Pilsen": 0.055,
+        "Hradec Králové": 0.049,
+        "Pardubice": 0.048,
+        "Highlands (Vysočina)": 0.046,
+        "Liberec": 0.041,
+        "Karlovy Vary": 0.026
+    },
+    "religion": {
+        "No religion": 0.480,
+        "Roman Catholic": 0.290,
+        "Other Christian": 0.060,
+        "Other": 0.170
+    },
+    "language": {
+        "Czech": 0.970,
+        "Slovak": 0.014,
+        "Ukrainian": 0.005,
+        "Polish": 0.004,
+        "Other": 0.007
+    },
+    "marital status": {
+        "Single (never married)": 0.420,
+        "Married": 0.450,
+        "Divorced": 0.090,
+        "Widowed": 0.040
+    },
+    "education": {
+        "Primary or less": 0.100,
+        "Lower secondary": 0.050,
+        "Upper secondary (vocational)": 0.350,
+        "Upper secondary (Maturita)": 0.270,
+        "Short-cycle tertiary": 0.030,
+        "University degree": 0.160,
+        "Graduate degree": 0.040
+    },
+    "occupation": {
+        "Craft and trades": 0.180,
+        "Service and sales": 0.160,
+        "Professionals": 0.140,
+        "Plant and machine operators": 0.120,
+        "Technicians": 0.110,
+        "Administrative": 0.090,
+        "Elementary": 0.080,
+        "Management": 0.060,
+        "Agriculture": 0.030,
+        "Other": 0.030
+    },
+    "housing tenure": {
+        "Owner occupied": 0.740,
+        "Rented": 0.220,
+        "Other": 0.040
+    },
+    "place of birth": {
+        "Czech Republic": 0.900,
+        "Slovakia": 0.035,
+        "Ukraine": 0.025,
+        "Other EU": 0.020,
+        "Other": 0.020
+    },
+    "sexuality": {
+        "Heterosexual": 0.935,
+        "Bisexual": 0.035,
+        "Gay or Lesbian": 0.020,
+        "Other": 0.010
+    }
+}

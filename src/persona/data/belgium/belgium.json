@@ -1,0 +1,140 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure"],
+                "name": "Statbel - Statistics Belgium 2021",
+                "year": 2021,
+                "url": "https://statbel.fgov.be/en/themes/population"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Enquête sur les Forces de Travail 2022, Statbel",
+                "year": 2022,
+                "url": "https://statbel.fgov.be/en/themes/work-and-training/labour-market/employment"
+            },
+            {
+                "features": ["religion"],
+                "name": "European Social Survey (Belgium) 2020",
+                "year": 2020,
+                "url": "https://www.europeansocialsurvey.org/"
+            },
+            {
+                "features": ["language"],
+                "name": "Census 2011 - Language, Statbel",
+                "year": 2011,
+                "url": "https://statbel.fgov.be/en/themes/population/census-2011"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Statbel - Country of Birth Statistics 2022",
+                "year": 2022,
+                "url": "https://statbel.fgov.be/en/themes/population/foreigners"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.054,
+        "5-9": 0.058,
+        "10-14": 0.058,
+        "15-19": 0.058,
+        "20-24": 0.060,
+        "25-29": 0.065,
+        "30-34": 0.070,
+        "35-39": 0.069,
+        "40-44": 0.063,
+        "45-49": 0.065,
+        "50-54": 0.068,
+        "55-59": 0.065,
+        "60-64": 0.059,
+        "65-69": 0.052,
+        "70-74": 0.043,
+        "75-79": 0.029,
+        "80-84": 0.020,
+        "85+": 0.019
+    },
+    "sex": {
+        "Female": 0.505,
+        "Male": 0.495
+    },
+    "location": {
+        "Antwerp": 0.155,
+        "East Flanders": 0.132,
+        "West Flanders": 0.108,
+        "Flemish Brabant": 0.095,
+        "Hainaut": 0.110,
+        "Liège": 0.094,
+        "Brussels-Capital": 0.098,
+        "Limburg": 0.070,
+        "Walloon Brabant": 0.034,
+        "Namur": 0.045,
+        "Luxembourg": 0.023,
+        "Other": 0.036
+    },
+    "religion": {
+        "Catholic": 0.520,
+        "No religion": 0.320,
+        "Muslim": 0.050,
+        "Other Christian": 0.030,
+        "Protestant": 0.020,
+        "Other": 0.060
+    },
+    "language": {
+        "Dutch (Flemish)": 0.590,
+        "French": 0.400,
+        "German": 0.010
+    },
+    "marital status": {
+        "Single (never married)": 0.410,
+        "Married": 0.440,
+        "Divorced": 0.090,
+        "Widowed": 0.050,
+        "Legal cohabitation": 0.010
+    },
+    "education": {
+        "Primary or less": 0.180,
+        "Lower secondary": 0.150,
+        "Upper secondary": 0.350,
+        "Short-cycle tertiary": 0.050,
+        "Bachelor's degree": 0.200,
+        "Graduate degree": 0.070
+    },
+    "occupation": {
+        "Service and sales": 0.170,
+        "Professionals": 0.190,
+        "Technicians": 0.140,
+        "Administrative": 0.130,
+        "Craft and trades": 0.100,
+        "Management": 0.070,
+        "Plant and machine operators": 0.070,
+        "Elementary": 0.090,
+        "Agriculture": 0.015,
+        "Other": 0.025
+    },
+    "housing tenure": {
+        "Owner occupied": 0.720,
+        "Rented": 0.270,
+        "Other": 0.010
+    },
+    "place of birth": {
+        "Belgium": 0.820,
+        "Other EU": 0.070,
+        "Morocco": 0.025,
+        "Turkey": 0.015,
+        "Congo (DRC)": 0.010,
+        "Other Africa": 0.020,
+        "Other": 0.040
+    },
+    "sexuality": {
+        "Heterosexual": 0.920,
+        "Bisexual": 0.035,
+        "Gay or Lesbian": 0.030,
+        "Other": 0.015
+    }
+}

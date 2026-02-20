@@ -1,0 +1,125 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Danmarks Statistik - Befolkningsstatistik 2021",
+                "year": 2021,
+                "url": "https://www.dst.dk/en/Statistik/emner/befolkning-og-valg/befolkning-og-befolkningsfremskrivning"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Arbejdskraftundersøgelsen 2022, Danmarks Statistik",
+                "year": 2022,
+                "url": "https://www.dst.dk/en/Statistik/emner/arbejde-og-indkomst/arbejdskraft"
+            },
+            {
+                "features": ["religion"],
+                "name": "Kirkestatistik 2021, Danmarks Statistik",
+                "year": 2021,
+                "url": "https://www.dst.dk/en/Statistik/emner/kultur-og-kirke/kirker-og-trossamfund"
+            },
+            {
+                "features": ["language"],
+                "name": "Indvandrere i Danmark 2022, Danmarks Statistik",
+                "year": 2022,
+                "url": "https://www.dst.dk/en/Statistik/emner/befolkning-og-valg/indvandrere-og-efterkommere"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.053,
+        "5-9": 0.059,
+        "10-14": 0.062,
+        "15-19": 0.060,
+        "20-24": 0.065,
+        "25-29": 0.068,
+        "30-34": 0.070,
+        "35-39": 0.065,
+        "40-44": 0.059,
+        "45-49": 0.065,
+        "50-54": 0.070,
+        "55-59": 0.067,
+        "60-64": 0.058,
+        "65-69": 0.050,
+        "70-74": 0.045,
+        "75-79": 0.028,
+        "80-84": 0.019,
+        "85+": 0.017
+    },
+    "sex": {
+        "Female": 0.500,
+        "Male": 0.500
+    },
+    "location": {
+        "Capital Region (Copenhagen)": 0.308,
+        "Central Denmark": 0.228,
+        "Southern Denmark": 0.215,
+        "Zealand": 0.148,
+        "North Denmark": 0.101
+    },
+    "religion": {
+        "Church of Denmark (Lutheran)": 0.740,
+        "No religion": 0.130,
+        "Islam": 0.050,
+        "Other Christian": 0.040,
+        "Other": 0.040
+    },
+    "language": {
+        "Danish": 0.940,
+        "Other Scandinavian": 0.015,
+        "English": 0.015,
+        "Arabic": 0.008,
+        "Other": 0.022
+    },
+    "marital status": {
+        "Single (never married)": 0.460,
+        "Married": 0.430,
+        "Divorced": 0.070,
+        "Widowed": 0.040
+    },
+    "education": {
+        "Primary only": 0.270,
+        "Upper secondary": 0.360,
+        "Short-cycle tertiary": 0.080,
+        "Bachelor's degree": 0.200,
+        "Graduate degree": 0.090
+    },
+    "occupation": {
+        "Professionals": 0.220,
+        "Service and sales": 0.170,
+        "Technicians": 0.140,
+        "Administrative": 0.110,
+        "Management": 0.080,
+        "Craft and trades": 0.090,
+        "Plant and machine operators": 0.060,
+        "Elementary": 0.080,
+        "Agriculture": 0.020,
+        "Other": 0.030
+    },
+    "housing tenure": {
+        "Owner occupied": 0.630,
+        "Rented": 0.350,
+        "Other": 0.020
+    },
+    "place of birth": {
+        "Denmark": 0.860,
+        "Other EU/Europe": 0.050,
+        "Middle East": 0.035,
+        "Asia": 0.020,
+        "Africa": 0.015,
+        "Other": 0.020
+    },
+    "sexuality": {
+        "Heterosexual": 0.930,
+        "Bisexual": 0.035,
+        "Gay or Lesbian": 0.025,
+        "Other": 0.010
+    }
+}

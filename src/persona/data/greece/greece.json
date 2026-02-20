@@ -1,0 +1,132 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Απογραφή Πληθυσμού 2021, ELSTAT",
+                "year": 2021,
+                "url": "https://www.statistics.gr/en/2021-census-pop-hous"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Έρευνα Εργατικού Δυναμικού 2022, ELSTAT",
+                "year": 2022,
+                "url": "https://www.statistics.gr/en/statistics/-/publication/SJO01/2022-Q4"
+            },
+            {
+                "features": ["religion"],
+                "name": "European Social Survey (Greece) 2020",
+                "year": 2020,
+                "url": "https://www.europeansocialsurvey.org/"
+            },
+            {
+                "features": ["language"],
+                "name": "Απογραφή Πληθυσμού 2001, ELSTAT",
+                "year": 2001,
+                "url": "https://www.statistics.gr/en/statistics/-/publication/SAM03/-"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.040,
+        "5-9": 0.045,
+        "10-14": 0.048,
+        "15-19": 0.049,
+        "20-24": 0.054,
+        "25-29": 0.058,
+        "30-34": 0.059,
+        "35-39": 0.064,
+        "40-44": 0.071,
+        "45-49": 0.071,
+        "50-54": 0.070,
+        "55-59": 0.067,
+        "60-64": 0.061,
+        "65-69": 0.057,
+        "70-74": 0.052,
+        "75-79": 0.038,
+        "80-84": 0.027,
+        "85+": 0.027
+    },
+    "sex": {
+        "Female": 0.515,
+        "Male": 0.485
+    },
+    "location": {
+        "Attica": 0.347,
+        "Central Macedonia": 0.177,
+        "Thessaly": 0.067,
+        "Western Greece": 0.058,
+        "Peloponnese": 0.050,
+        "Crete": 0.055,
+        "Eastern Macedonia and Thrace": 0.053,
+        "Central Greece": 0.044,
+        "Epirus": 0.034,
+        "South Aegean": 0.020,
+        "Western Macedonia": 0.024,
+        "North Aegean": 0.018,
+        "Ionian Islands": 0.021,
+        "Other": 0.032
+    },
+    "religion": {
+        "Greek Orthodox": 0.900,
+        "No religion": 0.055,
+        "Muslim": 0.020,
+        "Catholic": 0.010,
+        "Other Christian": 0.005,
+        "Other": 0.010
+    },
+    "language": {
+        "Greek": 0.960,
+        "Albanian": 0.015,
+        "Other": 0.025
+    },
+    "marital status": {
+        "Married": 0.510,
+        "Single (never married)": 0.390,
+        "Divorced": 0.060,
+        "Widowed": 0.040
+    },
+    "education": {
+        "No education or incomplete primary": 0.100,
+        "Primary": 0.200,
+        "Lower secondary": 0.120,
+        "Upper secondary": 0.320,
+        "Post-secondary non-tertiary": 0.050,
+        "University degree": 0.170,
+        "Graduate degree": 0.040
+    },
+    "occupation": {
+        "Service and sales": 0.200,
+        "Professionals": 0.160,
+        "Elementary": 0.140,
+        "Administrative": 0.100,
+        "Craft and trades": 0.110,
+        "Technicians": 0.090,
+        "Management": 0.060,
+        "Plant and machine operators": 0.070,
+        "Agriculture": 0.070
+    },
+    "housing tenure": {
+        "Owner occupied": 0.740,
+        "Rented": 0.240,
+        "Other": 0.020
+    },
+    "place of birth": {
+        "Greece": 0.885,
+        "Albania": 0.045,
+        "Other EU": 0.020,
+        "Other": 0.050
+    },
+    "sexuality": {
+        "Heterosexual": 0.935,
+        "Bisexual": 0.030,
+        "Gay or Lesbian": 0.025,
+        "Other": 0.010
+    }
+}

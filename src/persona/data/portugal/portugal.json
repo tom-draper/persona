@@ -1,0 +1,128 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "religion", "place of birth", "housing tenure"],
+                "name": "Censos 2021, INE Portugal",
+                "year": 2021,
+                "url": "https://censos.ine.pt/"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Inquérito ao Emprego 2022, INE Portugal",
+                "year": 2022,
+                "url": "https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_destaques&DESTAQUESdest_boui=526271897&DESTAQUESmodo=2"
+            },
+            {
+                "features": ["language"],
+                "name": "Censos 2021 - Língua, INE Portugal",
+                "year": 2021,
+                "url": "https://censos.ine.pt/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.046,
+        "5-9": 0.050,
+        "10-14": 0.050,
+        "15-19": 0.049,
+        "20-24": 0.052,
+        "25-29": 0.058,
+        "30-34": 0.063,
+        "35-39": 0.069,
+        "40-44": 0.072,
+        "45-49": 0.073,
+        "50-54": 0.072,
+        "55-59": 0.069,
+        "60-64": 0.064,
+        "65-69": 0.060,
+        "70-74": 0.054,
+        "75-79": 0.040,
+        "80-84": 0.029,
+        "85+": 0.027
+    },
+    "sex": {
+        "Female": 0.520,
+        "Male": 0.480
+    },
+    "location": {
+        "Lisboa": 0.274,
+        "Porto": 0.170,
+        "Setúbal": 0.089,
+        "Braga": 0.085,
+        "Aveiro": 0.059,
+        "Coimbra": 0.042,
+        "Leiria": 0.039,
+        "Faro": 0.038,
+        "Viseu": 0.028,
+        "Santarém": 0.027,
+        "Madeira": 0.025,
+        "Açores": 0.023,
+        "Other": 0.101
+    },
+    "religion": {
+        "Catholic": 0.800,
+        "No religion": 0.110,
+        "Other Christian": 0.033,
+        "Muslim": 0.007,
+        "Other": 0.050
+    },
+    "language": {
+        "Portuguese": 0.960,
+        "English": 0.015,
+        "Other Romance": 0.010,
+        "Other": 0.015
+    },
+    "marital status": {
+        "Single (never married)": 0.400,
+        "Married": 0.430,
+        "Divorced": 0.090,
+        "Widowed": 0.070,
+        "Civil union": 0.010
+    },
+    "education": {
+        "No education": 0.050,
+        "Primary (1st cycle)": 0.180,
+        "Primary (2nd cycle)": 0.110,
+        "Lower secondary": 0.140,
+        "Upper secondary": 0.220,
+        "Short-cycle tertiary": 0.040,
+        "University degree": 0.180,
+        "Graduate degree": 0.080
+    },
+    "occupation": {
+        "Service and sales": 0.200,
+        "Professionals": 0.160,
+        "Craft and trades": 0.120,
+        "Elementary": 0.120,
+        "Technicians": 0.100,
+        "Administrative": 0.090,
+        "Plant and machine operators": 0.080,
+        "Management": 0.070,
+        "Agriculture": 0.060
+    },
+    "housing tenure": {
+        "Owner occupied": 0.750,
+        "Rented": 0.210,
+        "Other": 0.040
+    },
+    "place of birth": {
+        "Portugal": 0.900,
+        "Africa (PALOP)": 0.030,
+        "Brazil": 0.025,
+        "Other European": 0.020,
+        "Other": 0.025
+    },
+    "sexuality": {
+        "Heterosexual": 0.930,
+        "Bisexual": 0.035,
+        "Gay or Lesbian": 0.025,
+        "Other": 0.010
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Väestötilastot 2021, Tilastokeskus (Statistics Finland)",
+                "year": 2021,
+                "url": "https://www.stat.fi/en/statistics/vaerak"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Työvoimatutkimus 2022, Tilastokeskus",
+                "year": 2022,
+                "url": "https://www.stat.fi/en/statistics/tyti"
+            },
+            {
+                "features": ["religion"],
+                "name": "Uskonnolliset yhdyskunnat 2021, Tilastokeskus",
+                "year": 2021,
+                "url": "https://www.stat.fi/en/statistics/uskyo"
+            },
+            {
+                "features": ["language"],
+                "name": "Väestön kielitilasto 2021, Tilastokeskus",
+                "year": 2021,
+                "url": "https://www.stat.fi/en/statistics/vaerak"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.048,
+        "5-9": 0.055,
+        "10-14": 0.056,
+        "15-19": 0.055,
+        "20-24": 0.058,
+        "25-29": 0.062,
+        "30-34": 0.067,
+        "35-39": 0.065,
+        "40-44": 0.062,
+        "45-49": 0.064,
+        "50-54": 0.068,
+        "55-59": 0.069,
+        "60-64": 0.064,
+        "65-69": 0.058,
+        "70-74": 0.051,
+        "75-79": 0.033,
+        "80-84": 0.022,
+        "85+": 0.018
+    },
+    "sex": {
+        "Female": 0.508,
+        "Male": 0.492
+    },
+    "location": {
+        "Uusimaa": 0.305,
+        "Pirkanmaa": 0.097,
+        "Southwest Finland": 0.086,
+        "North Ostrobothnia": 0.080,
+        "Central Finland": 0.051,
+        "Satakunta": 0.043,
+        "North Savo": 0.045,
+        "South Ostrobothnia": 0.038,
+        "Kanta-Häme": 0.033,
+        "Päijät-Häme": 0.041,
+        "Lapland": 0.034,
+        "Ostrobothnia": 0.032,
+        "Kymenlaakso": 0.032,
+        "South Karelia": 0.025,
+        "Other": 0.058
+    },
+    "religion": {
+        "Evangelical Lutheran Church": 0.660,
+        "No religion": 0.270,
+        "Orthodox": 0.011,
+        "Other Christian": 0.015,
+        "Islam": 0.010,
+        "Other": 0.034
+    },
+    "language": {
+        "Finnish": 0.871,
+        "Swedish": 0.050,
+        "Russian": 0.013,
+        "Estonian": 0.009,
+        "English": 0.005,
+        "Other": 0.052
+    },
+    "marital status": {
+        "Single (never married)": 0.450,
+        "Married": 0.420,
+        "Divorced": 0.090,
+        "Widowed": 0.040
+    },
+    "education": {
+        "Primary or lower secondary only": 0.250,
+        "Upper secondary": 0.420,
+        "Short-cycle tertiary": 0.060,
+        "Bachelor's degree": 0.170,
+        "Graduate degree": 0.100
+    },
+    "occupation": {
+        "Professionals": 0.200,
+        "Service and sales": 0.180,
+        "Technicians": 0.140,
+        "Craft and trades": 0.100,
+        "Administrative": 0.100,
+        "Management": 0.080,
+        "Plant and machine operators": 0.080,
+        "Elementary": 0.080,
+        "Agriculture": 0.040
+    },
+    "housing tenure": {
+        "Owner occupied": 0.650,
+        "Rented": 0.330,
+        "Other": 0.020
+    },
+    "place of birth": {
+        "Finland": 0.935,
+        "Other EU/Europe": 0.035,
+        "Asia": 0.010,
+        "Africa": 0.005,
+        "Other": 0.015
+    },
+    "sexuality": {
+        "Heterosexual": 0.920,
+        "Bisexual": 0.040,
+        "Gay or Lesbian": 0.030,
+        "Other": 0.010
+    }
+}

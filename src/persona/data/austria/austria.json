@@ -1,0 +1,135 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Registerzählung 2021, Statistik Austria",
+                "year": 2021,
+                "url": "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/bevoelkerung/volkszaehlungen-registerzaehlungen-abgestimmte-erwerbsstatistik/registerzaehlung"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Mikrozensus Arbeitskräfteerhebung 2022, Statistik Austria",
+                "year": 2022,
+                "url": "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/arbeitsmarkt/erwerbstaetige"
+            },
+            {
+                "features": ["religion"],
+                "name": "Registerzählung - Religion 2021, Statistik Austria",
+                "year": 2021,
+                "url": "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/bevoelkerung/volkszaehlungen-registerzaehlungen-abgestimmte-erwerbsstatistik/registerzaehlung"
+            },
+            {
+                "features": ["language"],
+                "name": "Mikrozensus - Umgangssprache 2021, Statistik Austria",
+                "year": 2021,
+                "url": "https://www.statistik.at/statistiken/bevoelkerung-und-soziales/bevoelkerung/sprache"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.047,
+        "5-9": 0.051,
+        "10-14": 0.050,
+        "15-19": 0.051,
+        "20-24": 0.059,
+        "25-29": 0.070,
+        "30-34": 0.074,
+        "35-39": 0.068,
+        "40-44": 0.063,
+        "45-49": 0.066,
+        "50-54": 0.070,
+        "55-59": 0.067,
+        "60-64": 0.061,
+        "65-69": 0.053,
+        "70-74": 0.045,
+        "75-79": 0.030,
+        "80-84": 0.021,
+        "85+": 0.019
+    },
+    "sex": {
+        "Female": 0.510,
+        "Male": 0.490
+    },
+    "location": {
+        "Vienna": 0.212,
+        "Lower Austria": 0.190,
+        "Upper Austria": 0.169,
+        "Styria": 0.141,
+        "Tyrol": 0.084,
+        "Carinthia": 0.066,
+        "Salzburg": 0.062,
+        "Vorarlberg": 0.044,
+        "Burgenland": 0.032
+    },
+    "religion": {
+        "Roman Catholic": 0.550,
+        "No religion": 0.200,
+        "Muslim": 0.080,
+        "Orthodox": 0.055,
+        "Protestant (Lutheran)": 0.030,
+        "Other Christian": 0.020,
+        "Other": 0.065
+    },
+    "language": {
+        "German": 0.880,
+        "Turkish": 0.023,
+        "Serbian": 0.022,
+        "Croatian": 0.009,
+        "Other": 0.066
+    },
+    "marital status": {
+        "Single (never married)": 0.410,
+        "Married": 0.440,
+        "Divorced": 0.090,
+        "Widowed": 0.050,
+        "Registered partnership": 0.010
+    },
+    "education": {
+        "Compulsory schooling": 0.180,
+        "Apprenticeship (VET)": 0.350,
+        "Upper secondary (BMS)": 0.120,
+        "Upper secondary (AHS/BHS)": 0.140,
+        "Short-cycle tertiary": 0.040,
+        "University degree": 0.130,
+        "Graduate degree": 0.040
+    },
+    "occupation": {
+        "Service and sales": 0.180,
+        "Professionals": 0.170,
+        "Technicians": 0.130,
+        "Administrative": 0.120,
+        "Craft and trades": 0.110,
+        "Management": 0.080,
+        "Plant and machine operators": 0.070,
+        "Elementary": 0.090,
+        "Agriculture": 0.030,
+        "Other": 0.020
+    },
+    "housing tenure": {
+        "Owner occupied": 0.550,
+        "Rented": 0.440,
+        "Other": 0.010
+    },
+    "place of birth": {
+        "Austria": 0.800,
+        "Other EU": 0.045,
+        "Germany": 0.030,
+        "Serbia/Former Yugoslavia": 0.025,
+        "Turkey": 0.025,
+        "Romania": 0.015,
+        "Other": 0.060
+    },
+    "sexuality": {
+        "Heterosexual": 0.930,
+        "Bisexual": 0.035,
+        "Gay or Lesbian": 0.025,
+        "Other": 0.010
+    }
+}

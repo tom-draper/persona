@@ -1,0 +1,130 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Recensământul Populației și Locuințelor 2022, Institutul Național de Statistică (INS)",
+                "year": 2022,
+                "url": "https://insse.ro/cms/en/content/census-population-and-housing-2022"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Ancheta privind Forța de Muncă în Gospodării (AMIGO) 2022, INS",
+                "year": 2022,
+                "url": "https://insse.ro/cms/en/content/labour-force-survey-lfs-romania"
+            },
+            {
+                "features": ["religion"],
+                "name": "Recensământul Populației - Religie 2022, INS",
+                "year": 2022,
+                "url": "https://insse.ro/cms/en/content/census-population-and-housing-2022"
+            },
+            {
+                "features": ["language"],
+                "name": "Recensământul Populației - Limba maternă 2022, INS",
+                "year": 2022,
+                "url": "https://insse.ro/cms/en/content/census-population-and-housing-2022"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Eurobarometer Special Survey on Discrimination 2019, European Commission",
+                "year": 2019,
+                "url": "https://europa.eu/eurobarometer/surveys/detail/2251"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.046,
+        "5-9": 0.053,
+        "10-14": 0.057,
+        "15-19": 0.059,
+        "20-24": 0.063,
+        "25-29": 0.066,
+        "30-34": 0.065,
+        "35-39": 0.064,
+        "40-44": 0.065,
+        "45-49": 0.068,
+        "50-54": 0.070,
+        "55-59": 0.065,
+        "60-64": 0.062,
+        "65-69": 0.057,
+        "70-74": 0.047,
+        "75-79": 0.030,
+        "80-84": 0.019,
+        "85+": 0.015
+    },
+    "sex": {
+        "Female": 0.516,
+        "Male": 0.484
+    },
+    "location": {
+        "North-East": 0.174,
+        "South Muntenia": 0.147,
+        "South-East": 0.126,
+        "Bucharest-Ilfov": 0.137,
+        "North-West": 0.116,
+        "Centre": 0.111,
+        "South-West Oltenia": 0.095,
+        "West": 0.095
+    },
+    "religion": {
+        "Romanian Orthodox": 0.810,
+        "Roman Catholic": 0.050,
+        "Reformed (Protestant)": 0.035,
+        "Pentecostal": 0.035,
+        "Greek Catholic": 0.018,
+        "No religion": 0.025,
+        "Other": 0.027
+    },
+    "language": {
+        "Romanian": 0.910,
+        "Hungarian": 0.065,
+        "Romani": 0.010,
+        "Ukrainian": 0.003,
+        "German": 0.002,
+        "Other": 0.010
+    },
+    "marital status": {
+        "Married": 0.530,
+        "Single (never married)": 0.330,
+        "Widowed": 0.080,
+        "Divorced": 0.060
+    },
+    "education": {
+        "No education": 0.040,
+        "Primary": 0.080,
+        "Lower secondary": 0.210,
+        "Upper secondary (vocational)": 0.150,
+        "Upper secondary (Bacalaureat)": 0.320,
+        "Short-cycle tertiary": 0.030,
+        "University degree": 0.140,
+        "Graduate degree": 0.030
+    },
+    "occupation": {
+        "Agriculture": 0.200,
+        "Service and sales": 0.140,
+        "Elementary": 0.130,
+        "Craft and trades": 0.120,
+        "Professionals": 0.120,
+        "Technicians": 0.090,
+        "Plant and machine operators": 0.090,
+        "Administrative": 0.070,
+        "Management": 0.040
+    },
+    "housing tenure": {
+        "Owner occupied": 0.960,
+        "Rented": 0.030,
+        "Other": 0.010
+    },
+    "place of birth": {
+        "Romania": 0.975,
+        "Other European": 0.015,
+        "Other": 0.010
+    },
+    "sexuality": {
+        "Heterosexual": 0.950,
+        "Bisexual": 0.025,
+        "Gay or Lesbian": 0.015,
+        "Other": 0.010
+    }
+}

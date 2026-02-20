@@ -9,6 +9,10 @@ alias = {
     'korea': 'south_korea',
     'brasil': 'brazil',
     'nippon': 'japan',
+    'czechia': 'czech_republic',
+    'türkiye': 'turkey',
+    'hellas': 'greece',
+    'suomi': 'finland',
 }
 
 
