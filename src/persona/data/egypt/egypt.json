@@ -1,0 +1,127 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Census 2017, Central Agency for Public Mobilization and Statistics (CAPMAS)",
+                "year": 2017,
+                "url": "https://www.capmas.gov.eg/Pages/StaticPages.aspx?page_id=5035"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Labour Force Survey 2022, CAPMAS",
+                "year": 2022,
+                "url": "https://www.capmas.gov.eg/Pages/DynamicPage.aspx?pageid=7108"
+            },
+            {
+                "features": ["religion"],
+                "name": "Census 2017 - Religion, CAPMAS",
+                "year": 2017,
+                "url": "https://www.capmas.gov.eg/Pages/StaticPages.aspx?page_id=5035"
+            },
+            {
+                "features": ["language"],
+                "name": "Ethnologue: Languages of Egypt (2023)",
+                "year": 2023,
+                "url": "https://www.ethnologue.com/country/EG/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Arab Barometer Wave VI - Egypt 2021",
+                "year": 2021,
+                "url": "https://www.arabbarometer.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.115,
+        "5-9": 0.105,
+        "10-14": 0.095,
+        "15-19": 0.090,
+        "20-24": 0.085,
+        "25-29": 0.080,
+        "30-34": 0.070,
+        "35-39": 0.062,
+        "40-44": 0.052,
+        "45-49": 0.046,
+        "50-54": 0.041,
+        "55-59": 0.035,
+        "60-64": 0.030,
+        "65-69": 0.025,
+        "70-74": 0.020,
+        "75-79": 0.015,
+        "80-84": 0.008,
+        "85+": 0.006
+    },
+    "sex": {
+        "Male": 0.505,
+        "Female": 0.495
+    },
+    "location": {
+        "Cairo": 0.098,
+        "Giza": 0.092,
+        "Alexandria": 0.078,
+        "Sharqia": 0.068,
+        "Dakahlia": 0.065,
+        "Beheira": 0.060,
+        "Minya": 0.052,
+        "Qalyubia": 0.045,
+        "Kafr El Sheikh": 0.042,
+        "Sohag": 0.040,
+        "Assiut": 0.038,
+        "Gharbia": 0.038,
+        "Other": 0.284
+    },
+    "religion": {
+        "Muslim (Sunni)": 0.900,
+        "Christian (Coptic Orthodox)": 0.090,
+        "Other Christian": 0.005,
+        "Other": 0.005
+    },
+    "language": {
+        "Arabic (Egyptian)": 0.980,
+        "Other": 0.020
+    },
+    "marital status": {
+        "Married": 0.570,
+        "Single (never married)": 0.340,
+        "Widowed": 0.060,
+        "Divorced": 0.030
+    },
+    "education": {
+        "No education": 0.210,
+        "Primary": 0.110,
+        "Preparatory (lower secondary)": 0.110,
+        "Secondary": 0.330,
+        "Post-secondary institute": 0.070,
+        "University degree": 0.140,
+        "Graduate degree": 0.030
+    },
+    "occupation": {
+        "Service and sales": 0.200,
+        "Agriculture": 0.180,
+        "Craft and trades": 0.140,
+        "Elementary": 0.120,
+        "Professionals": 0.100,
+        "Technicians": 0.090,
+        "Administrative": 0.080,
+        "Plant and machine operators": 0.060,
+        "Management": 0.030
+    },
+    "housing tenure": {
+        "Owner occupied": 0.730,
+        "Rented": 0.170,
+        "Other": 0.100
+    },
+    "place of birth": {
+        "Egypt": 0.985,
+        "Other Arab": 0.008,
+        "Other": 0.007
+    },
+    "sexuality": {
+        "Heterosexual": 0.970,
+        "Bisexual": 0.015,
+        "Gay or Lesbian": 0.010,
+        "Other": 0.005
+    }
+}

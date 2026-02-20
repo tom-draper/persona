@@ -1,0 +1,129 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth", "religion"],
+                "name": "Population and Housing Census 2021, Ghana Statistical Service (GSS)",
+                "year": 2021,
+                "url": "https://census2021.statsghana.gov.gh/"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Ghana Living Standards Survey 7 (GLSS7), GSS",
+                "year": 2017,
+                "url": "https://www.statsghana.gov.gh/gssmain/fileUpload/pressrelease/GLSS7%20MAIN%20REPORT.pdf"
+            },
+            {
+                "features": ["language"],
+                "name": "Population and Housing Census 2021 - Ethnicity, GSS",
+                "year": 2021,
+                "url": "https://census2021.statsghana.gov.gh/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Afrobarometer Ghana 2022",
+                "year": 2022,
+                "url": "https://www.afrobarometer.org/country/ghana/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.120,
+        "5-9": 0.115,
+        "10-14": 0.110,
+        "15-19": 0.100,
+        "20-24": 0.090,
+        "25-29": 0.085,
+        "30-34": 0.075,
+        "35-39": 0.060,
+        "40-44": 0.048,
+        "45-49": 0.038,
+        "50-54": 0.032,
+        "55-59": 0.028,
+        "60-64": 0.025,
+        "65-69": 0.020,
+        "70-74": 0.018,
+        "75-79": 0.012,
+        "80-84": 0.008,
+        "85+": 0.006
+    },
+    "sex": {
+        "Female": 0.507,
+        "Male": 0.493
+    },
+    "location": {
+        "Ashanti": 0.194,
+        "Greater Accra": 0.179,
+        "Eastern": 0.082,
+        "Central": 0.078,
+        "Western": 0.077,
+        "Bono/Bono East": 0.070,
+        "Northern": 0.070,
+        "Volta": 0.063,
+        "Upper East": 0.045,
+        "Upper West": 0.029,
+        "Other": 0.113
+    },
+    "religion": {
+        "Pentecostal/Charismatic": 0.316,
+        "Protestant": 0.241,
+        "Muslim": 0.199,
+        "Catholic": 0.100,
+        "Other Christian": 0.053,
+        "No religion": 0.038,
+        "Traditional": 0.032,
+        "Other": 0.021
+    },
+    "language": {
+        "Akan (Twi/Fante)": 0.475,
+        "Dagbani/Dagomba": 0.166,
+        "Ewe": 0.139,
+        "Ga-Adangme": 0.074,
+        "Guan": 0.037,
+        "Grusi": 0.025,
+        "Other": 0.084
+    },
+    "marital status": {
+        "Married (monogamous)": 0.420,
+        "Single (never married)": 0.420,
+        "Widowed": 0.050,
+        "Divorced or separated": 0.030,
+        "Married (polygamous)": 0.080
+    },
+    "education": {
+        "No education": 0.220,
+        "Primary": 0.160,
+        "Junior high school (JHS)": 0.280,
+        "Senior high school (SHS)": 0.180,
+        "Vocational or technical": 0.040,
+        "University degree": 0.090,
+        "Graduate degree": 0.030
+    },
+    "occupation": {
+        "Agriculture": 0.330,
+        "Service and sales": 0.200,
+        "Elementary": 0.150,
+        "Craft and trades": 0.120,
+        "Professionals": 0.070,
+        "Technicians": 0.050,
+        "Administrative": 0.040,
+        "Plant and machine operators": 0.030,
+        "Management": 0.010
+    },
+    "housing tenure": {
+        "Owner occupied": 0.590,
+        "Rented": 0.380,
+        "Other": 0.030
+    },
+    "place of birth": {
+        "Ghana": 0.955,
+        "Other African": 0.035,
+        "Other": 0.010
+    },
+    "sexuality": {
+        "Heterosexual": 0.965,
+        "Bisexual": 0.020,
+        "Gay or Lesbian": 0.010,
+        "Other": 0.005
+    }
+}

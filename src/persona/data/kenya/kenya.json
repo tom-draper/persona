@@ -1,0 +1,139 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth", "religion"],
+                "name": "Kenya Population and Housing Census 2019, Kenya National Bureau of Statistics (KNBS)",
+                "year": 2019,
+                "url": "https://www.knbs.or.ke/2019-kenya-population-and-housing-census/"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Kenya Continuous Household Survey Programme 2022, KNBS",
+                "year": 2022,
+                "url": "https://www.knbs.or.ke/"
+            },
+            {
+                "features": ["language"],
+                "name": "Kenya Population and Housing Census 2019 - Ethnicity, KNBS",
+                "year": 2019,
+                "url": "https://www.knbs.or.ke/2019-kenya-population-and-housing-census/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "African Barometer / Afrobarometer Kenya 2022",
+                "year": 2022,
+                "url": "https://www.afrobarometer.org/country/kenya/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.142,
+        "5-9": 0.130,
+        "10-14": 0.120,
+        "15-19": 0.105,
+        "20-24": 0.095,
+        "25-29": 0.085,
+        "30-34": 0.070,
+        "35-39": 0.058,
+        "40-44": 0.045,
+        "45-49": 0.035,
+        "50-54": 0.030,
+        "55-59": 0.023,
+        "60-64": 0.018,
+        "65-69": 0.015,
+        "70-74": 0.012,
+        "75-79": 0.008,
+        "80-84": 0.005,
+        "85+": 0.004
+    },
+    "sex": {
+        "Female": 0.501,
+        "Male": 0.499
+    },
+    "location": {
+        "Nairobi": 0.095,
+        "Kiambu": 0.049,
+        "Nakuru": 0.044,
+        "Kakamega": 0.035,
+        "Bungoma": 0.029,
+        "Kisii": 0.028,
+        "Meru": 0.025,
+        "Machakos": 0.023,
+        "Muranga": 0.023,
+        "Trans-Nzoia": 0.023,
+        "Mombasa": 0.023,
+        "Kilifi": 0.026,
+        "Kisumu": 0.021,
+        "Migori": 0.022,
+        "Siaya": 0.020,
+        "Other": 0.494
+    },
+    "religion": {
+        "Protestant": 0.334,
+        "Catholic": 0.206,
+        "Evangelical/Born again": 0.204,
+        "Muslim": 0.111,
+        "Other Christian": 0.070,
+        "No religion or traditional": 0.042,
+        "Other": 0.033
+    },
+    "language": {
+        "Gikuyu (Kikuyu)": 0.171,
+        "Luhya": 0.144,
+        "Kalenjin": 0.130,
+        "Dholuo (Luo)": 0.108,
+        "Kamba": 0.101,
+        "Kisii": 0.057,
+        "Mijikenda": 0.049,
+        "Meru": 0.042,
+        "Somali": 0.024,
+        "Maasai": 0.021,
+        "Other": 0.153
+    },
+    "marital status": {
+        "Married (monogamous)": 0.450,
+        "Single (never married)": 0.400,
+        "Widowed": 0.060,
+        "Divorced or separated": 0.040,
+        "Married (polygamous)": 0.050
+    },
+    "education": {
+        "No education": 0.080,
+        "Primary": 0.380,
+        "Secondary": 0.360,
+        "Certificate": 0.050,
+        "Diploma": 0.060,
+        "University degree": 0.060,
+        "Graduate degree": 0.010
+    },
+    "occupation": {
+        "Agriculture": 0.360,
+        "Elementary": 0.180,
+        "Service and sales": 0.140,
+        "Craft and trades": 0.100,
+        "Professionals": 0.070,
+        "Technicians": 0.060,
+        "Administrative": 0.040,
+        "Plant and machine operators": 0.030,
+        "Management": 0.020
+    },
+    "housing tenure": {
+        "Owner occupied": 0.750,
+        "Rented": 0.230,
+        "Other": 0.020
+    },
+    "place of birth": {
+        "Kenya": 0.965,
+        "Somalia": 0.005,
+        "Uganda": 0.005,
+        "Tanzania": 0.004,
+        "Other": 0.021
+    },
+    "sexuality": {
+        "Heterosexual": 0.960,
+        "Bisexual": 0.020,
+        "Gay or Lesbian": 0.015,
+        "Other": 0.005
+    }
+}

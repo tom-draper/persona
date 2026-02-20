@@ -1,0 +1,140 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Nigeria Living Standards Survey (NLSS) 2018-2019, National Bureau of Statistics (NBS)",
+                "year": 2019,
+                "url": "https://www.nigerianstat.gov.ng/elibrary/read/1241"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Labour Force Survey 2022, NBS Nigeria",
+                "year": 2022,
+                "url": "https://www.nigerianstat.gov.ng/elibrary?q=labour+force"
+            },
+            {
+                "features": ["religion"],
+                "name": "Nigeria Demographic and Health Survey (NDHS) 2018, NBS/ICF",
+                "year": 2018,
+                "url": "https://dhsprogram.com/pubs/pdf/FR359/FR359.pdf"
+            },
+            {
+                "features": ["language"],
+                "name": "Ethnologue: Languages of Nigeria (2023) / NBS Estimates",
+                "year": 2023,
+                "url": "https://www.ethnologue.com/country/NG/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Afrobarometer Nigeria 2022",
+                "year": 2022,
+                "url": "https://www.afrobarometer.org/country/nigeria/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.160,
+        "5-9": 0.145,
+        "10-14": 0.130,
+        "15-19": 0.110,
+        "20-24": 0.095,
+        "25-29": 0.080,
+        "30-34": 0.068,
+        "35-39": 0.055,
+        "40-44": 0.042,
+        "45-49": 0.033,
+        "50-54": 0.028,
+        "55-59": 0.020,
+        "60-64": 0.015,
+        "65-69": 0.009,
+        "70-74": 0.005,
+        "75-79": 0.003,
+        "80-84": 0.001,
+        "85+": 0.001
+    },
+    "sex": {
+        "Male": 0.507,
+        "Female": 0.493
+    },
+    "location": {
+        "Lagos": 0.100,
+        "Kano": 0.070,
+        "Katsina": 0.045,
+        "Kaduna": 0.045,
+        "Oyo": 0.045,
+        "Rivers": 0.038,
+        "Anambra": 0.033,
+        "Benue": 0.028,
+        "Ogun": 0.030,
+        "Imo": 0.030,
+        "Niger": 0.027,
+        "Sokoto": 0.025,
+        "Enugu": 0.024,
+        "Zamfara": 0.024,
+        "Federal Capital Territory (Abuja)": 0.018,
+        "Other": 0.418
+    },
+    "religion": {
+        "Muslim": 0.535,
+        "Protestant": 0.210,
+        "Pentecostal/Evangelical": 0.100,
+        "Catholic": 0.100,
+        "Traditional or Animist": 0.030,
+        "Other": 0.025
+    },
+    "language": {
+        "Hausa": 0.250,
+        "Yoruba": 0.210,
+        "Igbo": 0.180,
+        "Fulfulde": 0.110,
+        "Kanuri": 0.040,
+        "Tiv": 0.025,
+        "Ijaw": 0.020,
+        "Ibibio": 0.015,
+        "Nupe": 0.010,
+        "Other": 0.140
+    },
+    "marital status": {
+        "Married": 0.550,
+        "Single (never married)": 0.330,
+        "Widowed": 0.070,
+        "Divorced or separated": 0.050
+    },
+    "education": {
+        "No education": 0.270,
+        "Primary": 0.220,
+        "Junior secondary": 0.130,
+        "Senior secondary": 0.250,
+        "Post-secondary (NCE/OND)": 0.060,
+        "University degree": 0.050,
+        "Graduate degree": 0.020
+    },
+    "occupation": {
+        "Agriculture": 0.350,
+        "Service and sales": 0.180,
+        "Elementary": 0.150,
+        "Craft and trades": 0.120,
+        "Professionals": 0.070,
+        "Technicians": 0.050,
+        "Administrative": 0.040,
+        "Plant and machine operators": 0.030,
+        "Management": 0.010
+    },
+    "housing tenure": {
+        "Owner occupied": 0.610,
+        "Rented": 0.340,
+        "Other": 0.050
+    },
+    "place of birth": {
+        "Nigeria": 0.975,
+        "Other African": 0.015,
+        "Other": 0.010
+    },
+    "sexuality": {
+        "Heterosexual": 0.970,
+        "Bisexual": 0.015,
+        "Gay or Lesbian": 0.010,
+        "Other": 0.005
+    }
+}

@@ -1,0 +1,146 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth", "population group"],
+                "name": "Census 2022, Statistics South Africa (Stats SA)",
+                "year": 2022,
+                "url": "https://census.statssa.gov.za/"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Quarterly Labour Force Survey Q4 2022, Stats SA",
+                "year": 2022,
+                "url": "https://www.statssa.gov.za/?page_id=1854&PPN=P0211"
+            },
+            {
+                "features": ["religion"],
+                "name": "General Household Survey 2021, Stats SA",
+                "year": 2021,
+                "url": "https://www.statssa.gov.za/?page_id=1854&PPN=P0318"
+            },
+            {
+                "features": ["language"],
+                "name": "Census 2022 - Home Language, Stats SA",
+                "year": 2022,
+                "url": "https://census.statssa.gov.za/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "South African Social Attitudes Survey 2022, HSRC",
+                "year": 2022,
+                "url": "https://www.hsrc.ac.za/en/research-data/view/7495"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.090,
+        "5-9": 0.090,
+        "10-14": 0.085,
+        "15-19": 0.085,
+        "20-24": 0.085,
+        "25-29": 0.078,
+        "30-34": 0.070,
+        "35-39": 0.062,
+        "40-44": 0.055,
+        "45-49": 0.048,
+        "50-54": 0.042,
+        "55-59": 0.038,
+        "60-64": 0.030,
+        "65-69": 0.022,
+        "70-74": 0.015,
+        "75-79": 0.009,
+        "80-84": 0.006,
+        "85+": 0.004
+    },
+    "sex": {
+        "Female": 0.510,
+        "Male": 0.490
+    },
+    "location": {
+        "Gauteng": 0.260,
+        "KwaZulu-Natal": 0.195,
+        "Eastern Cape": 0.115,
+        "Western Cape": 0.113,
+        "Limpopo": 0.094,
+        "Mpumalanga": 0.078,
+        "North West": 0.066,
+        "Free State": 0.048,
+        "Northern Cape": 0.025
+    },
+    "population group": {
+        "Black African": 0.809,
+        "Coloured": 0.088,
+        "White": 0.078,
+        "Indian or Asian": 0.025
+    },
+    "religion": {
+        "Christian": 0.850,
+        "No religion": 0.101,
+        "African traditional": 0.015,
+        "Muslim": 0.019,
+        "Hindu": 0.005,
+        "Other": 0.010
+    },
+    "language": {
+        "isiZulu": 0.247,
+        "isiXhosa": 0.165,
+        "Afrikaans": 0.106,
+        "Sepedi": 0.091,
+        "Setswana": 0.083,
+        "English": 0.081,
+        "Sesotho": 0.080,
+        "Xitsonga": 0.040,
+        "siSwati": 0.026,
+        "Tshivenda": 0.024,
+        "isiNdebele": 0.021,
+        "Other": 0.036
+    },
+    "marital status": {
+        "Single (never married)": 0.580,
+        "Married": 0.300,
+        "Living together": 0.060,
+        "Divorced or separated": 0.030,
+        "Widowed": 0.030
+    },
+    "education": {
+        "No schooling": 0.080,
+        "Some primary": 0.120,
+        "Complete primary": 0.060,
+        "Some secondary": 0.270,
+        "Grade 12 (Matric)": 0.270,
+        "Higher certificate or diploma": 0.080,
+        "University degree": 0.090,
+        "Graduate degree": 0.030
+    },
+    "occupation": {
+        "Elementary": 0.180,
+        "Service and sales": 0.160,
+        "Craft and trades": 0.120,
+        "Professionals": 0.100,
+        "Technicians": 0.090,
+        "Administrative": 0.090,
+        "Plant and machine operators": 0.080,
+        "Agriculture": 0.080,
+        "Management": 0.070,
+        "Other": 0.030
+    },
+    "housing tenure": {
+        "Owner occupied": 0.530,
+        "Rented": 0.260,
+        "Other or free": 0.210
+    },
+    "place of birth": {
+        "South Africa": 0.930,
+        "Zimbabwe": 0.025,
+        "Mozambique": 0.015,
+        "Other African": 0.020,
+        "Other": 0.010
+    },
+    "sexuality": {
+        "Heterosexual": 0.910,
+        "Bisexual": 0.040,
+        "Gay or Lesbian": 0.035,
+        "Other": 0.015
+    }
+}

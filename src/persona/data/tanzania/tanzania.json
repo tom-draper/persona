@@ -1,0 +1,134 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth", "religion"],
+                "name": "Population and Housing Census 2022, National Bureau of Statistics Tanzania (NBS)",
+                "year": 2022,
+                "url": "https://www.nbs.go.tz/index.php/en/census-surveys/population-and-housing-census/2022-phc"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Integrated Labour Force Survey 2020/21, NBS Tanzania",
+                "year": 2021,
+                "url": "https://www.nbs.go.tz/index.php/en/census-surveys/labour-and-employment"
+            },
+            {
+                "features": ["language"],
+                "name": "Population and Housing Census 2012 - Language, NBS Tanzania",
+                "year": 2012,
+                "url": "https://www.nbs.go.tz/index.php/en/census-surveys/population-and-housing-census/2012-phc"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Afrobarometer Tanzania 2022",
+                "year": 2022,
+                "url": "https://www.afrobarometer.org/country/tanzania/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.165,
+        "5-9": 0.140,
+        "10-14": 0.125,
+        "15-19": 0.110,
+        "20-24": 0.090,
+        "25-29": 0.075,
+        "30-34": 0.065,
+        "35-39": 0.055,
+        "40-44": 0.040,
+        "45-49": 0.030,
+        "50-54": 0.025,
+        "55-59": 0.020,
+        "60-64": 0.018,
+        "65-69": 0.013,
+        "70-74": 0.010,
+        "75-79": 0.007,
+        "80-84": 0.004,
+        "85+": 0.003
+    },
+    "sex": {
+        "Female": 0.509,
+        "Male": 0.491
+    },
+    "location": {
+        "Dar es Salaam": 0.112,
+        "Mwanza": 0.050,
+        "Kagera": 0.045,
+        "Shinyanga": 0.040,
+        "Morogoro": 0.040,
+        "Arusha": 0.040,
+        "Dodoma": 0.038,
+        "Tanga": 0.038,
+        "Mbeya": 0.038,
+        "Kilimanjaro": 0.035,
+        "Mara": 0.035,
+        "Tabora": 0.035,
+        "Zanzibar": 0.045,
+        "Ruvuma": 0.030,
+        "Iringa": 0.025,
+        "Other": 0.354
+    },
+    "religion": {
+        "Muslim": 0.352,
+        "Catholic": 0.213,
+        "Protestant": 0.187,
+        "Pentecostal/Other Christian": 0.140,
+        "No religion": 0.058,
+        "Traditional": 0.046,
+        "Other": 0.004
+    },
+    "language": {
+        "Swahili (Kiswahili)": 0.550,
+        "Sukuma": 0.130,
+        "Chagga": 0.037,
+        "Haya": 0.035,
+        "Nyamwezi": 0.028,
+        "Makonde": 0.020,
+        "Ha": 0.020,
+        "Gogo": 0.020,
+        "Other": 0.160
+    },
+    "marital status": {
+        "Married": 0.520,
+        "Single (never married)": 0.340,
+        "Widowed": 0.080,
+        "Divorced or separated": 0.060
+    },
+    "education": {
+        "No education": 0.150,
+        "Primary": 0.520,
+        "Lower secondary": 0.150,
+        "Upper secondary": 0.100,
+        "Post-secondary non-degree": 0.040,
+        "University degree": 0.035,
+        "Graduate degree": 0.005
+    },
+    "occupation": {
+        "Agriculture": 0.580,
+        "Service and sales": 0.120,
+        "Elementary": 0.100,
+        "Craft and trades": 0.080,
+        "Professionals": 0.040,
+        "Technicians": 0.030,
+        "Administrative": 0.020,
+        "Plant and machine operators": 0.020,
+        "Management": 0.010
+    },
+    "housing tenure": {
+        "Owner occupied": 0.770,
+        "Rented": 0.210,
+        "Other": 0.020
+    },
+    "place of birth": {
+        "Tanzania": 0.975,
+        "Other African": 0.020,
+        "Other": 0.005
+    },
+    "sexuality": {
+        "Heterosexual": 0.970,
+        "Bisexual": 0.015,
+        "Gay or Lesbian": 0.010,
+        "Other": 0.005
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location", "marital status", "housing tenure", "place of birth"],
+                "name": "Recensement Général de la Population et de l'Habitat 2014, Institut National de la Statistique (INS) Tunisie",
+                "year": 2014,
+                "url": "https://www.ins.tn/en/publication/general-census-population-and-housing-2014"
+            },
+            {
+                "features": ["education", "occupation"],
+                "name": "Enquête Nationale sur la Population et l'Emploi 2021, INS Tunisie",
+                "year": 2021,
+                "url": "https://www.ins.tn/en/themes/emploi"
+            },
+            {
+                "features": ["religion"],
+                "name": "Pew Research Center - Global Religious Futures: Tunisia 2010",
+                "year": 2010,
+                "url": "https://www.pewresearch.org/religion/2012/12/18/global-religious-landscape-exec/"
+            },
+            {
+                "features": ["language"],
+                "name": "Ethnologue: Languages of Tunisia (2023) / INS Estimates",
+                "year": 2023,
+                "url": "https://www.ethnologue.com/country/TN/"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Arab Barometer Wave VI - Tunisia 2021",
+                "year": 2021,
+                "url": "https://www.arabbarometer.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.075,
+        "5-9": 0.080,
+        "10-14": 0.082,
+        "15-19": 0.085,
+        "20-24": 0.088,
+        "25-29": 0.085,
+        "30-34": 0.078,
+        "35-39": 0.072,
+        "40-44": 0.065,
+        "45-49": 0.058,
+        "50-54": 0.052,
+        "55-59": 0.045,
+        "60-64": 0.038,
+        "65-69": 0.030,
+        "70-74": 0.023,
+        "75-79": 0.015,
+        "80-84": 0.009,
+        "85+": 0.005
+    },
+    "sex": {
+        "Female": 0.500,
+        "Male": 0.500
+    },
+    "location": {
+        "Tunis": 0.110,
+        "Sfax": 0.085,
+        "Ariana": 0.065,
+        "Sousse": 0.060,
+        "Ben Arous": 0.055,
+        "Nabeul": 0.060,
+        "Kairouan": 0.050,
+        "Bizerte": 0.048,
+        "Monastir": 0.040,
+        "Gabes": 0.038,
+        "Kasserine": 0.035,
+        "Gafsa": 0.035,
+        "Mahdia": 0.033,
+        "Jendouba": 0.030,
+        "Other": 0.256
+    },
+    "religion": {
+        "Muslim (Sunni Maliki)": 0.990,
+        "Christian": 0.005,
+        "Jewish": 0.001,
+        "Other": 0.004
+    },
+    "language": {
+        "Arabic (Tunisian Darija)": 0.850,
+        "Arabic (Modern Standard)": 0.080,
+        "French": 0.050,
+        "Berber (Amazigh)": 0.015,
+        "Other": 0.005
+    },
+    "marital status": {
+        "Married": 0.530,
+        "Single (never married)": 0.380,
+        "Divorced": 0.050,
+        "Widowed": 0.040
+    },
+    "education": {
+        "No education": 0.200,
+        "Primary": 0.200,
+        "Lower secondary (collège)": 0.180,
+        "Upper secondary (lycée)": 0.220,
+        "Post-secondary non-degree": 0.060,
+        "University degree": 0.110,
+        "Graduate degree": 0.030
+    },
+    "occupation": {
+        "Service and sales": 0.200,
+        "Agriculture": 0.160,
+        "Elementary": 0.140,
+        "Craft and trades": 0.130,
+        "Professionals": 0.100,
+        "Technicians": 0.090,
+        "Administrative": 0.080,
+        "Plant and machine operators": 0.070,
+        "Management": 0.030
+    },
+    "housing tenure": {
+        "Owner occupied": 0.700,
+        "Rented": 0.250,
+        "Other": 0.050
+    },
+    "place of birth": {
+        "Tunisia": 0.980,
+        "Other African": 0.005,
+        "Other": 0.015
+    },
+    "sexuality": {
+        "Heterosexual": 0.970,
+        "Bisexual": 0.015,
+        "Gay or Lesbian": 0.010,
+        "Other": 0.005
+    }
+}

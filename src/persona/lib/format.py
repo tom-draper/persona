@@ -13,6 +13,9 @@ alias = {
     'türkiye': 'turkey',
     'hellas': 'greece',
     'suomi': 'finland',
+    'rsa': 'south_africa',
+    'misr': 'egypt',
+    'masr': 'egypt',
 }
 
 
