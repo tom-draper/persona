@@ -25,8 +25,13 @@ $ curl https://persona-api.vercel.app/v1/england/
     "sex": "Female",
     "sexuality": "Heterosexual",
     "ethnicity": "British, White",
-    "religion": "Christian",
+    "religion": "Christianity",
     "language": "English",
+    "occupation": "Skilled trades",
+    "education": "Level 4+",
+    "marital status": "Single (never married)",
+    "housing tenure": "Social rented",
+    "country of birth": "UK",
     "location": "Oldham, North West"
   }
 ]
@@ -81,7 +86,8 @@ $ curl https://persona-api.vercel.app/v1/locations/
   "wales",
   "california",
   "florida",
-  "texas"
+  "texas",
+  ...
 ]
 
 ```
@@ -102,9 +108,14 @@ $ curl https://persona-api.vercel.app/v1/england/features/
     "age",
     "sex",
     "sexuality",
-    "religion",
     "ethnicity",
+    "religion",
     "language",
+    "occupation",
+    "education",
+    "marital status",
+    "housing tenure",
+    "country of birth",
     "location"
   ]
 }
