@@ -430,8 +430,9 @@ def test_get_features_regular_location(api_data):
 def test_get_features_composite_location(api_data):
     from persona.api.handler import get_features
     result = get_features('united_kingdom', api_data)
-    assert isinstance(result, dict)
-    assert len(result) > 1  # multiple sublocations
+    assert 'united_kingdom' in result
+    assert 'age' in result['united_kingdom']
+    assert '_meta' not in result['united_kingdom']
 
 
 def test_get_features_global_returns_empty(api_data):

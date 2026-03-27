@@ -4,7 +4,7 @@ from importlib.metadata import version
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import RedirectResponse
 
-from persona.api.handler import get_features, load_location_data
+from persona.api.handler import get_available_features, get_features, load_location_data
 from persona.lib.format import clean_location
 from persona.lib.generate import gen_api_samples
 
@@ -95,4 +95,16 @@ def gen_personas(
     if location not in data:
         raise _location_not_found(data)
     enabled_features = {f.strip() for f in features.split(',')} if features else None
+    if enabled_features:
+        available = get_available_features(location, data)
+        invalid = enabled_features - available
+        if invalid:
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "message": "Invalid features requested",
+                    "invalid": sorted(invalid),
+                    "available": sorted(available),
+                },
+            )
     return gen_api_samples(location, data, enabled_features=enabled_features, N=count, seed=seed)

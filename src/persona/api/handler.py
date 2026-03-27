@@ -28,13 +28,11 @@ def get_features(location: str, data: dict) -> dict:
     if location == 'global':
         return {}
     elif data[location]['composite']:
-        return {
-            clean_location(subloc): [
-                k for k in data[clean_location(subloc)]['data'].keys()
-                if k != '_meta'
-            ]
-            for subloc in data[location]['data']
-        }
+        features: set[str] = set()
+        for subloc in data[location]['data']:
+            subloc_key = clean_location(subloc)
+            features.update(k for k in data[subloc_key]['data'].keys() if k != '_meta')
+        return {location: sorted(features)}
     else:
         return {
             location: [
@@ -42,3 +40,11 @@ def get_features(location: str, data: dict) -> dict:
                 if k != '_meta'
             ]
         }
+
+
+def get_available_features(location: str, data: dict) -> set[str]:
+    features_dict = get_features(location, data)
+    result: set[str] = set()
+    for feature_list in features_dict.values():
+        result.update(feature_list)
+    return result

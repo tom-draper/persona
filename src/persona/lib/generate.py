@@ -66,6 +66,21 @@ def resolve_api_location(
 
 
 @functools.cache
+def list_all_features() -> set[str]:
+    features: set[str] = set()
+    for path in DATA_DIR.rglob('*.json'):
+        if path.name == 'composite.json':
+            continue
+        try:
+            with open(path) as f:
+                data = json.load(f)
+            features.update(k for k in data.keys() if k != '_meta')
+        except (json.JSONDecodeError, OSError):
+            pass
+    return features
+
+
+@functools.cache
 def list_locations() -> list[str]:
     """Return all location names that have data (regular or composite)."""
     locations = []

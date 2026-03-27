@@ -5,13 +5,7 @@ import sys
 from colorama import Fore, Style
 
 from persona.lib.format import clean_location
-from persona.lib.generate import gen_samples, list_locations
-
-ALL_FEATURES = {
-    'age', 'sex', 'religion', 'sexuality', 'ethnicity',
-    'language', 'location', 'relationship', 'place of birth',
-    'occupation', 'education', 'marital status', 'housing tenure', 'country of birth',
-}
+from persona.lib.generate import gen_samples, list_all_features, list_locations
 
 
 def pprint(data: list[dict]):
@@ -52,7 +46,7 @@ def build_parser() -> argparse.ArgumentParser:
         '--seed', type=int, default=None, metavar='SEED',
         help='Random seed for reproducible output',
     )
-    for feature in sorted(ALL_FEATURES):
+    for feature in sorted(list_all_features()):
         flag = '--' + feature.replace(' ', '-')
         parser.add_argument(flag, action='store_true', help=f'Include {feature}')
     return parser
@@ -60,7 +54,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def get_enabled_features(args: argparse.Namespace) -> set[str] | None:
     enabled = set()
-    for feature in ALL_FEATURES:
+    for feature in list_all_features():
         if getattr(args, feature.replace(' ', '_'), False):
             enabled.add(feature)
     return enabled if enabled else None
