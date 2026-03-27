@@ -125,25 +125,29 @@ $ curl https://persona-api.vercel.app/v1/england/features/
 
 ### Installation
 
-**With [uv](https://docs.astral.sh/uv/) (recommended):**
+With [uv](https://docs.astral.sh/uv/):
 
 ```bash
+uv tool install git+https://github.com/tom-draper/persona.git
+
+# or locally...
+git clone https://github.com/tom-draper/persona.git
+cd persona
 uv tool install .
-```
 
-**With pip:**
-
-```bash
-pip install .
 persona <location>
 ```
 
-Or without installing, using a virtual environment:
+With pip:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install git+https://github.com/tom-draper/persona.git
+
+# or locally...
+git clone https://github.com/tom-draper/persona.git
+cd persona
 pip install .
+
 persona <location>
 ```
 
