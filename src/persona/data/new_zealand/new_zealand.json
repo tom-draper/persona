@@ -1,0 +1,97 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "ethnicity", "religion", "language", "occupation", "education", "marital status", "housing tenure"],
+                "name": "Census 2018, Stats NZ",
+                "year": 2018,
+                "url": "https://www.stats.govt.nz/2018-census/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.055,
+        "5-9": 0.060,
+        "10-14": 0.061,
+        "15-19": 0.060,
+        "20-24": 0.069,
+        "25-29": 0.074,
+        "30-34": 0.075,
+        "35-39": 0.072,
+        "40-44": 0.068,
+        "45-49": 0.064,
+        "50-54": 0.064,
+        "55-59": 0.062,
+        "60-64": 0.058,
+        "65-69": 0.048,
+        "70-74": 0.039,
+        "75-79": 0.028,
+        "80-84": 0.018,
+        "85+": 0.015
+    },
+    "sex": {
+        "Male": 0.495,
+        "Female": 0.505
+    },
+    "ethnicity": {
+        "European": 0.614,
+        "Māori": 0.150,
+        "Asian": 0.150,
+        "Pacific Peoples": 0.074,
+        "MELAA": 0.016,
+        "Other": 0.007
+    },
+    "religion": {
+        "No religion": 0.524,
+        "Christianity": 0.402,
+        "Hinduism": 0.028,
+        "Buddhism": 0.016,
+        "Islam": 0.014,
+        "Other": 0.016
+    },
+    "language": {
+        "English": 0.858,
+        "Māori": 0.038,
+        "Samoan": 0.022,
+        "Mandarin": 0.018,
+        "Hindi": 0.016,
+        "Cantonese": 0.014,
+        "Tagalog": 0.009,
+        "Korean": 0.008,
+        "French": 0.007,
+        "German": 0.006,
+        "Afrikaans": 0.004
+    },
+    "occupation": {
+        "Managers": 0.165,
+        "Professionals": 0.220,
+        "Technicians and trades workers": 0.140,
+        "Community and personal service workers": 0.100,
+        "Clerical and administrative workers": 0.120,
+        "Sales workers": 0.085,
+        "Machinery operators and drivers": 0.060,
+        "Labourers": 0.110
+    },
+    "education": {
+        "No qualification": 0.170,
+        "Secondary school qualification": 0.270,
+        "Post-secondary certificate or diploma": 0.225,
+        "Bachelor's degree": 0.200,
+        "Postgraduate qualification": 0.135
+    },
+    "marital status": {
+        "Single (never married)": 0.368,
+        "Married or in civil union": 0.420,
+        "De facto relationship": 0.095,
+        "Separated": 0.036,
+        "Divorced": 0.037,
+        "Widowed": 0.044
+    },
+    "housing tenure": {
+        "Owned outright": 0.305,
+        "Owned with mortgage": 0.340,
+        "Private rented": 0.279,
+        "Social rented": 0.058,
+        "Lives rent free": 0.018
+    }
+}

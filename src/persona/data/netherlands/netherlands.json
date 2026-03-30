@@ -1,0 +1,158 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status", "location"],
+                "name": "Bevolking op 1 januari; leeftijd, burgerlijke staat, regio (CBS StatLine, table 03759ned)",
+                "year": 2024,
+                "url": "https://opendata.cbs.nl/ODataApi/odata/03759ned/TypedDataSet"
+            },
+            {
+                "features": ["ethnicity"],
+                "name": "Bevolking; herkomstland, geboorteland, leeftijd, regio, 1 januari (CBS StatLine, table 84910NED)",
+                "year": 2022,
+                "url": "https://opendata.cbs.nl/ODataApi/odata/84910NED/TypedDataSet"
+            },
+            {
+                "features": ["place of birth"],
+                "name": "Where were people in the Netherlands born? - The Netherlands in numbers 2022, CBS",
+                "year": 2022,
+                "url": "https://longreads.cbs.nl/the-netherlands-in-numbers-2022/where-were-people-in-the-netherlands-born/"
+            },
+            {
+                "features": ["religion"],
+                "name": "What are the major religions? - The Netherlands in numbers 2023, CBS (Social Cohesion and Well-being Survey data 2022)",
+                "year": 2022,
+                "url": "https://longreads.cbs.nl/the-netherlands-in-numbers-2023/what-are-the-major-religions/"
+            },
+            {
+                "features": ["education"],
+                "name": "An increasing number of Dutch people have completed higher education, CBS",
+                "year": 2023,
+                "url": "https://www.cbs.nl/en-gb/news/2024/41/an-increasing-number-of-dutch-people-have-completed-higher-education"
+            },
+            {
+                "features": ["occupation"],
+                "name": "What type of work do most people do? - The Netherlands in Numbers 2024, CBS",
+                "year": 2023,
+                "url": "https://longreads.cbs.nl/the-netherlands-in-numbers-2024/what-type-of-work-do-most-people-do/"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Voorraad woningen; eigendom, type verhuurder, bewoning, regio (CBS StatLine, table 82900NED)",
+                "year": 2023,
+                "url": "https://www.cbs.nl/nl-nl/cijfers/detail/82900NED"
+            },
+            {
+                "features": ["language"],
+                "name": "What is the most spoken language or dialect at home? - The Netherlands in numbers 2022, CBS (Social Cohesion and Well-being Survey data 2019)",
+                "year": 2019,
+                "url": "https://longreads.cbs.nl/the-netherlands-in-numbers-2022/what-is-the-most-spoken-language-or-dialect-at-home/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0481,
+        "5-9": 0.0501,
+        "10-14": 0.053,
+        "15-19": 0.0568,
+        "20-24": 0.0659,
+        "25-29": 0.0653,
+        "30-34": 0.0671,
+        "35-39": 0.0634,
+        "40-44": 0.0598,
+        "45-49": 0.0586,
+        "50-54": 0.0693,
+        "55-59": 0.0705,
+        "60-64": 0.067,
+        "65-69": 0.0584,
+        "70-74": 0.0513,
+        "75-79": 0.045,
+        "80-84": 0.0271,
+        "85+": 0.0231
+    },
+    "sex": {
+        "Male": 0.4972,
+        "Female": 0.5028
+    },
+    "religion": {
+        "No religion": 0.572,
+        "Roman Catholic": 0.182,
+        "Protestant": 0.132,
+        "Islam": 0.056,
+        "Other": 0.058
+    },
+    "place of birth": {
+        "Netherlands": 0.8527,
+        "Turkey": 0.0117,
+        "Suriname": 0.0101,
+        "Morocco": 0.0098,
+        "Poland": 0.0098,
+        "Syria": 0.0061,
+        "Indonesia": 0.006,
+        "China": 0.0038,
+        "Belgium": 0.0037,
+        "United Kingdom": 0.0035,
+        "Other": 0.0828
+    },
+    "ethnicity": {
+        "Dutch background": 0.7477,
+        "Western migration background": 0.1085,
+        "Non-Western migration background": 0.1438
+    },
+    "marital status": {
+        "Single (never married)": 0.4991,
+        "Married or civil partnership": 0.3753,
+        "Widowed": 0.0481,
+        "Divorced": 0.0775
+    },
+    "housing tenure": {
+        "Owner-occupied": 0.5704,
+        "Social rental (housing association)": 0.2847,
+        "Private rental": 0.1436,
+        "Unknown": 0.0013
+    },
+    "education": {
+        "Higher education (HBO/University)": 0.364,
+        "Secondary vocational / general secondary (MBO-2-4/HAVO/VWO)": 0.37,
+        "Primary / lower secondary (VMBO/MBO-1 or below)": 0.26,
+        "Unknown": 0.006
+    },
+    "occupation": {
+        "Business and Administration": 0.1921,
+        "Healthcare and Well-being": 0.145,
+        "Engineering and Technology": 0.1355,
+        "Commerce": 0.111,
+        "Services": 0.0798,
+        "Education": 0.0741,
+        "Transportation and Logistics": 0.0666,
+        "ICT": 0.0557,
+        "Management": 0.0524,
+        "Public Administration, Security, Justice": 0.0346,
+        "Creative and Language": 0.0251,
+        "Agriculture": 0.0181,
+        "Other": 0.0102
+    },
+    "language": {
+        "Dutch": 0.75,
+        "Low Saxon": 0.04,
+        "Limburgish": 0.03,
+        "Frisian": 0.02,
+        "Dutch dialect": 0.05,
+        "Other": 0.11
+    },
+    "location": {
+        "Zuid-Holland": 0.214,
+        "Noord-Holland": 0.1659,
+        "Noord-Brabant": 0.1474,
+        "Gelderland": 0.1198,
+        "Utrecht": 0.078,
+        "Overijssel": 0.0663,
+        "Limburg": 0.0632,
+        "Fryslân": 0.0369,
+        "Groningen": 0.0335,
+        "Drenthe": 0.0281,
+        "Flevoland": 0.0251,
+        "Zeeland": 0.0218
+    }
+}

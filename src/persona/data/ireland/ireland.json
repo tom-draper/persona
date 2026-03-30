@@ -1,0 +1,144 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status"],
+                "name": "Census of Population 2022 - Profile 2, Central Statistics Office Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp2/censusofpopulation2022profile2-populationdistributionageandgender/"
+            },
+            {
+                "features": ["ethnicity", "religion", "language", "country of birth"],
+                "name": "Census of Population 2022 - Profile 5 - Diversity, Migration, Ethnicity, Irish Travellers and Religion, Central Statistics Office Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp5/censusofpopulation2022profile5-diversitymigrationethnicityirishtravellersreligion/"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Census of Population 2022 - Profile 4 - Households and Families, Central Statistics Office Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp4/censusofpopulation2022profile4-householdsandfamilies/"
+            },
+            {
+                "features": ["occupation"],
+                "name": "Census of Population 2022 - Profile 7 - Employment, Occupations and Commuting, Central Statistics Office Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp7/censusofpopulation2022profile7-employmentoccupationsandcommuting/"
+            },
+            {
+                "features": ["education"],
+                "name": "Census of Population 2022 - Profile 8 - Education, Skills and the Irish Language, Central Statistics Office Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp8/censusofpopulation2022profile8-educationskillsandtheirishlanguage/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.058,
+        "5-9": 0.063,
+        "10-14": 0.062,
+        "15-19": 0.059,
+        "20-24": 0.060,
+        "25-29": 0.067,
+        "30-34": 0.079,
+        "35-39": 0.079,
+        "40-44": 0.073,
+        "45-49": 0.069,
+        "50-54": 0.068,
+        "55-59": 0.062,
+        "60-64": 0.054,
+        "65-69": 0.040,
+        "70-74": 0.035,
+        "75-79": 0.025,
+        "80-84": 0.016,
+        "85+": 0.011
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "ethnicity": {
+        "White": {
+            "Irish": 0.816,
+            "Irish Traveller": 0.007,
+            "Roma": 0.003,
+            "Other White": 0.105
+        },
+        "Asian": {
+            "Chinese": 0.006,
+            "Indian, Pakistani or Bangladeshi": 0.020,
+            "Other Asian": 0.009
+        },
+        "Black": {
+            "African": 0.014,
+            "Other Black": 0.002
+        },
+        "Arab": 0.004,
+        "Other": 0.014
+    },
+    "religion": {
+        "Catholic": 0.740,
+        "No religion": 0.155,
+        "Church of Ireland": 0.026,
+        "Orthodox": 0.021,
+        "Islam": 0.017,
+        "Presbyterian": 0.013,
+        "Other Christian": 0.022,
+        "Hindu": 0.003,
+        "Other": 0.003
+    },
+    "language": {
+        "English": 0.857,
+        "Polish": 0.025,
+        "Romanian": 0.020,
+        "Irish": 0.018,
+        "Lithuanian": 0.009,
+        "French": 0.005,
+        "Portuguese": 0.004,
+        "Spanish": 0.004
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.098,
+        "Professional occupations": 0.210,
+        "Associate professional and technical": 0.135,
+        "Administrative and secretarial": 0.095,
+        "Skilled trades": 0.115,
+        "Caring, leisure and other service": 0.090,
+        "Sales and customer service": 0.078,
+        "Process, plant and machine operatives": 0.073,
+        "Elementary occupations": 0.106
+    },
+    "education": {
+        "Primary or below": 0.155,
+        "Lower secondary": 0.093,
+        "Upper secondary": 0.285,
+        "Post-secondary certificate": 0.142,
+        "Bachelor's degree": 0.180,
+        "Postgraduate degree": 0.115,
+        "Other": 0.030
+    },
+    "marital status": {
+        "Single (never married)": 0.400,
+        "Married or in civil partnership": 0.428,
+        "Separated": 0.055,
+        "Divorced": 0.055,
+        "Widowed": 0.062
+    },
+    "housing tenure": {
+        "Owned outright": 0.352,
+        "Owned with mortgage": 0.308,
+        "Private rented": 0.228,
+        "Social rented": 0.105,
+        "Rent free": 0.007
+    },
+    "country of birth": {
+        "Ireland": 0.770,
+        "United Kingdom": 0.048,
+        "Poland": 0.035,
+        "Romania": 0.022,
+        "India": 0.015,
+        "Lithuania": 0.010,
+        "Brazil": 0.006,
+        "Other": 0.094
+    }
+}

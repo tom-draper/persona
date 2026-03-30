@@ -1,0 +1,104 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "year": 2021,
+                "url": "https://censusreporter.org/profiles/04000US36-new-york/"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religious Landscape Study - New York, Pew Research Center",
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/new-york/"
+            },
+            {
+                "features": ["language"],
+                "name": "Language Mapper, Modern Language Association",
+                "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.050,
+        "5-9": 0.053,
+        "10-14": 0.055,
+        "15-19": 0.059,
+        "20-24": 0.065,
+        "25-29": 0.075,
+        "30-34": 0.074,
+        "35-39": 0.069,
+        "40-44": 0.063,
+        "45-49": 0.063,
+        "50-54": 0.065,
+        "55-59": 0.068,
+        "60-64": 0.059,
+        "65-69": 0.050,
+        "70-74": 0.042,
+        "75-79": 0.027,
+        "80-84": 0.018,
+        "85+": 0.016
+    },
+    "sex": {
+        "Male": 0.484,
+        "Female": 0.516
+    },
+    "race": {
+        "White": 0.556,
+        "Hispanic or Latino": 0.192,
+        "Black or African American": 0.158,
+        "Asian": 0.087,
+        "Two or more races": 0.031,
+        "Native American": 0.005,
+        "Pacific Islander": 0.001
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.410,
+        "Service": 0.190,
+        "Sales and office": 0.200,
+        "Natural resources, construction and maintenance": 0.080,
+        "Production, transportation and material moving": 0.120
+    },
+    "education": {
+        "Less than high school": 0.125,
+        "High school diploma or equivalent": 0.230,
+        "Some college, no degree": 0.165,
+        "Associate's degree": 0.080,
+        "Bachelor's degree": 0.220,
+        "Graduate or professional degree": 0.180
+    },
+    "marital status": {
+        "Never married": 0.380,
+        "Married": 0.430,
+        "Separated": 0.030,
+        "Divorced": 0.100,
+        "Widowed": 0.060
+    },
+    "housing tenure": {
+        "Owner occupied": 0.530,
+        "Renter occupied": 0.470
+    },
+    "religion": {
+        "Protestantism": 0.270,
+        "Roman Catholicism": 0.310,
+        "Judaism": 0.080,
+        "No religion": 0.240,
+        "Islam": 0.030,
+        "Buddhism": 0.010,
+        "Hinduism": 0.020,
+        "Other": 0.040
+    },
+    "language": {
+        "English": 0.571,
+        "Spanish": 0.180,
+        "Chinese": 0.052,
+        "Russian": 0.020,
+        "Haitian Creole": 0.018,
+        "Italian": 0.015,
+        "Korean": 0.016,
+        "Polish": 0.010,
+        "Bengali": 0.015,
+        "Arabic": 0.015,
+        "Yiddish": 0.010
+    }
+}

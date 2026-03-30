@@ -1,6 +1,85 @@
 {
     "_meta": {
-        "sources": []
+        "sources": [
+            {
+                "features": ["age", "sex", "location"],
+                "name": "Population and household estimates, England and Wales: Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Sexual orientation, UK: 2020, ONS",
+                "year": 2020,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
+            },
+            {
+                "features": ["ethnicity", "religion", "language", "place of birth"],
+                "name": "2011 Census aggregate data, ONS",
+                "year": 2011,
+                "url": "https://www.nomisweb.co.uk/census/2011/aggregate-data"
+            },
+            {
+                "features": ["occupation"],
+                "name": "Occupation (TS063), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS063/editions/2021/versions/1"
+            },
+            {
+                "features": ["education"],
+                "name": "Highest level of qualification (TS067), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS067/editions/2021/versions/1"
+            },
+            {
+                "features": ["marital status"],
+                "name": "Legal partnership status (TS002), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS002/editions/2021/versions/3"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Tenure of household (TS054), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS054/editions/2021/versions/1"
+            },
+            {
+                "features": ["country of birth"],
+                "name": "International migration, England and Wales: Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/internationalmigrationenglandandwales/census2021"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.060,
+        "5-9": 0.061,
+        "10-14": 0.059,
+        "15-19": 0.055,
+        "20-24": 0.071,
+        "25-29": 0.093,
+        "30-34": 0.095,
+        "35-39": 0.078,
+        "40-44": 0.068,
+        "45-49": 0.063,
+        "50-54": 0.060,
+        "55-59": 0.054,
+        "60-64": 0.044,
+        "65-69": 0.034,
+        "70-74": 0.030,
+        "75-79": 0.020,
+        "80-84": 0.014,
+        "85+": 0.009
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "sexuality": {
+        "Heterosexual": 0.933,
+        "Homosexual": 0.018,
+        "Bisexual": 0.013,
+        "Unsure": 0.029
     },
     "ethnicity": {
         "White": {
@@ -17,36 +96,14 @@
         },
         "Black": {
             "African": 0.079,
-            "Caribbean": 0.0039
+            "Caribbean": 0.039
         },
         "Mixed": {
             "White and Caribbean": 0.015,
             "White and Black African": 0.009,
-            "White and Asian": 0.0014
+            "White and Asian": 0.014
         },
         "Arab": 0.016
-    },
-    "language": {
-        "English": 0.784,
-        "Polish": 0.013,
-        "Bengali": 0.012,
-        "Gujarati": 0.01,
-        "French": 0.008,
-        "Urdu": 0.008,
-        "Portuguese": 0.011,
-        "Turkish": 0.008,
-        "Spanish": 0.014,
-        "Arabic": 0.008,
-        "Tamil": 0.008,
-        "Punjabi": 0.009,
-        "Somali": 0.004,
-        "Italian": 0.01,
-        "Romanian": 0.019,
-        "Persian": 0.005,
-        "Lithuanian": 0.004,
-        "German": 0.002,
-        "Greek": 0.004,
-        "Russian": 0.004
     },
     "religion": {
         "Christian": 0.4066,
@@ -57,6 +114,76 @@
         "Sikhism": 0.0099,
         "Buddhism": 0.0088
     },
+    "language": {
+        "English": 0.784,
+        "Polish": 0.013,
+        "Bengali": 0.012,
+        "Gujarati": 0.010,
+        "French": 0.008,
+        "Urdu": 0.008,
+        "Portuguese": 0.011,
+        "Turkish": 0.008,
+        "Spanish": 0.014,
+        "Arabic": 0.008,
+        "Tamil": 0.008,
+        "Punjabi": 0.009,
+        "Somali": 0.004,
+        "Italian": 0.010,
+        "Romanian": 0.019,
+        "Persian": 0.005,
+        "Lithuanian": 0.004,
+        "German": 0.002,
+        "Greek": 0.004,
+        "Russian": 0.004
+    },
+    "occupation": {
+        "Managers, directors and senior officials": 0.135,
+        "Professional occupations": 0.287,
+        "Associate professional and technical": 0.138,
+        "Administrative and secretarial": 0.092,
+        "Skilled trades": 0.055,
+        "Caring, leisure and other service": 0.083,
+        "Sales and customer service": 0.073,
+        "Process, plant and machine operatives": 0.040,
+        "Elementary occupations": 0.097
+    },
+    "education": {
+        "No qualifications": 0.121,
+        "Level 1": 0.073,
+        "Level 2": 0.100,
+        "Apprenticeship": 0.026,
+        "Level 3": 0.149,
+        "Level 4+": 0.499,
+        "Other": 0.032
+    },
+    "marital status": {
+        "Single (never married)": 0.440,
+        "Married or in civil partnership": 0.390,
+        "Separated": 0.026,
+        "Divorced": 0.085,
+        "Widowed": 0.059
+    },
+    "housing tenure": {
+        "Owned outright": 0.218,
+        "Owned with mortgage": 0.244,
+        "Shared ownership": 0.035,
+        "Social rented": 0.237,
+        "Private rented": 0.259,
+        "Lives rent free": 0.007
+    },
+    "country of birth": {
+        "UK": 0.631,
+        "India": 0.040,
+        "Poland": 0.019,
+        "Bangladesh": 0.015,
+        "Nigeria": 0.015,
+        "Pakistan": 0.015,
+        "Jamaica": 0.012,
+        "Romania": 0.009,
+        "Sri Lanka": 0.009,
+        "Ireland": 0.008,
+        "Other": 0.227
+    },
     "place of birth": {
         "United Kingdom": 0.7115114086069384,
         "India": 0.03605165708233798,
@@ -66,7 +193,7 @@
         "Pakistan": 0.015459704784071817,
         "Bangladesh": 0.015114787177313358,
         "Jamaica": 0.012024275930786076,
-        "Sri Lanka ": 0.011622169912544347,
+        "Sri Lanka": 0.011622169912544347,
         "France": 0.00916306821876382,
         "Somalia": 0.008981467517875846,
         "Kenya": 0.008827361245585598,
@@ -88,5 +215,44 @@
         "Spain": 0.00493250049043187,
         "Uganda": 0.004417804787082457,
         "Brazil": 0.0043107139876943186
+    },
+    "location": {
+        "Inner London": {
+            "Camden": 0.02388,
+            "City of London": 0.00098,
+            "Hackney": 0.02946,
+            "Hammersmith and Fulham": 0.02082,
+            "Haringey": 0.03002,
+            "Islington": 0.02461,
+            "Kensington and Chelsea": 0.01629,
+            "Lambeth": 0.03609,
+            "Lewisham": 0.03416,
+            "Newham": 0.03990,
+            "Southwark": 0.03497,
+            "Tower Hamlets": 0.03527,
+            "Wandsworth": 0.03722,
+            "Westminster": 0.02322
+        },
+        "Outer London": {
+            "Barking and Dagenham": 0.02488,
+            "Barnet": 0.04424,
+            "Bexley": 0.02801,
+            "Brent": 0.03861,
+            "Bromley": 0.03750,
+            "Croydon": 0.04441,
+            "Ealing": 0.04172,
+            "Enfield": 0.03750,
+            "Greenwich": 0.03286,
+            "Harrow": 0.02970,
+            "Havering": 0.02978,
+            "Hillingdon": 0.03476,
+            "Hounslow": 0.03275,
+            "Kingston upon Thames": 0.01909,
+            "Merton": 0.02446,
+            "Redbridge": 0.03527,
+            "Richmond upon Thames": 0.02218,
+            "Sutton": 0.02382,
+            "Waltham Forest": 0.03165
+        }
     }
 }
