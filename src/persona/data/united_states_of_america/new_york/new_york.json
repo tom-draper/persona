@@ -3,19 +3,21 @@
         "sources": [
             {
                 "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
-                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "name": "Demographic and Housing Estimates (DP05), American Community Survey 2021 5-Year Estimates, US Census Bureau",
                 "year": 2021,
-                "url": "https://censusreporter.org/profiles/04000US36-new-york/"
+                "url": "https://data.census.gov/table/ACSDP5Y2021.DP05?g=0400000US36"
             },
             {
                 "features": ["religion"],
                 "name": "Religious Landscape Study - New York, Pew Research Center",
+                "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/new-york/"
             },
             {
                 "features": ["language"],
-                "name": "Language Mapper, Modern Language Association",
-                "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+                "name": "Language Spoken at Home (B16001), American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "year": 2021,
+                "url": "https://data.census.gov/table/ACSDT5Y2021.B16001?g=0400000US36"
             }
         ]
     },

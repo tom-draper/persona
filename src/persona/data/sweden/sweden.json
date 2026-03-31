@@ -1,0 +1,101 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "marital status"],
+                "name": "Population by age and sex (BE0101A), Statistics Sweden (SCB)",
+                "year": 2023,
+                "url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__BE__BE0101__BE0101A/"
+            },
+            {
+                "features": ["location"],
+                "name": "Population by region (BE0101A), Statistics Sweden (SCB)",
+                "year": 2023,
+                "url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__BE__BE0101__BE0101A/FolkmangdNov/"
+            },
+            {
+                "features": ["country of birth"],
+                "name": "Population by country of birth (BE0101E), Statistics Sweden (SCB)",
+                "year": 2023,
+                "url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__BE__BE0101__BE0101E/"
+            },
+            {
+                "features": ["education"],
+                "name": "Level of education (UF0506), Statistics Sweden (SCB)",
+                "year": 2023,
+                "url": "https://www.statistikdatabasen.scb.se/pxweb/en/ssd/START__UF__UF0506/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.053,
+        "5-9": 0.058,
+        "10-14": 0.060,
+        "15-19": 0.058,
+        "20-24": 0.056,
+        "25-29": 0.060,
+        "30-34": 0.074,
+        "35-39": 0.068,
+        "40-44": 0.062,
+        "45-49": 0.061,
+        "50-54": 0.063,
+        "55-59": 0.065,
+        "60-64": 0.056,
+        "65-69": 0.052,
+        "70-74": 0.049,
+        "75-79": 0.046,
+        "80-84": 0.031,
+        "85+": 0.028
+    },
+    "sex": {
+        "Male": 0.503,
+        "Female": 0.497
+    },
+    "marital status": {
+        "Single (never married)": 0.541,
+        "Married or registered partnership": 0.321,
+        "Divorced": 0.099,
+        "Widowed": 0.039
+    },
+    "country of birth": {
+        "Sweden": 0.794,
+        "Syria": 0.019,
+        "Iraq": 0.014,
+        "Finland": 0.012,
+        "Poland": 0.010,
+        "Iran": 0.008,
+        "Somalia": 0.007,
+        "Afghanistan": 0.006,
+        "Other": 0.130
+    },
+    "education": {
+        "Pre-upper secondary": 0.159,
+        "Upper secondary": 0.422,
+        "Post-secondary (less than 3 years)": 0.158,
+        "Post-secondary (3 years or more)": 0.248,
+        "Postgraduate": 0.013
+    },
+    "location": {
+        "Stockholms": 0.2327,
+        "Västra Götalands": 0.1675,
+        "Skåne": 0.1348,
+        "Östergötlands": 0.0448,
+        "Uppsala": 0.0384,
+        "Jönköpings": 0.0350,
+        "Hallands": 0.0326,
+        "Örebro": 0.0292,
+        "Södermanlands": 0.0286,
+        "Dalarnas": 0.0272,
+        "Gävleborgs": 0.0271,
+        "Värmlands": 0.0269,
+        "Västmanlands": 0.0266,
+        "Västerbottens": 0.0264,
+        "Norrbottens": 0.0236,
+        "Kalmar": 0.0234,
+        "Västernorrlands": 0.0230,
+        "Kronobergs": 0.0193,
+        "Blekinges": 0.0150,
+        "Jämtlands": 0.0126,
+        "Gotlands": 0.0053
+    }
+}

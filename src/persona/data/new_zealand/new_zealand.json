@@ -2,8 +2,32 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "ethnicity", "religion", "language", "occupation", "education", "marital status", "housing tenure"],
-                "name": "Census 2018, Stats NZ",
+                "features": ["age", "sex", "marital status", "occupation", "education", "housing tenure"],
+                "name": "2018 Census individual tables, Stats NZ",
+                "year": 2018,
+                "url": "https://www.stats.govt.nz/tools/2018-census-table-finder/"
+            },
+            {
+                "features": ["ethnicity"],
+                "name": "2018 Census ethnic groups dataset, Stats NZ",
+                "year": 2018,
+                "url": "https://www.stats.govt.nz/information-releases/2018-census-ethnic-groups-dataset/"
+            },
+            {
+                "features": ["religion"],
+                "name": "2018 Census totals by topic, Stats NZ",
+                "year": 2018,
+                "url": "https://www.stats.govt.nz/2018-census/"
+            },
+            {
+                "features": ["language"],
+                "name": "Te reo Māori and English speakers 2018 Census, Stats NZ",
+                "year": 2018,
+                "url": "https://www.stats.govt.nz/information-releases/te-reo-maori-speakers-2018-census/"
+            },
+            {
+                "features": ["country of birth"],
+                "name": "2018 Census totals by topic, Stats NZ",
                 "year": 2018,
                 "url": "https://www.stats.govt.nz/2018-census/"
             }
@@ -42,11 +66,12 @@
         "Other": 0.007
     },
     "religion": {
-        "No religion": 0.524,
-        "Christianity": 0.402,
+        "No religion": 0.521,
+        "Christianity": 0.400,
         "Hinduism": 0.028,
-        "Buddhism": 0.016,
         "Islam": 0.014,
+        "Buddhism": 0.012,
+        "Sikhism": 0.009,
         "Other": 0.016
     },
     "language": {
@@ -93,5 +118,21 @@
         "Private rented": 0.279,
         "Social rented": 0.058,
         "Lives rent free": 0.018
+    },
+    "country of birth": {
+        "New Zealand": 0.717,
+        "England": 0.045,
+        "China (Mainland)": 0.028,
+        "India": 0.025,
+        "Australia": 0.016,
+        "South Africa": 0.015,
+        "Philippines": 0.014,
+        "Fiji": 0.013,
+        "Samoa": 0.012,
+        "South Korea": 0.007,
+        "United States": 0.006,
+        "Tonga": 0.006,
+        "Scotland": 0.006,
+        "Other": 0.090
     }
 }

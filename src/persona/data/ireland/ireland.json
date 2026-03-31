@@ -30,6 +30,12 @@
                 "name": "Census of Population 2022 - Profile 8 - Education, Skills and the Irish Language, Central Statistics Office Ireland",
                 "year": 2022,
                 "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp8/censusofpopulation2022profile8-educationskillsandtheirishlanguage/"
+            },
+            {
+                "features": ["location"],
+                "name": "Census 2022 County Press Statements, Central Statistics Office Ireland",
+                "year": 2022,
+                "url": "https://www.cso.ie/en/census/census2022/census2022countypressstatements/"
             }
         ]
     },
@@ -140,5 +146,33 @@
         "Lithuania": 0.010,
         "Brazil": 0.006,
         "Other": 0.094
+    },
+    "location": {
+        "Dublin": 0.2832,
+        "Cork": 0.1134,
+        "Galway": 0.0539,
+        "Kildare": 0.0481,
+        "Meath": 0.0429,
+        "Limerick": 0.0407,
+        "Tipperary": 0.0326,
+        "Donegal": 0.0324,
+        "Wexford": 0.0318,
+        "Kerry": 0.0304,
+        "Wicklow": 0.0303,
+        "Louth": 0.0271,
+        "Mayo": 0.0268,
+        "Clare": 0.0248,
+        "Waterford": 0.0247,
+        "Kilkenny": 0.0202,
+        "Westmeath": 0.0187,
+        "Offaly": 0.0161,
+        "Cavan": 0.0159,
+        "Laois": 0.0178,
+        "Roscommon": 0.0136,
+        "Sligo": 0.0136,
+        "Monaghan": 0.0127,
+        "Carlow": 0.0120,
+        "Longford": 0.0091,
+        "Leitrim": 0.0068
     }
 }
