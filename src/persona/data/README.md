@@ -53,7 +53,7 @@
 
 - [ ] `alabama`
 - [ ] `alaska`
-- [ ] `arizona`
+- [X] `arizona`
 - [ ] `arkansas`
 - [X] `california`
 - [ ] `colorado`
@@ -72,7 +72,7 @@
 - [ ] `maine`
 - [ ] `maryland`
 - [ ] `massachusetts`
-- [ ] `michigan`
+- [X] `michigan`
 - [ ] `minnesota`
 - [ ] `mississippi`
 - [ ] `missouri`
@@ -80,7 +80,7 @@
 - [ ] `nebraska`
 - [ ] `nevada`
 - [ ] `new_hampshire`
-- [ ] `new_jersey`
+- [X] `new_jersey`
 - [ ] `new_mexico`
 - [X] `new_york`
 - [X] `north_carolina`
@@ -96,8 +96,8 @@
 - [X] `texas`
 - [ ] `utah`
 - [ ] `vermont`
-- [ ] `virginia`
-- [ ] `washington`
+- [X] `virginia`
+- [X] `washington`
 - [ ] `west_virginia`
 - [ ] `wisconsin`
 - [ ] `wyoming`

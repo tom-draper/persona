@@ -1,0 +1,108 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure",
+                    "language"
+                ],
+                "name": "American Community Survey 2024 1-Year Estimates, US Census Bureau (via Census Reporter)",
+                "year": 2024,
+                "url": "https://censusreporter.org/profiles/04000US26-michigan/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious Landscape Study - Michigan, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/michigan/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0518,
+        "5-9": 0.0565,
+        "10-14": 0.0606,
+        "15-19": 0.0644,
+        "20-24": 0.0663,
+        "25-29": 0.0642,
+        "30-34": 0.0684,
+        "35-39": 0.0633,
+        "40-44": 0.0605,
+        "45-49": 0.0568,
+        "50-54": 0.0606,
+        "55-59": 0.0622,
+        "60-64": 0.0683,
+        "65-69": 0.063,
+        "70-74": 0.0535,
+        "75-79": 0.0363,
+        "80-84": 0.023,
+        "85+": 0.0202
+    },
+    "sex": {
+        "Male": 0.495,
+        "Female": 0.505
+    },
+    "ethnicity": {
+        "White": 0.7164,
+        "Hispanic or Latino": 0.0613,
+        "Asian": 0.0373,
+        "Black or African American": 0.1285,
+        "Two or more races": 0.0487,
+        "Native American": 0.0033,
+        "Pacific Islander": 0.0004,
+        "Other": 0.0041
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.413,
+        "Service": 0.167,
+        "Sales and office": 0.186,
+        "Natural resources, construction and maintenance": 0.079,
+        "Production, transportation and material moving": 0.155
+    },
+    "education": {
+        "Less than high school": 0.078,
+        "High school diploma or equivalent": 0.275,
+        "Some college, no degree": 0.215,
+        "Associate's degree": 0.099,
+        "Bachelor's degree": 0.202,
+        "Graduate or professional degree": 0.131
+    },
+    "marital status": {
+        "Single (never married)": 0.347,
+        "Married": 0.476,
+        "Separated": 0.01,
+        "Divorced": 0.108,
+        "Widowed": 0.058
+    },
+    "housing tenure": {
+        "Owned": 0.735,
+        "Rented": 0.265
+    },
+    "religion": {
+        "Protestantism": 0.51,
+        "No religion": 0.24,
+        "Roman Catholicism": 0.18,
+        "Mormonism": 0.01,
+        "Eastern Orthodoxy": 0.01,
+        "Jehovah's Witnesses": 0.01,
+        "Judaism": 0.01,
+        "Islam": 0.01,
+        "Buddhism": 0.01,
+        "Hinduism": 0.01
+    },
+    "language": {
+        "English": 0.8894,
+        "Spanish": 0.034,
+        "Arabic": 0.0198,
+        "Chinese": 0.0048,
+        "Other Indo-European languages": 0.0043
+    }
+}
