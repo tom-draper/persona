@@ -47,6 +47,7 @@
 - [ ] `finland`
 - [ ] `sweden`
 - [ ] `new_zealand`
+- [ ] `united_arab_emirates` / `uae`
 
 ## US States
 
@@ -105,7 +106,7 @@
 
 A random sub-location is selected, weighted by population.
 
-- [ ] `united_states_of_america` / `usa`
+- [x] `united_states_of_america` / `usa` (California, Florida and Texas only)
 - [x] `united_kingdom` / `uk`
 
 ## Global
