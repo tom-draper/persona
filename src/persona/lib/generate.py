@@ -5,6 +5,7 @@ from pathlib import Path
 
 import numpy as np
 
+from persona.errors import UnknownLocationError
 from persona.lib.format import clean_location
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -86,6 +87,33 @@ def list_all_features() -> set[str]:
         except (json.JSONDecodeError, OSError):
             pass
     return features
+
+
+@functools.cache
+def list_location_features(location: str) -> set[str]:
+    """
+    Return the features available for a single location.
+
+    For a composite this is the union of its sublocations' features, matching
+    what generation can actually produce for that location.
+    """
+    target = clean_location(location)
+    composite_path = get_composite_path(target)
+    if composite_path is not None:
+        with open(composite_path) as f:
+            weights = json.load(f)
+        found: set[str] = set()
+        for subloc in weights:
+            if subloc == "_meta":
+                continue
+            found |= list_location_features(subloc)
+        return found
+
+    path = get_file_path(target)
+    if path is None:
+        raise UnknownLocationError(location, list_locations())
+    with open(path) as f:
+        return {k for k in json.load(f) if k != "_meta"}
 
 
 @functools.cache
@@ -275,7 +303,7 @@ def gen_samples(
 
         location_path = get_file_path(target)
         if location_path is None:
-            raise ValueError(f"Location '{target}' not found")
+            raise UnknownLocationError(target, list_locations())
         if location_path in cache:
             file_data = cache[location_path]
         else:

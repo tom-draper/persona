@@ -48,7 +48,7 @@ persona = "persona.cli:run"
 where = ["src"]
 
 [tool.setuptools.package-data]
-persona = ["data/**/*"]
+persona = ["data/**/*", "py.typed"]
 
 [dependency-groups]
 dev = ["persona[api]", "pytest>=9.1", "ruff>=0.15.0"]

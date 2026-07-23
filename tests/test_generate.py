@@ -165,8 +165,14 @@ def test_gen_samples_uk_composite():
 
 
 def test_gen_samples_invalid_location_raises():
-    with pytest.raises(ValueError, match="not found"):
+    from persona.errors import UnknownLocationError
+
+    # Still a ValueError, so callers written against the older behaviour work
+    with pytest.raises(ValueError, match="Unknown location"):
         gen_samples("nonexistent_place", N=1)
+    with pytest.raises(UnknownLocationError) as excinfo:
+        gen_samples("nonexistent_place", N=1)
+    assert "wales" in excinfo.value.available
 
 
 # ---------------------------------------------------------------------------

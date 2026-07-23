@@ -2,7 +2,7 @@
 
 **Make your characters more representative and realistic.** 
 
-A REST API and CLI tool for probabilistically generating random character profiles from a given input location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative and realistic characters for stories.
+A REST API, CLI tool and Python package for probabilistically generating random character profiles from a given input location using real-world demographic data. Generating a new persona rolls the dice on features such as age, sex, sexuality, ethnicity, language and religion. This project was born out of a lack of tools for building representative and realistic characters for stories.
 
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/41476809/200411754-969a4cc5-12de-4d3d-9189-bd258270cfc6.png">
@@ -201,6 +201,80 @@ Religion: No religion
 Language: English
 Location: Blackburn with Darwen, North West, England
 ```
+
+## Python Package
+
+```bash
+pip install persona
+```
+
+```python
+import persona
+
+persona.generate("wales")
+```
+
+```python
+{'age': 34, 'sex': 'Female', 'sexuality': 'Heterosexual', 'ethnicity': 'British, White',
+ 'religion': 'No religion', 'language': 'English', 'occupation': 'Caring, leisure and other services',
+ 'education': 'Level 3', 'marital status': 'Married', 'housing tenure': 'Owned with mortgage',
+ 'country of birth': 'Wales', 'location': 'Conwy'}
+```
+
+Personas are plain dictionaries, so they are JSON-serialisable and work with
+`pandas` or anything else that takes records.
+
+### Generating in Bulk
+
+`generate_many` is considerably faster than looping over `generate`, which
+re-reads the location's data on each call.
+
+```python
+people = persona.generate_many("united_kingdom", 1000)
+```
+
+### Feature Filtering
+
+```python
+persona.generate("wales", features={"age", "sex", "religion"})
+```
+
+```python
+{'age': 71, 'sex': 'Male', 'religion': 'Christianity'}
+```
+
+### Reproducible Output
+
+```python
+persona.generate("england", seed=42) == persona.generate("england", seed=42)  # True
+```
+
+### Discovering What Is Available
+
+```python
+persona.locations()          # ['australia', 'california', 'canada', 'england', ...]
+persona.features("canada")   # {'age', 'education', 'ethnicity', 'housing tenure', ...}
+persona.features()           # every feature across all datasets
+```
+
+Feature coverage varies by location: UK datasets carry `sexuality`, Canada does
+not. `persona.features(location)` tells you what a given location supports.
+
+### Error Handling
+
+```python
+try:
+    persona.generate("canada", features={"sexuality"})
+except persona.UnknownFeatureError as e:
+    print(e.invalid)     # ['sexuality']
+    print(e.available)   # ['age', 'education', 'ethnicity', ...]
+```
+
+`UnknownLocationError` and `UnknownFeatureError` both derive from
+`persona.PersonaError`, and from `ValueError` for backwards compatibility.
+
+The package ships type annotations (`py.typed`), so `mypy` and `pyright` will
+type-check calls against it.
 
 ## Data
 
