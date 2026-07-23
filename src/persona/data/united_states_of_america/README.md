@@ -1,6 +1,6 @@
 # United States Of America
 
-Composite: Made up of California, Texas, Florida, New York, Pennsylvania, and Illinois.
+Composite: Made up of California, Texas, Florida, New York, Pennsylvania, Illinois, Ohio, Georgia, and North Carolina.
 
 \![United States Of America](img/united_states_of_america.png)
 

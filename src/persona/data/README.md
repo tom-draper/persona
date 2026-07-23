@@ -60,7 +60,7 @@
 - [ ] `connecticut`
 - [ ] `delaware`
 - [X] `florida`
-- [ ] `georgia`
+- [X] `georgia`
 - [ ] `hawaii`
 - [ ] `idaho`
 - [X] `illinois`
@@ -83,9 +83,9 @@
 - [ ] `new_jersey`
 - [ ] `new_mexico`
 - [X] `new_york`
-- [ ] `north_carolina`
+- [X] `north_carolina`
 - [ ] `north_dakota`
-- [ ] `ohio`
+- [X] `ohio`
 - [ ] `oklahoma`
 - [ ] `oregon`
 - [X] `pennsylvania`
