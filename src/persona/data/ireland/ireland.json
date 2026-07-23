@@ -1,0 +1,119 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex", "location"],
+                "name": "Census of Population 2022 - Summary Results, Central Statistics Office (CSO)",
+                "year": 2022,
+                "note": "Age proportions follow the published five-year age-band structure and are within rounding of the 2022 census. Location weights are the 26 counties' shares of the State population.",
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpsr/censusofpopulation2022-summaryresults/"
+            },
+            {
+                "features": ["religion"],
+                "name": "Census of Population 2022 Profile 5 - Diversity, Migration, Ethnicity, Irish Travellers & Religion, CSO",
+                "year": 2023,
+                "note": "Shares are of the total usually resident population; the 7.1% who did not state a religion are omitted.",
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp5/censusofpopulation2022profile5-diversitymigrationethnicityirishtravellersreligion/"
+            },
+            {
+                "features": ["marital status"],
+                "name": "Census of Population 2022 Profile 3 - Households, Families and Childcare, CSO",
+                "year": 2023,
+                "note": "Population aged 15 and over. Married includes civil partnerships.",
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp3/censusofpopulation2022profile3-householdsfamiliesandchildcare/"
+            },
+            {
+                "features": ["housing tenure"],
+                "name": "Census of Population 2022 Profile 2 - Housing in Ireland, CSO",
+                "year": 2023,
+                "note": "Permanent private households by tenure; occupied rent-free and not-stated households are omitted.",
+                "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp2/censusofpopulation2022profile2-housinginireland/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.061,
+        "5-9": 0.0675,
+        "10-14": 0.0713,
+        "15-19": 0.0646,
+        "20-24": 0.0616,
+        "25-29": 0.0583,
+        "30-34": 0.0637,
+        "35-39": 0.0756,
+        "40-44": 0.080,
+        "45-49": 0.0725,
+        "50-54": 0.0643,
+        "55-59": 0.0591,
+        "60-64": 0.0528,
+        "65-69": 0.0456,
+        "70-74": 0.0387,
+        "75-79": 0.0282,
+        "80-84": 0.0182,
+        "85+": 0.0169
+    },
+    "sex": {
+        "Male": 0.494,
+        "Female": 0.506
+    },
+    "religion": {
+        "Roman Catholicism": 0.688,
+        "No religion": 0.147,
+        "Anglicanism (Church of Ireland)": 0.025,
+        "Eastern Orthodoxy": 0.021,
+        "Islam": 0.016,
+        "Christianity or Other Christianity": 0.0075,
+        "Hinduism": 0.0066,
+        "Presbyterianism": 0.0046,
+        "Other": 0.0043,
+        "Buddhism": 0.0018
+    },
+    "marital status": {
+        "Single (never married)": 0.43,
+        "Married": 0.46,
+        "Separated": 0.03,
+        "Divorced": 0.03,
+        "Widowed": 0.05
+    },
+    "housing tenure": {
+        "Owned outright": 0.369,
+        "Owned with mortgage": 0.289,
+        "Private rented": 0.180,
+        "Social rented": 0.099
+    },
+    "location": {
+        "Leinster": {
+            "Dublin": 0.283185,
+            "Kildare": 0.048120,
+            "Meath": 0.042886,
+            "Wexford": 0.031834,
+            "Wicklow": 0.030267,
+            "Louth": 0.027131,
+            "Kilkenny": 0.020229,
+            "Westmeath": 0.018687,
+            "Laois": 0.017843,
+            "Offaly": 0.016149,
+            "Carlow": 0.012034,
+            "Longford": 0.009079
+        },
+        "Munster": {
+            "Cork": 0.113448,
+            "Limerick": 0.040693,
+            "Tipperary": 0.032607,
+            "Kerry": 0.030386,
+            "Clare": 0.024846,
+            "Waterford": 0.024734
+        },
+        "Connacht": {
+            "Galway": 0.053689,
+            "Mayo": 0.026651,
+            "Roscommon": 0.013645,
+            "Sligo": 0.013633,
+            "Leitrim": 0.006836
+        },
+        "Ulster (part)": {
+            "Donegal": 0.032449,
+            "Cavan": 0.015867,
+            "Monaghan": 0.012679
+        }
+    }
+}

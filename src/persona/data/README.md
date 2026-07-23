@@ -15,9 +15,9 @@
 - [X] `northern_ireland`
 - [X] `france`
 - [X] `germany`
-- [ ] `spain`
-- [ ] `italy`
-- [ ] `ireland`
+- [X] `spain`
+- [X] `italy`
+- [X] `ireland`
 - [X] `australia`
 - [X] `canada`
 - [ ] `brazil`

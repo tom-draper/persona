@@ -1,0 +1,90 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["age", "sex"],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": ["location"],
+                "name": "Cifras oficiales de población (Padrón municipal), Instituto Nacional de Estadística (INE)",
+                "year": 2024,
+                "note": "Location weights are the 17 autonomous communities' and 2 autonomous cities' shares of the national population.",
+                "url": "https://www.ine.es/"
+            },
+            {
+                "features": ["religion"],
+                "name": "Barómetro de julio de 2023, Centro de Investigaciones Sociológicas (CIS)",
+                "year": 2023,
+                "note": "No religion combines self-declared atheists, agnostics and non-believers/indifferent.",
+                "url": "https://www.cis.es/"
+            },
+            {
+                "features": ["marital status"],
+                "name": "Censo Anual de Población 2025, INE",
+                "year": 2025,
+                "note": "Population as of 1 January 2024. Divorced or separated are reported together.",
+                "url": "https://www.ine.es/dyngs/Prensa/en/CensoVariables2025.htm"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0368,
+        "5-9": 0.0449,
+        "10-14": 0.0509,
+        "15-19": 0.0527,
+        "20-24": 0.0509,
+        "25-29": 0.0521,
+        "30-34": 0.0576,
+        "35-39": 0.0632,
+        "40-44": 0.0758,
+        "45-49": 0.0842,
+        "50-54": 0.0798,
+        "55-59": 0.0768,
+        "60-64": 0.0678,
+        "65-69": 0.0561,
+        "70-74": 0.0477,
+        "75-79": 0.0409,
+        "80-84": 0.0278,
+        "85+": 0.0340
+    },
+    "sex": {
+        "Male": 0.490,
+        "Female": 0.510
+    },
+    "religion": {
+        "Roman Catholicism": 0.529,
+        "No religion": 0.435,
+        "Other": 0.025
+    },
+    "marital status": {
+        "Single (never married)": 0.349,
+        "Married": 0.458,
+        "Divorced or separated": 0.078,
+        "Widowed": 0.070
+    },
+    "location": {
+        "Andalusia": 0.177537,
+        "Catalonia": 0.164794,
+        "Community of Madrid": 0.144164,
+        "Valencian Community": 0.109403,
+        "Galicia": 0.055653,
+        "Castile and León": 0.049192,
+        "Canary Islands": 0.046047,
+        "Basque Country": 0.045819,
+        "Castile-La Mancha": 0.043284,
+        "Region of Murcia": 0.032260,
+        "Aragon": 0.027799,
+        "Balearic Islands": 0.025335,
+        "Extremadura": 0.021692,
+        "Asturias": 0.020765,
+        "Navarre": 0.013952,
+        "Cantabria": 0.012153,
+        "La Rioja": 0.006668,
+        "Melilla": 0.001769,
+        "Ceuta": 0.001711
+    }
+}

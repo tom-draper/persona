@@ -14,6 +14,10 @@ alias = {
     "united_states": "united_states_of_america",
     "world": "global",
     "earth": "global",
+    "espana": "spain",
+    "italia": "italy",
+    "eire": "ireland",
+    "republic_of_ireland": "ireland",
 }
 
 

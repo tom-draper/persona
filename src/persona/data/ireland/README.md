@@ -1,0 +1,33 @@
+# Ireland
+**6 features:** age, sex, religion, marital status, housing tenure and location.
+
+## Age
+
+![Age](img/age.png)
+
+## Sex
+
+![Sex](img/sex.png)
+
+## Religion
+
+![Religion](img/religion.png)
+
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
+## Housing Tenure
+
+![Housing Tenure](img/housing tenure.png)
+
+## Location
+
+![Location](img/location.png)
+
+## Sources
+
+- [Census of Population 2022 - Summary Results, Central Statistics Office (CSO) (2022)](https://www.cso.ie/en/releasesandpublications/ep/p-cpsr/censusofpopulation2022-summaryresults/) — age, sex, location
+- [Census of Population 2022 Profile 5 - Diversity, Migration, Ethnicity, Irish Travellers & Religion, CSO (2023)](https://www.cso.ie/en/releasesandpublications/ep/p-cpp5/censusofpopulation2022profile5-diversitymigrationethnicityirishtravellersreligion/) — religion
+- [Census of Population 2022 Profile 3 - Households, Families and Childcare, CSO (2023)](https://www.cso.ie/en/releasesandpublications/ep/p-cpp3/censusofpopulation2022profile3-householdsfamiliesandchildcare/) — marital status
+- [Census of Population 2022 Profile 2 - Housing in Ireland, CSO (2023)](https://www.cso.ie/en/releasesandpublications/ep/p-cpp2/censusofpopulation2022profile2-housinginireland/) — housing tenure
