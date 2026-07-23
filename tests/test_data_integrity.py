@@ -67,7 +67,19 @@ FORBIDDEN_LABELS = {
         "Owner with mortgage": "Owned with mortgage",
         "Social rented (HLM)": "Social rented",
     },
+    # A persona from Wales should be born in "Wales", not the uninformative
+    # "UK". UK datasets name the constituent country; lumped labels are out.
+    "country of birth": {
+        "UK": "England, Wales, Scotland or Northern Ireland",
+        "Rest of UK": "England, Wales, Scotland or Northern Ireland",
+        "USA": "United States",
+        "Ireland": "Republic of Ireland",
+    },
 }
+
+# Datasets covering a UK nation must name the constituent countries of birth
+# rather than collapsing them into a single "UK" bucket.
+UK_BIRTH_COUNTRIES = {"England", "Wales", "Scotland", "Northern Ireland"}
 
 # Long tails are routinely truncated, so distributions may fall short of 1.0.
 # They must never exceed it by more than rounding, which would mean
@@ -178,6 +190,20 @@ def test_age_bands_are_contiguous_and_disjoint(path, loaded):
     for (_, prev_high), (low, _) in itertools.pairwise(bounds):
         assert prev_high is not None, f"{name(path)}: open-ended band is not last"
         assert low == prev_high + 1, f"{name(path)}: gap or overlap at {prev_high}/{low}"
+
+
+@pytest.mark.parametrize("path", DATASETS, ids=name)
+def test_uk_datasets_name_the_country_of_birth(path, loaded):
+    if "united_kingdom" not in str(path):
+        return
+    birth = loaded[path].get("country of birth")
+    if birth is None:
+        return
+    named = UK_BIRTH_COUNTRIES & set(birth)
+    assert len(named) >= 2, (
+        f"{name(path)}: country of birth names only {sorted(named)}; "
+        "UK nations should be listed individually"
+    )
 
 
 @pytest.mark.parametrize("path", COMPOSITES, ids=name)

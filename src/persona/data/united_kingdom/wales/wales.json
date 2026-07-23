@@ -58,9 +58,9 @@
             },
             {
                 "features": ["country of birth"],
-                "name": "International migration, England and Wales: Census 2021, ONS",
+                "name": "Country of birth (TS012), Census 2021, ONS",
                 "year": 2021,
-                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/internationalmigrationenglandandwales/census2021"
+                "url": "https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1"
             }
         ]
     },
@@ -191,13 +191,27 @@
         "Lives rent free": 0.002
     },
     "country of birth": {
-        "UK": 0.925,
-        "Poland": 0.009,
-        "India": 0.006,
-        "Romania": 0.005,
-        "Pakistan": 0.004,
-        "Ireland": 0.004,
-        "Other": 0.047
+        "Wales": 0.70887,
+        "England": 0.21209,
+        "Poland": 0.00799,
+        "Scotland": 0.00707,
+        "India": 0.00431,
+        "Germany": 0.00358,
+        "Republic of Ireland": 0.00322,
+        "Romania": 0.00274,
+        "Northern Ireland": 0.00251,
+        "Pakistan": 0.00229,
+        "Bangladesh": 0.00217,
+        "China": 0.00203,
+        "South Africa": 0.00184,
+        "Philippines": 0.00178,
+        "North Africa": 0.00175,
+        "Italy": 0.0015,
+        "United States": 0.00149,
+        "Nigeria": 0.00125,
+        "Hong Kong": 0.0012,
+        "UK (other)": 0.00012,
+        "Other": 0.0302
     },
     "location": {
         "Isle of Anglesey": 0.022172164119066775,

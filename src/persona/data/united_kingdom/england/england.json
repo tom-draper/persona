@@ -58,9 +58,9 @@
             },
             {
                 "features": ["country of birth"],
-                "name": "International migration, England and Wales: Census 2021, ONS",
+                "name": "Country of birth (TS012), Census 2021, ONS",
                 "year": 2021,
-                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/internationalmigrationenglandandwales/census2021"
+                "url": "https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1"
             }
         ]
     },
@@ -191,16 +191,27 @@
         "Lives rent free": 0.001
     },
     "country of birth": {
-        "UK": 0.832,
-        "India": 0.0154,
-        "Poland": 0.0125,
-        "Pakistan": 0.0105,
-        "Romania": 0.009,
-        "Ireland": 0.0055,
-        "Italy": 0.0046,
-        "USA": 0.0034,
-        "Jamaica": 0.0024,
-        "Other": 0.1047
+        "England": 0.80348,
+        "India": 0.01606,
+        "Poland": 0.01271,
+        "Scotland": 0.01109,
+        "Pakistan": 0.01091,
+        "Romania": 0.00939,
+        "Wales": 0.00847,
+        "Republic of Ireland": 0.00557,
+        "Italy": 0.00482,
+        "Nigeria": 0.00472,
+        "Bangladesh": 0.00471,
+        "Germany": 0.00447,
+        "South America": 0.00445,
+        "South Africa": 0.00374,
+        "United States": 0.00352,
+        "Northern Ireland": 0.00337,
+        "China": 0.00312,
+        "North Africa": 0.00292,
+        "Spain": 0.0029,
+        "UK (other)": 5e-05,
+        "Other": 0.07952
     },
     "location": {
         "North East": {

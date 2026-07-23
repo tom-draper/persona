@@ -21,9 +21,9 @@
             },
             {
                 "features": ["country of birth"],
-                "name": "Country of birth (TS004), Census 2021, ONS",
+                "name": "Country of birth (TS012), Census 2021, ONS",
                 "year": 2021,
-                "url": "https://www.ons.gov.uk/datasets/TS004/editions/2021/versions/1"
+                "url": "https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1"
             }
         ]
     },
@@ -88,35 +88,26 @@
         "Other religion": 0.0106
     },
     "country of birth": {
-        "United Kingdom": 0.7115114086069384,
-        "India": 0.03605165708233798,
-        "Poland": 0.02176184023509936,
-        "Republic of Ireland": 0.017844846464924465,
-        "Nigeria": 0.015770529299369097,
-        "Pakistan": 0.015459704784071817,
-        "Bangladesh": 0.015114787177313358,
-        "Jamaica": 0.012024275930786076,
-        "Sri Lanka ": 0.011622169912544347,
-        "France": 0.00916306821876382,
-        "Somalia": 0.008981467517875846,
-        "Kenya": 0.008827361245585598,
-        "United States": 0.00878721937983292,
-        "Ghana": 0.008646447905412568,
-        "Italy": 0.00853014647244419,
-        "Turkey": 0.008192789833550105,
-        "South Africa": 0.007941078339737931,
-        "Germany": 0.007626404604436968,
-        "Australia": 0.007417859363523224,
-        "Romania": 0.0061653506687538604,
-        "Philippines": 0.0060761312479542424,
-        "Cyprus": 0.005970140225710013,
-        "Portugal": 0.005641994220396165,
-        "Lithuania": 0.005473728317378087,
-        "China": 0.005423550985187239,
-        "Afghanistan": 0.005179950347811395,
-        "Iran": 0.005133072347052274,
-        "Spain": 0.00493250049043187,
-        "Uganda": 0.004417804787082457,
-        "Brazil": 0.0043107139876943186
+        "England": 0.57674,
+        "India": 0.03667,
+        "Romania": 0.02,
+        "Poland": 0.01698,
+        "South America": 0.01617,
+        "Bangladesh": 0.01578,
+        "Pakistan": 0.01475,
+        "Italy": 0.01433,
+        "Nigeria": 0.01331,
+        "Republic of Ireland": 0.01097,
+        "Sri Lanka": 0.00913,
+        "France": 0.00883,
+        "Jamaica": 0.0086,
+        "Scotland": 0.00852,
+        "Turkey": 0.00828,
+        "United States": 0.00808,
+        "Spain": 0.00774,
+        "Wales": 0.00509,
+        "Northern Ireland": 0.00321,
+        "UK (other)": 9e-05,
+        "Other": 0.19672
     }
 }

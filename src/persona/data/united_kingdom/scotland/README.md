@@ -51,6 +51,7 @@
 
 ## Sources
 
+- [Country of birth, Scotland's Census 2011, National Records of Scotland (2011)](https://www.scotlandscensus.gov.uk/census-results/at-a-glance/country-of-birth/) — country of birth
 - [Demography of Scotland, Scotland's Census 2011, National Records of Scotland (2011)](https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/) — age, sex, sexuality, ethnicity, religion, language, location
 - [Housing, Scotland's Census 2022, National Records of Scotland (2022)](https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-housing/) — housing tenure
-- [Scotland's Census 2022, National Records of Scotland (2022)](https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-education-labour-market-and-travel-to-work/) — occupation, education, marital status, country of birth
+- [Scotland's Census 2022, National Records of Scotland (2022)](https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-education-labour-market-and-travel-to-work/) — occupation, education, marital status

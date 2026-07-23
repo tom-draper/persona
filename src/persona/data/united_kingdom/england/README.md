@@ -60,4 +60,4 @@
 - [Highest level of qualification (TS067), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS067/editions/2021/versions/1) — education
 - [Legal partnership status (TS002), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS002/editions/2021/versions/3) — marital status
 - [Tenure of household (TS054), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS054/editions/2021/versions/1) — housing tenure
-- [International migration, England and Wales: Census 2021, ONS (2021)](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/internationalmigration/bulletins/internationalmigrationenglandandwales/census2021) — country of birth
+- [Country of birth (TS012), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1) — country of birth

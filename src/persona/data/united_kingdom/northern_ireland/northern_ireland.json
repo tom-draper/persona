@@ -2,6 +2,12 @@
     "_meta": {
         "sources": [
             {
+                "features": ["country of birth"],
+                "name": "Country of birth - full detail (MS-A18), Census 2021, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-country-birth"
+            },
+            {
                 "features": ["age", "sex"],
                 "name": "Five year age bands and sex (MS-A08), Census 2021, NISRA",
                 "year": 2021,
@@ -39,7 +45,7 @@
                 "url": "https://www.nisra.gov.uk/statistics/census/2021-census"
             },
             {
-                "features": ["occupation", "education", "marital status", "housing tenure", "country of birth"],
+                "features": ["occupation", "education", "marital status", "housing tenure"],
                 "name": "Census 2021 main statistics for Northern Ireland (phase 2 & 3), NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/statistics/census-2021-results/main-statistics"
@@ -155,10 +161,27 @@
         "Lives rent free": 0.005
     },
     "country of birth": {
-        "UK": 0.900,
-        "Republic of Ireland": 0.040,
-        "Poland": 0.014,
-        "Other": 0.046
+        "Northern Ireland": 0.86502,
+        "England": 0.03833,
+        "Republic of Ireland": 0.02121,
+        "Poland": 0.01174,
+        "Scotland": 0.00868,
+        "Lithuania": 0.00549,
+        "India": 0.00363,
+        "Romania": 0.00347,
+        "United States": 0.00262,
+        "China": 0.00217,
+        "Bulgaria": 0.00215,
+        "Germany": 0.00213,
+        "Portugal": 0.00197,
+        "Philippines": 0.00194,
+        "Latvia": 0.00166,
+        "Slovakia": 0.00154,
+        "East Timor": 0.00151,
+        "Wales": 0.00147,
+        "South Africa": 0.00138,
+        "UK (other)": 1e-05,
+        "Other": 0.02189
     },
     "location": {
         "Antrim and Newtownabbey": 0.0765357888791099,
