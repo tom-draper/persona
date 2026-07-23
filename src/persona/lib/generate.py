@@ -5,6 +5,8 @@ from pathlib import Path
 
 import numpy as np
 
+from persona.lib.format import clean_location
+
 DATA_DIR = Path(__file__).parent.parent / "data"
 
 # Features only assigned to samples aged 16 or over.
@@ -265,6 +267,9 @@ def gen_samples(
     rng = np.random.default_rng(seed)
     samples = []
     cache: dict[Path, dict] = {}
+    # Idempotent, so callers that already normalised (the CLI, the API) are
+    # unaffected, and direct library callers get alias resolution for free.
+    location = clean_location(location)
     for _ in range(N):
         target, location_labels = resolve_location(location, rng)
 

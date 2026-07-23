@@ -1,0 +1,16 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "American Community Survey 5-Year Estimates, US Census Bureau (via Census Reporter)",
+                "year": 2024,
+                "note": "Only California, Florida and Texas have datasets, so these weights are the three states' shares of their combined population, not of the United States. A persona generated for the United States is therefore representative of those three states only.",
+                "url": "https://censusreporter.org/"
+            }
+        ]
+    },
+    "California": 0.4275,
+    "Texas": 0.3285,
+    "Florida": 0.244
+}

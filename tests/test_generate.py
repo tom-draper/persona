@@ -273,10 +273,13 @@ def test_clean_location_aliases():
 
     assert clean_location("uk") == "united_kingdom"
     assert clean_location("UK") == "united_kingdom"
+    assert clean_location("britain") == "united_kingdom"
     assert clean_location("world") == "global"
     assert clean_location("northern-ireland") == "northern_ireland"
+    for name in ("usa", "us", "U.S.A.", "america", "united_states", "United States of America"):
+        assert clean_location(name) == "united_states_of_america", name
     # Unknown names pass through unchanged rather than mapping to missing data
-    assert clean_location("usa") == "usa"
+    assert clean_location("atlantis") == "atlantis"
 
 
 def test_gen_samples_marital_status_only_if_age_16_plus():

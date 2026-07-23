@@ -16,10 +16,9 @@
             },
             {
                 "features": ["location"],
-                "name": "Aires d'attraction des villes, INSEE",
-                "year": 2020,
-                "note": "Urban-area population shares, not a national geographic breakdown.",
-                "url": "https://www.insee.fr/fr/statistiques/3303318?sommaire=3353488"
+                "name": "Estimation de la population par département au 1er janvier 2023, INSEE",
+                "year": 2023,
+                "url": "https://www.insee.fr/fr/statistiques/1893198"
             }
         ]
     },
@@ -91,55 +90,142 @@
         "Other": 0.030
     },
     "location": {
-        "Paris": 0.3273349741913152,
-        "Lyon": 0.05985638779542032,
-        "Marseilles": 0.0457692240689456,
-        "Toulouse": 0.03476192728561629,
-        "Bordeaux": 0.031753519335834625,
-        "Small": 0.03094226648756299,
-        "Nice": 0.02627191458101171,
-        "Nantes": 0.024794285725180675,
-        "Strasbourg": 0.020385532238779706,
-        "Rennes": 0.018800819365115573,
-        "Grenoble": 0.018022762562372195,
-        "Rouen": 0.017335674938680688,
-        "Toulon": 0.01626880470442552,
-        "Montpellier": 0.015654246914276082,
-        "Douai": 0.014096305045070227,
-        "Avignon": 0.013783306296360034,
-        "SaintEtienne": 0.013518312529302823,
-        "Tours": 0.012868939374331067,
-        "Clermont-Ferrand": 0.012513054782381378,
-        "Nancy": 0.011370128777411583,
-        "Orléans": 0.011317918789204667,
-        "Caen": 0.01092121168021275,
-        "Angers": 0.010795244309966652,
-        "Metz": 0.010175906916094423,
-        "Dijon": 0.010050853677707873,
-        "Bethune": 0.009672194143428804,
-        "Valenciennes": 0.009659735832085783,
-        "LeMans": 0.009072053518607142,
-        "Reims": 0.00841690827389365,
-        "Perpignan": 0.008378279673314346,
-        "Brest": 0.008327192761392023,
-        "Geneva": 0.008226455430469525,
-        "Pointe-à-Pitre": 0.00818623362864929,
-        "Bayonne": 0.007766856049540514,
-        "Amiens": 0.00772812297674869,
-        "LeHavre": 0.007592100156047532,
-        "Mulhouse": 0.007455372147911863,
-        "Limoges": 0.007412904193522446,
-        "Nimes": 0.006962890138092154,
-        "Poitiers": 0.006807043715065309,
-        "Dunkirk": 0.0067293686250566205,
-        "Besancon": 0.006544217746417889,
-        "Pau": 0.00634987331307739,
-        "Annecy": 0.006113844466941375,
-        "chamber": 0.005831638902871479,
-        "SaintNazaire": 0.005738084036559737,
-        "Lorient": 0.005691149895085086,
-        "LaRochelle": 0.0055921102376160405,
-        "Saint-Denis": 0.005301781959022708,
-        "Troyes": 0.005080065806001944
+        "Île-de-France": {
+            "Paris": 0.030902,
+            "Seine-Saint-Denis": 0.0247317,
+            "Hauts-de-Seine": 0.024132,
+            "Yvelines": 0.0214795,
+            "Seine-et-Marne": 0.021351,
+            "Val-de-Marne": 0.0209685,
+            "Essonne": 0.0193416,
+            "Val-d'Oise": 0.0187291
+        },
+        "Auvergne-Rhône-Alpes": {
+            "Rhône": 0.0282325,
+            "Isère": 0.0190245,
+            "Haute-Savoie": 0.0126725,
+            "Loire": 0.0113509,
+            "Ain": 0.0098752,
+            "Puy-de-Dôme": 0.0098338,
+            "Drôme": 0.0076891,
+            "Savoie": 0.0065811,
+            "Allier": 0.0048858,
+            "Ardèche": 0.0048827,
+            "Haute-Loire": 0.0033344,
+            "Cantal": 0.002111
+        },
+        "Nouvelle-Aquitaine": {
+            "Gironde": 0.0248585,
+            "Pyrénées-Atlantiques": 0.0102568,
+            "Charente-Maritime": 0.0097866,
+            "Vienne": 0.0064891,
+            "Landes": 0.0063,
+            "Dordogne": 0.0060459,
+            "Deux-Sèvres": 0.0054951,
+            "Haute-Vienne": 0.0054394,
+            "Charente": 0.0051591,
+            "Lot-et-Garonne": 0.0048251,
+            "Corrèze": 0.0034842,
+            "Creuse": 0.0016623
+        },
+        "Occitanie": {
+            "Haute-Garonne": 0.0216095,
+            "Hérault": 0.0181181,
+            "Gard": 0.0111318,
+            "Pyrénées-Orientales": 0.0072101,
+            "Tarn": 0.0057985,
+            "Aude": 0.0055814,
+            "Aveyron": 0.0041078,
+            "Tarn-et-Garonne": 0.0039099,
+            "Hautes-Pyrénées": 0.0033888,
+            "Gers": 0.0028338,
+            "Lot": 0.0025764,
+            "Ariège": 0.0022718,
+            "Lozère": 0.0011265
+        },
+        "Hauts-de-France": {
+            "Nord": 0.038309,
+            "Pas-de-Calais": 0.021368,
+            "Oise": 0.0122461,
+            "Somme": 0.0082899,
+            "Aisne": 0.0076833
+        },
+        "Grand Est": {
+            "Bas-Rhin": 0.0171719,
+            "Moselle": 0.0154529,
+            "Haut-Rhin": 0.0113051,
+            "Meurthe-et-Moselle": 0.0107209,
+            "Marne": 0.0082905,
+            "Vosges": 0.0052303,
+            "Aube": 0.0045958,
+            "Ardennes": 0.0039007,
+            "Meuse": 0.0026162,
+            "Haute-Marne": 0.0024623
+        },
+        "Provence-Alpes-Côte d'Azur": {
+            "Bouches-du-Rhône": 0.0304092,
+            "Alpes-Maritimes": 0.0163181,
+            "Var": 0.0163171,
+            "Vaucluse": 0.0082858,
+            "Alpes-de-Haute-Provence": 0.0024493,
+            "Hautes-Alpes": 0.0020567
+        },
+        "Pays de la Loire": {
+            "Loire-Atlantique": 0.0220055,
+            "Maine-et-Loire": 0.0121728,
+            "Vendée": 0.010424,
+            "Sarthe": 0.0083348,
+            "Mayenne": 0.0044891
+        },
+        "Bretagne": {
+            "Ille-et-Vilaine": 0.0164397,
+            "Finistère": 0.0136101,
+            "Morbihan": 0.0114249,
+            "Côtes-d'Armor": 0.0089331
+        },
+        "Normandie": {
+            "Seine-Maritime": 0.0184326,
+            "Calvados": 0.0102964,
+            "Eure": 0.0087697,
+            "Manche": 0.0072402,
+            "Orne": 0.0040103
+        },
+        "Bourgogne-Franche-Comté": {
+            "Doubs": 0.0080848,
+            "Saône-et-Loire": 0.0080444,
+            "Côte-d'Or": 0.0078799,
+            "Yonne": 0.0048399,
+            "Jura": 0.0037743,
+            "Haute-Saône": 0.0034063,
+            "Nièvre": 0.0029078,
+            "Territoire de Belfort": 0.0020118
+        },
+        "Centre-Val de Loire": {
+            "Loiret": 0.010091,
+            "Indre-et-Loire": 0.0090828,
+            "Eure-et-Loir": 0.0063048,
+            "Loir-et-Cher": 0.004798,
+            "Cher": 0.0043689,
+            "Indre": 0.0031585
+        },
+        "La Réunion": {
+            "La Réunion": 0.0128317
+        },
+        "Guadeloupe": {
+            "Guadeloupe": 0.0055237
+        },
+        "Corse": {
+            "Haute-Corse": 0.0027527,
+            "Corse-du-Sud": 0.0024096
+        },
+        "Martinique": {
+            "Martinique": 0.0051098
+        },
+        "Mayotte": {
+            "Mayotte": 0.0045563
+        },
+        "Guyane": {
+            "Guyane": 0.0044252
+        }
     }
 }
