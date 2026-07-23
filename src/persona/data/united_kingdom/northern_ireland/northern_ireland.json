@@ -2,6 +2,37 @@
     "_meta": {
         "sources": [
             {
+                "features": ["age", "sex"],
+                "name": "Five year age bands and sex (MS-A08), Census 2021, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-age-and-sex"
+            },
+            {
+                "features": ["sexuality"],
+                "name": "Sexual orientation, UK: 2020, ONS",
+                "year": 2020,
+                "note": "UK-wide estimate; not broken down by country.",
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
+            },
+            {
+                "features": ["ethnicity"],
+                "name": "Census 2021 main statistics ethnicity tables, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-ethnicity-tables"
+            },
+            {
+                "features": ["religion"],
+                "name": "Census 2021 main statistics religion tables, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-religion-tables"
+            },
+            {
+                "features": ["language"],
+                "name": "Census 2021 main statistics language tables, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-language-tables"
+            },
+            {
                 "features": ["location"],
                 "name": "Census 2021 main statistics for Northern Ireland (phase 1), NISRA",
                 "year": 2021,
@@ -16,29 +47,29 @@
         ]
     },
     "age": {
-        "0-4": 0.04991150442477876,
-        "5-9": 0.05660498793242156,
-        "10-14": 0.05882542236524537,
-        "15-19": 0.05654062751407884,
-        "20-24": 0.060402252614641994,
-        "25-29": 0.06001609010458568,
-        "30-34": 0.06313757039420756,
-        "35-39": 0.0599195494770716,
-        "40-44": 0.056444086886564764,
-        "45-49": 0.05988736926790024,
-        "50-54": 0.06941271118262268,
-        "55-59": 0.07166532582461786,
-        "60-64": 0.06423169750603379,
-        "65-69": 0.057152051488334674,
-        "70-74": 0.05834271922767498,
-        "75-79": 0.042316975060337894,
-        "80-84": 0.028672566371681415,
-        "85-89": 0.016991150442477877,
-        "90+": 0.009557522123893806
+        "0-4": 0.059805945022310125,
+        "5-9": 0.0654029168146652,
+        "10-14": 0.06668551239719794,
+        "15-19": 0.05948017310048698,
+        "20-24": 0.05852702750986248,
+        "25-29": 0.06116840726954789,
+        "30-34": 0.06623205889956346,
+        "35-39": 0.06689516239204864,
+        "40-44": 0.0641886282479986,
+        "45-49": 0.06392801071054009,
+        "50-54": 0.06881458953788727,
+        "55-59": 0.06792764920879459,
+        "60-64": 0.05940135731294912,
+        "65-69": 0.04910959177625564,
+        "70-74": 0.043855731378982035,
+        "75-79": 0.03487703686266927,
+        "80-84": 0.02300212487363202,
+        "85-89": 0.013598350543198408,
+        "90+": 0.007099726141410235
     },
     "sex": {
-        "Male": 0.48946098149637973,
-        "Female": 0.5105711987127917
+        "Male": 0.4918761940591812,
+        "Female": 0.5081238059408189
     },
     "sexuality": {
         "Heterosexual": 0.933,
@@ -67,11 +98,11 @@
         "Arab": 0.001
     },
     "religion": {
-        "Roman Catholic": 0.423,
+        "Roman Catholicism": 0.423,
         "Presbyterian Church in Ireland": 0.166,
         "Church of Ireland": 0.115,
         "Methodist Church in Ireland": 0.024,
-        "Christian": 0.069,
+        "Other Christianity": 0.069,
         "No religion": 0.174
     },
     "language": {
@@ -110,7 +141,7 @@
     },
     "marital status": {
         "Single (never married)": 0.390,
-        "Married or in civil partnership": 0.465,
+        "Married": 0.465,
         "Separated": 0.021,
         "Divorced": 0.060,
         "Widowed": 0.064

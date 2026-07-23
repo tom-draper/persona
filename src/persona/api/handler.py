@@ -27,6 +27,8 @@ def get_features(location: str, data: dict) -> dict:
     elif data[location]["composite"]:
         features: set[str] = set()
         for subloc in data[location]["data"]:
+            if subloc == "_meta":
+                continue
             subloc_key = clean_location(subloc)
             features.update(k for k in data[subloc_key]["data"] if k != "_meta")
         return {location: sorted(features)}

@@ -2,20 +2,23 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
-                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "features": ["age", "sex", "ethnicity", "occupation", "education", "marital status", "housing tenure"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau (via Census Reporter)",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US12-florida/"
             },
             {
                 "features": ["religion"],
                 "name": "Religious Landscape Study - Florida, Pew Research Center",
+                "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/florida/"
             },
             {
                 "features": ["language"],
-                "name": "Language Mapper, Modern Language Association",
-                "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+                "name": "Language Map Data Center, Modern Language Association",
+                "year": 2010,
+                "note": "Based on American Community Survey language data.",
+                "url": "https://apps.mla.org/map_data"
             }
         ]
     },
@@ -43,7 +46,7 @@
         "Male": 0.492,
         "Female": 0.508
     },
-    "race": {
+    "ethnicity": {
         "White": 0.491,
         "Hispanic or Latino": 0.287,
         "Black or African American": 0.143,
@@ -68,15 +71,15 @@
         "Graduate or professional degree": 0.126
     },
     "marital status": {
-        "Never married": 0.320,
+        "Single (never married)": 0.320,
         "Married": 0.496,
         "Separated": 0.018,
         "Divorced": 0.122,
         "Widowed": 0.044
     },
     "housing tenure": {
-        "Owner occupied": 0.680,
-        "Renter occupied": 0.320
+        "Owned": 0.680,
+        "Rented": 0.320
     },
     "religion": {
         "Protestantism": 0.46,

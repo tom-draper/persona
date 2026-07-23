@@ -2,6 +2,12 @@
     "_meta": {
         "sources": [
             {
+                "features": ["language"],
+                "name": "Main language (TS024), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS024/editions/2021/versions/1"
+            },
+            {
                 "features": ["age", "sex", "location"],
                 "name": "Population and household estimates, England and Wales: Census 2021, ONS",
                 "year": 2021,
@@ -11,13 +17,20 @@
                 "features": ["sexuality"],
                 "name": "Sexual orientation, UK: 2020, ONS",
                 "year": 2020,
+                "note": "UK-wide estimate; not broken down by country.",
                 "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
             },
             {
-                "features": ["ethnicity", "religion"],
-                "name": "Religion in England and Wales 2011, ONS",
-                "year": 2011,
-                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religioninenglandandwales2011/2012-12-11"
+                "features": ["ethnicity"],
+                "name": "Ethnic group (TS021), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS021/editions/2021/versions/1"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religion (TS030), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS030/editions/2021/versions/1"
             },
             {
                 "features": ["occupation"],
@@ -84,56 +97,63 @@
     },
     "ethnicity": {
         "White": {
-            "British": 0.932,
-            "Irish": 0.005,
-            "Gypsy": 0.0001
+            "British": 0.90563,
+            "Irish": 0.00425,
+            "Gypsy or Irish Traveller": 0.00114,
+            "Roma": 0.00059,
+            "Other White": 0.02671
         },
         "Asian": {
-            "Indian": 0.006,
-            "Pakistani": 0.004,
-            "Bangladeshi": 0.003,
-            "Chinese": 0.004
+            "Bangladeshi": 0.00493,
+            "Chinese": 0.00465,
+            "Indian": 0.00678,
+            "Pakistani": 0.00564,
+            "Other Asian": 0.00665
         },
         "Black": {
-            "Caribbean": 0.001,
-            "African": 0.004
+            "African": 0.00641,
+            "Caribbean": 0.00119,
+            "Other Black": 0.00127
         },
         "Mixed": {
-            "White and Caribean": 0.004,
-            "White and African": 0.001,
-            "White and Asian": 0.003
+            "White and Asian": 0.00452,
+            "White and Black African": 0.0026,
+            "White and Black Caribbean": 0.00442,
+            "Other Mixed": 0.00411
         },
-        "Arab": 0.003
+        "Arab": 0.00375,
+        "Other": 0.00477
     },
     "religion": {
-        "Christianity": 0.576,
-        "Islam": 0.015,
-        "Hinduism": 0.003,
-        "Sikhism": 0.001,
-        "Judaism": 0.001,
-        "Buddhism": 0.003,
-        "No religion": 0.321
+        "Christianity": 0.46516,
+        "No religion": 0.49662,
+        "Islam": 0.02299,
+        "Hinduism": 0.00421,
+        "Sikhism": 0.00139,
+        "Judaism": 0.0007,
+        "Buddhism": 0.00346,
+        "Other religion": 0.00547
     },
     "language": {
-        "English": 0.733,
-        "English/Welsh": 0.146,
-        "Polish": 0.058,
-        "Arabic": 0.023,
-        "Bengali": 0.018,
-        "Tagalog/Filipino": 0.009,
-        "Portuguese": 0.008,
-        "Urdu": 0.008,
-        "French": 0.007,
-        "German": 0.007,
-        "Italian": 0.007
-    },
-    "relationship": {
-        "Married": 0.466,
-        "Single": 0.335,
-        "Divorced": 0.097,
-        "Widowed": 0.079,
-        "Separated": 0.022,
-        "Civil partnership": 0.002
+        "English": 0.96669,
+        "Polish": 0.00691,
+        "Arabic": 0.00282,
+        "Romanian": 0.00199,
+        "Bengali": 0.00155,
+        "Chinese": 0.00143,
+        "Portuguese": 0.00121,
+        "Spanish": 0.00102,
+        "Bulgarian": 0.00083,
+        "Italian": 0.00078,
+        "Turkish": 0.00077,
+        "Urdu": 0.00074,
+        "Hungarian": 0.00071,
+        "Punjabi": 0.00069,
+        "Malayalam": 0.00067,
+        "Kurdish": 0.00061,
+        "Lithuanian": 0.00059,
+        "Tagalog/Filipino": 0.00059,
+        "Other": 0.00939
     },
     "occupation": {
         "Managers, directors and senior officials": 0.105,
@@ -157,7 +177,7 @@
     },
     "marital status": {
         "Single (never married)": 0.372,
-        "Married or in civil partnership": 0.439,
+        "Married": 0.439,
         "Separated": 0.020,
         "Divorced": 0.099,
         "Widowed": 0.071

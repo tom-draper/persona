@@ -3,7 +3,8 @@
         "sources": [
             {
                 "features": ["location"],
-                "name": "United Nations World Population Prospects",
+                "name": "World Population Prospects 2022, United Nations",
+                "year": 2022,
                 "url": "https://population.un.org/wpp/"
             }
         ]

@@ -23,9 +23,10 @@ def gen_composite_graph(path: str, data: dict) -> list[dict]:
     _, location = os.path.split(path)
 
     # Build bars data
-    labels = list(data.keys())
+    weights = {k: v for k, v in data.items() if k != "_meta"}
+    labels = list(weights.keys())
     x = list(range(len(labels)))
-    y = list(data.values())
+    y = list(weights.values())
 
     # Create plot
     fig = plt.figure(figsize=(12, 8))
@@ -120,10 +121,14 @@ def build_composite_readme_content(path: str, data: dict) -> str:
 
     content += "\n\nComposite: Made up of "
 
-    locations = list(data.keys())
+    locations = [k for k in data if k != "_meta"]
     content += printed_list_format(locations)
 
-    content += f".\n\n\![{title}](img/{location}.png)"
+    content += f".\n\n\\![{title}](img/{location}.png)"
+
+    sources = data.get("_meta", {}).get("sources", [])
+    if sources:
+        content += "\n\n" + format_sources_from_json(sources)
     return content
 
 

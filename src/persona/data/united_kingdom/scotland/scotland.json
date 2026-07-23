@@ -4,6 +4,8 @@
             {
                 "features": ["age", "sex", "sexuality", "ethnicity", "religion", "language", "location"],
                 "name": "Demography of Scotland, Scotland's Census 2011, National Records of Scotland",
+                "year": 2011,
+                "note": "Not yet updated to Census 2022.",
                 "url": "https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/"
             },
             {
@@ -14,8 +16,9 @@
             },
             {
                 "features": ["occupation", "education", "marital status", "country of birth"],
-                "name": "Scotland's Census 2022 (estimated from national averages), National Records of Scotland",
+                "name": "Scotland's Census 2022, National Records of Scotland",
                 "year": 2022,
+                "note": "Estimated from national averages rather than taken directly from the published tables.",
                 "url": "https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-education-labour-market-and-travel-to-work/"
             }
         ]
@@ -74,8 +77,8 @@
     },
     "religion": {
         "Church of Scotland": 0.324,
-        "Roman Catholic": 0.159,
-        "Christianity": 0.055,
+        "Roman Catholicism": 0.159,
+        "Other Christianity": 0.055,
         "Hinduism": 0.014,
         "Buddhism": 0.002,
         "Sikhism": 0.002,
@@ -116,7 +119,7 @@
     },
     "marital status": {
         "Single (never married)": 0.389,
-        "Married or in civil partnership": 0.427,
+        "Married": 0.427,
         "Separated": 0.022,
         "Divorced": 0.092,
         "Widowed": 0.065

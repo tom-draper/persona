@@ -8,7 +8,7 @@ import numpy as np
 DATA_DIR = Path(__file__).parent.parent / "data"
 
 # Features only assigned to samples aged 16 or over.
-ADULT_ONLY_FEATURES = ("relationship", "marital status", "occupation")
+ADULT_ONLY_FEATURES = ("marital status", "occupation")
 
 
 def normalise_weights(weights: Iterable[float]) -> np.ndarray:
@@ -21,8 +21,9 @@ def normalise_weights(weights: Iterable[float]) -> np.ndarray:
 def select_sublocation(composite_path: Path, rng: np.random.Generator) -> str:
     with open(composite_path) as f:
         data = json.load(f)
-    keys = np.array(list(data.keys()))
-    p = normalise_weights(data.values())
+    weights = {k: v for k, v in data.items() if k != "_meta"}
+    keys = np.array(list(weights.keys()))
+    p = normalise_weights(weights.values())
     return str(rng.choice(keys, p=p)).lower()
 
 
@@ -175,9 +176,10 @@ def preprocess_location_data(data: dict) -> dict:
     """
     for entry in data.values():
         if entry["composite"]:
-            keys = list(entry["data"].keys())
+            weights = {k: v for k, v in entry["data"].items() if k != "_meta"}
+            keys = list(weights.keys())
             entry["subloc_keys"] = np.array([k.lower().replace(" ", "_") for k in keys])
-            entry["subloc_probs"] = normalise_weights(entry["data"].values())
+            entry["subloc_probs"] = normalise_weights(weights.values())
         else:
             processed: dict[str, dict] = {}
             for feature, feature_data in entry["data"].items():

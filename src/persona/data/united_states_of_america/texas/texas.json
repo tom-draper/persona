@@ -2,20 +2,23 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
-                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "features": ["age", "sex", "ethnicity", "occupation", "education", "marital status", "housing tenure"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau (via Census Reporter)",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US48-texas/"
             },
             {
                 "features": ["religion"],
                 "name": "Religious Landscape Study - Texas, Pew Research Center",
+                "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/texas/"
             },
             {
                 "features": ["language"],
-                "name": "Language Mapper, Modern Language Association",
-                "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+                "name": "Language Map Data Center, Modern Language Association",
+                "year": 2010,
+                "note": "Based on American Community Survey language data.",
+                "url": "https://apps.mla.org/map_data"
             }
         ]
     },
@@ -43,7 +46,7 @@
         "Male": 0.499,
         "Female": 0.501
     },
-    "race": {
+    "ethnicity": {
         "White": 0.378,
         "Hispanic or Latino": 0.403,
         "Black or African American": 0.120,
@@ -68,15 +71,15 @@
         "Graduate or professional degree": 0.116
     },
     "marital status": {
-        "Never married": 0.330,
+        "Single (never married)": 0.330,
         "Married": 0.508,
         "Separated": 0.021,
         "Divorced": 0.110,
         "Widowed": 0.031
     },
     "housing tenure": {
-        "Owner occupied": 0.623,
-        "Renter occupied": 0.377
+        "Owned": 0.623,
+        "Rented": 0.377
     },
     "religion": {
         "Protestantism": 0.5,

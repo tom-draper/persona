@@ -1,8 +1,8 @@
+# Only aliases that resolve to a dataset belong here. `usa` and `uae` were
+# removed: there is no United States composite (only three states) and no
+# United Arab Emirates data at all.
 alias = {
     "uk": "united_kingdom",
-    "usa": "united_states_of_america",
-    "united_states": "united_states_of_america",
-    "uae": "united_arab_emirates",
     "world": "global",
 }
 

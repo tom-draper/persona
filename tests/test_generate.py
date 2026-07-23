@@ -272,18 +272,19 @@ def test_clean_location_aliases():
     from persona.lib.format import clean_location
 
     assert clean_location("uk") == "united_kingdom"
-    assert clean_location("usa") == "united_states_of_america"
-    assert clean_location("united_states") == "united_states_of_america"
-    assert clean_location("United States") == "united_states_of_america"
+    assert clean_location("UK") == "united_kingdom"
     assert clean_location("world") == "global"
+    assert clean_location("northern-ireland") == "northern_ireland"
+    # Unknown names pass through unchanged rather than mapping to missing data
+    assert clean_location("usa") == "usa"
 
 
-def test_gen_samples_relationship_only_if_age_16_plus():
+def test_gen_samples_marital_status_only_if_age_16_plus():
     # Run many times to catch a variety of ages including under-16
     for _ in range(50):
         sample = gen_samples("england", N=1)[0]
         if sample.get("age", 16) < 16:
-            assert "relationship" not in sample
+            assert "marital status" not in sample
 
 
 # ---------------------------------------------------------------------------
@@ -367,11 +368,11 @@ def test_gen_sample_enabled_features_filter():
     assert "sex" in sample
 
 
-def test_gen_sample_relationship_gated_below_16():
-    data = {"age": {"0-10": 1.0}, "relationship": {"Single": 1.0}}
+def test_gen_sample_marital_status_gated_below_16():
+    data = {"age": {"0-10": 1.0}, "marital status": {"Single (never married)": 1.0}}
     for _ in range(10):
         sample = gen_sample(data, None, np.random.default_rng())
-        assert "relationship" not in sample
+        assert "marital status" not in sample
 
 
 # ---------------------------------------------------------------------------

@@ -1,63 +1,93 @@
 {
     "_meta": {
-        "sources": []
+        "sources": [
+            {
+                "features": ["ethnicity"],
+                "name": "Ethnic group (TS021), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS021/editions/2021/versions/1"
+            },
+            {
+                "features": ["language"],
+                "name": "Main language (TS024), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS024/editions/2021/versions/1"
+            },
+            {
+                "features": ["religion"],
+                "name": "Religion (TS030), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS030/editions/2021/versions/1"
+            },
+            {
+                "features": ["country of birth"],
+                "name": "Country of birth (TS004), Census 2021, ONS",
+                "year": 2021,
+                "url": "https://www.ons.gov.uk/datasets/TS004/editions/2021/versions/1"
+            }
+        ]
     },
     "ethnicity": {
         "White": {
-            "British": 0.368,
-            "Irish": 0.018,
-            "Gypsy": 0.001,
-            "Roma": 0.004
+            "British": 0.36811,
+            "Irish": 0.01777,
+            "Gypsy or Irish Traveller": 0.0008,
+            "Roma": 0.00428,
+            "Other White": 0.14669
         },
         "Asian": {
-            "Indian": 0.075,
-            "Pakistani": 0.033,
-            "Bangladeshi": 0.037,
-            "Chinese": 0.017
+            "Bangladeshi": 0.0366,
+            "Chinese": 0.01676,
+            "Indian": 0.07458,
+            "Pakistani": 0.03302,
+            "Other Asian": 0.0456
         },
         "Black": {
-            "African": 0.079,
-            "Caribbean": 0.0039
+            "African": 0.07921,
+            "Caribbean": 0.03925,
+            "Other Black": 0.01658
         },
         "Mixed": {
-            "White and Caribbean": 0.015,
-            "White and Black African": 0.009,
-            "White and Asian": 0.0014
+            "White and Asian": 0.01423,
+            "White and Black African": 0.00879,
+            "White and Black Caribbean": 0.01506,
+            "Other Mixed": 0.0194
         },
-        "Arab": 0.016
+        "Arab": 0.01589,
+        "Other": 0.04739
     },
     "language": {
-        "English": 0.784,
-        "Polish": 0.013,
-        "Bengali": 0.012,
-        "Gujarati": 0.01,
-        "French": 0.008,
-        "Urdu": 0.008,
-        "Portuguese": 0.011,
-        "Turkish": 0.008,
-        "Spanish": 0.014,
-        "Arabic": 0.008,
-        "Tamil": 0.008,
-        "Punjabi": 0.009,
-        "Somali": 0.004,
-        "Italian": 0.01,
-        "Romanian": 0.019,
-        "Persian": 0.005,
-        "Lithuanian": 0.004,
-        "German": 0.002,
-        "Greek": 0.004,
-        "Russian": 0.004
+        "English": 0.78407,
+        "Romanian": 0.01878,
+        "Spanish": 0.01385,
+        "Polish": 0.01321,
+        "Bengali": 0.01202,
+        "Portuguese": 0.01111,
+        "Gujarati": 0.00974,
+        "Italian": 0.00958,
+        "Punjabi": 0.00875,
+        "Arabic": 0.0085,
+        "Tamil": 0.00833,
+        "Turkish": 0.00821,
+        "French": 0.0079,
+        "Urdu": 0.0075,
+        "Bulgarian": 0.00562,
+        "Persian/Farsi": 0.00462,
+        "Somali": 0.0044,
+        "Greek": 0.00425,
+        "Other": 0.05955
     },
     "religion": {
-        "Christian": 0.4066,
-        "No religion": 0.2705,
-        "Islam": 0.1499,
-        "Hinduism": 0.0515,
-        "Judaism": 0.0165,
-        "Sikhism": 0.0099,
-        "Buddhism": 0.0088
+        "Christianity": 0.43715,
+        "No religion": 0.29086,
+        "Islam": 0.16114,
+        "Hinduism": 0.05536,
+        "Sikhism": 0.01766,
+        "Judaism": 0.01777,
+        "Buddhism": 0.00946,
+        "Other religion": 0.0106
     },
-    "place of birth": {
+    "country of birth": {
         "United Kingdom": 0.7115114086069384,
         "India": 0.03605165708233798,
         "Poland": 0.02176184023509936,

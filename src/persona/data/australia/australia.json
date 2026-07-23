@@ -5,7 +5,7 @@
                 "features": ["age", "sex", "marital status", "occupation", "education", "housing tenure", "location"],
                 "name": "2021 Census QuickStats, Australian Bureau of Statistics",
                 "year": 2021,
-                "url": "https://abs.gov.au/census/find-census-data/quickstats/2021/AUS"
+                "url": "https://www.abs.gov.au/census/find-census-data/quickstats/2021/AUS"
             },
             {
                 "features": ["religion"],
@@ -20,7 +20,7 @@
                 "url": "https://www.abs.gov.au/statistics/people/people-and-communities/snapshot-australia/latest-release"
             },
             {
-                "features": ["place of birth"],
+                "features": ["country of birth"],
                 "name": "Estimated resident population by country of birth, Australian Bureau of Statistics",
                 "year": 2021,
                 "url": "https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21"
@@ -63,13 +63,13 @@
     },
     "religion": {
         "No religion": 0.389,
-        "Catholic": 0.200,
-        "Protestant": 0.181,
-        "Orthodox": 0.021,
-        "Christian": 0.037,
+        "Roman Catholicism": 0.200,
+        "Protestantism": 0.181,
+        "Eastern Orthodoxy": 0.021,
+        "Other Christianity": 0.037,
         "Islam": 0.032,
-        "Hindu": 0.027,
-        "Buddhist": 0.024
+        "Hinduism": 0.027,
+        "Buddhism": 0.024
     },
     "language": {
         "English": 0.72,
@@ -81,7 +81,7 @@
     },
     "marital status": {
         "Married": 0.465,
-        "Never married": 0.365,
+        "Single (never married)": 0.365,
         "Divorced": 0.088,
         "Widowed": 0.050,
         "Separated": 0.032
@@ -111,7 +111,7 @@
         "Rented": 0.306,
         "Other": 0.034
     },
-    "place of birth": {
+    "country of birth": {
         "Australia:": 0.7884384321413022,
         "England": 0.04182608142983207,
         "India": 0.030713995106548656,

@@ -1,5 +1,5 @@
 # Australia
-**6 features:** location, age, sex, religion, language and place of birth.
+**10 features:** location, age, sex, religion, language, marital status, occupation, education, housing tenure and country of birth.
 
 ## Location
 
@@ -21,16 +21,29 @@
 
 ![Language](img/language.png)
 
-## Place Of Birth
+## Marital Status
 
-![Place Of Birth](img/place of birth.png)
+![Marital Status](img/marital status.png)
+
+## Occupation
+
+![Occupation](img/occupation.png)
+
+## Education
+
+![Education](img/education.png)
+
+## Housing Tenure
+
+![Housing Tenure](img/housing tenure.png)
+
+## Country Of Birth
+
+![Country Of Birth](img/country of birth.png)
 
 ## Sources
 
-### Location
-
-National, state and territory population https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/sep-2020
-
-### Place of Birth
-
-"Table 5.1 Estimated resident population, by country of birth(a), Australia, as at 30 June, 1996 to 2021(b)(c)". Australian Bureau of Statistics. Retrieved 26 April 2022.
+- [2021 Census QuickStats, Australian Bureau of Statistics (2021)](https://www.abs.gov.au/census/find-census-data/quickstats/2021/AUS) — age, sex, marital status, occupation, education, housing tenure, location
+- [Religious affiliation in Australia, Australian Bureau of Statistics (2021)](https://www.abs.gov.au/articles/religious-affiliation-australia) — religion
+- [Cultural diversity in Australia, Australian Bureau of Statistics (2021)](https://www.abs.gov.au/statistics/people/people-and-communities/snapshot-australia/latest-release) — language
+- [Estimated resident population by country of birth, Australian Bureau of Statistics (2021)](https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21) — country of birth

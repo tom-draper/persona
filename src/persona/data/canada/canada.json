@@ -2,7 +2,7 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "relationship", "education", "occupation", "housing tenure", "location"],
+                "features": ["age", "sex", "marital status", "education", "occupation", "housing tenure", "location"],
                 "name": "Census of Population 2021, Statistics Canada",
                 "year": 2021,
                 "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm?Lang=E"
@@ -17,13 +17,14 @@
                 "features": ["ethnicity"],
                 "name": "Visible minority and population group, Census 2021, Statistics Canada",
                 "year": 2021,
-                "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm"
+                "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethnicity-ethnicite-eng.cfm"
             },
             {
                 "features": ["language"],
-                "name": "Statistics Canada Census 2011",
+                "name": "Language, Census of Population 2011, Statistics Canada",
                 "year": 2011,
-                "url": "https://www12.statcan.gc.ca/census-recensement/2011/dp-pd/prof/details/page.cfm?Lang=E&Geo1=PR&Code1=01&Geo2=PR&Code2=01&Data=Count&SearchText=Canada&SearchType=Begins&SearchPR=01&B1=All&Custom=&TABID=1"
+                "note": "Not yet updated to Census 2021, unlike the other Canadian features.",
+                "url": "https://www12.statcan.gc.ca/census-recensement/2011/as-sa/98-314-x/98-314-x2011001-eng.cfm"
             }
         ]
     },
@@ -51,7 +52,7 @@
         "Male": 0.494,
         "Female": 0.506
     },
-    "relationship": {
+    "marital status": {
         "Married": 0.443,
         "Living common law": 0.126,
         "Single (never married)": 0.288,
@@ -61,7 +62,7 @@
     },
     "religion": {
         "Christianity": 0.533,
-        "No religious affiliation": 0.346,
+        "No religion": 0.346,
         "Islam": 0.049,
         "Hinduism": 0.023,
         "Sikhism": 0.021,
@@ -85,15 +86,16 @@
         "Other visible minority": 0.013
     },
     "education": {
-        "No certificate or diploma": 0.120,
-        "Secondary school diploma": 0.210,
-        "Apprenticeship certificate": 0.066,
-        "College or CEGEP diploma": 0.246,
-        "University certificate below bachelor": 0.040,
-        "Bachelor's degree": 0.230,
-        "Master's degree": 0.082,
-        "Doctorate": 0.011,
-        "Other": 0.045
+        "No certificate or diploma": 0.0987,
+        "Secondary school diploma": 0.23,
+        "Apprenticeship or trades certificate": 0.0964,
+        "College or CEGEP diploma": 0.2143,
+        "University certificate below bachelor": 0.0318,
+        "Bachelor's degree": 0.2135,
+        "University certificate above bachelor": 0.022,
+        "Degree in medicine, dentistry or veterinary medicine": 0.0086,
+        "Master's degree": 0.0739,
+        "Doctorate": 0.0107
     },
     "occupation": {
         "Management": 0.095,
@@ -108,8 +110,8 @@
         "Manufacturing and utilities": 0.070
     },
     "housing tenure": {
-        "Owner": 0.665,
-        "Renter": 0.331,
+        "Owned": 0.665,
+        "Rented": 0.331,
         "Band housing": 0.004
     },
     "location": {

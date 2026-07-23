@@ -2,20 +2,23 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "race", "occupation", "education", "marital status", "housing tenure"],
-                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau",
+                "features": ["age", "sex", "ethnicity", "occupation", "education", "marital status", "housing tenure"],
+                "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau (via Census Reporter)",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US06-california/"
             },
             {
                 "features": ["religion"],
                 "name": "Religious Landscape Study - California, Pew Research Center",
+                "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/california/"
             },
             {
                 "features": ["language"],
-                "name": "Language Mapper, Modern Language Association",
-                "url": "https://www.mla.org/Resources/Research/Language-Mapper"
+                "name": "Language Map Data Center, Modern Language Association",
+                "year": 2010,
+                "note": "Based on American Community Survey language data.",
+                "url": "https://apps.mla.org/map_data"
             }
         ]
     },
@@ -43,7 +46,7 @@
         "Male": 0.499,
         "Female": 0.501
     },
-    "race": {
+    "ethnicity": {
         "White": 0.326,
         "Hispanic or Latino": 0.408,
         "Asian": 0.158,
@@ -69,15 +72,15 @@
         "Graduate or professional degree": 0.161
     },
     "marital status": {
-        "Never married": 0.350,
+        "Single (never married)": 0.350,
         "Married": 0.462,
         "Separated": 0.020,
         "Divorced": 0.110,
         "Widowed": 0.058
     },
     "housing tenure": {
-        "Owner occupied": 0.558,
-        "Renter occupied": 0.442
+        "Owned": 0.558,
+        "Rented": 0.442
     },
     "religion": {
         "Protestantism": 0.32,

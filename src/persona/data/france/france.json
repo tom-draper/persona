@@ -9,13 +9,16 @@
             },
             {
                 "features": ["language"],
-                "name": "Enquête sur les pratiques linguistiques 2017, INSEE",
-                "year": 2017,
-                "url": "https://www.insee.fr/fr/statistiques/2588632"
+                "name": "Transmission familiale des langues, INSEE",
+                "year": 2023,
+                "note": "Replaces a dead link to a 2017 linguistic-practices survey; figures predate this source and should be re-verified against it.",
+                "url": "https://www.insee.fr/fr/statistiques/6793260"
             },
             {
                 "features": ["location"],
-                "name": "INSEE - Institut National de la Statistique et des Études Économiques",
+                "name": "Aires d'attraction des villes, INSEE",
+                "year": 2020,
+                "note": "Urban-area population shares, not a national geographic breakdown.",
                 "url": "https://www.insee.fr/fr/statistiques/3303318?sommaire=3353488"
             }
         ]
@@ -81,10 +84,10 @@
         "Other": 0.025
     },
     "housing tenure": {
-        "Owner-occupied (outright)": 0.285,
-        "Owner with mortgage": 0.295,
+        "Owned outright": 0.285,
+        "Owned with mortgage": 0.295,
         "Private rented": 0.230,
-        "Social rented (HLM)": 0.160,
+        "Social rented": 0.160,
         "Other": 0.030
     },
     "location": {

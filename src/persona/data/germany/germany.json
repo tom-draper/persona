@@ -15,17 +15,21 @@
             },
             {
                 "features": ["location"],
-                "name": "Bevölkerung nach Nationalität und Bundesländern, Destatis",
-                "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/bevoelkerung-nichtdeutsch-laender.html"
+                "name": "Bevölkerung nach Geschlecht und Staatsangehörigkeit, Zensus 2022, Destatis",
+                "year": 2022,
+                "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/liste-zensus-geschlecht-staatsangehoerigkeit.html"
             },
             {
                 "features": ["language"],
-                "name": "Migrationshintergrund, Destatis (Federal Statistical Office)",
+                "name": "Bevölkerung mit Migrationshintergrund, Destatis",
+                "year": 2021,
                 "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/Publikationen/Downloads-Migration/migrationshintergrund-2010220217004.pdf"
             },
             {
                 "features": ["religion"],
                 "name": "Religionszugehörigkeiten 2020, Fowid",
+                "year": 2020,
+                "note": "Independent research group, not the federal statistical office.",
                 "url": "https://fowid.de/meldung/religionszugehoerigkeiten-2020"
             }
         ]
@@ -77,11 +81,11 @@
         "Roman Catholicism": 0.267,
         "Evangelical Church": 0.243,
         "Islam": 0.035,
-        "Orthodox Church": 0.019
+        "Eastern Orthodoxy": 0.019
     },
     "marital status": {
         "Single (never married)": 0.320,
-        "Married or in civil partnership": 0.450,
+        "Married": 0.450,
         "Separated": 0.023,
         "Divorced": 0.104,
         "Widowed": 0.103
@@ -108,7 +112,7 @@
         "Other": 0.040
     },
     "housing tenure": {
-        "Owner-occupied": 0.425,
+        "Owned": 0.425,
         "Rented": 0.575
     },
     "language": {
