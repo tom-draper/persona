@@ -34,8 +34,8 @@
         "Western Australia": 0.1,
         "South Australia": 0.07,
         "Tasmania": 0.02,
-        "Australian Capital Territory": 0.002,
-        "Northern Territory": 0.001
+        "Australian Capital Territory": 0.02,
+        "Northern Territory": 0.01
     },
     "age": {
         "0-4": 0.05757893725730925,
@@ -58,8 +58,8 @@
         "85+": 0.021332909776292812
     },
     "sex": {
-        "male": 0.493460965278,
-        "female": 0.506539034722
+        "Male": 0.493460965278,
+        "Female": 0.506539034722
     },
     "religion": {
         "No religion": 0.389,
