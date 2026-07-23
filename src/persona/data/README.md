@@ -63,7 +63,7 @@
 - [ ] `georgia`
 - [ ] `hawaii`
 - [ ] `idaho`
-- [ ] `illinois`
+- [X] `illinois`
 - [ ] `indiana`
 - [ ] `iowa`
 - [ ] `kansas`
@@ -82,13 +82,13 @@
 - [ ] `new_hampshire`
 - [ ] `new_jersey`
 - [ ] `new_mexico`
-- [ ] `new_york`
+- [X] `new_york`
 - [ ] `north_carolina`
 - [ ] `north_dakota`
 - [ ] `ohio`
 - [ ] `oklahoma`
 - [ ] `oregon`
-- [ ] `pennsylvania`
+- [X] `pennsylvania`
 - [ ] `rhode_island`
 - [ ] `south_carolina`
 - [ ] `south_dakota`

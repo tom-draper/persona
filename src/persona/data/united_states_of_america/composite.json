@@ -2,15 +2,20 @@
     "_meta": {
         "sources": [
             {
-                "features": ["location"],
-                "name": "American Community Survey 5-Year Estimates, US Census Bureau (via Census Reporter)",
+                "features": [
+                    "location"
+                ],
+                "name": "American Community Survey 2024 1-Year Estimates, US Census Bureau (via Census Reporter)",
                 "year": 2024,
-                "note": "Only California, Florida and Texas have datasets, so these weights are the three states' shares of their combined population, not of the United States. A persona generated for the United States is therefore representative of those three states only.",
+                "note": "Only California, Texas, Florida, New York, Illinois and Pennsylvania have datasets, so these weights are the six states' shares of their combined population, not of the United States. A persona generated for the United States is therefore representative of those six states only.",
                 "url": "https://censusreporter.org/"
             }
         ]
     },
-    "California": 0.4275,
-    "Texas": 0.3285,
-    "Florida": 0.244
+    "California": 0.2858,
+    "Texas": 0.2196,
+    "Florida": 0.1631,
+    "New York": 0.1444,
+    "Pennsylvania": 0.0947,
+    "Illinois": 0.0924
 }
