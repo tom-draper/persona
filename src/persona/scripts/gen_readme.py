@@ -150,7 +150,7 @@ def build_readme_content(path: str, data: dict, filename: str) -> str:
 
 def gen_data_readme(path: str, target_file: str):
     try:
-        with open(os.path.join(path, target_file), 'r') as f:
+        with open(os.path.join(path, target_file)) as f:
             data = json.load(f)
 
         readme_file_path = os.path.join(path, 'README.md')

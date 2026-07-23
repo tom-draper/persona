@@ -31,12 +31,12 @@ def get_features(location: str, data: dict) -> dict:
         features: set[str] = set()
         for subloc in data[location]['data']:
             subloc_key = clean_location(subloc)
-            features.update(k for k in data[subloc_key]['data'].keys() if k != '_meta')
+            features.update(k for k in data[subloc_key]['data'] if k != '_meta')
         return {location: sorted(features)}
     else:
         return {
             location: [
-                k for k in data[location]['data'].keys()
+                k for k in data[location]['data']
                 if k != '_meta'
             ]
         }

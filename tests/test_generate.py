@@ -15,9 +15,7 @@ from persona.lib.generate import (
     gen_samples,
     list_locations,
     normalise_weights,
-    preprocess_location_data,
 )
-
 
 # ---------------------------------------------------------------------------
 # Probability helpers

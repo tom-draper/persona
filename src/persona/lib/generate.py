@@ -7,6 +7,9 @@ import numpy as np
 
 DATA_DIR = Path(__file__).parent.parent / 'data'
 
+# Features only assigned to samples aged 16 or over.
+ADULT_ONLY_FEATURES = ('relationship', 'marital status', 'occupation')
+
 
 def normalise_weights(weights: Iterable[float]) -> np.ndarray:
     p = np.array(list(weights), dtype=np.float64)
@@ -41,7 +44,7 @@ def resolve_location(location: str, rng: np.random.Generator) -> tuple[str, list
         return location, []
     sublocation = select_sublocation(composite_path, rng)
     leaf, sub_labels = resolve_location(sublocation, rng)
-    return leaf, sub_labels + [sublocation]
+    return leaf, [*sub_labels, sublocation]
 
 
 def resolve_api_location(
@@ -62,7 +65,7 @@ def resolve_api_location(
     if sublocation not in data:
         raise ValueError(f"Sublocation '{sublocation}' not found in preloaded data")
     leaf, sub_labels = resolve_api_location(sublocation, data, rng)
-    return leaf, sub_labels + [sublocation]
+    return leaf, [*sub_labels, sublocation]
 
 
 @functools.cache
@@ -74,7 +77,7 @@ def list_all_features() -> set[str]:
         try:
             with open(path) as f:
                 data = json.load(f)
-            features.update(k for k in data.keys() if k != '_meta')
+            features.update(k for k in data if k != '_meta')
         except (json.JSONDecodeError, OSError):
             pass
     return features
@@ -112,7 +115,7 @@ def collapsed_dict(d: dict, path: list[str] | None = None) -> list[tuple[list[st
         path = []
     result = []
     for k, v in d.items():
-        new_path = path + [k]
+        new_path = [*path, k]
         if not isinstance(v, dict):
             result.append((new_path, v))
         else:
@@ -157,7 +160,7 @@ def gen_sample(
         if enabled_features is None or feature in enabled_features:
             if feature == 'age':
                 sample[feature] = gen_age(_data, rng)
-            elif feature not in ('relationship', 'marital status', 'occupation') or sample.get('age', 16) >= 16:
+            elif feature not in ADULT_ONLY_FEATURES or sample.get('age', 16) >= 16:
                 sample[feature] = gen_feature(_data, rng)
     return sample
 
@@ -224,7 +227,7 @@ def gen_api_samples(
             if feature == 'age':
                 bucket = str(rng.choice(proc['keys'], p=proc['probs']))
                 sample['age'] = _parse_age_bucket(bucket, rng)
-            elif feature not in ('relationship', 'marital status', 'occupation') or sample.get('age', 16) >= 16:
+            elif feature not in ADULT_ONLY_FEATURES or sample.get('age', 16) >= 16:
                 sample[feature] = str(rng.choice(proc['options'], p=proc['probs']))
 
         for label in location_labels:

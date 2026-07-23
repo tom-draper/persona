@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,16 +7,38 @@ name = "persona"
 version = "0.1.1"
 description = "Generate realistic character profiles from real-world demographic data"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Tom Draper", email = "tomjdraper1@gmail.com" }]
+keywords = ["demographics", "character", "generator", "persona", "writing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
 dependencies = [
     "colorama>=0.4.6",
     "numpy>=2.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/tom-draper/persona"
+Repository = "https://github.com/tom-draper/persona"
+Issues = "https://github.com/tom-draper/persona/issues"
+
 [project.optional-dependencies]
 api = [
-    "fastapi>=0.115.0",
-    "uvicorn>=0.30.0",
+    "fastapi>=0.139.0",
+    "uvicorn>=0.51.0",
 ]
 
 [project.scripts]
@@ -29,9 +51,29 @@ where = ["src"]
 persona = ["data/**/*"]
 
 [dependency-groups]
-dev = ["persona[api]", "pytest>=9.0"]
+dev = ["persona[api]", "pytest>=9.1", "ruff>=0.15.0"]
 scripts = ["matplotlib>=3.6"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+addopts = ["--strict-markers", "--strict-config"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "RUF",  # ruff-specific
+]
+
+[tool.ruff.format]
+docstring-code-format = true
