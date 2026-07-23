@@ -11,57 +11,65 @@ from persona.lib.generate import gen_samples, list_all_features, list_locations
 def pprint(data: list[dict]):
     for i, sample in enumerate(data):
         if len(data) > 1:
-            print(Fore.CYAN + f'Persona {i+1}')
+            print(Fore.CYAN + f"Persona {i + 1}")
         for k, v in sample.items():
-            print(Fore.YELLOW + k.title() + ': ' + Fore.WHITE + str(v))
+            print(Fore.YELLOW + k.title() + ": " + Fore.WHITE + str(v))
         if len(data) > 1:
             print()
-    print(Style.RESET_ALL, end='')
+    print(Style.RESET_ALL, end="")
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description='Generate realistic personas from real-world demographic data.',
-        epilog='Example: persona england -n 3 --age --sex',
+        description="Generate realistic personas from real-world demographic data.",
+        epilog="Example: persona england -n 3 --age --sex",
     )
     parser.add_argument(
-        'target',
-        nargs='?',
+        "target",
+        nargs="?",
         default=None,
-        help='Target location (e.g. england, united_kingdom, australia)',
+        help="Target location (e.g. england, united_kingdom, australia)",
     )
     parser.add_argument(
-        '-n', type=int, default=1, metavar='COUNT',
-        help='Number of personas to generate (default: 1)',
+        "-n",
+        type=int,
+        default=1,
+        metavar="COUNT",
+        help="Number of personas to generate (default: 1)",
     )
     parser.add_argument(
-        '--list', action='store_true',
-        help='List all available locations and exit',
+        "--list",
+        action="store_true",
+        help="List all available locations and exit",
     )
     parser.add_argument(
-        '--json', action='store_true',
-        help='Output as JSON instead of formatted text',
+        "--json",
+        action="store_true",
+        help="Output as JSON instead of formatted text",
     )
     parser.add_argument(
-        '--seed', type=int, default=None, metavar='SEED',
-        help='Random seed for reproducible output',
+        "--seed",
+        type=int,
+        default=None,
+        metavar="SEED",
+        help="Random seed for reproducible output",
     )
     for feature in sorted(list_all_features()):
-        flag = '--' + feature.replace(' ', '-')
-        parser.add_argument(flag, action='store_true', help=f'Include {feature}')
+        flag = "--" + feature.replace(" ", "-")
+        parser.add_argument(flag, action="store_true", help=f"Include {feature}")
     return parser
 
 
 def get_enabled_features(args: argparse.Namespace) -> set[str] | None:
     enabled = set()
     for feature in list_all_features():
-        if getattr(args, feature.replace(' ', '_'), False):
+        if getattr(args, feature.replace(" ", "_"), False):
             enabled.add(feature)
     return enabled if enabled else None
 
 
 def format_location(location: str) -> str:
-    return location.replace('_', ' ').title()
+    return location.replace("_", " ").title()
 
 
 def run():
@@ -94,9 +102,9 @@ def run():
     if args.json:
         print(json.dumps(samples, indent=2))
     else:
-        print(Fore.CYAN + '> ' + format_location(target) + Fore.WHITE)
+        print(Fore.CYAN + "> " + format_location(target) + Fore.WHITE)
         pprint(samples)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     run()

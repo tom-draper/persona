@@ -5,16 +5,16 @@ from pathlib import Path
 
 import numpy as np
 
-DATA_DIR = Path(__file__).parent.parent / 'data'
+DATA_DIR = Path(__file__).parent.parent / "data"
 
 # Features only assigned to samples aged 16 or over.
-ADULT_ONLY_FEATURES = ('relationship', 'marital status', 'occupation')
+ADULT_ONLY_FEATURES = ("relationship", "marital status", "occupation")
 
 
 def normalise_weights(weights: Iterable[float]) -> np.ndarray:
     p = np.array(list(weights), dtype=np.float64)
     if p.sum() == 0.0:
-        raise ValueError('Probabilities sum to 0')
+        raise ValueError("Probabilities sum to 0")
     return p / p.sum()
 
 
@@ -56,12 +56,14 @@ def resolve_api_location(
     Recursively resolve composite locations using preloaded data.
     Returns (leaf_name, location_labels) — see resolve_location for details.
     """
-    if not data[location]['composite']:
+    if not data[location]["composite"]:
         return location, []
-    sublocation = str(rng.choice(
-        data[location]['subloc_keys'],
-        p=data[location]['subloc_probs'],
-    ))
+    sublocation = str(
+        rng.choice(
+            data[location]["subloc_keys"],
+            p=data[location]["subloc_probs"],
+        )
+    )
     if sublocation not in data:
         raise ValueError(f"Sublocation '{sublocation}' not found in preloaded data")
     leaf, sub_labels = resolve_api_location(sublocation, data, rng)
@@ -71,13 +73,13 @@ def resolve_api_location(
 @functools.cache
 def list_all_features() -> set[str]:
     features: set[str] = set()
-    for path in DATA_DIR.rglob('*.json'):
-        if path.name == 'composite.json':
+    for path in DATA_DIR.rglob("*.json"):
+        if path.name == "composite.json":
             continue
         try:
             with open(path) as f:
                 data = json.load(f)
-            features.update(k for k in data if k != '_meta')
+            features.update(k for k in data if k != "_meta")
         except (json.JSONDecodeError, OSError):
             pass
     return features
@@ -87,24 +89,24 @@ def list_all_features() -> set[str]:
 def list_locations() -> list[str]:
     """Return all location names that have data (regular or composite)."""
     locations = []
-    for path in DATA_DIR.rglob('*.json'):
+    for path in DATA_DIR.rglob("*.json"):
         name = path.parent.name
-        if path.name in (f'{name}.json', 'composite.json'):
+        if path.name in (f"{name}.json", "composite.json"):
             locations.append(name)
     return sorted(locations)
 
 
 def get_file_path(target: str) -> Path | None:
-    target = target.lower().replace(' ', '_')
-    for path in DATA_DIR.rglob(f'{target}.json'):
+    target = target.lower().replace(" ", "_")
+    for path in DATA_DIR.rglob(f"{target}.json"):
         if path.parent.name == target:
             return path
     return None
 
 
 def get_composite_path(target: str) -> Path | None:
-    target = target.lower().replace(' ', '_')
-    for path in DATA_DIR.rglob('composite.json'):
+    target = target.lower().replace(" ", "_")
+    for path in DATA_DIR.rglob("composite.json"):
         if path.parent.name == target:
             return path
     return None
@@ -124,11 +126,11 @@ def collapsed_dict(d: dict, path: list[str] | None = None) -> list[tuple[list[st
 
 
 def _parse_age_bucket(bucket: str, rng: np.random.Generator) -> int:
-    if '-' in bucket:
-        low, high = map(int, bucket.split('-'))
+    if "-" in bucket:
+        low, high = map(int, bucket.split("-"))
         return int(rng.integers(low, high + 1))
-    elif '+' in bucket:
-        low = int(bucket.replace('+', ''))
+    elif "+" in bucket:
+        low = int(bucket.replace("+", ""))
         return int(rng.integers(low, max(low + 1, 101)))  # cap at 100
     return int(bucket)
 
@@ -142,7 +144,7 @@ def gen_age(age_data: dict[str, float], rng: np.random.Generator) -> int:
 
 def gen_feature(data: dict, rng: np.random.Generator) -> str:
     collapsed = collapsed_dict(data)
-    options = np.array([', '.join(reversed(x[0])) for x in collapsed])
+    options = np.array([", ".join(reversed(x[0])) for x in collapsed])
     p = normalise_weights(x[1] for x in collapsed)
     return str(rng.choice(options, p=p))
 
@@ -155,12 +157,12 @@ def gen_sample(
     sample = {}
     for feature, _data in data.items():
         feature = feature.lower()
-        if feature == '_meta':
+        if feature == "_meta":
             continue
         if enabled_features is None or feature in enabled_features:
-            if feature == 'age':
+            if feature == "age":
                 sample[feature] = gen_age(_data, rng)
-            elif feature not in ADULT_ONLY_FEATURES or sample.get('age', 16) >= 16:
+            elif feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
                 sample[feature] = gen_feature(_data, rng)
     return sample
 
@@ -172,27 +174,27 @@ def preprocess_location_data(data: dict) -> dict:
     to call rng.choice with already-normalised arrays.
     """
     for entry in data.values():
-        if entry['composite']:
-            keys = list(entry['data'].keys())
-            entry['subloc_keys'] = np.array([k.lower().replace(' ', '_') for k in keys])
-            entry['subloc_probs'] = normalise_weights(entry['data'].values())
+        if entry["composite"]:
+            keys = list(entry["data"].keys())
+            entry["subloc_keys"] = np.array([k.lower().replace(" ", "_") for k in keys])
+            entry["subloc_probs"] = normalise_weights(entry["data"].values())
         else:
             processed: dict[str, dict] = {}
-            for feature, feature_data in entry['data'].items():
-                if feature == '_meta':
+            for feature, feature_data in entry["data"].items():
+                if feature == "_meta":
                     continue
-                if feature == 'age':
-                    processed['age'] = {
-                        'keys': np.array(list(feature_data.keys())),
-                        'probs': normalise_weights(feature_data.values()),
+                if feature == "age":
+                    processed["age"] = {
+                        "keys": np.array(list(feature_data.keys())),
+                        "probs": normalise_weights(feature_data.values()),
                     }
                 else:
                     col = collapsed_dict(feature_data)
                     processed[feature] = {
-                        'options': np.array([', '.join(reversed(x[0])) for x in col]),
-                        'probs': normalise_weights(x[1] for x in col),
+                        "options": np.array([", ".join(reversed(x[0])) for x in col]),
+                        "probs": normalise_weights(x[1] for x in col),
                     }
-            entry['processed'] = processed
+            entry["processed"] = processed
     return data
 
 
@@ -221,20 +223,20 @@ def gen_api_samples(
         target, location_labels = resolve_api_location(location, data, rng)
 
         sample: dict[str, str | int] = {}
-        for feature, proc in data[target]['processed'].items():
+        for feature, proc in data[target]["processed"].items():
             if enabled_features is not None and feature not in enabled_features:
                 continue
-            if feature == 'age':
-                bucket = str(rng.choice(proc['keys'], p=proc['probs']))
-                sample['age'] = _parse_age_bucket(bucket, rng)
-            elif feature not in ADULT_ONLY_FEATURES or sample.get('age', 16) >= 16:
-                sample[feature] = str(rng.choice(proc['options'], p=proc['probs']))
+            if feature == "age":
+                bucket = str(rng.choice(proc["keys"], p=proc["probs"]))
+                sample["age"] = _parse_age_bucket(bucket, rng)
+            elif feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
+                sample[feature] = str(rng.choice(proc["options"], p=proc["probs"]))
 
         for label in location_labels:
-            if 'location' in sample:
-                sample['location'] += f', {label.title()}'
+            if "location" in sample:
+                sample["location"] += f", {label.title()}"
             else:
-                sample['location'] = label.title()
+                sample["location"] = label.title()
 
         samples.append(sample)
 
@@ -276,10 +278,10 @@ def gen_samples(
 
         sample = gen_sample(file_data, enabled_features, rng)
         for label in location_labels:
-            if 'location' in sample:
-                sample['location'] += f', {label.title()}'
+            if "location" in sample:
+                sample["location"] += f", {label.title()}"
             else:
-                sample['location'] = label.title()
+                sample["location"] = label.title()
         samples.append(sample)
 
     return samples
