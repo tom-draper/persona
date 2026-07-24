@@ -1,0 +1,114 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure",
+                    "language"
+                ],
+                "name": "American Community Survey 2024 1-Year Estimates, US Census Bureau (via Census Reporter)",
+                "year": 2024,
+                "url": "https://censusreporter.org/profiles/04000US25-massachusetts/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious Landscape Study - Massachusetts, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/massachusetts/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0486,
+        "5-9": 0.0505,
+        "10-14": 0.0556,
+        "15-19": 0.0649,
+        "20-24": 0.0694,
+        "25-29": 0.069,
+        "30-34": 0.0706,
+        "35-39": 0.0696,
+        "40-44": 0.0648,
+        "45-49": 0.0579,
+        "50-54": 0.0606,
+        "55-59": 0.0639,
+        "60-64": 0.0673,
+        "65-69": 0.0602,
+        "70-74": 0.0478,
+        "75-79": 0.0358,
+        "80-84": 0.0233,
+        "85+": 0.0201
+    },
+    "sex": {
+        "Male": 0.488,
+        "Female": 0.512
+    },
+    "ethnicity": {
+        "White": 0.65,
+        "Hispanic or Latino": 0.14,
+        "Asian": 0.0764,
+        "Black or African American": 0.0633,
+        "Two or more races": 0.0564,
+        "Native American": 0.0008,
+        "Pacific Islander": 0.0001,
+        "Other": 0.0131
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.51,
+        "Service": 0.162,
+        "Sales and office": 0.174,
+        "Natural resources, construction and maintenance": 0.066,
+        "Production, transportation and material moving": 0.088
+    },
+    "education": {
+        "Less than high school": 0.086,
+        "High school diploma or equivalent": 0.222,
+        "Some college, no degree": 0.138,
+        "Associate's degree": 0.071,
+        "Bachelor's degree": 0.257,
+        "Graduate or professional degree": 0.226
+    },
+    "marital status": {
+        "Single (never married)": 0.383,
+        "Married": 0.459,
+        "Separated": 0.015,
+        "Divorced": 0.093,
+        "Widowed": 0.05
+    },
+    "housing tenure": {
+        "Owned": 0.624,
+        "Rented": 0.376
+    },
+    "religion": {
+        "Roman Catholicism": 0.34,
+        "No religion": 0.32,
+        "Protestantism": 0.21,
+        "Judaism": 0.03,
+        "Mormonism": 0.01,
+        "Eastern Orthodoxy": 0.01,
+        "Jehovah's Witnesses": 0.01,
+        "Islam": 0.01,
+        "Buddhism": 0.01,
+        "Hinduism": 0.01
+    },
+    "language": {
+        "English": 0.7415,
+        "Spanish": 0.0987,
+        "Portuguese": 0.0365,
+        "Chinese": 0.0226,
+        "Haitian": 0.0128,
+        "French": 0.0072,
+        "Arabic": 0.0066,
+        "Vietnamese": 0.0065,
+        "Russian": 0.0059,
+        "Hindi": 0.0057,
+        "Other Indo-European languages": 0.0052
+    }
+}

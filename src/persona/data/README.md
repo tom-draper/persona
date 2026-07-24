@@ -64,18 +64,18 @@
 - [ ] `hawaii`
 - [ ] `idaho`
 - [X] `illinois`
-- [ ] `indiana`
+- [X] `indiana`
 - [ ] `iowa`
 - [ ] `kansas`
 - [ ] `kentucky`
 - [ ] `louisiana`
 - [ ] `maine`
-- [ ] `maryland`
-- [ ] `massachusetts`
+- [X] `maryland`
+- [X] `massachusetts`
 - [X] `michigan`
 - [ ] `minnesota`
 - [ ] `mississippi`
-- [ ] `missouri`
+- [X] `missouri`
 - [ ] `montana`
 - [ ] `nebraska`
 - [ ] `nevada`
@@ -92,14 +92,14 @@
 - [ ] `rhode_island`
 - [ ] `south_carolina`
 - [ ] `south_dakota`
-- [ ] `tennessee`
+- [X] `tennessee`
 - [X] `texas`
 - [ ] `utah`
 - [ ] `vermont`
 - [X] `virginia`
 - [X] `washington`
 - [ ] `west_virginia`
-- [ ] `wisconsin`
+- [X] `wisconsin`
 - [ ] `wyoming`
 
 ## Composite Locations
