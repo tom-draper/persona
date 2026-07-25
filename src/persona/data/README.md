@@ -51,12 +51,12 @@
 
 ## US States
 
-- [ ] `alabama`
+- [X] `alabama`
 - [ ] `alaska`
 - [X] `arizona`
 - [ ] `arkansas`
 - [X] `california`
-- [ ] `colorado`
+- [X] `colorado`
 - [ ] `connecticut`
 - [ ] `delaware`
 - [X] `florida`
@@ -67,13 +67,13 @@
 - [X] `indiana`
 - [ ] `iowa`
 - [ ] `kansas`
-- [ ] `kentucky`
-- [ ] `louisiana`
+- [X] `kentucky`
+- [X] `louisiana`
 - [ ] `maine`
 - [X] `maryland`
 - [X] `massachusetts`
 - [X] `michigan`
-- [ ] `minnesota`
+- [X] `minnesota`
 - [ ] `mississippi`
 - [X] `missouri`
 - [ ] `montana`
@@ -90,7 +90,7 @@
 - [ ] `oregon`
 - [X] `pennsylvania`
 - [ ] `rhode_island`
-- [ ] `south_carolina`
+- [X] `south_carolina`
 - [ ] `south_dakota`
 - [X] `tennessee`
 - [X] `texas`

@@ -1,0 +1,103 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure",
+                    "language"
+                ],
+                "name": "American Community Survey 2024 1-Year Estimates, US Census Bureau (via Census Reporter)",
+                "year": 2024,
+                "url": "https://censusreporter.org/profiles/04000US45-south-carolina/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious Landscape Study - South Carolina, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/south-carolina/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0535,
+        "5-9": 0.0559,
+        "10-14": 0.0612,
+        "15-19": 0.0676,
+        "20-24": 0.0634,
+        "25-29": 0.06,
+        "30-34": 0.0657,
+        "35-39": 0.0636,
+        "40-44": 0.0647,
+        "45-49": 0.0577,
+        "50-54": 0.0611,
+        "55-59": 0.0582,
+        "60-64": 0.0698,
+        "65-69": 0.0627,
+        "70-74": 0.0544,
+        "75-79": 0.0404,
+        "80-84": 0.0226,
+        "85+": 0.0175
+    },
+    "sex": {
+        "Male": 0.488,
+        "Female": 0.512
+    },
+    "ethnicity": {
+        "White": 0.6161,
+        "Hispanic or Latino": 0.0793,
+        "Asian": 0.0197,
+        "Black or African American": 0.2334,
+        "Two or more races": 0.0452,
+        "Native American": 0.0021,
+        "Pacific Islander": 0.0003,
+        "Other": 0.0039
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.404,
+        "Service": 0.157,
+        "Sales and office": 0.204,
+        "Natural resources, construction and maintenance": 0.085,
+        "Production, transportation and material moving": 0.15
+    },
+    "education": {
+        "Less than high school": 0.09,
+        "High school diploma or equivalent": 0.277,
+        "Some college, no degree": 0.196,
+        "Associate's degree": 0.104,
+        "Bachelor's degree": 0.203,
+        "Graduate or professional degree": 0.13
+    },
+    "marital status": {
+        "Single (never married)": 0.32,
+        "Married": 0.499,
+        "Separated": 0.02,
+        "Divorced": 0.102,
+        "Widowed": 0.059
+    },
+    "housing tenure": {
+        "Owned": 0.723,
+        "Rented": 0.277
+    },
+    "religion": {
+        "Protestantism": 0.66,
+        "No religion": 0.19,
+        "Roman Catholicism": 0.1,
+        "Mormonism": 0.01,
+        "Jehovah's Witnesses": 0.01,
+        "Judaism": 0.01,
+        "Islam": 0.01,
+        "Eastern Orthodoxy": 0.01
+    },
+    "language": {
+        "English": 0.9097,
+        "Spanish": 0.0545
+    }
+}

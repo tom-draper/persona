@@ -1,0 +1,101 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure",
+                    "language"
+                ],
+                "name": "American Community Survey 2024 1-Year Estimates, US Census Bureau (via Census Reporter)",
+                "year": 2024,
+                "url": "https://censusreporter.org/profiles/04000US21-kentucky/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious Landscape Study - Kentucky, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/kentucky/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.057,
+        "5-9": 0.0589,
+        "10-14": 0.0654,
+        "15-19": 0.0675,
+        "20-24": 0.0656,
+        "25-29": 0.064,
+        "30-34": 0.0666,
+        "35-39": 0.0646,
+        "40-44": 0.0645,
+        "45-49": 0.0599,
+        "50-54": 0.0608,
+        "55-59": 0.0603,
+        "60-64": 0.065,
+        "65-69": 0.0596,
+        "70-74": 0.048,
+        "75-79": 0.0357,
+        "80-84": 0.0202,
+        "85+": 0.0166
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "ethnicity": {
+        "White": 0.803,
+        "Hispanic or Latino": 0.0551,
+        "Asian": 0.0186,
+        "Black or African American": 0.0703,
+        "Two or more races": 0.0485,
+        "Native American": 0.0013,
+        "Pacific Islander": 0.0003,
+        "Other": 0.003
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.385,
+        "Service": 0.154,
+        "Sales and office": 0.19,
+        "Natural resources, construction and maintenance": 0.089,
+        "Production, transportation and material moving": 0.181
+    },
+    "education": {
+        "Less than high school": 0.11,
+        "High school diploma or equivalent": 0.321,
+        "Some college, no degree": 0.196,
+        "Associate's degree": 0.093,
+        "Bachelor's degree": 0.162,
+        "Graduate or professional degree": 0.118
+    },
+    "marital status": {
+        "Single (never married)": 0.305,
+        "Married": 0.489,
+        "Separated": 0.017,
+        "Divorced": 0.125,
+        "Widowed": 0.064
+    },
+    "housing tenure": {
+        "Owned": 0.681,
+        "Rented": 0.319
+    },
+    "religion": {
+        "Protestantism": 0.65,
+        "No religion": 0.22,
+        "Roman Catholicism": 0.1,
+        "Mormonism": 0.01,
+        "Jehovah's Witnesses": 0.01,
+        "Judaism": 0.01
+    },
+    "language": {
+        "English": 0.9247,
+        "Spanish": 0.0375
+    }
+}
