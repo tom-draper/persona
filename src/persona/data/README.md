@@ -61,15 +61,15 @@
 - [ ] `delaware`
 - [X] `florida`
 - [X] `georgia`
-- [ ] `hawaii`
-- [ ] `idaho`
+- [X] `hawaii`
+- [X] `idaho`
 - [X] `illinois`
 - [X] `indiana`
 - [X] `iowa`
-- [ ] `kansas`
+- [X] `kansas`
 - [X] `kentucky`
 - [X] `louisiana`
-- [ ] `maine`
+- [X] `maine`
 - [X] `maryland`
 - [X] `massachusetts`
 - [X] `michigan`
@@ -77,11 +77,11 @@
 - [X] `mississippi`
 - [X] `missouri`
 - [ ] `montana`
-- [ ] `nebraska`
+- [X] `nebraska`
 - [X] `nevada`
-- [ ] `new_hampshire`
+- [X] `new_hampshire`
 - [X] `new_jersey`
-- [ ] `new_mexico`
+- [X] `new_mexico`
 - [X] `new_york`
 - [X] `north_carolina`
 - [ ] `north_dakota`
@@ -98,7 +98,7 @@
 - [ ] `vermont`
 - [X] `virginia`
 - [X] `washington`
-- [ ] `west_virginia`
+- [X] `west_virginia`
 - [X] `wisconsin`
 - [ ] `wyoming`
 

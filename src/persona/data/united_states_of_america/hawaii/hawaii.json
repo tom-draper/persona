@@ -1,0 +1,112 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure",
+                    "language"
+                ],
+                "name": "American Community Survey 2024 5-Year Estimates, US Census Bureau (via Census Reporter)",
+                "year": 2024,
+                "url": "https://censusreporter.org/profiles/04000US15-hawaii/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious Landscape Study - Hawaii, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/hawaii/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0555,
+        "5-9": 0.0572,
+        "10-14": 0.0607,
+        "15-19": 0.0535,
+        "20-24": 0.0603,
+        "25-29": 0.0641,
+        "30-34": 0.0685,
+        "35-39": 0.0681,
+        "40-44": 0.0653,
+        "45-49": 0.0581,
+        "50-54": 0.0599,
+        "55-59": 0.0604,
+        "60-64": 0.0639,
+        "65-69": 0.0615,
+        "70-74": 0.0527,
+        "75-79": 0.0394,
+        "80-84": 0.0235,
+        "85+": 0.0276
+    },
+    "sex": {
+        "Male": 0.502,
+        "Female": 0.498
+    },
+    "ethnicity": {
+        "White": 0.2092,
+        "Hispanic or Latino": 0.0994,
+        "Asian": 0.3639,
+        "Black or African American": 0.0176,
+        "Two or more races": 0.2098,
+        "Native American": 0.0011,
+        "Pacific Islander": 0.0952,
+        "Other": 0.0038
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.393,
+        "Service": 0.219,
+        "Sales and office": 0.212,
+        "Natural resources, construction and maintenance": 0.088,
+        "Production, transportation and material moving": 0.088
+    },
+    "education": {
+        "Less than high school": 0.068,
+        "High school diploma or equivalent": 0.265,
+        "Some college, no degree": 0.196,
+        "Associate's degree": 0.109,
+        "Bachelor's degree": 0.228,
+        "Graduate or professional degree": 0.133
+    },
+    "marital status": {
+        "Single (never married)": 0.342,
+        "Married": 0.491,
+        "Separated": 0.012,
+        "Divorced": 0.095,
+        "Widowed": 0.06
+    },
+    "housing tenure": {
+        "Owned": 0.63,
+        "Rented": 0.37
+    },
+    "religion": {
+        "Protestantism": 0.38,
+        "No religion": 0.26,
+        "Roman Catholicism": 0.2,
+        "Buddhism": 0.08,
+        "Mormonism": 0.03,
+        "Eastern Orthodoxy": 0.01,
+        "Jehovah's Witnesses": 0.01,
+        "Judaism": 0.01,
+        "Islam": 0.01,
+        "Hinduism": 0.01
+    },
+    "language": {
+        "English": 0.7533,
+        "Ilocano": 0.0858,
+        "Tagalog": 0.0441,
+        "Japanese": 0.027,
+        "Chinese": 0.0255,
+        "Spanish": 0.0203,
+        "Korean": 0.0107,
+        "Other and unspecified languages": 0.0081,
+        "Vietnamese": 0.0073
+    }
+}
