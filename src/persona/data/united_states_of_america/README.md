@@ -1,6 +1,6 @@
 # United States Of America
 
-Composite: Made up of California, Texas, Florida, New York, Pennsylvania, Illinois, Ohio, Georgia, North Carolina, Michigan, New Jersey, Virginia, Washington, Arizona, Tennessee, Massachusetts, Indiana, Maryland, Missouri, Wisconsin, Colorado, Minnesota, South Carolina, Alabama, Louisiana, Kentucky, Oregon, Oklahoma, Connecticut, Utah, Iowa, Nevada, Arkansas, Kansas, Mississippi, New Mexico, Nebraska, Idaho, West Virginia, Hawaii, New Hampshire, and Maine.
+Composite: Made up of California, Texas, Florida, New York, Pennsylvania, Illinois, Ohio, Georgia, North Carolina, Michigan, New Jersey, Virginia, Washington, Arizona, Tennessee, Massachusetts, Indiana, Maryland, Missouri, Wisconsin, Colorado, Minnesota, South Carolina, Alabama, Louisiana, Kentucky, Oregon, Oklahoma, Connecticut, Utah, Iowa, Nevada, Arkansas, Kansas, Mississippi, New Mexico, Nebraska, Idaho, West Virginia, Hawaii, New Hampshire, Maine, Montana, Rhode Island, Delaware, South Dakota, North Dakota, Alaska, Vermont, and Wyoming.
 
 \![United States Of America](img/united_states_of_america.png)
 

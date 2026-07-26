@@ -1,0 +1,102 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure",
+                    "language"
+                ],
+                "name": "American Community Survey 2024 5-Year Estimates, US Census Bureau (via Census Reporter)",
+                "year": 2024,
+                "url": "https://censusreporter.org/profiles/04000US38-north-dakota/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious Landscape Study - North Dakota, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/north-dakota/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0633,
+        "5-9": 0.0663,
+        "10-14": 0.0676,
+        "15-19": 0.0695,
+        "20-24": 0.0791,
+        "25-29": 0.0707,
+        "30-34": 0.0714,
+        "35-39": 0.0692,
+        "40-44": 0.0624,
+        "45-49": 0.0499,
+        "50-54": 0.0506,
+        "55-59": 0.0534,
+        "60-64": 0.061,
+        "65-69": 0.0534,
+        "70-74": 0.0423,
+        "75-79": 0.0281,
+        "80-84": 0.0195,
+        "85+": 0.022
+    },
+    "sex": {
+        "Male": 0.512,
+        "Female": 0.488
+    },
+    "ethnicity": {
+        "White": 0.8174,
+        "Hispanic or Latino": 0.0466,
+        "Asian": 0.0164,
+        "Black or African American": 0.033,
+        "Two or more races": 0.0397,
+        "Native American": 0.0423,
+        "Pacific Islander": 0.0012,
+        "Other": 0.0034
+    },
+    "occupation": {
+        "Management, business, science and arts": 0.407,
+        "Service": 0.164,
+        "Sales and office": 0.191,
+        "Natural resources, construction and maintenance": 0.11,
+        "Production, transportation and material moving": 0.128
+    },
+    "education": {
+        "Less than high school": 0.06,
+        "High school diploma or equivalent": 0.255,
+        "Some college, no degree": 0.218,
+        "Associate's degree": 0.14,
+        "Bachelor's degree": 0.23,
+        "Graduate or professional degree": 0.097
+    },
+    "marital status": {
+        "Single (never married)": 0.336,
+        "Married": 0.502,
+        "Separated": 0.009,
+        "Divorced": 0.099,
+        "Widowed": 0.054
+    },
+    "housing tenure": {
+        "Owned": 0.629,
+        "Rented": 0.371
+    },
+    "religion": {
+        "Protestantism": 0.51,
+        "Roman Catholicism": 0.26,
+        "No religion": 0.2,
+        "Mormonism": 0.01,
+        "Jehovah's Witnesses": 0.01,
+        "Judaism": 0.01
+    },
+    "language": {
+        "English": 0.9328,
+        "Spanish": 0.0226,
+        "German": 0.006
+    }
+}

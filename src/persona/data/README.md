@@ -52,13 +52,13 @@
 ## US States
 
 - [X] `alabama`
-- [ ] `alaska`
+- [X] `alaska`
 - [X] `arizona`
 - [X] `arkansas`
 - [X] `california`
 - [X] `colorado`
 - [X] `connecticut`
-- [ ] `delaware`
+- [X] `delaware`
 - [X] `florida`
 - [X] `georgia`
 - [X] `hawaii`
@@ -76,7 +76,7 @@
 - [X] `minnesota`
 - [X] `mississippi`
 - [X] `missouri`
-- [ ] `montana`
+- [X] `montana`
 - [X] `nebraska`
 - [X] `nevada`
 - [X] `new_hampshire`
@@ -84,23 +84,23 @@
 - [X] `new_mexico`
 - [X] `new_york`
 - [X] `north_carolina`
-- [ ] `north_dakota`
+- [X] `north_dakota`
 - [X] `ohio`
 - [X] `oklahoma`
 - [X] `oregon`
 - [X] `pennsylvania`
-- [ ] `rhode_island`
+- [X] `rhode_island`
 - [X] `south_carolina`
-- [ ] `south_dakota`
+- [X] `south_dakota`
 - [X] `tennessee`
 - [X] `texas`
 - [X] `utah`
-- [ ] `vermont`
+- [X] `vermont`
 - [X] `virginia`
 - [X] `washington`
 - [X] `west_virginia`
 - [X] `wisconsin`
-- [ ] `wyoming`
+- [X] `wyoming`
 
 ## Composite Locations
 
