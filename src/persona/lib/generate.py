@@ -29,25 +29,39 @@ def select_sublocation(composite_path: Path, rng: np.random.Generator) -> str:
     return str(rng.choice(keys, p=p)).lower()
 
 
-def resolve_location(location: str, rng: np.random.Generator) -> tuple[str, list[str]]:
+def resolve_location(location: str, rng: np.random.Generator) -> tuple[list[str], list[str]]:
     """
-    Recursively resolve composite locations until a leaf data file is reached.
+    Recursively resolve composite locations into the chain of data-bearing
+    nodes to draw from and the sublocation labels to append.
 
-    Returns (leaf_name, location_labels) where location_labels is an ordered
-    list of sublocation names traversed (innermost first) to append to the
-    persona's location field.
+    Returns (leaf_chain, location_labels):
+      - leaf_chain: node names that carry a leaf dataset, outermost first and
+        innermost last. A persona is generated from their merged features,
+        with inner nodes overriding outer ones (feature inheritance). An
+        interior node that keeps its own leaf therefore acts as a baseline
+        that a carved-out sublocation refines.
+      - location_labels: sublocation names traversed (innermost first) to
+        append to the persona's location field.
 
-    Examples (with uk→england composite, england→yorkshire composite):
-        resolve_location('united_kingdom', rng) → ('yorkshire', ['yorkshire', 'england'])
-        resolve_location('england', rng)        → ('yorkshire', ['yorkshire'])
-        resolve_location('yorkshire', rng)      → ('yorkshire', [])
+    Examples (uk→england composite; england→london composite with an England
+    self/remainder branch):
+        resolve_location('england')        → (['england'], [])                       # self branch
+        resolve_location('england')        → (['england', 'london'], ['london'])
+        resolve_location('united_kingdom') → (['england', 'london'], ['london', 'england'])
     """
+    chain = [location] if get_file_path(location) is not None else []
     composite_path = get_composite_path(location)
     if composite_path is None:
-        return location, []
+        return chain, []
     sublocation = select_sublocation(composite_path, rng)
-    leaf, sub_labels = resolve_location(sublocation, rng)
-    return leaf, [*sub_labels, sublocation]
+    # Self/remainder branch: a composite may list its own node as a weighted
+    # option, letting an interior node keep its own leaf dataset alongside
+    # carved-out sublocations. Resolving it stops at this node's leaf and adds
+    # no extra label (we are already "in" this location).
+    if clean_location(sublocation) == clean_location(location):
+        return chain, []
+    sub_chain, sub_labels = resolve_location(sublocation, rng)
+    return chain + sub_chain, [*sub_labels, sublocation]
 
 
 def resolve_api_location(
@@ -57,20 +71,20 @@ def resolve_api_location(
 ) -> tuple[str, list[str]]:
     """
     Recursively resolve composite locations using preloaded data.
-    Returns (leaf_name, location_labels) — see resolve_location for details.
+    Returns (leaf_chain, location_labels) — see resolve_location for details.
     """
-    if not data[location]["composite"]:
-        return location, []
-    sublocation = str(
-        rng.choice(
-            data[location]["subloc_keys"],
-            p=data[location]["subloc_probs"],
-        )
-    )
+    node = data[location]
+    chain = [location] if node.get("leaf") else []
+    if not node.get("composite"):
+        return chain, []
+    sublocation = str(rng.choice(node["subloc_keys"], p=node["subloc_probs"]))
+    # Self/remainder branch — see resolve_location.
+    if clean_location(sublocation) == clean_location(location):
+        return chain, []
     if sublocation not in data:
         raise ValueError(f"Sublocation '{sublocation}' not found in preloaded data")
-    leaf, sub_labels = resolve_api_location(sublocation, data, rng)
-    return leaf, [*sub_labels, sublocation]
+    sub_chain, sub_labels = resolve_api_location(sublocation, data, rng)
+    return chain + sub_chain, [*sub_labels, sublocation]
 
 
 @functools.cache
@@ -91,11 +105,11 @@ def list_all_features() -> set[str]:
 @functools.cache
 def list_locations() -> list[str]:
     """Return all location names that have data (regular or composite)."""
-    locations = []
+    locations = set()
     for path in DATA_DIR.rglob("*.json"):
         name = path.parent.name
         if path.name in (f"{name}.json", "composite.json"):
-            locations.append(name)
+            locations.add(name)
     return sorted(locations)
 
 
@@ -170,21 +184,56 @@ def gen_sample(
     return sample
 
 
+def _merge_leaves(leaves: list[dict]) -> dict:
+    """Overlay leaf datasets outermost→innermost (inner overrides outer) so a
+    carved-out sublocation inherits its ancestors' features. The location
+    feature comes only from the innermost leaf: when a sublocation was chosen
+    its label supersedes any ancestor's location distribution."""
+    merged: dict = {}
+    for leaf in leaves:
+        for feature, value in leaf.items():
+            if feature in ("_meta", "location"):
+                continue
+            merged[feature] = value
+    inner = leaves[-1]
+    if "location" in inner:
+        merged["location"] = inner["location"]
+    return merged
+
+
+def _merge_processed(chain: list[str], data: dict) -> dict:
+    """Preprocessed-array equivalent of _merge_leaves for the API path."""
+    merged: dict = {}
+    for node in chain:
+        for feature, proc in data[node].get("processed", {}).items():
+            if feature == "location":
+                continue
+            merged[feature] = proc
+    inner = data[chain[-1]].get("processed", {})
+    if "location" in inner:
+        merged["location"] = inner["location"]
+    return merged
+
+
 def preprocess_location_data(data: dict) -> dict:
     """
     Precompute probability arrays and option lists for each feature in each
     location. Called once at API startup so per-request generation only needs
     to call rng.choice with already-normalised arrays.
     """
+    # A node may carry composite weights, a leaf dataset, or both (an interior
+    # node that keeps its own data while also carving out sublocations).
     for entry in data.values():
-        if entry["composite"]:
-            weights = {k: v for k, v in entry["data"].items() if k != "_meta"}
+        composite = entry.get("composite")
+        if composite:
+            weights = {k: v for k, v in composite.items() if k != "_meta"}
             keys = list(weights.keys())
             entry["subloc_keys"] = np.array([k.lower().replace(" ", "_") for k in keys])
             entry["subloc_probs"] = normalise_weights(weights.values())
-        else:
+        leaf = entry.get("leaf")
+        if leaf:
             processed: dict[str, dict] = {}
-            for feature, feature_data in entry["data"].items():
+            for feature, feature_data in leaf.items():
                 if feature == "_meta":
                     continue
                 if feature == "age":
@@ -224,10 +273,11 @@ def gen_api_samples(
     rng = np.random.default_rng(seed)
     samples = []
     for _ in range(N):
-        target, location_labels = resolve_api_location(location, data, rng)
+        chain, location_labels = resolve_api_location(location, data, rng)
+        merged = _merge_processed(chain, data)
 
         sample: dict[str, str | int] = {}
-        for feature, proc in data[target]["processed"].items():
+        for feature, proc in merged.items():
             if enabled_features is not None and feature not in enabled_features:
                 continue
             if feature == "age":
@@ -236,11 +286,12 @@ def gen_api_samples(
             elif feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
                 sample[feature] = str(rng.choice(proc["options"], p=proc["probs"]))
 
-        for label in location_labels:
-            if "location" in sample:
-                sample["location"] += f", {label.title()}"
-            else:
-                sample["location"] = label.title()
+        if enabled_features is None or "location" in enabled_features:
+            for label in location_labels:
+                if "location" in sample:
+                    sample["location"] += f", {label.title()}"
+                else:
+                    sample["location"] = label.title()
 
         samples.append(sample)
 
@@ -267,28 +318,32 @@ def gen_samples(
     rng = np.random.default_rng(seed)
     samples = []
     cache: dict[Path, dict] = {}
+
+    def load(node: str) -> dict:
+        path = get_file_path(node)
+        if path is None:
+            raise ValueError(f"Location '{node}' not found")
+        if path not in cache:
+            with open(path) as f:
+                cache[path] = json.load(f)
+        return cache[path]
+
     # Idempotent, so callers that already normalised (the CLI, the API) are
     # unaffected, and direct library callers get alias resolution for free.
     location = clean_location(location)
     for _ in range(N):
-        target, location_labels = resolve_location(location, rng)
+        chain, location_labels = resolve_location(location, rng)
+        if not chain:
+            raise ValueError(f"Location '{location}' not found")
+        merged = _merge_leaves([load(node) for node in chain])
 
-        location_path = get_file_path(target)
-        if location_path is None:
-            raise ValueError(f"Location '{target}' not found")
-        if location_path in cache:
-            file_data = cache[location_path]
-        else:
-            with open(location_path) as f:
-                file_data = json.load(f)
-            cache[location_path] = file_data
-
-        sample = gen_sample(file_data, enabled_features, rng)
-        for label in location_labels:
-            if "location" in sample:
-                sample["location"] += f", {label.title()}"
-            else:
-                sample["location"] = label.title()
+        sample = gen_sample(merged, enabled_features, rng)
+        if enabled_features is None or "location" in enabled_features:
+            for label in location_labels:
+                if "location" in sample:
+                    sample["location"] += f", {label.title()}"
+                else:
+                    sample["location"] = label.title()
         samples.append(sample)
 
     return samples

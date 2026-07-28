@@ -1,0 +1,15 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": ["location"],
+                "name": "Mid-2021 population estimates for England and the London region, Office for National Statistics (ONS)",
+                "year": 2021,
+                "note": "London's share of England's population. The 'England' key is a self/remainder branch that resolves back to england.json; because that dataset is England-wide (Londoners included), London is slightly over-represented until an England-excluding-London leaf exists.",
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2021"
+            }
+        ]
+    },
+    "London": 0.156,
+    "England": 0.844
+}

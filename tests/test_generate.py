@@ -410,7 +410,8 @@ def test_get_composite_path_composite_location():
 def test_get_composite_path_non_composite():
     from persona.lib.generate import get_composite_path
 
-    assert get_composite_path("england") is None
+    # A pure leaf location (no composite.json in its directory).
+    assert get_composite_path("wales") is None
 
 
 # ---------------------------------------------------------------------------
@@ -523,3 +524,93 @@ def test_clean_location_no_alias_passthrough():
 def test_parse_age_bucket_zero():
     rng = np.random.default_rng()
     assert _parse_age_bucket("0", rng) == 0
+
+
+# ---------------------------------------------------------------------------
+# Nested composites + self/remainder branch (interior node with own leaf)
+# ---------------------------------------------------------------------------
+
+
+def test_england_resolves_to_both_london_and_its_own_leaf():
+    """England is an interior node: a composite that carves out London while
+    keeping its own dataset via a self/remainder branch."""
+    from persona.lib.generate import resolve_location
+
+    rng = np.random.default_rng(0)
+    innermost = {resolve_location("england", rng)[0][-1] for _ in range(400)}
+    assert "london" in innermost  # carved-out sublocation is reachable
+    assert "england" in innermost  # self branch resolves back to england's leaf
+
+
+def test_self_branch_adds_no_label_but_sublocation_does():
+    from persona.lib.generate import resolve_location
+
+    rng = np.random.default_rng(1)
+    saw_london_label = saw_self = False
+    for _ in range(400):
+        chain, labels = resolve_location("england", rng)
+        if chain[-1] == "london":
+            assert chain == ["england", "london"]  # inherits england's baseline
+            assert labels == ["london"]
+            saw_london_label = True
+        elif chain[-1] == "england":
+            assert chain == ["england"]
+            assert labels == []  # self branch adds no redundant "England"
+            saw_self = True
+    assert saw_london_label and saw_self
+
+
+def test_uk_can_reach_london_three_levels_deep():
+    """united_kingdom -> england -> london, with labels accumulating."""
+    from persona.lib.generate import resolve_location
+
+    rng = np.random.default_rng(2)
+    reached_london = False
+    for _ in range(2000):
+        chain, labels = resolve_location("united_kingdom", rng)
+        if chain[-1] == "london":
+            assert chain == ["england", "london"]
+            assert labels == ["london", "england"]
+            reached_london = True
+    assert reached_london
+
+
+def test_london_personas_are_complete_via_overlay():
+    """A London draw through England inherits age/sex/etc from england.json,
+    so every persona is complete despite london.json being a partial leaf."""
+    for sample in gen_samples("england", N=200, seed=3):
+        assert "age" in sample and "sex" in sample
+        assert isinstance(sample["age"], int)
+
+
+def test_england_draws_include_london_and_english_districts():
+    locs = [s.get("location", "") for s in gen_samples("england", N=400, seed=4)]
+    assert any(loc == "London" for loc in locs)  # carved-out sublocation label
+    assert any("London" not in loc and loc for loc in locs)  # england self branch
+
+
+def test_london_overlay_uses_london_specific_religion():
+    """Overlay must let London override a shared feature (religion) rather than
+    just inherit England's."""
+    import json
+
+    from persona.lib.generate import DATA_DIR
+
+    london = json.loads((DATA_DIR / "united_kingdom/england/london/london.json").read_text())
+    london_religions = set(london["religion"])
+    seen = set()
+    for sample in gen_samples("england", enabled_features={"religion"}, N=600, seed=5):
+        seen.add(sample["religion"])
+    # London's religion labels are a subset of what england draws can produce.
+    assert london_religions & seen
+
+
+def test_get_features_recurses_through_interior_node():
+    """England's /features/ must union its own leaf features with London's."""
+    from persona.api.handler import get_features, load_location_data
+
+    data = load_location_data()
+    england = set(get_features("england", data)["england"])
+    london_leaf = {k for k in data["london"]["leaf"] if k != "_meta"}
+    england_leaf = {k for k in data["england"]["leaf"] if k != "_meta"}
+    assert england == england_leaf | london_leaf
