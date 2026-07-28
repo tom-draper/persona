@@ -1,0 +1,99 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Global Religious Landscape, Pew Research Center",
+                "year": 2010,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by province, National Bureau of Statistics of China",
+                "year": 2022,
+                "url": "https://www.stats.gov.cn/english/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0408,
+        "5-9": 0.0623,
+        "10-14": 0.0628,
+        "15-19": 0.0573,
+        "20-24": 0.0562,
+        "25-29": 0.0611,
+        "30-34": 0.079,
+        "35-39": 0.0796,
+        "40-44": 0.0693,
+        "45-49": 0.0695,
+        "50-54": 0.0863,
+        "55-59": 0.0802,
+        "60-64": 0.0525,
+        "65-69": 0.0537,
+        "70-74": 0.0413,
+        "75-79": 0.0237,
+        "80-84": 0.0142,
+        "85+": 0.0104
+    },
+    "sex": {
+        "Male": 0.51,
+        "Female": 0.49
+    },
+    "religion": {
+        "No religion": 0.522,
+        "Chinese folk religion": 0.219,
+        "Buddhism": 0.182,
+        "Christianity or Other Christianity": 0.051,
+        "Islam": 0.018,
+        "Other": 0.007
+    },
+    "location": {
+        "Guangdong": 0.08943,
+        "Shandong": 0.07153,
+        "Henan": 0.07117,
+        "Jiangsu": 0.05993,
+        "Sichuan": 0.05894,
+        "Hebei": 0.05222,
+        "Hunan": 0.04648,
+        "Zhejiang": 0.04629,
+        "Anhui": 0.04312,
+        "Hubei": 0.04113,
+        "Guangxi": 0.03552,
+        "Yunnan": 0.03303,
+        "Jiangxi": 0.03187,
+        "Liaoning": 0.02954,
+        "Fujian": 0.02948,
+        "Shaanxi": 0.02784,
+        "Guizhou": 0.02714,
+        "Shanxi": 0.0245,
+        "Chongqing": 0.02261,
+        "Heilongjiang": 0.02181,
+        "Xinjiang": 0.01821,
+        "Gansu": 0.01754,
+        "Shanghai": 0.01742,
+        "Inner Mongolia": 0.0169,
+        "Jilin": 0.01653,
+        "Beijing": 0.01537,
+        "Tianjin": 0.00959,
+        "Hainan": 0.00723,
+        "Hong Kong": 0.00526,
+        "Ningxia": 0.00512,
+        "Qinghai": 0.00419,
+        "Tibet": 0.00256,
+        "Macau": 0.00048
+    }
+}

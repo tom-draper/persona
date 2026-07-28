@@ -20,14 +20,14 @@
 - [X] `ireland`
 - [X] `australia`
 - [X] `canada`
-- [ ] `brazil`
+- [X] `brazil`
 - [ ] `mexico`
 - [ ] `russia`
-- [ ] `china`
-- [ ] `india`
-- [ ] `nigeria`
-- [ ] `indonesia`
-- [ ] `pakistan`
+- [X] `china`
+- [X] `india`
+- [X] `nigeria`
+- [X] `indonesia`
+- [X] `pakistan`
 - [ ] `bangladesh`
 - [ ] `japan`
 - [ ] `philippines`

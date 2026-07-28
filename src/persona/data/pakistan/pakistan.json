@@ -1,0 +1,70 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2023 Census (religion), Pakistan Bureau of Statistics",
+                "year": 2023,
+                "url": "https://www.pbs.gov.pk/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Pakistan Bureau of Statistics",
+                "year": 2023,
+                "url": "https://www.pbs.gov.pk/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1284,
+        "5-9": 0.1223,
+        "10-14": 0.1196,
+        "15-19": 0.1045,
+        "20-24": 0.0938,
+        "25-29": 0.0807,
+        "30-34": 0.0706,
+        "35-39": 0.0605,
+        "40-44": 0.05,
+        "45-49": 0.0405,
+        "50-54": 0.034,
+        "55-59": 0.0291,
+        "60-64": 0.024,
+        "65-69": 0.0177,
+        "70-74": 0.0114,
+        "75-79": 0.0075,
+        "80-84": 0.0037,
+        "85+": 0.0016
+    },
+    "sex": {
+        "Male": 0.508,
+        "Female": 0.492
+    },
+    "religion": {
+        "Islam": 0.9635,
+        "Hinduism": 0.0217,
+        "Christianity or Other Christianity": 0.0137,
+        "Ahmadiyya": 0.0007,
+        "Other": 0.0004
+    },
+    "location": {
+        "Punjab": 0.52873,
+        "Sindh": 0.23063,
+        "Khyber Pakhtunkhwa": 0.16918,
+        "Balochistan": 0.06167,
+        "Islamabad Capital Territory": 0.00979
+    }
+}
