@@ -465,11 +465,11 @@ def test_get_features_composite_location(api_data):
     assert "_meta" not in result["united_kingdom"]
 
 
-def test_get_features_global_returns_empty(api_data):
+def test_get_features_global_returns_world_baseline(api_data):
     from persona.api.handler import get_features
 
     result = get_features("global", api_data)
-    assert result == {}
+    assert set(result["global"]) == {"age", "sex", "religion", "location"}
 
 
 # ---------------------------------------------------------------------------

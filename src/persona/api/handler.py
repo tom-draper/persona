@@ -48,8 +48,6 @@ def _subtree_features(location: str, data: dict, seen: set[str]) -> set[str]:
 
 
 def get_features(location: str, data: dict) -> dict:
-    if location == "global":
-        return {}
     return {location: sorted(_subtree_features(location, data, set()))}
 
 

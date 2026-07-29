@@ -111,6 +111,6 @@ A random sub-location is selected, weighted by population.
 
 ## Global
 
-Currently the `global` location only picks a random country, weighted by population, and returns that location. Eventually, with more countries added, global should become a composite, and a persona from the chosen country should be generated instead using that country's data.
+The `global` location is a self-contained world-baseline dataset: it draws age and sex from the UN's world population estimates, religion from Pew's Global Religious Landscape, and a `location` that is a random country weighted by share of world population. It is deliberately **not** a composite over every country (that would only ever be as representative as the handful of countries with datasets). A future enhancement could layer the interior-composite mechanism on top so that when `global` lands on a country that does have a dataset, it yields that country's richer persona instead of the world baseline.
 
 - [X] `global`

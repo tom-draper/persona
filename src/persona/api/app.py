@@ -76,8 +76,6 @@ async def features(location: str, request: Request, response: Response) -> dict:
     location = clean_location(location)
     if location not in data:
         raise _location_not_found(data)
-    elif location == "global":
-        raise HTTPException(status_code=404, detail="Features not found")
     response.headers["Cache-Control"] = "public, max-age=3600"
     return get_features(location, data)
 
