@@ -1,0 +1,93 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2019 Population and Housing Census, General Statistics Office of Vietnam",
+                "year": 2019,
+                "url": "https://www.gso.gov.vn/en/",
+                "note": "No religion includes practitioners of Vietnamese folk religion, who are not counted as a religious affiliation."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population statistics, General Statistics Office of Vietnam",
+                "year": 2024,
+                "url": "https://www.gso.gov.vn/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0715,
+        "5-9": 0.0815,
+        "10-14": 0.083,
+        "15-19": 0.0711,
+        "20-24": 0.0634,
+        "25-29": 0.0705,
+        "30-34": 0.0868,
+        "35-39": 0.0846,
+        "40-44": 0.074,
+        "45-49": 0.0648,
+        "50-54": 0.0606,
+        "55-59": 0.0545,
+        "60-64": 0.0475,
+        "65-69": 0.0353,
+        "70-74": 0.023,
+        "75-79": 0.0127,
+        "80-84": 0.008,
+        "85+": 0.0073
+    },
+    "sex": {
+        "Male": 0.49,
+        "Female": 0.51
+    },
+    "religion": {
+        "No religion": 0.863,
+        "Roman Catholicism": 0.061,
+        "Buddhism": 0.048,
+        "Hoa Hao": 0.01,
+        "Protestantism": 0.01,
+        "Cao Dai": 0.006,
+        "Other": 0.002
+    },
+    "location": {
+        "Ho Chi Minh City": 0.13604,
+        "Hanoi": 0.08557,
+        "An Giang": 0.04811,
+        "Haiphong": 0.04531,
+        "Đồng Nai": 0.04363,
+        "Ninh Bình": 0.04287,
+        "Đồng Tháp": 0.04246,
+        "Thanh Hóa": 0.04202,
+        "Vĩnh Long": 0.04136,
+        "Cần Thơ": 0.0408,
+        "Phú Thọ": 0.03908,
+        "Lâm Đồng": 0.03763,
+        "Nghệ An": 0.03723,
+        "Bắc Ninh": 0.03516,
+        "Gia Lai": 0.03482,
+        "Hưng Yên": 0.03466,
+        "Đắk Lắk": 0.03252,
+        "Tây Ninh": 0.03161,
+        "Da Nang": 0.02978,
+        "Cà Mau": 0.02532,
+        "Khánh Hòa": 0.0218,
+        "Quảng Ngãi": 0.021,
+        "Quảng Trị": 0.01818,
+        "Lào Cai": 0.01728,
+        "Hà Tĩnh": 0.01577
+    }
+}

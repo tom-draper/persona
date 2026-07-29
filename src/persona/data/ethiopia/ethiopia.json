@@ -1,0 +1,79 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2007 Population and Housing Census, Central Statistical Agency of Ethiopia",
+                "year": 2007,
+                "url": "https://www.statsethiopia.gov.et/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population projections (July 2023), Ethiopian Statistical Service",
+                "year": 2024,
+                "url": "https://www.statsethiopia.gov.et/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1482,
+        "5-9": 0.1281,
+        "10-14": 0.1174,
+        "15-19": 0.112,
+        "20-24": 0.0996,
+        "25-29": 0.0859,
+        "30-34": 0.0703,
+        "35-39": 0.0542,
+        "40-44": 0.0434,
+        "45-49": 0.036,
+        "50-54": 0.0298,
+        "55-59": 0.0246,
+        "60-64": 0.0188,
+        "65-69": 0.0129,
+        "70-74": 0.0088,
+        "75-79": 0.0058,
+        "80-84": 0.0028,
+        "85+": 0.0013
+    },
+    "sex": {
+        "Male": 0.501,
+        "Female": 0.499
+    },
+    "religion": {
+        "Ethiopian Orthodoxy": 0.435,
+        "Islam": 0.339,
+        "Protestantism": 0.186,
+        "Other": 0.033,
+        "Roman Catholicism": 0.007
+    },
+    "location": {
+        "Oromia": 0.32995,
+        "Amhara": 0.24386,
+        "Central Ethiopia": 0.08523,
+        "South Ethiopia": 0.06121,
+        "Tigray": 0.05519,
+        "Somali": 0.05373,
+        "Addis Ababa": 0.04607,
+        "Sidama": 0.04279,
+        "South West Ethiopia Peoples": 0.03387,
+        "Afar": 0.02704,
+        "Benishangul-Gumuz": 0.0101,
+        "Dire Dawa": 0.00445,
+        "Gambela": 0.00424,
+        "Harari": 0.00228
+    }
+}

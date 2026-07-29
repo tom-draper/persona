@@ -21,19 +21,19 @@
 - [X] `australia`
 - [X] `canada`
 - [X] `brazil`
-- [ ] `mexico`
-- [ ] `russia`
+- [X] `mexico`
+- [X] `russia`
 - [X] `china`
 - [X] `india`
 - [X] `nigeria`
 - [X] `indonesia`
 - [X] `pakistan`
-- [ ] `bangladesh`
-- [ ] `japan`
-- [ ] `philippines`
-- [ ] `ethiopia`
-- [ ] `egypt`
-- [ ] `vietnam`
+- [X] `bangladesh`
+- [X] `japan`
+- [X] `philippines`
+- [X] `ethiopia`
+- [X] `egypt`
+- [X] `vietnam`
 - [ ] `iran`
 - [ ] `turkey`
 - [ ] `thailand`

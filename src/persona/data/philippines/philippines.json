@@ -1,0 +1,83 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2020 Census of Population and Housing (religion), Philippine Statistics Authority",
+                "year": 2020,
+                "url": "https://psa.gov.ph/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2020 Census of Population and Housing, Philippine Statistics Authority",
+                "year": 2020,
+                "url": "https://psa.gov.ph/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0836,
+        "5-9": 0.0999,
+        "10-14": 0.1026,
+        "15-19": 0.0971,
+        "20-24": 0.0935,
+        "25-29": 0.0881,
+        "30-34": 0.0807,
+        "35-39": 0.0693,
+        "40-44": 0.0619,
+        "45-49": 0.0525,
+        "50-54": 0.0465,
+        "55-59": 0.0395,
+        "60-64": 0.0323,
+        "65-69": 0.0239,
+        "70-74": 0.0155,
+        "75-79": 0.0078,
+        "80-84": 0.0037,
+        "85+": 0.0018
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Roman Catholicism": 0.788,
+        "Protestantism": 0.076,
+        "Islam": 0.064,
+        "Iglesia ni Cristo": 0.026,
+        "Other": 0.022
+    },
+    "location": {
+        "Calabarzon": 0.15021,
+        "National Capital Region": 0.12421,
+        "Central Luzon": 0.11523,
+        "Central Visayas": 0.05891,
+        "Bicol Region": 0.0538,
+        "Davao Region": 0.04781,
+        "Northern Mindanao": 0.04594,
+        "Ilocos Region": 0.04739,
+        "Zamboanga Peninsula": 0.04515,
+        "Negros Island Region": 0.04351,
+        "Western Visayas": 0.04313,
+        "Eastern Visayas": 0.04104,
+        "Bangsamoro": 0.04032,
+        "Soccsksargen": 0.03959,
+        "Cagayan Valley": 0.03351,
+        "Mimaropa": 0.02879,
+        "Caraga": 0.02542,
+        "Cordillera Administrative Region": 0.01605
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation survey, VCIOM (Russian Public Opinion Research Center)",
+                "year": 2025,
+                "url": "https://wciom.com/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Federal subject population estimates, Rosstat",
+                "year": 2025,
+                "url": "https://eng.rosstat.gov.ru/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0495,
+        "5-9": 0.064,
+        "10-14": 0.0617,
+        "15-19": 0.0531,
+        "20-24": 0.0488,
+        "25-29": 0.0522,
+        "30-34": 0.0749,
+        "35-39": 0.0882,
+        "40-44": 0.0778,
+        "45-49": 0.0708,
+        "50-54": 0.0636,
+        "55-59": 0.0601,
+        "60-64": 0.0693,
+        "65-69": 0.0601,
+        "70-74": 0.0466,
+        "75-79": 0.0228,
+        "80-84": 0.019,
+        "85+": 0.0176
+    },
+    "sex": {
+        "Male": 0.464,
+        "Female": 0.536
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.67,
+        "No religion": 0.15,
+        "Islam": 0.07,
+        "Other": 0.04,
+        "Buddhism": 0.01,
+        "Protestantism": 0.01
+    },
+    "location": {
+        "Moscow": 0.13043,
+        "Moscow Oblast": 0.08624,
+        "Krasnodar Krai": 0.05747,
+        "Saint Petersburg": 0.05554,
+        "Sverdlovsk Oblast": 0.0415,
+        "Rostov Oblast": 0.04068,
+        "Bashkortostan": 0.0398,
+        "Tatarstan": 0.03951,
+        "Chelyabinsk Oblast": 0.03328,
+        "Dagestan": 0.03206,
+        "Samara Oblast": 0.03059,
+        "Nizhny Novgorod Oblast": 0.02989,
+        "Stavropol Krai": 0.02837,
+        "Krasnoyarsk Krai": 0.02791,
+        "Novosibirsk Oblast": 0.02739,
+        "Kemerovo Oblast": 0.02485,
+        "Perm Krai": 0.02442,
+        "Volgograd Oblast": 0.02396,
+        "Saratov Oblast": 0.0233,
+        "Irkutsk Oblast": 0.02279,
+        "Voronezh Oblast": 0.02223,
+        "Altai Krai": 0.02065,
+        "Leningrad Oblast": 0.02024,
+        "Orenburg Oblast": 0.01786,
+        "Omsk Oblast": 0.01776,
+        "Primorsky Krai": 0.01769,
+        "Khanty-Mansi Autonomous Okrug": 0.01751,
+        "Tyumen Oblast": 0.01599,
+        "Chechnya": 0.0155,
+        "Belgorod Oblast": 0.01457
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Census 2020 (religion), INEGI",
+                "year": 2020,
+                "url": "https://en.www.inegi.org.mx/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2020, National Institute of Statistics and Geography (INEGI)",
+                "year": 2020,
+                "url": "https://en.www.inegi.org.mx/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0795,
+        "5-9": 0.0829,
+        "10-14": 0.0868,
+        "15-19": 0.086,
+        "20-24": 0.085,
+        "25-29": 0.0817,
+        "30-34": 0.0789,
+        "35-39": 0.072,
+        "40-44": 0.0657,
+        "45-49": 0.0607,
+        "50-54": 0.0553,
+        "55-59": 0.0472,
+        "60-64": 0.0385,
+        "65-69": 0.0292,
+        "70-74": 0.0211,
+        "75-79": 0.0144,
+        "80-84": 0.0089,
+        "85+": 0.0063
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "religion": {
+        "Roman Catholicism": 0.778,
+        "Protestantism": 0.117,
+        "No religion": 0.084,
+        "Christianity or Other Christianity": 0.018,
+        "Other": 0.003
+    },
+    "location": {
+        "State of Mexico": 0.13485,
+        "Mexico City": 0.07309,
+        "Jalisco": 0.06625,
+        "Veracruz": 0.06398,
+        "Puebla": 0.05224,
+        "Guanajuato": 0.04894,
+        "Nuevo León": 0.0459,
+        "Chiapas": 0.04399,
+        "Michoacán": 0.03769,
+        "Oaxaca": 0.03279,
+        "Baja California": 0.02991,
+        "Chihuahua": 0.02969,
+        "Guerrero": 0.0281,
+        "Tamaulipas": 0.02799,
+        "Coahuila": 0.02497,
+        "Hidalgo": 0.02446,
+        "Sinaloa": 0.02402,
+        "Sonora": 0.02337,
+        "San Luis Potosí": 0.0224,
+        "Tabasco": 0.01907,
+        "Querétaro": 0.0188,
+        "Yucatán": 0.01842,
+        "Morelos": 0.01565,
+        "Quintana Roo": 0.01474,
+        "Durango": 0.01454,
+        "Zacatecas": 0.01287,
+        "Aguascalientes": 0.01131,
+        "Tlaxcala": 0.01066,
+        "Nayarit": 0.0098,
+        "Campeche": 0.00737,
+        "Baja California Sur": 0.00634,
+        "Colima": 0.0058
+    }
+}

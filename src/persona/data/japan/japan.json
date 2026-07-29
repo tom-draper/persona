@@ -1,0 +1,112 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation, Pew Research Center",
+                "year": 2023,
+                "url": "https://www.pewresearch.org/religion/",
+                "note": "Self-identified affiliation; most Japanese practise Shinto and Buddhist rituals syncretically without exclusive affiliation."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, Statistics Bureau of Japan",
+                "year": 2025,
+                "url": "https://www.stat.go.jp/english/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0333,
+        "5-9": 0.0397,
+        "10-14": 0.0435,
+        "15-19": 0.0456,
+        "20-24": 0.0488,
+        "25-29": 0.0489,
+        "30-34": 0.0495,
+        "35-39": 0.0553,
+        "40-44": 0.0616,
+        "45-49": 0.0745,
+        "50-54": 0.0776,
+        "55-59": 0.0655,
+        "60-64": 0.0606,
+        "65-69": 0.0594,
+        "70-74": 0.0703,
+        "75-79": 0.0627,
+        "80-84": 0.0494,
+        "85+": 0.0538
+    },
+    "sex": {
+        "Male": 0.488,
+        "Female": 0.512
+    },
+    "religion": {
+        "Buddhism": 0.46,
+        "No religion": 0.42,
+        "Other": 0.09,
+        "Christianity or Other Christianity": 0.02
+    },
+    "location": {
+        "Tokyo": 0.11578,
+        "Kanagawa": 0.07472,
+        "Osaka": 0.07123,
+        "Aichi": 0.06054,
+        "Saitama": 0.05922,
+        "Chiba": 0.05086,
+        "Hyogo": 0.04327,
+        "Fukuoka": 0.0413,
+        "Hokkaido": 0.04052,
+        "Shizuoka": 0.02819,
+        "Ibaraki": 0.02268,
+        "Hiroshima": 0.02181,
+        "Kyoto": 0.02034,
+        "Miyagi": 0.0181,
+        "Niigata": 0.01681,
+        "Nagano": 0.01589,
+        "Gifu": 0.01537,
+        "Gunma": 0.01518,
+        "Tochigi": 0.01516,
+        "Okayama": 0.0147,
+        "Fukushima": 0.01391,
+        "Mie": 0.01377,
+        "Kumamoto": 0.01364,
+        "Kagoshima": 0.0123,
+        "Okinawa": 0.01193,
+        "Shiga": 0.01132,
+        "Nara": 0.01031,
+        "Yamaguchi": 0.01027,
+        "Ehime": 0.01024,
+        "Nagasaki": 0.01001,
+        "Aomori": 0.00927,
+        "Iwate": 0.00915,
+        "Ishikawa": 0.00884,
+        "Oita": 0.00875,
+        "Miyazaki": 0.00828,
+        "Yamagata": 0.00807,
+        "Toyama": 0.00801,
+        "Kagawa": 0.00738,
+        "Akita": 0.00717,
+        "Wakayama": 0.00702,
+        "Saga": 0.00635,
+        "Yamanashi": 0.00634,
+        "Fukui": 0.00593,
+        "Tokushima": 0.00549,
+        "Kochi": 0.00523,
+        "Shimane": 0.00512,
+        "Tottori": 0.00426
+    }
+}

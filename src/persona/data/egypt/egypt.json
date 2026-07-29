@@ -1,0 +1,91 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2020 International Religious Freedom Report: Egypt, US Department of State",
+                "year": 2020,
+                "url": "https://www.state.gov/reports/2020-report-on-international-religious-freedom/egypt/",
+                "note": "Egypt excludes religion from its census; figures are widely cited estimates."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, Central Agency for Public Mobilization and Statistics (CAPMAS)",
+                "year": 2023,
+                "url": "https://www.capmas.gov.eg/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1029,
+        "5-9": 0.1159,
+        "10-14": 0.1056,
+        "15-19": 0.0915,
+        "20-24": 0.0837,
+        "25-29": 0.0766,
+        "30-34": 0.0756,
+        "35-39": 0.0718,
+        "40-44": 0.062,
+        "45-49": 0.0524,
+        "50-54": 0.0444,
+        "55-59": 0.0376,
+        "60-64": 0.0305,
+        "65-69": 0.0226,
+        "70-74": 0.0146,
+        "75-79": 0.008,
+        "80-84": 0.0031,
+        "85+": 0.0014
+    },
+    "sex": {
+        "Male": 0.505,
+        "Female": 0.495
+    },
+    "religion": {
+        "Islam": 0.906,
+        "Christianity or Other Christianity": 0.093,
+        "Other": 0.001
+    },
+    "location": {
+        "Cairo": 0.09803,
+        "Giza": 0.08938,
+        "Sharqia": 0.0753,
+        "Dakahlia": 0.06617,
+        "Beheira": 0.06506,
+        "Minya": 0.05937,
+        "Qalyubiyya": 0.05754,
+        "Sohag": 0.05358,
+        "Alexandria": 0.05347,
+        "Gharbia": 0.0514,
+        "Asyut": 0.04754,
+        "Monufia": 0.04447,
+        "Faiyum": 0.03882,
+        "Kafr El Sheikh": 0.03498,
+        "Qena": 0.03423,
+        "Beni Suef": 0.03392,
+        "Damietta": 0.01897,
+        "Aswan": 0.01592,
+        "Ismailia": 0.0139,
+        "Luxor": 0.0134,
+        "Suez": 0.00791,
+        "Port Said": 0.00783,
+        "Matrouh": 0.00544,
+        "North Sinai": 0.0051,
+        "Red Sea": 0.00384,
+        "New Valley": 0.00304,
+        "South Sinai": 0.00137
+    }
+}
