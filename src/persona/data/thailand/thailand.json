@@ -1,0 +1,94 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2018 Population Census (religion), National Statistical Office of Thailand",
+                "year": 2018,
+                "url": "https://www.nso.go.th/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Provincial population, National Statistical Office of Thailand",
+                "year": 2024,
+                "url": "https://www.nso.go.th/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0433,
+        "5-9": 0.0507,
+        "10-14": 0.0569,
+        "15-19": 0.0607,
+        "20-24": 0.0652,
+        "25-29": 0.0717,
+        "30-34": 0.0712,
+        "35-39": 0.0706,
+        "40-44": 0.0748,
+        "45-49": 0.074,
+        "50-54": 0.0763,
+        "55-59": 0.0727,
+        "60-64": 0.0647,
+        "65-69": 0.052,
+        "70-74": 0.0385,
+        "75-79": 0.0252,
+        "80-84": 0.0163,
+        "85+": 0.0152
+    },
+    "sex": {
+        "Male": 0.487,
+        "Female": 0.513
+    },
+    "religion": {
+        "Buddhism": 0.934,
+        "Islam": 0.054,
+        "Christianity or Other Christianity": 0.011,
+        "Other": 0.001
+    },
+    "location": {
+        "Bangkok": 0.13159,
+        "Nakhon Ratchasima": 0.06319,
+        "Ubon Ratchathani": 0.04505,
+        "Chiang Mai": 0.04339,
+        "Khon Kaen": 0.04274,
+        "Chonburi": 0.03946,
+        "Buriram": 0.03777,
+        "Udon Thani": 0.03743,
+        "Nakhon Si Thammarat": 0.03702,
+        "Songkhla": 0.03451,
+        "Samut Prakan": 0.03331,
+        "Surin": 0.0328,
+        "Nonthaburi": 0.03179,
+        "Chiang Rai": 0.03131,
+        "Roi Et": 0.03078,
+        "Pathum Thani": 0.02981,
+        "Sakon Nakhon": 0.02745,
+        "Chaiyaphum": 0.02668,
+        "Surat Thani": 0.02598,
+        "Nakhon Sawan": 0.02446,
+        "Kalasin": 0.0232,
+        "Phetchabun": 0.02318,
+        "Maha Sarakham": 0.02243,
+        "Nakhon Pathom": 0.02233,
+        "Rayong": 0.01886,
+        "Lopburi": 0.01749,
+        "Lampang": 0.01698,
+        "Kamphaeng Phet": 0.01691,
+        "Tak": 0.01686,
+        "Loei": 0.01524
+    }
+}

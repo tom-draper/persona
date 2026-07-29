@@ -1,0 +1,82 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 National Census (religion), Statistics Poland (GUS)",
+                "year": 2021,
+                "url": "https://stat.gov.pl/en/",
+                "note": "20.6% of respondents did not declare a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 National Census, Statistics Poland (GUS)",
+                "year": 2021,
+                "url": "https://stat.gov.pl/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0457,
+        "5-9": 0.0508,
+        "10-14": 0.0545,
+        "15-19": 0.05,
+        "20-24": 0.0486,
+        "25-29": 0.0588,
+        "30-34": 0.0702,
+        "35-39": 0.0819,
+        "40-44": 0.084,
+        "45-49": 0.0759,
+        "50-54": 0.0634,
+        "55-59": 0.0573,
+        "60-64": 0.0634,
+        "65-69": 0.0655,
+        "70-74": 0.055,
+        "75-79": 0.0327,
+        "80-84": 0.0203,
+        "85+": 0.022
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "religion": {
+        "Roman Catholicism": 0.713,
+        "No religion": 0.069,
+        "Eastern Orthodoxy": 0.004,
+        "Protestantism": 0.004,
+        "Other": 0.001
+    },
+    "location": {
+        "Masovian": 0.14722,
+        "Silesian": 0.11431,
+        "Greater Poland": 0.09291,
+        "Lesser Poland": 0.09164,
+        "Lower Silesian": 0.07653,
+        "Pomeranian": 0.06307,
+        "Łódź": 0.06248,
+        "Subcarpathian": 0.05502,
+        "Lublin": 0.05315,
+        "Kuyavian-Pomeranian": 0.05287,
+        "West Pomeranian": 0.04324,
+        "Warmian-Masurian": 0.03593,
+        "Holy Cross": 0.03082,
+        "Podlaskie": 0.0302,
+        "Lubusz": 0.02584,
+        "Opole": 0.02477
+    }
+}

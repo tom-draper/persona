@@ -1,0 +1,75 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Census 2022 (religion), Statistics South Africa",
+                "year": 2022,
+                "url": "https://www.statssa.gov.za/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2022, Statistics South Africa",
+                "year": 2022,
+                "url": "https://www.statssa.gov.za/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0931,
+        "5-9": 0.0829,
+        "10-14": 0.0848,
+        "15-19": 0.0828,
+        "20-24": 0.0815,
+        "25-29": 0.0892,
+        "30-34": 0.0903,
+        "35-39": 0.0844,
+        "40-44": 0.071,
+        "45-49": 0.0548,
+        "50-54": 0.0459,
+        "55-59": 0.0396,
+        "60-64": 0.0346,
+        "65-69": 0.0264,
+        "70-74": 0.0177,
+        "75-79": 0.0094,
+        "80-84": 0.006,
+        "85+": 0.0056
+    },
+    "sex": {
+        "Male": 0.486,
+        "Female": 0.514
+    },
+    "religion": {
+        "Christianity or Other Christianity": 0.853,
+        "African traditional religion": 0.078,
+        "No religion": 0.031,
+        "Islam": 0.016,
+        "Hinduism": 0.011,
+        "Other": 0.011
+    },
+    "location": {
+        "Gauteng": 0.24343,
+        "KwaZulu-Natal": 0.2003,
+        "Western Cape": 0.11983,
+        "Eastern Cape": 0.11656,
+        "Limpopo": 0.10596,
+        "Mpumalanga": 0.08292,
+        "North West": 0.06134,
+        "Free State": 0.04779,
+        "Northern Cape": 0.02186
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2011 National Census (religion), Statistical Center of Iran",
+                "year": 2011,
+                "url": "https://www.amar.org.ir/english"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Provincial population estimates, Statistical Center of Iran",
+                "year": 2023,
+                "url": "https://www.amar.org.ir/english"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0684,
+        "5-9": 0.0838,
+        "10-14": 0.0761,
+        "15-19": 0.0683,
+        "20-24": 0.064,
+        "25-29": 0.0702,
+        "30-34": 0.0914,
+        "35-39": 0.1011,
+        "40-44": 0.0875,
+        "45-49": 0.0672,
+        "50-54": 0.0575,
+        "55-59": 0.0462,
+        "60-64": 0.0392,
+        "65-69": 0.0304,
+        "70-74": 0.0238,
+        "75-79": 0.0137,
+        "80-84": 0.0074,
+        "85+": 0.0038
+    },
+    "sex": {
+        "Male": 0.508,
+        "Female": 0.492
+    },
+    "religion": {
+        "Islam": 0.994,
+        "Christianity or Other Christianity": 0.002,
+        "Zoroastrianism": 0.001,
+        "Judaism": 0.001,
+        "Other": 0.002
+    },
+    "location": {
+        "Tehran": 0.16545,
+        "Razavi Khorasan": 0.08002,
+        "Isfahan": 0.06378,
+        "Fars": 0.0609,
+        "Khuzestan": 0.05868,
+        "East Azerbaijan": 0.04874,
+        "Mazandaran": 0.041,
+        "West Azerbaijan": 0.04071,
+        "Kerman": 0.03954,
+        "Sistan and Baluchestan": 0.03448,
+        "Alborz": 0.0339,
+        "Gilan": 0.03162,
+        "Kermanshah": 0.02487,
+        "Golestan": 0.02351,
+        "Hormozgan": 0.02243,
+        "Lorestan": 0.02215,
+        "Hamadan": 0.02181,
+        "Kurdistan": 0.02004,
+        "Markazi": 0.01783,
+        "Qom": 0.01614,
+        "Qazvin": 0.01594,
+        "Ardabil": 0.01594,
+        "Bushehr": 0.01458,
+        "Yazd": 0.01436,
+        "Zanjan": 0.0137,
+        "Chaharmahal and Bakhtiari": 0.01208,
+        "North Khorasan": 0.01078,
+        "South Khorasan": 0.00976,
+        "Kohgiluyeh and Boyer-Ahmad": 0.00904,
+        "Semnan": 0.00888,
+        "Ilam": 0.00734
+    }
+}

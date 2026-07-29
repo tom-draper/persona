@@ -1,0 +1,99 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation survey, KONDA Research",
+                "year": 2024,
+                "url": "https://konda.com.tr/en/",
+                "note": "Official records register all citizens as Muslim at birth; figures reflect survey-based self-identification."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Address-Based Population Registration System, Turkish Statistical Institute (TurkStat)",
+                "year": 2021,
+                "url": "https://www.tuik.gov.tr/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0658,
+        "5-9": 0.0762,
+        "10-14": 0.0763,
+        "15-19": 0.0721,
+        "20-24": 0.0781,
+        "25-29": 0.0785,
+        "30-34": 0.0752,
+        "35-39": 0.0743,
+        "40-44": 0.0769,
+        "45-49": 0.0699,
+        "50-54": 0.0569,
+        "55-59": 0.055,
+        "60-64": 0.0449,
+        "65-69": 0.0371,
+        "70-74": 0.0277,
+        "75-79": 0.0172,
+        "80-84": 0.0103,
+        "85+": 0.0077
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Islam": 0.92,
+        "No religion": 0.07,
+        "Christianity or Other Christianity": 0.002,
+        "Other": 0.008
+    },
+    "location": {
+        "Istanbul": 0.233,
+        "Ankara": 0.08454,
+        "İzmir": 0.0651,
+        "Bursa": 0.0463,
+        "Antalya": 0.03853,
+        "Konya": 0.03349,
+        "Adana": 0.03329,
+        "Şanlıurfa": 0.03152,
+        "Gaziantep": 0.03134,
+        "Kocaeli": 0.02991,
+        "Mersin": 0.02782,
+        "Diyarbakır": 0.02635,
+        "Hatay": 0.02457,
+        "Manisa": 0.02143,
+        "Kayseri": 0.0211,
+        "Samsun": 0.02017,
+        "Balıkesir": 0.01839,
+        "Kahramanmaraş": 0.01723,
+        "Van": 0.01678,
+        "Aydın": 0.01668,
+        "Tekirdağ": 0.01638,
+        "Sakarya": 0.0156,
+        "Denizli": 0.01546,
+        "Muğla": 0.01502,
+        "Eskişehir": 0.01321,
+        "Mardin": 0.01269,
+        "Trabzon": 0.01201,
+        "Malatya": 0.01189,
+        "Ordu": 0.01119,
+        "Erzurum": 0.01113,
+        "Afyonkarahisar": 0.01095,
+        "Kütahya": 0.00851,
+        "Kastamonu": 0.00552,
+        "Çankırı": 0.00289
+    }
+}

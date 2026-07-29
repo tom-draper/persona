@@ -34,14 +34,14 @@
 - [X] `ethiopia`
 - [X] `egypt`
 - [X] `vietnam`
-- [ ] `iran`
-- [ ] `turkey`
-- [ ] `thailand`
-- [ ] `south_africa`
-- [ ] `south_korea`
-- [ ] `ukraine`
-- [ ] `poland`
-- [ ] `morocco`
+- [X] `iran`
+- [X] `turkey`
+- [X] `thailand`
+- [X] `south_africa`
+- [X] `south_korea`
+- [X] `ukraine`
+- [X] `poland`
+- [X] `morocco`
 - [ ] `greece`
 - [ ] `norway`
 - [ ] `finland`
