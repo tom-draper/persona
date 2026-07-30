@@ -1,0 +1,75 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation, Statistics Austria",
+                "year": 2021,
+                "url": "https://www.statistik.at/en/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by state, Statistics Austria",
+                "year": 2022,
+                "url": "https://www.statistik.at/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0466,
+        "5-9": 0.0492,
+        "10-14": 0.0472,
+        "15-19": 0.0481,
+        "20-24": 0.0521,
+        "25-29": 0.0631,
+        "30-34": 0.0696,
+        "35-39": 0.0685,
+        "40-44": 0.0672,
+        "45-49": 0.064,
+        "50-54": 0.0729,
+        "55-59": 0.0788,
+        "60-64": 0.0711,
+        "65-69": 0.0566,
+        "70-74": 0.0459,
+        "75-79": 0.0376,
+        "80-84": 0.0352,
+        "85+": 0.0263
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "religion": {
+        "Roman Catholicism": 0.552,
+        "No religion": 0.224,
+        "Islam": 0.083,
+        "Other": 0.054,
+        "Eastern Orthodoxy": 0.049,
+        "Protestantism": 0.038
+    },
+    "location": {
+        "Vienna": 0.21517,
+        "Lower Austria": 0.18924,
+        "Upper Austria": 0.16767,
+        "Styria": 0.13957,
+        "Tyrol": 0.08512,
+        "Carinthia": 0.06288,
+        "Salzburg": 0.06246,
+        "Vorarlberg": 0.04474,
+        "Burgenland": 0.03315
+    }
+}

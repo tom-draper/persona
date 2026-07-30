@@ -1,0 +1,76 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Cameroon (religion), CIA",
+                "year": 2022,
+                "url": "https://www.cia.gov/the-world-factbook/countries/cameroon/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Regional population estimates, National Institute of Statistics (Cameroon)",
+                "year": 2022,
+                "url": "https://ins-cameroun.cm/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1548,
+        "5-9": 0.1396,
+        "10-14": 0.1232,
+        "15-19": 0.1076,
+        "20-24": 0.0899,
+        "25-29": 0.0776,
+        "30-34": 0.0689,
+        "35-39": 0.0583,
+        "40-44": 0.0477,
+        "45-49": 0.0374,
+        "50-54": 0.0292,
+        "55-59": 0.0217,
+        "60-64": 0.0163,
+        "65-69": 0.0118,
+        "70-74": 0.0077,
+        "75-79": 0.0047,
+        "80-84": 0.0024,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.498,
+        "Female": 0.502
+    },
+    "religion": {
+        "Roman Catholicism": 0.331,
+        "Islam": 0.306,
+        "Protestantism": 0.271,
+        "Christianity or Other Christianity": 0.061,
+        "African traditional religion": 0.013,
+        "No religion": 0.012
+    },
+    "location": {
+        "Centre": 0.18431,
+        "Far North": 0.17917,
+        "Littoral": 0.15,
+        "North": 0.10842,
+        "Northwest": 0.08996,
+        "West": 0.0885,
+        "Southwest": 0.07094,
+        "Adamawa": 0.05305,
+        "East": 0.03917,
+        "South": 0.03648
+    }
+}

@@ -26,6 +26,7 @@ alias = {
     "ksa": "saudi_arabia",
     "ivory_coast": "cote_divoire",
     "holland": "netherlands",
+    "czech_republic": "czechia",
 }
 
 

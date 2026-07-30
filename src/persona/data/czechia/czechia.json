@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), Czech Statistical Office (ČSÚ)",
+                "year": 2021,
+                "url": "https://www.czso.cz/csu/czso/home",
+                "note": "Shares among respondents who stated a belief; 30% did not answer the voluntary question."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, Czech Statistical Office (ČSÚ)",
+                "year": 2021,
+                "url": "https://www.czso.cz/csu/czso/home"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0506,
+        "5-9": 0.0527,
+        "10-14": 0.0534,
+        "15-19": 0.0523,
+        "20-24": 0.0498,
+        "25-29": 0.054,
+        "30-34": 0.0663,
+        "35-39": 0.0679,
+        "40-44": 0.0739,
+        "45-49": 0.0859,
+        "50-54": 0.0698,
+        "55-59": 0.0628,
+        "60-64": 0.0551,
+        "65-69": 0.0593,
+        "70-74": 0.0565,
+        "75-79": 0.045,
+        "80-84": 0.0258,
+        "85+": 0.0189
+    },
+    "sex": {
+        "Male": 0.493,
+        "Female": 0.507
+    },
+    "religion": {
+        "No religion": 0.703,
+        "Believers without a specific religion": 0.141,
+        "Roman Catholicism": 0.103,
+        "Christianity or Other Christianity": 0.035,
+        "Other": 0.018
+    },
+    "location": {
+        "Central Bohemian": 0.13532,
+        "Prague": 0.1289,
+        "South Moravian": 0.11273,
+        "Moravian-Silesian": 0.10777,
+        "Ústí nad Labem": 0.07383,
+        "South Bohemian": 0.05981,
+        "Olomouc": 0.05785,
+        "Plzeň": 0.05631,
+        "Zlín": 0.05291,
+        "Hradec Králové": 0.05081,
+        "Pardubice": 0.04864,
+        "Vysočina": 0.04727,
+        "Liberec": 0.0411,
+        "Karlovy Vary": 0.02675
+    }
+}

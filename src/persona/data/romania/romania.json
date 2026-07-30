@@ -1,0 +1,97 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), National Institute of Statistics (INS Romania)",
+                "year": 2021,
+                "url": "https://www.insse.ro/cms/en",
+                "note": "13.9% did not state a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, National Institute of Statistics (INS Romania)",
+                "year": 2021,
+                "url": "https://www.insse.ro/cms/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0499,
+        "5-9": 0.0536,
+        "10-14": 0.0553,
+        "15-19": 0.0567,
+        "20-24": 0.0524,
+        "25-29": 0.0527,
+        "30-34": 0.0621,
+        "35-39": 0.0682,
+        "40-44": 0.0706,
+        "45-49": 0.079,
+        "50-54": 0.0812,
+        "55-59": 0.0652,
+        "60-64": 0.0556,
+        "65-69": 0.0641,
+        "70-74": 0.0549,
+        "75-79": 0.0343,
+        "80-84": 0.0243,
+        "85+": 0.0199
+    },
+    "sex": {
+        "Male": 0.484,
+        "Female": 0.516
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.734,
+        "Protestantism": 0.062,
+        "Roman Catholicism": 0.039,
+        "Other": 0.012,
+        "No religion": 0.008,
+        "Greek Catholicism": 0.006
+    },
+    "location": {
+        "Bucharest": 0.10772,
+        "Iași": 0.04773,
+        "Prahova": 0.04361,
+        "Cluj": 0.04261,
+        "Constanța": 0.04115,
+        "Timiș": 0.04081,
+        "Suceava": 0.04031,
+        "Bacău": 0.03773,
+        "Dolj": 0.03761,
+        "Argeș": 0.03576,
+        "Bihor": 0.03459,
+        "Brașov": 0.03429,
+        "Ilfov": 0.03405,
+        "Mureș": 0.03251,
+        "Galați": 0.03117,
+        "Dâmbovița": 0.03008,
+        "Neamț": 0.02849,
+        "Maramureș": 0.02839,
+        "Arad": 0.02573,
+        "Buzău": 0.02541,
+        "Botoșani": 0.02464,
+        "Sibiu": 0.02436,
+        "Olt": 0.02405,
+        "Vaslui": 0.02351,
+        "Vâlcea": 0.02145,
+        "Satu Mare": 0.02074,
+        "Vrancea": 0.02104,
+        "Alba": 0.02045,
+        "Teleorman": 0.0203,
+        "Gorj": 0.01974
+    }
+}

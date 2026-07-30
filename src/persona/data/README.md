@@ -66,6 +66,14 @@
 - [X] `cote_divoire`
 - [X] `madagascar`
 - [X] `kazakhstan`
+- [X] `czechia`
+- [X] `hungary`
+- [X] `austria`
+- [X] `switzerland`
+- [X] `romania`
+- [X] `syria`
+- [X] `sri_lanka`
+- [X] `cameroon`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

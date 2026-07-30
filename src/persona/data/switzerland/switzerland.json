@@ -1,0 +1,92 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Structural Survey (religion, population 15+), Swiss Federal Statistical Office (FSO)",
+                "year": 2024,
+                "url": "https://www.bfs.admin.ch/bfs/en/home.html"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by canton, Swiss Federal Statistical Office (FSO)",
+                "year": 2023,
+                "url": "https://www.bfs.admin.ch/bfs/en/home.html"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0489,
+        "5-9": 0.051,
+        "10-14": 0.0502,
+        "15-19": 0.0484,
+        "20-24": 0.0515,
+        "25-29": 0.0603,
+        "30-34": 0.0703,
+        "35-39": 0.0718,
+        "40-44": 0.0708,
+        "45-49": 0.0676,
+        "50-54": 0.0717,
+        "55-59": 0.0755,
+        "60-64": 0.066,
+        "65-69": 0.0531,
+        "70-74": 0.0456,
+        "75-79": 0.0406,
+        "80-84": 0.0288,
+        "85+": 0.028
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "No religion": 0.368,
+        "Roman Catholicism": 0.3,
+        "Protestantism": 0.187,
+        "Christianity or Other Christianity": 0.06,
+        "Islam": 0.06,
+        "Other": 0.013
+    },
+    "location": {
+        "Zürich": 0.17903,
+        "Bern": 0.12022,
+        "Vaud": 0.0939,
+        "Aargau": 0.07999,
+        "St. Gallen": 0.0593,
+        "Geneva": 0.05836,
+        "Lucerne": 0.04798,
+        "Ticino": 0.04045,
+        "Valais": 0.04017,
+        "Fribourg": 0.03751,
+        "Basel-Landschaft": 0.03376,
+        "Thurgau": 0.03261,
+        "Solothurn": 0.03198,
+        "Grisons": 0.02306,
+        "Basel-Stadt": 0.02318,
+        "Neuchâtel": 0.02027,
+        "Schwyz": 0.01869,
+        "Zug": 0.01484,
+        "Schaffhausen": 0.00958,
+        "Jura": 0.0085,
+        "Appenzell Ausserrhoden": 0.00637,
+        "Nidwalden": 0.00502,
+        "Glarus": 0.00471,
+        "Obwalden": 0.00439,
+        "Uri": 0.00424,
+        "Appenzell Innerrhoden": 0.00188
+    }
+}

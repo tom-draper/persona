@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2012 Census (religion), Department of Census and Statistics (Sri Lanka)",
+                "year": 2012,
+                "url": "https://www.statistics.gov.lk/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2012 Census, Department of Census and Statistics (Sri Lanka)",
+                "year": 2012,
+                "url": "https://www.statistics.gov.lk/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0712,
+        "5-9": 0.0745,
+        "10-14": 0.078,
+        "15-19": 0.0786,
+        "20-24": 0.0732,
+        "25-29": 0.0718,
+        "30-34": 0.0687,
+        "35-39": 0.0677,
+        "40-44": 0.0719,
+        "45-49": 0.0634,
+        "50-54": 0.0581,
+        "55-59": 0.055,
+        "60-64": 0.0505,
+        "65-69": 0.0427,
+        "70-74": 0.034,
+        "75-79": 0.0222,
+        "80-84": 0.0114,
+        "85+": 0.0071
+    },
+    "sex": {
+        "Male": 0.484,
+        "Female": 0.516
+    },
+    "religion": {
+        "Buddhism": 0.701,
+        "Hinduism": 0.126,
+        "Islam": 0.107,
+        "Roman Catholicism": 0.056,
+        "Christianity or Other Christianity": 0.013
+    },
+    "location": {
+        "Colombo": 0.12054,
+        "Gampaha": 0.11953,
+        "Kurunegala": 0.08394,
+        "Kandy": 0.07133,
+        "Kalutara": 0.06337,
+        "Ratnapura": 0.05643,
+        "Galle": 0.05515,
+        "Anuradhapura": 0.04463,
+        "Kegalle": 0.0436,
+        "Badulla": 0.04229,
+        "Matara": 0.04222,
+        "Puttalam": 0.03954,
+        "Nuwara Eliya": 0.03691,
+        "Ampara": 0.03368,
+        "Jaffna": 0.03028,
+        "Batticaloa": 0.02731,
+        "Matale": 0.02513,
+        "Monaragala": 0.02339,
+        "Polonnaruwa": 0.02106,
+        "Trincomalee": 0.01968
+    }
+}
