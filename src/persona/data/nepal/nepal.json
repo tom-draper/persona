@@ -1,0 +1,73 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "National Population and Housing Census 2021 (religion), National Statistics Office (Nepal)",
+                "year": 2021,
+                "url": "https://censusnepal.cbs.gov.np/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "National Population and Housing Census 2021, National Statistics Office (Nepal)",
+                "year": 2021,
+                "url": "https://censusnepal.cbs.gov.np/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.094,
+        "5-9": 0.0956,
+        "10-14": 0.0975,
+        "15-19": 0.1011,
+        "20-24": 0.099,
+        "25-29": 0.0898,
+        "30-34": 0.0755,
+        "35-39": 0.0659,
+        "40-44": 0.0582,
+        "45-49": 0.0501,
+        "50-54": 0.0439,
+        "55-59": 0.0355,
+        "60-64": 0.0304,
+        "65-69": 0.0249,
+        "70-74": 0.0187,
+        "75-79": 0.0117,
+        "80-84": 0.0058,
+        "85+": 0.0024
+    },
+    "sex": {
+        "Male": 0.481,
+        "Female": 0.519
+    },
+    "religion": {
+        "Hinduism": 0.811,
+        "Buddhism": 0.082,
+        "Islam": 0.051,
+        "Kirat": 0.032,
+        "Christianity or Other Christianity": 0.018,
+        "Other": 0.006
+    },
+    "location": {
+        "Bagmati": 0.20974,
+        "Madhesh": 0.20966,
+        "Lumbini": 0.17563,
+        "Koshi": 0.17012,
+        "Sudurpashchim": 0.0924,
+        "Gandaki": 0.08457,
+        "Karnali": 0.05789
+    }
+}

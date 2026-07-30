@@ -1,0 +1,83 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2024 Census (religion), Instituto Nacional de Estatística (Angola)",
+                "year": 2024,
+                "url": "https://www.ine.gov.ao/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2024 Census, Instituto Nacional de Estatística (Angola)",
+                "year": 2024,
+                "url": "https://www.ine.gov.ao/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1692,
+        "5-9": 0.1486,
+        "10-14": 0.1278,
+        "15-19": 0.1048,
+        "20-24": 0.0844,
+        "25-29": 0.0717,
+        "30-34": 0.0632,
+        "35-39": 0.0539,
+        "40-44": 0.0437,
+        "45-49": 0.0351,
+        "50-54": 0.0285,
+        "55-59": 0.0231,
+        "60-64": 0.0178,
+        "65-69": 0.0124,
+        "70-74": 0.0077,
+        "75-79": 0.0047,
+        "80-84": 0.0023,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.495,
+        "Female": 0.505
+    },
+    "religion": {
+        "Roman Catholicism": 0.442,
+        "Protestantism": 0.349,
+        "No religion": 0.115,
+        "Other": 0.07,
+        "Islam": 0.004
+    },
+    "location": {
+        "Luanda": 0.26323,
+        "Huíla": 0.09861,
+        "Huambo": 0.08037,
+        "Benguela": 0.07756,
+        "Cuanza Sul": 0.06951,
+        "Bié": 0.06762,
+        "Cunene": 0.05393,
+        "Lunda Norte": 0.05202,
+        "Icolo e Bengo": 0.04098,
+        "Malanje": 0.03876,
+        "Cabinda": 0.02697,
+        "Lunda Sul": 0.02669,
+        "Namibe": 0.02435,
+        "Bengo": 0.02139,
+        "Cuanza Norte": 0.01968,
+        "Moxico": 0.01715,
+        "Cubango": 0.01703,
+        "Cuando": 0.00414
+    }
+}

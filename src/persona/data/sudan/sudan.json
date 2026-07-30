@@ -1,0 +1,81 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Afrobarometer",
+                "year": 2021,
+                "url": "https://www.afrobarometer.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population projections 2018, Central Bureau of Statistics (Sudan)",
+                "year": 2018,
+                "url": "https://cbs.gov.sd/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1528,
+        "5-9": 0.1336,
+        "10-14": 0.1202,
+        "15-19": 0.1085,
+        "20-24": 0.0961,
+        "25-29": 0.0827,
+        "30-34": 0.067,
+        "35-39": 0.0536,
+        "40-44": 0.0438,
+        "45-49": 0.0348,
+        "50-54": 0.0304,
+        "55-59": 0.0248,
+        "60-64": 0.0198,
+        "65-69": 0.0148,
+        "70-74": 0.009,
+        "75-79": 0.0048,
+        "80-84": 0.0023,
+        "85+": 0.0012
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Islam": 0.97,
+        "Christianity or Other Christianity": 0.022,
+        "Other": 0.008
+    },
+    "location": {
+        "Khartoum": 0.16648,
+        "South Darfur": 0.11148,
+        "Gezira": 0.10615,
+        "North Kordofan": 0.0661,
+        "Kassala": 0.05246,
+        "Central Darfur": 0.05204,
+        "White Nile": 0.05194,
+        "North Darfur": 0.048,
+        "al Qadarif": 0.04599,
+        "South Kordofan": 0.04389,
+        "Sennar": 0.03996,
+        "West Kordofan": 0.04052,
+        "West Darfur": 0.03699,
+        "East Darfur": 0.03306,
+        "River Nile": 0.03148,
+        "Red Sea": 0.03087,
+        "Blue Nile": 0.02308,
+        "Northern": 0.0195
+    }
+}

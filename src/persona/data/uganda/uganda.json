@@ -1,0 +1,70 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2014 National Population and Housing Census (religion), Uganda Bureau of Statistics",
+                "year": 2014,
+                "url": "https://www.ubos.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2014 National Population and Housing Census, Uganda Bureau of Statistics",
+                "year": 2014,
+                "url": "https://www.ubos.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1632,
+        "5-9": 0.1445,
+        "10-14": 0.1317,
+        "15-19": 0.117,
+        "20-24": 0.1009,
+        "25-29": 0.0845,
+        "30-34": 0.0668,
+        "35-39": 0.0497,
+        "40-44": 0.0368,
+        "45-49": 0.0293,
+        "50-54": 0.0237,
+        "55-59": 0.0178,
+        "60-64": 0.0126,
+        "65-69": 0.0089,
+        "70-74": 0.006,
+        "75-79": 0.0032,
+        "80-84": 0.0018,
+        "85+": 0.0016
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Roman Catholicism": 0.387,
+        "Anglicanism (Church of Uganda)": 0.316,
+        "Islam": 0.135,
+        "Protestantism": 0.111,
+        "Christianity or Other Christianity": 0.04,
+        "Other": 0.01
+    },
+    "location": {
+        "Central": 0.27514,
+        "Eastern": 0.26108,
+        "Western": 0.25624,
+        "Northern": 0.20754
+    }
+}

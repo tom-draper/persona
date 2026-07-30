@@ -1,0 +1,83 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Population and Housing Census (religion), Ghana Statistical Service",
+                "year": 2021,
+                "url": "https://www.statsghana.gov.gh/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Population and Housing Census, Ghana Statistical Service",
+                "year": 2021,
+                "url": "https://www.statsghana.gov.gh/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1251,
+        "5-9": 0.1226,
+        "10-14": 0.1141,
+        "15-19": 0.1018,
+        "20-24": 0.09,
+        "25-29": 0.0782,
+        "30-34": 0.0729,
+        "35-39": 0.066,
+        "40-44": 0.0564,
+        "45-49": 0.0459,
+        "50-54": 0.0373,
+        "55-59": 0.0304,
+        "60-64": 0.0228,
+        "65-69": 0.0151,
+        "70-74": 0.01,
+        "75-79": 0.0061,
+        "80-84": 0.0035,
+        "85+": 0.0017
+    },
+    "sex": {
+        "Male": 0.5,
+        "Female": 0.5
+    },
+    "religion": {
+        "Protestantism": 0.49,
+        "Islam": 0.199,
+        "Christianity or Other Christianity": 0.123,
+        "Roman Catholicism": 0.1,
+        "Other": 0.045,
+        "African traditional religion": 0.032,
+        "No religion": 0.011
+    },
+    "location": {
+        "Greater Accra": 0.17668,
+        "Ashanti": 0.17651,
+        "Eastern": 0.09492,
+        "Central": 0.09278,
+        "Northern": 0.07498,
+        "Western": 0.06685,
+        "Volta": 0.05383,
+        "Bono": 0.03921,
+        "Bono East": 0.03904,
+        "Upper East": 0.04222,
+        "Upper West": 0.02925,
+        "Western North": 0.02858,
+        "Oti": 0.02424,
+        "North East": 0.02138,
+        "Savannah": 0.02119,
+        "Ahafo": 0.01832
+    }
+}

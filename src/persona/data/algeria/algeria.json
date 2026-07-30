@@ -1,0 +1,94 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Arab Barometer",
+                "year": 2020,
+                "url": "https://www.arabbarometer.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2008 General Population and Housing Census, Office National des Statistiques (Algeria)",
+                "year": 2008,
+                "url": "https://www.ons.dz/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.103,
+        "5-9": 0.1084,
+        "10-14": 0.0951,
+        "15-19": 0.0751,
+        "20-24": 0.0617,
+        "25-29": 0.0687,
+        "30-34": 0.0771,
+        "35-39": 0.0806,
+        "40-44": 0.0752,
+        "45-49": 0.0621,
+        "50-54": 0.0525,
+        "55-59": 0.0435,
+        "60-64": 0.0334,
+        "65-69": 0.0257,
+        "70-74": 0.0182,
+        "75-79": 0.01,
+        "80-84": 0.006,
+        "85+": 0.0037
+    },
+    "sex": {
+        "Male": 0.51,
+        "Female": 0.49
+    },
+    "religion": {
+        "Islam": 0.991,
+        "Christianity or Other Christianity": 0.004,
+        "No religion": 0.004,
+        "Other": 0.001
+    },
+    "location": {
+        "Algiers": 0.10787,
+        "Oran": 0.0572,
+        "Sétif": 0.05378,
+        "Tizi Ouzou": 0.0407,
+        "Batna": 0.04042,
+        "Djelfa": 0.03943,
+        "Blida": 0.0362,
+        "Chlef": 0.03617,
+        "M'Sila": 0.03576,
+        "Tlemcen": 0.03426,
+        "Constantine": 0.03388,
+        "Béjaïa": 0.03294,
+        "Skikda": 0.03244,
+        "Tiaret": 0.03057,
+        "Médéa": 0.0296,
+        "Boumerdès": 0.02895,
+        "Mascara": 0.0283,
+        "Mila": 0.02768,
+        "Mostaganem": 0.02661,
+        "Relizane": 0.02621,
+        "Bouïra": 0.02511,
+        "Tébessa": 0.02342,
+        "El Oued": 0.02338,
+        "Jijel": 0.02299,
+        "Bordj Bou Arréridj": 0.02269,
+        "Oum El Bouaghi": 0.02244,
+        "Annaba": 0.022,
+        "Sidi Bel Abbès": 0.02183,
+        "Biskra": 0.01975,
+        "Guelma": 0.01741
+    }
+}

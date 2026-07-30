@@ -1,0 +1,82 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious composition estimate, Association of Religion Data Archives (ARDA)",
+                "year": 2025,
+                "url": "https://www.thearda.com/",
+                "note": "Iraq has held no national census since 1987; figures are estimates."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2018, Central Statistical Organization (Iraq)",
+                "year": 2018,
+                "url": "https://cosit.gov.iq/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1234,
+        "5-9": 0.1254,
+        "10-14": 0.1222,
+        "15-19": 0.1034,
+        "20-24": 0.0929,
+        "25-29": 0.0834,
+        "30-34": 0.0726,
+        "35-39": 0.0602,
+        "40-44": 0.052,
+        "45-49": 0.0452,
+        "50-54": 0.0376,
+        "55-59": 0.0291,
+        "60-64": 0.0188,
+        "65-69": 0.0136,
+        "70-74": 0.0102,
+        "75-79": 0.0059,
+        "80-84": 0.003,
+        "85+": 0.0013
+    },
+    "sex": {
+        "Male": 0.502,
+        "Female": 0.498
+    },
+    "religion": {
+        "Islam": 0.973,
+        "Other": 0.021,
+        "Christianity or Other Christianity": 0.005
+    },
+    "location": {
+        "Baghdad": 0.21378,
+        "Nineveh": 0.09812,
+        "Basra": 0.07651,
+        "Dhi Qar": 0.05511,
+        "Sulaymaniyah": 0.05401,
+        "Babil": 0.05432,
+        "Erbil": 0.04879,
+        "Al-Anbar": 0.0466,
+        "Diyala": 0.04307,
+        "Kirkuk": 0.04203,
+        "Salah Al-Din": 0.04196,
+        "Najaf": 0.03871,
+        "Wasit": 0.03627,
+        "Duhok": 0.034,
+        "Al-Qadisiyyah": 0.03396,
+        "Karbala": 0.03206,
+        "Maysan": 0.02927,
+        "Muthanna": 0.02142
+    }
+}

@@ -50,6 +50,14 @@
 - [X] `myanmar`
 - [X] `saudi_arabia`
 - [X] `malaysia`
+- [X] `iraq`
+- [X] `afghanistan`
+- [X] `uganda`
+- [X] `algeria`
+- [X] `sudan`
+- [X] `angola`
+- [X] `ghana`
+- [X] `nepal`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`
