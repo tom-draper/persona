@@ -1,0 +1,78 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 International Religious Freedom Report: Greece, US Department of State",
+                "year": 2022,
+                "url": "https://www.state.gov/reports/2022-report-on-international-religious-freedom/greece/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2024, Hellenic Statistical Authority (ELSTAT)",
+                "year": 2024,
+                "url": "https://www.statistics.gr/en/home"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0388,
+        "5-9": 0.0455,
+        "10-14": 0.0515,
+        "15-19": 0.0513,
+        "20-24": 0.0509,
+        "25-29": 0.0508,
+        "30-34": 0.0532,
+        "35-39": 0.0582,
+        "40-44": 0.0733,
+        "45-49": 0.0758,
+        "50-54": 0.0765,
+        "55-59": 0.0726,
+        "60-64": 0.0667,
+        "65-69": 0.0608,
+        "70-74": 0.0539,
+        "75-79": 0.0462,
+        "80-84": 0.0339,
+        "85+": 0.0399
+    },
+    "sex": {
+        "Male": 0.484,
+        "Female": 0.516
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.88,
+        "No religion": 0.06,
+        "Christianity or Other Christianity": 0.03,
+        "Islam": 0.02,
+        "Other": 0.01
+    },
+    "location": {
+        "Attica": 0.36388,
+        "Central Macedonia": 0.17104,
+        "Thessaly": 0.06526,
+        "Western Greece": 0.06156,
+        "Crete": 0.05985,
+        "Eastern Macedonia and Thrace": 0.05402,
+        "Peloponnese": 0.05111,
+        "Central Greece": 0.04856,
+        "South Aegean": 0.03146,
+        "Epirus": 0.03087,
+        "Western Macedonia": 0.02377,
+        "North Aegean": 0.01933,
+        "Ionian Islands": 0.01929
+    }
+}

@@ -42,12 +42,12 @@
 - [X] `ukraine`
 - [X] `poland`
 - [X] `morocco`
-- [ ] `greece`
-- [ ] `norway`
-- [ ] `finland`
-- [ ] `sweden`
-- [ ] `new_zealand`
-- [ ] `united_arab_emirates` / `uae`
+- [X] `greece`
+- [X] `norway`
+- [X] `finland`
+- [X] `sweden`
+- [X] `new_zealand`
+- [X] `united_arab_emirates` / `uae`
 
 ## US States
 

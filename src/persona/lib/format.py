@@ -18,6 +18,8 @@ alias = {
     "italia": "italy",
     "eire": "ireland",
     "republic_of_ireland": "ireland",
+    "uae": "united_arab_emirates",
+    "nz": "new_zealand",
 }
 
 

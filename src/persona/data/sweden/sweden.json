@@ -1,0 +1,87 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation estimates (Church of Sweden membership and survey data)",
+                "year": 2021,
+                "url": "https://www.svenskakyrkan.se/statistik",
+                "note": "Sweden does not collect religion officially; figures combine church membership and survey estimates."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by county 2021, Statistics Sweden (SCB)",
+                "year": 2021,
+                "url": "https://www.scb.se/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0537,
+        "5-9": 0.0588,
+        "10-14": 0.06,
+        "15-19": 0.0576,
+        "20-24": 0.0556,
+        "25-29": 0.0619,
+        "30-34": 0.074,
+        "35-39": 0.0669,
+        "40-44": 0.0619,
+        "45-49": 0.0616,
+        "50-54": 0.0627,
+        "55-59": 0.0647,
+        "60-64": 0.0552,
+        "65-69": 0.0516,
+        "70-74": 0.0493,
+        "75-79": 0.0476,
+        "80-84": 0.0303,
+        "85+": 0.0265
+    },
+    "sex": {
+        "Male": 0.504,
+        "Female": 0.496
+    },
+    "religion": {
+        "Protestantism": 0.532,
+        "No religion": 0.379,
+        "Christianity or Other Christianity": 0.064,
+        "Islam": 0.021,
+        "Other": 0.004
+    },
+    "location": {
+        "Stockholm": 0.23106,
+        "Västra Götaland": 0.16693,
+        "Skåne": 0.13417,
+        "Östergötland": 0.04494,
+        "Uppsala": 0.03779,
+        "Jönköping": 0.03512,
+        "Halland": 0.03255,
+        "Örebro": 0.02935,
+        "Södermanland": 0.02887,
+        "Dalarna": 0.02759,
+        "Gävleborg": 0.02753,
+        "Västmanland": 0.02669,
+        "Västerbotten": 0.02627,
+        "Norrbotten": 0.02389,
+        "Kalmar": 0.02365,
+        "Värmland": 0.02709,
+        "Kronoberg": 0.01945,
+        "Blekinge": 0.01521,
+        "Jämtland": 0.01263,
+        "Västernorrland": 0.02336,
+        "Gotland": 0.00584
+    }
+}

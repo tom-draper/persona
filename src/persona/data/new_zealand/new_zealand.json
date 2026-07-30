@@ -1,0 +1,83 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2023 Census (religious affiliation), Stats NZ",
+                "year": 2023,
+                "url": "https://www.stats.govt.nz/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Stats NZ",
+                "year": 2023,
+                "url": "https://www.stats.govt.nz/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0576,
+        "5-9": 0.0611,
+        "10-14": 0.0651,
+        "15-19": 0.0626,
+        "20-24": 0.0633,
+        "25-29": 0.0686,
+        "30-34": 0.0758,
+        "35-39": 0.0688,
+        "40-44": 0.0626,
+        "45-49": 0.0599,
+        "50-54": 0.0648,
+        "55-59": 0.0617,
+        "60-64": 0.0603,
+        "65-69": 0.0514,
+        "70-74": 0.0432,
+        "75-79": 0.0333,
+        "80-84": 0.0217,
+        "85+": 0.0184
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "No religion": 0.516,
+        "Christianity or Other Christianity": 0.323,
+        "Hinduism": 0.029,
+        "Islam": 0.015,
+        "Māori religions": 0.013,
+        "Other": 0.012,
+        "Buddhism": 0.011
+    },
+    "location": {
+        "Auckland": 0.34109,
+        "Canterbury": 0.13114,
+        "Wellington": 0.10206,
+        "Waikato": 0.09994,
+        "Bay of Plenty": 0.06602,
+        "Manawatū-Whanganui": 0.04897,
+        "Otago": 0.04769,
+        "Northland": 0.03777,
+        "Hawke's Bay": 0.03375,
+        "Taranaki": 0.02447,
+        "Southland": 0.01968,
+        "Tasman": 0.01125,
+        "Nelson": 0.0102,
+        "Gisborne": 0.0099,
+        "Marlborough": 0.00954,
+        "West Coast": 0.00652
+    }
+}
