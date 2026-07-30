@@ -3,9 +3,9 @@
 ## Cities
 
 - [X] `london`
-- [ ] `paris`
-- [ ] `berlin`
-- [ ] `madrid`
+- [X] `paris`
+- [X] `berlin`
+- [X] `madrid`
 
 ## Countries
 

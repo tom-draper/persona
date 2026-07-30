@@ -1,0 +1,28 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by borough, Amt für Statistik Berlin-Brandenburg",
+                "year": 2023,
+                "url": "https://www.statistik-berlin-brandenburg.de/"
+            }
+        ]
+    },
+    "location": {
+        "Pankow": 0.10941,
+        "Mitte": 0.1024,
+        "Tempelhof-Schöneberg": 0.09176,
+        "Charlottenburg-Wilmersdorf": 0.08847,
+        "Neukölln": 0.0851,
+        "Lichtenberg": 0.08042,
+        "Steglitz-Zehlendorf": 0.08005,
+        "Treptow-Köpenick": 0.07583,
+        "Friedrichshain-Kreuzberg": 0.07567,
+        "Marzahn-Hellersdorf": 0.07528,
+        "Reinickendorf": 0.06931,
+        "Spandau": 0.06629
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "City and national population estimates (Amt für Statistik Berlin-Brandenburg; Destatis)",
+                "year": 2023,
+                "note": "Berlin's share of Germany's population. The 'Germany' key is a self/remainder branch resolving to the country's own dataset; a Berlin persona inherits the national baseline and overrides location with city districts.",
+                "url": "https://population.un.org/wpp/"
+            }
+        ]
+    },
+    "Berlin": 0.048,
+    "Germany": 0.952
+}

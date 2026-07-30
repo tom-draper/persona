@@ -1,0 +1,17 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "City and national population estimates (INSEE; INSEE)",
+                "year": 2023,
+                "note": "Paris's share of France's population. The 'France' key is a self/remainder branch resolving to the country's own dataset; a Paris persona inherits the national baseline and overrides location with city districts.",
+                "url": "https://population.un.org/wpp/"
+            }
+        ]
+    },
+    "Paris": 0.031,
+    "France": 0.969
+}

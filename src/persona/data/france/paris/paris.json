@@ -1,0 +1,33 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population légale des arrondissements, INSEE",
+                "year": 2021,
+                "url": "https://www.insee.fr/"
+            }
+        ]
+    },
+    "location": {
+        "Paris Centre": 0.04595,
+        "5th arrondissement": 0.02734,
+        "6th arrondissement": 0.01925,
+        "7th arrondissement": 0.02393,
+        "8th arrondissement": 0.01714,
+        "9th arrondissement": 0.02755,
+        "10th arrondissement": 0.04165,
+        "11th arrondissement": 0.06762,
+        "12th arrondissement": 0.06479,
+        "13th arrondissement": 0.0841,
+        "14th arrondissement": 0.06279,
+        "15th arrondissement": 0.10784,
+        "16th arrondissement": 0.06855,
+        "17th arrondissement": 0.07737,
+        "18th arrondissement": 0.08994,
+        "19th arrondissement": 0.08624,
+        "20th arrondissement": 0.08795
+    }
+}

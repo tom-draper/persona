@@ -1,0 +1,17 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "City and national population estimates (INE; INE)",
+                "year": 2023,
+                "note": "Madrid's share of Spain's population. The 'Spain' key is a self/remainder branch resolving to the country's own dataset; a Madrid persona inherits the national baseline and overrides location with city districts.",
+                "url": "https://population.un.org/wpp/"
+            }
+        ]
+    },
+    "Madrid": 0.065,
+    "Spain": 0.935
+}
