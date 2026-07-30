@@ -42,6 +42,14 @@
 - [X] `ukraine`
 - [X] `poland`
 - [X] `morocco`
+- [X] `colombia`
+- [X] `argentina`
+- [X] `kenya`
+- [X] `tanzania`
+- [X] `democratic_republic_of_the_congo`
+- [X] `myanmar`
+- [X] `saudi_arabia`
+- [X] `malaysia`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

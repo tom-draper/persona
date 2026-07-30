@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2014 Myanmar Population and Housing Census (religion), Department of Population",
+                "year": 2014,
+                "url": "https://www.dop.gov.mm/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2014 Myanmar Population and Housing Census, Department of Population",
+                "year": 2014,
+                "url": "https://www.dop.gov.mm/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0819,
+        "5-9": 0.0824,
+        "10-14": 0.0809,
+        "15-19": 0.0818,
+        "20-24": 0.0833,
+        "25-29": 0.0812,
+        "30-34": 0.078,
+        "35-39": 0.0768,
+        "40-44": 0.0714,
+        "45-49": 0.0641,
+        "50-54": 0.0575,
+        "55-59": 0.0496,
+        "60-64": 0.0404,
+        "65-69": 0.0309,
+        "70-74": 0.0208,
+        "75-79": 0.0111,
+        "80-84": 0.0055,
+        "85+": 0.0027
+    },
+    "sex": {
+        "Male": 0.498,
+        "Female": 0.502
+    },
+    "religion": {
+        "Buddhism": 0.879,
+        "Christianity or Other Christianity": 0.062,
+        "Islam": 0.043,
+        "Other": 0.011,
+        "Hinduism": 0.005
+    },
+    "location": {
+        "Yangon": 0.14296,
+        "Ayeyarwady": 0.12013,
+        "Mandalay": 0.11975,
+        "Shan": 0.11313,
+        "Sagaing": 0.10343,
+        "Bago": 0.09454,
+        "Magway": 0.07608,
+        "Rakhine": 0.06194,
+        "Mon": 0.0399,
+        "Kachin": 0.03281,
+        "Kayin": 0.03057,
+        "Tanintharyi": 0.02735,
+        "Naypyidaw": 0.02253,
+        "Chin": 0.0093,
+        "Kayah": 0.00557
+    }
+}

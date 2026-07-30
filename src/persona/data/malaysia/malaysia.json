@@ -1,0 +1,82 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2020 Population and Housing Census (religion), Department of Statistics Malaysia",
+                "year": 2020,
+                "url": "https://www.dosm.gov.my/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, Department of Statistics Malaysia (DOSM)",
+                "year": 2023,
+                "url": "https://www.dosm.gov.my/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0647,
+        "5-9": 0.0794,
+        "10-14": 0.0788,
+        "15-19": 0.0812,
+        "20-24": 0.0877,
+        "25-29": 0.0891,
+        "30-34": 0.0898,
+        "35-39": 0.0865,
+        "40-44": 0.0754,
+        "45-49": 0.0602,
+        "50-54": 0.0508,
+        "55-59": 0.0439,
+        "60-64": 0.038,
+        "65-69": 0.0294,
+        "70-74": 0.0212,
+        "75-79": 0.0123,
+        "80-84": 0.0067,
+        "85+": 0.0049
+    },
+    "sex": {
+        "Male": 0.524,
+        "Female": 0.476
+    },
+    "religion": {
+        "Islam": 0.635,
+        "Buddhism": 0.187,
+        "Christianity or Other Christianity": 0.091,
+        "Hinduism": 0.061,
+        "No religion": 0.018,
+        "Other": 0.008
+    },
+    "location": {
+        "Selangor": 0.2162,
+        "Johor": 0.12291,
+        "Sabah": 0.10987,
+        "Perak": 0.07545,
+        "Sarawak": 0.07393,
+        "Kedah": 0.06511,
+        "Kuala Lumpur": 0.0607,
+        "Penang": 0.05286,
+        "Kelantan": 0.05545,
+        "Pahang": 0.04898,
+        "Negeri Sembilan": 0.03641,
+        "Terengganu": 0.03618,
+        "Malacca": 0.03074,
+        "Perlis": 0.00871,
+        "Putrajaya": 0.00353,
+        "Labuan": 0.00296
+    }
+}

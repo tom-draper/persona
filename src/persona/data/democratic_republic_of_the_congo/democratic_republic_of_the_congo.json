@@ -1,0 +1,91 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2020 International Religious Freedom Report: Democratic Republic of the Congo, US Department of State",
+                "year": 2020,
+                "url": "https://www.state.gov/reports/2020-report-on-international-religious-freedom/democratic-republic-of-the-congo/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Provincial population estimates, Institut National de la Statistique (DR Congo)",
+                "year": 2019,
+                "url": "https://www.ins-rdc.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1822,
+        "5-9": 0.1521,
+        "10-14": 0.1265,
+        "15-19": 0.1037,
+        "20-24": 0.0868,
+        "25-29": 0.0738,
+        "30-34": 0.0597,
+        "35-39": 0.0486,
+        "40-44": 0.0383,
+        "45-49": 0.0312,
+        "50-54": 0.0268,
+        "55-59": 0.0222,
+        "60-64": 0.0173,
+        "65-69": 0.0127,
+        "70-74": 0.0086,
+        "75-79": 0.0055,
+        "80-84": 0.0027,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Roman Catholicism": 0.48,
+        "Protestantism": 0.4,
+        "Christianity or Other Christianity": 0.07,
+        "Other": 0.03,
+        "Islam": 0.02
+    },
+    "location": {
+        "Kinshasa": 0.14147,
+        "North Kivu": 0.077,
+        "South Kivu": 0.06674,
+        "Kongo Central": 0.0647,
+        "Kwilu": 0.06271,
+        "Haut-Katanga": 0.05467,
+        "Ituri": 0.04074,
+        "Kasaï-Central": 0.03805,
+        "Kasaï-Oriental": 0.03661,
+        "Tanganyika": 0.03629,
+        "Haut-Lomami": 0.03501,
+        "Kasaï": 0.03217,
+        "Lualaba": 0.03043,
+        "Lomami": 0.02847,
+        "Sud-Ubangi": 0.02801,
+        "Maniema": 0.02698,
+        "Tshopo": 0.02625,
+        "Kwango": 0.02456,
+        "Sankuru": 0.02457,
+        "Mai-Ndombe": 0.02116,
+        "Haut-Uele": 0.0208,
+        "Mongala": 0.01982,
+        "Tshuapa": 0.01819,
+        "Équateur": 0.0174,
+        "Nord-Ubangi": 0.01449,
+        "Bas-Uele": 0.01271
+    }
+}

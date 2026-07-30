@@ -1,0 +1,91 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious composition projection, Association of Religion Data Archives (ARDA)",
+                "year": 2025,
+                "url": "https://www.thearda.com/",
+                "note": "Tanzania has excluded religion from its census since 1967; figures are estimates."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Population and Housing Census, National Bureau of Statistics (Tanzania)",
+                "year": 2022,
+                "url": "https://www.nbs.go.tz/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1623,
+        "5-9": 0.1425,
+        "10-14": 0.1225,
+        "15-19": 0.1097,
+        "20-24": 0.0928,
+        "25-29": 0.0782,
+        "30-34": 0.0646,
+        "35-39": 0.054,
+        "40-44": 0.0447,
+        "45-49": 0.0365,
+        "50-54": 0.0278,
+        "55-59": 0.0195,
+        "60-64": 0.0146,
+        "65-69": 0.0119,
+        "70-74": 0.0086,
+        "75-79": 0.0055,
+        "80-84": 0.0027,
+        "85+": 0.0016
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Protestantism": 0.328,
+        "Islam": 0.328,
+        "Roman Catholicism": 0.229,
+        "African traditional religion": 0.108,
+        "Other": 0.007
+    },
+    "location": {
+        "Dar es Salaam": 0.09131,
+        "Mwanza": 0.06275,
+        "Tabora": 0.05752,
+        "Morogoro": 0.05422,
+        "Dodoma": 0.05233,
+        "Kagera": 0.0507,
+        "Geita": 0.0505,
+        "Tanga": 0.04436,
+        "Kigoma": 0.04191,
+        "Mara": 0.04023,
+        "Arusha": 0.03996,
+        "Mbeya": 0.03975,
+        "Shinyanga": 0.03801,
+        "Simiyu": 0.0363,
+        "Pwani": 0.03434,
+        "Singida": 0.03406,
+        "Manyara": 0.0321,
+        "Kilimanjaro": 0.03158,
+        "Ruvuma": 0.03136,
+        "Mtwara": 0.02773,
+        "Rukwa": 0.02613,
+        "Songwe": 0.02281,
+        "Lindi": 0.02025,
+        "Iringa": 0.02023,
+        "Katavi": 0.01955
+    }
+}

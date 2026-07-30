@@ -1,0 +1,88 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Segunda Encuesta Nacional sobre Creencias y Actitudes Religiosas, CONICET",
+                "year": 2019,
+                "url": "https://www.conicet.gov.ar/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2022, National Institute of Statistics and Census (INDEC)",
+                "year": 2022,
+                "url": "https://www.indec.gob.ar/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0604,
+        "5-9": 0.0805,
+        "10-14": 0.081,
+        "15-19": 0.0772,
+        "20-24": 0.0763,
+        "25-29": 0.077,
+        "30-34": 0.0755,
+        "35-39": 0.071,
+        "40-44": 0.0695,
+        "45-49": 0.064,
+        "50-54": 0.0541,
+        "55-59": 0.0475,
+        "60-64": 0.044,
+        "65-69": 0.0384,
+        "70-74": 0.0316,
+        "75-79": 0.0236,
+        "80-84": 0.0152,
+        "85+": 0.0132
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Roman Catholicism": 0.629,
+        "No religion": 0.189,
+        "Protestantism": 0.153,
+        "Other": 0.019
+    },
+    "location": {
+        "Buenos Aires Province": 0.38185,
+        "Córdoba": 0.08369,
+        "Santa Fe": 0.07724,
+        "Buenos Aires City": 0.06802,
+        "Mendoza": 0.04453,
+        "Tucumán": 0.03774,
+        "Salta": 0.03141,
+        "Entre Ríos": 0.03106,
+        "Misiones": 0.02787,
+        "Corrientes": 0.02642,
+        "Chaco": 0.02461,
+        "Santiago del Estero": 0.02312,
+        "San Juan": 0.01793,
+        "Jujuy": 0.01769,
+        "Río Negro": 0.01636,
+        "Neuquén": 0.01549,
+        "Formosa": 0.01324,
+        "Chubut": 0.01291,
+        "San Luis": 0.01181,
+        "Catamarca": 0.00936,
+        "La Rioja": 0.00836,
+        "La Pampa": 0.00788,
+        "Santa Cruz": 0.00735,
+        "Tierra del Fuego": 0.00405
+    }
+}

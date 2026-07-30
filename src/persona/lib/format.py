@@ -20,6 +20,10 @@ alias = {
     "republic_of_ireland": "ireland",
     "uae": "united_arab_emirates",
     "nz": "new_zealand",
+    "drc": "democratic_republic_of_the_congo",
+    "dr_congo": "democratic_republic_of_the_congo",
+    "congo_kinshasa": "democratic_republic_of_the_congo",
+    "ksa": "saudi_arabia",
 }
 
 
