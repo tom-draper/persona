@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religion (15+ population), Statistics Netherlands (CBS)",
+                "year": 2025,
+                "url": "https://www.cbs.nl/en-gb"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by province, Statistics Netherlands (CBS)",
+                "year": 2023,
+                "url": "https://www.cbs.nl/en-gb"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0492,
+        "5-9": 0.0499,
+        "10-14": 0.0526,
+        "15-19": 0.0564,
+        "20-24": 0.0653,
+        "25-29": 0.0668,
+        "30-34": 0.0677,
+        "35-39": 0.0633,
+        "40-44": 0.0598,
+        "45-49": 0.0586,
+        "50-54": 0.0702,
+        "55-59": 0.0714,
+        "60-64": 0.0673,
+        "65-69": 0.0579,
+        "70-74": 0.0511,
+        "75-79": 0.0435,
+        "80-84": 0.0265,
+        "85+": 0.0226
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "No religion": 0.58,
+        "Roman Catholicism": 0.16,
+        "Protestantism": 0.12,
+        "Other": 0.07,
+        "Islam": 0.06
+    },
+    "location": {
+        "South Holland": 0.21362,
+        "North Holland": 0.16577,
+        "North Brabant": 0.14745,
+        "Gelderland": 0.1198,
+        "Utrecht": 0.07791,
+        "Overijssel": 0.06649,
+        "Limburg": 0.06335,
+        "Friesland": 0.03703,
+        "Groningen": 0.03347,
+        "Drenthe": 0.02819,
+        "Flevoland": 0.02497,
+        "Zeeland": 0.02196
+    }
+}

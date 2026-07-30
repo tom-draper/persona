@@ -1,0 +1,84 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 International Religious Freedom Report: Yemen, US Department of State",
+                "year": 2022,
+                "url": "https://www.state.gov/reports/2022-report-on-international-religious-freedom/yemen/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2013, Central Statistical Organization (Yemen)",
+                "year": 2013,
+                "url": "https://www.cso-yemen.com/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1598,
+        "5-9": 0.1369,
+        "10-14": 0.1156,
+        "15-19": 0.1037,
+        "20-24": 0.0907,
+        "25-29": 0.0823,
+        "30-34": 0.0754,
+        "35-39": 0.0627,
+        "40-44": 0.0487,
+        "45-49": 0.0362,
+        "50-54": 0.0276,
+        "55-59": 0.0206,
+        "60-64": 0.0147,
+        "65-69": 0.0101,
+        "70-74": 0.0067,
+        "75-79": 0.0048,
+        "80-84": 0.0024,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.506,
+        "Female": 0.494
+    },
+    "religion": {
+        "Islam": 0.99,
+        "Other": 0.01
+    },
+    "location": {
+        "Taiz": 0.15009,
+        "Ibb": 0.12889,
+        "Al Hudaydah": 0.1244,
+        "Sanaa": 0.07513,
+        "Hajjah": 0.06219,
+        "Dhamar": 0.05593,
+        "Hadramaut": 0.0438,
+        "'Amran": 0.03703,
+        "Amanat Al Asimah": 0.03871,
+        "Aden": 0.03584,
+        "Saada": 0.03255,
+        "Lahij": 0.03053,
+        "Al Bayda": 0.02754,
+        "Al Mahwit": 0.02413,
+        "Al Jawf": 0.02185,
+        "Abyan": 0.02171,
+        "Shabwah": 0.02147,
+        "Dhale": 0.01986,
+        "Ma'rib": 0.01663,
+        "Raymah": 0.01656,
+        "Al Mahrah": 0.01318,
+        "Socotra": 0.00198
+    }
+}

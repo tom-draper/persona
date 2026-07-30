@@ -58,6 +58,14 @@
 - [X] `angola`
 - [X] `ghana`
 - [X] `nepal`
+- [X] `netherlands`
+- [X] `belgium`
+- [X] `portugal`
+- [X] `yemen`
+- [X] `mozambique`
+- [X] `cote_divoire`
+- [X] `madagascar`
+- [X] `kazakhstan`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

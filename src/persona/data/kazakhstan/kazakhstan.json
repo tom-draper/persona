@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 National Census (religion), Bureau of National Statistics (Kazakhstan)",
+                "year": 2021,
+                "url": "https://stat.gov.kz/en/",
+                "note": "11% of respondents did not state a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 National Census, Bureau of National Statistics (Kazakhstan)",
+                "year": 2021,
+                "url": "https://stat.gov.kz/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1046,
+        "5-9": 0.0987,
+        "10-14": 0.0921,
+        "15-19": 0.0741,
+        "20-24": 0.0586,
+        "25-29": 0.0651,
+        "30-34": 0.078,
+        "35-39": 0.0761,
+        "40-44": 0.0647,
+        "45-49": 0.058,
+        "50-54": 0.0525,
+        "55-59": 0.049,
+        "60-64": 0.0456,
+        "65-69": 0.0357,
+        "70-74": 0.0229,
+        "75-79": 0.0106,
+        "80-84": 0.0081,
+        "85+": 0.0059
+    },
+    "sex": {
+        "Male": 0.487,
+        "Female": 0.513
+    },
+    "religion": {
+        "Islam": 0.693,
+        "Eastern Orthodoxy": 0.172,
+        "No religion": 0.022,
+        "Other": 0.002
+    },
+    "location": {
+        "Turkistan": 0.10718,
+        "Almaty (city)": 0.10904,
+        "Astana": 0.06809,
+        "Almaty Region": 0.07602,
+        "Jambyl": 0.06173,
+        "Shymkent": 0.06013,
+        "Karaganda": 0.05759,
+        "Aktobe": 0.04697,
+        "Kostanay": 0.04227,
+        "Kyzylorda": 0.0422,
+        "Akmola": 0.03992,
+        "Mangystau": 0.03867,
+        "Pavlodar": 0.03833,
+        "East Kazakhstan": 0.03711,
+        "Jetisu": 0.03549,
+        "Atyrau": 0.03502,
+        "West Kazakhstan": 0.03487,
+        "Abai": 0.03099,
+        "North Kazakhstan": 0.02717,
+        "Ulytau": 0.01122
+    }
+}

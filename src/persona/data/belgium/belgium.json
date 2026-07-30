@@ -1,0 +1,76 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "European Social Survey",
+                "year": 2023,
+                "url": "https://www.europeansocialsurvey.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by province, Statbel (Belgium)",
+                "year": 2024,
+                "url": "https://statbel.fgov.be/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0498,
+        "5-9": 0.0545,
+        "10-14": 0.0586,
+        "15-19": 0.057,
+        "20-24": 0.0568,
+        "25-29": 0.0609,
+        "30-34": 0.0661,
+        "35-39": 0.0644,
+        "40-44": 0.0656,
+        "45-49": 0.0634,
+        "50-54": 0.0671,
+        "55-59": 0.0686,
+        "60-64": 0.0657,
+        "65-69": 0.0573,
+        "70-74": 0.0487,
+        "75-79": 0.0395,
+        "80-84": 0.0258,
+        "85+": 0.0301
+    },
+    "sex": {
+        "Male": 0.493,
+        "Female": 0.507
+    },
+    "religion": {
+        "No religion": 0.59,
+        "Roman Catholicism": 0.31,
+        "Islam": 0.06,
+        "Christianity or Other Christianity": 0.03,
+        "Other": 0.01
+    },
+    "location": {
+        "Antwerp": 0.16377,
+        "East Flanders": 0.13363,
+        "Hainaut": 0.11562,
+        "Brussels-Capital Region": 0.10623,
+        "West Flanders": 0.10425,
+        "Flemish Brabant": 0.10173,
+        "Liège": 0.09513,
+        "Limburg": 0.07652,
+        "Namur": 0.04283,
+        "Walloon Brabant": 0.0352,
+        "Luxembourg": 0.02509
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2017 Census (religion), Instituto Nacional de Estatística (Mozambique)",
+                "year": 2017,
+                "url": "https://www.ine.gov.mz/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2017 Census, Instituto Nacional de Estatística (Mozambique)",
+                "year": 2017,
+                "url": "https://www.ine.gov.mz/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1685,
+        "5-9": 0.1479,
+        "10-14": 0.1311,
+        "15-19": 0.108,
+        "20-24": 0.0935,
+        "25-29": 0.0779,
+        "30-34": 0.0639,
+        "35-39": 0.0514,
+        "40-44": 0.0409,
+        "45-49": 0.0314,
+        "50-54": 0.0257,
+        "55-59": 0.018,
+        "60-64": 0.014,
+        "65-69": 0.012,
+        "70-74": 0.0085,
+        "75-79": 0.0045,
+        "80-84": 0.0019,
+        "85+": 0.0007
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "religion": {
+        "Roman Catholicism": 0.272,
+        "Islam": 0.189,
+        "Christianity or Other Christianity": 0.166,
+        "Protestantism": 0.153,
+        "No religion": 0.139,
+        "Other": 0.03
+    },
+    "location": {
+        "Nampula": 0.21145,
+        "Zambezia": 0.17708,
+        "Tete": 0.09577,
+        "Maputo Province": 0.08687,
+        "Cabo Delgado": 0.08084,
+        "Sofala": 0.07698,
+        "Manica": 0.06622,
+        "Niassa": 0.06465,
+        "Inhambane": 0.05186,
+        "Gaza": 0.05012,
+        "Maputo City": 0.03815
+    }
+}

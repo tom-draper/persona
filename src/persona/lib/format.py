@@ -24,6 +24,8 @@ alias = {
     "dr_congo": "democratic_republic_of_the_congo",
     "congo_kinshasa": "democratic_republic_of_the_congo",
     "ksa": "saudi_arabia",
+    "ivory_coast": "cote_divoire",
+    "holland": "netherlands",
 }
 
 

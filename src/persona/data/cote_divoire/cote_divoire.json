@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 General Census (religion), Institut National de la Statistique (Côte d'Ivoire)",
+                "year": 2021,
+                "url": "https://www.ins.ci/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 General Census (RGPH), Institut National de la Statistique (Côte d'Ivoire)",
+                "year": 2021,
+                "url": "https://www.ins.ci/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1474,
+        "5-9": 0.1421,
+        "10-14": 0.1232,
+        "15-19": 0.1043,
+        "20-24": 0.0861,
+        "25-29": 0.0727,
+        "30-34": 0.0699,
+        "35-39": 0.0647,
+        "40-44": 0.0539,
+        "45-49": 0.0412,
+        "50-54": 0.0299,
+        "55-59": 0.0223,
+        "60-64": 0.0164,
+        "65-69": 0.0111,
+        "70-74": 0.0071,
+        "75-79": 0.0041,
+        "80-84": 0.0021,
+        "85+": 0.0012
+    },
+    "sex": {
+        "Male": 0.509,
+        "Female": 0.491
+    },
+    "religion": {
+        "Islam": 0.425,
+        "Christianity or Other Christianity": 0.228,
+        "Roman Catholicism": 0.17,
+        "No religion": 0.126,
+        "African traditional religion": 0.022,
+        "Other": 0.007
+    },
+    "location": {
+        "Abidjan": 0.29633,
+        "Haut-Sassandra": 0.09008,
+        "Nawa": 0.06629,
+        "Gbêkê": 0.06363,
+        "Tonkpi": 0.06248,
+        "Guémon": 0.05788,
+        "Gôh": 0.05515,
+        "Marahoué": 0.05428,
+        "San-Pédro": 0.05204,
+        "Lôh-Djiboua": 0.0459,
+        "Gontougo": 0.042,
+        "Sud-Comoé": 0.04045,
+        "Agnéby-Tiassa": 0.0382,
+        "Indénié-Djuablin": 0.03528
+    }
+}

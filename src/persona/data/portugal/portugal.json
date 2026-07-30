@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion, population 15+), Statistics Portugal (INE)",
+                "year": 2021,
+                "url": "https://www.ine.pt/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, Statistics Portugal (INE)",
+                "year": 2021,
+                "url": "https://www.ine.pt/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0409,
+        "5-9": 0.0417,
+        "10-14": 0.0464,
+        "15-19": 0.05,
+        "20-24": 0.0539,
+        "25-29": 0.0525,
+        "30-34": 0.0541,
+        "35-39": 0.0581,
+        "40-44": 0.0685,
+        "45-49": 0.0778,
+        "50-54": 0.0738,
+        "55-59": 0.0718,
+        "60-64": 0.0694,
+        "65-69": 0.0643,
+        "70-74": 0.0591,
+        "75-79": 0.0484,
+        "80-84": 0.0342,
+        "85+": 0.0351
+    },
+    "sex": {
+        "Male": 0.476,
+        "Female": 0.524
+    },
+    "religion": {
+        "Roman Catholicism": 0.8,
+        "No religion": 0.141,
+        "Christianity or Other Christianity": 0.05,
+        "Other": 0.007,
+        "Islam": 0.004
+    },
+    "location": {
+        "Lisbon": 0.23248,
+        "Porto": 0.1669,
+        "Setúbal": 0.0886,
+        "Braga": 0.07889,
+        "Aveiro": 0.06554,
+        "Faro": 0.0506,
+        "Leiria": 0.04504,
+        "Santarém": 0.04109,
+        "Coimbra": 0.03836,
+        "Viseu": 0.03193,
+        "Madeira": 0.0233,
+        "Azores": 0.02147,
+        "Viana do Castelo": 0.02139,
+        "Vila Real": 0.01639,
+        "Castelo Branco": 0.01655,
+        "Beja": 0.01486,
+        "Évora": 0.01415,
+        "Guarda": 0.01215,
+        "Bragança": 0.01082,
+        "Portalegre": 0.0095
+    }
+}
