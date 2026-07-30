@@ -3,6 +3,15 @@
         "sources": [
             {
                 "features": [
+                    "age"
+                ],
+                "name": "Population by age, Comunidad de Madrid (NUTS 2 ES30), Eurostat",
+                "year": 2023,
+                "url": "https://ec.europa.eu/eurostat",
+                "note": "Regional figure used as a proxy for the city."
+            },
+            {
+                "features": [
                     "location"
                 ],
                 "name": "Padrón municipal (Madrid districts), Instituto Nacional de Estadística (INE)",
@@ -10,6 +19,26 @@
                 "url": "https://www.ine.es/"
             }
         ]
+    },
+    "age": {
+        "0-4": 0.0392,
+        "5-9": 0.0481,
+        "10-14": 0.0535,
+        "15-19": 0.0534,
+        "20-24": 0.0542,
+        "25-29": 0.0593,
+        "30-34": 0.0634,
+        "35-39": 0.0677,
+        "40-44": 0.0795,
+        "45-49": 0.0869,
+        "50-54": 0.079,
+        "55-59": 0.0712,
+        "60-64": 0.0604,
+        "65-69": 0.0494,
+        "70-74": 0.0434,
+        "75-79": 0.0368,
+        "80-84": 0.0243,
+        "85+": 0.0304
     },
     "location": {
         "Carabanchel": 0.07668,

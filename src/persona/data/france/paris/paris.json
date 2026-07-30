@@ -3,6 +3,24 @@
         "sources": [
             {
                 "features": [
+                    "age"
+                ],
+                "name": "Population by age, Île-de-France (NUTS 2 FR10), Eurostat",
+                "year": 2023,
+                "url": "https://ec.europa.eu/eurostat",
+                "note": "Regional (Paris metropolitan region) figure used as a proxy for the city."
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation in the Paris Region (Île-de-France), IFOP survey",
+                "year": 2011,
+                "url": "https://www.ifop.com/",
+                "note": "Île-de-France regional survey used as a proxy for the city; France's national dataset carries no religion feature."
+            },
+            {
+                "features": [
                     "location"
                 ],
                 "name": "Population légale des arrondissements, INSEE",
@@ -10,6 +28,33 @@
                 "url": "https://www.insee.fr/"
             }
         ]
+    },
+    "age": {
+        "0-4": 0.0585,
+        "5-9": 0.0613,
+        "10-14": 0.0648,
+        "15-19": 0.0633,
+        "20-24": 0.068,
+        "25-29": 0.0689,
+        "30-34": 0.0727,
+        "35-39": 0.0702,
+        "40-44": 0.0687,
+        "45-49": 0.0656,
+        "50-54": 0.0647,
+        "55-59": 0.0613,
+        "60-64": 0.0531,
+        "65-69": 0.0441,
+        "70-74": 0.0402,
+        "75-79": 0.0302,
+        "80-84": 0.0197,
+        "85+": 0.0246
+    },
+    "religion": {
+        "Roman Catholicism": 0.61,
+        "No religion": 0.25,
+        "Islam": 0.07,
+        "Protestantism": 0.04,
+        "Judaism": 0.02
     },
     "location": {
         "Paris Centre": 0.04595,
