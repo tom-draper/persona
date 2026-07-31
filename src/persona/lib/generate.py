@@ -29,28 +29,29 @@ def select_sublocation(composite_path: Path, rng: np.random.Generator) -> str:
     return str(rng.choice(keys, p=p)).lower()
 
 
-def resolve_location(location: str, rng: np.random.Generator) -> tuple[list[str], list[str]]:
+def resolve_location(
+    location: str, rng: np.random.Generator, root: Path | None = None
+) -> tuple[list[Path], list[str]]:
     """
     Recursively resolve composite locations into the chain of data-bearing
-    nodes to draw from and the sublocation labels to append.
+    leaf files to draw from and the sublocation labels to append.
 
     Returns (leaf_chain, location_labels):
-      - leaf_chain: node names that carry a leaf dataset, outermost first and
-        innermost last. A persona is generated from their merged features,
-        with inner nodes overriding outer ones (feature inheritance). An
-        interior node that keeps its own leaf therefore acts as a baseline
-        that a carved-out sublocation refines.
+      - leaf_chain: paths to the leaf datasets, outermost first and innermost
+        last. A persona is generated from their merged features, with inner
+        nodes overriding outer ones (feature inheritance). An interior node
+        that keeps its own leaf therefore acts as a baseline that a carved-out
+        sublocation refines.
       - location_labels: sublocation names traversed (innermost first) to
         append to the persona's location field.
 
-    Examples (uk→england composite; england→london composite with an England
-    self/remainder branch):
-        resolve_location('england')        → (['england'], [])                       # self branch
-        resolve_location('england')        → (['england', 'london'], ['london'])
-        resolve_location('united_kingdom') → (['england', 'london'], ['london', 'england'])
+    A composite's sublocations are resolved within the composite's own
+    directory (``root``), so a name shared with a top-level dataset (e.g. the
+    country ``georgia`` vs the US state ``georgia``) resolves unambiguously.
     """
-    chain = [location] if get_file_path(location) is not None else []
-    composite_path = get_composite_path(location)
+    file_path = get_file_path(location, root)
+    composite_path = get_composite_path(location, root)
+    chain = [file_path] if file_path is not None else []
     if composite_path is None:
         return chain, []
     sublocation = select_sublocation(composite_path, rng)
@@ -60,31 +61,35 @@ def resolve_location(location: str, rng: np.random.Generator) -> tuple[list[str]
     # no extra label (we are already "in" this location).
     if clean_location(sublocation) == clean_location(location):
         return chain, []
-    sub_chain, sub_labels = resolve_location(sublocation, rng)
+    sub_chain, sub_labels = resolve_location(sublocation, rng, root=composite_path.parent)
     return chain + sub_chain, [*sub_labels, sublocation]
 
 
 def resolve_api_location(
-    location: str,
+    key: str,
     data: dict,
     rng: np.random.Generator,
-) -> tuple[str, list[str]]:
+) -> tuple[list[str], list[str]]:
     """
-    Recursively resolve composite locations using preloaded data.
+    Recursively resolve composite locations using preloaded data. Nodes are
+    addressed by their canonical key (path relative to the data directory), so
+    a composite child resolves within the composite's own subtree.
     Returns (leaf_chain, location_labels) — see resolve_location for details.
     """
-    node = data[location]
-    chain = [location] if node.get("leaf") else []
+    node = data[key]
+    chain = [key] if node.get("leaf") else []
     if not node.get("composite"):
         return chain, []
-    sublocation = str(rng.choice(node["subloc_keys"], p=node["subloc_probs"]))
+    i = int(rng.choice(len(node["subloc_keys"]), p=node["subloc_probs"]))
+    child_key = str(node["subloc_keys"][i])
+    label = str(node["subloc_labels"][i])
     # Self/remainder branch — see resolve_location.
-    if clean_location(sublocation) == clean_location(location):
+    if child_key == key:
         return chain, []
-    if sublocation not in data:
-        raise ValueError(f"Sublocation '{sublocation}' not found in preloaded data")
-    sub_chain, sub_labels = resolve_api_location(sublocation, data, rng)
-    return chain + sub_chain, [*sub_labels, sublocation]
+    if child_key not in data:
+        raise ValueError(f"Sublocation '{child_key}' not found in preloaded data")
+    sub_chain, sub_labels = resolve_api_location(child_key, data, rng)
+    return chain + sub_chain, [*sub_labels, label]
 
 
 @functools.cache
@@ -113,20 +118,26 @@ def list_locations() -> list[str]:
     return sorted(locations)
 
 
-def get_file_path(target: str) -> Path | None:
+def get_file_path(target: str, root: Path | None = None) -> Path | None:
+    """Find the leaf dataset directory named ``target`` under ``root``.
+
+    When several datasets share a name (e.g. the country ``georgia`` and the US
+    state ``georgia``), the shallowest match wins for a top-level lookup, while
+    a scoped ``root`` (a composite's own directory) restricts the search to that
+    composite's subtree — so ``united_states_of_america`` → ``Georgia`` resolves
+    to the state, not the country.
+    """
+    root = root or DATA_DIR
     target = target.lower().replace(" ", "_")
-    for path in DATA_DIR.rglob(f"{target}.json"):
-        if path.parent.name == target:
-            return path
-    return None
+    matches = [p for p in root.rglob(f"{target}.json") if p.parent.name == target]
+    return min(matches, key=lambda p: len(p.parts)) if matches else None
 
 
-def get_composite_path(target: str) -> Path | None:
+def get_composite_path(target: str, root: Path | None = None) -> Path | None:
+    root = root or DATA_DIR
     target = target.lower().replace(" ", "_")
-    for path in DATA_DIR.rglob("composite.json"):
-        if path.parent.name == target:
-            return path
-    return None
+    matches = [p for p in root.rglob("composite.json") if p.parent.name == target]
+    return min(matches, key=lambda p: len(p.parts)) if matches else None
 
 
 def collapsed_dict(d: dict, path: list[str] | None = None) -> list[tuple[list[str], float]]:
@@ -227,8 +238,19 @@ def preprocess_location_data(data: dict) -> dict:
         composite = entry.get("composite")
         if composite:
             weights = {k: v for k, v in composite.items() if k != "_meta"}
-            keys = list(weights.keys())
-            entry["subloc_keys"] = np.array([k.lower().replace(" ", "_") for k in keys])
+            # Resolve each child to its canonical key, scoped to this composite's
+            # own subtree. A child whose name matches this node is the self/
+            # remainder branch and resolves back to this node's own key.
+            base = entry.get("key", "")
+            child_keys = []
+            for name in weights:
+                nchild = name.lower().replace(" ", "_")
+                if nchild == entry.get("name"):
+                    child_keys.append(base)
+                else:
+                    child_keys.append(f"{base}/{nchild}" if base else nchild)
+            entry["subloc_keys"] = np.array(child_keys)
+            entry["subloc_labels"] = np.array(list(weights.keys()))
             entry["subloc_probs"] = normalise_weights(weights.values())
         leaf = entry.get("leaf")
         if leaf:
@@ -319,10 +341,7 @@ def gen_samples(
     samples = []
     cache: dict[Path, dict] = {}
 
-    def load(node: str) -> dict:
-        path = get_file_path(node)
-        if path is None:
-            raise ValueError(f"Location '{node}' not found")
+    def load(path: Path) -> dict:
         if path not in cache:
             with open(path) as f:
                 cache[path] = json.load(f)
@@ -335,7 +354,7 @@ def gen_samples(
         chain, location_labels = resolve_location(location, rng)
         if not chain:
             raise ValueError(f"Location '{location}' not found")
-        merged = _merge_leaves([load(node) for node in chain])
+        merged = _merge_leaves([load(path) for path in chain])
 
         sample = gen_sample(merged, enabled_features, rng)
         if enabled_features is None or "location" in enabled_features:

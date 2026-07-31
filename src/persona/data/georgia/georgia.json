@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2024 Census (religion), National Statistics Office of Georgia (Geostat)",
+                "year": 2024,
+                "url": "https://www.geostat.ge/en"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2024 Census, National Statistics Office of Georgia (Geostat)",
+                "year": 2024,
+                "url": "https://www.geostat.ge/en",
+                "note": "Excludes Abkhazia and South Ossetia, outside the government's control."
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0636,
+        "5-9": 0.076,
+        "10-14": 0.0708,
+        "15-19": 0.0584,
+        "20-24": 0.0557,
+        "25-29": 0.0602,
+        "30-34": 0.0733,
+        "35-39": 0.0744,
+        "40-44": 0.0673,
+        "45-49": 0.0628,
+        "50-54": 0.06,
+        "55-59": 0.0604,
+        "60-64": 0.064,
+        "65-69": 0.0528,
+        "70-74": 0.0415,
+        "75-79": 0.0236,
+        "80-84": 0.0192,
+        "85+": 0.0161
+    },
+    "sex": {
+        "Male": 0.466,
+        "Female": 0.534
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.82,
+        "Islam": 0.111,
+        "Christianity or Other Christianity": 0.034,
+        "No religion": 0.005,
+        "Other": 0.003
+    },
+    "location": {
+        "Tbilisi": 0.33233,
+        "Imereti": 0.12394,
+        "Kvemo Kartli": 0.11851,
+        "Adjara": 0.09672,
+        "Kakheti": 0.08195,
+        "Samegrelo-Zemo Svaneti": 0.0801,
+        "Shida Kartli": 0.06686,
+        "Samtskhe-Javakheti": 0.03945,
+        "Guria": 0.02791,
+        "Mtskheta-Mtianeti": 0.02497,
+        "Racha-Lechkhumi and Kvemo Svaneti": 0.00725
+    }
+}

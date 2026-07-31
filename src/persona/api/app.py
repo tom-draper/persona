@@ -4,9 +4,18 @@ from importlib.metadata import version
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import RedirectResponse
 
-from persona.api.handler import get_available_features, get_features, load_location_data
+from persona.api.handler import (
+    get_available_features,
+    get_features,
+    load_location_data,
+    resolve_key,
+)
 from persona.lib.format import clean_location
 from persona.lib.generate import gen_api_samples
+
+
+def _location_names(data: dict) -> list[str]:
+    return sorted({v["name"] for v in data.values()})
 
 _EXAMPLE_RESPONSE = [
     {
@@ -35,7 +44,7 @@ def _location_not_found(data: dict) -> HTTPException:
         status_code=404,
         detail={
             "message": "Location not found",
-            "available": sorted(data.keys()),
+            "available": _location_names(data),
         },
     )
 
@@ -57,7 +66,7 @@ async def help(request: Request) -> dict[str, str | list | dict]:
             "using real-world demographic data."
         ),
         "github": "https://github.com/tom-draper/persona",
-        "locations": sorted(data.keys()),
+        "locations": _location_names(data),
         "example": "https://persona-api.vercel.app/v1/united_kingdom",
         "example_response": _EXAMPLE_RESPONSE,
     }
@@ -67,14 +76,14 @@ async def help(request: Request) -> dict[str, str | list | dict]:
 @app.get("/v1/locations/")
 async def locations(request: Request, response: Response) -> list[str]:
     response.headers["Cache-Control"] = "public, max-age=3600"
-    return sorted(request.app.state.data.keys())
+    return _location_names(request.app.state.data)
 
 
 @app.get("/v1/{location}/features/")
 async def features(location: str, request: Request, response: Response) -> dict:
     data = request.app.state.data
     location = clean_location(location)
-    if location not in data:
+    if resolve_key(location, data) is None:
         raise _location_not_found(data)
     response.headers["Cache-Control"] = "public, max-age=3600"
     return get_features(location, data)
@@ -93,7 +102,8 @@ def gen_personas(
 ) -> list[dict]:
     data = request.app.state.data
     location = clean_location(location)
-    if location not in data:
+    key = resolve_key(location, data)
+    if key is None:
         raise _location_not_found(data)
     enabled_features = {f.strip() for f in features.split(",")} if features else None
     if enabled_features:
@@ -108,4 +118,4 @@ def gen_personas(
                     "available": sorted(available),
                 },
             )
-    return gen_api_samples(location, data, enabled_features=enabled_features, N=count, seed=seed)
+    return gen_api_samples(key, data, enabled_features=enabled_features, N=count, seed=seed)

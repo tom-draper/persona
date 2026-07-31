@@ -203,7 +203,9 @@ def api_data():
 
 
 def test_preprocess_adds_processed_key(api_data):
-    assert "processed" in api_data["england"]
+    from persona.api.handler import resolve_key
+
+    assert "processed" in api_data[resolve_key("england", api_data)]
 
 
 def test_preprocess_composite_adds_subloc_keys(api_data):
@@ -212,7 +214,9 @@ def test_preprocess_composite_adds_subloc_keys(api_data):
 
 
 def test_gen_api_samples_england(api_data):
-    samples = gen_api_samples("england", api_data, N=1)
+    from persona.api.handler import resolve_key
+
+    samples = gen_api_samples(resolve_key("england", api_data), api_data, N=1)
     assert len(samples) == 1
     sample = samples[0]
     assert "age" in sample
@@ -222,18 +226,24 @@ def test_gen_api_samples_england(api_data):
 
 
 def test_gen_api_samples_count(api_data):
-    samples = gen_api_samples("england", api_data, N=5)
+    from persona.api.handler import resolve_key
+
+    samples = gen_api_samples(resolve_key("england", api_data), api_data, N=5)
     assert len(samples) == 5
 
 
 def test_gen_api_samples_meta_not_in_output(api_data):
-    samples = gen_api_samples("england", api_data, N=3)
+    from persona.api.handler import resolve_key
+
+    samples = gen_api_samples(resolve_key("england", api_data), api_data, N=3)
     for sample in samples:
         assert "_meta" not in sample
 
 
 def test_gen_api_samples_uk_composite(api_data):
-    samples = gen_api_samples("united_kingdom", api_data, N=3)
+    from persona.api.handler import resolve_key
+
+    samples = gen_api_samples(resolve_key("united_kingdom", api_data), api_data, N=3)
     assert len(samples) == 3
     for sample in samples:
         assert "age" in sample
@@ -308,8 +318,11 @@ def test_gen_samples_different_seeds_differ():
 
 
 def test_gen_api_samples_seed_is_reproducible(api_data):
-    a = gen_api_samples("england", api_data, N=3, seed=99)
-    b = gen_api_samples("england", api_data, N=3, seed=99)
+    from persona.api.handler import resolve_key
+
+    ek = resolve_key("england", api_data)
+    a = gen_api_samples(ek, api_data, N=3, seed=99)
+    b = gen_api_samples(ek, api_data, N=3, seed=99)
     assert a == b
 
 
@@ -435,7 +448,11 @@ def test_select_sublocation_returns_known_location():
 
 
 def test_gen_api_samples_enabled_features(api_data):
-    samples = gen_api_samples("england", api_data, enabled_features={"age", "sex"}, N=3)
+    from persona.api.handler import resolve_key
+
+    samples = gen_api_samples(
+        resolve_key("england", api_data), api_data, enabled_features={"age", "sex"}, N=3
+    )
     assert len(samples) == 3
     for sample in samples:
         assert set(sample.keys()) <= {"age", "sex"}
@@ -537,7 +554,7 @@ def test_england_resolves_to_both_london_and_its_own_leaf():
     from persona.lib.generate import resolve_location
 
     rng = np.random.default_rng(0)
-    innermost = {resolve_location("england", rng)[0][-1] for _ in range(400)}
+    innermost = {resolve_location("england", rng)[0][-1].parent.name for _ in range(400)}
     assert "london" in innermost  # carved-out sublocation is reachable
     assert "england" in innermost  # self branch resolves back to england's leaf
 
@@ -549,12 +566,13 @@ def test_self_branch_adds_no_label_but_sublocation_does():
     saw_london_label = saw_self = False
     for _ in range(400):
         chain, labels = resolve_location("england", rng)
-        if chain[-1] == "london":
-            assert chain == ["england", "london"]  # inherits england's baseline
+        names = [p.parent.name for p in chain]
+        if names[-1] == "london":
+            assert names == ["england", "london"]  # inherits england's baseline
             assert labels == ["london"]
             saw_london_label = True
-        elif chain[-1] == "england":
-            assert chain == ["england"]
+        elif names[-1] == "england":
+            assert names == ["england"]
             assert labels == []  # self branch adds no redundant "England"
             saw_self = True
     assert saw_london_label and saw_self
@@ -568,8 +586,9 @@ def test_uk_can_reach_london_three_levels_deep():
     reached_london = False
     for _ in range(2000):
         chain, labels = resolve_location("united_kingdom", rng)
-        if chain[-1] == "london":
-            assert chain == ["england", "london"]
+        names = [p.parent.name for p in chain]
+        if names[-1] == "london":
+            assert names == ["england", "london"]
             assert labels == ["london", "england"]
             reached_london = True
     assert reached_london
@@ -610,7 +629,9 @@ def test_get_features_recurses_through_interior_node():
     from persona.api.handler import get_features, load_location_data
 
     data = load_location_data()
+    from persona.api.handler import resolve_key
+
     england = set(get_features("england", data)["england"])
-    london_leaf = {k for k in data["london"]["leaf"] if k != "_meta"}
-    england_leaf = {k for k in data["england"]["leaf"] if k != "_meta"}
+    london_leaf = {k for k in data[resolve_key("london", data)]["leaf"] if k != "_meta"}
+    england_leaf = {k for k in data[resolve_key("england", data)]["leaf"] if k != "_meta"}
     assert england == england_leaf | london_leaf

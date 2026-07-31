@@ -105,6 +105,7 @@
 - [X] `croatia`
 - [X] `denmark`
 - [X] `laos`
+- [X] `georgia`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`
