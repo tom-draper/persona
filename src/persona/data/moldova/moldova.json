@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2014 Census (religion), National Bureau of Statistics (Moldova)",
+                "year": 2014,
+                "url": "https://statistica.gov.md/en",
+                "note": "6.4% did not declare a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, National Bureau of Statistics (Moldova)",
+                "year": 2024,
+                "url": "https://statistica.gov.md/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0583,
+        "5-9": 0.0736,
+        "10-14": 0.068,
+        "15-19": 0.0588,
+        "20-24": 0.0487,
+        "25-29": 0.0557,
+        "30-34": 0.0735,
+        "35-39": 0.083,
+        "40-44": 0.0696,
+        "45-49": 0.0641,
+        "50-54": 0.0597,
+        "55-59": 0.06,
+        "60-64": 0.0708,
+        "65-69": 0.0611,
+        "70-74": 0.0498,
+        "75-79": 0.0195,
+        "80-84": 0.0151,
+        "85+": 0.0106
+    },
+    "sex": {
+        "Male": 0.46,
+        "Female": 0.54
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.905,
+        "Christianity or Other Christianity": 0.026,
+        "No religion": 0.002,
+        "Other": 0.002
+    },
+    "location": {
+        "Chișinău": 0.38438,
+        "Bălți": 0.05047,
+        "Orhei": 0.0423,
+        "Ungheni": 0.04046,
+        "Ialoveni": 0.03974,
+        "Cahul": 0.03885,
+        "Hîncești": 0.03708,
+        "Strășeni": 0.03275,
+        "Soroca": 0.03128,
+        "Anenii Noi": 0.03079,
+        "Căușeni": 0.03056,
+        "Fălești": 0.02991,
+        "Sîngerei": 0.02986,
+        "Drochia": 0.02868,
+        "Florești": 0.02843,
+        "Criuleni": 0.02825,
+        "Edineț": 0.02692,
+        "Călărași": 0.02341,
+        "Rîșcani": 0.0233,
+        "Ștefan Vodă": 0.02257
+    }
+}

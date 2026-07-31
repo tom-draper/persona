@@ -1,0 +1,81 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Nicaragua (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/nicaragua/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2023, Instituto Nacional de Información de Desarrollo (INIDE)",
+                "year": 2023,
+                "url": "https://www.inide.gob.ni/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0963,
+        "5-9": 0.0978,
+        "10-14": 0.0979,
+        "15-19": 0.0947,
+        "20-24": 0.0906,
+        "25-29": 0.0884,
+        "30-34": 0.0832,
+        "35-39": 0.0733,
+        "40-44": 0.0635,
+        "45-49": 0.054,
+        "50-54": 0.0444,
+        "55-59": 0.0351,
+        "60-64": 0.027,
+        "65-69": 0.0204,
+        "70-74": 0.0155,
+        "75-79": 0.0093,
+        "80-84": 0.0057,
+        "85+": 0.003
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "religion": {
+        "Roman Catholicism": 0.449,
+        "Protestantism": 0.382,
+        "No religion": 0.141,
+        "Other": 0.028
+    },
+    "location": {
+        "Managua": 0.23307,
+        "Matagalpa": 0.09013,
+        "North Caribbean Coast": 0.08276,
+        "Jinotega": 0.07338,
+        "Chinandega": 0.06552,
+        "South Caribbean Coast": 0.06383,
+        "León": 0.06274,
+        "Masaya": 0.06015,
+        "Nueva Segovia": 0.04156,
+        "Estelí": 0.03426,
+        "Granada": 0.03222,
+        "Carazo": 0.02953,
+        "Chontales": 0.02849,
+        "Boaco": 0.02775,
+        "Rivas": 0.02727,
+        "Madriz": 0.02665,
+        "Río San Juan": 0.02069
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), Statistics Lithuania",
+                "year": 2021,
+                "url": "https://www.stat.gov.lt/en",
+                "note": "13.7% did not declare a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, Statistics Lithuania",
+                "year": 2021,
+                "url": "https://www.stat.gov.lt/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0448,
+        "5-9": 0.0529,
+        "10-14": 0.0511,
+        "15-19": 0.0486,
+        "20-24": 0.0556,
+        "25-29": 0.0642,
+        "30-34": 0.0736,
+        "35-39": 0.0702,
+        "40-44": 0.0619,
+        "45-49": 0.0643,
+        "50-54": 0.0701,
+        "55-59": 0.0699,
+        "60-64": 0.074,
+        "65-69": 0.0587,
+        "70-74": 0.0476,
+        "75-79": 0.0344,
+        "80-84": 0.0304,
+        "85+": 0.0274
+    },
+    "sex": {
+        "Male": 0.472,
+        "Female": 0.528
+    },
+    "religion": {
+        "Roman Catholicism": 0.742,
+        "No religion": 0.063,
+        "Eastern Orthodoxy": 0.044,
+        "Other": 0.007,
+        "Christianity or Other Christianity": 0.003
+    },
+    "location": {
+        "Vilnius": 0.29767,
+        "Kaunas": 0.20291,
+        "Klaipėda": 0.11752,
+        "Šiauliai": 0.09153,
+        "Panevėžys": 0.074,
+        "Marijampolė": 0.04751,
+        "Alytus": 0.04733,
+        "Telšiai": 0.04595,
+        "Utena": 0.04387,
+        "Tauragė": 0.0317
+    }
+}

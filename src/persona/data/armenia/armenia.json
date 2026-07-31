@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Statistical Committee of Armenia (ArmStat)",
+                "year": 2022,
+                "url": "https://armstat.am/en/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Statistical Committee of Armenia (ArmStat)",
+                "year": 2022,
+                "url": "https://armstat.am/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0602,
+        "5-9": 0.0666,
+        "10-14": 0.0686,
+        "15-19": 0.0619,
+        "20-24": 0.0602,
+        "25-29": 0.067,
+        "30-34": 0.0843,
+        "35-39": 0.082,
+        "40-44": 0.0726,
+        "45-49": 0.0601,
+        "50-54": 0.0553,
+        "55-59": 0.06,
+        "60-64": 0.069,
+        "65-69": 0.0539,
+        "70-74": 0.0358,
+        "75-79": 0.0173,
+        "80-84": 0.0139,
+        "85+": 0.0111
+    },
+    "sex": {
+        "Male": 0.464,
+        "Female": 0.536
+    },
+    "religion": {
+        "Armenian Apostolic Church": 0.952,
+        "Other": 0.026,
+        "No religion": 0.006,
+        "Roman Catholicism": 0.006,
+        "Christianity or Other Christianity": 0.005,
+        "Yazidism": 0.005
+    },
+    "location": {
+        "Yerevan": 0.37053,
+        "Kotayk": 0.09202,
+        "Armavir": 0.08644,
+        "Ararat": 0.0849,
+        "Shirak": 0.0803,
+        "Lori": 0.07597,
+        "Gegharkunik": 0.07149,
+        "Aragatsotn": 0.04397,
+        "Tavush": 0.03919,
+        "Syunik": 0.03904,
+        "Vayots Dzor": 0.01615
+    }
+}

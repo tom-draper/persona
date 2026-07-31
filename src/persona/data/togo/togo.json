@@ -1,0 +1,72 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Institut National de la Statistique (INSEED Togo)",
+                "year": 2022,
+                "url": "https://inseed.tg/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census (RGPH-5), Institut National de la Statistique (INSEED Togo)",
+                "year": 2022,
+                "url": "https://inseed.tg/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1443,
+        "5-9": 0.1324,
+        "10-14": 0.1222,
+        "15-19": 0.1047,
+        "20-24": 0.0887,
+        "25-29": 0.0762,
+        "30-34": 0.0673,
+        "35-39": 0.0586,
+        "40-44": 0.0507,
+        "45-49": 0.0427,
+        "50-54": 0.0341,
+        "55-59": 0.0265,
+        "60-64": 0.02,
+        "65-69": 0.0144,
+        "70-74": 0.0095,
+        "75-79": 0.0051,
+        "80-84": 0.002,
+        "85+": 0.0006
+    },
+    "sex": {
+        "Male": 0.503,
+        "Female": 0.497
+    },
+    "religion": {
+        "Roman Catholicism": 0.21,
+        "Protestantism": 0.208,
+        "Islam": 0.186,
+        "African traditional religion": 0.17,
+        "No religion": 0.094,
+        "Christianity or Other Christianity": 0.074,
+        "Other": 0.029
+    },
+    "location": {
+        "Maritime": 0.43666,
+        "Plateaux": 0.20208,
+        "Savanes": 0.14125,
+        "Kara": 0.12174,
+        "Centrale": 0.09827
+    }
+}

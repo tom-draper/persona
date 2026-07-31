@@ -31,6 +31,7 @@ alias = {
     "burkina": "burkina_faso",
     "dr": "dominican_republic",
     "png": "papua_new_guinea",
+    "bosnia": "bosnia_and_herzegovina",
 }
 
 

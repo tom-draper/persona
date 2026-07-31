@@ -114,6 +114,14 @@
 - [X] `oman`
 - [X] `kuwait`
 - [X] `mongolia`
+- [X] `armenia`
+- [X] `kyrgyzstan`
+- [X] `moldova`
+- [X] `lithuania`
+- [X] `albania`
+- [X] `bosnia_and_herzegovina`
+- [X] `nicaragua`
+- [X] `togo`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

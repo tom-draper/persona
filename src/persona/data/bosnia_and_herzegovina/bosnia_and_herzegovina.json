@@ -1,0 +1,76 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2013 Census (religion), Agency for Statistics of Bosnia and Herzegovina",
+                "year": 2013,
+                "url": "https://bhas.gov.ba/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2013 Census, Agency for Statistics of Bosnia and Herzegovina",
+                "year": 2013,
+                "url": "https://bhas.gov.ba/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.041,
+        "5-9": 0.0434,
+        "10-14": 0.0479,
+        "15-19": 0.0521,
+        "20-24": 0.0537,
+        "25-29": 0.0516,
+        "30-34": 0.0536,
+        "35-39": 0.0651,
+        "40-44": 0.0768,
+        "45-49": 0.0777,
+        "50-54": 0.0665,
+        "55-59": 0.0741,
+        "60-64": 0.0801,
+        "65-69": 0.0725,
+        "70-74": 0.0569,
+        "75-79": 0.0348,
+        "80-84": 0.0263,
+        "85+": 0.0259
+    },
+    "sex": {
+        "Male": 0.476,
+        "Female": 0.524
+    },
+    "religion": {
+        "Islam": 0.513,
+        "Eastern Orthodoxy": 0.308,
+        "Roman Catholicism": 0.152,
+        "Other": 0.027
+    },
+    "location": {
+        "Republika Srpska": 0.34788,
+        "Tuzla Canton": 0.12603,
+        "Sarajevo Canton": 0.11713,
+        "Zenica-Doboj Canton": 0.1032,
+        "Una-Sana Canton": 0.07739,
+        "Central Bosnia Canton": 0.07213,
+        "Herzegovina-Neretva Canton": 0.06287,
+        "West Herzegovina Canton": 0.02687,
+        "Canton 10": 0.02382,
+        "Brčko District": 0.02365,
+        "Posavina Canton": 0.01231,
+        "Bosnian-Podrinje Canton Goražde": 0.00672
+    }
+}
