@@ -1,0 +1,95 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), National Statistical Institute (NSI Bulgaria)",
+                "year": 2021,
+                "url": "https://www.nsi.bg/en",
+                "note": "16.7% did not state a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, National Statistical Institute (NSI Bulgaria)",
+                "year": 2021,
+                "url": "https://www.nsi.bg/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0453,
+        "5-9": 0.0488,
+        "10-14": 0.0513,
+        "15-19": 0.0489,
+        "20-24": 0.0467,
+        "25-29": 0.0468,
+        "30-34": 0.064,
+        "35-39": 0.0708,
+        "40-44": 0.0726,
+        "45-49": 0.0796,
+        "50-54": 0.0746,
+        "55-59": 0.066,
+        "60-64": 0.0663,
+        "65-69": 0.0646,
+        "70-74": 0.0599,
+        "75-79": 0.0456,
+        "80-84": 0.0276,
+        "85+": 0.0206
+    },
+    "sex": {
+        "Male": 0.484,
+        "Female": 0.516
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.627,
+        "Islam": 0.098,
+        "No religion": 0.047,
+        "Protestantism": 0.011,
+        "Roman Catholicism": 0.006,
+        "Other": 0.004
+    },
+    "location": {
+        "Sofia City": 0.19545,
+        "Plovdiv": 0.09732,
+        "Varna": 0.06629,
+        "Burgas": 0.05833,
+        "Stara Zagora": 0.04548,
+        "Blagoevgrad": 0.04482,
+        "Sofia Province": 0.03558,
+        "Pazardzhik": 0.03525,
+        "Pleven": 0.03468,
+        "Haskovo": 0.03245,
+        "Veliko Tarnovo": 0.03181,
+        "Ruse": 0.02968,
+        "Sliven": 0.02649,
+        "Vratsa": 0.02344,
+        "Shumen": 0.02323,
+        "Dobrich": 0.02303,
+        "Kardzhali": 0.02165,
+        "Montana": 0.0184,
+        "Lovech": 0.01785,
+        "Pernik": 0.01751,
+        "Kyustendil": 0.01714,
+        "Yambol": 0.01682,
+        "Razgrad": 0.01583,
+        "Gabrovo": 0.01509,
+        "Targovishte": 0.01505,
+        "Silistra": 0.015,
+        "Smolyan": 0.01477,
+        "Vidin": 0.01157
+    }
+}

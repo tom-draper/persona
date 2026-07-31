@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Zimbabwe National Statistics Agency (ZimStat)",
+                "year": 2022,
+                "url": "https://www.zimstat.co.zw/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Zimbabwe National Statistics Agency (ZimStat)",
+                "year": 2022,
+                "url": "https://www.zimstat.co.zw/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1412,
+        "5-9": 0.1364,
+        "10-14": 0.1357,
+        "15-19": 0.1125,
+        "20-24": 0.0948,
+        "25-29": 0.0657,
+        "30-34": 0.0581,
+        "35-39": 0.0653,
+        "40-44": 0.0584,
+        "45-49": 0.0389,
+        "50-54": 0.0246,
+        "55-59": 0.0172,
+        "60-64": 0.0151,
+        "65-69": 0.0147,
+        "70-74": 0.0111,
+        "75-79": 0.0057,
+        "80-84": 0.0029,
+        "85+": 0.0017
+    },
+    "sex": {
+        "Male": 0.476,
+        "Female": 0.524
+    },
+    "religion": {
+        "Protestantism": 0.71,
+        "No religion": 0.084,
+        "Christianity or Other Christianity": 0.078,
+        "Roman Catholicism": 0.064,
+        "African traditional religion": 0.05,
+        "Other": 0.008,
+        "Islam": 0.006
+    },
+    "location": {
+        "Harare": 0.15991,
+        "Manicaland": 0.13425,
+        "Mashonaland West": 0.12475,
+        "Midlands": 0.11937,
+        "Mashonaland East": 0.11405,
+        "Masvingo": 0.10795,
+        "Mashonaland Central": 0.09124,
+        "Matabeleland North": 0.05453,
+        "Matabeleland South": 0.05009,
+        "Bulawayo": 0.04387
+    }
+}

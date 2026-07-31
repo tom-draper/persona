@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Somalia (religion), CIA",
+                "year": 2023,
+                "url": "https://www.cia.gov/the-world-factbook/countries/somalia/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Subnational population statistics, UN OCHA / UNFPA (Somalia)",
+                "year": 2025,
+                "url": "https://www.unfpa.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1858,
+        "5-9": 0.1563,
+        "10-14": 0.1247,
+        "15-19": 0.1091,
+        "20-24": 0.0918,
+        "25-29": 0.0754,
+        "30-34": 0.0541,
+        "35-39": 0.0484,
+        "40-44": 0.0392,
+        "45-49": 0.0306,
+        "50-54": 0.0244,
+        "55-59": 0.0194,
+        "60-64": 0.0152,
+        "65-69": 0.0114,
+        "70-74": 0.0077,
+        "75-79": 0.0039,
+        "80-84": 0.0018,
+        "85+": 0.0008
+    },
+    "sex": {
+        "Male": 0.501,
+        "Female": 0.499
+    },
+    "religion": {
+        "Islam": 0.999,
+        "Other": 0.001
+    },
+    "location": {
+        "Banaadir": 0.16919,
+        "Lower Shabelle": 0.0852,
+        "Mudug": 0.07863,
+        "Woqooyi Galbeed": 0.07741,
+        "Bay": 0.06674,
+        "Bari": 0.0659,
+        "Lower Juba": 0.06194,
+        "Middle Shabelle": 0.05419,
+        "Gedo": 0.05217,
+        "Togdheer": 0.04603,
+        "Galguduud": 0.04346,
+        "Awdal": 0.03402,
+        "Nugaal": 0.03379,
+        "Sool": 0.02936,
+        "Bakool": 0.02906,
+        "Hiiraan": 0.027,
+        "Middle Juba": 0.023,
+        "Sanaag": 0.02293
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Bolivia (religion), CIA",
+                "year": 2023,
+                "url": "https://www.cia.gov/the-world-factbook/countries/bolivia/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2024 Census, Instituto Nacional de Estadística (INE Bolivia)",
+                "year": 2024,
+                "url": "https://www.ine.gob.bo/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1022,
+        "5-9": 0.1004,
+        "10-14": 0.0989,
+        "15-19": 0.0955,
+        "20-24": 0.0913,
+        "25-29": 0.087,
+        "30-34": 0.0809,
+        "35-39": 0.0699,
+        "40-44": 0.0599,
+        "45-49": 0.0515,
+        "50-54": 0.0432,
+        "55-59": 0.0356,
+        "60-64": 0.0283,
+        "65-69": 0.021,
+        "70-74": 0.0147,
+        "75-79": 0.0103,
+        "80-84": 0.0056,
+        "85+": 0.0039
+    },
+    "sex": {
+        "Male": 0.501,
+        "Female": 0.499
+    },
+    "religion": {
+        "Roman Catholicism": 0.65,
+        "Protestantism": 0.196,
+        "No religion": 0.084,
+        "Other": 0.048,
+        "Christianity or Other Christianity": 0.009
+    },
+    "location": {
+        "Santa Cruz": 0.27539,
+        "La Paz": 0.26719,
+        "Cochabamba": 0.17727,
+        "Potosí": 0.0757,
+        "Chuquisaca": 0.05305,
+        "Oruro": 0.0504,
+        "Tarija": 0.04723,
+        "Beni": 0.0422,
+        "Pando": 0.01156
+    }
+}

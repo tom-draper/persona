@@ -28,6 +28,7 @@ alias = {
     "holland": "netherlands",
     "czech_republic": "czechia",
     "dprk": "north_korea",
+    "burkina": "burkina_faso",
 }
 
 

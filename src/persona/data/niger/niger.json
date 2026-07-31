@@ -1,0 +1,73 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2012 Census (religion), Institut National de la Statistique (Niger)",
+                "year": 2012,
+                "url": "https://www.stat-niger.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, Institut National de la Statistique (Niger)",
+                "year": 2020,
+                "url": "https://www.stat-niger.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1784,
+        "5-9": 0.1559,
+        "10-14": 0.1353,
+        "15-19": 0.1129,
+        "20-24": 0.0909,
+        "25-29": 0.0711,
+        "30-34": 0.0557,
+        "35-39": 0.0454,
+        "40-44": 0.0378,
+        "45-49": 0.0304,
+        "50-54": 0.0246,
+        "55-59": 0.0201,
+        "60-64": 0.0158,
+        "65-69": 0.0115,
+        "70-74": 0.0075,
+        "75-79": 0.0043,
+        "80-84": 0.0018,
+        "85+": 0.0005
+    },
+    "sex": {
+        "Male": 0.508,
+        "Female": 0.492
+    },
+    "religion": {
+        "Islam": 0.993,
+        "Christianity or Other Christianity": 0.003,
+        "African traditional religion": 0.002,
+        "No religion": 0.001,
+        "Other": 0.001
+    },
+    "location": {
+        "Zinder": 0.20653,
+        "Maradi": 0.1985,
+        "Tahoua": 0.1942,
+        "Tillabéri": 0.15887,
+        "Dosso": 0.11889,
+        "Niamey": 0.05991,
+        "Diffa": 0.03465,
+        "Agadez": 0.02845
+    }
+}

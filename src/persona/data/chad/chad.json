@@ -1,0 +1,82 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2009 Census (religion), Institut National de la Statistique (INSEED Chad)",
+                "year": 2009,
+                "url": "https://www.inseed.td/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Provincial population estimates 2023, Institut National de la Statistique (INSEED Chad)",
+                "year": 2023,
+                "url": "https://www.inseed.td/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1836,
+        "5-9": 0.1535,
+        "10-14": 0.1302,
+        "15-19": 0.1092,
+        "20-24": 0.09,
+        "25-29": 0.0743,
+        "30-34": 0.0603,
+        "35-39": 0.0476,
+        "40-44": 0.0383,
+        "45-49": 0.0329,
+        "50-54": 0.026,
+        "55-59": 0.0193,
+        "60-64": 0.0139,
+        "65-69": 0.0094,
+        "70-74": 0.006,
+        "75-79": 0.0031,
+        "80-84": 0.0015,
+        "85+": 0.0007
+    },
+    "sex": {
+        "Male": 0.502,
+        "Female": 0.498
+    },
+    "religion": {
+        "Islam": 0.58,
+        "Christianity or Other Christianity": 0.34,
+        "African traditional religion": 0.08
+    },
+    "location": {
+        "N'Djamena": 0.08785,
+        "Logone Oriental": 0.07254,
+        "Mayo-Kebbi Est": 0.07221,
+        "Ouaddaï": 0.06751,
+        "Logone Occidental": 0.06454,
+        "Tandjilé": 0.06172,
+        "Mandoul": 0.06138,
+        "Moyen-Chari": 0.05526,
+        "Chari-Baguirmi": 0.05419,
+        "Hadjer-Lamis": 0.05329,
+        "Mayo-Kebbi Ouest": 0.05258,
+        "Guéra": 0.05047,
+        "Wadi Fira": 0.04852,
+        "Batha": 0.04583,
+        "Sila": 0.03621,
+        "Lac": 0.03119,
+        "Kanem": 0.03098,
+        "Salamat": 0.0288,
+        "Bahr el-Gazel": 0.02494
+    }
+}

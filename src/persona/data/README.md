@@ -82,6 +82,14 @@
 - [X] `senegal`
 - [X] `zambia`
 - [X] `serbia`
+- [X] `niger`
+- [X] `burkina_faso`
+- [X] `chad`
+- [X] `somalia`
+- [X] `zimbabwe`
+- [X] `tunisia`
+- [X] `bolivia`
+- [X] `bulgaria`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`
