@@ -1,0 +1,83 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2015 Census (religion), Lao Statistics Bureau",
+                "year": 2015,
+                "url": "https://www.lsb.gov.la/en/",
+                "note": "The 'no religion' category includes practitioners of folk and animist beliefs."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population projections 2023, Lao Statistics Bureau",
+                "year": 2023,
+                "url": "https://www.lsb.gov.la/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1038,
+        "5-9": 0.1034,
+        "10-14": 0.0984,
+        "15-19": 0.0954,
+        "20-24": 0.0938,
+        "25-29": 0.0892,
+        "30-34": 0.0834,
+        "35-39": 0.0737,
+        "40-44": 0.0605,
+        "45-49": 0.0496,
+        "50-54": 0.0412,
+        "55-59": 0.0346,
+        "60-64": 0.0277,
+        "65-69": 0.0197,
+        "70-74": 0.0126,
+        "75-79": 0.0073,
+        "80-84": 0.0038,
+        "85+": 0.0019
+    },
+    "sex": {
+        "Male": 0.503,
+        "Female": 0.497
+    },
+    "religion": {
+        "Buddhism": 0.647,
+        "No religion": 0.314,
+        "Other": 0.022,
+        "Christianity or Other Christianity": 0.017
+    },
+    "location": {
+        "Savannakhet": 0.14813,
+        "Vientiane Prefecture": 0.13379,
+        "Champasak": 0.10355,
+        "Vientiane Province": 0.06355,
+        "Luang Prabang": 0.06332,
+        "Salavan": 0.06161,
+        "Khammouane": 0.05982,
+        "Sainyabuli": 0.05825,
+        "Oudomxay": 0.04783,
+        "Bolikhamxai": 0.04384,
+        "Houaphanh": 0.04203,
+        "Xiangkhouang": 0.03637,
+        "Bokeo": 0.02827,
+        "Luang Namtha": 0.02769,
+        "Phongsaly": 0.02619,
+        "Attapeu": 0.02214,
+        "Sekong": 0.01812,
+        "Xaisomboun": 0.01548
+    }
+}

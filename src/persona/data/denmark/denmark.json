@@ -1,0 +1,70 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation, Statistics Denmark and CIA World Factbook",
+                "year": 2024,
+                "url": "https://www.dst.dk/en"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by region, Statistics Denmark",
+                "year": 2024,
+                "url": "https://www.dst.dk/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0519,
+        "5-9": 0.052,
+        "10-14": 0.0547,
+        "15-19": 0.0586,
+        "20-24": 0.0626,
+        "25-29": 0.0687,
+        "30-34": 0.0671,
+        "35-39": 0.0591,
+        "40-44": 0.0577,
+        "45-49": 0.0639,
+        "50-54": 0.0659,
+        "55-59": 0.0706,
+        "60-64": 0.0612,
+        "65-69": 0.0549,
+        "70-74": 0.0501,
+        "75-79": 0.0484,
+        "80-84": 0.0294,
+        "85+": 0.0231
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "Protestantism": 0.698,
+        "No religion": 0.2,
+        "Islam": 0.043,
+        "Christianity or Other Christianity": 0.04,
+        "Other": 0.016
+    },
+    "location": {
+        "Capital Region": 0.32058,
+        "Central Denmark": 0.22909,
+        "Southern Denmark": 0.20774,
+        "Zealand": 0.14308,
+        "North Jutland": 0.0995
+    }
+}

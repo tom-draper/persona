@@ -1,0 +1,87 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), Croatian Bureau of Statistics (DZS)",
+                "year": 2021,
+                "url": "https://dzs.gov.hr/en"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, Croatian Bureau of Statistics (DZS)",
+                "year": 2021,
+                "url": "https://dzs.gov.hr/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0433,
+        "5-9": 0.0455,
+        "10-14": 0.0525,
+        "15-19": 0.0519,
+        "20-24": 0.0512,
+        "25-29": 0.0552,
+        "30-34": 0.0556,
+        "35-39": 0.0639,
+        "40-44": 0.0701,
+        "45-49": 0.0692,
+        "50-54": 0.0677,
+        "55-59": 0.0722,
+        "60-64": 0.0734,
+        "65-69": 0.0712,
+        "70-74": 0.0594,
+        "75-79": 0.0397,
+        "80-84": 0.0306,
+        "85+": 0.0272
+    },
+    "sex": {
+        "Male": 0.482,
+        "Female": 0.518
+    },
+    "religion": {
+        "Roman Catholicism": 0.83,
+        "No religion": 0.064,
+        "Eastern Orthodoxy": 0.034,
+        "Islam": 0.013,
+        "Other": 0.01,
+        "Protestantism": 0.003
+    },
+    "location": {
+        "City of Zagreb": 0.19813,
+        "Split-Dalmatia": 0.10936,
+        "Zagreb County": 0.07748,
+        "Primorje-Gorski Kotar": 0.06855,
+        "Osijek-Baranja": 0.06664,
+        "Istria": 0.05042,
+        "Zadar": 0.04126,
+        "Varaždin": 0.04119,
+        "Sisak-Moslavina": 0.03606,
+        "Vukovar-Srijem": 0.03696,
+        "Brod-Posavina": 0.03364,
+        "Krapina-Zagorje": 0.03117,
+        "Dubrovnik-Neretva": 0.02985,
+        "Karlovac": 0.02898,
+        "Bjelovar-Bilogora": 0.02631,
+        "Koprivnica-Križevci": 0.02614,
+        "Međimurje": 0.02718,
+        "Šibenik-Knin": 0.02489,
+        "Virovitica-Podravina": 0.01817,
+        "Požega-Slavonia": 0.01655,
+        "Lika-Senj": 0.01104
+    }
+}

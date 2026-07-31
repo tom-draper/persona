@@ -98,6 +98,13 @@
 - [X] `jordan`
 - [X] `azerbaijan`
 - [X] `tajikistan`
+- [X] `honduras`
+- [X] `paraguay`
+- [X] `el_salvador`
+- [X] `slovakia`
+- [X] `croatia`
+- [X] `denmark`
+- [X] `laos`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

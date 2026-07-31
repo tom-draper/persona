@@ -1,0 +1,82 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Honduras (religion), CIA",
+                "year": 2023,
+                "url": "https://www.cia.gov/the-world-factbook/countries/honduras/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2013 Census, Instituto Nacional de Estadística (INE Honduras)",
+                "year": 2013,
+                "url": "https://www.ine.gob.hn/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1069,
+        "5-9": 0.1026,
+        "10-14": 0.1005,
+        "15-19": 0.0998,
+        "20-24": 0.0989,
+        "25-29": 0.0913,
+        "30-34": 0.081,
+        "35-39": 0.0712,
+        "40-44": 0.0622,
+        "45-49": 0.0506,
+        "50-54": 0.0388,
+        "55-59": 0.0299,
+        "60-64": 0.0235,
+        "65-69": 0.0182,
+        "70-74": 0.0127,
+        "75-79": 0.0069,
+        "80-84": 0.0034,
+        "85+": 0.0018
+    },
+    "sex": {
+        "Male": 0.504,
+        "Female": 0.496
+    },
+    "religion": {
+        "Protestantism": 0.55,
+        "Roman Catholicism": 0.334,
+        "No religion": 0.101,
+        "Other": 0.015
+    },
+    "location": {
+        "Cortés": 0.18792,
+        "Francisco Morazán": 0.18148,
+        "Yoro": 0.06863,
+        "Olancho": 0.06263,
+        "Comayagua": 0.05935,
+        "El Paraíso": 0.05479,
+        "Choluteca": 0.05263,
+        "Atlántida": 0.05247,
+        "Santa Bárbara": 0.05068,
+        "Copán": 0.04463,
+        "Lempira": 0.03863,
+        "Colón": 0.03728,
+        "Intibucá": 0.02797,
+        "La Paz": 0.02393,
+        "Valle": 0.02099,
+        "Ocotepeque": 0.01756,
+        "Gracias a Dios": 0.01092,
+        "Bay Islands": 0.00752
+    }
+}
