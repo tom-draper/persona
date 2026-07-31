@@ -26,9 +26,14 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "target",
-        nargs="?",
+        nargs="*",
         default=None,
-        help="Target location (e.g. england, united_kingdom, australia)",
+        help=(
+            "Target location (e.g. england, united_kingdom, australia). "
+            "Give a path to target a nested location that shares a name with a "
+            "top-level one, e.g. 'persona united_states_of_america georgia' for "
+            "the US state vs 'persona georgia' for the country."
+        ),
     )
     parser.add_argument(
         "-n",
@@ -81,11 +86,14 @@ def run():
             print(loc)
         return
 
-    if args.target is None:
+    if not args.target:
         parser.print_help()
         return
 
-    target = clean_location(args.target)
+    # A target may be several tokens forming a path down the tree
+    # (e.g. "united_states_of_america georgia"); join them for gen_samples,
+    # which normalises and resolves each segment.
+    target = "/".join(args.target)
     enabled_features = get_enabled_features(args)
     N = args.n
 
@@ -93,7 +101,7 @@ def run():
         samples = gen_samples(target, enabled_features, N, seed=args.seed)
     except ValueError:
         print(
-            Fore.RED + f"Error: location '{args.target}' not found." + Style.RESET_ALL,
+            Fore.RED + f"Error: location '{' '.join(args.target)}' not found." + Style.RESET_ALL,
             file=sys.stderr,
         )
         print("Run with --list to see available locations.", file=sys.stderr)
@@ -102,7 +110,8 @@ def run():
     if args.json:
         print(json.dumps(samples, indent=2))
     else:
-        print(Fore.CYAN + "> " + format_location(target) + Fore.WHITE)
+        heading = " / ".join(format_location(clean_location(t)) for t in args.target)
+        print(Fore.CYAN + "> " + heading + Fore.WHITE)
         pprint(samples)
 
 

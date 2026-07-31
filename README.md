@@ -62,6 +62,22 @@ Pass a `seed` integer to get the same persona(s) back every time.
 https://persona-api.vercel.app/v1/<location>/?seed=42
 ```
 
+#### Nested Locations
+
+Some names appear more than once in the location tree (for example the country
+`georgia` and the US state `georgia`). A bare name resolves to the top-level
+dataset, so `georgia` is the country. To target a nested location, give the
+path down the tree:
+
+```
+https://persona-api.vercel.app/v1/georgia/                          # the country
+https://persona-api.vercel.app/v1/united_states_of_america/georgia/ # the US state
+```
+
+A partial path fixes the outer levels and fills in the rest at random — e.g.
+`/v1/united_kingdom/england/` always picks England, then randomly London or the
+rest of England.
+
 ### List Locations
 
 All locations currently included can be listed with the `/v1/locations/` endpoint.
@@ -168,6 +184,17 @@ Generate multiple personas at once with `-n`:
 ```bash
 persona <location> -n <count>
 ```
+
+Target a nested location by giving the path down the tree. This disambiguates
+names shared with a top-level location — `persona georgia` is the country,
+while the US state is:
+
+```bash
+persona united_states_of_america georgia
+```
+
+A partial path fixes the outer levels and resolves the rest at random (e.g.
+`persona united_kingdom england` always picks England, then London or the rest).
 
 Output as JSON (useful for scripting):
 

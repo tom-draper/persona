@@ -635,3 +635,46 @@ def test_get_features_recurses_through_interior_node():
     london_leaf = {k for k in data[resolve_key("london", data)]["leaf"] if k != "_meta"}
     england_leaf = {k for k in data[resolve_key("england", data)]["leaf"] if k != "_meta"}
     assert england == england_leaf | london_leaf
+
+
+# ---------------------------------------------------------------------------
+# Path addressing (disambiguating shared names by descending the tree)
+# ---------------------------------------------------------------------------
+
+
+def test_bare_name_resolves_to_top_level_country():
+    # "georgia" alone is the country, not the US state
+    for s in gen_samples("georgia", N=20, seed=1):
+        assert "ethnicity" not in s  # country dataset has no ethnicity feature
+
+
+def test_path_targets_nested_us_state():
+    samples = gen_samples("united_states_of_america georgia", N=20, seed=1)
+    for s in samples:
+        assert "ethnicity" in s  # US-state schema
+        assert s["location"] == "Georgia"
+
+
+def test_path_accepts_slash_and_alias():
+    a = gen_samples("us/georgia", N=5, seed=1)
+    b = gen_samples("united_states_of_america georgia", N=5, seed=1)
+    assert all("ethnicity" in s for s in a)
+    assert a == b  # "us" alias + slash separator == full name + space
+
+
+def test_partial_path_then_random_remainder():
+    # uk england -> forces England, then randomly London or England-proper
+    locs = {s["location"] for s in gen_samples("united_kingdom england", N=300, seed=2)}
+    assert any(loc.endswith("England") for loc in locs)
+
+
+def test_api_path_key_disambiguation():
+    from persona.api.handler import load_location_data, resolve_path_key
+
+    data = load_location_data()
+    assert resolve_path_key("georgia", data) == "georgia"
+    assert resolve_path_key("us/georgia", data) == "united_states_of_america/georgia"
+    assert resolve_path_key("united_states_of_america georgia", data) == (
+        "united_states_of_america/georgia"
+    )
+    assert resolve_path_key("nowhere/georgia", data) is None

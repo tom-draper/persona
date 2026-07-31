@@ -8,9 +8,8 @@ from persona.api.handler import (
     get_available_features,
     get_features,
     load_location_data,
-    resolve_key,
+    resolve_path_key,
 )
-from persona.lib.format import clean_location
 from persona.lib.generate import gen_api_samples
 
 
@@ -79,17 +78,16 @@ async def locations(request: Request, response: Response) -> list[str]:
     return _location_names(request.app.state.data)
 
 
-@app.get("/v1/{location}/features/")
+@app.get("/v1/{location:path}/features/")
 async def features(location: str, request: Request, response: Response) -> dict:
     data = request.app.state.data
-    location = clean_location(location)
-    if resolve_key(location, data) is None:
+    if resolve_path_key(location, data) is None:
         raise _location_not_found(data)
     response.headers["Cache-Control"] = "public, max-age=3600"
     return get_features(location, data)
 
 
-@app.get("/v1/{location}/")
+@app.get("/v1/{location:path}/")
 def gen_personas(
     location: str,
     request: Request,
@@ -101,9 +99,7 @@ def gen_personas(
     seed: int | None = Query(default=None, description="Random seed for reproducible output"),
 ) -> list[dict]:
     data = request.app.state.data
-    location = clean_location(location)
-    key = resolve_key(location, data)
-    if key is None:
+    if resolve_path_key(location, data) is None:
         raise _location_not_found(data)
     enabled_features = {f.strip() for f in features.split(",")} if features else None
     if enabled_features:
@@ -118,4 +114,4 @@ def gen_personas(
                     "available": sorted(available),
                 },
             )
-    return gen_api_samples(key, data, enabled_features=enabled_features, N=count, seed=seed)
+    return gen_api_samples(location, data, enabled_features=enabled_features, N=count, seed=seed)

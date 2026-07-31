@@ -2,6 +2,7 @@ import json
 import warnings
 from pathlib import Path
 
+from persona.lib.format import clean_location
 from persona.lib.generate import preprocess_location_data
 
 DATA_DIR = Path(__file__).parent.parent / "data"
@@ -45,6 +46,25 @@ def resolve_key(name: str, data: dict) -> str | None:
     return min(candidates, key=lambda k: k.count("/"))
 
 
+def resolve_path_key(location: str, data: dict) -> str | None:
+    """Resolve a location path (one name, or a slash/space-separated path down
+    the tree) to the key of its target node, without random descent. The first
+    segment resolves to a top-level key; each subsequent one descends by scoped
+    child key. Returns None if any segment does not resolve."""
+    segments = [clean_location(p) for p in location.replace("/", " ").split()]
+    if not segments:
+        return None
+    key = resolve_key(segments[0], data)
+    if key is None:
+        return None
+    for seg in segments[1:]:
+        child = f"{key}/{seg}"
+        if child not in data:
+            return None
+        key = child
+    return key
+
+
 def _subtree_features(key: str, data: dict, seen: set[str]) -> set[str]:
     """Union of every feature reachable from a node, recursing through
     composites (and self/remainder branches, guarded by ``seen``)."""
@@ -60,15 +80,15 @@ def _subtree_features(key: str, data: dict, seen: set[str]) -> set[str]:
     return features
 
 
-def get_features(name: str, data: dict) -> dict:
-    key = resolve_key(name, data)
+def get_features(location: str, data: dict) -> dict:
+    key = resolve_path_key(location, data)
     if key is None:
         return {}
-    return {name: sorted(_subtree_features(key, data, set()))}
+    return {location: sorted(_subtree_features(key, data, set()))}
 
 
-def get_available_features(name: str, data: dict) -> set[str]:
-    features_dict = get_features(name, data)
+def get_available_features(location: str, data: dict) -> set[str]:
+    features_dict = get_features(location, data)
     result: set[str] = set()
     for feature_list in features_dict.values():
         result.update(feature_list)

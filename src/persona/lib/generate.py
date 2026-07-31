@@ -65,6 +65,42 @@ def resolve_location(
     return chain + sub_chain, [*sub_labels, sublocation]
 
 
+def resolve_location_path(
+    segments: list[str], rng: np.random.Generator
+) -> tuple[list[Path], list[str]]:
+    """
+    Resolve a path of location segments descending the tree (CLI, disk-based).
+
+    The first segment is the query root; each subsequent segment forces a
+    sublocation choice (scoped to the previous node's directory); the remainder
+    below the last given segment is resolved randomly. This lets a caller target
+    a nested dataset whose name is shared with a top-level one, e.g.
+    ``["united_states_of_america", "georgia"]`` selects the US state while
+    ``["georgia"]`` selects the country.
+    """
+    root = DATA_DIR
+    chain: list[Path] = []
+    forced_labels: list[str] = []
+    for i, seg in enumerate(segments[:-1]):
+        node = get_file_path(seg, root) or get_composite_path(seg, root)
+        if node is None:
+            raise ValueError(f"Location '{seg}' not found")
+        file_path = get_file_path(seg, root)
+        if file_path is not None:
+            chain.append(file_path)  # ancestor leaf → baseline for overlay
+        if i > 0:
+            forced_labels.append(seg)  # a chosen sublocation (never the root)
+        root = node.parent
+
+    last = segments[-1]
+    if get_file_path(last, root) is None and get_composite_path(last, root) is None:
+        raise ValueError(f"Location '{last}' not found")
+    sub_chain, sub_labels = resolve_location(last, rng, root=root)
+    chain += sub_chain
+    tail = [*sub_labels, last] if len(segments) > 1 else list(sub_labels)
+    return chain, [*tail, *reversed(forced_labels)]
+
+
 def resolve_api_location(
     key: str,
     data: dict,
@@ -90,6 +126,31 @@ def resolve_api_location(
         raise ValueError(f"Sublocation '{child_key}' not found in preloaded data")
     sub_chain, sub_labels = resolve_api_location(child_key, data, rng)
     return chain + sub_chain, [*sub_labels, label]
+
+
+def resolve_api_path(
+    segments: list[str], data: dict, rng: np.random.Generator
+) -> tuple[list[str], list[str]]:
+    """Preloaded-data equivalent of resolve_location_path. ``segments`` are
+    normalised names; the first resolves to a top-level key and each subsequent
+    one descends by scoped child key."""
+    from persona.api.handler import resolve_key
+
+    key = resolve_key(segments[0], data)
+    if key is None:
+        raise ValueError(f"Location '{segments[0]}' not found")
+    chain: list[str] = []
+    forced_labels: list[str] = []
+    for seg in segments[1:]:
+        child = f"{key}/{seg}"
+        if child not in data:
+            raise ValueError(f"Sublocation '{seg}' not found under '{key}'")
+        if data[key].get("leaf"):
+            chain.append(key)  # ancestor leaf → baseline for overlay
+        forced_labels.append(str(data[child]["name"]))
+        key = child
+    sub_chain, sub_labels = resolve_api_location(key, data, rng)
+    return chain + sub_chain, [*sub_labels, *reversed(forced_labels)]
 
 
 @functools.cache
@@ -273,6 +334,17 @@ def preprocess_location_data(data: dict) -> dict:
     return data
 
 
+def _segments(location: str) -> list[str]:
+    """Split a location query into normalised path segments. Segments may be
+    separated by '/' or whitespace, e.g. "united_states_of_america/georgia" or
+    "us georgia"."""
+    return [clean_location(p) for p in location.replace("/", " ").split()]
+
+
+def _fmt_label(label: str) -> str:
+    return label.replace("_", " ").title()
+
+
 def gen_api_samples(
     location: str,
     data: dict,
@@ -294,8 +366,11 @@ def gen_api_samples(
     """
     rng = np.random.default_rng(seed)
     samples = []
+    segments = _segments(location)
+    if not segments:
+        raise ValueError(f"Location '{location}' not found")
     for _ in range(N):
-        chain, location_labels = resolve_api_location(location, data, rng)
+        chain, location_labels = resolve_api_path(segments, data, rng)
         merged = _merge_processed(chain, data)
 
         sample: dict[str, str | int] = {}
@@ -311,9 +386,9 @@ def gen_api_samples(
         if enabled_features is None or "location" in enabled_features:
             for label in location_labels:
                 if "location" in sample:
-                    sample["location"] += f", {label.title()}"
+                    sample["location"] += f", {_fmt_label(label)}"
                 else:
-                    sample["location"] = label.title()
+                    sample["location"] = _fmt_label(label)
 
         samples.append(sample)
 
@@ -347,11 +422,15 @@ def gen_samples(
                 cache[path] = json.load(f)
         return cache[path]
 
-    # Idempotent, so callers that already normalised (the CLI, the API) are
-    # unaffected, and direct library callers get alias resolution for free.
-    location = clean_location(location)
+    # A location may be a single name or a path descending the tree ("us georgia"
+    # or "united_states_of_america/georgia"); each segment is normalised (with
+    # alias resolution) so direct library callers get the same behaviour as the
+    # CLI and API.
+    segments = _segments(location)
+    if not segments:
+        raise ValueError(f"Location '{location}' not found")
     for _ in range(N):
-        chain, location_labels = resolve_location(location, rng)
+        chain, location_labels = resolve_location_path(segments, rng)
         if not chain:
             raise ValueError(f"Location '{location}' not found")
         merged = _merge_leaves([load(path) for path in chain])
@@ -360,9 +439,9 @@ def gen_samples(
         if enabled_features is None or "location" in enabled_features:
             for label in location_labels:
                 if "location" in sample:
-                    sample["location"] += f", {label.title()}"
+                    sample["location"] += f", {_fmt_label(label)}"
                 else:
-                    sample["location"] = label.title()
+                    sample["location"] = _fmt_label(label)
         samples.append(sample)
 
     return samples
