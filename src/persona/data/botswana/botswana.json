@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Statistics Botswana",
+                "year": 2022,
+                "url": "https://www.statsbots.org.bw/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Statistics Botswana",
+                "year": 2022,
+                "url": "https://www.statsbots.org.bw/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1184,
+        "5-9": 0.1054,
+        "10-14": 0.099,
+        "15-19": 0.0997,
+        "20-24": 0.0995,
+        "25-29": 0.1007,
+        "30-34": 0.0901,
+        "35-39": 0.0687,
+        "40-44": 0.0525,
+        "45-49": 0.0418,
+        "50-54": 0.0358,
+        "55-59": 0.0284,
+        "60-64": 0.0202,
+        "65-69": 0.0154,
+        "70-74": 0.0116,
+        "75-79": 0.0065,
+        "80-84": 0.0037,
+        "85+": 0.0024
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Christianity or Other Christianity": 0.865,
+        "No religion": 0.071,
+        "African traditional religion": 0.046,
+        "Other": 0.012,
+        "Islam": 0.006
+    },
+    "location": {
+        "Central": 0.28892,
+        "Kweneng": 0.1719,
+        "Gaborone": 0.10914,
+        "Southern": 0.09833,
+        "North-West": 0.08792,
+        "Kgatleng": 0.054,
+        "South-East": 0.04938,
+        "Francistown": 0.04582,
+        "North-East": 0.03073,
+        "Kgalagadi": 0.02608,
+        "Ghanzi": 0.02506,
+        "Chobe": 0.01274
+    }
+}

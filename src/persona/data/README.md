@@ -122,6 +122,14 @@
 - [X] `bosnia_and_herzegovina`
 - [X] `nicaragua`
 - [X] `togo`
+- [X] `turkmenistan`
+- [X] `latvia`
+- [X] `estonia`
+- [X] `slovenia`
+- [X] `north_macedonia`
+- [X] `botswana`
+- [X] `namibia`
+- [X] `gabon`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

@@ -1,0 +1,79 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Namibia Demographic and Health Survey",
+                "year": 2013,
+                "url": "https://dhsprogram.com/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Namibia Statistics Agency",
+                "year": 2023,
+                "url": "https://nsa.nsa.org.na/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1382,
+        "5-9": 0.1264,
+        "10-14": 0.1083,
+        "15-19": 0.0934,
+        "20-24": 0.0884,
+        "25-29": 0.0855,
+        "30-34": 0.0797,
+        "35-39": 0.0642,
+        "40-44": 0.0532,
+        "45-49": 0.0438,
+        "50-54": 0.0344,
+        "55-59": 0.0268,
+        "60-64": 0.022,
+        "65-69": 0.0145,
+        "70-74": 0.0097,
+        "75-79": 0.0062,
+        "80-84": 0.0033,
+        "85+": 0.002
+    },
+    "sex": {
+        "Male": 0.488,
+        "Female": 0.512
+    },
+    "religion": {
+        "Protestantism": 0.437,
+        "Roman Catholicism": 0.228,
+        "African traditional religion": 0.101,
+        "Christianity or Other Christianity": 0.044,
+        "Other": 0.019
+    },
+    "location": {
+        "Khomas": 0.16365,
+        "Ohangwena": 0.11174,
+        "Omusati": 0.10477,
+        "Oshikoto": 0.08513,
+        "Erongo": 0.07948,
+        "Oshana": 0.07636,
+        "Otjozondjupa": 0.07306,
+        "Kavango East": 0.07227,
+        "Zambezi": 0.04711,
+        "Kavango West": 0.04078,
+        "Kunene": 0.03996,
+        "ǁKaras": 0.03636,
+        "Hardap": 0.0353,
+        "Omaheke": 0.03404
+    }
+}

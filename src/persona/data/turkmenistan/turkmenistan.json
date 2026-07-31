@@ -1,0 +1,69 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 International Religious Freedom Report: Turkmenistan, US Department of State",
+                "year": 2022,
+                "url": "https://www.state.gov/reports/2022-report-on-international-religious-freedom/turkmenistan/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, State Statistics Committee (Turkmenistan)",
+                "year": 2022,
+                "url": "https://www.stat.gov.tm/en/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1092,
+        "5-9": 0.1115,
+        "10-14": 0.0959,
+        "15-19": 0.0702,
+        "20-24": 0.0741,
+        "25-29": 0.09,
+        "30-34": 0.0865,
+        "35-39": 0.0745,
+        "40-44": 0.0613,
+        "45-49": 0.0567,
+        "50-54": 0.0524,
+        "55-59": 0.0415,
+        "60-64": 0.0334,
+        "65-69": 0.0211,
+        "70-74": 0.0117,
+        "75-79": 0.0047,
+        "80-84": 0.0032,
+        "85+": 0.0021
+    },
+    "sex": {
+        "Male": 0.49,
+        "Female": 0.51
+    },
+    "religion": {
+        "Islam": 0.93,
+        "Eastern Orthodoxy": 0.064,
+        "Other": 0.006
+    },
+    "location": {
+        "Mary": 0.22859,
+        "Daşoguz": 0.21966,
+        "Lebap": 0.20506,
+        "Ashgabat": 0.14595,
+        "Ahal": 0.12565,
+        "Balkan": 0.07508
+    }
+}

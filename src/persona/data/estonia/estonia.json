@@ -1,0 +1,81 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), Statistics Estonia",
+                "year": 2021,
+                "url": "https://www.stat.ee/en",
+                "note": "12.7% did not declare a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, Statistics Estonia",
+                "year": 2021,
+                "url": "https://www.stat.ee/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0491,
+        "5-9": 0.0537,
+        "10-14": 0.0569,
+        "15-19": 0.054,
+        "20-24": 0.0475,
+        "25-29": 0.0515,
+        "30-34": 0.0702,
+        "35-39": 0.0758,
+        "40-44": 0.0701,
+        "45-49": 0.0684,
+        "50-54": 0.0678,
+        "55-59": 0.0613,
+        "60-64": 0.0644,
+        "65-69": 0.0597,
+        "70-74": 0.0521,
+        "75-79": 0.0361,
+        "80-84": 0.0311,
+        "85+": 0.0301
+    },
+    "sex": {
+        "Male": 0.475,
+        "Female": 0.525
+    },
+    "religion": {
+        "No religion": 0.586,
+        "Eastern Orthodoxy": 0.163,
+        "Protestantism": 0.077,
+        "Christianity or Other Christianity": 0.027,
+        "Other": 0.009
+    },
+    "location": {
+        "Harju": 0.46715,
+        "Tartu": 0.11889,
+        "Ida-Viru": 0.09763,
+        "Pärnu": 0.064,
+        "Lääne-Viru": 0.04364,
+        "Viljandi": 0.03341,
+        "Rapla": 0.02492,
+        "Võru": 0.02512,
+        "Saare": 0.02337,
+        "Järva": 0.02202,
+        "Jõgeva": 0.02031,
+        "Valga": 0.02058,
+        "Põlva": 0.0176,
+        "Lääne": 0.01515,
+        "Hiiu": 0.0062
+    }
+}

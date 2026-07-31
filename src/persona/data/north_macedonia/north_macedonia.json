@@ -1,0 +1,74 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), State Statistical Office (North Macedonia)",
+                "year": 2021,
+                "url": "https://www.stat.gov.mk/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, State Statistical Office (North Macedonia)",
+                "year": 2021,
+                "url": "https://www.stat.gov.mk/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.052,
+        "5-9": 0.0592,
+        "10-14": 0.0596,
+        "15-19": 0.056,
+        "20-24": 0.0586,
+        "25-29": 0.062,
+        "30-34": 0.0664,
+        "35-39": 0.0686,
+        "40-44": 0.0707,
+        "45-49": 0.0692,
+        "50-54": 0.0673,
+        "55-59": 0.069,
+        "60-64": 0.0666,
+        "65-69": 0.062,
+        "70-74": 0.0501,
+        "75-79": 0.0312,
+        "80-84": 0.019,
+        "85+": 0.0127
+    },
+    "sex": {
+        "Male": 0.486,
+        "Female": 0.514
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.461,
+        "Islam": 0.322,
+        "Christianity or Other Christianity": 0.139,
+        "Other": 0.073,
+        "Roman Catholicism": 0.004,
+        "No religion": 0.001
+    },
+    "location": {
+        "Skopje": 0.33049,
+        "Polog": 0.13696,
+        "Pelagonia": 0.11457,
+        "Southwestern": 0.09658,
+        "Northeastern": 0.08329,
+        "Eastern": 0.0818,
+        "Southeastern": 0.08079,
+        "Vardar": 0.07553
+    }
+}
