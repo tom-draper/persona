@@ -1,0 +1,87 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Papua New Guinea (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/papua-new-guinea/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2011 Census, National Statistical Office (Papua New Guinea)",
+                "year": 2011,
+                "url": "https://www.nso.gov.pg/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1183,
+        "5-9": 0.113,
+        "10-14": 0.1068,
+        "15-19": 0.0994,
+        "20-24": 0.0922,
+        "25-29": 0.0848,
+        "30-34": 0.0778,
+        "35-39": 0.0686,
+        "40-44": 0.0585,
+        "45-49": 0.0499,
+        "50-54": 0.0408,
+        "55-59": 0.0325,
+        "60-64": 0.0239,
+        "65-69": 0.0156,
+        "70-74": 0.0094,
+        "75-79": 0.0051,
+        "80-84": 0.0023,
+        "85+": 0.001
+    },
+    "sex": {
+        "Male": 0.515,
+        "Female": 0.485
+    },
+    "religion": {
+        "Protestantism": 0.478,
+        "Roman Catholicism": 0.257,
+        "Christianity or Other Christianity": 0.214,
+        "Indigenous beliefs": 0.034,
+        "Other": 0.01,
+        "No religion": 0.007
+    },
+    "location": {
+        "Morobe": 0.09777,
+        "Eastern Highlands": 0.08401,
+        "Southern Highlands": 0.07392,
+        "Madang": 0.07156,
+        "East Sepik": 0.06527,
+        "Enga": 0.0626,
+        "Chimbu (Simbu)": 0.05454,
+        "National Capital District": 0.05275,
+        "Jiwaka": 0.04984,
+        "East New Britain": 0.04757,
+        "Milne Bay": 0.04006,
+        "Central": 0.03908,
+        "West New Britain": 0.03829,
+        "Hela": 0.03614,
+        "Bougainville": 0.03613,
+        "Sandaun (West Sepik)": 0.03599,
+        "Western (Fly)": 0.02917,
+        "New Ireland": 0.02812,
+        "Oro (Northern)": 0.02699,
+        "Gulf": 0.02292,
+        "Manus": 0.00728
+    }
+}

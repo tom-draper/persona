@@ -1,0 +1,73 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Statistics Lebanon estimate (via US Department of State)",
+                "year": 2023,
+                "url": "https://www.state.gov/reports/2023-report-on-international-religious-freedom/lebanon/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2022, Central Administration of Statistics (Lebanon)",
+                "year": 2022,
+                "url": "https://www.cas.gov.lb/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0783,
+        "5-9": 0.0911,
+        "10-14": 0.0978,
+        "15-19": 0.0894,
+        "20-24": 0.0816,
+        "25-29": 0.0705,
+        "30-34": 0.0614,
+        "35-39": 0.0617,
+        "40-44": 0.0603,
+        "45-49": 0.0553,
+        "50-54": 0.0559,
+        "55-59": 0.0537,
+        "60-64": 0.0447,
+        "65-69": 0.0354,
+        "70-74": 0.0266,
+        "75-79": 0.0179,
+        "80-84": 0.0104,
+        "85+": 0.0079
+    },
+    "sex": {
+        "Male": 0.486,
+        "Female": 0.514
+    },
+    "religion": {
+        "Islam": 0.64,
+        "Christianity or Other Christianity": 0.229,
+        "Eastern Orthodoxy": 0.076,
+        "Druze": 0.055
+    },
+    "location": {
+        "Mount Lebanon": 0.27887,
+        "North": 0.14627,
+        "South": 0.10965,
+        "Beqaa": 0.09836,
+        "Baalbek-Hermel": 0.08597,
+        "Akkar": 0.07869,
+        "Beirut": 0.07632,
+        "Nabatieh": 0.07122,
+        "Keserwan-Jbeil": 0.05464
+    }
+}

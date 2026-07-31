@@ -1,0 +1,75 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Oman (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/oman/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2020 Census, National Centre for Statistics and Information (NCSI Oman)",
+                "year": 2020,
+                "url": "https://www.ncsi.gov.om/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0848,
+        "5-9": 0.093,
+        "10-14": 0.0745,
+        "15-19": 0.0553,
+        "20-24": 0.0777,
+        "25-29": 0.1082,
+        "30-34": 0.1266,
+        "35-39": 0.1233,
+        "40-44": 0.0916,
+        "45-49": 0.0596,
+        "50-54": 0.0379,
+        "55-59": 0.0243,
+        "60-64": 0.0166,
+        "65-69": 0.0101,
+        "70-74": 0.0072,
+        "75-79": 0.0047,
+        "80-84": 0.0028,
+        "85+": 0.0019
+    },
+    "sex": {
+        "Male": 0.621,
+        "Female": 0.379
+    },
+    "religion": {
+        "Islam": 0.859,
+        "Christianity or Other Christianity": 0.064,
+        "Hinduism": 0.057,
+        "Other": 0.02
+    },
+    "location": {
+        "Muscat": 0.26383,
+        "Al Batinah North": 0.25325,
+        "Ad Dakhiliyah": 0.09693,
+        "Al Batinah South": 0.0943,
+        "Dhofar": 0.08436,
+        "Ash Sharqiyah South": 0.0639,
+        "Ash Sharqiyah North": 0.05506,
+        "Ad Dhahirah": 0.04315,
+        "Al Buraimi": 0.02467,
+        "Al Wusta": 0.0106,
+        "Musandam": 0.00994
+    }
+}

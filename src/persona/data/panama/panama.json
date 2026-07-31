@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Panama (religion), CIA",
+                "year": 2015,
+                "url": "https://www.cia.gov/the-world-factbook/countries/panama/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Instituto Nacional de Estadística y Censo (INEC Panama)",
+                "year": 2023,
+                "url": "https://www.inec.gob.pa/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0807,
+        "5-9": 0.087,
+        "10-14": 0.0851,
+        "15-19": 0.0816,
+        "20-24": 0.0795,
+        "25-29": 0.0771,
+        "30-34": 0.0743,
+        "35-39": 0.0713,
+        "40-44": 0.0655,
+        "45-49": 0.0608,
+        "50-54": 0.0566,
+        "55-59": 0.0496,
+        "60-64": 0.0404,
+        "65-69": 0.0313,
+        "70-74": 0.0235,
+        "75-79": 0.0163,
+        "80-84": 0.0107,
+        "85+": 0.0087
+    },
+    "sex": {
+        "Male": 0.5,
+        "Female": 0.5
+    },
+    "religion": {
+        "Roman Catholicism": 0.632,
+        "Protestantism": 0.25,
+        "No religion": 0.076,
+        "Other": 0.042
+    },
+    "location": {
+        "Panamá": 0.35416,
+        "Panamá Oeste": 0.16081,
+        "Chiriquí": 0.11589,
+        "Colón": 0.06937,
+        "Coclé": 0.066,
+        "Veraguas": 0.06391,
+        "Ngäbe-Buglé": 0.05218,
+        "Bocas del Toro": 0.03917,
+        "Herrera": 0.03003,
+        "Los Santos": 0.02422,
+        "Darién": 0.01334,
+        "Guna Yala": 0.00788,
+        "Emberá-Wounaan": 0.00304
+    }
+}

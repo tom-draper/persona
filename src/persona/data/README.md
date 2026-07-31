@@ -106,6 +106,14 @@
 - [X] `denmark`
 - [X] `laos`
 - [X] `georgia`
+- [X] `papua_new_guinea`
+- [X] `uruguay`
+- [X] `panama`
+- [X] `costa_rica`
+- [X] `lebanon`
+- [X] `oman`
+- [X] `kuwait`
+- [X] `mongolia`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

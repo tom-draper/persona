@@ -30,6 +30,7 @@ alias = {
     "dprk": "north_korea",
     "burkina": "burkina_faso",
     "dr": "dominican_republic",
+    "png": "papua_new_guinea",
 }
 
 

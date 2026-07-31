@@ -1,0 +1,83 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Latinobarómetro",
+                "year": 2018,
+                "url": "https://www.latinobarometro.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Instituto Nacional de Estadística (INE Uruguay)",
+                "year": 2023,
+                "url": "https://www.ine.gub.uy/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0518,
+        "5-9": 0.0667,
+        "10-14": 0.0684,
+        "15-19": 0.0696,
+        "20-24": 0.0722,
+        "25-29": 0.0747,
+        "30-34": 0.0721,
+        "35-39": 0.0662,
+        "40-44": 0.0632,
+        "45-49": 0.0671,
+        "50-54": 0.0591,
+        "55-59": 0.0575,
+        "60-64": 0.0532,
+        "65-69": 0.0456,
+        "70-74": 0.0365,
+        "75-79": 0.029,
+        "80-84": 0.0218,
+        "85+": 0.0253
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "religion": {
+        "Roman Catholicism": 0.448,
+        "No religion": 0.445,
+        "Christianity or Other Christianity": 0.095,
+        "Other": 0.012
+    },
+    "location": {
+        "Montevideo": 0.37233,
+        "Canelones": 0.17401,
+        "Maldonado": 0.06085,
+        "Salto": 0.03892,
+        "Colonia": 0.03881,
+        "Paysandú": 0.03482,
+        "San José": 0.03421,
+        "Rivera": 0.03123,
+        "Tacuarembó": 0.02744,
+        "Cerro Largo": 0.02601,
+        "Soriano": 0.02391,
+        "Rocha": 0.02306,
+        "Artigas": 0.02214,
+        "Florida": 0.0201,
+        "Durazno": 0.01772,
+        "Lavalleja": 0.01691,
+        "Río Negro": 0.01638,
+        "Treinta y Tres": 0.01363,
+        "Flores": 0.00751
+    }
+}
