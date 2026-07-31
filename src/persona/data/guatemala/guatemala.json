@@ -1,0 +1,87 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Latinobarómetro",
+                "year": 2024,
+                "url": "https://www.latinobarometro.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2018 Census, Instituto Nacional de Estadística (INE Guatemala)",
+                "year": 2018,
+                "url": "https://www.ine.gob.gt/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1037,
+        "5-9": 0.1109,
+        "10-14": 0.1068,
+        "15-19": 0.1044,
+        "20-24": 0.1013,
+        "25-29": 0.093,
+        "30-34": 0.0815,
+        "35-39": 0.0678,
+        "40-44": 0.0555,
+        "45-49": 0.0433,
+        "50-54": 0.034,
+        "55-59": 0.0278,
+        "60-64": 0.0228,
+        "65-69": 0.0185,
+        "70-74": 0.0133,
+        "75-79": 0.0086,
+        "80-84": 0.0046,
+        "85+": 0.0024
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Protestantism": 0.4,
+        "Roman Catholicism": 0.39,
+        "No religion": 0.19,
+        "Christianity or Other Christianity": 0.01,
+        "Other": 0.01
+    },
+    "location": {
+        "Guatemala": 0.20234,
+        "Alta Verapaz": 0.08154,
+        "Huehuetenango": 0.07856,
+        "San Marcos": 0.06927,
+        "Quiché": 0.0637,
+        "Quetzaltenango": 0.05363,
+        "Escuintla": 0.0492,
+        "Chimaltenango": 0.04132,
+        "Suchitepéquez": 0.03722,
+        "Petén": 0.03661,
+        "Jutiapa": 0.03278,
+        "Sololá": 0.02829,
+        "Totonicapán": 0.02809,
+        "Chiquimula": 0.02785,
+        "Izabal": 0.02743,
+        "Santa Rosa": 0.02662,
+        "Jalapa": 0.02301,
+        "Sacatepéquez": 0.02218,
+        "Retalhuleu": 0.02193,
+        "Baja Verapaz": 0.0201,
+        "Zacapa": 0.01647,
+        "El Progreso": 0.01185
+    }
+}

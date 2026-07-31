@@ -1,0 +1,75 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Zambia Statistics Agency",
+                "year": 2022,
+                "url": "https://www.zamstats.gov.zm/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Zambia Statistics Agency",
+                "year": 2022,
+                "url": "https://www.zamstats.gov.zm/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1521,
+        "5-9": 0.1389,
+        "10-14": 0.1286,
+        "15-19": 0.1121,
+        "20-24": 0.0939,
+        "25-29": 0.0802,
+        "30-34": 0.0688,
+        "35-39": 0.0592,
+        "40-44": 0.0484,
+        "45-49": 0.0383,
+        "50-54": 0.0276,
+        "55-59": 0.0194,
+        "60-64": 0.0136,
+        "65-69": 0.009,
+        "70-74": 0.0054,
+        "75-79": 0.0028,
+        "80-84": 0.0013,
+        "85+": 0.0006
+    },
+    "sex": {
+        "Male": 0.495,
+        "Female": 0.505
+    },
+    "religion": {
+        "Protestantism": 0.745,
+        "Roman Catholicism": 0.179,
+        "Jehovah's Witnesses": 0.056,
+        "No religion": 0.013,
+        "Islam": 0.005
+    },
+    "location": {
+        "Lusaka": 0.15705,
+        "Copperbelt": 0.14061,
+        "Eastern": 0.12518,
+        "Southern": 0.12145,
+        "Central": 0.11486,
+        "Northern": 0.08253,
+        "Luapula": 0.0772,
+        "Western": 0.06953,
+        "North-Western": 0.06476,
+        "Muchinga": 0.04683
+    }
+}

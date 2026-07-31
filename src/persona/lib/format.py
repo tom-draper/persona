@@ -27,6 +27,7 @@ alias = {
     "ivory_coast": "cote_divoire",
     "holland": "netherlands",
     "czech_republic": "czechia",
+    "dprk": "north_korea",
 }
 
 

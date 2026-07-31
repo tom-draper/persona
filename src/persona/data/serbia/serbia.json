@@ -1,0 +1,87 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Statistical Office of the Republic of Serbia",
+                "year": 2022,
+                "url": "https://www.stat.gov.rs/en-us/",
+                "note": "Excludes Kosovo and Metohija."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Statistical Office of the Republic of Serbia",
+                "year": 2022,
+                "url": "https://www.stat.gov.rs/en-us/",
+                "note": "Excludes Kosovo and Metohija."
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0465,
+        "5-9": 0.0484,
+        "10-14": 0.0486,
+        "15-19": 0.0504,
+        "20-24": 0.0521,
+        "25-29": 0.0568,
+        "30-34": 0.0608,
+        "35-39": 0.0673,
+        "40-44": 0.0709,
+        "45-49": 0.0716,
+        "50-54": 0.0677,
+        "55-59": 0.0665,
+        "60-64": 0.0691,
+        "65-69": 0.0728,
+        "70-74": 0.0662,
+        "75-79": 0.0384,
+        "80-84": 0.0259,
+        "85+": 0.02
+    },
+    "sex": {
+        "Male": 0.475,
+        "Female": 0.525
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.811,
+        "Islam": 0.042,
+        "Roman Catholicism": 0.039,
+        "No religion": 0.013,
+        "Christianity or Other Christianity": 0.009,
+        "Protestantism": 0.008,
+        "Other": 0.001
+    },
+    "location": {
+        "Belgrade": 0.28756,
+        "South Bačka": 0.10384,
+        "Nišava": 0.05882,
+        "Raška": 0.05071,
+        "Srem": 0.04832,
+        "Šumadija": 0.04613,
+        "Mačva": 0.04539,
+        "South Banat": 0.04451,
+        "Zlatibor": 0.04355,
+        "Rasina": 0.03544,
+        "Pčinja": 0.03314,
+        "Moravica": 0.03237,
+        "Jablanica": 0.03155,
+        "Pomoravlje": 0.03113,
+        "North Bačka": 0.02739,
+        "Central Banat": 0.02697,
+        "Braničevo": 0.02674,
+        "Kolubara": 0.02642
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2012 Census (religion), Instituto Nacional de Estadística y Censos (INEC)",
+                "year": 2012,
+                "url": "https://www.ecuadorencifras.gob.ec/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Instituto Nacional de Estadística y Censos (INEC)",
+                "year": 2022,
+                "url": "https://www.ecuadorencifras.gob.ec/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0781,
+        "5-9": 0.0823,
+        "10-14": 0.0896,
+        "15-19": 0.0873,
+        "20-24": 0.0869,
+        "25-29": 0.0856,
+        "30-34": 0.0809,
+        "35-39": 0.0742,
+        "40-44": 0.0665,
+        "45-49": 0.0582,
+        "50-54": 0.0507,
+        "55-59": 0.0431,
+        "60-64": 0.0355,
+        "65-69": 0.0286,
+        "70-74": 0.0222,
+        "75-79": 0.0149,
+        "80-84": 0.009,
+        "85+": 0.0062
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Roman Catholicism": 0.804,
+        "Protestantism": 0.113,
+        "No religion": 0.07,
+        "Other": 0.013
+    },
+    "location": {
+        "Guayas": 0.25928,
+        "Pichincha": 0.18239,
+        "Manabí": 0.09403,
+        "Los Ríos": 0.05305,
+        "Azuay": 0.04732,
+        "El Oro": 0.04219,
+        "Tungurahua": 0.03327,
+        "Esmeraldas": 0.0327,
+        "Santo Domingo de los Tsáchilas": 0.0291,
+        "Loja": 0.02866,
+        "Chimborazo": 0.02786,
+        "Cotopaxi": 0.02776,
+        "Imbabura": 0.02774,
+        "Santa Elena": 0.02277,
+        "Cañar": 0.01344,
+        "Sucumbíos": 0.01175,
+        "Bolívar": 0.01175,
+        "Morona Santiago": 0.01136,
+        "Orellana": 0.01075,
+        "Carchi": 0.0102,
+        "Napo": 0.00777,
+        "Pastaza": 0.00661,
+        "Zamora Chinchipe": 0.00655,
+        "Galápagos": 0.00169
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Institut National de la Statistique (INSTAT Mali)",
+                "year": 2022,
+                "url": "https://www.instat-mali.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Regional population estimates 2023, Institut National de la Statistique (INSTAT Mali)",
+                "year": 2023,
+                "url": "https://www.instat-mali.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1749,
+        "5-9": 0.1546,
+        "10-14": 0.1351,
+        "15-19": 0.1128,
+        "20-24": 0.0894,
+        "25-29": 0.07,
+        "30-34": 0.0585,
+        "35-39": 0.0504,
+        "40-44": 0.0425,
+        "45-49": 0.033,
+        "50-54": 0.0241,
+        "55-59": 0.0175,
+        "60-64": 0.0132,
+        "65-69": 0.0101,
+        "70-74": 0.0071,
+        "75-79": 0.0043,
+        "80-84": 0.002,
+        "85+": 0.0006
+    },
+    "sex": {
+        "Male": 0.505,
+        "Female": 0.495
+    },
+    "religion": {
+        "Islam": 0.964,
+        "Christianity or Other Christianity": 0.023,
+        "African traditional religion": 0.007,
+        "No religion": 0.005,
+        "Other": 0.001
+    },
+    "location": {
+        "Bamako": 0.18647,
+        "Ségou": 0.1083,
+        "Koulikoro": 0.09947,
+        "Kayes": 0.08117,
+        "Bougouni": 0.06929,
+        "Sikasso": 0.06762,
+        "Koutiala": 0.0516,
+        "Tombouctou": 0.04297,
+        "Mopti": 0.04127,
+        "Bandiagara": 0.03833,
+        "San": 0.0362,
+        "Gao": 0.03209,
+        "Kita": 0.03007,
+        "Nioro": 0.02991,
+        "Dioila": 0.02982,
+        "Douentza": 0.01968,
+        "Ménaka": 0.01407,
+        "Nara": 0.01358,
+        "Taoudénit": 0.00443,
+        "Kidal": 0.00367
+    }
+}

@@ -74,6 +74,14 @@
 - [X] `syria`
 - [X] `sri_lanka`
 - [X] `cameroon`
+- [X] `north_korea`
+- [X] `guatemala`
+- [X] `ecuador`
+- [X] `cambodia`
+- [X] `mali`
+- [X] `senegal`
+- [X] `zambia`
+- [X] `serbia`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`
