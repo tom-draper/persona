@@ -1,0 +1,71 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2023 International Religious Freedom Report: Guinea, US Department of State",
+                "year": 2023,
+                "url": "https://www.state.gov/reports/2023-report-on-international-religious-freedom/guinea/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2025 Census, Institut National de la Statistique (Guinea)",
+                "year": 2025,
+                "url": "https://www.stat-guinee.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1523,
+        "5-9": 0.1369,
+        "10-14": 0.1231,
+        "15-19": 0.1082,
+        "20-24": 0.0951,
+        "25-29": 0.0845,
+        "30-34": 0.0696,
+        "35-39": 0.0536,
+        "40-44": 0.0404,
+        "45-49": 0.0324,
+        "50-54": 0.0276,
+        "55-59": 0.0232,
+        "60-64": 0.0185,
+        "65-69": 0.0138,
+        "70-74": 0.0097,
+        "75-79": 0.0061,
+        "80-84": 0.0032,
+        "85+": 0.0016
+    },
+    "sex": {
+        "Male": 0.494,
+        "Female": 0.506
+    },
+    "religion": {
+        "Islam": 0.84,
+        "Christianity or Other Christianity": 0.11,
+        "African traditional religion": 0.05
+    },
+    "location": {
+        "Kankan": 0.23459,
+        "Conakry": 0.19447,
+        "Nzérékoré": 0.14166,
+        "Kindia": 0.12988,
+        "Boké": 0.09295,
+        "Faranah": 0.08338,
+        "Labé": 0.07077,
+        "Mamou": 0.05231
+    }
+}

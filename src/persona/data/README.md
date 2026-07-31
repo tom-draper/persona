@@ -90,6 +90,14 @@
 - [X] `tunisia`
 - [X] `bolivia`
 - [X] `bulgaria`
+- [X] `rwanda`
+- [X] `benin`
+- [X] `guinea`
+- [X] `haiti`
+- [X] `dominican_republic`
+- [X] `jordan`
+- [X] `azerbaijan`
+- [X] `tajikistan`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

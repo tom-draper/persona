@@ -1,0 +1,84 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religion in Latin America, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Oficina Nacional de Estadística (ONE)",
+                "year": 2022,
+                "url": "https://www.one.gob.do/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0886,
+        "5-9": 0.0901,
+        "10-14": 0.0905,
+        "15-19": 0.0856,
+        "20-24": 0.0854,
+        "25-29": 0.0818,
+        "30-34": 0.0779,
+        "35-39": 0.0694,
+        "40-44": 0.0631,
+        "45-49": 0.0572,
+        "50-54": 0.0506,
+        "55-59": 0.0451,
+        "60-64": 0.039,
+        "65-69": 0.0303,
+        "70-74": 0.0202,
+        "75-79": 0.0121,
+        "80-84": 0.007,
+        "85+": 0.0062
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "Roman Catholicism": 0.57,
+        "Protestantism": 0.23,
+        "No religion": 0.18,
+        "Other": 0.02
+    },
+    "location": {
+        "Santo Domingo": 0.31211,
+        "Santiago": 0.11111,
+        "Distrito Nacional": 0.11084,
+        "San Cristóbal": 0.06797,
+        "La Vega": 0.04356,
+        "La Altagracia": 0.03811,
+        "Puerto Plata": 0.03527,
+        "San Pedro de Macorís": 0.03232,
+        "Duarte": 0.03164,
+        "La Romana": 0.02903,
+        "Azua": 0.02351,
+        "San Juan": 0.02326,
+        "Peravia": 0.02096,
+        "Monte Plata": 0.02022,
+        "Barahona": 0.01997,
+        "Valverde": 0.01878,
+        "Monseñor Nouel": 0.01848,
+        "Sánchez Ramírez": 0.01604,
+        "María Trinidad Sánchez": 0.01489,
+        "Samaná": 0.01194
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious composition estimate, Association of Religion Data Archives (ARDA)",
+                "year": 2025,
+                "url": "https://www.thearda.com/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2019 Census, State Statistical Committee (Azerbaijan)",
+                "year": 2019,
+                "url": "https://www.stat.gov.az/?lang=en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0654,
+        "5-9": 0.0758,
+        "10-14": 0.0822,
+        "15-19": 0.0709,
+        "20-24": 0.0621,
+        "25-29": 0.077,
+        "30-34": 0.093,
+        "35-39": 0.0863,
+        "40-44": 0.0729,
+        "45-49": 0.0601,
+        "50-54": 0.0588,
+        "55-59": 0.0593,
+        "60-64": 0.056,
+        "65-69": 0.0374,
+        "70-74": 0.0217,
+        "75-79": 0.0092,
+        "80-84": 0.0068,
+        "85+": 0.0051
+    },
+    "sex": {
+        "Male": 0.49,
+        "Female": 0.51
+    },
+    "religion": {
+        "Islam": 0.962,
+        "Christianity or Other Christianity": 0.024,
+        "No religion": 0.013,
+        "Other": 0.001
+    },
+    "location": {
+        "Baku": 0.45334,
+        "Sumgait": 0.08507,
+        "Absheron": 0.0826,
+        "Ganja": 0.06101,
+        "Lankaran District": 0.03818,
+        "Masally": 0.03804,
+        "Shamkir": 0.0368,
+        "Jalilabad": 0.03596,
+        "Barda": 0.03164,
+        "Sabirabad": 0.03069,
+        "Khachmaz": 0.02945,
+        "Tovuz": 0.02843,
+        "Quba": 0.028,
+        "Mingachevir": 0.02078
+    }
+}

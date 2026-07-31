@@ -1,0 +1,77 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2013 Census (religion), Institut National de la Statistique et de la Démographie (INStaD Benin)",
+                "year": 2013,
+                "url": "https://instad.bj/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2013 Census (RGPH-4), Institut National de la Statistique et de la Démographie (INStaD Benin)",
+                "year": 2013,
+                "url": "https://instad.bj/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1542,
+        "5-9": 0.1415,
+        "10-14": 0.1226,
+        "15-19": 0.1061,
+        "20-24": 0.0899,
+        "25-29": 0.0781,
+        "30-34": 0.0659,
+        "35-39": 0.0559,
+        "40-44": 0.0459,
+        "45-49": 0.0366,
+        "50-54": 0.03,
+        "55-59": 0.0241,
+        "60-64": 0.0183,
+        "65-69": 0.0129,
+        "70-74": 0.0086,
+        "75-79": 0.0054,
+        "80-84": 0.0027,
+        "85+": 0.0012
+    },
+    "sex": {
+        "Male": 0.501,
+        "Female": 0.499
+    },
+    "religion": {
+        "Islam": 0.277,
+        "Roman Catholicism": 0.255,
+        "Christianity or Other Christianity": 0.23,
+        "Other": 0.122,
+        "Vodun": 0.116
+    },
+    "location": {
+        "Atlantique": 0.13988,
+        "Borgou": 0.1204,
+        "Ouémé": 0.10986,
+        "Alibori": 0.08694,
+        "Zou": 0.0853,
+        "Atakora": 0.07706,
+        "Kouffo": 0.07431,
+        "Collines": 0.07177,
+        "Littoral": 0.068,
+        "Plateau": 0.06252,
+        "Donga": 0.05435,
+        "Mono": 0.04961
+    }
+}
