@@ -130,6 +130,14 @@
 - [X] `botswana`
 - [X] `namibia`
 - [X] `gabon`
+- [X] `qatar`
+- [X] `bahrain`
+- [X] `cyprus`
+- [X] `montenegro`
+- [X] `eritrea`
+- [X] `south_sudan`
+- [X] `republic_of_the_congo`
+- [X] `mauritania`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

@@ -1,0 +1,81 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Republic of the Congo (religion), CIA",
+                "year": 2007,
+                "url": "https://www.cia.gov/the-world-factbook/countries/congo-republic-of-the/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Institut National de la Statistique (Congo)",
+                "year": 2023,
+                "url": "https://ins-congo.cg/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1432,
+        "5-9": 0.1362,
+        "10-14": 0.1294,
+        "15-19": 0.1043,
+        "20-24": 0.0839,
+        "25-29": 0.0716,
+        "30-34": 0.0638,
+        "35-39": 0.0588,
+        "40-44": 0.052,
+        "45-49": 0.0446,
+        "50-54": 0.0355,
+        "55-59": 0.0277,
+        "60-64": 0.0199,
+        "65-69": 0.0132,
+        "70-74": 0.008,
+        "75-79": 0.0045,
+        "80-84": 0.0023,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.5,
+        "Female": 0.5
+    },
+    "religion": {
+        "Roman Catholicism": 0.331,
+        "Christianity or Other Christianity": 0.26,
+        "Protestantism": 0.199,
+        "No religion": 0.113,
+        "Other": 0.081,
+        "Islam": 0.016
+    },
+    "location": {
+        "Brazzaville": 0.34935,
+        "Pointe-Noire": 0.22774,
+        "Bouenza": 0.05924,
+        "Niari": 0.05452,
+        "Likouala": 0.05298,
+        "Cuvette": 0.03625,
+        "Pool": 0.03578,
+        "Sangha": 0.03414,
+        "Djoué-Léfini": 0.02845,
+        "Nkéni-Alima": 0.02511,
+        "Plateaux": 0.02103,
+        "Congo-Oubangui": 0.0202,
+        "Cuvette-Ouest": 0.01943,
+        "Kouilou": 0.0194,
+        "Lékoumou": 0.01637
+    }
+}

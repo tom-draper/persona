@@ -1,0 +1,74 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Global Religious Futures, Pew Research Center",
+                "year": 2020,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, National Bureau of Statistics (South Sudan)",
+                "year": 2010,
+                "url": "https://www.ssnbss.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1292,
+        "5-9": 0.1267,
+        "10-14": 0.1426,
+        "15-19": 0.1256,
+        "20-24": 0.0971,
+        "25-29": 0.0624,
+        "30-34": 0.0516,
+        "35-39": 0.0482,
+        "40-44": 0.0543,
+        "45-49": 0.0485,
+        "50-54": 0.038,
+        "55-59": 0.0271,
+        "60-64": 0.0195,
+        "65-69": 0.0133,
+        "70-74": 0.0081,
+        "75-79": 0.0047,
+        "80-84": 0.0022,
+        "85+": 0.0008
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "religion": {
+        "Christianity or Other Christianity": 0.605,
+        "African traditional religion": 0.329,
+        "Islam": 0.062,
+        "Other": 0.004
+    },
+    "location": {
+        "Jonglei": 0.1411,
+        "Central Equatoria": 0.137,
+        "Warrap": 0.1199,
+        "Upper Nile": 0.11639,
+        "Eastern Equatoria": 0.11054,
+        "Northern Bahr el Ghazal": 0.09425,
+        "Lakes": 0.08985,
+        "Western Equatoria": 0.07565,
+        "Unity": 0.07412,
+        "Western Bahr el Ghazal": 0.04119
+    }
+}

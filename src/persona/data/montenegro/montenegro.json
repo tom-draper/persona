@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2023 Census (religion), Statistical Office of Montenegro (MONSTAT)",
+                "year": 2023,
+                "url": "https://www.monstat.org/eng"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Statistical Office of Montenegro (MONSTAT)",
+                "year": 2023,
+                "url": "https://www.monstat.org/eng"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0581,
+        "5-9": 0.0613,
+        "10-14": 0.0639,
+        "15-19": 0.0609,
+        "20-24": 0.0618,
+        "25-29": 0.0611,
+        "30-34": 0.0606,
+        "35-39": 0.068,
+        "40-44": 0.0705,
+        "45-49": 0.067,
+        "50-54": 0.0634,
+        "55-59": 0.0641,
+        "60-64": 0.0646,
+        "65-69": 0.06,
+        "70-74": 0.0479,
+        "75-79": 0.0278,
+        "80-84": 0.0213,
+        "85+": 0.0176
+    },
+    "sex": {
+        "Male": 0.481,
+        "Female": 0.519
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.711,
+        "Islam": 0.2,
+        "Roman Catholicism": 0.032,
+        "No religion": 0.027,
+        "Other": 0.003
+    },
+    "location": {
+        "Podgorica": 0.31565,
+        "Nikšić": 0.11554,
+        "Bar": 0.08056,
+        "Bijelo Polje": 0.06798,
+        "Herceg Novi": 0.0542,
+        "Budva": 0.04826,
+        "Berane": 0.04334,
+        "Pljevlja": 0.04244,
+        "Rožaje": 0.04077,
+        "Kotor": 0.04,
+        "Ulcinj": 0.03606,
+        "Danilovgrad": 0.03274,
+        "Tivat": 0.02873,
+        "Zeta": 0.02826,
+        "Cetinje": 0.02549
+    }
+}

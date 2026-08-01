@@ -1,0 +1,71 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious composition estimate, Pew Research Center",
+                "year": 2020,
+                "url": "https://www.pewresearch.org/religion/",
+                "note": "Total population including the large expatriate workforce."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Governorate population estimates, Information & eGovernment Authority (Bahrain)",
+                "year": 2020,
+                "url": "https://www.iga.gov.bh/en"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0603,
+        "5-9": 0.067,
+        "10-14": 0.0626,
+        "15-19": 0.0543,
+        "20-24": 0.0679,
+        "25-29": 0.0935,
+        "30-34": 0.1243,
+        "35-39": 0.1318,
+        "40-44": 0.1048,
+        "45-49": 0.0759,
+        "50-54": 0.0543,
+        "55-59": 0.0397,
+        "60-64": 0.0272,
+        "65-69": 0.0171,
+        "70-74": 0.0083,
+        "75-79": 0.0052,
+        "80-84": 0.0033,
+        "85+": 0.0025
+    },
+    "sex": {
+        "Male": 0.621,
+        "Female": 0.379
+    },
+    "religion": {
+        "Islam": 0.697,
+        "Christianity or Other Christianity": 0.141,
+        "Hinduism": 0.102,
+        "Buddhism": 0.031,
+        "No religion": 0.02,
+        "Other": 0.009
+    },
+    "location": {
+        "Northern": 0.35427,
+        "Capital": 0.30555,
+        "Muharraq": 0.20596,
+        "Southern": 0.13422
+    }
+}
