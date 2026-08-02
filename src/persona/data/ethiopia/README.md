@@ -1,5 +1,5 @@
 # Ethiopia
-**5 features:** age, sex, religion, residence and location.
+**6 features:** age, sex, religion, residence, marital status and location.
 
 ## Age
 
@@ -17,6 +17,10 @@
 
 ![Residence](img/residence.png)
 
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -27,3 +31,4 @@
 - [2007 Population and Housing Census, Central Statistical Agency of Ethiopia (2007)](https://www.statsethiopia.gov.et/) — religion
 - [Population projections (July 2023), Ethiopian Statistical Service (2024)](https://www.statsethiopia.gov.et/) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [World Marriage Data 2019, United Nations (2016)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status

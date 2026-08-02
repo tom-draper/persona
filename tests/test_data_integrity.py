@@ -46,6 +46,9 @@ FORBIDDEN_LABELS = {
         "Never married": "Single (never married)",
         "Single": "Single (never married)",
         "Married or in civil partnership": "Married",
+        "Consensual union": "Cohabiting",
+        "Living together": "Cohabiting",
+        "Cohabitation": "Cohabiting",
     },
     "religion": {
         "Christian": "Christianity or Other Christianity",

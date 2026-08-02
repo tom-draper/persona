@@ -1,5 +1,5 @@
 # North Macedonia
-**5 features:** age, sex, religion, residence and location.
+**6 features:** age, sex, religion, residence, marital status and location.
 
 ## Age
 
@@ -17,6 +17,10 @@
 
 ![Residence](img/residence.png)
 
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -27,3 +31,4 @@
 - [2021 Census (religion), State Statistical Office (North Macedonia) (2021)](https://www.stat.gov.mk/) — religion
 - [2021 Census, State Statistical Office (North Macedonia) (2021)](https://www.stat.gov.mk/) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [World Marriage Data 2019, United Nations (2011)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status

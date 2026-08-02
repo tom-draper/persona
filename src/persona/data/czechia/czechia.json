@@ -36,6 +36,15 @@
                 "year": 2025,
                 "note": "Split of the population between urban and rural areas.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2018,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
             }
         ]
     },
@@ -73,6 +82,12 @@
     "residence": {
         "Urban": 0.729,
         "Rural": 0.271
+    },
+    "marital status": {
+        "Single (never married)": 0.3112,
+        "Married": 0.4694,
+        "Widowed": 0.084,
+        "Divorced": 0.1354
     },
     "location": {
         "Central Bohemian": 0.13532,

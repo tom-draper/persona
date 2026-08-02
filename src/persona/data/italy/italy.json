@@ -37,6 +37,15 @@
                 "year": 2025,
                 "note": "Split of the population between urban and rural areas.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2018,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
             }
         ]
     },
@@ -74,6 +83,12 @@
     "residence": {
         "Urban": 0.697,
         "Rural": 0.303
+    },
+    "marital status": {
+        "Single (never married)": 0.337,
+        "Married": 0.5455,
+        "Widowed": 0.0856,
+        "Divorced": 0.0319
     },
     "location": {
         "Lombardy": 0.170278,

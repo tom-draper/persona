@@ -1,5 +1,5 @@
 # Mexico
-**5 features:** age, sex, religion, residence and location.
+**6 features:** age, sex, religion, residence, marital status and location.
 
 ## Age
 
@@ -17,6 +17,10 @@
 
 ![Residence](img/residence.png)
 
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -27,3 +31,4 @@
 - [Census 2020 (religion), INEGI (2020)](https://en.www.inegi.org.mx/) — religion
 - [Census 2020, National Institute of Statistics and Geography (INEGI) (2020)](https://en.www.inegi.org.mx/) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [World Marriage Data 2019, United Nations (2019)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status

@@ -21,14 +21,15 @@ to parity across all datasets:
 | `sex` | `Male`, `Female`. |
 | `religion` | Canonical labels (`Roman Catholicism`, `Islam`, `No religion`, …). |
 | `residence` | `Urban`, `Rural`. |
+| `marital status` | `Single (never married)`, `Married`, `Cohabiting`, `Widowed`, `Divorced` (national datasets may add e.g. `Separated`, `Civil partnership (PACS)`). |
 | `location` | Region (optionally nested), weighted by population. |
 
 **Extended** features are kept wherever a good national source reports them, but
 are *not* forced onto every dataset — coverage is inherently uneven across
 countries:
 
-`marital status`, `education`, `ethnicity`, `language`, `occupation`,
-`housing tenure`, `country of birth`, `sexuality`.
+`education`, `ethnicity`, `language`, `occupation`, `housing tenure`,
+`country of birth`, `sexuality`.
 
 Whatever tier it belongs to, a feature name means the same thing in every
 dataset that carries it; the shared category labels are enforced by
@@ -39,6 +40,15 @@ countries (one consistent method worldwide), the 2020 US Census urban/rural
 split for the states, and is set to urban for the standalone city datasets. The
 UK nations reuse the UK-wide World Bank figure because the four nations classify
 rural and urban against different population thresholds.
+
+`marital status`, where a national source does not supply it, comes from the UN
+*World Marriage Data 2019*: the population-aged-15+ distribution for each
+country's most recent census/survey (2002–2019), reweighted to that year's
+age-sex structure. Consensual unions are reported as their own `Cohabiting`
+category (large in much of Latin America); separated persons are counted with
+`Divorced`. Because it leans on the latest available census, it is an
+approximation and can differ from a country's current national figures by a few
+points — the per-country source year is recorded in `_meta`.
 
 ## Cities
 

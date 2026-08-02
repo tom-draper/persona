@@ -1,5 +1,5 @@
 # Italy
-**5 features:** age, sex, religion, residence and location.
+**6 features:** age, sex, religion, residence, marital status and location.
 
 ## Age
 
@@ -17,6 +17,10 @@
 
 ![Residence](img/residence.png)
 
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -27,3 +31,4 @@
 - [Bilancio demografico e popolazione residente per regione, ISTAT (2025)](https://www.istat.it/en/) — location
 - [Le religioni in Italia, Center for Studies on New Religions (CESNUR) (2020)](https://cesnur.org/) — religion
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [World Marriage Data 2019, United Nations (2018)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status

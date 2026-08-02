@@ -35,6 +35,15 @@
                 "year": 2025,
                 "note": "Split of the population between urban and rural areas.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2012,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
             }
         ]
     },
@@ -71,6 +80,12 @@
     "residence": {
         "Urban": 0.758,
         "Rural": 0.242
+    },
+    "marital status": {
+        "Single (never married)": 0.4321,
+        "Married": 0.5181,
+        "Widowed": 0.0308,
+        "Divorced": 0.019
     },
     "location": {
         "Algiers": 0.10787,

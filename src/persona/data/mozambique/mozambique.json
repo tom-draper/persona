@@ -35,6 +35,15 @@
                 "year": 2025,
                 "note": "Split of the population between urban and rural areas.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2017,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
             }
         ]
     },
@@ -73,6 +82,13 @@
     "residence": {
         "Urban": 0.372,
         "Rural": 0.628
+    },
+    "marital status": {
+        "Single (never married)": 0.2948,
+        "Married": 0.1532,
+        "Cohabiting": 0.4706,
+        "Widowed": 0.0453,
+        "Divorced": 0.0362
     },
     "location": {
         "Nampula": 0.21145,

@@ -35,6 +35,15 @@
                 "year": 2025,
                 "note": "Split of the population between urban and rural areas.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2012,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
             }
         ]
     },
@@ -74,6 +83,13 @@
     "residence": {
         "Urban": 0.921,
         "Rural": 0.079
+    },
+    "marital status": {
+        "Single (never married)": 0.4038,
+        "Married": 0.3593,
+        "Cohabiting": 0.1369,
+        "Widowed": 0.0333,
+        "Divorced": 0.0667
     },
     "location": {
         "Estuaire": 0.49456,

@@ -1,5 +1,5 @@
 # Netherlands
-**5 features:** age, sex, religion, residence and location.
+**6 features:** age, sex, religion, residence, marital status and location.
 
 ## Age
 
@@ -17,6 +17,10 @@
 
 ![Residence](img/residence.png)
 
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -27,3 +31,4 @@
 - [Religion (15+ population), Statistics Netherlands (CBS) (2025)](https://www.cbs.nl/en-gb) — religion
 - [Population by province, Statistics Netherlands (CBS) (2023)](https://www.cbs.nl/en-gb) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [World Marriage Data 2019, United Nations (2018)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status
