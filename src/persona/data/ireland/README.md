@@ -1,5 +1,5 @@
 # Ireland
-**7 features:** age, sex, religion, residence, marital status, housing tenure and location.
+**8 features:** age, sex, religion, residence, marital status, education, housing tenure and location.
 
 ## Age
 
@@ -21,6 +21,10 @@
 
 ![Marital Status](img/marital status.png)
 
+## Education
+
+![Education](img/education.png)
+
 ## Housing Tenure
 
 ![Housing Tenure](img/housing tenure.png)
@@ -36,3 +40,4 @@
 - [Census of Population 2022 Profile 3 - Households, Families and Childcare, CSO (2023)](https://www.cso.ie/en/releasesandpublications/ep/p-cpp3/censusofpopulation2022profile3-householdsfamiliesandchildcare/) — marital status
 - [Census of Population 2022 Profile 2 - Housing in Ireland, CSO (2023)](https://www.cso.ie/en/releasesandpublications/ep/p-cpp2/censusofpopulation2022profile2-housinginireland/) — housing tenure
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA (2020)](https://dataexplorer.wittgensteincentre.org/wcde-v3/) — education

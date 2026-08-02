@@ -44,6 +44,15 @@
                 "year": 2011,
                 "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
                 "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
             }
         ]
     },
@@ -89,6 +98,12 @@
         "Cohabiting": 0.0269,
         "Widowed": 0.113,
         "Divorced": 0.0398
+    },
+    "education": {
+        "No schooling": 0.0086,
+        "Primary education": 0.0425,
+        "Secondary education": 0.6269,
+        "Tertiary education": 0.322
     },
     "location": {
         "City of Zagreb": 0.19813,

@@ -22,18 +22,23 @@ to parity across all datasets:
 | `religion` | Canonical labels (`Roman Catholicism`, `Islam`, `No religion`, …). |
 | `residence` | `Urban`, `Rural`. |
 | `marital status` | `Single (never married)`, `Married`, `Cohabiting`, `Widowed`, `Divorced` (national datasets may add e.g. `Separated`, `Civil partnership (PACS)`). |
+| `education` | Highest level attained. `No schooling`, `Primary education`, `Secondary education`, `Tertiary education` where harmonised; national datasets keep their own qualification framework (US degrees, UK levels, …). |
 | `location` | Region (optionally nested), weighted by population. |
 
 **Extended** features are kept wherever a good national source reports them, but
 are *not* forced onto every dataset — coverage is inherently uneven across
 countries:
 
-`education`, `ethnicity`, `language`, `occupation`, `housing tenure`,
-`country of birth`, `sexuality`.
+`ethnicity`, `language`, `occupation`, `housing tenure`, `country of birth`,
+`sexuality`.
 
 Whatever tier it belongs to, a feature name means the same thing in every
 dataset that carries it; the shared category labels are enforced by
 `tests/test_data_integrity.py` (`CANONICAL_FEATURES` and `FORBIDDEN_LABELS`).
+`education` is the one core feature whose *labels* are not globally uniform:
+its meaning (highest level attained) is shared, but the harmonised datasets use
+ISCED-style levels while datasets built from a national source keep that
+country's qualification framework.
 
 `residence` comes from the World Bank *Urban population (% of total)* series for
 countries (one consistent method worldwide), the 2020 US Census urban/rural
@@ -49,6 +54,11 @@ category (large in much of Latin America); separated persons are counted with
 `Divorced`. Because it leans on the latest available census, it is an
 approximation and can differ from a country's current national figures by a few
 points — the per-country source year is recorded in `_meta`.
+
+`education`, where a national source does not supply it, comes from the
+Wittgenstein Centre Human Capital Data Explorer (v3, SSP2, 2020): the population
+aged 15 and over collapsed to no schooling, primary, secondary and tertiary as
+the highest level attained.
 
 ## Cities
 

@@ -44,6 +44,15 @@
                 "year": 2013,
                 "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
                 "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
             }
         ]
     },
@@ -88,6 +97,12 @@
         "Cohabiting": 0.1221,
         "Widowed": 0.0403,
         "Divorced": 0.0563
+    },
+    "education": {
+        "No schooling": 0.3567,
+        "Primary education": 0.3741,
+        "Secondary education": 0.2564,
+        "Tertiary education": 0.0128
     },
     "location": {
         "Montserrado": 0.36589,

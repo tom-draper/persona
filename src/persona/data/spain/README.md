@@ -1,5 +1,5 @@
 # Spain
-**6 features:** age, sex, religion, residence, marital status and location.
+**7 features:** age, sex, religion, residence, marital status, education and location.
 
 ## Age
 
@@ -21,6 +21,10 @@
 
 ![Marital Status](img/marital status.png)
 
+## Education
+
+![Education](img/education.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -32,3 +36,4 @@
 - [Barómetro de julio de 2023, Centro de Investigaciones Sociológicas (CIS) (2023)](https://www.cis.es/) — religion
 - [Censo Anual de Población 2025, INE (2025)](https://www.ine.es/dyngs/Prensa/en/CensoVariables2025.htm) — marital status
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA (2020)](https://dataexplorer.wittgensteincentre.org/wcde-v3/) — education

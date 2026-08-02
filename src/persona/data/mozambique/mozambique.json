@@ -44,6 +44,15 @@
                 "year": 2017,
                 "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
                 "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
             }
         ]
     },
@@ -89,6 +98,12 @@
         "Cohabiting": 0.4706,
         "Widowed": 0.0453,
         "Divorced": 0.0362
+    },
+    "education": {
+        "No schooling": 0.4497,
+        "Primary education": 0.3564,
+        "Secondary education": 0.1596,
+        "Tertiary education": 0.0343
     },
     "location": {
         "Nampula": 0.21145,

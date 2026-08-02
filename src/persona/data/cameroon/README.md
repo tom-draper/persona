@@ -1,5 +1,5 @@
 # Cameroon
-**6 features:** age, sex, religion, residence, marital status and location.
+**7 features:** age, sex, religion, residence, marital status, education and location.
 
 ## Age
 
@@ -21,6 +21,10 @@
 
 ![Marital Status](img/marital status.png)
 
+## Education
+
+![Education](img/education.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -32,3 +36,4 @@
 - [Regional population estimates, National Institute of Statistics (Cameroon) (2022)](https://ins-cameroun.cm/en/) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
 - [World Marriage Data 2019, United Nations (2014)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status
+- [Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA (2020)](https://dataexplorer.wittgensteincentre.org/wcde-v3/) — education
