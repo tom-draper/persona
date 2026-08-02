@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Liberia Institute of Statistics and Geo-Information Services (LISGIS)",
+                "year": 2022,
+                "url": "https://www.lisgis.gov.lr/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Population and Housing Census, Liberia Institute of Statistics and Geo-Information Services (LISGIS)",
+                "year": 2022,
+                "url": "https://www.lisgis.gov.lr/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1407,
+        "5-9": 0.1326,
+        "10-14": 0.1267,
+        "15-19": 0.1133,
+        "20-24": 0.0933,
+        "25-29": 0.075,
+        "30-34": 0.0633,
+        "35-39": 0.0568,
+        "40-44": 0.0492,
+        "45-49": 0.0397,
+        "50-54": 0.0314,
+        "55-59": 0.0256,
+        "60-64": 0.0198,
+        "65-69": 0.0142,
+        "70-74": 0.0092,
+        "75-79": 0.0056,
+        "80-84": 0.0027,
+        "85+": 0.001
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Protestantism": 0.75,
+        "Islam": 0.12,
+        "Christianity or Other Christianity": 0.099,
+        "No religion": 0.026,
+        "African traditional religion": 0.005
+    },
+    "location": {
+        "Montserrado": 0.36589,
+        "Nimba": 0.11844,
+        "Bong": 0.08906,
+        "Lofa": 0.06997,
+        "Margibi": 0.05808,
+        "Grand Bassa": 0.05594,
+        "Grand Gedeh": 0.04127,
+        "Grand Cape Mount": 0.03407,
+        "Maryland": 0.03287,
+        "Sinoe": 0.02879,
+        "Bomi": 0.02547,
+        "River Gee": 0.02374,
+        "Grand Kru": 0.02083,
+        "Gbarpolu": 0.01828,
+        "Rivercess": 0.0173
+    }
+}

@@ -34,6 +34,8 @@ alias = {
     "bosnia": "bosnia_and_herzegovina",
     "macedonia": "north_macedonia",
     "congo_brazzaville": "republic_of_the_congo",
+    "car": "central_african_republic",
+    "swaziland": "eswatini",
 }
 
 

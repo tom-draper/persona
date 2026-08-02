@@ -1,0 +1,82 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Central African Republic (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/central-african-republic/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, Institut Centrafricain des Statistiques (ICASEES)",
+                "year": 2024,
+                "url": "https://www.icasees.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1826,
+        "5-9": 0.1592,
+        "10-14": 0.1498,
+        "15-19": 0.1242,
+        "20-24": 0.1009,
+        "25-29": 0.0727,
+        "30-34": 0.0502,
+        "35-39": 0.0359,
+        "40-44": 0.0269,
+        "45-49": 0.0213,
+        "50-54": 0.0213,
+        "55-59": 0.0188,
+        "60-64": 0.0152,
+        "65-69": 0.0107,
+        "70-74": 0.0062,
+        "75-79": 0.0027,
+        "80-84": 0.0011,
+        "85+": 0.0003
+    },
+    "sex": {
+        "Male": 0.479,
+        "Female": 0.521
+    },
+    "religion": {
+        "Protestantism": 0.61,
+        "Roman Catholicism": 0.28,
+        "Islam": 0.09,
+        "African traditional religion": 0.01,
+        "Other": 0.01
+    },
+    "location": {
+        "Bangui": 0.26943,
+        "Ouaka": 0.08449,
+        "Basse-Kotto": 0.07233,
+        "Nana-Mambéré": 0.06839,
+        "Lobaye": 0.06645,
+        "Ouham": 0.06063,
+        "Ombella-M'Poko": 0.05382,
+        "Mambéré-Kadéï": 0.05173,
+        "Mbomou": 0.04923,
+        "Ouham-Pendé": 0.04683,
+        "Nana-Grébizi": 0.04271,
+        "Kémo": 0.03633,
+        "Sangha-Mbaéré": 0.02808,
+        "Haute-Kotto": 0.02654,
+        "Vakaga": 0.0164,
+        "Bamingui-Bangoran": 0.01572,
+        "Haut-Mbomou": 0.01089
+    }
+}

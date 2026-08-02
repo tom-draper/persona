@@ -1,0 +1,74 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Population by religious and life-stance organisation, Statistics Iceland",
+                "year": 2025,
+                "url": "https://www.statice.is/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by region, Statistics Iceland",
+                "year": 2025,
+                "url": "https://www.statice.is/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0599,
+        "5-9": 0.0572,
+        "10-14": 0.0634,
+        "15-19": 0.0627,
+        "20-24": 0.0664,
+        "25-29": 0.079,
+        "30-34": 0.0844,
+        "35-39": 0.0717,
+        "40-44": 0.0692,
+        "45-49": 0.0619,
+        "50-54": 0.0585,
+        "55-59": 0.0574,
+        "60-64": 0.0548,
+        "65-69": 0.0488,
+        "70-74": 0.0396,
+        "75-79": 0.0296,
+        "80-84": 0.0184,
+        "85+": 0.0171
+    },
+    "sex": {
+        "Male": 0.512,
+        "Female": 0.488
+    },
+    "religion": {
+        "Protestantism": 0.616,
+        "No religion": 0.277,
+        "Other": 0.04,
+        "Roman Catholicism": 0.04,
+        "Christianity or Other Christianity": 0.017,
+        "Islam": 0.005
+    },
+    "location": {
+        "Capital Region": 0.63951,
+        "Southern Region": 0.09059,
+        "Northeastern Region": 0.08224,
+        "Southern Peninsula": 0.07595,
+        "Western Region": 0.04561,
+        "Eastern Region": 0.0288,
+        "Northwestern Region": 0.01889,
+        "Westfjords": 0.01843
+    }
+}

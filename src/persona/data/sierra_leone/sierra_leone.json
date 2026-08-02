@@ -1,0 +1,79 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Global Religious Futures, Pew Research Center",
+                "year": 2020,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2015 Census, Statistics Sierra Leone",
+                "year": 2015,
+                "url": "https://www.statistics.sl/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1375,
+        "5-9": 0.1269,
+        "10-14": 0.1209,
+        "15-19": 0.1091,
+        "20-24": 0.0974,
+        "25-29": 0.0826,
+        "30-34": 0.0695,
+        "35-39": 0.0586,
+        "40-44": 0.0485,
+        "45-49": 0.0397,
+        "50-54": 0.0321,
+        "55-59": 0.0256,
+        "60-64": 0.0195,
+        "65-69": 0.0139,
+        "70-74": 0.009,
+        "75-79": 0.0056,
+        "80-84": 0.0026,
+        "85+": 0.001
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Islam": 0.785,
+        "Christianity or Other Christianity": 0.204,
+        "Other": 0.011
+    },
+    "location": {
+        "Western Urban": 0.13925,
+        "Port Loko": 0.08115,
+        "Kenema": 0.08043,
+        "Bombali": 0.07999,
+        "Bo": 0.07589,
+        "Tonkolili": 0.07008,
+        "Kailahun": 0.06942,
+        "Kono": 0.06674,
+        "Western Rural": 0.05859,
+        "Koinadugu": 0.05399,
+        "Pujehun": 0.04569,
+        "Kambia": 0.04556,
+        "Moyamba": 0.04201,
+        "Karene": 0.03766,
+        "Falaba": 0.02708,
+        "Bonthe": 0.02648
+    }
+}

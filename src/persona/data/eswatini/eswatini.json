@@ -1,0 +1,70 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Eswatini (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/eswatini/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2017 Census, Central Statistical Office (Eswatini)",
+                "year": 2017,
+                "url": "https://www.gov.sz/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1155,
+        "5-9": 0.1122,
+        "10-14": 0.109,
+        "15-19": 0.1046,
+        "20-24": 0.0972,
+        "25-29": 0.0868,
+        "30-34": 0.0803,
+        "35-39": 0.0714,
+        "40-44": 0.0578,
+        "45-49": 0.0421,
+        "50-54": 0.0323,
+        "55-59": 0.0274,
+        "60-64": 0.0218,
+        "65-69": 0.0172,
+        "70-74": 0.0114,
+        "75-79": 0.0073,
+        "80-84": 0.0038,
+        "85+": 0.0018
+    },
+    "sex": {
+        "Male": 0.491,
+        "Female": 0.509
+    },
+    "religion": {
+        "Zionist Christianity": 0.4,
+        "Christianity or Other Christianity": 0.3,
+        "Roman Catholicism": 0.2,
+        "No religion": 0.074,
+        "Islam": 0.02,
+        "Other": 0.006
+    },
+    "location": {
+        "Hhohho": 0.30564,
+        "Manzini": 0.3028,
+        "Lubombo": 0.20111,
+        "Shiselweni": 0.19046
+    }
+}

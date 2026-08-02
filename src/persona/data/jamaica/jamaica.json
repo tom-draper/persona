@@ -1,0 +1,79 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2011 Census (religion), Statistical Institute of Jamaica (STATIN)",
+                "year": 2011,
+                "url": "https://statinja.gov.jm/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2011 Census, Statistical Institute of Jamaica (STATIN)",
+                "year": 2011,
+                "url": "https://statinja.gov.jm/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0583,
+        "5-9": 0.0623,
+        "10-14": 0.0707,
+        "15-19": 0.0803,
+        "20-24": 0.0843,
+        "25-29": 0.0938,
+        "30-34": 0.0907,
+        "35-39": 0.083,
+        "40-44": 0.0739,
+        "45-49": 0.065,
+        "50-54": 0.0586,
+        "55-59": 0.0541,
+        "60-64": 0.0465,
+        "65-69": 0.0326,
+        "70-74": 0.0201,
+        "75-79": 0.0142,
+        "80-84": 0.0076,
+        "85+": 0.0041
+    },
+    "sex": {
+        "Male": 0.495,
+        "Female": 0.505
+    },
+    "religion": {
+        "Protestantism": 0.64,
+        "No religion": 0.213,
+        "Other": 0.065,
+        "Christianity or Other Christianity": 0.028,
+        "Roman Catholicism": 0.022
+    },
+    "location": {
+        "Saint Andrew": 0.21252,
+        "Saint Catherine": 0.19133,
+        "Clarendon": 0.09085,
+        "Manchester": 0.07035,
+        "Saint James": 0.06813,
+        "Saint Ann": 0.06389,
+        "Saint Elizabeth": 0.05567,
+        "Westmoreland": 0.05341,
+        "Saint Mary": 0.04211,
+        "Saint Thomas": 0.0348,
+        "Kingston": 0.03301,
+        "Portland": 0.0303,
+        "Trelawny": 0.02786,
+        "Hanover": 0.02577
+    }
+}

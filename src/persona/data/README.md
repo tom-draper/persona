@@ -138,6 +138,14 @@
 - [X] `south_sudan`
 - [X] `republic_of_the_congo`
 - [X] `mauritania`
+- [X] `liberia`
+- [X] `sierra_leone`
+- [X] `central_african_republic`
+- [X] `lesotho`
+- [X] `eswatini`
+- [X] `jamaica`
+- [X] `iceland`
+- [X] `malta`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`
