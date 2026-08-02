@@ -1,0 +1,68 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Djibouti (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/djibouti/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, Institut National de la Statistique de Djibouti (INSTAD)",
+                "year": 2020,
+                "url": "https://www.instad.dj/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0993,
+        "5-9": 0.0981,
+        "10-14": 0.0984,
+        "15-19": 0.1006,
+        "20-24": 0.0968,
+        "25-29": 0.0852,
+        "30-34": 0.0779,
+        "35-39": 0.0685,
+        "40-44": 0.0623,
+        "45-49": 0.0563,
+        "50-54": 0.0467,
+        "55-59": 0.036,
+        "60-64": 0.0267,
+        "65-69": 0.019,
+        "70-74": 0.0135,
+        "75-79": 0.0087,
+        "80-84": 0.0042,
+        "85+": 0.0019
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Islam": 0.98,
+        "Christianity or Other Christianity": 0.02
+    },
+    "location": {
+        "Djibouti": 0.69865,
+        "Tadjourah": 0.08366,
+        "Dikhil": 0.07791,
+        "Ali Sabieh": 0.06691,
+        "Arta": 0.03751,
+        "Obock": 0.03536
+    }
+}

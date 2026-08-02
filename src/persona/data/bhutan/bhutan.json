@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Bhutan (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/bhutan/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2017 Population and Housing Census, National Statistics Bureau (Bhutan)",
+                "year": 2017,
+                "url": "https://www.nsb.gov.bt/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0615,
+        "5-9": 0.071,
+        "10-14": 0.0822,
+        "15-19": 0.088,
+        "20-24": 0.0923,
+        "25-29": 0.097,
+        "30-34": 0.105,
+        "35-39": 0.0907,
+        "40-44": 0.0752,
+        "45-49": 0.0581,
+        "50-54": 0.0464,
+        "55-59": 0.0386,
+        "60-64": 0.0303,
+        "65-69": 0.0249,
+        "70-74": 0.017,
+        "75-79": 0.0111,
+        "80-84": 0.0065,
+        "85+": 0.0041
+    },
+    "sex": {
+        "Male": 0.535,
+        "Female": 0.465
+    },
+    "religion": {
+        "Buddhism": 0.746,
+        "Hinduism": 0.226,
+        "Other": 0.019,
+        "Christianity or Other Christianity": 0.005,
+        "Islam": 0.004
+    },
+    "location": {
+        "Thimphu": 0.1908,
+        "Chhukha": 0.09484,
+        "Samtse": 0.08608,
+        "Paro": 0.0637,
+        "Sarpang": 0.06327,
+        "Wangdue Phodrang": 0.05802,
+        "Trashigang": 0.0626,
+        "Mongar": 0.05109,
+        "Samdrup Jongkhar": 0.04824,
+        "Punakha": 0.03952,
+        "Dagana": 0.03433,
+        "Pemagatshel": 0.0325,
+        "Tsirang": 0.03077,
+        "Trongsa": 0.02745,
+        "Bumthang": 0.02451,
+        "Zhemgang": 0.02443,
+        "Trashiyangtse": 0.02379,
+        "Lhuentse": 0.01985,
+        "Haa": 0.01878,
+        "Gasa": 0.00543
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2017 Census (religion), Fiji Bureau of Statistics",
+                "year": 2017,
+                "url": "https://www.statsfiji.gov.fj/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2017 Census, Fiji Bureau of Statistics",
+                "year": 2017,
+                "url": "https://www.statsfiji.gov.fj/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0894,
+        "5-9": 0.0935,
+        "10-14": 0.0909,
+        "15-19": 0.0875,
+        "20-24": 0.0799,
+        "25-29": 0.0799,
+        "30-34": 0.0782,
+        "35-39": 0.0749,
+        "40-44": 0.0702,
+        "45-49": 0.0566,
+        "50-54": 0.0493,
+        "55-59": 0.047,
+        "60-64": 0.0393,
+        "65-69": 0.0276,
+        "70-74": 0.0175,
+        "75-79": 0.0108,
+        "80-84": 0.0052,
+        "85+": 0.0023
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Protestantism": 0.45,
+        "Hinduism": 0.24,
+        "Christianity or Other Christianity": 0.151,
+        "Roman Catholicism": 0.091,
+        "Islam": 0.058,
+        "Other": 0.01
+    },
+    "location": {
+        "Central": 0.42288,
+        "Western": 0.3851,
+        "Northern": 0.15071,
+        "Eastern": 0.04131
+    }
+}

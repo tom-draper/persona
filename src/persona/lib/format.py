@@ -36,6 +36,8 @@ alias = {
     "congo_brazzaville": "republic_of_the_congo",
     "car": "central_african_republic",
     "swaziland": "eswatini",
+    "east_timor": "timor_leste",
+    "trinidad": "trinidad_and_tobago",
 }
 
 

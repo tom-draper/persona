@@ -146,6 +146,14 @@
 - [X] `jamaica`
 - [X] `iceland`
 - [X] `malta`
+- [X] `djibouti`
+- [X] `gambia`
+- [X] `guinea_bissau`
+- [X] `equatorial_guinea`
+- [X] `bhutan`
+- [X] `timor_leste`
+- [X] `trinidad_and_tobago`
+- [X] `fiji`
 - [X] `greece`
 - [X] `norway`
 - [X] `finland`

@@ -1,0 +1,69 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: The Gambia (religion), CIA",
+                "year": 2019,
+                "url": "https://www.cia.gov/the-world-factbook/countries/gambia-the/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2024 Census, Gambia Bureau of Statistics",
+                "year": 2024,
+                "url": "https://www.gbosdata.org/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1422,
+        "5-9": 0.137,
+        "10-14": 0.1281,
+        "15-19": 0.1095,
+        "20-24": 0.0933,
+        "25-29": 0.0828,
+        "30-34": 0.0699,
+        "35-39": 0.0552,
+        "40-44": 0.0418,
+        "45-49": 0.0331,
+        "50-54": 0.0302,
+        "55-59": 0.0266,
+        "60-64": 0.0205,
+        "65-69": 0.0134,
+        "70-74": 0.0078,
+        "75-79": 0.005,
+        "80-84": 0.0024,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.498,
+        "Female": 0.502
+    },
+    "religion": {
+        "Islam": 0.964,
+        "Christianity or Other Christianity": 0.035,
+        "Other": 0.001
+    },
+    "location": {
+        "West Coast": 0.47514,
+        "Greater Banjul": 0.1675,
+        "Central River": 0.10959,
+        "Upper River": 0.1078,
+        "North Bank": 0.10256,
+        "Lower River": 0.03741
+    }
+}
