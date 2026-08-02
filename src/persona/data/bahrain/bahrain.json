@@ -27,6 +27,15 @@
                 "name": "Governorate population estimates, Information & eGovernment Authority (Bahrain)",
                 "year": 2020,
                 "url": "https://www.iga.gov.bh/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "Buddhism": 0.031,
         "No religion": 0.02,
         "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.999,
+        "Rural": 0.001
     },
     "location": {
         "Northern": 0.35427,

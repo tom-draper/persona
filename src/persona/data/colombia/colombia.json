@@ -26,6 +26,15 @@
                 "name": "Population projections 2022, National Administrative Department of Statistics (DANE)",
                 "year": 2022,
                 "url": "https://www.dane.gov.co/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Protestantism": 0.172,
         "No religion": 0.162,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.788,
+        "Rural": 0.212
     },
     "location": {
         "Bogotá": 0.17257,

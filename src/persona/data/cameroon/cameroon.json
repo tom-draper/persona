@@ -26,6 +26,15 @@
                 "name": "Regional population estimates, National Institute of Statistics (Cameroon)",
                 "year": 2022,
                 "url": "https://ins-cameroun.cm/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Christianity or Other Christianity": 0.061,
         "African traditional religion": 0.013,
         "No religion": 0.012
+    },
+    "residence": {
+        "Urban": 0.557,
+        "Rural": 0.443
     },
     "location": {
         "Centre": 0.18431,

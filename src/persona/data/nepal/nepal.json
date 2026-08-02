@@ -26,6 +26,15 @@
                 "name": "National Population and Housing Census 2021, National Statistics Office (Nepal)",
                 "year": 2021,
                 "url": "https://censusnepal.cbs.gov.np/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Kirat": 0.032,
         "Christianity or Other Christianity": 0.018,
         "Other": 0.006
+    },
+    "residence": {
+        "Urban": 0.67,
+        "Rural": 0.33
     },
     "location": {
         "Bagmati": 0.20974,

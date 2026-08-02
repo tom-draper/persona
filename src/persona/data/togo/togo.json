@@ -26,6 +26,15 @@
                 "name": "2022 Census (RGPH-5), Institut National de la Statistique (INSEED Togo)",
                 "year": 2022,
                 "url": "https://inseed.tg/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "No religion": 0.094,
         "Christianity or Other Christianity": 0.074,
         "Other": 0.029
+    },
+    "residence": {
+        "Urban": 0.444,
+        "Rural": 0.556
     },
     "location": {
         "Maritime": 0.43666,

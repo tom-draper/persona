@@ -26,6 +26,15 @@
                 "name": "2014 National Population and Housing Census, Uganda Bureau of Statistics",
                 "year": 2014,
                 "url": "https://www.ubos.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Protestantism": 0.111,
         "Christianity or Other Christianity": 0.04,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.319,
+        "Rural": 0.681
     },
     "location": {
         "Central": 0.27514,

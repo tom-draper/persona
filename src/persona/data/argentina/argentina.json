@@ -26,6 +26,15 @@
                 "name": "Census 2022, National Institute of Statistics and Census (INDEC)",
                 "year": 2022,
                 "url": "https://www.indec.gob.ar/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "No religion": 0.189,
         "Protestantism": 0.153,
         "Other": 0.019
+    },
+    "residence": {
+        "Urban": 0.924,
+        "Rural": 0.076
     },
     "location": {
         "Buenos Aires Province": 0.38185,

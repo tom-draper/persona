@@ -2,53 +2,82 @@
     "_meta": {
         "sources": [
             {
-                "features": ["country of birth"],
+                "features": [
+                    "country of birth"
+                ],
                 "name": "Country of birth - full detail (MS-A18), Census 2021, NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-country-birth"
             },
             {
-                "features": ["age", "sex"],
+                "features": [
+                    "age",
+                    "sex"
+                ],
                 "name": "Five year age bands and sex (MS-A08), Census 2021, NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-age-and-sex"
             },
             {
-                "features": ["sexuality"],
+                "features": [
+                    "sexuality"
+                ],
                 "name": "Sexual orientation, UK: 2020, ONS",
                 "year": 2020,
                 "note": "UK-wide estimate; not broken down by country.",
                 "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
             },
             {
-                "features": ["ethnicity"],
+                "features": [
+                    "ethnicity"
+                ],
                 "name": "Census 2021 main statistics ethnicity tables, NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-ethnicity-tables"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Census 2021 main statistics religion tables, NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-religion-tables"
             },
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Census 2021 main statistics language tables, NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-language-tables"
             },
             {
-                "features": ["location"],
+                "features": [
+                    "location"
+                ],
                 "name": "Census 2021 main statistics for Northern Ireland (phase 1), NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/statistics/census/2021-census"
             },
             {
-                "features": ["occupation", "education", "marital status", "housing tenure"],
+                "features": [
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure"
+                ],
                 "name": "Census 2021 main statistics for Northern Ireland (phase 2 & 3), NISRA",
                 "year": 2021,
                 "url": "https://www.nisra.gov.uk/statistics/census-2021-results/main-statistics"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Urban-rural split; the UK-wide figure is applied because the four nations use different rural-urban thresholds.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -111,6 +140,10 @@
         "Other Christianity": 0.069,
         "No religion": 0.174
     },
+    "residence": {
+        "Urban": 0.833,
+        "Rural": 0.167
+    },
     "language": {
         "English": 0.9163,
         "English/Irish": 0.0374,
@@ -130,7 +163,7 @@
         "Professional occupations": 0.205,
         "Associate professional and technical": 0.125,
         "Administrative and secretarial": 0.098,
-        "Skilled trades": 0.120,
+        "Skilled trades": 0.12,
         "Caring, leisure and other service": 0.105,
         "Sales and customer service": 0.079,
         "Process, plant and machine operatives": 0.075,
@@ -146,10 +179,10 @@
         "Other": 0.075
     },
     "marital status": {
-        "Single (never married)": 0.390,
+        "Single (never married)": 0.39,
         "Married": 0.465,
         "Separated": 0.021,
-        "Divorced": 0.060,
+        "Divorced": 0.06,
         "Widowed": 0.064
     },
     "housing tenure": {

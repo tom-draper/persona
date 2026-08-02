@@ -1,5 +1,5 @@
 # Northern Ireland
-**12 features:** age, sex, sexuality, ethnicity, religion, language, occupation, education, marital status, housing tenure, country of birth and location.
+**13 features:** age, sex, sexuality, ethnicity, religion, residence, language, occupation, education, marital status, housing tenure, country of birth and location.
 
 ## Age
 
@@ -20,6 +20,10 @@
 ## Religion
 
 ![Religion](img/religion.png)
+
+## Residence
+
+![Residence](img/residence.png)
 
 ## Language
 
@@ -59,3 +63,4 @@
 - [Census 2021 main statistics language tables, NISRA (2021)](https://www.nisra.gov.uk/publications/census-2021-main-statistics-language-tables) — language
 - [Census 2021 main statistics for Northern Ireland (phase 1), NISRA (2021)](https://www.nisra.gov.uk/statistics/census/2021-census) — location
 - [Census 2021 main statistics for Northern Ireland (phase 2 & 3), NISRA (2021)](https://www.nisra.gov.uk/statistics/census-2021-results/main-statistics) — occupation, education, marital status, housing tenure
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

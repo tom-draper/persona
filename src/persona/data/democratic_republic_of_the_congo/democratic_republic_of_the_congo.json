@@ -26,6 +26,15 @@
                 "name": "Provincial population estimates, Institut National de la Statistique (DR Congo)",
                 "year": 2019,
                 "url": "https://www.ins-rdc.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Christianity or Other Christianity": 0.07,
         "Other": 0.03,
         "Islam": 0.02
+    },
+    "residence": {
+        "Urban": 0.451,
+        "Rural": 0.549
     },
     "location": {
         "Kinshasa": 0.14147,

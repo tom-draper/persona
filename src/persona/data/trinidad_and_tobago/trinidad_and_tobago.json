@@ -27,6 +27,15 @@
                 "name": "2011 Census, Central Statistical Office (Trinidad and Tobago)",
                 "year": 2011,
                 "url": "https://cso.gov.tt/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "Other": 0.07,
         "Islam": 0.05,
         "No religion": 0.022
+    },
+    "residence": {
+        "Urban": 0.54,
+        "Rural": 0.46
     },
     "location": {
         "Tunapuna-Piarco": 0.16198,

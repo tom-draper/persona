@@ -26,6 +26,15 @@
                 "name": "2022 Census, Instituto Nacional de Estadística y Censos (INEC)",
                 "year": 2022,
                 "url": "https://www.ecuadorencifras.gob.ec/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Protestantism": 0.113,
         "No religion": 0.07,
         "Other": 0.013
+    },
+    "residence": {
+        "Urban": 0.634,
+        "Rural": 0.366
     },
     "location": {
         "Guayas": 0.25928,

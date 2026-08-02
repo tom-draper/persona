@@ -26,6 +26,15 @@
                 "name": "2020 Census, National Centre for Statistics and Information (NCSI Oman)",
                 "year": 2020,
                 "url": "https://www.ncsi.gov.om/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Christianity or Other Christianity": 0.064,
         "Hinduism": 0.057,
         "Other": 0.02
+    },
+    "residence": {
+        "Urban": 0.795,
+        "Rural": 0.205
     },
     "location": {
         "Muscat": 0.26383,

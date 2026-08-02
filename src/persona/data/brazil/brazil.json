@@ -26,6 +26,15 @@
                 "name": "Population by state, Brazilian Institute of Geography and Statistics (IBGE)",
                 "year": 2022,
                 "url": "https://www.ibge.gov.br/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Other": 0.0407,
         "Spiritism": 0.0184,
         "Afro-Brazilian religions": 0.0105
+    },
+    "residence": {
+        "Urban": 0.882,
+        "Rural": 0.118
     },
     "location": {
         "São Paulo": 0.21558,

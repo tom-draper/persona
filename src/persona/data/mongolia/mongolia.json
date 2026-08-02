@@ -26,6 +26,15 @@
                 "name": "2020 Census, National Statistics Office of Mongolia",
                 "year": 2020,
                 "url": "https://www.nso.mn/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Mongolian shamanism": 0.025,
         "Christianity or Other Christianity": 0.013,
         "Other": 0.007
+    },
+    "residence": {
+        "Urban": 0.711,
+        "Rural": 0.289
     },
     "location": {
         "Ulaanbaatar": 0.46705,

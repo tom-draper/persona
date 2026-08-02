@@ -26,6 +26,15 @@
                 "name": "2022 Census, National Institute of Statistics of Rwanda (NISR)",
                 "year": 2022,
                 "url": "https://www.statistics.gov.rw/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "No religion": 0.03,
         "Other": 0.03,
         "Islam": 0.02
+    },
+    "residence": {
+        "Urban": 0.309,
+        "Rural": 0.691
     },
     "location": {
         "Eastern Province": 0.26899,

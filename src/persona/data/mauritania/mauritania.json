@@ -26,6 +26,15 @@
                 "name": "2023 Census (RGPH), Agence Nationale de la Statistique (Mauritania)",
                 "year": 2023,
                 "url": "https://www.ansade.mr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "African traditional religion": 0.005,
         "Christianity or Other Christianity": 0.002,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.615,
+        "Rural": 0.385
     },
     "location": {
         "Nouakchott-Sud": 0.12733,

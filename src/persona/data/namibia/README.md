@@ -1,5 +1,5 @@
 # Namibia
-**4 features:** age, sex, religion and location.
+**5 features:** age, sex, religion, residence and location.
 
 ## Age
 
@@ -13,6 +13,10 @@
 
 ![Religion](img/religion.png)
 
+## Residence
+
+![Residence](img/residence.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -22,3 +26,4 @@
 - [World Population Prospects 2024, United Nations (2024)](https://population.un.org/wpp/) — age, sex
 - [Namibia Demographic and Health Survey (2013)](https://dhsprogram.com/) — religion
 - [2023 Census, Namibia Statistics Agency (2023)](https://nsa.nsa.org.na/) — location
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

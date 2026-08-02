@@ -26,6 +26,15 @@
                 "name": "2024 Census, Instituto Nacional de Estatística (Angola)",
                 "year": 2024,
                 "url": "https://www.ine.gov.ao/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "No religion": 0.115,
         "Other": 0.07,
         "Islam": 0.004
+    },
+    "residence": {
+        "Urban": 0.715,
+        "Rural": 0.285
     },
     "location": {
         "Luanda": 0.26323,

@@ -1,5 +1,5 @@
 # Australia
-**10 features:** location, age, sex, religion, language, marital status, occupation, education, housing tenure and country of birth.
+**11 features:** location, age, sex, religion, residence, language, marital status, occupation, education, housing tenure and country of birth.
 
 ## Location
 
@@ -16,6 +16,10 @@
 ## Religion
 
 ![Religion](img/religion.png)
+
+## Residence
+
+![Residence](img/residence.png)
 
 ## Language
 
@@ -47,3 +51,4 @@
 - [Religious affiliation in Australia, Australian Bureau of Statistics (2021)](https://www.abs.gov.au/articles/religious-affiliation-australia) — religion
 - [Cultural diversity in Australia, Australian Bureau of Statistics (2021)](https://www.abs.gov.au/statistics/people/people-and-communities/snapshot-australia/latest-release) — language
 - [Estimated resident population by country of birth, Australian Bureau of Statistics (2021)](https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21) — country of birth
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

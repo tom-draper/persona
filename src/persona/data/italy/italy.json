@@ -2,32 +2,48 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex"],
+                "features": [
+                    "age",
+                    "sex"
+                ],
                 "name": "Popolazione residente per età e sesso, Istituto Nazionale di Statistica (ISTAT)",
                 "year": 2023,
                 "note": "Age proportions derived from the resident population by five-year age band.",
                 "url": "https://www.istat.it/en/"
             },
             {
-                "features": ["location"],
+                "features": [
+                    "location"
+                ],
                 "name": "Bilancio demografico e popolazione residente per regione, ISTAT",
                 "year": 2025,
                 "note": "Location weights are the 20 regions' shares of the national resident population.",
                 "url": "https://www.istat.it/en/"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Le religioni in Italia, Center for Studies on New Religions (CESNUR)",
                 "year": 2020,
                 "note": "No religion combines self-declared atheists and agnostics.",
                 "url": "https://cesnur.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
     "age": {
         "0-4": 0.0374,
         "5-9": 0.0435,
-        "10-14": 0.0480,
+        "10-14": 0.048,
         "15-19": 0.0482,
         "20-24": 0.0499,
         "25-29": 0.0514,
@@ -40,7 +56,7 @@
         "60-64": 0.0666,
         "65-69": 0.0587,
         "70-74": 0.0581,
-        "75-79": 0.0430,
+        "75-79": 0.043,
         "80-84": 0.0385,
         "85+": 0.0372
     },
@@ -55,6 +71,10 @@
         "Islam": 0.04,
         "Other": 0.01
     },
+    "residence": {
+        "Urban": 0.697,
+        "Rural": 0.303
+    },
     "location": {
         "Lombardy": 0.170278,
         "Lazio": 0.096892,
@@ -62,12 +82,12 @@
         "Veneto": 0.082326,
         "Sicily": 0.081097,
         "Emilia-Romagna": 0.075773,
-        "Piedmont": 0.072210,
+        "Piedmont": 0.07221,
         "Apulia": 0.065736,
         "Tuscany": 0.062117,
         "Calabria": 0.031088,
         "Sardinia": 0.026493,
-        "Liguria": 0.025620,
+        "Liguria": 0.02562,
         "Marche": 0.025134,
         "Abruzzo": 0.021523,
         "Friuli-Venezia Giulia": 0.020262,

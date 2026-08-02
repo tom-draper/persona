@@ -26,6 +26,15 @@
                 "name": "Census 2020, National Institute of Statistics and Geography (INEGI)",
                 "year": 2020,
                 "url": "https://en.www.inegi.org.mx/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "No religion": 0.084,
         "Christianity or Other Christianity": 0.018,
         "Other": 0.003
+    },
+    "residence": {
+        "Urban": 0.8,
+        "Rural": 0.2
     },
     "location": {
         "State of Mexico": 0.13485,

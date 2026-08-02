@@ -2,23 +2,44 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "ethnicity", "occupation", "education", "marital status", "housing tenure"],
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure"
+                ],
                 "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau (via Census Reporter)",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US06-california/"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Religious Landscape Study - California, Pew Research Center",
                 "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/california/"
             },
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Language Map Data Center, Modern Language Association",
                 "year": 2010,
                 "note": "Based on American Community Survey language data.",
                 "url": "https://apps.mla.org/map_data"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "2020 Census Urban and Rural, U.S. Census Bureau",
+                "year": 2020,
+                "note": "Split of the state population between urban and rural areas.",
+                "url": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html"
             }
         ]
     },
@@ -27,10 +48,10 @@
         "5-9": 0.058,
         "10-14": 0.059,
         "15-19": 0.065,
-        "20-24": 0.070,
+        "20-24": 0.07,
         "25-29": 0.075,
         "30-34": 0.074,
-        "35-39": 0.070,
+        "35-39": 0.07,
         "40-44": 0.063,
         "45-49": 0.063,
         "50-54": 0.066,
@@ -57,11 +78,11 @@
         "Other": 0.006
     },
     "occupation": {
-        "Management, business, science and arts": 0.430,
-        "Service": 0.190,
-        "Sales and office": 0.200,
-        "Natural resources, construction and maintenance": 0.080,
-        "Production, transportation and material moving": 0.100
+        "Management, business, science and arts": 0.43,
+        "Service": 0.19,
+        "Sales and office": 0.2,
+        "Natural resources, construction and maintenance": 0.08,
+        "Production, transportation and material moving": 0.1
     },
     "education": {
         "Less than high school": 0.145,
@@ -72,10 +93,10 @@
         "Graduate or professional degree": 0.161
     },
     "marital status": {
-        "Single (never married)": 0.350,
+        "Single (never married)": 0.35,
         "Married": 0.462,
-        "Separated": 0.020,
-        "Divorced": 0.110,
+        "Separated": 0.02,
+        "Divorced": 0.11,
         "Widowed": 0.058
     },
     "housing tenure": {
@@ -93,6 +114,10 @@
         "Islam": 0.01,
         "Buddhism": 0.02,
         "Hinduism": 0.02
+    },
+    "residence": {
+        "Urban": 0.942,
+        "Rural": 0.058
     },
     "language": {
         "English": 0.6102,

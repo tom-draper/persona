@@ -2,30 +2,51 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "ethnicity", "occupation", "education", "marital status", "housing tenure"],
+                "features": [
+                    "age",
+                    "sex",
+                    "ethnicity",
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure"
+                ],
                 "name": "American Community Survey 2021 5-Year Estimates, US Census Bureau (via Census Reporter)",
                 "year": 2021,
                 "url": "https://censusreporter.org/profiles/04000US48-texas/"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Religious Landscape Study - Texas, Pew Research Center",
                 "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/texas/"
             },
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Language Map Data Center, Modern Language Association",
                 "year": 2010,
                 "note": "Based on American Community Survey language data.",
                 "url": "https://apps.mla.org/map_data"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "2020 Census Urban and Rural, U.S. Census Bureau",
+                "year": 2020,
+                "note": "Split of the state population between urban and rural areas.",
+                "url": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html"
             }
         ]
     },
     "age": {
         "0-4": 0.066,
-        "5-9": 0.070,
-        "10-14": 0.070,
+        "5-9": 0.07,
+        "10-14": 0.07,
         "15-19": 0.073,
         "20-24": 0.076,
         "25-29": 0.079,
@@ -33,7 +54,7 @@
         "35-39": 0.069,
         "40-44": 0.063,
         "45-49": 0.061,
-        "50-54": 0.060,
+        "50-54": 0.06,
         "55-59": 0.057,
         "60-64": 0.049,
         "65-69": 0.038,
@@ -49,18 +70,18 @@
     "ethnicity": {
         "White": 0.378,
         "Hispanic or Latino": 0.403,
-        "Black or African American": 0.120,
-        "Asian": 0.060,
+        "Black or African American": 0.12,
+        "Asian": 0.06,
         "Two or more races": 0.033,
         "Native American": 0.002,
         "Other": 0.004
     },
     "occupation": {
-        "Management, business, science and arts": 0.390,
-        "Service": 0.180,
-        "Sales and office": 0.220,
-        "Natural resources, construction and maintenance": 0.110,
-        "Production, transportation and material moving": 0.100
+        "Management, business, science and arts": 0.39,
+        "Service": 0.18,
+        "Sales and office": 0.22,
+        "Natural resources, construction and maintenance": 0.11,
+        "Production, transportation and material moving": 0.1
     },
     "education": {
         "Less than high school": 0.148,
@@ -71,10 +92,10 @@
         "Graduate or professional degree": 0.116
     },
     "marital status": {
-        "Single (never married)": 0.330,
+        "Single (never married)": 0.33,
         "Married": 0.508,
         "Separated": 0.021,
-        "Divorced": 0.110,
+        "Divorced": 0.11,
         "Widowed": 0.031
     },
     "housing tenure": {
@@ -87,6 +108,10 @@
         "Mormonism": 0.01,
         "No religion": 0.18,
         "Judaism": 0.01
+    },
+    "residence": {
+        "Urban": 0.837,
+        "Rural": 0.163
     },
     "language": {
         "English": 0.6793,

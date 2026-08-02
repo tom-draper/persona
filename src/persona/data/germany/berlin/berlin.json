@@ -24,6 +24,15 @@
                 "name": "Population by borough, Amt für Statistik Berlin-Brandenburg",
                 "year": 2023,
                 "url": "https://www.statistik-berlin-brandenburg.de/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
             }
         ]
     },
@@ -54,6 +63,10 @@
         "Islam": 0.085,
         "Christianity or Other Christianity": 0.027,
         "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
     },
     "location": {
         "Pankow": 0.10941,

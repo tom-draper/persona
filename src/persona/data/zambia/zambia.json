@@ -26,6 +26,15 @@
                 "name": "2022 Census, Zambia Statistics Agency",
                 "year": 2022,
                 "url": "https://www.zamstats.gov.zm/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Jehovah's Witnesses": 0.056,
         "No religion": 0.013,
         "Islam": 0.005
+    },
+    "residence": {
+        "Urban": 0.459,
+        "Rural": 0.541
     },
     "location": {
         "Lusaka": 0.15705,

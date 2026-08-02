@@ -26,6 +26,15 @@
                 "name": "2011 Census, National Statistical Office (Papua New Guinea)",
                 "year": 2011,
                 "url": "https://www.nso.gov.pg/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Indigenous beliefs": 0.034,
         "Other": 0.01,
         "No religion": 0.007
+    },
+    "residence": {
+        "Urban": 0.158,
+        "Rural": 0.842
     },
     "location": {
         "Morobe": 0.09777,

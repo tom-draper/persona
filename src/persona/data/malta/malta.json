@@ -26,6 +26,15 @@
                 "name": "Population by district, National Statistics Office (Malta)",
                 "year": 2016,
                 "url": "https://nso.gov.mt/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "No religion": 0.051,
         "Islam": 0.039,
         "Other": 0.022
+    },
+    "residence": {
+        "Urban": 0.957,
+        "Rural": 0.043
     },
     "location": {
         "Northern Harbour": 0.29756,

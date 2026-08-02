@@ -2,44 +2,67 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "marital status", "education", "occupation", "housing tenure", "location"],
+                "features": [
+                    "age",
+                    "sex",
+                    "marital status",
+                    "education",
+                    "occupation",
+                    "housing tenure",
+                    "location"
+                ],
                 "name": "Census of Population 2021, Statistics Canada",
                 "year": 2021,
                 "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/index.cfm?Lang=E"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Ethnocultural and religious diversity, Census 2021, Statistics Canada",
                 "year": 2021,
                 "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethno-religion-eng.cfm"
             },
             {
-                "features": ["ethnicity"],
+                "features": [
+                    "ethnicity"
+                ],
                 "name": "Visible minority and population group, Census 2021, Statistics Canada",
                 "year": 2021,
                 "url": "https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethnicity-ethnicite-eng.cfm"
             },
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Language, Census of Population 2011, Statistics Canada",
                 "year": 2011,
                 "note": "Not yet updated to Census 2021, unlike the other Canadian features.",
                 "url": "https://www12.statcan.gc.ca/census-recensement/2011/as-sa/98-314-x/98-314-x2011001-eng.cfm"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
     "age": {
-        "0-4": 0.050,
+        "0-4": 0.05,
         "5-9": 0.055,
         "10-14": 0.056,
         "15-19": 0.058,
         "20-24": 0.063,
-        "25-29": 0.070,
+        "25-29": 0.07,
         "30-34": 0.072,
         "35-39": 0.069,
         "40-44": 0.064,
         "45-49": 0.066,
-        "50-54": 0.070,
+        "50-54": 0.07,
         "55-59": 0.071,
         "60-64": 0.064,
         "65-69": 0.055,
@@ -66,9 +89,13 @@
         "Islam": 0.049,
         "Hinduism": 0.023,
         "Sikhism": 0.021,
-        "Buddhism": 0.010,
+        "Buddhism": 0.01,
         "Judaism": 0.009,
         "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.829,
+        "Rural": 0.171
     },
     "ethnicity": {
         "White": 0.685,
@@ -76,11 +103,11 @@
         "Chinese": 0.047,
         "Black": 0.043,
         "Filipino": 0.026,
-        "Indigenous": 0.050,
+        "Indigenous": 0.05,
         "Arab": 0.015,
         "Latin American": 0.015,
-        "Southeast Asian": 0.010,
-        "West Asian": 0.010,
+        "Southeast Asian": 0.01,
+        "West Asian": 0.01,
         "Korean": 0.007,
         "Japanese": 0.004,
         "Other visible minority": 0.013
@@ -101,13 +128,13 @@
         "Management": 0.095,
         "Business, finance and administration": 0.155,
         "Natural and applied sciences": 0.085,
-        "Health occupations": 0.070,
+        "Health occupations": 0.07,
         "Education, law and social services": 0.105,
         "Art, culture, recreation and sport": 0.025,
-        "Sales and service": 0.240,
+        "Sales and service": 0.24,
         "Trades, transport and equipment": 0.125,
-        "Natural resources and agriculture": 0.030,
-        "Manufacturing and utilities": 0.070
+        "Natural resources and agriculture": 0.03,
+        "Manufacturing and utilities": 0.07
     },
     "housing tenure": {
         "Owned": 0.665,
@@ -122,12 +149,12 @@
         "Manitoba": 0.0363,
         "Saskatchewan": 0.0306,
         "Nova Scotia": 0.0262,
-        "New Brunswick": 0.0210,
+        "New Brunswick": 0.021,
         "Newfoundland and Labrador": 0.0138,
         "Prince Edward Island": 0.0042,
         "Northwest Territories": 0.0011,
         "Yukon": 0.0011,
-        "Nunavut": 0.0010
+        "Nunavut": 0.001
     },
     "language": {
         "Afrikaans": 0.00026592760825861384,
@@ -142,7 +169,7 @@
         "Bisayan languages": 0.0004924360727616749,
         "Bosnian": 0.0003543174575258726,
         "Bulgarian": 0.0005776420681102159,
-        "Burmese": 9.051241854640392e-5,
+        "Burmese": 9.051241854640392e-05,
         "Cantonese": 0.01129388791014861,
         "Chinese": 0.012893395474075848,
         "Cree": 0.0023621163835058174,
@@ -179,7 +206,7 @@
         "Kurdish": 0.00029731131117168854,
         "Lao": 0.0003932817650073229,
         "Latvian": 0.00018799899329571332,
-        "Lingala": 9.354466037375413e-5,
+        "Lingala": 9.354466037375413e-05,
         "Lithuanian": 0.00021968592039152307,
         "Macedonian": 0.0005229101031265445,
         "Malay": 0.00033081758336390846,
@@ -204,14 +231,14 @@
         "Rwanda (Kinyarwanda)": 0.00011810581917529087,
         "Serbian": 0.0017107908389909913,
         "Serbo-Croatian": 0.0003079241575674143,
-        "Shanghainese": 8.854146135862627e-5,
+        "Shanghainese": 8.854146135862627e-05,
         "Sindhi": 0.00034355299903877934,
         "Sinhala (Sinhalese)": 0.00043012350320962797,
         "Slovak": 0.0005330681132481677,
         "Slovenian": 0.00032672405689698563,
         "Somali": 0.0009515174854224974,
         "Spanish": 0.012452507512379127,
-        "Stoney": 9.248337573418155e-5,
+        "Stoney": 9.248337573418155e-05,
         "Swahili": 0.0003059532003796367,
         "Swedish": 0.0002228697743102408,
         "Tagalog (Pilipino Filipino)": 0.009928924251566912,

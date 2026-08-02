@@ -26,6 +26,15 @@
                 "name": "Population estimates 2024, Hellenic Statistical Authority (ELSTAT)",
                 "year": 2024,
                 "url": "https://www.statistics.gr/en/home"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Christianity or Other Christianity": 0.03,
         "Islam": 0.02,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.792,
+        "Rural": 0.208
     },
     "location": {
         "Attica": 0.36388,

@@ -26,6 +26,15 @@
                 "name": "2022 Census, Instituto Nacional de Estadística (INE Paraguay)",
                 "year": 2022,
                 "url": "https://www.ine.gov.py/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Other": 0.019,
         "No religion": 0.011,
         "Christianity or Other Christianity": 0.005
+    },
+    "residence": {
+        "Urban": 0.704,
+        "Rural": 0.296
     },
     "location": {
         "Central": 0.30834,

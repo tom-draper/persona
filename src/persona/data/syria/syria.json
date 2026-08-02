@@ -27,6 +27,15 @@
                 "name": "Population estimates 2018, Central Bureau of Statistics (Syria)",
                 "year": 2018,
                 "url": "https://www.cbssyr.sy/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Islam": 0.956,
         "Christianity or Other Christianity": 0.024,
         "No religion": 0.02
+    },
+    "residence": {
+        "Urban": 0.721,
+        "Rural": 0.279
     },
     "location": {
         "Aleppo": 0.21393,

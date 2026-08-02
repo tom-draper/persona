@@ -26,6 +26,15 @@
                 "name": "Census 2022, Statistics South Africa",
                 "year": 2022,
                 "url": "https://www.statssa.gov.za/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Islam": 0.016,
         "Hinduism": 0.011,
         "Other": 0.011
+    },
+    "residence": {
+        "Urban": 0.638,
+        "Rural": 0.362
     },
     "location": {
         "Gauteng": 0.24343,

@@ -26,6 +26,15 @@
                 "name": "Population estimates, Institut National de la Statistique (Niger)",
                 "year": 2020,
                 "url": "https://www.stat-niger.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "African traditional religion": 0.002,
         "No religion": 0.001,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.184,
+        "Rural": 0.816
     },
     "location": {
         "Zinder": 0.20653,

@@ -27,6 +27,15 @@
                 "name": "Population estimates, Central Agency for Public Mobilization and Statistics (CAPMAS)",
                 "year": 2023,
                 "url": "https://www.capmas.gov.eg/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Islam": 0.906,
         "Christianity or Other Christianity": 0.093,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.429,
+        "Rural": 0.571
     },
     "location": {
         "Cairo": 0.09803,

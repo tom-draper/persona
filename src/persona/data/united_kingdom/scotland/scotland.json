@@ -2,31 +2,56 @@
     "_meta": {
         "sources": [
             {
-                "features": ["country of birth"],
+                "features": [
+                    "country of birth"
+                ],
                 "name": "Country of birth, Scotland's Census 2011, National Records of Scotland",
                 "year": 2011,
                 "note": "Derived from the published at-a-glance counts, which are rounded, so shares are accurate to about 0.1 percentage points.",
                 "url": "https://www.scotlandscensus.gov.uk/census-results/at-a-glance/country-of-birth/"
             },
             {
-                "features": ["age", "sex", "sexuality", "ethnicity", "religion", "language", "location"],
+                "features": [
+                    "age",
+                    "sex",
+                    "sexuality",
+                    "ethnicity",
+                    "religion",
+                    "language",
+                    "location"
+                ],
                 "name": "Demography of Scotland, Scotland's Census 2011, National Records of Scotland",
                 "year": 2011,
                 "note": "Not yet updated to Census 2022.",
                 "url": "https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/"
             },
             {
-                "features": ["housing tenure"],
+                "features": [
+                    "housing tenure"
+                ],
                 "name": "Housing, Scotland's Census 2022, National Records of Scotland",
                 "year": 2022,
                 "url": "https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-housing/"
             },
             {
-                "features": ["occupation", "education", "marital status"],
+                "features": [
+                    "occupation",
+                    "education",
+                    "marital status"
+                ],
                 "name": "Scotland's Census 2022, National Records of Scotland",
                 "year": 2022,
                 "note": "Estimated from national averages rather than taken directly from the published tables.",
                 "url": "https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-education-labour-market-and-travel-to-work/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Urban-rural split; the UK-wide figure is applied because the four nations use different rural-urban thresholds.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -92,6 +117,10 @@
         "Judaism": 0.001,
         "No religion": 0.436
     },
+    "residence": {
+        "Urban": 0.833,
+        "Rural": 0.167
+    },
     "language": {
         "English": 0.9504051987982169,
         "Scots": 0.011190431606588875,
@@ -107,11 +136,11 @@
     "occupation": {
         "Managers, directors and senior officials": 0.113,
         "Professional occupations": 0.225,
-        "Associate professional and technical": 0.130,
+        "Associate professional and technical": 0.13,
         "Administrative and secretarial": 0.092,
         "Skilled trades": 0.112,
         "Caring, leisure and other service": 0.105,
-        "Sales and customer service": 0.070,
+        "Sales and customer service": 0.07,
         "Process, plant and machine operatives": 0.062,
         "Elementary occupations": 0.091
     },

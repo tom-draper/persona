@@ -26,6 +26,15 @@
                 "name": "2023 Census, Institut National de la Statistique (Congo)",
                 "year": 2023,
                 "url": "https://ins-congo.cg/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "No religion": 0.113,
         "Other": 0.081,
         "Islam": 0.016
+    },
+    "residence": {
+        "Urban": 0.641,
+        "Rural": 0.359
     },
     "location": {
         "Brazzaville": 0.34935,

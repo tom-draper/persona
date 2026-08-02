@@ -31,6 +31,7 @@ CANONICAL_FEATURES = {
     "marital status",
     "occupation",
     "religion",
+    "residence",
     "sex",
     "sexuality",
 }

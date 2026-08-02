@@ -26,6 +26,15 @@
                 "name": "2024 General Population Census, National Institute of Statistics (Cambodia)",
                 "year": 2024,
                 "url": "https://www.nis.gov.kh/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Islam": 0.026,
         "Other": 0.006,
         "Christianity or Other Christianity": 0.003
+    },
+    "residence": {
+        "Urban": 0.411,
+        "Rural": 0.589
     },
     "location": {
         "Phnom Penh": 0.13616,

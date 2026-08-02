@@ -26,6 +26,15 @@
                 "name": "2021 Census, Croatian Bureau of Statistics (DZS)",
                 "year": 2021,
                 "url": "https://dzs.gov.hr/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Islam": 0.013,
         "Other": 0.01,
         "Protestantism": 0.003
+    },
+    "residence": {
+        "Urban": 0.578,
+        "Rural": 0.422
     },
     "location": {
         "City of Zagreb": 0.19813,

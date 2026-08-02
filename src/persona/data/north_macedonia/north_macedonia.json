@@ -26,6 +26,15 @@
                 "name": "2021 Census, State Statistical Office (North Macedonia)",
                 "year": 2021,
                 "url": "https://www.stat.gov.mk/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Other": 0.073,
         "Roman Catholicism": 0.004,
         "No religion": 0.001
+    },
+    "residence": {
+        "Urban": 0.629,
+        "Rural": 0.371
     },
     "location": {
         "Skopje": 0.33049,

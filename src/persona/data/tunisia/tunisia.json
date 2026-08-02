@@ -26,6 +26,15 @@
                 "name": "2024 Census, Institut National de la Statistique (Tunisia)",
                 "year": 2024,
                 "url": "https://www.ins.tn/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Christianity or Other Christianity": 0.005,
         "No religion": 0.003,
         "Judaism": 0.002
+    },
+    "residence": {
+        "Urban": 0.707,
+        "Rural": 0.293
     },
     "location": {
         "Tunis": 0.08982,

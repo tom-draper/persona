@@ -26,6 +26,15 @@
                 "name": "2023 Census, Namibia Statistics Agency",
                 "year": 2023,
                 "url": "https://nsa.nsa.org.na/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "African traditional religion": 0.101,
         "Christianity or Other Christianity": 0.044,
         "Other": 0.019
+    },
+    "residence": {
+        "Urban": 0.509,
+        "Rural": 0.491
     },
     "location": {
         "Khomas": 0.16365,

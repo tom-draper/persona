@@ -27,6 +27,15 @@
                 "name": "2021 Census, Statistics Lithuania",
                 "year": 2021,
                 "url": "https://www.stat.gov.lt/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Eastern Orthodoxy": 0.044,
         "Other": 0.007,
         "Christianity or Other Christianity": 0.003
+    },
+    "residence": {
+        "Urban": 0.691,
+        "Rural": 0.309
     },
     "location": {
         "Vilnius": 0.29767,

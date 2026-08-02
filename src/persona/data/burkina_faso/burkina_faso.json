@@ -26,6 +26,15 @@
                 "name": "2019 General Census (5th RGPH), Institut National de la Statistique et de la Démographie (INSD)",
                 "year": 2019,
                 "url": "https://www.insd.bf/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "African traditional religion": 0.09,
         "Protestantism": 0.062,
         "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.289,
+        "Rural": 0.711
     },
     "location": {
         "Centre": 0.1548,

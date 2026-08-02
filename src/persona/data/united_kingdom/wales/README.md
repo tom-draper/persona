@@ -1,5 +1,5 @@
 # Wales
-**12 features:** age, sex, sexuality, ethnicity, religion, language, occupation, education, marital status, housing tenure, country of birth and location.
+**13 features:** age, sex, sexuality, ethnicity, religion, residence, language, occupation, education, marital status, housing tenure, country of birth and location.
 
 ## Age
 
@@ -20,6 +20,10 @@
 ## Religion
 
 ![Religion](img/religion.png)
+
+## Residence
+
+![Residence](img/residence.png)
 
 ## Language
 
@@ -61,3 +65,4 @@
 - [Legal partnership status (TS002), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS002/editions/2021/versions/3) — marital status
 - [Tenure of household (TS054), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS054/editions/2021/versions/1) — housing tenure
 - [Country of birth (TS012), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1) — country of birth
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

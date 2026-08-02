@@ -26,6 +26,15 @@
                 "name": "2021 Census, Statistical Office of the Slovak Republic",
                 "year": 2021,
                 "url": "https://slovak.statistics.sk/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Greek Catholicism": 0.04,
         "Other": 0.012,
         "Eastern Orthodoxy": 0.009
+    },
+    "residence": {
+        "Urban": 0.532,
+        "Rural": 0.468
     },
     "location": {
         "Prešov": 0.14975,

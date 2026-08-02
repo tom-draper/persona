@@ -26,6 +26,15 @@
                 "name": "Population estimates 2019, Agency on Statistics (Tajikistan)",
                 "year": 2019,
                 "url": "https://www.stat.tj/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "No religion": 0.017,
         "Christianity or Other Christianity": 0.007,
         "Other": 0.002
+    },
+    "residence": {
+        "Urban": 0.262,
+        "Rural": 0.738
     },
     "location": {
         "Khatlon": 0.35883,

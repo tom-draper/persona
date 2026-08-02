@@ -26,6 +26,15 @@
                 "name": "2023 Census, Instituto Nacional de Estadística y Censo (INEC Panama)",
                 "year": 2023,
                 "url": "https://www.inec.gob.pa/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Protestantism": 0.25,
         "No religion": 0.076,
         "Other": 0.042
+    },
+    "residence": {
+        "Urban": 0.662,
+        "Rural": 0.338
     },
     "location": {
         "Panamá": 0.35416,

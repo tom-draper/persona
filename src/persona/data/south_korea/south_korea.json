@@ -26,6 +26,15 @@
                 "name": "2020 Census, Statistics Korea (KOSTAT)",
                 "year": 2020,
                 "url": "https://kostat.go.kr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Buddhism": 0.16,
         "Roman Catholicism": 0.11,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.812,
+        "Rural": 0.188
     },
     "location": {
         "Gyeonggi": 0.26074,

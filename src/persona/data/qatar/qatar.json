@@ -27,6 +27,15 @@
                 "name": "2015 Census, Planning and Statistics Authority (Qatar)",
                 "year": 2015,
                 "url": "https://www.psa.gov.qa/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Christianity or Other Christianity": 0.137,
         "Buddhism": 0.038,
         "Other": 0.014
+    },
+    "residence": {
+        "Urban": 0.994,
+        "Rural": 0.006
     },
     "location": {
         "Doha": 0.39773,

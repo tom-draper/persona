@@ -26,6 +26,15 @@
                 "name": "Population by province, Statbel (Belgium)",
                 "year": 2024,
                 "url": "https://statbel.fgov.be/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Islam": 0.06,
         "Christianity or Other Christianity": 0.03,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.877,
+        "Rural": 0.123
     },
     "location": {
         "Antwerp": 0.16377,

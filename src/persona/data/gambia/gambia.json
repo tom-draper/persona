@@ -26,6 +26,15 @@
                 "name": "2024 Census, Gambia Bureau of Statistics",
                 "year": 2024,
                 "url": "https://www.gbosdata.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -57,6 +66,10 @@
         "Islam": 0.964,
         "Christianity or Other Christianity": 0.035,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.65,
+        "Rural": 0.35
     },
     "location": {
         "West Coast": 0.47514,

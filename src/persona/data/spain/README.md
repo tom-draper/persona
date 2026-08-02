@@ -1,5 +1,5 @@
 # Spain
-**5 features:** age, sex, religion, marital status and location.
+**6 features:** age, sex, religion, residence, marital status and location.
 
 ## Age
 
@@ -12,6 +12,10 @@
 ## Religion
 
 ![Religion](img/religion.png)
+
+## Residence
+
+![Residence](img/residence.png)
 
 ## Marital Status
 
@@ -27,3 +31,4 @@
 - [Cifras oficiales de población (Padrón municipal), Instituto Nacional de Estadística (INE) (2024)](https://www.ine.es/) — location
 - [Barómetro de julio de 2023, Centro de Investigaciones Sociológicas (CIS) (2023)](https://www.cis.es/) — religion
 - [Censo Anual de Población 2025, INE (2025)](https://www.ine.es/dyngs/Prensa/en/CensoVariables2025.htm) — marital status
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

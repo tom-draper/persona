@@ -2,32 +2,51 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "location"],
+                "features": [
+                    "age",
+                    "sex",
+                    "location"
+                ],
                 "name": "Census of Population 2022 - Summary Results, Central Statistics Office (CSO)",
                 "year": 2022,
                 "note": "Age proportions follow the published five-year age-band structure and are within rounding of the 2022 census. Location weights are the 26 counties' shares of the State population.",
                 "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpsr/censusofpopulation2022-summaryresults/"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Census of Population 2022 Profile 5 - Diversity, Migration, Ethnicity, Irish Travellers & Religion, CSO",
                 "year": 2023,
                 "note": "Shares are of the total usually resident population; the 7.1% who did not state a religion are omitted.",
                 "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp5/censusofpopulation2022profile5-diversitymigrationethnicityirishtravellersreligion/"
             },
             {
-                "features": ["marital status"],
+                "features": [
+                    "marital status"
+                ],
                 "name": "Census of Population 2022 Profile 3 - Households, Families and Childcare, CSO",
                 "year": 2023,
                 "note": "Population aged 15 and over. Married includes civil partnerships.",
                 "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp3/censusofpopulation2022profile3-householdsfamiliesandchildcare/"
             },
             {
-                "features": ["housing tenure"],
+                "features": [
+                    "housing tenure"
+                ],
                 "name": "Census of Population 2022 Profile 2 - Housing in Ireland, CSO",
                 "year": 2023,
                 "note": "Permanent private households by tenure; occupied rent-free and not-stated households are omitted.",
                 "url": "https://www.cso.ie/en/releasesandpublications/ep/p-cpp2/censusofpopulation2022profile2-housinginireland/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -40,7 +59,7 @@
         "25-29": 0.0583,
         "30-34": 0.0637,
         "35-39": 0.0756,
-        "40-44": 0.080,
+        "40-44": 0.08,
         "45-49": 0.0725,
         "50-54": 0.0643,
         "55-59": 0.0591,
@@ -67,6 +86,10 @@
         "Other": 0.0043,
         "Buddhism": 0.0018
     },
+    "residence": {
+        "Urban": 0.646,
+        "Rural": 0.354
+    },
     "marital status": {
         "Single (never married)": 0.43,
         "Married": 0.46,
@@ -77,13 +100,13 @@
     "housing tenure": {
         "Owned outright": 0.369,
         "Owned with mortgage": 0.289,
-        "Private rented": 0.180,
+        "Private rented": 0.18,
         "Social rented": 0.099
     },
     "location": {
         "Leinster": {
             "Dublin": 0.283185,
-            "Kildare": 0.048120,
+            "Kildare": 0.04812,
             "Meath": 0.042886,
             "Wexford": 0.031834,
             "Wicklow": 0.030267,

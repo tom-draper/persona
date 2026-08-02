@@ -23,6 +23,15 @@
                 "name": "Religious Landscape Study - New Jersey, Pew Research Center",
                 "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/new-jersey/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "2020 Census Urban and Rural, U.S. Census Bureau",
+                "year": 2020,
+                "note": "Split of the state population between urban and rural areas.",
+                "url": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html"
             }
         ]
     },
@@ -97,6 +106,10 @@
         "Eastern Orthodoxy": 0.01,
         "Jehovah's Witnesses": 0.01,
         "Buddhism": 0.01
+    },
+    "residence": {
+        "Urban": 0.938,
+        "Rural": 0.062
     },
     "language": {
         "English": 0.6566,

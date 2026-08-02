@@ -1,5 +1,5 @@
 # Sierra Leone
-**4 features:** age, sex, religion and location.
+**5 features:** age, sex, religion, residence and location.
 
 ## Age
 
@@ -13,6 +13,10 @@
 
 ![Religion](img/religion.png)
 
+## Residence
+
+![Residence](img/residence.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -22,3 +26,4 @@
 - [World Population Prospects 2024, United Nations (2024)](https://population.un.org/wpp/) — age, sex
 - [Global Religious Futures, Pew Research Center (2020)](https://www.pewresearch.org/religion/) — religion
 - [2015 Census, Statistics Sierra Leone (2015)](https://www.statistics.sl/) — location
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

@@ -2,65 +2,96 @@
     "_meta": {
         "sources": [
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Main language (TS024), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS024/editions/2021/versions/1"
             },
             {
-                "features": ["age", "sex", "location"],
+                "features": [
+                    "age",
+                    "sex",
+                    "location"
+                ],
                 "name": "Population and household estimates, England and Wales: Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021"
             },
             {
-                "features": ["sexuality"],
+                "features": [
+                    "sexuality"
+                ],
                 "name": "Sexual orientation, UK: 2020, ONS",
                 "year": 2020,
                 "note": "UK-wide estimate; not broken down by country.",
                 "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
             },
             {
-                "features": ["ethnicity"],
+                "features": [
+                    "ethnicity"
+                ],
                 "name": "Ethnic group (TS021), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS021/editions/2021/versions/1"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Religion (TS030), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS030/editions/2021/versions/1"
             },
             {
-                "features": ["occupation"],
+                "features": [
+                    "occupation"
+                ],
                 "name": "Occupation (TS063), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS063/editions/2021/versions/1"
             },
             {
-                "features": ["education"],
+                "features": [
+                    "education"
+                ],
                 "name": "Highest level of qualification (TS067), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS067/editions/2021/versions/1"
             },
             {
-                "features": ["marital status"],
+                "features": [
+                    "marital status"
+                ],
                 "name": "Legal partnership status (TS002), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS002/editions/2021/versions/3"
             },
             {
-                "features": ["housing tenure"],
+                "features": [
+                    "housing tenure"
+                ],
                 "name": "Tenure of household (TS054), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS054/editions/2021/versions/1"
             },
             {
-                "features": ["country of birth"],
+                "features": [
+                    "country of birth"
+                ],
                 "name": "Country of birth (TS012), Census 2021, ONS",
                 "year": 2021,
                 "url": "https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Urban-rural split; the UK-wide figure is applied because the four nations use different rural-urban thresholds.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -134,6 +165,10 @@
         "Buddhism": 0.00494,
         "Other religion": 0.00626
     },
+    "residence": {
+        "Urban": 0.833,
+        "Rural": 0.167
+    },
     "language": {
         "English": 0.90795,
         "Polish": 0.01081,
@@ -179,13 +214,13 @@
         "Single (never married)": 0.379,
         "Married": 0.442,
         "Separated": 0.022,
-        "Divorced": 0.090,
+        "Divorced": 0.09,
         "Widowed": 0.061
     },
     "housing tenure": {
         "Owned outright": 0.325,
         "Owned with mortgage": 0.288,
-        "Shared ownership": 0.010,
+        "Shared ownership": 0.01,
         "Social rented": 0.171,
         "Private rented": 0.204,
         "Lives rent free": 0.001

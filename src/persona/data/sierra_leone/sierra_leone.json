@@ -26,6 +26,15 @@
                 "name": "2015 Census, Statistics Sierra Leone",
                 "year": 2015,
                 "url": "https://www.statistics.sl/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -57,6 +66,10 @@
         "Islam": 0.785,
         "Christianity or Other Christianity": 0.204,
         "Other": 0.011
+    },
+    "residence": {
+        "Urban": 0.459,
+        "Rural": 0.541
     },
     "location": {
         "Western Urban": 0.13925,

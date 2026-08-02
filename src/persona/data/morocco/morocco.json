@@ -26,6 +26,15 @@
                 "name": "2024 General Population and Housing Census, High Commission for Planning (HCP)",
                 "year": 2024,
                 "url": "https://www.hcp.ma/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "No religion": 0.002,
         "Christianity or Other Christianity": 0.001,
         "Other": 0.002
+    },
+    "residence": {
+        "Urban": 0.631,
+        "Rural": 0.369
     },
     "location": {
         "Casablanca-Settat": 0.20878,

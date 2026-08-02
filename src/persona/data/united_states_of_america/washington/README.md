@@ -1,5 +1,5 @@
 # Washington
-**9 features:** age, sex, ethnicity, occupation, education, marital status, housing tenure, religion and language.
+**10 features:** age, sex, ethnicity, occupation, education, marital status, housing tenure, religion, residence and language.
 
 ## Age
 
@@ -33,6 +33,10 @@
 
 ![Religion](img/religion.png)
 
+## Residence
+
+![Residence](img/residence.png)
+
 ## Language
 
 ![Language](img/language.png)
@@ -41,3 +45,4 @@
 
 - [American Community Survey 2024 1-Year Estimates, US Census Bureau (via Census Reporter) (2024)](https://censusreporter.org/profiles/04000US53-washington/) — age, sex, ethnicity, occupation, education, marital status, housing tenure, language
 - [Religious Landscape Study - Washington, Pew Research Center (2014)](https://www.pewresearch.org/religion/religious-landscape-study/state/washington/) — religion
+- [2020 Census Urban and Rural, U.S. Census Bureau (2020)](https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html) — residence

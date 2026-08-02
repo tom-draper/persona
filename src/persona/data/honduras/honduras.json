@@ -26,6 +26,15 @@
                 "name": "2013 Census, Instituto Nacional de Estadística (INE Honduras)",
                 "year": 2013,
                 "url": "https://www.ine.gob.hn/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Roman Catholicism": 0.334,
         "No religion": 0.101,
         "Other": 0.015
+    },
+    "residence": {
+        "Urban": 0.593,
+        "Rural": 0.407
     },
     "location": {
         "Cortés": 0.18792,

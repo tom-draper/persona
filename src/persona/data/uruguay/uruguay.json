@@ -26,6 +26,15 @@
                 "name": "2023 Census, Instituto Nacional de Estadística (INE Uruguay)",
                 "year": 2023,
                 "url": "https://www.ine.gub.uy/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "No religion": 0.445,
         "Christianity or Other Christianity": 0.095,
         "Other": 0.012
+    },
+    "residence": {
+        "Urban": 0.957,
+        "Rural": 0.043
     },
     "location": {
         "Montevideo": 0.37233,

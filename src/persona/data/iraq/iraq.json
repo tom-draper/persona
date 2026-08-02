@@ -27,6 +27,15 @@
                 "name": "Population estimates 2018, Central Statistical Organization (Iraq)",
                 "year": 2018,
                 "url": "https://cosit.gov.iq/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Islam": 0.973,
         "Other": 0.021,
         "Christianity or Other Christianity": 0.005
+    },
+    "residence": {
+        "Urban": 0.699,
+        "Rural": 0.301
     },
     "location": {
         "Baghdad": 0.21378,

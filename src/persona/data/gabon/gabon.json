@@ -26,6 +26,15 @@
                 "name": "2013 Census, Direction Générale de la Statistique (Gabon)",
                 "year": 2013,
                 "url": "https://www.stat-gabon.ga/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "Christianity or Other Christianity": 0.04,
         "African traditional religion": 0.011,
         "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.921,
+        "Rural": 0.079
     },
     "location": {
         "Estuaire": 0.49456,

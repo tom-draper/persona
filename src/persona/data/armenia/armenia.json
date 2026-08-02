@@ -26,6 +26,15 @@
                 "name": "2022 Census, Statistical Committee of Armenia (ArmStat)",
                 "year": 2022,
                 "url": "https://armstat.am/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Roman Catholicism": 0.006,
         "Christianity or Other Christianity": 0.005,
         "Yazidism": 0.005
+    },
+    "residence": {
+        "Urban": 0.659,
+        "Rural": 0.341
     },
     "location": {
         "Yerevan": 0.37053,

@@ -26,6 +26,15 @@
                 "name": "2017 Census, Central Statistical Office (Eswatini)",
                 "year": 2017,
                 "url": "https://www.gov.sz/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "No religion": 0.074,
         "Islam": 0.02,
         "Other": 0.006
+    },
+    "residence": {
+        "Urban": 0.267,
+        "Rural": 0.733
     },
     "location": {
         "Hhohho": 0.30564,

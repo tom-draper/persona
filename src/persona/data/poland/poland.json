@@ -27,6 +27,15 @@
                 "name": "2021 National Census, Statistics Poland (GUS)",
                 "year": 2021,
                 "url": "https://stat.gov.pl/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Eastern Orthodoxy": 0.004,
         "Protestantism": 0.004,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.601,
+        "Rural": 0.399
     },
     "location": {
         "Masovian": 0.14722,

@@ -1,5 +1,5 @@
 # Nicaragua
-**4 features:** age, sex, religion and location.
+**5 features:** age, sex, religion, residence and location.
 
 ## Age
 
@@ -13,6 +13,10 @@
 
 ![Religion](img/religion.png)
 
+## Residence
+
+![Residence](img/residence.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -22,3 +26,4 @@
 - [World Population Prospects 2024, United Nations (2024)](https://population.un.org/wpp/) — age, sex
 - [The World Factbook: Nicaragua (religion), CIA (2020)](https://www.cia.gov/the-world-factbook/countries/nicaragua/) — religion
 - [Population estimates 2023, Instituto Nacional de Información de Desarrollo (INIDE) (2023)](https://www.inide.gob.ni/) — location
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

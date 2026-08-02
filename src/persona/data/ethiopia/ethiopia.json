@@ -26,6 +26,15 @@
                 "name": "Population projections (July 2023), Ethiopian Statistical Service",
                 "year": 2024,
                 "url": "https://www.statsethiopia.gov.et/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Protestantism": 0.186,
         "Other": 0.033,
         "Roman Catholicism": 0.007
+    },
+    "residence": {
+        "Urban": 0.241,
+        "Rural": 0.759
     },
     "location": {
         "Oromia": 0.32995,

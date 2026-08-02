@@ -26,6 +26,15 @@
                 "name": "Federal subject population estimates, Rosstat",
                 "year": 2025,
                 "url": "https://eng.rosstat.gov.ru/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Other": 0.04,
         "Buddhism": 0.01,
         "Protestantism": 0.01
+    },
+    "residence": {
+        "Urban": 0.753,
+        "Rural": 0.247
     },
     "location": {
         "Moscow": 0.13043,

@@ -26,6 +26,15 @@
                 "name": "Population by region, Statistics Iceland",
                 "year": 2025,
                 "url": "https://www.statice.is/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Roman Catholicism": 0.04,
         "Christianity or Other Christianity": 0.017,
         "Islam": 0.005
+    },
+    "residence": {
+        "Urban": 0.942,
+        "Rural": 0.058
     },
     "location": {
         "Capital Region": 0.63951,

@@ -26,6 +26,15 @@
                 "name": "2018 Census, Instituto Nacional de Estadística (INE Guatemala)",
                 "year": 2018,
                 "url": "https://www.ine.gob.gt/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "No religion": 0.19,
         "Christianity or Other Christianity": 0.01,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.563,
+        "Rural": 0.437
     },
     "location": {
         "Guatemala": 0.20234,

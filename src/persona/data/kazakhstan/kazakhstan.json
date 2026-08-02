@@ -27,6 +27,15 @@
                 "name": "2021 National Census, Bureau of National Statistics (Kazakhstan)",
                 "year": 2021,
                 "url": "https://stat.gov.kz/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Eastern Orthodoxy": 0.172,
         "No religion": 0.022,
         "Other": 0.002
+    },
+    "residence": {
+        "Urban": 0.624,
+        "Rural": 0.376
     },
     "location": {
         "Turkistan": 0.10718,

@@ -27,6 +27,15 @@
                 "name": "2021 Census, National Institute of Statistics (INS Romania)",
                 "year": 2021,
                 "url": "https://www.insse.ro/cms/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "Other": 0.012,
         "No religion": 0.008,
         "Greek Catholicism": 0.006
+    },
+    "residence": {
+        "Urban": 0.522,
+        "Rural": 0.478
     },
     "location": {
         "Bucharest": 0.10772,

@@ -28,6 +28,15 @@
                 "year": 2022,
                 "url": "https://www.stat.gov.rs/en-us/",
                 "note": "Excludes Kosovo and Metohija."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -63,6 +72,10 @@
         "Christianity or Other Christianity": 0.009,
         "Protestantism": 0.008,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.626,
+        "Rural": 0.374
     },
     "location": {
         "Belgrade": 0.28756,

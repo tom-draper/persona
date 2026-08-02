@@ -26,6 +26,15 @@
                 "name": "Population estimates 2013, Central Statistical Organization (Yemen)",
                 "year": 2013,
                 "url": "https://www.cso-yemen.com/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -56,6 +65,10 @@
     "religion": {
         "Islam": 0.99,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.37,
+        "Rural": 0.63
     },
     "location": {
         "Taiz": 0.15009,

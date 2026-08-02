@@ -1,5 +1,5 @@
 # Latvia
-**4 features:** age, sex, religion and location.
+**5 features:** age, sex, religion, residence and location.
 
 ## Age
 
@@ -13,6 +13,10 @@
 
 ![Religion](img/religion.png)
 
+## Residence
+
+![Residence](img/residence.png)
+
 ## Location
 
 ![Location](img/location.png)
@@ -22,3 +26,4 @@
 - [World Population Prospects 2024, United Nations (2024)](https://population.un.org/wpp/) — age, sex
 - [2019 International Religious Freedom Report: Latvia, US Department of State (2019)](https://www.state.gov/reports/2019-report-on-international-religious-freedom/latvia/) — religion
 - [Population by planning region, Central Statistical Bureau of Latvia (2025)](https://stat.gov.lv/en) — location
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

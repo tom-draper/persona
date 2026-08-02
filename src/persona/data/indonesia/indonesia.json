@@ -26,6 +26,15 @@
                 "name": "Population by province, BPS Statistics Indonesia",
                 "year": 2025,
                 "url": "https://www.bps.go.id/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Roman Catholicism": 0.031,
         "Hinduism": 0.017,
         "Buddhism": 0.006
+    },
+    "residence": {
+        "Urban": 0.594,
+        "Rural": 0.406
     },
     "location": {
         "West Java": 0.17845,

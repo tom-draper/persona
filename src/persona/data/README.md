@@ -1,5 +1,45 @@
 # Data
 
+## Schema
+
+Every dataset is a JSON object of demographic features plus a `_meta.sources`
+list. A feature is a distribution: either `{label: weight}`, or nested
+`{region: {sub-region: weight}}` for `location`. Weights are population shares;
+a feature's weights should sum to roughly 1 (long tails are routinely
+truncated, so falling short is fine — exceeding 1 is not). Every feature must be
+attributed to a source in `_meta.sources`, and every source must give
+`features`, `name`, an `https://` `url`, and an integer `year`.
+
+Features fall into two tiers.
+
+**Core** features are meant to generalise to every place and are being brought
+to parity across all datasets:
+
+| Feature | Values |
+| --- | --- |
+| `age` | Five-year bands `0-4` … `80-84`, open-ended `85+`, contiguous from 0. |
+| `sex` | `Male`, `Female`. |
+| `religion` | Canonical labels (`Roman Catholicism`, `Islam`, `No religion`, …). |
+| `residence` | `Urban`, `Rural`. |
+| `location` | Region (optionally nested), weighted by population. |
+
+**Extended** features are kept wherever a good national source reports them, but
+are *not* forced onto every dataset — coverage is inherently uneven across
+countries:
+
+`marital status`, `education`, `ethnicity`, `language`, `occupation`,
+`housing tenure`, `country of birth`, `sexuality`.
+
+Whatever tier it belongs to, a feature name means the same thing in every
+dataset that carries it; the shared category labels are enforced by
+`tests/test_data_integrity.py` (`CANONICAL_FEATURES` and `FORBIDDEN_LABELS`).
+
+`residence` comes from the World Bank *Urban population (% of total)* series for
+countries (one consistent method worldwide), the 2020 US Census urban/rural
+split for the states, and is set to urban for the standalone city datasets. The
+UK nations reuse the UK-wide World Bank figure because the four nations classify
+rural and urban against different population thresholds.
+
 ## Cities
 
 - [X] `london`

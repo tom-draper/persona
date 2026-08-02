@@ -26,6 +26,15 @@
                 "name": "2017 Population and Housing Census, National Statistics Bureau (Bhutan)",
                 "year": 2017,
                 "url": "https://www.nsb.gov.bt/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Other": 0.019,
         "Christianity or Other Christianity": 0.005,
         "Islam": 0.004
+    },
+    "residence": {
+        "Urban": 0.434,
+        "Rural": 0.566
     },
     "location": {
         "Thimphu": 0.1908,

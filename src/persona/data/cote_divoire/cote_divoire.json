@@ -26,6 +26,15 @@
                 "name": "2021 General Census (RGPH), Institut National de la Statistique (Côte d'Ivoire)",
                 "year": 2021,
                 "url": "https://www.ins.ci/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "No religion": 0.126,
         "African traditional religion": 0.022,
         "Other": 0.007
+    },
+    "residence": {
+        "Urban": 0.545,
+        "Rural": 0.455
     },
     "location": {
         "Abidjan": 0.29633,

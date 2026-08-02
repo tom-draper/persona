@@ -26,6 +26,15 @@
                 "name": "Population estimates, Department of Statistics Malaysia (DOSM)",
                 "year": 2023,
                 "url": "https://www.dosm.gov.my/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Hinduism": 0.061,
         "No religion": 0.018,
         "Other": 0.008
+    },
+    "residence": {
+        "Urban": 0.774,
+        "Rural": 0.226
     },
     "location": {
         "Selangor": 0.2162,

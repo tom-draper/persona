@@ -27,6 +27,15 @@
                 "name": "Population statistics, General Statistics Office of Vietnam",
                 "year": 2024,
                 "url": "https://www.gso.gov.vn/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -62,6 +71,10 @@
         "Protestantism": 0.01,
         "Cao Dai": 0.006,
         "Other": 0.002
+    },
+    "residence": {
+        "Urban": 0.388,
+        "Rural": 0.612
     },
     "location": {
         "Ho Chi Minh City": 0.13604,

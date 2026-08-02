@@ -26,6 +26,15 @@
                 "name": "2023 Census, Stats NZ",
                 "year": 2023,
                 "url": "https://www.stats.govt.nz/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "Māori religions": 0.013,
         "Other": 0.012,
         "Buddhism": 0.011
+    },
+    "residence": {
+        "Urban": 0.84,
+        "Rural": 0.16
     },
     "location": {
         "Auckland": 0.34109,

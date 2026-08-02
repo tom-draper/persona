@@ -27,6 +27,15 @@
                 "name": "Population projections 2023, Lao Statistics Bureau",
                 "year": 2023,
                 "url": "https://www.lsb.gov.la/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "No religion": 0.314,
         "Other": 0.022,
         "Christianity or Other Christianity": 0.017
+    },
+    "residence": {
+        "Urban": 0.403,
+        "Rural": 0.597
     },
     "location": {
         "Savannakhet": 0.14813,

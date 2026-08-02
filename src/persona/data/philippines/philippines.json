@@ -26,6 +26,15 @@
                 "name": "2020 Census of Population and Housing, Philippine Statistics Authority",
                 "year": 2020,
                 "url": "https://psa.gov.ph/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Islam": 0.064,
         "Iglesia ni Cristo": 0.026,
         "Other": 0.022
+    },
+    "residence": {
+        "Urban": 0.558,
+        "Rural": 0.442
     },
     "location": {
         "Calabarzon": 0.15021,

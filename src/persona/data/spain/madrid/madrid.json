@@ -17,6 +17,15 @@
                 "name": "Padrón municipal (Madrid districts), Instituto Nacional de Estadística (INE)",
                 "year": 2017,
                 "url": "https://www.ine.es/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
             }
         ]
     },
@@ -39,6 +48,10 @@
         "75-79": 0.0368,
         "80-84": 0.0243,
         "85+": 0.0304
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
     },
     "location": {
         "Carabanchel": 0.07668,

@@ -27,6 +27,15 @@
                 "name": "2021 Census, Czech Statistical Office (ČSÚ)",
                 "year": 2021,
                 "url": "https://www.czso.cz/csu/czso/home"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Roman Catholicism": 0.103,
         "Christianity or Other Christianity": 0.035,
         "Other": 0.018
+    },
+    "residence": {
+        "Urban": 0.729,
+        "Rural": 0.271
     },
     "location": {
         "Central Bohemian": 0.13532,

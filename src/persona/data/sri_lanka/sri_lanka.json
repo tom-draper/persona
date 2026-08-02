@@ -26,6 +26,15 @@
                 "name": "2012 Census, Department of Census and Statistics (Sri Lanka)",
                 "year": 2012,
                 "url": "https://www.statistics.gov.lk/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Islam": 0.107,
         "Roman Catholicism": 0.056,
         "Christianity or Other Christianity": 0.013
+    },
+    "residence": {
+        "Urban": 0.205,
+        "Rural": 0.795
     },
     "location": {
         "Colombo": 0.12054,

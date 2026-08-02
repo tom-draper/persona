@@ -26,6 +26,15 @@
                 "name": "2022 Census, State Statistics Committee (Turkmenistan)",
                 "year": 2022,
                 "url": "https://www.stat.gov.tm/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -57,6 +66,10 @@
         "Islam": 0.93,
         "Eastern Orthodoxy": 0.064,
         "Other": 0.006
+    },
+    "residence": {
+        "Urban": 0.471,
+        "Rural": 0.529
     },
     "location": {
         "Mary": 0.22859,

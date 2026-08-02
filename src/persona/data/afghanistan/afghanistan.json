@@ -26,6 +26,15 @@
                 "name": "Population estimates, National Statistics and Information Authority (Afghanistan)",
                 "year": 2024,
                 "url": "https://nsia.gov.af/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -56,6 +65,10 @@
     "religion": {
         "Islam": 0.999,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.259,
+        "Rural": 0.741
     },
     "location": {
         "Kabul": 0.19787,

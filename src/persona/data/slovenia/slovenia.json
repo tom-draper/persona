@@ -27,6 +27,15 @@
                 "name": "Population by statistical region, Statistical Office of the Republic of Slovenia (SURS)",
                 "year": 2025,
                 "url": "https://www.stat.si/eng"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Islam": 0.033,
         "Eastern Orthodoxy": 0.031,
         "Christianity or Other Christianity": 0.011
+    },
+    "residence": {
+        "Urban": 0.56,
+        "Rural": 0.44
     },
     "location": {
         "Central Slovenia": 0.26725,

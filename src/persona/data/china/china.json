@@ -26,6 +26,15 @@
                 "name": "Population by province, National Bureau of Statistics of China",
                 "year": 2022,
                 "url": "https://www.stats.gov.cn/english/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Christianity or Other Christianity": 0.051,
         "Islam": 0.018,
         "Other": 0.007
+    },
+    "residence": {
+        "Urban": 0.663,
+        "Rural": 0.337
     },
     "location": {
         "Guangdong": 0.08943,

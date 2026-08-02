@@ -23,6 +23,15 @@
                 "name": "Religious Landscape Study - Iowa, Pew Research Center",
                 "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/iowa/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "2020 Census Urban and Rural, U.S. Census Bureau",
+                "year": 2020,
+                "note": "Split of the state population between urban and rural areas.",
+                "url": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html"
             }
         ]
     },
@@ -91,6 +100,10 @@
         "No religion": 0.21,
         "Roman Catholicism": 0.18,
         "Mormonism": 0.01
+    },
+    "residence": {
+        "Urban": 0.632,
+        "Rural": 0.368
     },
     "language": {
         "English": 0.9086,

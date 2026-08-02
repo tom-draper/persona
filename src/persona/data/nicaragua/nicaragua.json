@@ -26,6 +26,15 @@
                 "name": "Population estimates 2023, Instituto Nacional de Información de Desarrollo (INIDE)",
                 "year": 2023,
                 "url": "https://www.inide.gob.ni/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Protestantism": 0.382,
         "No religion": 0.141,
         "Other": 0.028
+    },
+    "residence": {
+        "Urban": 0.594,
+        "Rural": 0.406
     },
     "location": {
         "Managua": 0.23307,

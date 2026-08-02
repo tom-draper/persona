@@ -2,35 +2,58 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "marital status"],
+                "features": [
+                    "age",
+                    "sex",
+                    "marital status"
+                ],
                 "name": "Bevölkerung und Erwerbstätigkeit, Destatis",
                 "year": 2021,
                 "url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Current-Population/_node.html"
             },
             {
-                "features": ["education", "occupation", "housing tenure"],
+                "features": [
+                    "education",
+                    "occupation",
+                    "housing tenure"
+                ],
                 "name": "Zensus 2022, Destatis (German Federal Statistical Office)",
                 "year": 2022,
                 "url": "https://www.destatis.de/EN/Themes/Society-Environment/Population/Census2022/_node.html"
             },
             {
-                "features": ["location"],
+                "features": [
+                    "location"
+                ],
                 "name": "Bevölkerung nach Geschlecht und Staatsangehörigkeit, Zensus 2022, Destatis",
                 "year": 2022,
                 "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Bevoelkerungsstand/Tabellen/liste-zensus-geschlecht-staatsangehoerigkeit.html"
             },
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Bevölkerung mit Migrationshintergrund, Destatis",
                 "year": 2021,
                 "url": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Bevoelkerung/Migration-Integration/Publikationen/Downloads-Migration/migrationshintergrund-2010220217004.pdf"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Religionszugehörigkeiten 2020, Fowid",
                 "year": 2020,
                 "note": "Independent research group, not the federal statistical office.",
                 "url": "https://fowid.de/meldung/religionszugehoerigkeiten-2020"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -55,8 +78,8 @@
         "85+": 0.031
     },
     "sex": {
-        "Male": 0.490,
-        "Female": 0.510
+        "Male": 0.49,
+        "Female": 0.51
     },
     "location": {
         "North Rhine-Westphalia": 0.21534370889604498,
@@ -83,40 +106,44 @@
         "Islam": 0.035,
         "Eastern Orthodoxy": 0.019
     },
+    "residence": {
+        "Urban": 0.821,
+        "Rural": 0.179
+    },
     "marital status": {
-        "Single (never married)": 0.320,
-        "Married": 0.450,
+        "Single (never married)": 0.32,
+        "Married": 0.45,
         "Separated": 0.023,
         "Divorced": 0.104,
         "Widowed": 0.103
     },
     "education": {
-        "No formal qualification": 0.020,
+        "No formal qualification": 0.02,
         "Lower secondary (Hauptschulabschluss)": 0.158,
         "Middle secondary (Mittlere Reife)": 0.246,
-        "Vocational training (Berufsausbildung)": 0.290,
+        "Vocational training (Berufsausbildung)": 0.29,
         "Upper secondary (Abitur/Fachabitur)": 0.083,
         "University degree": 0.174,
         "Other": 0.029
     },
     "occupation": {
-        "Management and executives": 0.050,
-        "Professionals": 0.150,
-        "Technicians and associate professionals": 0.170,
-        "Clerical support workers": 0.100,
-        "Service and sales workers": 0.170,
-        "Skilled agricultural workers": 0.020,
-        "Craft and related trades": 0.150,
-        "Plant and machine operators": 0.070,
-        "Elementary occupations": 0.080,
-        "Other": 0.040
+        "Management and executives": 0.05,
+        "Professionals": 0.15,
+        "Technicians and associate professionals": 0.17,
+        "Clerical support workers": 0.1,
+        "Service and sales workers": 0.17,
+        "Skilled agricultural workers": 0.02,
+        "Craft and related trades": 0.15,
+        "Plant and machine operators": 0.07,
+        "Elementary occupations": 0.08,
+        "Other": 0.04
     },
     "housing tenure": {
         "Owned": 0.425,
         "Rented": 0.575
     },
     "language": {
-        "German": 7.472281185910243e-8,
+        "German": 7.472281185910243e-08,
         "Albanian": 4.844870594355768e-10,
         "Arabic": 0.11338860602559557,
         "Bosnian": 0.018634117670599106,

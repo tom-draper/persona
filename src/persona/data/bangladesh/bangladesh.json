@@ -26,6 +26,15 @@
                 "name": "Population and Housing Census 2022, Bangladesh Bureau of Statistics",
                 "year": 2022,
                 "url": "https://bbs.gov.bd/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Buddhism": 0.006,
         "Christianity or Other Christianity": 0.003,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.332,
+        "Rural": 0.668
     },
     "location": {
         "Dhaka": 0.26771,

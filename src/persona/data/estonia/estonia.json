@@ -27,6 +27,15 @@
                 "name": "2021 Census, Statistics Estonia",
                 "year": 2021,
                 "url": "https://www.stat.ee/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Protestantism": 0.077,
         "Christianity or Other Christianity": 0.027,
         "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.707,
+        "Rural": 0.293
     },
     "location": {
         "Harju": 0.46715,

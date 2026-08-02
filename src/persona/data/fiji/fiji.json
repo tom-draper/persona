@@ -26,6 +26,15 @@
                 "name": "2017 Census, Fiji Bureau of Statistics",
                 "year": 2017,
                 "url": "https://www.statsfiji.gov.fj/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Roman Catholicism": 0.091,
         "Islam": 0.058,
         "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.595,
+        "Rural": 0.405
     },
     "location": {
         "Central": 0.42288,

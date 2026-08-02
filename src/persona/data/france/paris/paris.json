@@ -26,6 +26,15 @@
                 "name": "Population légale des arrondissements, INSEE",
                 "year": 2021,
                 "url": "https://www.insee.fr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
             }
         ]
     },
@@ -55,6 +64,10 @@
         "Islam": 0.07,
         "Protestantism": 0.04,
         "Judaism": 0.02
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
     },
     "location": {
         "Paris Centre": 0.04595,

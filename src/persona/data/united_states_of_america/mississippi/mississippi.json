@@ -23,6 +23,15 @@
                 "name": "Religious Landscape Study - Mississippi, Pew Research Center",
                 "year": 2014,
                 "url": "https://www.pewresearch.org/religion/religious-landscape-study/state/mississippi/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "2020 Census Urban and Rural, U.S. Census Bureau",
+                "year": 2020,
+                "note": "Split of the state population between urban and rural areas.",
+                "url": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html"
             }
         ]
     },
@@ -95,6 +104,10 @@
         "Judaism": 0.01,
         "Islam": 0.01,
         "Eastern Orthodoxy": 0.01
+    },
+    "residence": {
+        "Urban": 0.463,
+        "Rural": 0.537
     },
     "language": {
         "English": 0.9571,

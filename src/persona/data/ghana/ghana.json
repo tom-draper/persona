@@ -26,6 +26,15 @@
                 "name": "2021 Population and Housing Census, Ghana Statistical Service",
                 "year": 2021,
                 "url": "https://www.statsghana.gov.gh/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "Other": 0.045,
         "African traditional religion": 0.032,
         "No religion": 0.011
+    },
+    "residence": {
+        "Urban": 0.589,
+        "Rural": 0.411
     },
     "location": {
         "Greater Accra": 0.17668,

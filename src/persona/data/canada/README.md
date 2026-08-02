@@ -1,5 +1,5 @@
 # Canada
-**10 features:** age, sex, marital status, religion, ethnicity, education, occupation, housing tenure, location and language.
+**11 features:** age, sex, marital status, religion, residence, ethnicity, education, occupation, housing tenure, location and language.
 
 ## Age
 
@@ -16,6 +16,10 @@
 ## Religion
 
 ![Religion](img/religion.png)
+
+## Residence
+
+![Residence](img/residence.png)
 
 ## Ethnicity
 
@@ -47,3 +51,4 @@
 - [Ethnocultural and religious diversity, Census 2021, Statistics Canada (2021)](https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethno-religion-eng.cfm) — religion
 - [Visible minority and population group, Census 2021, Statistics Canada (2021)](https://www12.statcan.gc.ca/census-recensement/2021/rt-td/ethnicity-ethnicite-eng.cfm) — ethnicity
 - [Language, Census of Population 2011, Statistics Canada (2011)](https://www12.statcan.gc.ca/census-recensement/2011/as-sa/98-314-x/98-314-x2011001-eng.cfm) — language
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

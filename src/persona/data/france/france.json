@@ -2,23 +2,43 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "marital status", "education", "occupation", "housing tenure"],
+                "features": [
+                    "age",
+                    "sex",
+                    "marital status",
+                    "education",
+                    "occupation",
+                    "housing tenure"
+                ],
                 "name": "Recensement de la population 2021, INSEE",
                 "year": 2021,
                 "url": "https://www.insee.fr/fr/statistiques/serie/000436389"
             },
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Transmission familiale des langues, INSEE",
                 "year": 2023,
                 "note": "Replaces a dead link to a 2017 linguistic-practices survey; figures predate this source and should be re-verified against it.",
                 "url": "https://www.insee.fr/fr/statistiques/6793260"
             },
             {
-                "features": ["location"],
+                "features": [
+                    "location"
+                ],
                 "name": "Estimation de la population par département au 1er janvier 2023, INSEE",
                 "year": 2023,
                 "url": "https://www.insee.fr/fr/statistiques/1893198"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,26 +78,26 @@
         "Other": 0.009
     },
     "marital status": {
-        "Single (never married)": 0.290,
-        "Married": 0.430,
-        "Civil partnership (PACS)": 0.070,
-        "Divorced": 0.110,
-        "Widowed": 0.100
+        "Single (never married)": 0.29,
+        "Married": 0.43,
+        "Civil partnership (PACS)": 0.07,
+        "Divorced": 0.11,
+        "Widowed": 0.1
     },
     "education": {
-        "No qualifications": 0.150,
-        "CEP/BEPC (primary/lower secondary)": 0.120,
-        "CAP/BEP (vocational certificate)": 0.230,
-        "Baccalauréat": 0.170,
-        "Short higher education (BTS/DUT)": 0.140,
-        "Bachelor's degree": 0.080,
-        "Master's degree or Grande école": 0.110
+        "No qualifications": 0.15,
+        "CEP/BEPC (primary/lower secondary)": 0.12,
+        "CAP/BEP (vocational certificate)": 0.23,
+        "Baccalauréat": 0.17,
+        "Short higher education (BTS/DUT)": 0.14,
+        "Bachelor's degree": 0.08,
+        "Master's degree or Grande école": 0.11
     },
     "occupation": {
-        "Management and executives": 0.190,
-        "Intermediate professions": 0.250,
-        "Employees (clerical and service)": 0.270,
-        "Manual workers": 0.190,
+        "Management and executives": 0.19,
+        "Intermediate professions": 0.25,
+        "Employees (clerical and service)": 0.27,
+        "Manual workers": 0.19,
         "Artisans, traders and entrepreneurs": 0.062,
         "Farmers": 0.013,
         "Other": 0.025
@@ -85,9 +105,9 @@
     "housing tenure": {
         "Owned outright": 0.285,
         "Owned with mortgage": 0.295,
-        "Private rented": 0.230,
-        "Social rented": 0.160,
-        "Other": 0.030
+        "Private rented": 0.23,
+        "Social rented": 0.16,
+        "Other": 0.03
     },
     "location": {
         "Île-de-France": {
@@ -227,5 +247,9 @@
         "Guyane": {
             "Guyane": 0.0044252
         }
+    },
+    "residence": {
+        "Urban": 0.788,
+        "Rural": 0.212
     }
 }

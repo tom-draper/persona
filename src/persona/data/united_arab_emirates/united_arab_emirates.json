@@ -27,6 +27,15 @@
                 "name": "Emirate population estimates, Federal Competitiveness and Statistics Centre (UAE)",
                 "year": 2023,
                 "url": "https://fcsc.gov.ae/en-us"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Hinduism": 0.062,
         "Buddhism": 0.032,
         "Other": 0.032
+    },
+    "residence": {
+        "Urban": 0.86,
+        "Rural": 0.14
     },
     "location": {
         "Dubai": 0.38822,

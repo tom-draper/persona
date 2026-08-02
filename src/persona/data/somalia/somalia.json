@@ -26,6 +26,15 @@
                 "name": "Subnational population statistics, UN OCHA / UNFPA (Somalia)",
                 "year": 2025,
                 "url": "https://www.unfpa.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2023,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -56,6 +65,10 @@
     "religion": {
         "Islam": 0.999,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.467,
+        "Rural": 0.533
     },
     "location": {
         "Banaadir": 0.16919,

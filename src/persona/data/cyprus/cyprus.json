@@ -28,6 +28,15 @@
                 "year": 2021,
                 "url": "https://www.cystat.gov.cy/en",
                 "note": "Government-controlled area only."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -62,6 +71,10 @@
         "Roman Catholicism": 0.015,
         "No religion": 0.01,
         "Other": 0.007
+    },
+    "residence": {
+        "Urban": 0.667,
+        "Rural": 0.333
     },
     "location": {
         "Nicosia": 0.37998,

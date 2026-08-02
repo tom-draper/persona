@@ -26,6 +26,15 @@
                 "name": "Population estimates 2022, Central Administration of Statistics (Lebanon)",
                 "year": 2022,
                 "url": "https://www.cas.gov.lb/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Christianity or Other Christianity": 0.229,
         "Eastern Orthodoxy": 0.076,
         "Druze": 0.055
+    },
+    "residence": {
+        "Urban": 0.91,
+        "Rural": 0.09
     },
     "location": {
         "Mount Lebanon": 0.27887,

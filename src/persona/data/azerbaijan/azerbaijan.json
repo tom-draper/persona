@@ -26,6 +26,15 @@
                 "name": "2019 Census, State Statistical Committee (Azerbaijan)",
                 "year": 2019,
                 "url": "https://www.stat.gov.az/?lang=en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Christianity or Other Christianity": 0.024,
         "No religion": 0.013,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.586,
+        "Rural": 0.414
     },
     "location": {
         "Baku": 0.45334,

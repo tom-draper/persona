@@ -27,6 +27,15 @@
                 "name": "2021 Census, National Statistical Institute (NSI Bulgaria)",
                 "year": 2021,
                 "url": "https://www.nsi.bg/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "Protestantism": 0.011,
         "Roman Catholicism": 0.006,
         "Other": 0.004
+    },
+    "residence": {
+        "Urban": 0.742,
+        "Rural": 0.258
     },
     "location": {
         "Sofia City": 0.19545,

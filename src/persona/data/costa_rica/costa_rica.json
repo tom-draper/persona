@@ -26,6 +26,15 @@
                 "name": "Population estimates, Instituto Nacional de Estadística y Censos (INEC Costa Rica)",
                 "year": 2022,
                 "url": "https://www.inec.cr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Protestantism": 0.21,
         "Other": 0.031,
         "Jehovah's Witnesses": 0.014
+    },
+    "residence": {
+        "Urban": 0.797,
+        "Rural": 0.203
     },
     "location": {
         "San José": 0.32161,

@@ -27,6 +27,15 @@
                 "name": "2022 Census, Hungarian Central Statistical Office (KSH)",
                 "year": 2022,
                 "url": "https://www.ksh.hu/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Protestantism": 0.194,
         "Christianity or Other Christianity": 0.054,
         "Other": 0.021
+    },
+    "residence": {
+        "Urban": 0.707,
+        "Rural": 0.293
     },
     "location": {
         "Budapest": 0.1793,

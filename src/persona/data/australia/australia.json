@@ -2,28 +2,51 @@
     "_meta": {
         "sources": [
             {
-                "features": ["age", "sex", "marital status", "occupation", "education", "housing tenure", "location"],
+                "features": [
+                    "age",
+                    "sex",
+                    "marital status",
+                    "occupation",
+                    "education",
+                    "housing tenure",
+                    "location"
+                ],
                 "name": "2021 Census QuickStats, Australian Bureau of Statistics",
                 "year": 2021,
                 "url": "https://www.abs.gov.au/census/find-census-data/quickstats/2021/AUS"
             },
             {
-                "features": ["religion"],
+                "features": [
+                    "religion"
+                ],
                 "name": "Religious affiliation in Australia, Australian Bureau of Statistics",
                 "year": 2021,
                 "url": "https://www.abs.gov.au/articles/religious-affiliation-australia"
             },
             {
-                "features": ["language"],
+                "features": [
+                    "language"
+                ],
                 "name": "Cultural diversity in Australia, Australian Bureau of Statistics",
                 "year": 2021,
                 "url": "https://www.abs.gov.au/statistics/people/people-and-communities/snapshot-australia/latest-release"
             },
             {
-                "features": ["country of birth"],
+                "features": [
+                    "country of birth"
+                ],
                 "name": "Estimated resident population by country of birth, Australian Bureau of Statistics",
                 "year": 2021,
                 "url": "https://www.abs.gov.au/statistics/people/population/migration-australia/2020-21"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -63,13 +86,17 @@
     },
     "religion": {
         "No religion": 0.389,
-        "Roman Catholicism": 0.200,
+        "Roman Catholicism": 0.2,
         "Protestantism": 0.181,
         "Eastern Orthodoxy": 0.021,
         "Other Christianity": 0.037,
         "Islam": 0.032,
         "Hinduism": 0.027,
         "Buddhism": 0.024
+    },
+    "residence": {
+        "Urban": 0.877,
+        "Rural": 0.123
     },
     "language": {
         "English": 0.72,
@@ -83,16 +110,16 @@
         "Married": 0.465,
         "Single (never married)": 0.365,
         "Divorced": 0.088,
-        "Widowed": 0.050,
+        "Widowed": 0.05,
         "Separated": 0.032
     },
     "occupation": {
-        "Professionals": 0.240,
+        "Professionals": 0.24,
         "Managers": 0.137,
         "Technicians and Trades": 0.129,
         "Clerical and Administrative": 0.127,
         "Community and Personal Service": 0.115,
-        "Labourers": 0.090,
+        "Labourers": 0.09,
         "Sales Workers": 0.082,
         "Machinery Operators and Drivers": 0.063
     },
@@ -102,12 +129,12 @@
         "Certificate III/IV": 0.161,
         "Year 12": 0.149,
         "Year 10-11": 0.146,
-        "No qualifications": 0.080,
+        "No qualifications": 0.08,
         "Other": 0.024
     },
     "housing tenure": {
-        "Owned outright": 0.310,
-        "Owned with mortgage": 0.350,
+        "Owned outright": 0.31,
+        "Owned with mortgage": 0.35,
         "Rented": 0.306,
         "Other": 0.034
     },

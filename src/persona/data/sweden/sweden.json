@@ -27,6 +27,15 @@
                 "name": "Population by county 2021, Statistics Sweden (SCB)",
                 "year": 2021,
                 "url": "https://www.scb.se/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Christianity or Other Christianity": 0.064,
         "Islam": 0.021,
         "Other": 0.004
+    },
+    "residence": {
+        "Urban": 0.891,
+        "Rural": 0.109
     },
     "location": {
         "Stockholm": 0.23106,

@@ -26,6 +26,15 @@
                 "name": "Population estimates, National Bureau of Statistics (South Sudan)",
                 "year": 2010,
                 "url": "https://www.ssnbss.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "African traditional religion": 0.329,
         "Islam": 0.062,
         "Other": 0.004
+    },
+    "residence": {
+        "Urban": 0.217,
+        "Rural": 0.783
     },
     "location": {
         "Jonglei": 0.1411,

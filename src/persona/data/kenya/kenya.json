@@ -26,6 +26,15 @@
                 "name": "2019 Kenya Population and Housing Census, Kenya National Bureau of Statistics",
                 "year": 2019,
                 "url": "https://www.knbs.or.ke/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -60,6 +69,10 @@
         "Islam": 0.109,
         "Other": 0.018,
         "No religion": 0.018
+    },
+    "residence": {
+        "Urban": 0.322,
+        "Rural": 0.678
     },
     "location": {
         "Nairobi": 0.12479,

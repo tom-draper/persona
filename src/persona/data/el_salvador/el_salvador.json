@@ -26,6 +26,15 @@
                 "name": "2024 Census, Oficina Nacional de Estadística y Censos (ONEC)",
                 "year": 2024,
                 "url": "https://onec.gob.sv/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Protestantism": 0.356,
         "No religion": 0.192,
         "Other": 0.025
+    },
+    "residence": {
+        "Urban": 0.755,
+        "Rural": 0.245
     },
     "location": {
         "San Salvador": 0.26395,

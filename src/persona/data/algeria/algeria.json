@@ -26,6 +26,15 @@
                 "name": "2008 General Population and Housing Census, Office National des Statistiques (Algeria)",
                 "year": 2008,
                 "url": "https://www.ons.dz/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Christianity or Other Christianity": 0.004,
         "No religion": 0.004,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.758,
+        "Rural": 0.242
     },
     "location": {
         "Algiers": 0.10787,

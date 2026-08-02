@@ -27,6 +27,15 @@
                 "name": "2023 Census, Institute of Statistics (INSTAT Albania)",
                 "year": 2023,
                 "url": "https://www.instat.gov.al/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -62,6 +71,10 @@
         "Bektashism": 0.048,
         "No religion": 0.036,
         "Other": 0.006
+    },
+    "residence": {
+        "Urban": 0.589,
+        "Rural": 0.411
     },
     "location": {
         "Tirana": 0.31577,

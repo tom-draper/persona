@@ -27,6 +27,15 @@
                 "year": 2022,
                 "note": "Country selected at random, weighted by share of world population.",
                 "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "World urban-rural split.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -63,6 +72,10 @@
         "Folk religions": 0.059,
         "Other": 0.008,
         "Judaism": 0.002
+    },
+    "residence": {
+        "Urban": 0.578,
+        "Rural": 0.422
     },
     "location": {
         "China": 0.1806446472220551,

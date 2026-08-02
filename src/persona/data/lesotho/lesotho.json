@@ -26,6 +26,15 @@
                 "name": "2016 Census, Bureau of Statistics (Lesotho)",
                 "year": 2016,
                 "url": "https://www.bos.gov.ls/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -58,6 +67,10 @@
         "Roman Catholicism": 0.41,
         "Other": 0.04,
         "No religion": 0.03
+    },
+    "residence": {
+        "Urban": 0.447,
+        "Rural": 0.553
     },
     "location": {
         "Maseru": 0.25866,

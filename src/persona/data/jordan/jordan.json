@@ -26,6 +26,15 @@
                 "name": "Population estimates 2022, Department of Statistics (Jordan)",
                 "year": 2022,
                 "url": "https://dosweb.dos.gov.jo/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -57,6 +66,10 @@
         "Islam": 0.971,
         "Christianity or Other Christianity": 0.021,
         "Other": 0.008
+    },
+    "residence": {
+        "Urban": 0.932,
+        "Rural": 0.068
     },
     "location": {
         "Amman": 0.41982,

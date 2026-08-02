@@ -27,6 +27,15 @@
                 "name": "2022 Census, General Authority for Statistics (GASTAT)",
                 "year": 2022,
                 "url": "https://www.stats.gov.sa/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Christianity or Other Christianity": 0.06,
         "Hinduism": 0.02,
         "Other": 0.016
+    },
+    "residence": {
+        "Urban": 0.846,
+        "Rural": 0.154
     },
     "location": {
         "Riyadh": 0.26703,

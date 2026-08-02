@@ -26,6 +26,15 @@
                 "name": "Regional population estimates 2023, Institut National de la Statistique (INSTAT Mali)",
                 "year": 2023,
                 "url": "https://www.instat-mali.org/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "African traditional religion": 0.007,
         "No religion": 0.005,
         "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.322,
+        "Rural": 0.678
     },
     "location": {
         "Bamako": 0.18647,

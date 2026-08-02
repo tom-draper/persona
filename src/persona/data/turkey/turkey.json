@@ -27,6 +27,15 @@
                 "name": "Address-Based Population Registration System, Turkish Statistical Institute (TurkStat)",
                 "year": 2021,
                 "url": "https://www.tuik.gov.tr/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "No religion": 0.07,
         "Christianity or Other Christianity": 0.002,
         "Other": 0.008
+    },
+    "residence": {
+        "Urban": 0.895,
+        "Rural": 0.105
     },
     "location": {
         "Istanbul": 0.233,

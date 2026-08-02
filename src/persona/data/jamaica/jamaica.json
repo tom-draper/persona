@@ -26,6 +26,15 @@
                 "name": "2011 Census, Statistical Institute of Jamaica (STATIN)",
                 "year": 2011,
                 "url": "https://statinja.gov.jm/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -59,6 +68,10 @@
         "Other": 0.065,
         "Christianity or Other Christianity": 0.028,
         "Roman Catholicism": 0.022
+    },
+    "residence": {
+        "Urban": 0.594,
+        "Rural": 0.406
     },
     "location": {
         "Saint Andrew": 0.21252,

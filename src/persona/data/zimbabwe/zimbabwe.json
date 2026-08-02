@@ -26,6 +26,15 @@
                 "name": "2022 Census, Zimbabwe National Statistics Agency (ZimStat)",
                 "year": 2022,
                 "url": "https://www.zimstat.co.zw/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
             }
         ]
     },
@@ -61,6 +70,10 @@
         "African traditional religion": 0.05,
         "Other": 0.008,
         "Islam": 0.006
+    },
+    "residence": {
+        "Urban": 0.405,
+        "Rural": 0.595
     },
     "location": {
         "Harare": 0.15991,
