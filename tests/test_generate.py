@@ -645,6 +645,45 @@ def test_get_features_recurses_through_interior_node():
     assert england == england_leaf | london_leaf
 
 
+def test_bare_city_inherits_parent_baseline():
+    """A bare city name inherits its parent country's baseline via overlay, so
+    a London/Paris/etc persona is complete rather than the sparse city leaf."""
+    for city, parent_feature in [("london", "sex"), ("paris", "sex"), ("madrid", "sex")]:
+        samples = gen_samples(city, N=40, seed=8)
+        for s in samples:
+            assert "age" in s and parent_feature in s
+        # an adult draw carries the inherited adult-only marital status
+        assert any(s["age"] >= 16 and "marital status" in s for s in samples)
+
+
+def test_bare_london_location_is_city_not_suffixed():
+    """Bare `london` labels location plainly as London (london.json has no
+    location of its own); a bare parent is unaffected and keeps district labels."""
+    assert {s["location"] for s in gen_samples("london", N=20, seed=8)} == {"London"}
+    paris = {s["location"] for s in gen_samples("paris", N=20, seed=8)}
+    assert all(p.endswith("Paris") for p in paris)
+
+
+def test_bare_city_features_endpoint_matches_generation():
+    """The /features/ listing for a bare city includes the inherited features."""
+    from persona.api.handler import get_features, load_location_data
+
+    data = load_location_data()
+    london = set(get_features("london", data)["london"])
+    england = set(get_features("england", data)["england"])
+    assert {"age", "sex", "marital status", "education"} <= london
+    assert london <= england  # London inherits England's set, overriding some
+
+
+def test_bare_us_state_unaffected_by_expansion():
+    """A US state sits under a composite-only parent, so bare addressing is not
+    expanded: it keeps its own schema and gains no inherited country baseline
+    (and, having no location feature of its own, no location label)."""
+    for s in gen_samples("alabama", N=10, seed=8):
+        assert "ethnicity" in s  # its own US-state schema is intact
+        assert "location" not in s  # not expanded into a usa/alabama path
+
+
 # ---------------------------------------------------------------------------
 # Path addressing (disambiguating shared names by descending the tree)
 # ---------------------------------------------------------------------------

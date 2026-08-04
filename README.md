@@ -79,6 +79,13 @@ A partial path fixes the outer levels and fills in the rest at random — e.g.
 `/v1/united_kingdom/england/` always picks England, then randomly London or the
 rest of England.
 
+A city kept inside its country's tree (such as `london` under `england`) is a
+partial dataset: it overrides a few features (ethnicity, language, religion,
+location) and inherits everything else from the country. Addressing it by bare
+name still yields a complete persona — `/v1/london/` draws age, sex, marital
+status, education and the rest from England, then applies London's overrides —
+so it matches drawing London through `/v1/united_kingdom/england/`.
+
 ### List Locations
 
 All locations currently included can be listed with the `/v1/locations/` endpoint.

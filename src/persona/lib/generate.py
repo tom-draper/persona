@@ -341,6 +341,32 @@ def _segments(location: str) -> list[str]:
     return [clean_location(p) for p in location.replace("/", " ").split()]
 
 
+def _expand_to_path(segments: list[str]) -> list[str]:
+    """Expand a bare single name across any *leaf* ancestors it sits under, so a
+    carved-out sublocation inherits those ancestors as overlay baseline. A city
+    kept inside its country's directory (``london`` under ``england``) becomes
+    ``england london`` and thereby gains England's age/sex/marital/education
+    while still overriding its own ethnicity/language/location — the same result
+    as drawing London through the England composite.
+
+    Only ancestors that are themselves leaf datasets are prepended, so a bare
+    parent whose own parent is a pure composite is left untouched: ``england``
+    (under the composite-only ``united_kingdom``) and a US state (under the
+    composite-only ``united_states_of_america``) stay single-segment, as does a
+    top-level country. Multi-segment queries are returned unchanged."""
+    if len(segments) != 1:
+        return segments
+    node = get_file_path(segments[0])
+    if node is None:
+        return segments  # a composite or unknown name — nothing to inherit
+    prefix: list[str] = []
+    ancestor = node.parent.parent  # directory containing the target's directory
+    while ancestor != DATA_DIR and (ancestor / f"{ancestor.name}.json").exists():
+        prefix.insert(0, clean_location(ancestor.name))
+        ancestor = ancestor.parent
+    return [*prefix, segments[0]] if prefix else segments
+
+
 def _fmt_label(label: str) -> str:
     return label.replace("_", " ").title()
 
@@ -367,6 +393,22 @@ def gen_api_samples(
     rng = np.random.default_rng(seed)
     samples = []
     segments = _segments(location)
+    # Expand a bare name across its leaf ancestors so a carved-out sublocation
+    # (a city under a country) inherits them as overlay baseline — the
+    # preloaded-data equivalent of _expand_to_path. Only consecutive leaf
+    # ancestors are prepended, so a bare parent under a pure composite (england,
+    # a US state) and multi-segment queries are left untouched.
+    if len(segments) == 1:
+        from persona.api.handler import resolve_key
+
+        key = resolve_key(segments[0], data)
+        if key and "/" in key:
+            parts = key.split("/")
+            start = len(parts) - 1
+            while start > 0 and data.get("/".join(parts[:start]), {}).get("leaf"):
+                start -= 1
+            if start < len(parts) - 1:
+                segments = parts[start:]
     if not segments:
         raise ValueError(f"Location '{location}' not found")
     for _ in range(N):
@@ -426,7 +468,7 @@ def gen_samples(
     # or "united_states_of_america/georgia"); each segment is normalised (with
     # alias resolution) so direct library callers get the same behaviour as the
     # CLI and API.
-    segments = _segments(location)
+    segments = _expand_to_path(_segments(location))
     if not segments:
         raise ValueError(f"Location '{location}' not found")
     for _ in range(N):

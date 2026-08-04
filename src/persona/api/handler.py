@@ -80,11 +80,27 @@ def _subtree_features(key: str, data: dict, seen: set[str]) -> set[str]:
     return features
 
 
+def _ancestor_leaf_features(key: str, data: dict) -> set[str]:
+    """Leaf features a carved-out sublocation inherits from its ancestors. Walks
+    up consecutive leaf ancestors (a city under a country leaf) and unions their
+    features, matching the overlay baseline used at generation time. Stops at the
+    first non-leaf ancestor (e.g. a pure composite like ``united_kingdom``)."""
+    parts = key.split("/")
+    features: set[str] = set()
+    for i in range(len(parts) - 1, 0, -1):
+        node = data.get("/".join(parts[:i]), {})
+        if not node.get("leaf"):
+            break
+        features.update(k for k in node["leaf"] if k != "_meta")
+    return features
+
+
 def get_features(location: str, data: dict) -> dict:
     key = resolve_path_key(location, data)
     if key is None:
         return {}
-    return {location: sorted(_subtree_features(key, data, set()))}
+    features = _subtree_features(key, data, set()) | _ancestor_leaf_features(key, data)
+    return {location: sorted(features)}
 
 
 def get_available_features(location: str, data: dict) -> set[str]:
