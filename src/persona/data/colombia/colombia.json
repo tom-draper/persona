@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -102,6 +111,17 @@
         "Primary education": 0.2959,
         "Secondary education": 0.3403,
         "Tertiary education": 0.3206
+    },
+    "occupation": {
+        "Managers": 0.0573,
+        "Professionals": 0.1111,
+        "Technicians and associate professionals": 0.0697,
+        "Clerical support workers": 0.0598,
+        "Service and sales workers": 0.2166,
+        "Skilled agricultural, forestry and fishery workers": 0.054,
+        "Craft and related trades workers": 0.1053,
+        "Plant and machine operators and assemblers": 0.0885,
+        "Elementary occupations": 0.2377
     },
     "location": {
         "Bogotá": 0.17257,

@@ -55,6 +55,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -104,6 +113,18 @@
         "Primary education": 0.1384,
         "Secondary education": 0.5866,
         "Tertiary education": 0.2695
+    },
+    "occupation": {
+        "Managers": 0.0399,
+        "Professionals": 0.1601,
+        "Technicians and associate professionals": 0.1735,
+        "Clerical support workers": 0.1183,
+        "Service and sales workers": 0.1761,
+        "Skilled agricultural, forestry and fishery workers": 0.0222,
+        "Craft and related trades workers": 0.1321,
+        "Plant and machine operators and assemblers": 0.0622,
+        "Elementary occupations": 0.1055,
+        "Armed forces occupations": 0.0101
     },
     "location": {
         "Lombardy": 0.170278,

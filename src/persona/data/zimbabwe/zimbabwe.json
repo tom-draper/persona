@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -104,6 +113,18 @@
         "Primary education": 0.2516,
         "Secondary education": 0.5923,
         "Tertiary education": 0.0765
+    },
+    "occupation": {
+        "Managers": 0.0219,
+        "Professionals": 0.0634,
+        "Technicians and associate professionals": 0.0197,
+        "Clerical support workers": 0.0099,
+        "Service and sales workers": 0.1637,
+        "Skilled agricultural, forestry and fishery workers": 0.4252,
+        "Craft and related trades workers": 0.0737,
+        "Plant and machine operators and assemblers": 0.0421,
+        "Elementary occupations": 0.1791,
+        "Armed forces occupations": 0.0014
     },
     "location": {
         "Harare": 0.15991,

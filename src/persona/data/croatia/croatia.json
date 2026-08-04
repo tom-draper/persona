@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -104,6 +113,18 @@
         "Primary education": 0.0425,
         "Secondary education": 0.6269,
         "Tertiary education": 0.322
+    },
+    "occupation": {
+        "Managers": 0.067,
+        "Professionals": 0.2081,
+        "Technicians and associate professionals": 0.154,
+        "Clerical support workers": 0.0924,
+        "Service and sales workers": 0.1724,
+        "Skilled agricultural, forestry and fishery workers": 0.025,
+        "Craft and related trades workers": 0.1163,
+        "Plant and machine operators and assemblers": 0.0912,
+        "Elementary occupations": 0.0643,
+        "Armed forces occupations": 0.0094
     },
     "location": {
         "City of Zagreb": 0.19813,

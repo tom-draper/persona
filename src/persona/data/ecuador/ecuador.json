@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -102,6 +111,18 @@
         "Primary education": 0.3428,
         "Secondary education": 0.4283,
         "Tertiary education": 0.1742
+    },
+    "occupation": {
+        "Managers": 0.0097,
+        "Professionals": 0.075,
+        "Technicians and associate professionals": 0.0454,
+        "Clerical support workers": 0.0288,
+        "Service and sales workers": 0.1894,
+        "Skilled agricultural, forestry and fishery workers": 0.2144,
+        "Craft and related trades workers": 0.108,
+        "Plant and machine operators and assemblers": 0.0656,
+        "Elementary occupations": 0.2599,
+        "Armed forces occupations": 0.0038
     },
     "location": {
         "Guayas": 0.25928,

@@ -56,6 +56,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -110,6 +119,17 @@
         "Primary education": 0.0863,
         "Secondary education": 0.2707,
         "Tertiary education": 0.643
+    },
+    "occupation": {
+        "Managers": 0.096,
+        "Professionals": 0.2921,
+        "Technicians and associate professionals": 0.1202,
+        "Clerical support workers": 0.0827,
+        "Service and sales workers": 0.1691,
+        "Skilled agricultural, forestry and fishery workers": 0.0316,
+        "Craft and related trades workers": 0.0841,
+        "Plant and machine operators and assemblers": 0.0501,
+        "Elementary occupations": 0.0741
     },
     "housing tenure": {
         "Owned outright": 0.369,

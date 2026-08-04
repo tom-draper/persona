@@ -29,8 +29,13 @@ to parity across all datasets:
 are *not* forced onto every dataset — coverage is inherently uneven across
 countries:
 
-`ethnicity`, `language`, `occupation`, `housing tenure`, `country of birth`,
+`occupation`, `ethnicity`, `language`, `housing tenure`, `country of birth`,
 `sexuality`.
+
+`occupation` is now available for most countries from a single harmonised source
+(see below), but it stays in the extended tier: it describes only *employed*
+people (it is assigned to adults, alongside marital status), its labels are not
+globally uniform, and a handful of countries have no labour-force survey.
 
 Whatever tier it belongs to, a feature name means the same thing in every
 dataset that carries it; the shared category labels are enforced by
@@ -59,6 +64,11 @@ points — the per-country source year is recorded in `_meta`.
 Wittgenstein Centre Human Capital Data Explorer (v3, SSP2, 2020): the population
 aged 15 and over collapsed to no schooling, primary, secondary and tertiary as
 the highest level attained.
+
+`occupation`, where a national source does not supply it, comes from ILOSTAT
+(International Labour Organization): the distribution of employed people across
+the ISCO-08 (or, as a fallback, ISCO-88) major occupational groups, from each
+country's most recent labour-force survey.
 
 ## Cities
 

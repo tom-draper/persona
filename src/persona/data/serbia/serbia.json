@@ -55,6 +55,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -107,6 +116,18 @@
         "Primary education": 0.0645,
         "Secondary education": 0.7195,
         "Tertiary education": 0.1947
+    },
+    "occupation": {
+        "Managers": 0.0373,
+        "Professionals": 0.1759,
+        "Technicians and associate professionals": 0.1143,
+        "Clerical support workers": 0.0746,
+        "Service and sales workers": 0.1416,
+        "Skilled agricultural, forestry and fishery workers": 0.1622,
+        "Craft and related trades workers": 0.1072,
+        "Plant and machine operators and assemblers": 0.1133,
+        "Elementary occupations": 0.067,
+        "Armed forces occupations": 0.0066
     },
     "location": {
         "Belgrade": 0.28756,

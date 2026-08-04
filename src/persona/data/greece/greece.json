@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -102,6 +111,18 @@
         "Primary education": 0.1826,
         "Secondary education": 0.3488,
         "Tertiary education": 0.4543
+    },
+    "occupation": {
+        "Managers": 0.0298,
+        "Professionals": 0.2257,
+        "Technicians and associate professionals": 0.0692,
+        "Clerical support workers": 0.1137,
+        "Service and sales workers": 0.2279,
+        "Skilled agricultural, forestry and fishery workers": 0.0818,
+        "Craft and related trades workers": 0.0961,
+        "Plant and machine operators and assemblers": 0.07,
+        "Elementary occupations": 0.071,
+        "Armed forces occupations": 0.0148
     },
     "location": {
         "Attica": 0.36388,

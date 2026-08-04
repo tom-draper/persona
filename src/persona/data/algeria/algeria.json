@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2014,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -101,6 +110,18 @@
         "Primary education": 0.1462,
         "Secondary education": 0.5361,
         "Tertiary education": 0.1416
+    },
+    "occupation": {
+        "Managers": 0.0267,
+        "Professionals": 0.1033,
+        "Technicians and associate professionals": 0.0404,
+        "Clerical support workers": 0.0726,
+        "Service and sales workers": 0.2734,
+        "Skilled agricultural, forestry and fishery workers": 0.0615,
+        "Craft and related trades workers": 0.1855,
+        "Plant and machine operators and assemblers": 0.0784,
+        "Elementary occupations": 0.1486,
+        "Armed forces occupations": 0.0096
     },
     "location": {
         "Algiers": 0.10787,

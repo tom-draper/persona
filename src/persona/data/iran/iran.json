@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -102,6 +111,17 @@
         "Primary education": 0.2182,
         "Secondary education": 0.4963,
         "Tertiary education": 0.1584
+    },
+    "occupation": {
+        "Managers": 0.0318,
+        "Professionals": 0.1252,
+        "Technicians and associate professionals": 0.0594,
+        "Clerical support workers": 0.035,
+        "Service and sales workers": 0.1681,
+        "Skilled agricultural, forestry and fishery workers": 0.1053,
+        "Craft and related trades workers": 0.1899,
+        "Plant and machine operators and assemblers": 0.1432,
+        "Elementary occupations": 0.1419
     },
     "location": {
         "Tehran": 0.16545,

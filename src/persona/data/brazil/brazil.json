@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -104,6 +113,18 @@
         "Primary education": 0.2761,
         "Secondary education": 0.4628,
         "Tertiary education": 0.2025
+    },
+    "occupation": {
+        "Managers": 0.0364,
+        "Professionals": 0.1337,
+        "Technicians and associate professionals": 0.0897,
+        "Clerical support workers": 0.0844,
+        "Service and sales workers": 0.2218,
+        "Skilled agricultural, forestry and fishery workers": 0.0449,
+        "Craft and related trades workers": 0.1312,
+        "Plant and machine operators and assemblers": 0.0947,
+        "Elementary occupations": 0.1551,
+        "Armed forces occupations": 0.0081
     },
     "location": {
         "São Paulo": 0.21558,

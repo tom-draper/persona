@@ -54,6 +54,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2010,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -104,6 +113,17 @@
         "Primary education": 0.1974,
         "Secondary education": 0.5329,
         "Tertiary education": 0.2576
+    },
+    "occupation": {
+        "Managers": 0.0862,
+        "Professionals": 0.0459,
+        "Technicians and associate professionals": 0.1183,
+        "Clerical support workers": 0.1147,
+        "Service and sales workers": 0.1598,
+        "Skilled agricultural, forestry and fishery workers": 0.0256,
+        "Craft and related trades workers": 0.1629,
+        "Plant and machine operators and assemblers": 0.0927,
+        "Elementary occupations": 0.194
     },
     "location": {
         "Tunapuna-Piarco": 0.16198,

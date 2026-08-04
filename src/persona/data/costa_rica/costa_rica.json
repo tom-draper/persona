@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -103,6 +112,17 @@
         "Primary education": 0.4407,
         "Secondary education": 0.335,
         "Tertiary education": 0.1965
+    },
+    "occupation": {
+        "Managers": 0.0147,
+        "Professionals": 0.1422,
+        "Technicians and associate professionals": 0.1071,
+        "Clerical support workers": 0.08,
+        "Service and sales workers": 0.1978,
+        "Skilled agricultural, forestry and fishery workers": 0.0268,
+        "Craft and related trades workers": 0.1148,
+        "Plant and machine operators and assemblers": 0.0903,
+        "Elementary occupations": 0.2262
     },
     "location": {
         "San José": 0.32161,

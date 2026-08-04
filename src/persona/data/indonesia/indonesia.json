@@ -53,6 +53,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2023,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
             }
         ]
     },
@@ -103,6 +112,18 @@
         "Primary education": 0.3151,
         "Secondary education": 0.4713,
         "Tertiary education": 0.1644
+    },
+    "occupation": {
+        "Managers": 0.0215,
+        "Professionals": 0.0602,
+        "Technicians and associate professionals": 0.0296,
+        "Clerical support workers": 0.0415,
+        "Service and sales workers": 0.2502,
+        "Skilled agricultural, forestry and fishery workers": 0.2162,
+        "Craft and related trades workers": 0.1159,
+        "Plant and machine operators and assemblers": 0.0669,
+        "Elementary occupations": 0.194,
+        "Armed forces occupations": 0.0039
     },
     "location": {
         "West Java": 0.17845,
