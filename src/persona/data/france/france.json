@@ -39,6 +39,15 @@
                 "year": 2025,
                 "note": "Split of the population between urban and rural areas.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Trajectoires et Origines 2 (TeO2), INED-INSEE",
+                "year": 2020,
+                "note": "Self-declared religion of respondents aged 18-49; France does not record religion in its census.",
+                "url": "https://teo.site.ined.fr/en/"
             }
         ]
     },
@@ -65,6 +74,15 @@
     "sex": {
         "Male": 0.485,
         "Female": 0.515
+    },
+    "religion": {
+        "No religion": 0.53,
+        "Roman Catholicism": 0.25,
+        "Islam": 0.11,
+        "Christianity or Other Christianity": 0.09,
+        "Buddhism": 0.005,
+        "Judaism": 0.005,
+        "Other": 0.005
     },
     "language": {
         "French": 0.876,

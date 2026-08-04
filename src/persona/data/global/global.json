@@ -36,6 +36,24 @@
                 "year": 2025,
                 "note": "World urban-rural split.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations (population-weighted world aggregate)",
+                "year": 2019,
+                "note": "World baseline: national marital-status distributions weighted by 2020 population; consensual unions and civil partnerships counted as cohabiting, separated with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "World aggregate: population aged 15 and over by highest level attained.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
             }
         ]
     },
@@ -76,6 +94,19 @@
     "residence": {
         "Urban": 0.578,
         "Rural": 0.422
+    },
+    "marital status": {
+        "Single (never married)": 0.2816,
+        "Married": 0.6024,
+        "Cohabiting": 0.037,
+        "Widowed": 0.0447,
+        "Divorced": 0.0344
+    },
+    "education": {
+        "No schooling": 0.1313,
+        "Primary education": 0.2088,
+        "Secondary education": 0.4927,
+        "Tertiary education": 0.1671
     },
     "location": {
         "China": 0.1806446472220551,

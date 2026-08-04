@@ -33,7 +33,7 @@
 
 - [World Population Prospects 2024, United Nations (2024)](https://population.un.org/wpp/) — age, sex
 - [Statistics Lebanon estimate (via US Department of State) (2023)](https://www.state.gov/reports/2023-report-on-international-religious-freedom/lebanon/) — religion
-- [Population estimates 2022, Central Administration of Statistics (Lebanon) (2022)](https://www.cas.gov.lb/) — location
+- [Population estimates 2022, Central Administration of Statistics (Lebanon) (2022)](https://web.archive.org/web/2024/https://www.cas.gov.lb/) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
 - [World Marriage Data 2019, United Nations (2007)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status
 - [Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA (2020)](https://dataexplorer.wittgensteincentre.org/wcde-v3/) — education

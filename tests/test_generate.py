@@ -486,7 +486,15 @@ def test_get_features_global_returns_world_baseline(api_data):
     from persona.api.handler import get_features
 
     result = get_features("global", api_data)
-    assert set(result["global"]) == {"age", "sex", "religion", "residence", "location"}
+    assert set(result["global"]) == {
+        "age",
+        "sex",
+        "religion",
+        "residence",
+        "marital status",
+        "education",
+        "location",
+    }
 
 
 # ---------------------------------------------------------------------------

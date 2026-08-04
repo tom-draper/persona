@@ -1,5 +1,5 @@
 # France
-**9 features:** age, sex, language, marital status, education, occupation, housing tenure, location and residence.
+**10 features:** age, sex, religion, language, marital status, education, occupation, housing tenure, location and residence.
 
 ## Age
 
@@ -8,6 +8,10 @@
 ## Sex
 
 ![Sex](img/sex.png)
+
+## Religion
+
+![Religion](img/religion.png)
 
 ## Language
 
@@ -43,3 +47,4 @@
 - [Transmission familiale des langues, INSEE (2023)](https://www.insee.fr/fr/statistiques/6793260) — language
 - [Estimation de la population par département au 1er janvier 2023, INSEE (2023)](https://www.insee.fr/fr/statistiques/1893198) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
+- [Trajectoires et Origines 2 (TeO2), INED-INSEE (2020)](https://teo.site.ined.fr/en/) — religion

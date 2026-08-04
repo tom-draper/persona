@@ -32,8 +32,8 @@
 ## Sources
 
 - [World Population Prospects 2024, United Nations (2024)](https://population.un.org/wpp/) — age, sex
-- [2015 Census (religion), Lao Statistics Bureau (2015)](https://www.lsb.gov.la/en/) — religion
-- [Population projections 2023, Lao Statistics Bureau (2023)](https://www.lsb.gov.la/en/) — location
+- [2015 Census (religion), Lao Statistics Bureau (2015)](https://www.lsb.gov.la/) — religion
+- [Population projections 2023, Lao Statistics Bureau (2023)](https://www.lsb.gov.la/) — location
 - [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence
 - [World Marriage Data 2019, United Nations (2017)](https://www.un.org/development/desa/pd/data/world-marriage-data) — marital status
 - [Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA (2020)](https://dataexplorer.wittgensteincentre.org/wcde-v3/) — education
