@@ -90,6 +90,9 @@ granularity.
 - [X] `buenos_aires` (`caba`)
 - [X] `istanbul`
 - [X] `jakarta`
+- [X] `seoul`
+- [X] `shanghai`
+- [X] `bangkok`
 
 ## Countries
 

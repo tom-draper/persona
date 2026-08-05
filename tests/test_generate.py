@@ -677,6 +677,19 @@ def test_second_city_batch_inherits_and_labels():
         assert all(s["location"].endswith(city_label) for s in samples)
 
 
+def test_third_city_batch_inherits_and_stays_explicit():
+    """Seoul, Shanghai and Bangkok resolve explicitly with parent inheritance;
+    their countries never leak the city districts into a country query."""
+    for city, label in [("seoul", "Seoul"), ("shanghai", "Shanghai"), ("bangkok", "Bangkok")]:
+        samples = gen_samples(city, N=40, seed=12)
+        for s in samples:
+            assert "age" in s and "religion" in s
+        assert all(s["location"].endswith(label) for s in samples)
+    kr_districts = {"Gangnam", "Songpa", "Mapo"}
+    kr_locs = [s.get("location", "") for s in gen_samples("south_korea", N=400, seed=1)]
+    assert not any(d in loc for loc in kr_locs for d in kr_districts)
+
+
 def test_city_alias_resolves():
     from persona.lib.format import clean_location
 

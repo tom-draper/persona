@@ -1,0 +1,55 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Resident Registration Population, Statistics Korea (KOSTAT)",
+                "year": 2014,
+                "note": "Population shares of Seoul's 25 districts (gu).",
+                "url": "https://kostat.go.kr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Songpa": 0.0649,
+        "Gangseo": 0.0571,
+        "Gangnam": 0.0563,
+        "Nowon": 0.0566,
+        "Gwanak": 0.0514,
+        "Eunpyeong": 0.0486,
+        "Seongbuk": 0.0459,
+        "Gangdong": 0.0465,
+        "Guro": 0.0441,
+        "Seocho": 0.0439,
+        "Yeongdeungpo": 0.0407,
+        "Jungnang": 0.0409,
+        "Dongjak": 0.0405,
+        "Mapo": 0.0382,
+        "Gwangjin": 0.0364,
+        "Dongdaemun": 0.0363,
+        "Dobong": 0.0343,
+        "Gangbuk": 0.0327,
+        "Seodaemun": 0.031,
+        "Seongdong": 0.0293,
+        "Geumcheon": 0.0249,
+        "Yongsan": 0.0241,
+        "Jongno": 0.016,
+        "Jung": 0.0132,
+        "Yangcheon": 0.0463
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}
