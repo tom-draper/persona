@@ -38,6 +38,10 @@ alias = {
     "swaziland": "eswatini",
     "east_timor": "timor_leste",
     "trinidad": "trinidad_and_tobago",
+    "nyc": "new_york_city",
+    "cdmx": "mexico_city",
+    "ciudad_de_mexico": "mexico_city",
+    "roma": "rome",
 }
 
 

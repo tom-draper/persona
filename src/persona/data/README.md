@@ -72,10 +72,19 @@ country's most recent labour-force survey.
 
 ## Cities
 
+A city is a partial dataset nested inside its country (or, for New York City,
+its US state): it carries its own districts and is flagged urban, and inherits
+every other feature from the parent. It is reached by bare name (`tokyo`) or
+through the parent, which yields the city in proportion to its population share.
+
 - [X] `london`
 - [X] `paris`
 - [X] `berlin`
 - [X] `madrid`
+- [X] `new_york_city` (`nyc`)
+- [X] `tokyo`
+- [X] `mexico_city` (`cdmx`)
+- [X] `rome`
 
 ## Countries
 

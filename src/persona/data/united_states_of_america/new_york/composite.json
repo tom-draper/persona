@@ -1,0 +1,17 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2020 Census, U.S. Census Bureau",
+                "year": 2020,
+                "note": "New York City's share of New York's population; the 'New York' key is a self/remainder branch resolving to the parent dataset, which a New York City persona inherits while overriding location and residence.",
+                "url": "https://www.census.gov/"
+            }
+        ]
+    },
+    "New York City": 0.4358,
+    "New York": 0.5642
+}

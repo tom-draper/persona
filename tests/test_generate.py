@@ -675,6 +675,31 @@ def test_bare_city_features_endpoint_matches_generation():
     assert london <= england  # London inherits England's set, overriding some
 
 
+def test_new_cities_inherit_parent_and_override_location():
+    """Cities added under a country (tokyo, rome, mexico_city) or a US state
+    (new_york_city) inherit that parent's schema and label location by district."""
+    for city, parent_feature, districts in [
+        ("tokyo", "religion", {"Setagaya", "Shinjuku", "Adachi"}),
+        ("rome", "religion", {"EUR", "Aurelia", "Monteverde"}),
+        ("new_york_city", "ethnicity", {"Brooklyn", "Queens", "Manhattan"}),
+    ]:
+        samples = gen_samples(city, N=60, seed=9)
+        for s in samples:
+            assert "age" in s and parent_feature in s and "residence" in s
+        assert sum(s["residence"] == "Urban" for s in samples) >= 0.8 * len(samples)
+        seen_districts = {s["location"].split(",")[0] for s in samples}
+        assert seen_districts & districts  # location drawn from the city's districts
+        assert all(s["location"].endswith(city.replace("_", " ").title()) for s in samples)
+
+
+def test_city_alias_resolves():
+    from persona.lib.format import clean_location
+
+    assert clean_location("nyc") == "new_york_city"
+    assert clean_location("cdmx") == "mexico_city"
+    assert gen_samples("nyc", N=1, seed=1)[0]["location"].endswith("New York City")
+
+
 def test_bare_us_state_unaffected_by_expansion():
     """A US state sits under a composite-only parent, so bare addressing is not
     expanded: it keeps its own schema and gains no inherited country baseline

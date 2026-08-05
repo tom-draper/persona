@@ -1,0 +1,46 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Censo de Población y Vivienda 2020, INEGI",
+                "year": 2020,
+                "note": "Population shares of Mexico City's 16 boroughs (alcaldías).",
+                "url": "https://en.www.inegi.org.mx/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Álvaro Obregón": 0.0824,
+        "Azcapotzalco": 0.0469,
+        "Benito Juárez": 0.0471,
+        "Coyoacán": 0.0667,
+        "Cuajimalpa": 0.0236,
+        "Cuauhtémoc": 0.0593,
+        "Gustavo A. Madero": 0.1274,
+        "Iztacalco": 0.0439,
+        "Iztapalapa": 0.1993,
+        "La Magdalena Contreras": 0.0269,
+        "Miguel Hidalgo": 0.045,
+        "Milpa Alta": 0.0166,
+        "Tláhuac": 0.0426,
+        "Tlalpan": 0.076,
+        "Venustiano Carranza": 0.0482,
+        "Xochimilco": 0.048
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}
