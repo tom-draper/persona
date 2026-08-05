@@ -93,6 +93,8 @@ granularity.
 - [X] `seoul`
 - [X] `shanghai`
 - [X] `bangkok`
+- [X] `metro_manila` (`manila`)
+- [X] `delhi`
 
 ## Countries
 

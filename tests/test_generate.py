@@ -690,6 +690,16 @@ def test_third_city_batch_inherits_and_stays_explicit():
     assert not any(d in loc for loc in kr_locs for d in kr_districts)
 
 
+def test_metro_manila_and_delhi_inherit():
+    """Metro Manila (under the Philippines) and Delhi (under India) inherit their
+    country baseline and label location by their own subdivisions."""
+    for city, label in [("metro_manila", "Metro Manila"), ("delhi", "Delhi")]:
+        samples = gen_samples(city, N=40, seed=13)
+        for s in samples:
+            assert {"age", "sex", "religion", "education"} <= set(s)  # inherited baseline
+        assert all(s["location"].endswith(label) for s in samples)
+
+
 def test_city_alias_resolves():
     from persona.lib.format import clean_location
 
@@ -697,6 +707,7 @@ def test_city_alias_resolves():
     assert clean_location("cdmx") == "mexico_city"
     assert clean_location("caba") == "buenos_aires"
     assert clean_location("constantinople") == "istanbul"
+    assert clean_location("manila") == "metro_manila"
     assert gen_samples("nyc", N=1, seed=1)[0]["location"].endswith("New York City")
 
 
