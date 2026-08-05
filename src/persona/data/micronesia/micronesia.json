@@ -1,0 +1,97 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook, Central Intelligence Agency",
+                "year": 2016,
+                "url": "https://www.cia.gov/the-world-factbook/countries/micronesia-federated-states-of/",
+                "note": "Self-reported religious affiliation."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 1994,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1077,
+        "5-9": 0.1059,
+        "10-14": 0.1077,
+        "15-19": 0.1034,
+        "20-24": 0.098,
+        "25-29": 0.0896,
+        "30-34": 0.0727,
+        "35-39": 0.0545,
+        "40-44": 0.0472,
+        "45-49": 0.0435,
+        "50-54": 0.0406,
+        "55-59": 0.038,
+        "60-64": 0.0338,
+        "65-69": 0.0272,
+        "70-74": 0.0169,
+        "75-79": 0.008,
+        "80-84": 0.0037,
+        "85+": 0.0016
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "Roman Catholicism": 0.526,
+        "Christianity or Other Christianity": 0.427,
+        "Other": 0.047
+    },
+    "residence": {
+        "Urban": 0.225,
+        "Rural": 0.775
+    },
+    "marital status": {
+        "Single (never married)": 0.3842,
+        "Married": 0.5357,
+        "Widowed": 0.0461,
+        "Divorced": 0.034
+    },
+    "education": {
+        "No schooling": 0.0601,
+        "Primary education": 0.1438,
+        "Secondary education": 0.6954,
+        "Tertiary education": 0.1007
+    }
+}

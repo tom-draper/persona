@@ -269,6 +269,21 @@ granularity.
 - [X] `bahamas`
 - [X] `belize`
 - [X] `barbados`
+- [X] `maldives`
+- [X] `comoros`
+- [X] `monaco`
+- [X] `seychelles`
+- [X] `sao_tome_and_principe`
+- [X] `antigua_and_barbuda`
+- [X] `grenada`
+- [X] `saint_lucia`
+- [X] `saint_vincent_and_the_grenadines`
+- [X] `samoa`
+- [X] `tonga`
+- [X] `kiribati`
+- [X] `micronesia`
+- [X] `vanuatu`
+- [X] `solomon_islands`
 
 ## US States
 
