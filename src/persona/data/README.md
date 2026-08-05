@@ -259,6 +259,16 @@ granularity.
 - [X] `israel`
 - [X] `luxembourg`
 - [X] `libya`
+- [X] `malawi`
+- [X] `mauritius`
+- [X] `guyana`
+- [X] `suriname`
+- [X] `brunei`
+- [X] `cape_verde` / `cabo_verde`
+- [X] `burundi`
+- [X] `bahamas`
+- [X] `belize`
+- [X] `barbados`
 
 ## US States
 

@@ -1,0 +1,119 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Population Census 2021, Department of Economic Planning and Statistics",
+                "year": 2021,
+                "url": "https://deps.mofe.gov.bn/",
+                "note": "Self-reported religious affiliation."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2011,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0685,
+        "5-9": 0.072,
+        "10-14": 0.0698,
+        "15-19": 0.0707,
+        "20-24": 0.0799,
+        "25-29": 0.089,
+        "30-34": 0.0908,
+        "35-39": 0.0881,
+        "40-44": 0.0819,
+        "45-49": 0.0724,
+        "50-54": 0.063,
+        "55-59": 0.0493,
+        "60-64": 0.0395,
+        "65-69": 0.0286,
+        "70-74": 0.0184,
+        "75-79": 0.0094,
+        "80-84": 0.0057,
+        "85+": 0.003
+    },
+    "sex": {
+        "Male": 0.531,
+        "Female": 0.469
+    },
+    "religion": {
+        "Islam": 0.821,
+        "Christianity or Other Christianity": 0.067,
+        "Buddhism": 0.063,
+        "Other": 0.049
+    },
+    "residence": {
+        "Urban": 0.75,
+        "Rural": 0.25
+    },
+    "marital status": {
+        "Single (never married)": 0.372,
+        "Married": 0.5756,
+        "Widowed": 0.0301,
+        "Divorced": 0.0223
+    },
+    "education": {
+        "No schooling": 0.0483,
+        "Primary education": 0.3416,
+        "Secondary education": 0.5138,
+        "Tertiary education": 0.0963
+    },
+    "occupation": {
+        "Managers": 0.0658,
+        "Professionals": 0.1784,
+        "Technicians and associate professionals": 0.148,
+        "Clerical support workers": 0.1039,
+        "Service and sales workers": 0.2012,
+        "Skilled agricultural, forestry and fishery workers": 0.0091,
+        "Craft and related trades workers": 0.0892,
+        "Plant and machine operators and assemblers": 0.0355,
+        "Elementary occupations": 0.1406,
+        "Armed forces occupations": 0.0282
+    }
+}

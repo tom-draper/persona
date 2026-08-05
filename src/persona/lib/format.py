@@ -45,6 +45,7 @@ alias = {
     "caba": "buenos_aires",
     "constantinople": "istanbul",
     "manila": "metro_manila",
+    "cabo_verde": "cape_verde",
 }
 
 
