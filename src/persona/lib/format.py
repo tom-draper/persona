@@ -42,6 +42,8 @@ alias = {
     "cdmx": "mexico_city",
     "ciudad_de_mexico": "mexico_city",
     "roma": "rome",
+    "caba": "buenos_aires",
+    "constantinople": "istanbul",
 }
 
 

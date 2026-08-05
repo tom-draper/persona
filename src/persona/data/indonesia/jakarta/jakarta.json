@@ -1,0 +1,36 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Sensus Penduduk 2020, Badan Pusat Statistik (BPS)",
+                "year": 2020,
+                "note": "Population shares of Jakarta's five administrative cities and the Thousand Islands regency.",
+                "url": "https://www.bps.go.id/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "East Jakarta": 0.2876,
+        "West Jakarta": 0.2305,
+        "South Jakarta": 0.2108,
+        "North Jakarta": 0.1684,
+        "Central Jakarta": 0.1001,
+        "Thousand Islands": 0.0026
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

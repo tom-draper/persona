@@ -552,97 +552,67 @@ def test_parse_age_bucket_zero():
 
 
 # ---------------------------------------------------------------------------
-# Nested composites + self/remainder branch (interior node with own leaf)
+# Cities: nested leaves reached by bare-name expansion, not country descent
 # ---------------------------------------------------------------------------
 
 
-def test_england_resolves_to_both_london_and_its_own_leaf():
-    """England is an interior node: a composite that carves out London while
-    keeping its own dataset via a self/remainder branch."""
-    from persona.lib.generate import resolve_location
-
-    rng = np.random.default_rng(0)
-    innermost = {resolve_location("england", rng)[0][-1].parent.name for _ in range(400)}
-    assert "london" in innermost  # carved-out sublocation is reachable
-    assert "england" in innermost  # self branch resolves back to england's leaf
-
-
-def test_self_branch_adds_no_label_but_sublocation_does():
-    from persona.lib.generate import resolve_location
-
-    rng = np.random.default_rng(1)
-    saw_london_label = saw_self = False
-    for _ in range(400):
-        chain, labels = resolve_location("england", rng)
-        names = [p.parent.name for p in chain]
-        if names[-1] == "london":
-            assert names == ["england", "london"]  # inherits england's baseline
-            assert labels == ["london"]
-            saw_london_label = True
-        elif names[-1] == "england":
-            assert names == ["england"]
-            assert labels == []  # self branch adds no redundant "England"
-            saw_self = True
-    assert saw_london_label and saw_self
+def test_country_query_never_yields_a_citys_detail():
+    """A country query is internally consistent: it never descends into a nested
+    city, so no city-level (ward/district) detail leaks into its personas."""
+    tokyo_wards = {"Setagaya", "Suginami", "Shibuya", "Meguro", "Adachi", "Nerima", "Ōta"}
+    japan_locs = [s.get("location", "") for s in gen_samples("japan", N=500, seed=1)]
+    assert japan_locs and not any(w in loc for loc in japan_locs for w in tokyo_wards)
+    ist_districts = {"Fatih", "Pendik", "Kartal", "Maltepe", "Tuzla"}
+    turkey_locs = [s.get("location", "") for s in gen_samples("turkey", N=500, seed=1)]
+    assert not any(d in loc for loc in turkey_locs for d in ist_districts)
 
 
-def test_uk_can_reach_london_three_levels_deep():
-    """united_kingdom -> england -> london, with labels accumulating."""
+def test_uk_composite_yields_only_its_nations():
+    """The retained sub-national composite distributes over the four nations at a
+    uniform granularity — it never descends three levels into a city."""
     from persona.lib.generate import resolve_location
 
     rng = np.random.default_rng(2)
-    reached_london = False
-    for _ in range(2000):
-        chain, labels = resolve_location("united_kingdom", rng)
-        names = [p.parent.name for p in chain]
-        if names[-1] == "london":
-            assert names == ["england", "london"]
-            assert labels == ["london", "england"]
-            reached_london = True
-    assert reached_london
+    innermost = {resolve_location("united_kingdom", rng)[0][-1].parent.name for _ in range(400)}
+    assert innermost <= {"england", "scotland", "wales", "northern_ireland"}
 
 
-def test_london_personas_are_complete_via_overlay():
-    """A London draw through England inherits age/sex/etc from england.json,
-    so every persona is complete despite london.json being a partial leaf."""
-    for sample in gen_samples("england", N=200, seed=3):
-        assert "age" in sample and "sex" in sample
-        assert isinstance(sample["age"], int)
+def test_bare_city_expands_through_parent_leaf_chain():
+    """A bare city name resolves as its ancestor-leaf chain (england -> london),
+    inheriting the parent baseline; a bare country is left single-segment."""
+    from persona.lib.generate import _expand_to_path, _segments
+
+    assert _expand_to_path(_segments("london")) == ["england", "london"]
+    assert _expand_to_path(_segments("tokyo")) == ["japan", "tokyo"]
+    assert _expand_to_path(_segments("england")) == ["england"]
 
 
-def test_england_draws_include_london_and_english_districts():
-    locs = [s.get("location", "") for s in gen_samples("england", N=400, seed=4)]
-    assert any(loc == "London" for loc in locs)  # carved-out sublocation label
-    assert any("London" not in loc and loc for loc in locs)  # england self branch
-
-
-def test_london_overlay_uses_london_specific_religion():
-    """Overlay must let London override a shared feature (religion) rather than
-    just inherit England's."""
+def test_bare_london_is_complete_and_overrides_religion():
+    """A bare London persona inherits England's baseline (so it is complete) and
+    applies London's own religion distribution rather than England's."""
     import json
 
     from persona.lib.generate import DATA_DIR
 
+    for sample in gen_samples("london", N=200, seed=3):
+        assert "age" in sample and "sex" in sample and isinstance(sample["age"], int)
     london = json.loads((DATA_DIR / "united_kingdom/england/london/london.json").read_text())
-    london_religions = set(london["religion"])
-    seen = set()
-    for sample in gen_samples("england", enabled_features={"religion"}, N=600, seed=5):
-        seen.add(sample["religion"])
-    # London's religion labels are a subset of what england draws can produce.
-    assert london_religions & seen
+    seen = {
+        s["religion"]
+        for s in gen_samples("london", enabled_features={"religion"}, N=400, seed=5)
+    }
+    assert seen <= set(london["religion"])  # London's own religion labels, not England's
 
 
-def test_get_features_recurses_through_interior_node():
-    """England's /features/ must union its own leaf features with London's."""
-    from persona.api.handler import get_features, load_location_data
+def test_country_features_endpoint_excludes_nested_city():
+    """A country's /features/ lists its own schema; a nested city is a separate
+    location and is not unioned into the country's feature set."""
+    from persona.api.handler import get_features, load_location_data, resolve_key
 
     data = load_location_data()
-    from persona.api.handler import resolve_key
-
     england = set(get_features("england", data)["england"])
-    london_leaf = {k for k in data[resolve_key("london", data)]["leaf"] if k != "_meta"}
     england_leaf = {k for k in data[resolve_key("england", data)]["leaf"] if k != "_meta"}
-    assert england == england_leaf | london_leaf
+    assert england == england_leaf
 
 
 def test_bare_city_inherits_parent_baseline():
@@ -692,11 +662,28 @@ def test_new_cities_inherit_parent_and_override_location():
         assert all(s["location"].endswith(city.replace("_", " ").title()) for s in samples)
 
 
+def test_second_city_batch_inherits_and_labels():
+    """Buenos Aires, Istanbul and Jakarta inherit their country and label by
+    district; their parents yield them via a population-share composite."""
+    for city, city_label in [
+        ("buenos_aires", "Buenos Aires"),
+        ("istanbul", "Istanbul"),
+        ("jakarta", "Jakarta"),
+    ]:
+        samples = gen_samples(city, N=40, seed=11)
+        for s in samples:
+            assert "age" in s and "religion" in s
+        assert sum(s["residence"] == "Urban" for s in samples) >= 0.8 * len(samples)
+        assert all(s["location"].endswith(city_label) for s in samples)
+
+
 def test_city_alias_resolves():
     from persona.lib.format import clean_location
 
     assert clean_location("nyc") == "new_york_city"
     assert clean_location("cdmx") == "mexico_city"
+    assert clean_location("caba") == "buenos_aires"
+    assert clean_location("constantinople") == "istanbul"
     assert gen_samples("nyc", N=1, seed=1)[0]["location"].endswith("New York City")
 
 
@@ -735,7 +722,7 @@ def test_path_accepts_slash_and_alias():
 
 
 def test_partial_path_then_random_remainder():
-    # uk england -> forces England, then randomly London or England-proper
+    # uk england -> forces England, then fills in an English region at random
     locs = {s["location"] for s in gen_samples("united_kingdom england", N=300, seed=2)}
     assert any(loc.endswith("England") for loc in locs)
 

@@ -1,0 +1,69 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Address-Based Population Registration System (ADNKS), TÜİK",
+                "year": 2025,
+                "note": "Population shares of Istanbul's 39 districts.",
+                "url": "https://www.tuik.gov.tr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Adalar": 0.0011,
+        "Arnavutköy": 0.0228,
+        "Avcılar": 0.028,
+        "Bağcılar": 0.0449,
+        "Bahçelievler": 0.0342,
+        "Bakırköy": 0.0139,
+        "Başakşehir": 0.0341,
+        "Bayrampaşa": 0.0173,
+        "Beşiktaş": 0.0105,
+        "Beylikdüzü": 0.0268,
+        "Beyoğlu": 0.0137,
+        "Büyükçekmece": 0.018,
+        "Çatalca": 0.0052,
+        "Esenler": 0.0267,
+        "Esenyurt": 0.0637,
+        "Eyüpsultan": 0.027,
+        "Fatih": 0.0223,
+        "Gaziosmanpaşa": 0.0304,
+        "Güngören": 0.0159,
+        "Kağıthane": 0.0283,
+        "Küçükçekmece": 0.0498,
+        "Sarıyer": 0.0219,
+        "Silivri": 0.0152,
+        "Sultangazi": 0.0336,
+        "Şişli": 0.0166,
+        "Zeytinburnu": 0.0175,
+        "Ataşehir": 0.0262,
+        "Beykoz": 0.0157,
+        "Çekmeköy": 0.0201,
+        "Kadıköy": 0.0291,
+        "Kartal": 0.0302,
+        "Maltepe": 0.0333,
+        "Pendik": 0.0477,
+        "Sancaktepe": 0.0322,
+        "Şile": 0.0032,
+        "Sultanbeyli": 0.0241,
+        "Tuzla": 0.0199,
+        "Ümraniye": 0.0463,
+        "Üsküdar": 0.0326
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

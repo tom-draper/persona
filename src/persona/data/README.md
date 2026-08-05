@@ -74,8 +74,10 @@ country's most recent labour-force survey.
 
 A city is a partial dataset nested inside its country (or, for New York City,
 its US state): it carries its own districts and is flagged urban, and inherits
-every other feature from the parent. It is reached by bare name (`tokyo`) or
-through the parent, which yields the city in proportion to its population share.
+every other feature from the parent. A city is addressed explicitly, by bare
+name (`tokyo`) or full path — a *country* query never descends into a city, so
+every persona from a country stays consistent in its fields and its location
+granularity.
 
 - [X] `london`
 - [X] `paris`
@@ -85,6 +87,9 @@ through the parent, which yields the city in proportion to its population share.
 - [X] `tokyo`
 - [X] `mexico_city` (`cdmx`)
 - [X] `rome`
+- [X] `buenos_aires` (`caba`)
+- [X] `istanbul`
+- [X] `jakarta`
 
 ## Countries
 
