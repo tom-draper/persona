@@ -249,6 +249,16 @@ granularity.
 - [X] `sweden`
 - [X] `new_zealand`
 - [X] `united_arab_emirates` / `uae`
+- [X] `chile`
+- [X] `peru`
+- [X] `venezuela`
+- [X] `cuba`
+- [X] `belarus`
+- [X] `uzbekistan`
+- [X] `singapore`
+- [X] `israel`
+- [X] `luxembourg`
+- [X] `libya`
 
 ## US States
 
