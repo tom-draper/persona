@@ -95,6 +95,9 @@ granularity.
 - [X] `bangkok`
 - [X] `metro_manila` (`manila`)
 - [X] `delhi`
+- [X] `lima`
+- [X] `santiago`
+- [X] `caracas`
 
 ## Countries
 

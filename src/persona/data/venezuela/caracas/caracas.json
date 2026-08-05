@@ -1,0 +1,35 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Censo 2011, Instituto Nacional de Estadística (INE)",
+                "year": 2011,
+                "note": "Population shares of the five municipalities of the Metropolitan District of Caracas.",
+                "url": "https://www.ine.gob.ve/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Libertador": 0.6808,
+        "Sucre": 0.1963,
+        "Baruta": 0.0787,
+        "Chacao": 0.0233,
+        "El Hatillo": 0.0209
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

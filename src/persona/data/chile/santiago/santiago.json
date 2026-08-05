@@ -1,0 +1,62 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Censo 2002, Instituto Nacional de Estadísticas (INE)",
+                "year": 2002,
+                "note": "Population shares of the 32 communes of Santiago Province.",
+                "url": "https://www.ine.gob.cl/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Santiago": 0.043,
+        "Vitacura": 0.0175,
+        "San Ramón": 0.0203,
+        "San Miguel": 0.0169,
+        "San Joaquín": 0.0209,
+        "Renca": 0.0286,
+        "Recoleta": 0.0317,
+        "Quinta Normal": 0.0223,
+        "Quilicura": 0.0271,
+        "Pudahuel": 0.0419,
+        "Providencia": 0.0259,
+        "Peñalolén": 0.0463,
+        "Pedro Aguirre Cerda": 0.0245,
+        "Ñuñoa": 0.035,
+        "Maipú": 0.1003,
+        "Macul": 0.0241,
+        "Lo Prado": 0.0223,
+        "Lo Espejo": 0.0242,
+        "Lo Barnechea": 0.016,
+        "Las Condes": 0.0535,
+        "La Reina": 0.0207,
+        "La Pintana": 0.0407,
+        "La Granja": 0.0284,
+        "La Florida": 0.0783,
+        "La Cisterna": 0.0182,
+        "Independencia": 0.014,
+        "Huechuraba": 0.0159,
+        "Estación Central": 0.0279,
+        "El Bosque": 0.0376,
+        "Conchalí": 0.0285,
+        "Cerro Navia": 0.0318,
+        "Cerrillos": 0.0154
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

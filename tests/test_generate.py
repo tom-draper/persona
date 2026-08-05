@@ -700,6 +700,16 @@ def test_metro_manila_and_delhi_inherit():
         assert all(s["location"].endswith(label) for s in samples)
 
 
+def test_latin_american_cities_inherit_newly_added_countries():
+    """Lima, Santiago and Caracas sit under countries added this round; they
+    inherit the country baseline and label location by their own subdivisions."""
+    for city, label in [("lima", "Lima"), ("santiago", "Santiago"), ("caracas", "Caracas")]:
+        samples = gen_samples(city, N=30, seed=14)
+        for s in samples:
+            assert {"age", "sex", "religion", "education"} <= set(s)
+        assert all(s["location"].endswith(label) for s in samples)
+
+
 def test_city_alias_resolves():
     from persona.lib.format import clean_location
 
