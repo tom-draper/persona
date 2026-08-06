@@ -108,6 +108,9 @@ granularity.
 - [X] `barcelona`
 - [X] `milan` (`milano`)
 - [X] `amsterdam`
+- [X] `brussels` (`bruxelles`)
+- [X] `osaka`
+- [X] `montreal`
 
 ## Countries
 
