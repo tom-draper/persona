@@ -1,0 +1,40 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population projection by sub-city, Ethiopian Statistics Service",
+                "year": 2022,
+                "note": "Population shares of Addis Ababa's sub-cities (kifle ketema).",
+                "url": "https://www.statsethiopia.gov.et/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Addis Ketema": 0.0913,
+        "Akaky Kaliti": 0.0656,
+        "Arada": 0.0759,
+        "Bole": 0.1105,
+        "Gullele": 0.0957,
+        "Kirkos": 0.0791,
+        "Kolfe Keranio": 0.1835,
+        "Lideta": 0.0722,
+        "Nifas Silk-Lafto": 0.1128,
+        "Yeka": 0.1134
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

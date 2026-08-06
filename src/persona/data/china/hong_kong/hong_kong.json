@@ -1,0 +1,48 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Population Census, Census and Statistics Department (Hong Kong)",
+                "year": 2021,
+                "note": "Population shares of Hong Kong's 18 districts.",
+                "url": "https://www.censtatd.gov.hk/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Islands": 0.025,
+        "Kwai Tsing": 0.0669,
+        "North": 0.0418,
+        "Sai Kung": 0.066,
+        "Sha Tin": 0.0935,
+        "Tai Po": 0.0427,
+        "Tsuen Wan": 0.0432,
+        "Tuen Mun": 0.0684,
+        "Yuen Long": 0.0901,
+        "Kowloon City": 0.0554,
+        "Kwun Tong": 0.0908,
+        "Sham Shui Po": 0.0582,
+        "Wong Tai Sin": 0.0549,
+        "Yau Tsim Mong": 0.0419,
+        "Central and Western": 0.0318,
+        "Eastern": 0.0715,
+        "Southern": 0.0355,
+        "Wan Chai": 0.0225
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

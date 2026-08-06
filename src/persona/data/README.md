@@ -98,6 +98,9 @@ granularity.
 - [X] `lima`
 - [X] `santiago`
 - [X] `caracas`
+- [X] `beijing` (`peking`)
+- [X] `hong_kong`
+- [X] `addis_ababa`
 
 ## Countries
 

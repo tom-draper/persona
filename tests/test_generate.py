@@ -710,6 +710,20 @@ def test_latin_american_cities_inherit_newly_added_countries():
         assert all(s["location"].endswith(label) for s in samples)
 
 
+def test_asia_africa_cities_inherit_and_alias():
+    """Beijing, Hong Kong and Addis Ababa inherit their parent and label by
+    district; the peking alias resolves to beijing."""
+    from persona.lib.format import clean_location
+
+    assert clean_location("peking") == "beijing"
+    cities = [("beijing", "Beijing"), ("hong_kong", "Hong Kong"), ("addis_ababa", "Addis Ababa")]
+    for city, label in cities:
+        samples = gen_samples(city, N=30, seed=15)
+        for s in samples:
+            assert {"age", "sex", "religion"} <= set(s)
+        assert all(s["location"].endswith(label) for s in samples)
+
+
 def test_city_alias_resolves():
     from persona.lib.format import clean_location
 
