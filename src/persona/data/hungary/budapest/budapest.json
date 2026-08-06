@@ -1,0 +1,53 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Microcensus 2016, Hungarian Central Statistical Office (KSH)",
+                "year": 2016,
+                "note": "Population shares of Budapest's 23 districts.",
+                "url": "https://www.ksh.hu/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "District I": 0.0143,
+        "District II": 0.0511,
+        "District III": 0.0741,
+        "District IV": 0.0577,
+        "District V": 0.0149,
+        "District VI": 0.0219,
+        "District VII": 0.0303,
+        "District VIII": 0.0437,
+        "District IX": 0.0336,
+        "District X": 0.0446,
+        "District XI": 0.0863,
+        "District XII": 0.0331,
+        "District XIII": 0.0684,
+        "District XIV": 0.071,
+        "District XV": 0.0458,
+        "District XVI": 0.0418,
+        "District XVII": 0.0499,
+        "District XVIII": 0.0578,
+        "District XIX": 0.0345,
+        "District XX": 0.0371,
+        "District XXI": 0.0437,
+        "District XXII": 0.031,
+        "District XXIII": 0.0134
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

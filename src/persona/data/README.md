@@ -104,6 +104,10 @@ granularity.
 - [X] `vienna` (`wien`)
 - [X] `warsaw` (`warszawa`)
 - [X] `bucharest`
+- [X] `budapest`
+- [X] `barcelona`
+- [X] `milan` (`milano`)
+- [X] `amsterdam`
 
 ## Countries
 

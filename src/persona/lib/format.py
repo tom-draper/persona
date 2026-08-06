@@ -50,6 +50,7 @@ alias = {
     "hongkong": "hong_kong",
     "wien": "vienna",
     "warszawa": "warsaw",
+    "milano": "milan",
 }
 
 
