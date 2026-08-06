@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook, Central Intelligence Agency",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/liechtenstein/",
+                "note": "Self-reported religious affiliation."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2018,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0471,
+        "5-9": 0.0477,
+        "10-14": 0.0487,
+        "15-19": 0.0498,
+        "20-24": 0.0535,
+        "25-29": 0.0596,
+        "30-34": 0.0622,
+        "35-39": 0.0642,
+        "40-44": 0.0648,
+        "45-49": 0.0676,
+        "50-54": 0.0777,
+        "55-59": 0.0808,
+        "60-64": 0.0748,
+        "65-69": 0.0609,
+        "70-74": 0.0509,
+        "75-79": 0.042,
+        "80-84": 0.027,
+        "85+": 0.0208
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "Roman Catholicism": 0.73,
+        "Christianity or Other Christianity": 0.08,
+        "No religion": 0.07,
+        "Islam": 0.06,
+        "Other": 0.06
+    },
+    "residence": {
+        "Urban": 0.146,
+        "Rural": 0.854
+    },
+    "marital status": {
+        "Single (never married)": 0.3028,
+        "Married": 0.5372,
+        "Cohabiting": 0.0011,
+        "Widowed": 0.0611,
+        "Divorced": 0.0978
+    }
+}

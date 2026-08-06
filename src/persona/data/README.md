@@ -287,6 +287,15 @@ granularity.
 - [X] `micronesia`
 - [X] `vanuatu`
 - [X] `solomon_islands`
+- [X] `andorra`
+- [X] `san_marino`
+- [X] `liechtenstein`
+- [X] `nauru`
+- [X] `palau`
+- [X] `tuvalu`
+- [X] `dominica`
+- [X] `marshall_islands`
+- [X] `saint_kitts_and_nevis`
 
 ## US States
 
