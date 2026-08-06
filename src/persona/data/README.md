@@ -101,6 +101,9 @@ granularity.
 - [X] `beijing` (`peking`)
 - [X] `hong_kong`
 - [X] `addis_ababa`
+- [X] `vienna` (`wien`)
+- [X] `warsaw` (`warszawa`)
+- [X] `bucharest`
 
 ## Countries
 

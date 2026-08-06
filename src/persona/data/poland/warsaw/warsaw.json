@@ -1,0 +1,48 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Local Data Bank, Statistics Poland (GUS)",
+                "year": 2021,
+                "note": "Population shares of Warsaw's 18 districts (dzielnice).",
+                "url": "https://stat.gov.pl/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Mokotów": 0.1292,
+        "Praga-Południe": 0.1046,
+        "Ursynów": 0.0854,
+        "Wola": 0.0805,
+        "Bielany": 0.0777,
+        "Targówek": 0.0722,
+        "Śródmieście": 0.0718,
+        "Bemowo": 0.0678,
+        "Białołęka": 0.0565,
+        "Ochota": 0.0497,
+        "Wawer": 0.0409,
+        "Praga-Północ": 0.0407,
+        "Ursus": 0.0315,
+        "Żoliborz": 0.0283,
+        "Włochy": 0.0223,
+        "Wilanów": 0.014,
+        "Rembertów": 0.0136,
+        "Wesoła": 0.0134
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

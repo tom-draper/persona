@@ -1,0 +1,53 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population statistics, Statistics Austria",
+                "year": 2025,
+                "note": "Population shares of Vienna's 23 districts (Bezirke).",
+                "url": "https://www.statistik.at/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Innere Stadt": 0.008,
+        "Leopoldstadt": 0.0555,
+        "Landstraße": 0.0487,
+        "Wieden": 0.0165,
+        "Margareten": 0.027,
+        "Mariahilf": 0.0153,
+        "Neubau": 0.0154,
+        "Josefstadt": 0.012,
+        "Alsergrund": 0.0205,
+        "Favoriten": 0.11,
+        "Simmering": 0.0553,
+        "Meidling": 0.0504,
+        "Hietzing": 0.0277,
+        "Penzing": 0.0488,
+        "Rudolfsheim-Fünfhaus": 0.0374,
+        "Ottakring": 0.0506,
+        "Hernals": 0.028,
+        "Währing": 0.0253,
+        "Döbling": 0.0375,
+        "Brigittenau": 0.0429,
+        "Floridsdorf": 0.0934,
+        "Donaustadt": 0.1125,
+        "Liesing": 0.061
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

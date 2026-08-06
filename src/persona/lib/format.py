@@ -48,6 +48,8 @@ alias = {
     "cabo_verde": "cape_verde",
     "peking": "beijing",
     "hongkong": "hong_kong",
+    "wien": "vienna",
+    "warszawa": "warsaw",
 }
 
 
