@@ -10,7 +10,7 @@ from persona.lib.format import clean_location
 DATA_DIR = Path(__file__).parent.parent / "data"
 
 # Features only assigned to samples aged 16 or over.
-ADULT_ONLY_FEATURES = ("marital status", "occupation")
+ADULT_ONLY_FEATURES = ("marital status", "occupation", "employment status")
 
 
 def normalise_weights(weights: Iterable[float]) -> np.ndarray:

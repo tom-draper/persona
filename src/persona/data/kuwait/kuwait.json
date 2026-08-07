@@ -62,6 +62,15 @@
                 "year": 2016,
                 "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
                 "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
             }
         ]
     },
@@ -120,6 +129,11 @@
         "Craft and related trades workers": 0.2367,
         "Plant and machine operators and assemblers": 0.1077,
         "Elementary occupations": 0.2749
+    },
+    "employment status": {
+        "Employed": 0.7176,
+        "Unemployed": 0.016,
+        "Outside the labour force": 0.2664
     },
     "location": {
         "Farwaniya": 0.2638,

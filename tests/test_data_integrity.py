@@ -24,6 +24,7 @@ CANONICAL_FEATURES = {
     "age",
     "country of birth",
     "education",
+    "employment status",
     "ethnicity",
     "housing tenure",
     "language",

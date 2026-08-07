@@ -92,6 +92,15 @@
                 "year": 2025,
                 "note": "Urban-rural split; the UK-wide figure is applied because the four nations use different rural-urban thresholds.",
                 "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
             }
         ]
     },
@@ -200,6 +209,11 @@
         "Sales and customer service": 0.084,
         "Process, plant and machine operatives": 0.079,
         "Elementary occupations": 0.105
+    },
+    "employment status": {
+        "Employed": 0.5846,
+        "Unemployed": 0.0291,
+        "Outside the labour force": 0.3863
     },
     "education": {
         "No qualifications": 0.199,

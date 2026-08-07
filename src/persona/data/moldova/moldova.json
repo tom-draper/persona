@@ -63,6 +63,15 @@
                 "year": 2025,
                 "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
                 "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
             }
         ]
     },
@@ -122,6 +131,11 @@
         "Craft and related trades workers": 0.0786,
         "Plant and machine operators and assemblers": 0.0473,
         "Elementary occupations": 0.088
+    },
+    "employment status": {
+        "Employed": 0.712,
+        "Unemployed": 0.0109,
+        "Outside the labour force": 0.2771
     },
     "location": {
         "Chișinău": 0.38438,

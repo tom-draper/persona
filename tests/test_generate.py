@@ -300,6 +300,20 @@ def test_gen_samples_marital_status_only_if_age_16_plus():
             assert "marital status" not in sample
 
 
+def test_employment_status_is_adult_only_and_uses_canonical_labels():
+    labels = set()
+    for sample in gen_samples("netherlands", N=400, seed=7):
+        es = sample.get("employment status")
+        if sample["age"] < 16:
+            assert es is None
+        else:
+            assert es is not None
+            labels.add(es)
+    assert labels <= {"Employed", "Unemployed", "Outside the labour force"}
+    # all three surface across a healthy sample
+    assert "Employed" in labels and "Outside the labour force" in labels
+
+
 # ---------------------------------------------------------------------------
 # Seed reproducibility
 # ---------------------------------------------------------------------------
@@ -493,6 +507,7 @@ def test_get_features_global_returns_world_baseline(api_data):
         "residence",
         "marital status",
         "education",
+        "employment status",
         "location",
     }
 

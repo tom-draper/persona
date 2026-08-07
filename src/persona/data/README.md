@@ -29,8 +29,8 @@ to parity across all datasets:
 are *not* forced onto every dataset — coverage is inherently uneven across
 countries:
 
-`occupation`, `ethnicity`, `language`, `housing tenure`, `country of birth`,
-`sexuality`.
+`occupation`, `employment status`, `ethnicity`, `language`, `housing tenure`,
+`country of birth`, `sexuality`.
 
 `occupation` is now available for most countries from a single harmonised source
 (see below), but it stays in the extended tier: it describes only *employed*
@@ -69,6 +69,16 @@ the highest level attained.
 (International Labour Organization): the distribution of employed people across
 the ISCO-08 (or, as a fallback, ISCO-88) major occupational groups, from each
 country's most recent labour-force survey.
+
+`employment status` splits the population aged 15 and over into `Employed`,
+`Unemployed` and `Outside the labour force`. It is derived from two World Bank
+series (modelled ILO estimates) — the labour-force participation rate and the
+unemployment rate — so it is available for almost every country on one
+consistent method. Like marital status and occupation it is only assigned to
+adults. It is drawn independently of `occupation`, so an occasional persona is
+both unemployed and carries an occupation; see the independence caveat in the
+top-level README. A handful of microstates have no World Bank estimate and omit
+the feature.
 
 ## Cities
 

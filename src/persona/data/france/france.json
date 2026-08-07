@@ -48,6 +48,15 @@
                 "year": 2020,
                 "note": "Self-declared religion of respondents aged 18-49; France does not record religion in its census.",
                 "url": "https://teo.site.ined.fr/en/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
             }
         ]
     },
@@ -119,6 +128,11 @@
         "Artisans, traders and entrepreneurs": 0.062,
         "Farmers": 0.013,
         "Other": 0.025
+    },
+    "employment status": {
+        "Employed": 0.5118,
+        "Unemployed": 0.0417,
+        "Outside the labour force": 0.4465
     },
     "housing tenure": {
         "Owned outright": 0.285,

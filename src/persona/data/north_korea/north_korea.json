@@ -54,6 +54,15 @@
                 "year": 2020,
                 "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
                 "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
             }
         ]
     },
@@ -97,6 +106,11 @@
         "Married": 0.6612,
         "Widowed": 0.0891,
         "Divorced": 0.0043
+    },
+    "employment status": {
+        "Employed": 0.7924,
+        "Unemployed": 0.0291,
+        "Outside the labour force": 0.1785
     },
     "education": {
         "No schooling": 0.0013,

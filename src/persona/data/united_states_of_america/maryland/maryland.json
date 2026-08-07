@@ -32,6 +32,15 @@
                 "year": 2020,
                 "note": "Split of the state population between urban and rural areas.",
                 "url": "https://www.census.gov/programs-surveys/geography/guidance/geo-areas/urban-rural.html"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
             }
         ]
     },
@@ -75,6 +84,11 @@
         "Sales and office": 0.171,
         "Natural resources, construction and maintenance": 0.073,
         "Production, transportation and material moving": 0.084
+    },
+    "employment status": {
+        "Employed": 0.5911,
+        "Unemployed": 0.0259,
+        "Outside the labour force": 0.383
     },
     "education": {
         "Less than high school": 0.086,
