@@ -30,6 +30,7 @@ CANONICAL_FEATURES = {
     "language",
     "location",
     "marital status",
+    "name",
     "occupation",
     "religion",
     "residence",
@@ -154,6 +155,17 @@ def test_feature_names_are_canonical(path, loaded):
 @pytest.mark.parametrize("path", DATASETS, ids=name)
 def test_distributions_have_plausible_mass(path, loaded):
     for feature, values in features(loaded[path]).items():
+        # "name" is a conditional distribution: each (sex, birth-decade)
+        # sub-distribution is its own draw and must sum to ~1 on its own,
+        # rather than the whole feature summing to 1 like a marginal.
+        if feature == "name":
+            for sex, by_cohort in values.items():
+                for cohort, dist in by_cohort.items():
+                    mass = sum(dist.values())
+                    assert MIN_MASS <= mass <= MAX_MASS, (
+                        f"{name(path)} :: name[{sex}][{cohort}] sums to {mass:.4f}"
+                    )
+            continue
         mass = sum(leaves(values))
         assert MIN_MASS <= mass <= MAX_MASS, f"{name(path)} :: {feature} sums to {mass:.4f}"
 

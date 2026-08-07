@@ -29,8 +29,17 @@ to parity across all datasets:
 are *not* forced onto every dataset — coverage is inherently uneven across
 countries:
 
-`occupation`, `employment status`, `ethnicity`, `language`, `housing tenure`,
-`country of birth`, `sexuality`.
+`name`, `occupation`, `employment status`, `ethnicity`, `language`,
+`housing tenure`, `country of birth`, `sexuality`.
+
+`name` is the one feature not drawn as an independent marginal. A given name is
+picked *conditionally* on the persona's own `sex` and `age`: the data is a
+`{sex: {birth-decade: {name: weight}}}` table, and generation reads the drawn
+sex and maps the age to a birth-decade cohort so the name lands sex- and
+era-appropriate (a child gets a recent name, an older persona a name that was
+popular when they were born). It leads the generated persona. Coverage is
+uneven — a name table exists only where good by-year, by-sex popularity data
+does — and where it is absent the persona simply has no name.
 
 `occupation` is now available for most countries from a single harmonised source
 (see below), but it stays in the extended tier: it describes only *employed*
@@ -69,6 +78,12 @@ the highest level attained.
 (International Labour Organization): the distribution of employed people across
 the ISCO-08 (or, as a fallback, ISCO-88) major occupational groups, from each
 country's most recent labour-force survey.
+
+`name`, for the United States, comes from the Social Security Administration's
+popular-baby-names series (births by name, sex and year): the most common names
+of each decade from the 1920s to the 2000s, per sex. Cohorts born after the
+data ends fall back to the most recent decade. Other countries will follow as
+comparable by-year, by-sex sources are added.
 
 `employment status` splits the population aged 15 and over into `Employed`,
 `Unemployed` and `Outside the labour force`. It is derived from two World Bank

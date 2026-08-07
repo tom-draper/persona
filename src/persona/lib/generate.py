@@ -238,6 +238,40 @@ def gen_feature(data: dict, rng: np.random.Generator) -> str:
     return str(rng.choice(options, p=p))
 
 
+# Features drawn conditionally on already-generated fields rather than as an
+# independent marginal. "name" is picked from a {sex: {birth-decade: {name:
+# weight}}} table using the sample's own sex and age, so it lands era- and
+# sex-appropriate. Handled separately from the marginal features and never fed
+# to collapsed_dict/gen_feature (which would flatten the conditioning).
+CONDITIONAL_FEATURES = ("name",)
+# Birth year that age 0 maps to when choosing a name's birth-decade cohort.
+NAME_REFERENCE_YEAR = 2025
+
+
+def _name_cohort(age: int, buckets: Iterable[str]) -> str:
+    """Map an age to the nearest available birth-decade bucket, e.g. "1980s"."""
+    birth_decade = (NAME_REFERENCE_YEAR - age) // 10 * 10
+    available = sorted(int(b.rstrip("s")) for b in buckets)
+    nearest = min(available, key=lambda d: abs(d - birth_decade))
+    return f"{nearest}s"
+
+
+def gen_name(
+    name_data: dict, sex: str | None, age: int | None, rng: np.random.Generator
+) -> str | None:
+    """Draw a given name conditioned on sex and birth cohort. Returns None when
+    the table has no entry for the drawn sex (so the feature is simply omitted
+    rather than guessed)."""
+    by_sex = name_data.get(sex) if sex is not None else None
+    if not by_sex:
+        return None
+    cohort = _name_cohort(age if age is not None else 40, by_sex.keys())
+    dist = by_sex[cohort]
+    names = np.array(list(dist.keys()))
+    p = normalise_weights(dist.values())
+    return str(rng.choice(names, p=p))
+
+
 def gen_sample(
     data: dict,
     enabled_features: set[str] | None,
@@ -246,13 +280,23 @@ def gen_sample(
     sample = {}
     for feature, _data in data.items():
         feature = feature.lower()
-        if feature == "_meta":
+        if feature == "_meta" or feature in CONDITIONAL_FEATURES:
             continue
         if enabled_features is None or feature in enabled_features:
             if feature == "age":
                 sample[feature] = gen_age(_data, rng)
             elif feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
                 sample[feature] = gen_feature(_data, rng)
+    if "name" in data and (enabled_features is None or "name" in enabled_features):
+        sex = sample.get("sex")
+        if sex is None and "sex" in data:
+            sex = gen_feature(data["sex"], rng)
+        age = sample.get("age")
+        if age is None and "age" in data:
+            age = gen_age(data["age"], rng)
+        nm = gen_name(data["name"], sex, age, rng)
+        if nm is not None:
+            sample = {"name": nm, **sample}  # name leads the persona
     return sample
 
 
@@ -324,6 +368,18 @@ def preprocess_location_data(data: dict) -> dict:
                         "keys": np.array(list(feature_data.keys())),
                         "probs": normalise_weights(feature_data.values()),
                     }
+                elif feature == "name":
+                    # {sex: {cohort: {options, probs}}} — drawn conditionally.
+                    processed["name"] = {
+                        sex: {
+                            cohort: {
+                                "options": np.array(list(dist.keys())),
+                                "probs": normalise_weights(dist.values()),
+                            }
+                            for cohort, dist in by_cohort.items()
+                        }
+                        for sex, by_cohort in feature_data.items()
+                    }
                 else:
                     col = collapsed_dict(feature_data)
                     processed[feature] = {
@@ -369,6 +425,18 @@ def _expand_to_path(segments: list[str]) -> list[str]:
 
 def _fmt_label(label: str) -> str:
     return label.replace("_", " ").title()
+
+
+def _gen_name_processed(
+    proc: dict, sex: str | int | None, age: int | None, rng: np.random.Generator
+) -> str | None:
+    """Preprocessed-array equivalent of gen_name (see CONDITIONAL_FEATURES)."""
+    by_sex = proc.get(sex) if sex is not None else None
+    if not by_sex:
+        return None
+    cohort = _name_cohort(age if age is not None else 40, by_sex.keys())
+    dist = by_sex[cohort]
+    return str(rng.choice(dist["options"], p=dist["probs"]))
 
 
 def gen_api_samples(
@@ -417,6 +485,8 @@ def gen_api_samples(
 
         sample: dict[str, str | int] = {}
         for feature, proc in merged.items():
+            if feature in CONDITIONAL_FEATURES:
+                continue
             if enabled_features is not None and feature not in enabled_features:
                 continue
             if feature == "age":
@@ -424,6 +494,18 @@ def gen_api_samples(
                 sample["age"] = _parse_age_bucket(bucket, rng)
             elif feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
                 sample[feature] = str(rng.choice(proc["options"], p=proc["probs"]))
+
+        if "name" in merged and (enabled_features is None or "name" in enabled_features):
+            sex = sample.get("sex")
+            if sex is None and "sex" in merged:
+                sex = str(rng.choice(merged["sex"]["options"], p=merged["sex"]["probs"]))
+            age = sample.get("age")
+            if age is None and "age" in merged:
+                bucket = str(rng.choice(merged["age"]["keys"], p=merged["age"]["probs"]))
+                age = _parse_age_bucket(bucket, rng)
+            nm = _gen_name_processed(merged["name"], sex, age, rng)
+            if nm is not None:
+                sample = {"name": nm, **sample}  # name leads the persona
 
         if enabled_features is None or "location" in enabled_features:
             for label in location_labels:

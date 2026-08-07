@@ -300,6 +300,40 @@ def test_gen_samples_marital_status_only_if_age_16_plus():
             assert "marital status" not in sample
 
 
+def test_gen_name_is_conditioned_on_sex_and_cohort():
+    from persona.lib.generate import gen_name
+
+    table = {
+        "Male": {"1950s": {"Robert": 1.0}, "2000s": {"Jayden": 1.0}},
+        "Female": {"1950s": {"Susan": 1.0}, "2000s": {"Emma": 1.0}},
+    }
+    rng = np.random.default_rng(0)
+    # sex picks the branch; age picks the birth-decade cohort
+    assert gen_name(table, "Female", 5, rng) == "Emma"  # born ~2020 -> 2000s
+    assert gen_name(table, "Female", 70, rng) == "Susan"  # born ~1955 -> 1950s
+    assert gen_name(table, "Male", 20, rng) == "Jayden"  # born ~2005 -> 2000s
+    # a sex the table does not cover yields no name rather than a wrong guess
+    assert gen_name(table, "Other", 30, rng) is None
+
+
+def test_names_are_generated_for_all_ages_and_lead_the_persona():
+    seen_child = seen_adult = False
+    for sample in gen_samples("california", N=300, seed=3):
+        assert "name" in sample
+        # name leads the persona
+        assert next(iter(sample)) == "name"
+        if sample["age"] < 16:
+            seen_child = True
+        else:
+            seen_adult = True
+    assert seen_child and seen_adult
+
+
+def test_bare_city_under_us_state_inherits_names():
+    # New York City sits under the New York state leaf, which carries names.
+    assert all("name" in s for s in gen_samples("new_york_city", N=20, seed=1))
+
+
 def test_employment_status_is_adult_only_and_uses_canonical_labels():
     labels = set()
     for sample in gen_samples("netherlands", N=400, seed=7):
