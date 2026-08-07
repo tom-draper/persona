@@ -372,6 +372,8 @@ A random sub-location is selected, weighted by population.
 
 ## Global
 
-The `global` location is a self-contained world-baseline dataset: it draws age and sex from the UN's world population estimates, religion from Pew's Global Religious Landscape, and a `location` that is a random country weighted by share of world population. It is deliberately **not** a composite over every country (that would only ever be as representative as the handful of countries with datasets). A future enhancement could layer the interior-composite mechanism on top so that when `global` lands on a country that does have a dataset, it yields that country's richer persona instead of the world baseline.
+The `global` location is a self-contained world-baseline dataset: it draws age and sex from the UN's world population estimates, religion from Pew's Global Religious Landscape, and a `location` that is a random country weighted by share of world population. It is deliberately **not** a composite over every country (that would only ever be as representative as the handful of countries with datasets).
+
+It is also deliberately kept flat rather than descending into a matched country's dataset when its `location` roll happens to land on one we have: a single location must always yield a consistent set of fields, and country datasets carry uneven extended features (ethnicity, language, housing tenure, …), so descending would make `global` return a different field set from one draw to the next. This is the same field-consistency principle that keeps cities explicit-only.
 
 - [X] `global`
