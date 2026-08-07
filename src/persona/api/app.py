@@ -16,6 +16,7 @@ from persona.lib.generate import gen_api_samples
 def _location_names(data: dict) -> list[str]:
     return sorted({v["name"] for v in data.values()})
 
+
 _EXAMPLE_RESPONSE = [
     {
         "age": 34,

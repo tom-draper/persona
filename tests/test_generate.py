@@ -598,8 +598,7 @@ def test_bare_london_is_complete_and_overrides_religion():
         assert "age" in sample and "sex" in sample and isinstance(sample["age"], int)
     london = json.loads((DATA_DIR / "united_kingdom/england/london/london.json").read_text())
     seen = {
-        s["religion"]
-        for s in gen_samples("london", enabled_features={"religion"}, N=400, seed=5)
+        s["religion"] for s in gen_samples("london", enabled_features={"religion"}, N=400, seed=5)
     }
     assert seen <= set(london["religion"])  # London's own religion labels, not England's
 
