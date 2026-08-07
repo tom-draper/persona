@@ -367,7 +367,7 @@ granularity.
 
 A random sub-location is selected, weighted by population.
 
-- [x] `united_states_of_america` / `usa` (California, Florida and Texas only)
+- [x] `united_states_of_america` / `usa` (all 50 states, weighted by population)
 - [x] `united_kingdom` / `uk`
 
 ## Global
