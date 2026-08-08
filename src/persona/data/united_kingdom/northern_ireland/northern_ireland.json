@@ -1,94 +1,261 @@
 {
-    "_meta": {
-        "sources": [
-            {
-                "features": [
-                    "country of birth"
-                ],
-                "name": "Country of birth - full detail (MS-A18), Census 2021, NISRA",
-                "year": 2021,
-                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-country-birth"
+    "name": {
+        "Male": {
+            "1990s": {
+                "Matthew": 0.0613,
+                "Ryan": 0.0532,
+                "James": 0.0505,
+                "Jack": 0.0439,
+                "Conor": 0.0417,
+                "Adam": 0.0388,
+                "Michael": 0.0366,
+                "Jordan": 0.0364,
+                "David": 0.0324,
+                "Andrew": 0.0323,
+                "Daniel": 0.0307,
+                "Aaron": 0.0306,
+                "Christopher": 0.0275,
+                "Thomas": 0.0273,
+                "Mark": 0.0258,
+                "Sean": 0.0237,
+                "Joshua": 0.0225,
+                "Jamie": 0.0223,
+                "John": 0.0222,
+                "Nathan": 0.0222,
+                "Dylan": 0.0219,
+                "Patrick": 0.0207,
+                "Stephen": 0.0192,
+                "Jonathan": 0.0189,
+                "Peter": 0.0189,
+                "Ciaran": 0.0168,
+                "William": 0.0166,
+                "Niall": 0.0162,
+                "Luke": 0.0161,
+                "Caolan": 0.0157,
+                "Callum": 0.0157,
+                "Paul": 0.0155,
+                "Kyle": 0.0142,
+                "Ross": 0.014,
+                "Ben": 0.0133,
+                "Samuel": 0.0132,
+                "Scott": 0.0131,
+                "Benjamin": 0.013,
+                "Connor": 0.0126,
+                "Robert": 0.0123
             },
-            {
-                "features": [
-                    "age",
-                    "sex"
-                ],
-                "name": "Five year age bands and sex (MS-A08), Census 2021, NISRA",
-                "year": 2021,
-                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-age-and-sex"
+            "2000s": {
+                "Jack": 0.0614,
+                "Matthew": 0.0546,
+                "James": 0.0469,
+                "Ryan": 0.0469,
+                "Adam": 0.0428,
+                "Daniel": 0.0393,
+                "Joshua": 0.0339,
+                "Conor": 0.0337,
+                "Dylan": 0.0312,
+                "Thomas": 0.0306,
+                "Ben": 0.0303,
+                "Ethan": 0.03,
+                "Jamie": 0.0294,
+                "Aaron": 0.0269,
+                "Michael": 0.0257,
+                "Luke": 0.0248,
+                "Sean": 0.0243,
+                "Callum": 0.0232,
+                "Nathan": 0.0213,
+                "Patrick": 0.0196,
+                "Jake": 0.0192,
+                "David": 0.0187,
+                "John": 0.0186,
+                "Lewis": 0.0185,
+                "Harry": 0.0181,
+                "Eoin": 0.0179,
+                "Oisin": 0.0179,
+                "Andrew": 0.0174,
+                "William": 0.0159,
+                "Shea": 0.0158,
+                "Samuel": 0.0158,
+                "Christopher": 0.0156,
+                "Charlie": 0.0156,
+                "Mark": 0.0155,
+                "Joseph": 0.0153,
+                "Benjamin": 0.0147,
+                "Cameron": 0.0139,
+                "Ronan": 0.0134,
+                "Kyle": 0.0129,
+                "Ciaran": 0.0128
             },
-            {
-                "features": [
-                    "sexuality"
-                ],
-                "name": "Sexual orientation, UK: 2020, ONS",
-                "year": 2020,
-                "note": "UK-wide estimate; not broken down by country.",
-                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
-            },
-            {
-                "features": [
-                    "ethnicity"
-                ],
-                "name": "Census 2021 main statistics ethnicity tables, NISRA",
-                "year": 2021,
-                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-ethnicity-tables"
-            },
-            {
-                "features": [
-                    "religion"
-                ],
-                "name": "Census 2021 main statistics religion tables, NISRA",
-                "year": 2021,
-                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-religion-tables"
-            },
-            {
-                "features": [
-                    "language"
-                ],
-                "name": "Census 2021 main statistics language tables, NISRA",
-                "year": 2021,
-                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-language-tables"
-            },
-            {
-                "features": [
-                    "location"
-                ],
-                "name": "Census 2021 main statistics for Northern Ireland (phase 1), NISRA",
-                "year": 2021,
-                "url": "https://www.nisra.gov.uk/statistics/census/2021-census"
-            },
-            {
-                "features": [
-                    "occupation",
-                    "education",
-                    "marital status",
-                    "housing tenure"
-                ],
-                "name": "Census 2021 main statistics for Northern Ireland (phase 2 & 3), NISRA",
-                "year": 2021,
-                "url": "https://www.nisra.gov.uk/statistics/census-2021-results/main-statistics"
-            },
-            {
-                "features": [
-                    "residence"
-                ],
-                "name": "Urban population (% of total population), World Bank",
-                "year": 2025,
-                "note": "Urban-rural split; the UK-wide figure is applied because the four nations use different rural-urban thresholds.",
-                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
-            },
-            {
-                "features": [
-                    "employment status"
-                ],
-                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
-                "year": 2025,
-                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
-                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            "2010s": {
+                "Jack": 0.0561,
+                "James": 0.0554,
+                "Charlie": 0.0426,
+                "Daniel": 0.0414,
+                "Noah": 0.0398,
+                "Harry": 0.0395,
+                "Matthew": 0.0341,
+                "Oliver": 0.0329,
+                "Ethan": 0.0327,
+                "Thomas": 0.0307,
+                "Jacob": 0.0307,
+                "Adam": 0.0266,
+                "Ryan": 0.0263,
+                "Conor": 0.0261,
+                "Alfie": 0.026,
+                "Joshua": 0.0251,
+                "Jake": 0.0236,
+                "Oisin": 0.0222,
+                "Luke": 0.0211,
+                "Michael": 0.0207,
+                "Jamie": 0.0198,
+                "Dylan": 0.0198,
+                "Mason": 0.0197,
+                "Logan": 0.0192,
+                "Leo": 0.0192,
+                "Joseph": 0.0178,
+                "Lucas": 0.0171,
+                "Riley": 0.017,
+                "Patrick": 0.017,
+                "Sean": 0.017,
+                "Ronan": 0.0169,
+                "Max": 0.0169,
+                "Finn": 0.0167,
+                "Caleb": 0.0166,
+                "Cillian": 0.0165,
+                "Ben": 0.0162,
+                "Jude": 0.016,
+                "Isaac": 0.0159,
+                "Darragh": 0.0157,
+                "Callum": 0.0153
             }
-        ]
+        },
+        "Female": {
+            "1990s": {
+                "Chloe": 0.0693,
+                "Emma": 0.0506,
+                "Rebecca": 0.0486,
+                "Lauren": 0.0425,
+                "Megan": 0.042,
+                "Amy": 0.0417,
+                "Shannon": 0.041,
+                "Sarah": 0.0407,
+                "Hannah": 0.0394,
+                "Rachel": 0.0384,
+                "Niamh": 0.0365,
+                "Caitlin": 0.0332,
+                "Courtney": 0.0297,
+                "Sophie": 0.0266,
+                "Laura": 0.0262,
+                "Nicole": 0.0243,
+                "Katie": 0.023,
+                "Aoife": 0.0218,
+                "Jessica": 0.0215,
+                "Anna": 0.0211,
+                "Ciara": 0.0198,
+                "Emily": 0.0182,
+                "Aimee": 0.0177,
+                "Erin": 0.0169,
+                "Catherine": 0.0164,
+                "Lucy": 0.0159,
+                "Caoimhe": 0.0153,
+                "Ellen": 0.0151,
+                "Claire": 0.0148,
+                "Victoria": 0.0147,
+                "Leah": 0.0131,
+                "Olivia": 0.0127,
+                "Rachael": 0.0126,
+                "Danielle": 0.0125,
+                "Eimear": 0.012,
+                "Kirsty": 0.0113,
+                "Zoe": 0.0111,
+                "Aine": 0.0107,
+                "Bethany": 0.0107,
+                "Naomi": 0.0106
+            },
+            "2000s": {
+                "Katie": 0.0489,
+                "Emma": 0.0431,
+                "Chloe": 0.0408,
+                "Sophie": 0.0379,
+                "Sarah": 0.0355,
+                "Hannah": 0.0351,
+                "Caitlin": 0.0342,
+                "Amy": 0.0337,
+                "Niamh": 0.0324,
+                "Lucy": 0.0318,
+                "Ellie": 0.0309,
+                "Anna": 0.03,
+                "Erin": 0.0297,
+                "Megan": 0.0294,
+                "Rebecca": 0.0292,
+                "Jessica": 0.0292,
+                "Grace": 0.0288,
+                "Aoife": 0.0277,
+                "Rachel": 0.0274,
+                "Lauren": 0.0267,
+                "Emily": 0.0264,
+                "Leah": 0.0259,
+                "Aimee": 0.0246,
+                "Molly": 0.0209,
+                "Cara": 0.0185,
+                "Olivia": 0.0179,
+                "Holly": 0.0173,
+                "Eva": 0.0167,
+                "Ella": 0.0165,
+                "Nicole": 0.0155,
+                "Caoimhe": 0.0155,
+                "Shannon": 0.0153,
+                "Ellen": 0.0152,
+                "Mia": 0.0145,
+                "Ciara": 0.0142,
+                "Eimear": 0.013,
+                "Laura": 0.0128,
+                "Charlotte": 0.0124,
+                "Abbie": 0.0122,
+                "Abigail": 0.0121
+            },
+            "2010s": {
+                "Emily": 0.0488,
+                "Grace": 0.0478,
+                "Sophie": 0.0433,
+                "Olivia": 0.037,
+                "Ella": 0.0356,
+                "Anna": 0.0335,
+                "Lucy": 0.0327,
+                "Sophia": 0.0319,
+                "Aoife": 0.0311,
+                "Amelia": 0.0308,
+                "Lily": 0.0304,
+                "Katie": 0.0298,
+                "Jessica": 0.0294,
+                "Eva": 0.0287,
+                "Ava": 0.0268,
+                "Ellie": 0.0266,
+                "Mia": 0.0252,
+                "Erin": 0.0247,
+                "Chloe": 0.0246,
+                "Emma": 0.0245,
+                "Isla": 0.0244,
+                "Hannah": 0.0236,
+                "Ruby": 0.0221,
+                "Niamh": 0.0221,
+                "Cara": 0.0221,
+                "Evie": 0.0214,
+                "Charlotte": 0.0207,
+                "Molly": 0.02,
+                "Sarah": 0.0197,
+                "Leah": 0.0182,
+                "Holly": 0.0167,
+                "Annie": 0.0166,
+                "Isabella": 0.0158,
+                "Freya": 0.0149,
+                "Caoimhe": 0.0134,
+                "Poppy": 0.0132,
+                "Maisie": 0.0131,
+                "Georgia": 0.013,
+                "Scarlett": 0.013,
+                "Amy": 0.0126
+            }
+        }
     },
     "age": {
         "0-4": 0.059805945022310125,
@@ -242,5 +409,105 @@
         "Mid Ulster": 0.07896961656179805,
         "Newry, Mourne and Down": 0.0956685538639379,
         "Ards and North Down": 0.08599261759953762
+    },
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "name"
+                ],
+                "name": "Baby Names, Northern Ireland Statistics and Research Agency",
+                "year": 2020,
+                "note": "Given name drawn conditionally on sex and birth decade, from registered-birth counts by decade (1990s-2010s). Cohorts born earlier fall back to the 1990s distribution.",
+                "url": "https://www.nisra.gov.uk/statistics/births/baby-names"
+            },
+            {
+                "features": [
+                    "country of birth"
+                ],
+                "name": "Country of birth - full detail (MS-A18), Census 2021, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-country-birth"
+            },
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "Five year age bands and sex (MS-A08), Census 2021, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-demography-tables-age-and-sex"
+            },
+            {
+                "features": [
+                    "sexuality"
+                ],
+                "name": "Sexual orientation, UK: 2020, ONS",
+                "year": 2020,
+                "note": "UK-wide estimate; not broken down by country.",
+                "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020"
+            },
+            {
+                "features": [
+                    "ethnicity"
+                ],
+                "name": "Census 2021 main statistics ethnicity tables, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-ethnicity-tables"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Census 2021 main statistics religion tables, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-religion-tables"
+            },
+            {
+                "features": [
+                    "language"
+                ],
+                "name": "Census 2021 main statistics language tables, NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/publications/census-2021-main-statistics-language-tables"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2021 main statistics for Northern Ireland (phase 1), NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/statistics/census/2021-census"
+            },
+            {
+                "features": [
+                    "occupation",
+                    "education",
+                    "marital status",
+                    "housing tenure"
+                ],
+                "name": "Census 2021 main statistics for Northern Ireland (phase 2 & 3), NISRA",
+                "year": 2021,
+                "url": "https://www.nisra.gov.uk/statistics/census-2021-results/main-statistics"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Urban-rural split; the UK-wide figure is applied because the four nations use different rural-urban thresholds.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
     }
 }
