@@ -79,11 +79,22 @@ the highest level attained.
 the ISCO-08 (or, as a fallback, ISCO-88) major occupational groups, from each
 country's most recent labour-force survey.
 
-`name`, for the United States, comes from the Social Security Administration's
-popular-baby-names series (births by name, sex and year): the most common names
-of each decade from the 1920s to the 2000s, per sex. Cohorts born after the
-data ends fall back to the most recent decade. Other countries will follow as
-comparable by-year, by-sex sources are added.
+`name` is built from official birth-registration name statistics, one country
+at a time, as the most common names of each decade per sex. It is drawn
+conditionally on the persona's own sex and birth cohort (see the extended-tier
+note above). Where the data ends before a persona's birth decade the nearest
+available decade is used. Coverage so far:
+
+- **United States** — Social Security Administration popular baby names, by
+  decade 1920s-2000s.
+- **France** — INSEE *fichier des prénoms* (national), by decade 1920s-2010s.
+- **United Kingdom** — all four nations, so every UK persona is named
+  consistently: England and Wales from ONS registered-birth counts (1990s-2010s)
+  plus the General Register Office historical top-100 (1920s-1980s, reweighted by
+  the recent data's rank-frequency curve); Scotland from National Records of
+  Scotland (1970s-2010s); Northern Ireland from NISRA (1990s-2010s).
+
+Other countries will follow as comparable by-year, by-sex sources are added.
 
 `employment status` splits the population aged 15 and over into `Employed`,
 `Unemployed` and `Outside the labour force`. It is derived from two World Bank
