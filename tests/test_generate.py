@@ -565,11 +565,11 @@ def test_get_enabled_features_returns_set_when_flags_set():
     assert get_enabled_features(args) == {"age", "sex"}
 
 
-def test_format_location_underscores_and_title():
-    from persona.cli import format_location
+def test_format_label_underscores_and_title():
+    from persona.lib.format import format_label
 
-    assert format_location("united_kingdom") == "United Kingdom"
-    assert format_location("england") == "England"
+    assert format_label("united_kingdom") == "United Kingdom"
+    assert format_label("england") == "England"
 
 
 # ---------------------------------------------------------------------------

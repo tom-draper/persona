@@ -60,3 +60,9 @@ def clean_location(location: str) -> str:
     if location in alias:
         location = alias[location]
     return location
+
+
+def format_label(label: str) -> str:
+    """Turn a stored location/label token into a display string:
+    ``united_kingdom`` -> ``United Kingdom``."""
+    return label.replace("_", " ").title()

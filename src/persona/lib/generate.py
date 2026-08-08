@@ -5,7 +5,7 @@ from pathlib import Path
 
 import numpy as np
 
-from persona.lib.format import clean_location
+from persona.lib.format import clean_location, format_label
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
@@ -256,17 +256,26 @@ def _name_cohort(age: int, buckets: Iterable[str]) -> str:
     return f"{nearest}s"
 
 
+def _name_cohort_dist(name_table: dict, sex: str | int | None, age: int | None) -> dict | None:
+    """Select the name distribution to draw from: the sub-table for `sex`, then
+    its birth-decade cohort nearest `age`. None when `sex` is absent from the
+    table (so the feature is omitted rather than guessed). Shared by both the
+    raw-dict (gen_name) and preprocessed (_gen_name_processed) draws."""
+    by_sex = name_table.get(sex) if sex is not None else None
+    if not by_sex:
+        return None
+    return by_sex[_name_cohort(age if age is not None else 40, by_sex.keys())]
+
+
 def gen_name(
     name_data: dict, sex: str | None, age: int | None, rng: np.random.Generator
 ) -> str | None:
     """Draw a given name conditioned on sex and birth cohort. Returns None when
     the table has no entry for the drawn sex (so the feature is simply omitted
     rather than guessed)."""
-    by_sex = name_data.get(sex) if sex is not None else None
-    if not by_sex:
+    dist = _name_cohort_dist(name_data, sex, age)
+    if dist is None:
         return None
-    cohort = _name_cohort(age if age is not None else 40, by_sex.keys())
-    dist = by_sex[cohort]
     names = np.array(list(dist.keys()))
     p = normalise_weights(dist.values())
     return str(rng.choice(names, p=p))
@@ -423,19 +432,28 @@ def _expand_to_path(segments: list[str]) -> list[str]:
     return [*prefix, segments[0]] if prefix else segments
 
 
-def _fmt_label(label: str) -> str:
-    return label.replace("_", " ").title()
+def _append_location_labels(
+    sample: dict, location_labels: list[str], enabled_features: set[str] | None
+) -> None:
+    """Append resolved sublocation labels (innermost first) onto the persona's
+    location field, honouring the location feature filter. Shared by the CLI and
+    API generators."""
+    if enabled_features is not None and "location" not in enabled_features:
+        return
+    for label in location_labels:
+        if "location" in sample:
+            sample["location"] += f", {format_label(label)}"
+        else:
+            sample["location"] = format_label(label)
 
 
 def _gen_name_processed(
     proc: dict, sex: str | int | None, age: int | None, rng: np.random.Generator
 ) -> str | None:
     """Preprocessed-array equivalent of gen_name (see CONDITIONAL_FEATURES)."""
-    by_sex = proc.get(sex) if sex is not None else None
-    if not by_sex:
+    dist = _name_cohort_dist(proc, sex, age)
+    if dist is None:
         return None
-    cohort = _name_cohort(age if age is not None else 40, by_sex.keys())
-    dist = by_sex[cohort]
     return str(rng.choice(dist["options"], p=dist["probs"]))
 
 
@@ -507,12 +525,7 @@ def gen_api_samples(
             if nm is not None:
                 sample = {"name": nm, **sample}  # name leads the persona
 
-        if enabled_features is None or "location" in enabled_features:
-            for label in location_labels:
-                if "location" in sample:
-                    sample["location"] += f", {_fmt_label(label)}"
-                else:
-                    sample["location"] = _fmt_label(label)
+        _append_location_labels(sample, location_labels, enabled_features)
 
         samples.append(sample)
 
@@ -560,12 +573,7 @@ def gen_samples(
         merged = _merge_leaves([load(path) for path in chain])
 
         sample = gen_sample(merged, enabled_features, rng)
-        if enabled_features is None or "location" in enabled_features:
-            for label in location_labels:
-                if "location" in sample:
-                    sample["location"] += f", {_fmt_label(label)}"
-                else:
-                    sample["location"] = _fmt_label(label)
+        _append_location_labels(sample, location_labels, enabled_features)
         samples.append(sample)
 
     return samples

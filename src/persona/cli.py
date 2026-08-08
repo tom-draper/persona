@@ -4,7 +4,7 @@ import sys
 
 from colorama import Fore, Style
 
-from persona.lib.format import clean_location
+from persona.lib.format import clean_location, format_label
 from persona.lib.generate import gen_samples, list_all_features, list_locations
 
 
@@ -73,10 +73,6 @@ def get_enabled_features(args: argparse.Namespace) -> set[str] | None:
     return enabled if enabled else None
 
 
-def format_location(location: str) -> str:
-    return location.replace("_", " ").title()
-
-
 def run():
     parser = build_parser()
     args = parser.parse_args()
@@ -110,7 +106,7 @@ def run():
     if args.json:
         print(json.dumps(samples, indent=2))
     else:
-        heading = " / ".join(format_location(clean_location(t)) for t in args.target)
+        heading = " / ".join(format_label(clean_location(t)) for t in args.target)
         print(Fore.CYAN + "> " + heading + Fore.WHITE)
         pprint(samples)
 
