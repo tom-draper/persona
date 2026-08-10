@@ -5,7 +5,7 @@ from pathlib import Path
 
 import numpy as np
 
-from persona.lib.format import clean_location, format_label
+from .format import clean_location, format_label
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 

@@ -1,16 +1,21 @@
 from contextlib import asynccontextmanager
-from importlib.metadata import version
+from importlib.metadata import PackageNotFoundError, version
 
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import RedirectResponse
 
-from persona.api.handler import (
+from .handler import (
     get_available_features,
     get_features,
     load_location_data,
     resolve_path_key,
 )
-from persona.lib.generate import gen_api_samples
+from ..lib.generate import gen_api_samples
+
+try:
+    _VERSION = version("persona")
+except PackageNotFoundError:
+    _VERSION = "0.1.1"
 
 
 def _location_names(data: dict) -> list[str]:
@@ -60,7 +65,7 @@ async def help(request: Request) -> dict[str, str | list | dict]:
     data = request.app.state.data
     return {
         "name": "Persona",
-        "version": version("persona"),
+        "version": _VERSION,
         "description": (
             "A REST API for probabilistically generating character profiles "
             "using real-world demographic data."
