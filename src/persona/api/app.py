@@ -4,13 +4,13 @@ from importlib.metadata import PackageNotFoundError, version
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import RedirectResponse
 
+from ..lib.generate import gen_api_samples
 from .handler import (
     get_available_features,
     get_features,
     load_location_data,
     resolve_path_key,
 )
-from ..lib.generate import gen_api_samples
 
 try:
     _VERSION = version("persona")
