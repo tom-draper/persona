@@ -28,18 +28,14 @@ classifiers = [
 dependencies = [
     "colorama>=0.4.6",
     "numpy>=2.0",
+    "fastapi>=0.139.0",
+    "uvicorn>=0.51.0",
 ]
 
 [project.urls]
 Homepage = "https://github.com/tom-draper/persona"
 Repository = "https://github.com/tom-draper/persona"
 Issues = "https://github.com/tom-draper/persona/issues"
-
-[project.optional-dependencies]
-api = [
-    "fastapi>=0.139.0",
-    "uvicorn>=0.51.0",
-]
 
 [project.scripts]
 persona = "persona.cli:run"
