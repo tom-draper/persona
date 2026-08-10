@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "persona"
-version = "0.1.1"
+version = "0.1.2"
 description = "Generate realistic character profiles from real-world demographic data"
 readme = "README.md"
 requires-python = ">=3.11,<3.15"

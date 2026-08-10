@@ -15,7 +15,7 @@ from persona.lib.generate import gen_api_samples
 try:
     _VERSION = version("persona")
 except PackageNotFoundError:
-    _VERSION = "0.1.1"
+    _VERSION = "0.1.2"
 
 
 def _location_names(data: dict) -> list[str]:
