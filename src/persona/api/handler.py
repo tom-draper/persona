@@ -2,8 +2,8 @@ import json
 import warnings
 from pathlib import Path
 
-from ..lib.format import clean_location
-from ..lib.generate import preprocess_location_data
+from persona.lib.format import clean_location
+from persona.lib.generate import preprocess_location_data
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
