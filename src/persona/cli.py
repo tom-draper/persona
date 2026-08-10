@@ -22,7 +22,13 @@ def pprint(data: list[dict]):
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Generate realistic personas from real-world demographic data.",
-        epilog="Example: persona england -n 3 --age --sex",
+        add_help=False,
+        epilog="Example: persona england --count 3 --age --sex",
+    )
+    parser.add_argument(
+        "--help",
+        action="help",
+        help="Show this help message and exit",
     )
     parser.add_argument(
         "target",
@@ -36,7 +42,7 @@ def build_parser() -> argparse.ArgumentParser:
         ),
     )
     parser.add_argument(
-        "-n",
+        "--count",
         type=int,
         default=1,
         metavar="COUNT",
@@ -91,7 +97,7 @@ def run():
     # which normalises and resolves each segment.
     target = "/".join(args.target)
     enabled_features = get_enabled_features(args)
-    N = args.n
+    N = args.count
 
     try:
         samples = gen_samples(target, enabled_features, N, seed=args.seed)
