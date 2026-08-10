@@ -1,0 +1,111 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook, Central Intelligence Agency",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/libya/",
+                "note": "Self-reported religious affiliation."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 1995,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0882,
+        "5-9": 0.0952,
+        "10-14": 0.0962,
+        "15-19": 0.0915,
+        "20-24": 0.081,
+        "25-29": 0.0741,
+        "30-34": 0.0715,
+        "35-39": 0.0733,
+        "40-44": 0.0769,
+        "45-49": 0.0714,
+        "50-54": 0.0596,
+        "55-59": 0.0424,
+        "60-64": 0.0299,
+        "65-69": 0.0178,
+        "70-74": 0.0136,
+        "75-79": 0.0088,
+        "80-84": 0.0053,
+        "85+": 0.0032
+    },
+    "sex": {
+        "Male": 0.508,
+        "Female": 0.492
+    },
+    "religion": {
+        "Islam": 0.97,
+        "Christianity or Other Christianity": 0.023,
+        "Other": 0.007
+    },
+    "residence": {
+        "Urban": 0.879,
+        "Rural": 0.121
+    },
+    "marital status": {
+        "Single (never married)": 0.5167,
+        "Married": 0.4513,
+        "Widowed": 0.0219,
+        "Divorced": 0.0101
+    },
+    "employment status": {
+        "Employed": 0.3897,
+        "Unemployed": 0.09,
+        "Outside the labour force": 0.5203
+    },
+    "education": {
+        "No schooling": 0.222,
+        "Primary education": 0.2167,
+        "Secondary education": 0.4122,
+        "Tertiary education": 0.1491
+    }
+}

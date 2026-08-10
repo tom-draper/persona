@@ -1,15 +1,68 @@
-
+# Only aliases that resolve to a dataset belong here. Names that already match
+# a data directory once lowercased and underscored (united_kingdom, global,
+# united_states_of_america) resolve without an entry.
 alias = {
-    'uk': 'united_kingdom',
-    'usa': 'united_states_of_america',
-    'united_states': 'united_states_of_america',
-    'uae': 'united_arab_emirates',
-    'world': 'global',
+    "uk": "united_kingdom",
+    "great_britain": "united_kingdom",
+    "gb": "united_kingdom",
+    "britain": "united_kingdom",
+    "usa": "united_states_of_america",
+    "us": "united_states_of_america",
+    "u.s.": "united_states_of_america",
+    "u.s.a.": "united_states_of_america",
+    "america": "united_states_of_america",
+    "united_states": "united_states_of_america",
+    "world": "global",
+    "earth": "global",
+    "espana": "spain",
+    "italia": "italy",
+    "eire": "ireland",
+    "republic_of_ireland": "ireland",
+    "uae": "united_arab_emirates",
+    "nz": "new_zealand",
+    "drc": "democratic_republic_of_the_congo",
+    "dr_congo": "democratic_republic_of_the_congo",
+    "congo_kinshasa": "democratic_republic_of_the_congo",
+    "ksa": "saudi_arabia",
+    "ivory_coast": "cote_divoire",
+    "holland": "netherlands",
+    "czech_republic": "czechia",
+    "dprk": "north_korea",
+    "burkina": "burkina_faso",
+    "dr": "dominican_republic",
+    "png": "papua_new_guinea",
+    "bosnia": "bosnia_and_herzegovina",
+    "macedonia": "north_macedonia",
+    "congo_brazzaville": "republic_of_the_congo",
+    "car": "central_african_republic",
+    "swaziland": "eswatini",
+    "east_timor": "timor_leste",
+    "trinidad": "trinidad_and_tobago",
+    "nyc": "new_york_city",
+    "cdmx": "mexico_city",
+    "ciudad_de_mexico": "mexico_city",
+    "roma": "rome",
+    "caba": "buenos_aires",
+    "constantinople": "istanbul",
+    "manila": "metro_manila",
+    "cabo_verde": "cape_verde",
+    "peking": "beijing",
+    "hongkong": "hong_kong",
+    "wien": "vienna",
+    "warszawa": "warsaw",
+    "milano": "milan",
+    "bruxelles": "brussels",
 }
 
 
 def clean_location(location: str) -> str:
-    location = location.replace('-', '_').replace(' ', '_').lower()
+    location = location.replace("-", "_").replace(" ", "_").lower()
     if location in alias:
         location = alias[location]
     return location
+
+
+def format_label(label: str) -> str:
+    """Turn a stored location/label token into a display string:
+    ``united_kingdom`` -> ``United Kingdom``."""
+    return label.replace("_", " ").title()

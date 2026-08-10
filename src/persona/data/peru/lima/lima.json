@@ -1,0 +1,73 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Censos Nacionales 2017, Instituto Nacional de Estadística e Informática (INEI)",
+                "year": 2017,
+                "note": "Population shares of the 43 districts of the Lima province.",
+                "url": "https://www.inei.gob.pe/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Cercado de Lima": 0.0313,
+        "Ancón": 0.0073,
+        "Ate": 0.0699,
+        "Barranco": 0.004,
+        "Breña": 0.0099,
+        "Carabayllo": 0.0388,
+        "Chaclacayo": 0.005,
+        "Chorrillos": 0.0366,
+        "Cieneguilla": 0.004,
+        "Comas": 0.0607,
+        "El Agustino": 0.0232,
+        "Independencia": 0.0246,
+        "Jesús María": 0.0088,
+        "La Molina": 0.0164,
+        "La Victoria": 0.0202,
+        "Lince": 0.0064,
+        "Los Olivos": 0.038,
+        "Lurigancho": 0.0281,
+        "Lurín": 0.0104,
+        "Magdalena del Mar": 0.007,
+        "Miraflores": 0.0116,
+        "Pachacamac": 0.0128,
+        "Pucusana": 0.0017,
+        "Pueblo Libre": 0.0097,
+        "Puente Piedra": 0.0384,
+        "Punta Hermosa": 0.0019,
+        "Punta Negra": 0.0008,
+        "Rímac": 0.0204,
+        "San Bartolo": 0.0009,
+        "San Borja": 0.0132,
+        "San Isidro": 0.0071,
+        "San Juan de Lurigancho": 0.1211,
+        "San Juan de Miraflores": 0.0414,
+        "San Luis": 0.0061,
+        "San Martín de Porres": 0.0763,
+        "San Miguel": 0.0181,
+        "Santa Anita": 0.0229,
+        "Santa María del Mar": 0.0001,
+        "Santa Rosa": 0.0032,
+        "Santiago de Surco": 0.0384,
+        "Surquillo": 0.0106,
+        "Villa El Salvador": 0.0459,
+        "Villa María del Triunfo": 0.0465
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population statistics, Statbel (Statistics Belgium)",
+                "year": 2017,
+                "note": "Population shares of the 19 municipalities of the Brussels-Capital Region.",
+                "url": "https://statbel.fgov.be/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Anderlecht": 0.0992,
+        "Auderghem": 0.028,
+        "Berchem-Sainte-Agathe": 0.0207,
+        "City of Brussels": 0.1482,
+        "Etterbeek": 0.0398,
+        "Evere": 0.0339,
+        "Forest": 0.0468,
+        "Ganshoren": 0.0206,
+        "Ixelles": 0.0724,
+        "Jette": 0.0436,
+        "Koekelberg": 0.0181,
+        "Molenbeek-Saint-Jean": 0.0811,
+        "Saint-Gilles": 0.0424,
+        "Saint-Josse-ten-Noode": 0.0228,
+        "Schaerbeek": 0.1116,
+        "Uccle": 0.0691,
+        "Watermael-Boitsfort": 0.0209,
+        "Woluwe-Saint-Lambert": 0.0463,
+        "Woluwe-Saint-Pierre": 0.0346
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

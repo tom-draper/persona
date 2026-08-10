@@ -1,0 +1,162 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 International Religious Freedom Report: Yemen, US Department of State",
+                "year": 2022,
+                "url": "https://www.state.gov/reports/2022-report-on-international-religious-freedom/yemen/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2013, Central Statistical Organization (Yemen)",
+                "year": 2013,
+                "url": "https://www.cso-yemen.com/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2013,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2010,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1598,
+        "5-9": 0.1369,
+        "10-14": 0.1156,
+        "15-19": 0.1037,
+        "20-24": 0.0907,
+        "25-29": 0.0823,
+        "30-34": 0.0754,
+        "35-39": 0.0627,
+        "40-44": 0.0487,
+        "45-49": 0.0362,
+        "50-54": 0.0276,
+        "55-59": 0.0206,
+        "60-64": 0.0147,
+        "65-69": 0.0101,
+        "70-74": 0.0067,
+        "75-79": 0.0048,
+        "80-84": 0.0024,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.506,
+        "Female": 0.494
+    },
+    "religion": {
+        "Islam": 0.99,
+        "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.37,
+        "Rural": 0.63
+    },
+    "marital status": {
+        "Single (never married)": 0.3486,
+        "Married": 0.6054,
+        "Widowed": 0.0292,
+        "Divorced": 0.0168
+    },
+    "education": {
+        "No schooling": 0.5755,
+        "Primary education": 0.0681,
+        "Secondary education": 0.3436,
+        "Tertiary education": 0.0128
+    },
+    "occupation": {
+        "Managers": 0.0239,
+        "Professionals": 0.0521,
+        "Technicians and associate professionals": 0.0743,
+        "Clerical support workers": 0.0315,
+        "Service and sales workers": 0.1776,
+        "Skilled agricultural, forestry and fishery workers": 0.2128,
+        "Craft and related trades workers": 0.1489,
+        "Plant and machine operators and assemblers": 0.0787,
+        "Elementary occupations": 0.1141,
+        "Armed forces occupations": 0.0861
+    },
+    "employment status": {
+        "Employed": 0.2737,
+        "Unemployed": 0.0573,
+        "Outside the labour force": 0.669
+    },
+    "location": {
+        "Taiz": 0.15009,
+        "Ibb": 0.12889,
+        "Al Hudaydah": 0.1244,
+        "Sanaa": 0.07513,
+        "Hajjah": 0.06219,
+        "Dhamar": 0.05593,
+        "Hadramaut": 0.0438,
+        "'Amran": 0.03703,
+        "Amanat Al Asimah": 0.03871,
+        "Aden": 0.03584,
+        "Saada": 0.03255,
+        "Lahij": 0.03053,
+        "Al Bayda": 0.02754,
+        "Al Mahwit": 0.02413,
+        "Al Jawf": 0.02185,
+        "Abyan": 0.02171,
+        "Shabwah": 0.02147,
+        "Dhale": 0.01986,
+        "Ma'rib": 0.01663,
+        "Raymah": 0.01656,
+        "Al Mahrah": 0.01318,
+        "Socotra": 0.00198
+    }
+}

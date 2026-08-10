@@ -1,0 +1,156 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 International Religious Freedom Report: Greece, US Department of State",
+                "year": 2022,
+                "url": "https://www.state.gov/reports/2022-report-on-international-religious-freedom/greece/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2024, Hellenic Statistical Authority (ELSTAT)",
+                "year": 2024,
+                "url": "https://www.statistics.gr/en/home"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2011,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0388,
+        "5-9": 0.0455,
+        "10-14": 0.0515,
+        "15-19": 0.0513,
+        "20-24": 0.0509,
+        "25-29": 0.0508,
+        "30-34": 0.0532,
+        "35-39": 0.0582,
+        "40-44": 0.0733,
+        "45-49": 0.0758,
+        "50-54": 0.0765,
+        "55-59": 0.0726,
+        "60-64": 0.0667,
+        "65-69": 0.0608,
+        "70-74": 0.0539,
+        "75-79": 0.0462,
+        "80-84": 0.0339,
+        "85+": 0.0399
+    },
+    "sex": {
+        "Male": 0.484,
+        "Female": 0.516
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.88,
+        "No religion": 0.06,
+        "Christianity or Other Christianity": 0.03,
+        "Islam": 0.02,
+        "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.792,
+        "Rural": 0.208
+    },
+    "marital status": {
+        "Single (never married)": 0.2867,
+        "Married": 0.5805,
+        "Widowed": 0.0892,
+        "Divorced": 0.0436
+    },
+    "education": {
+        "No schooling": 0.0142,
+        "Primary education": 0.1826,
+        "Secondary education": 0.3488,
+        "Tertiary education": 0.4543
+    },
+    "occupation": {
+        "Managers": 0.0298,
+        "Professionals": 0.2257,
+        "Technicians and associate professionals": 0.0692,
+        "Clerical support workers": 0.1137,
+        "Service and sales workers": 0.2279,
+        "Skilled agricultural, forestry and fishery workers": 0.0818,
+        "Craft and related trades workers": 0.0961,
+        "Plant and machine operators and assemblers": 0.07,
+        "Elementary occupations": 0.071,
+        "Armed forces occupations": 0.0148
+    },
+    "employment status": {
+        "Employed": 0.4752,
+        "Unemployed": 0.0444,
+        "Outside the labour force": 0.4804
+    },
+    "location": {
+        "Attica": 0.36388,
+        "Central Macedonia": 0.17104,
+        "Thessaly": 0.06526,
+        "Western Greece": 0.06156,
+        "Crete": 0.05985,
+        "Eastern Macedonia and Thrace": 0.05402,
+        "Peloponnese": 0.05111,
+        "Central Greece": 0.04856,
+        "South Aegean": 0.03146,
+        "Epirus": 0.03087,
+        "Western Macedonia": 0.02377,
+        "North Aegean": 0.01933,
+        "Ionian Islands": 0.01929
+    }
+}

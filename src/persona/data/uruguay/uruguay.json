@@ -1,0 +1,162 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Latinobarómetro",
+                "year": 2018,
+                "url": "https://www.latinobarometro.org/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Instituto Nacional de Estadística (INE Uruguay)",
+                "year": 2023,
+                "url": "https://www.ine.gub.uy/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2012,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0518,
+        "5-9": 0.0667,
+        "10-14": 0.0684,
+        "15-19": 0.0696,
+        "20-24": 0.0722,
+        "25-29": 0.0747,
+        "30-34": 0.0721,
+        "35-39": 0.0662,
+        "40-44": 0.0632,
+        "45-49": 0.0671,
+        "50-54": 0.0591,
+        "55-59": 0.0575,
+        "60-64": 0.0532,
+        "65-69": 0.0456,
+        "70-74": 0.0365,
+        "75-79": 0.029,
+        "80-84": 0.0218,
+        "85+": 0.0253
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "religion": {
+        "Roman Catholicism": 0.448,
+        "No religion": 0.445,
+        "Christianity or Other Christianity": 0.095,
+        "Other": 0.012
+    },
+    "residence": {
+        "Urban": 0.957,
+        "Rural": 0.043
+    },
+    "marital status": {
+        "Single (never married)": 0.2761,
+        "Married": 0.2854,
+        "Cohabiting": 0.2748,
+        "Widowed": 0.0021,
+        "Divorced": 0.1616
+    },
+    "education": {
+        "No schooling": 0.0066,
+        "Primary education": 0.3536,
+        "Secondary education": 0.4463,
+        "Tertiary education": 0.1934
+    },
+    "occupation": {
+        "Managers": 0.0283,
+        "Professionals": 0.1442,
+        "Technicians and associate professionals": 0.086,
+        "Clerical support workers": 0.0999,
+        "Service and sales workers": 0.2168,
+        "Skilled agricultural, forestry and fishery workers": 0.0445,
+        "Craft and related trades workers": 0.1291,
+        "Plant and machine operators and assemblers": 0.0745,
+        "Elementary occupations": 0.1703,
+        "Armed forces occupations": 0.0063
+    },
+    "employment status": {
+        "Employed": 0.6011,
+        "Unemployed": 0.0488,
+        "Outside the labour force": 0.3501
+    },
+    "location": {
+        "Montevideo": 0.37233,
+        "Canelones": 0.17401,
+        "Maldonado": 0.06085,
+        "Salto": 0.03892,
+        "Colonia": 0.03881,
+        "Paysandú": 0.03482,
+        "San José": 0.03421,
+        "Rivera": 0.03123,
+        "Tacuarembó": 0.02744,
+        "Cerro Largo": 0.02601,
+        "Soriano": 0.02391,
+        "Rocha": 0.02306,
+        "Artigas": 0.02214,
+        "Florida": 0.0201,
+        "Durazno": 0.01772,
+        "Lavalleja": 0.01691,
+        "Río Negro": 0.01638,
+        "Treinta y Tres": 0.01363,
+        "Flores": 0.00751
+    }
+}

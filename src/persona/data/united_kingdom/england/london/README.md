@@ -1,5 +1,5 @@
 # London
-**4 features:** ethnicity, language, religion and place of birth.
+**5 features:** ethnicity, language, religion, residence and country of birth.
 
 ## Ethnicity
 
@@ -13,8 +13,18 @@
 
 ![Religion](img/religion.png)
 
-## Place Of Birth
+## Residence
 
-![Place Of Birth](img/place of birth.png)
+![Residence](img/residence.png)
+
+## Country Of Birth
+
+![Country Of Birth](img/country of birth.png)
 
 ## Sources
+
+- [Ethnic group (TS021), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS021/editions/2021/versions/1) — ethnicity
+- [Main language (TS024), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS024/editions/2021/versions/1) — language
+- [Religion (TS030), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS030/editions/2021/versions/1) — religion
+- [Country of birth (TS012), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1) — country of birth
+- [World Urbanization Prospects 2018, United Nations (2018)](https://population.un.org/wup/) — residence

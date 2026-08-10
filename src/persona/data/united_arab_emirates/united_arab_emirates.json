@@ -1,0 +1,150 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2020 International Religious Freedom Report: United Arab Emirates, US Department of State",
+                "year": 2020,
+                "url": "https://www.state.gov/reports/2020-report-on-international-religious-freedom/united-arab-emirates/",
+                "note": "The UAE does not collect religion in a census; figures are estimates reflecting the large expatriate population."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Emirate population estimates, Federal Competitiveness and Statistics Centre (UAE)",
+                "year": 2023,
+                "url": "https://fcsc.gov.ae/en-us"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2005,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0539,
+        "5-9": 0.0576,
+        "10-14": 0.0519,
+        "15-19": 0.0475,
+        "20-24": 0.0871,
+        "25-29": 0.135,
+        "30-34": 0.1512,
+        "35-39": 0.1334,
+        "40-44": 0.0978,
+        "45-49": 0.0671,
+        "50-54": 0.0476,
+        "55-59": 0.0349,
+        "60-64": 0.018,
+        "65-69": 0.0077,
+        "70-74": 0.0052,
+        "75-79": 0.0022,
+        "80-84": 0.0013,
+        "85+": 0.0006
+    },
+    "sex": {
+        "Male": 0.64,
+        "Female": 0.36
+    },
+    "religion": {
+        "Islam": 0.745,
+        "Christianity or Other Christianity": 0.129,
+        "Hinduism": 0.062,
+        "Buddhism": 0.032,
+        "Other": 0.032
+    },
+    "residence": {
+        "Urban": 0.86,
+        "Rural": 0.14
+    },
+    "marital status": {
+        "Single (never married)": 0.2683,
+        "Married": 0.7065,
+        "Widowed": 0.0175,
+        "Divorced": 0.0077
+    },
+    "education": {
+        "No schooling": 0.0547,
+        "Primary education": 0.1761,
+        "Secondary education": 0.5309,
+        "Tertiary education": 0.2383
+    },
+    "occupation": {
+        "Managers": 0.0809,
+        "Professionals": 0.1373,
+        "Technicians and associate professionals": 0.1189,
+        "Clerical support workers": 0.0603,
+        "Service and sales workers": 0.1435,
+        "Skilled agricultural, forestry and fishery workers": 0.0105,
+        "Craft and related trades workers": 0.181,
+        "Plant and machine operators and assemblers": 0.1016,
+        "Elementary occupations": 0.166
+    },
+    "employment status": {
+        "Employed": 0.7688,
+        "Unemployed": 0.0171,
+        "Outside the labour force": 0.2141
+    },
+    "location": {
+        "Dubai": 0.38822,
+        "Abu Dhabi": 0.35913,
+        "Sharjah": 0.15699,
+        "Ajman": 0.04384,
+        "Ras Al Khaimah": 0.02996,
+        "Fujairah": 0.0176,
+        "Umm Al Quwain": 0.00427
+    }
+}

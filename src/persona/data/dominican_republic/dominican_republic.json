@@ -1,0 +1,163 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religion in Latin America, Pew Research Center",
+                "year": 2014,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Oficina Nacional de Estadística (ONE)",
+                "year": 2022,
+                "url": "https://www.one.gob.do/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2014,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0886,
+        "5-9": 0.0901,
+        "10-14": 0.0905,
+        "15-19": 0.0856,
+        "20-24": 0.0854,
+        "25-29": 0.0818,
+        "30-34": 0.0779,
+        "35-39": 0.0694,
+        "40-44": 0.0631,
+        "45-49": 0.0572,
+        "50-54": 0.0506,
+        "55-59": 0.0451,
+        "60-64": 0.039,
+        "65-69": 0.0303,
+        "70-74": 0.0202,
+        "75-79": 0.0121,
+        "80-84": 0.007,
+        "85+": 0.0062
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "Roman Catholicism": 0.57,
+        "Protestantism": 0.23,
+        "No religion": 0.18,
+        "Other": 0.02
+    },
+    "residence": {
+        "Urban": 0.725,
+        "Rural": 0.275
+    },
+    "marital status": {
+        "Single (never married)": 0.2444,
+        "Married": 0.1442,
+        "Cohabiting": 0.3792,
+        "Widowed": 0.0101,
+        "Divorced": 0.222
+    },
+    "education": {
+        "No schooling": 0.0985,
+        "Primary education": 0.2426,
+        "Secondary education": 0.4852,
+        "Tertiary education": 0.1738
+    },
+    "occupation": {
+        "Managers": 0.0278,
+        "Professionals": 0.0896,
+        "Technicians and associate professionals": 0.0673,
+        "Clerical support workers": 0.0866,
+        "Service and sales workers": 0.2529,
+        "Skilled agricultural, forestry and fishery workers": 0.0424,
+        "Craft and related trades workers": 0.1512,
+        "Plant and machine operators and assemblers": 0.0983,
+        "Elementary occupations": 0.1759,
+        "Armed forces occupations": 0.0081
+    },
+    "employment status": {
+        "Employed": 0.6154,
+        "Unemployed": 0.033,
+        "Outside the labour force": 0.3516
+    },
+    "location": {
+        "Santo Domingo": 0.31211,
+        "Santiago": 0.11111,
+        "Distrito Nacional": 0.11084,
+        "San Cristóbal": 0.06797,
+        "La Vega": 0.04356,
+        "La Altagracia": 0.03811,
+        "Puerto Plata": 0.03527,
+        "San Pedro de Macorís": 0.03232,
+        "Duarte": 0.03164,
+        "La Romana": 0.02903,
+        "Azua": 0.02351,
+        "San Juan": 0.02326,
+        "Peravia": 0.02096,
+        "Monte Plata": 0.02022,
+        "Barahona": 0.01997,
+        "Valverde": 0.01878,
+        "Monseñor Nouel": 0.01848,
+        "Sánchez Ramírez": 0.01604,
+        "María Trinidad Sánchez": 0.01489,
+        "Samaná": 0.01194
+    }
+}

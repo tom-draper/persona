@@ -1,0 +1,103 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook, Central Intelligence Agency",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/marshall-islands/",
+                "note": "Self-reported religious affiliation."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2007,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2021,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1104,
+        "5-9": 0.1123,
+        "10-14": 0.1243,
+        "15-19": 0.1208,
+        "20-24": 0.0833,
+        "25-29": 0.053,
+        "30-34": 0.0524,
+        "35-39": 0.0649,
+        "40-44": 0.065,
+        "45-49": 0.0552,
+        "50-54": 0.047,
+        "55-59": 0.0389,
+        "60-64": 0.0286,
+        "65-69": 0.0213,
+        "70-74": 0.0133,
+        "75-79": 0.0061,
+        "80-84": 0.002,
+        "85+": 0.0011
+    },
+    "sex": {
+        "Male": 0.513,
+        "Female": 0.487
+    },
+    "religion": {
+        "Christianity or Other Christianity": 0.8,
+        "Roman Catholicism": 0.08,
+        "Other": 0.12
+    },
+    "residence": {
+        "Urban": 0.791,
+        "Rural": 0.209
+    },
+    "marital status": {
+        "Single (never married)": 0.3057,
+        "Married": 0.2948,
+        "Cohabiting": 0.3414,
+        "Widowed": 0.0105,
+        "Divorced": 0.0477
+    },
+    "occupation": {
+        "Managers": 0.0928,
+        "Professionals": 0.1311,
+        "Technicians and associate professionals": 0.1043,
+        "Clerical support workers": 0.0619,
+        "Service and sales workers": 0.1923,
+        "Skilled agricultural, forestry and fishery workers": 0.1171,
+        "Craft and related trades workers": 0.14,
+        "Plant and machine operators and assemblers": 0.0517,
+        "Elementary occupations": 0.1086
+    }
+}

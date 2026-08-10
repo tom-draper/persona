@@ -1,0 +1,173 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Global Religious Landscape, Pew Research Center",
+                "year": 2010,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by province, National Bureau of Statistics of China",
+                "year": 2022,
+                "url": "https://www.stats.gov.cn/english/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2016,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-88), ILOSTAT, International Labour Organization",
+                "year": 2005,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0408,
+        "5-9": 0.0623,
+        "10-14": 0.0628,
+        "15-19": 0.0573,
+        "20-24": 0.0562,
+        "25-29": 0.0611,
+        "30-34": 0.079,
+        "35-39": 0.0796,
+        "40-44": 0.0693,
+        "45-49": 0.0695,
+        "50-54": 0.0863,
+        "55-59": 0.0802,
+        "60-64": 0.0525,
+        "65-69": 0.0537,
+        "70-74": 0.0413,
+        "75-79": 0.0237,
+        "80-84": 0.0142,
+        "85+": 0.0104
+    },
+    "sex": {
+        "Male": 0.51,
+        "Female": 0.49
+    },
+    "religion": {
+        "No religion": 0.522,
+        "Chinese folk religion": 0.219,
+        "Buddhism": 0.182,
+        "Christianity or Other Christianity": 0.051,
+        "Islam": 0.018,
+        "Other": 0.007
+    },
+    "residence": {
+        "Urban": 0.663,
+        "Rural": 0.337
+    },
+    "marital status": {
+        "Single (never married)": 0.2123,
+        "Married": 0.7382,
+        "Widowed": 0.0296,
+        "Divorced": 0.0199
+    },
+    "education": {
+        "No schooling": 0.0289,
+        "Primary education": 0.1633,
+        "Secondary education": 0.5154,
+        "Tertiary education": 0.2924
+    },
+    "occupation": {
+        "Managers": 0.0167,
+        "Professionals": 0.0571,
+        "Clerical support workers": 0.031,
+        "Service and sales workers": 0.0918,
+        "Skilled agricultural, forestry and fishery workers": 0.645,
+        "Craft and related trades workers": 0.1584
+    },
+    "employment status": {
+        "Employed": 0.6157,
+        "Unemployed": 0.0298,
+        "Outside the labour force": 0.3545
+    },
+    "location": {
+        "Guangdong": 0.08943,
+        "Shandong": 0.07153,
+        "Henan": 0.07117,
+        "Jiangsu": 0.05993,
+        "Sichuan": 0.05894,
+        "Hebei": 0.05222,
+        "Hunan": 0.04648,
+        "Zhejiang": 0.04629,
+        "Anhui": 0.04312,
+        "Hubei": 0.04113,
+        "Guangxi": 0.03552,
+        "Yunnan": 0.03303,
+        "Jiangxi": 0.03187,
+        "Liaoning": 0.02954,
+        "Fujian": 0.02948,
+        "Shaanxi": 0.02784,
+        "Guizhou": 0.02714,
+        "Shanxi": 0.0245,
+        "Chongqing": 0.02261,
+        "Heilongjiang": 0.02181,
+        "Xinjiang": 0.01821,
+        "Gansu": 0.01754,
+        "Shanghai": 0.01742,
+        "Inner Mongolia": 0.0169,
+        "Jilin": 0.01653,
+        "Beijing": 0.01537,
+        "Tianjin": 0.00959,
+        "Hainan": 0.00723,
+        "Hong Kong": 0.00526,
+        "Ningxia": 0.00512,
+        "Qinghai": 0.00419,
+        "Tibet": 0.00256,
+        "Macau": 0.00048
+    }
+}

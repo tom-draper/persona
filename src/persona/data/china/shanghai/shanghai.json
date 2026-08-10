@@ -1,0 +1,46 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Shanghai Statistical Yearbook 2024, National Bureau of Statistics of China",
+                "year": 2023,
+                "note": "Population shares of Shanghai's 16 districts.",
+                "url": "https://www.stats.gov.cn/english/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Huangpu": 0.0203,
+        "Xuhui": 0.0446,
+        "Changning": 0.0279,
+        "Jing'an": 0.0376,
+        "Putuo": 0.0498,
+        "Hongkou": 0.0276,
+        "Yangpu": 0.0487,
+        "Pudong New Area": 0.2336,
+        "Minhang": 0.1092,
+        "Baoshan": 0.0911,
+        "Jiading": 0.0758,
+        "Jinshan": 0.0331,
+        "Songjiang": 0.0793,
+        "Qingpu": 0.0514,
+        "Fengxian": 0.046,
+        "Chongming": 0.0238
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

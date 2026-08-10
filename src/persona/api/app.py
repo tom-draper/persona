@@ -4,9 +4,18 @@ from importlib.metadata import version
 from fastapi import FastAPI, HTTPException, Query, Request, Response
 from fastapi.responses import RedirectResponse
 
-from persona.api.handler import get_features, load_location_data
-from persona.lib.format import clean_location
+from persona.api.handler import (
+    get_available_features,
+    get_features,
+    load_location_data,
+    resolve_path_key,
+)
 from persona.lib.generate import gen_api_samples
+
+
+def _location_names(data: dict) -> list[str]:
+    return sorted({v["name"] for v in data.values()})
+
 
 _EXAMPLE_RESPONSE = [
     {
@@ -35,7 +44,7 @@ def _location_not_found(data: dict) -> HTTPException:
         status_code=404,
         detail={
             "message": "Location not found",
-            "available": sorted(data.keys()),
+            "available": _location_names(data),
         },
     )
 
@@ -52,9 +61,12 @@ async def help(request: Request) -> dict[str, str | list | dict]:
     return {
         "name": "Persona",
         "version": version("persona"),
-        "description": "A REST API for probabilistically generating character profiles using real-world demographic data.",
+        "description": (
+            "A REST API for probabilistically generating character profiles "
+            "using real-world demographic data."
+        ),
         "github": "https://github.com/tom-draper/persona",
-        "locations": sorted(data.keys()),
+        "locations": _location_names(data),
         "example": "https://persona-api.vercel.app/v1/united_kingdom",
         "example_response": _EXAMPLE_RESPONSE,
     }
@@ -64,22 +76,19 @@ async def help(request: Request) -> dict[str, str | list | dict]:
 @app.get("/v1/locations/")
 async def locations(request: Request, response: Response) -> list[str]:
     response.headers["Cache-Control"] = "public, max-age=3600"
-    return sorted(request.app.state.data.keys())
+    return _location_names(request.app.state.data)
 
 
-@app.get("/v1/{location}/features/")
+@app.get("/v1/{location:path}/features/")
 async def features(location: str, request: Request, response: Response) -> dict:
     data = request.app.state.data
-    location = clean_location(location)
-    if location not in data:
+    if resolve_path_key(location, data) is None:
         raise _location_not_found(data)
-    elif location == 'global':
-        raise HTTPException(status_code=404, detail="Features not found")
     response.headers["Cache-Control"] = "public, max-age=3600"
     return get_features(location, data)
 
 
-@app.get("/v1/{location}/")
+@app.get("/v1/{location:path}/")
 def gen_personas(
     location: str,
     request: Request,
@@ -91,8 +100,19 @@ def gen_personas(
     seed: int | None = Query(default=None, description="Random seed for reproducible output"),
 ) -> list[dict]:
     data = request.app.state.data
-    location = clean_location(location)
-    if location not in data:
+    if resolve_path_key(location, data) is None:
         raise _location_not_found(data)
-    enabled_features = {f.strip() for f in features.split(',')} if features else None
+    enabled_features = {f.strip() for f in features.split(",")} if features else None
+    if enabled_features:
+        available = get_available_features(location, data)
+        invalid = enabled_features - available
+        if invalid:
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "message": "Invalid features requested",
+                    "invalid": sorted(invalid),
+                    "available": sorted(available),
+                },
+            )
     return gen_api_samples(location, data, enabled_features=enabled_features, N=count, seed=seed)

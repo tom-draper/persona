@@ -1,0 +1,132 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook, Central Intelligence Agency",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/cuba/",
+                "note": "Self-reported religious affiliation."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2014,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2012,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0457,
+        "5-9": 0.0529,
+        "10-14": 0.0565,
+        "15-19": 0.0533,
+        "20-24": 0.0614,
+        "25-29": 0.0606,
+        "30-34": 0.0703,
+        "35-39": 0.068,
+        "40-44": 0.0557,
+        "45-49": 0.0688,
+        "50-54": 0.0879,
+        "55-59": 0.0886,
+        "60-64": 0.0684,
+        "65-69": 0.0487,
+        "70-74": 0.0414,
+        "75-79": 0.0323,
+        "80-84": 0.0216,
+        "85+": 0.0178
+    },
+    "sex": {
+        "Male": 0.494,
+        "Female": 0.506
+    },
+    "religion": {
+        "Christianity or Other Christianity": 0.589,
+        "No religion": 0.232,
+        "Other": 0.179
+    },
+    "residence": {
+        "Urban": 0.772,
+        "Rural": 0.228
+    },
+    "marital status": {
+        "Single (never married)": 0.2549,
+        "Married": 0.2801,
+        "Cohabiting": 0.2799,
+        "Widowed": 0.0045,
+        "Divorced": 0.1805
+    },
+    "education": {
+        "No schooling": 0.0173,
+        "Primary education": 0.1254,
+        "Secondary education": 0.6582,
+        "Tertiary education": 0.1991
+    },
+    "occupation": {
+        "Managers": 0.0861,
+        "Professionals": 0.1545,
+        "Technicians and associate professionals": 0.08,
+        "Clerical support workers": 0.0795,
+        "Service and sales workers": 0.1481,
+        "Skilled agricultural, forestry and fishery workers": 0.1043,
+        "Craft and related trades workers": 0.1079,
+        "Plant and machine operators and assemblers": 0.0673,
+        "Elementary occupations": 0.1724
+    },
+    "employment status": {
+        "Employed": 0.5134,
+        "Unemployed": 0.0091,
+        "Outside the labour force": 0.4775
+    }
+}

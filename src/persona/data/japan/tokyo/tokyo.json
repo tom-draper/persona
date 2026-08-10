@@ -1,0 +1,53 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population Census 2020, Statistics Bureau of Japan",
+                "year": 2020,
+                "note": "Population shares of Tokyo's 23 special wards.",
+                "url": "https://www.stat.go.jp/english/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Chiyoda": 0.0069,
+        "Chūō": 0.0174,
+        "Minato": 0.0268,
+        "Shinjuku": 0.0359,
+        "Bunkyō": 0.0247,
+        "Taitō": 0.0217,
+        "Sumida": 0.028,
+        "Kōtō": 0.0539,
+        "Shinagawa": 0.0434,
+        "Meguro": 0.0296,
+        "Ōta": 0.0769,
+        "Setagaya": 0.097,
+        "Shibuya": 0.0251,
+        "Nakano": 0.0354,
+        "Suginami": 0.0607,
+        "Toshima": 0.031,
+        "Kita": 0.0365,
+        "Arakawa": 0.0223,
+        "Itabashi": 0.06,
+        "Nerima": 0.0773,
+        "Adachi": 0.0714,
+        "Katsushika": 0.0466,
+        "Edogawa": 0.0717
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

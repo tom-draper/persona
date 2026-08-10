@@ -1,0 +1,40 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Lectura del Padró municipal d'habitants, Ajuntament de Barcelona",
+                "year": 2021,
+                "note": "Population shares of Barcelona's 10 districts.",
+                "url": "https://www.idescat.cat/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Ciutat Vella": 0.0661,
+        "Eixample": 0.1622,
+        "Sants-Montjuïc": 0.1126,
+        "Les Corts": 0.0491,
+        "Sarrià-Sant Gervasi": 0.0899,
+        "Gràcia": 0.0742,
+        "Horta-Guinardó": 0.1048,
+        "Nou Barris": 0.1045,
+        "Sant Andreu": 0.0913,
+        "Sant Martí": 0.1453
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

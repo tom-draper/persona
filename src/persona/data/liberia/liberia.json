@@ -1,0 +1,159 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Liberia Institute of Statistics and Geo-Information Services (LISGIS)",
+                "year": 2022,
+                "url": "https://www.lisgis.gov.lr/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Population and Housing Census, Liberia Institute of Statistics and Geo-Information Services (LISGIS)",
+                "year": 2022,
+                "url": "https://www.lisgis.gov.lr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2013,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2017,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1407,
+        "5-9": 0.1326,
+        "10-14": 0.1267,
+        "15-19": 0.1133,
+        "20-24": 0.0933,
+        "25-29": 0.075,
+        "30-34": 0.0633,
+        "35-39": 0.0568,
+        "40-44": 0.0492,
+        "45-49": 0.0397,
+        "50-54": 0.0314,
+        "55-59": 0.0256,
+        "60-64": 0.0198,
+        "65-69": 0.0142,
+        "70-74": 0.0092,
+        "75-79": 0.0056,
+        "80-84": 0.0027,
+        "85+": 0.001
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Protestantism": 0.75,
+        "Islam": 0.12,
+        "Christianity or Other Christianity": 0.099,
+        "No religion": 0.026,
+        "African traditional religion": 0.005
+    },
+    "residence": {
+        "Urban": 0.561,
+        "Rural": 0.439
+    },
+    "marital status": {
+        "Single (never married)": 0.3409,
+        "Married": 0.4405,
+        "Cohabiting": 0.1221,
+        "Widowed": 0.0403,
+        "Divorced": 0.0563
+    },
+    "education": {
+        "No schooling": 0.3567,
+        "Primary education": 0.3741,
+        "Secondary education": 0.2564,
+        "Tertiary education": 0.0128
+    },
+    "occupation": {
+        "Managers": 0.0506,
+        "Professionals": 0.0898,
+        "Technicians and associate professionals": 0.0571,
+        "Clerical support workers": 0.0105,
+        "Service and sales workers": 0.2697,
+        "Skilled agricultural, forestry and fishery workers": 0.3387,
+        "Craft and related trades workers": 0.0491,
+        "Plant and machine operators and assemblers": 0.0388,
+        "Elementary occupations": 0.0888,
+        "Armed forces occupations": 0.0068
+    },
+    "employment status": {
+        "Employed": 0.7437,
+        "Unemployed": 0.0221,
+        "Outside the labour force": 0.2342
+    },
+    "location": {
+        "Montserrado": 0.36589,
+        "Nimba": 0.11844,
+        "Bong": 0.08906,
+        "Lofa": 0.06997,
+        "Margibi": 0.05808,
+        "Grand Bassa": 0.05594,
+        "Grand Gedeh": 0.04127,
+        "Grand Cape Mount": 0.03407,
+        "Maryland": 0.03287,
+        "Sinoe": 0.02879,
+        "Bomi": 0.02547,
+        "River Gee": 0.02374,
+        "Grand Kru": 0.02083,
+        "Gbarpolu": 0.01828,
+        "Rivercess": 0.0173
+    }
+}

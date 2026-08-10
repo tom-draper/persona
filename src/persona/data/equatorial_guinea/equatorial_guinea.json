@@ -1,0 +1,130 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious composition estimate, Association of Religion Data Archives (ARDA)",
+                "year": 2020,
+                "url": "https://www.thearda.com/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2015 Census, Instituto Nacional de Estadística de Guinea Ecuatorial (INEGE)",
+                "year": 2015,
+                "url": "https://www.inege.gq/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2011,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1366,
+        "5-9": 0.1259,
+        "10-14": 0.1123,
+        "15-19": 0.0937,
+        "20-24": 0.0761,
+        "25-29": 0.0735,
+        "30-34": 0.0768,
+        "35-39": 0.0728,
+        "40-44": 0.0577,
+        "45-49": 0.0467,
+        "50-54": 0.0377,
+        "55-59": 0.0304,
+        "60-64": 0.0235,
+        "65-69": 0.0159,
+        "70-74": 0.0106,
+        "75-79": 0.0055,
+        "80-84": 0.0029,
+        "85+": 0.0014
+    },
+    "sex": {
+        "Male": 0.528,
+        "Female": 0.472
+    },
+    "religion": {
+        "Roman Catholicism": 0.713,
+        "Christianity or Other Christianity": 0.17,
+        "No religion": 0.055,
+        "Islam": 0.041,
+        "African traditional religion": 0.018
+    },
+    "residence": {
+        "Urban": 0.716,
+        "Rural": 0.284
+    },
+    "marital status": {
+        "Single (never married)": 0.3668,
+        "Married": 0.3926,
+        "Cohabiting": 0.1551,
+        "Widowed": 0.0113,
+        "Divorced": 0.0742
+    },
+    "employment status": {
+        "Employed": 0.5547,
+        "Unemployed": 0.0504,
+        "Outside the labour force": 0.3949
+    },
+    "education": {
+        "No schooling": 0.0551,
+        "Primary education": 0.6473,
+        "Secondary education": 0.2636,
+        "Tertiary education": 0.034
+    },
+    "location": {
+        "Litoral": 0.29978,
+        "Bioko Norte": 0.24513,
+        "Wele-Nzas": 0.1567,
+        "Kié-Ntem": 0.14988,
+        "Centro Sur": 0.11587,
+        "Bioko Sur": 0.0283,
+        "Annobón": 0.00434
+    }
+}

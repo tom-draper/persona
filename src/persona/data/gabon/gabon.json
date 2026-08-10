@@ -1,0 +1,155 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Gabon Demographic and Health Survey",
+                "year": 2021,
+                "url": "https://dhsprogram.com/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2013 Census, Direction Générale de la Statistique (Gabon)",
+                "year": 2013,
+                "url": "https://www.stat-gabon.ga/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2012,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1333,
+        "5-9": 0.1235,
+        "10-14": 0.1098,
+        "15-19": 0.0919,
+        "20-24": 0.0808,
+        "25-29": 0.0767,
+        "30-34": 0.0768,
+        "35-39": 0.0711,
+        "40-44": 0.0604,
+        "45-49": 0.0479,
+        "50-54": 0.0372,
+        "55-59": 0.0285,
+        "60-64": 0.0216,
+        "65-69": 0.0158,
+        "70-74": 0.0111,
+        "75-79": 0.0071,
+        "80-84": 0.004,
+        "85+": 0.0024
+    },
+    "sex": {
+        "Male": 0.508,
+        "Female": 0.492
+    },
+    "religion": {
+        "Protestantism": 0.464,
+        "Roman Catholicism": 0.298,
+        "Islam": 0.108,
+        "No religion": 0.07,
+        "Christianity or Other Christianity": 0.04,
+        "African traditional religion": 0.011,
+        "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.921,
+        "Rural": 0.079
+    },
+    "marital status": {
+        "Single (never married)": 0.4038,
+        "Married": 0.3593,
+        "Cohabiting": 0.1369,
+        "Widowed": 0.0333,
+        "Divorced": 0.0667
+    },
+    "education": {
+        "No schooling": 0.0721,
+        "Primary education": 0.5323,
+        "Secondary education": 0.3068,
+        "Tertiary education": 0.0888
+    },
+    "occupation": {
+        "Managers": 0.0265,
+        "Professionals": 0.0975,
+        "Technicians and associate professionals": 0.0379,
+        "Clerical support workers": 0.0613,
+        "Service and sales workers": 0.2759,
+        "Skilled agricultural, forestry and fishery workers": 0.129,
+        "Craft and related trades workers": 0.1144,
+        "Plant and machine operators and assemblers": 0.0494,
+        "Elementary occupations": 0.1483,
+        "Armed forces occupations": 0.0599
+    },
+    "employment status": {
+        "Employed": 0.4077,
+        "Unemployed": 0.1029,
+        "Outside the labour force": 0.4894
+    },
+    "location": {
+        "Estuaire": 0.49456,
+        "Haut-Ogooué": 0.13848,
+        "Ogooué-Maritime": 0.087,
+        "Woleu-Ntem": 0.08558,
+        "Ngounié": 0.05568,
+        "Moyen-Ogooué": 0.03826,
+        "Ogooué-Lolo": 0.03632,
+        "Ogooué-Ivindo": 0.03495,
+        "Nyanga": 0.02918
+    }
+}

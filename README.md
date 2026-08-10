@@ -10,14 +10,6 @@ A REST API and CLI tool for probabilistically generating random character profil
 
 ## REST API
 
-### Running Locally
-
-```bash
-uvicorn persona.api.app:app --reload
-```
-
-The API will be available at `http://localhost:8000`. Interactive docs (Swagger UI) are served at `http://localhost:8000/docs`.
-
 ### Generate Persona
 
 ```
@@ -33,8 +25,14 @@ $ curl https://persona-api.vercel.app/v1/england/
     "sex": "Female",
     "sexuality": "Heterosexual",
     "ethnicity": "British, White",
-    "religion": "Christian",
+    "religion": "Christianity",
+    "residence": "Urban",
     "language": "English",
+    "occupation": "Skilled trades",
+    "education": "Level 4+",
+    "marital status": "Single (never married)",
+    "housing tenure": "Social rented",
+    "country of birth": "UK",
     "location": "Oldham, North West"
   }
 ]
@@ -65,6 +63,29 @@ Pass a `seed` integer to get the same persona(s) back every time.
 https://persona-api.vercel.app/v1/<location>/?seed=42
 ```
 
+#### Nested Locations
+
+Some names appear more than once in the location tree (for example the country
+`georgia` and the US state `georgia`). A bare name resolves to the top-level
+dataset, so `georgia` is the country. To target a nested location, give the
+path down the tree:
+
+```
+https://persona-api.vercel.app/v1/georgia/                          # the country
+https://persona-api.vercel.app/v1/united_states_of_america/georgia/ # the US state
+```
+
+A partial path fixes the outer levels and fills in the rest at random — e.g.
+`/v1/united_kingdom/england/` always picks England, then randomly London or the
+rest of England.
+
+A city kept inside its country's tree (such as `london` under `england`) is a
+partial dataset: it overrides a few features (ethnicity, language, religion,
+location) and inherits everything else from the country. Addressing it by bare
+name still yields a complete persona — `/v1/london/` draws age, sex, marital
+status, education and the rest from England, then applies London's overrides —
+so it matches drawing London through `/v1/united_kingdom/england/`.
+
 ### List Locations
 
 All locations currently included can be listed with the `/v1/locations/` endpoint.
@@ -89,7 +110,8 @@ $ curl https://persona-api.vercel.app/v1/locations/
   "wales",
   "california",
   "florida",
-  "texas"
+  "texas",
+  ...
 ]
 
 ```
@@ -110,9 +132,15 @@ $ curl https://persona-api.vercel.app/v1/england/features/
     "age",
     "sex",
     "sexuality",
-    "religion",
     "ethnicity",
+    "religion",
+    "residence",
     "language",
+    "occupation",
+    "education",
+    "marital status",
+    "housing tenure",
+    "country of birth",
     "location"
   ]
 }
@@ -122,25 +150,29 @@ $ curl https://persona-api.vercel.app/v1/england/features/
 
 ### Installation
 
-**With [uv](https://docs.astral.sh/uv/) (recommended):**
+With [uv](https://docs.astral.sh/uv/):
 
 ```bash
+uv tool install git+https://github.com/tom-draper/persona.git
+
+# or locally...
+git clone https://github.com/tom-draper/persona.git
+cd persona
 uv tool install .
-```
 
-**With pip:**
-
-```bash
-pip install .
 persona <location>
 ```
 
-Or without installing, using a virtual environment:
+With pip:
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+pip install git+https://github.com/tom-draper/persona.git
+
+# or locally...
+git clone https://github.com/tom-draper/persona.git
+cd persona
 pip install .
+
 persona <location>
 ```
 
@@ -161,6 +193,17 @@ Generate multiple personas at once with `-n`:
 ```bash
 persona <location> -n <count>
 ```
+
+Target a nested location by giving the path down the tree. This disambiguates
+names shared with a top-level location — `persona georgia` is the country,
+while the US state is:
+
+```bash
+persona united_states_of_america georgia
+```
+
+A partial path fixes the outer levels and resolves the rest at random (e.g.
+`persona united_kingdom england` always picks England, then London or the rest).
 
 Output as JSON (useful for scripting):
 

@@ -1,0 +1,151 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Statistics Lebanon estimate (via US Department of State)",
+                "year": 2023,
+                "url": "https://www.state.gov/reports/2023-report-on-international-religious-freedom/lebanon/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2022, Central Administration of Statistics (Lebanon)",
+                "year": 2022,
+                "url": "https://web.archive.org/web/2024/https://www.cas.gov.lb/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2007,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2019,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2023,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0783,
+        "5-9": 0.0911,
+        "10-14": 0.0978,
+        "15-19": 0.0894,
+        "20-24": 0.0816,
+        "25-29": 0.0705,
+        "30-34": 0.0614,
+        "35-39": 0.0617,
+        "40-44": 0.0603,
+        "45-49": 0.0553,
+        "50-54": 0.0559,
+        "55-59": 0.0537,
+        "60-64": 0.0447,
+        "65-69": 0.0354,
+        "70-74": 0.0266,
+        "75-79": 0.0179,
+        "80-84": 0.0104,
+        "85+": 0.0079
+    },
+    "sex": {
+        "Male": 0.486,
+        "Female": 0.514
+    },
+    "religion": {
+        "Islam": 0.64,
+        "Christianity or Other Christianity": 0.229,
+        "Eastern Orthodoxy": 0.076,
+        "Druze": 0.055
+    },
+    "residence": {
+        "Urban": 0.91,
+        "Rural": 0.09
+    },
+    "marital status": {
+        "Single (never married)": 0.4385,
+        "Married": 0.5032,
+        "Widowed": 0.046,
+        "Divorced": 0.0123
+    },
+    "education": {
+        "No schooling": 0.067,
+        "Primary education": 0.2326,
+        "Secondary education": 0.4968,
+        "Tertiary education": 0.2036
+    },
+    "occupation": {
+        "Managers": 0.0688,
+        "Professionals": 0.1586,
+        "Technicians and associate professionals": 0.0494,
+        "Clerical support workers": 0.0432,
+        "Service and sales workers": 0.2033,
+        "Skilled agricultural, forestry and fishery workers": 0.024,
+        "Craft and related trades workers": 0.1664,
+        "Plant and machine operators and assemblers": 0.0888,
+        "Elementary occupations": 0.1525,
+        "Armed forces occupations": 0.0449
+    },
+    "employment status": {
+        "Employed": 0.3865,
+        "Unemployed": 0.0477,
+        "Outside the labour force": 0.5658
+    },
+    "location": {
+        "Mount Lebanon": 0.27887,
+        "North": 0.14627,
+        "South": 0.10965,
+        "Beqaa": 0.09836,
+        "Baalbek-Hermel": 0.08597,
+        "Akkar": 0.07869,
+        "Beirut": 0.07632,
+        "Nabatieh": 0.07122,
+        "Keserwan-Jbeil": 0.05464
+    }
+}

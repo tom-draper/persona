@@ -1,0 +1,176 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Census 2020 (religion), INEGI",
+                "year": 2020,
+                "url": "https://en.www.inegi.org.mx/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2020, National Institute of Statistics and Geography (INEGI)",
+                "year": 2020,
+                "url": "https://en.www.inegi.org.mx/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2019,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2026,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0795,
+        "5-9": 0.0829,
+        "10-14": 0.0868,
+        "15-19": 0.086,
+        "20-24": 0.085,
+        "25-29": 0.0817,
+        "30-34": 0.0789,
+        "35-39": 0.072,
+        "40-44": 0.0657,
+        "45-49": 0.0607,
+        "50-54": 0.0553,
+        "55-59": 0.0472,
+        "60-64": 0.0385,
+        "65-69": 0.0292,
+        "70-74": 0.0211,
+        "75-79": 0.0144,
+        "80-84": 0.0089,
+        "85+": 0.0063
+    },
+    "sex": {
+        "Male": 0.485,
+        "Female": 0.515
+    },
+    "religion": {
+        "Roman Catholicism": 0.778,
+        "Protestantism": 0.117,
+        "No religion": 0.084,
+        "Christianity or Other Christianity": 0.018,
+        "Other": 0.003
+    },
+    "residence": {
+        "Urban": 0.8,
+        "Rural": 0.2
+    },
+    "marital status": {
+        "Single (never married)": 0.2891,
+        "Married": 0.4276,
+        "Cohabiting": 0.1662,
+        "Widowed": 0.0477,
+        "Divorced": 0.0694
+    },
+    "education": {
+        "No schooling": 0.0444,
+        "Primary education": 0.211,
+        "Secondary education": 0.4725,
+        "Tertiary education": 0.2722
+    },
+    "occupation": {
+        "Managers": 0.03,
+        "Professionals": 0.1066,
+        "Technicians and associate professionals": 0.0777,
+        "Clerical support workers": 0.0635,
+        "Service and sales workers": 0.2092,
+        "Skilled agricultural, forestry and fishery workers": 0.0647,
+        "Craft and related trades workers": 0.1386,
+        "Plant and machine operators and assemblers": 0.1049,
+        "Elementary occupations": 0.2039,
+        "Armed forces occupations": 0.001
+    },
+    "employment status": {
+        "Employed": 0.5996,
+        "Unemployed": 0.0165,
+        "Outside the labour force": 0.3839
+    },
+    "location": {
+        "State of Mexico": 0.13485,
+        "Mexico City": 0.07309,
+        "Jalisco": 0.06625,
+        "Veracruz": 0.06398,
+        "Puebla": 0.05224,
+        "Guanajuato": 0.04894,
+        "Nuevo León": 0.0459,
+        "Chiapas": 0.04399,
+        "Michoacán": 0.03769,
+        "Oaxaca": 0.03279,
+        "Baja California": 0.02991,
+        "Chihuahua": 0.02969,
+        "Guerrero": 0.0281,
+        "Tamaulipas": 0.02799,
+        "Coahuila": 0.02497,
+        "Hidalgo": 0.02446,
+        "Sinaloa": 0.02402,
+        "Sonora": 0.02337,
+        "San Luis Potosí": 0.0224,
+        "Tabasco": 0.01907,
+        "Querétaro": 0.0188,
+        "Yucatán": 0.01842,
+        "Morelos": 0.01565,
+        "Quintana Roo": 0.01474,
+        "Durango": 0.01454,
+        "Zacatecas": 0.01287,
+        "Aguascalientes": 0.01131,
+        "Tlaxcala": 0.01066,
+        "Nayarit": 0.0098,
+        "Campeche": 0.00737,
+        "Baja California Sur": 0.00634,
+        "Colima": 0.0058
+    }
+}

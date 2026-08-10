@@ -1,0 +1,162 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2015 Census (religion), Lao Statistics Bureau",
+                "year": 2015,
+                "url": "https://www.lsb.gov.la/",
+                "note": "The 'no religion' category includes practitioners of folk and animist beliefs."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population projections 2023, Lao Statistics Bureau",
+                "year": 2023,
+                "url": "https://www.lsb.gov.la/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2017,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2022,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1038,
+        "5-9": 0.1034,
+        "10-14": 0.0984,
+        "15-19": 0.0954,
+        "20-24": 0.0938,
+        "25-29": 0.0892,
+        "30-34": 0.0834,
+        "35-39": 0.0737,
+        "40-44": 0.0605,
+        "45-49": 0.0496,
+        "50-54": 0.0412,
+        "55-59": 0.0346,
+        "60-64": 0.0277,
+        "65-69": 0.0197,
+        "70-74": 0.0126,
+        "75-79": 0.0073,
+        "80-84": 0.0038,
+        "85+": 0.0019
+    },
+    "sex": {
+        "Male": 0.503,
+        "Female": 0.497
+    },
+    "religion": {
+        "Buddhism": 0.647,
+        "No religion": 0.314,
+        "Other": 0.022,
+        "Christianity or Other Christianity": 0.017
+    },
+    "residence": {
+        "Urban": 0.403,
+        "Rural": 0.597
+    },
+    "marital status": {
+        "Single (never married)": 0.3025,
+        "Married": 0.6578,
+        "Cohabiting": 0.0135,
+        "Widowed": 0.0065,
+        "Divorced": 0.0197
+    },
+    "education": {
+        "No schooling": 0.1312,
+        "Primary education": 0.5399,
+        "Secondary education": 0.2405,
+        "Tertiary education": 0.0884
+    },
+    "occupation": {
+        "Managers": 0.0078,
+        "Professionals": 0.0177,
+        "Technicians and associate professionals": 0.0641,
+        "Clerical support workers": 0.0018,
+        "Service and sales workers": 0.1169,
+        "Skilled agricultural, forestry and fishery workers": 0.6442,
+        "Craft and related trades workers": 0.0307,
+        "Plant and machine operators and assemblers": 0.0179,
+        "Elementary occupations": 0.0804,
+        "Armed forces occupations": 0.0185
+    },
+    "employment status": {
+        "Employed": 0.6531,
+        "Unemployed": 0.0078,
+        "Outside the labour force": 0.3391
+    },
+    "location": {
+        "Savannakhet": 0.14813,
+        "Vientiane Prefecture": 0.13379,
+        "Champasak": 0.10355,
+        "Vientiane Province": 0.06355,
+        "Luang Prabang": 0.06332,
+        "Salavan": 0.06161,
+        "Khammouane": 0.05982,
+        "Sainyabuli": 0.05825,
+        "Oudomxay": 0.04783,
+        "Bolikhamxai": 0.04384,
+        "Houaphanh": 0.04203,
+        "Xiangkhouang": 0.03637,
+        "Bokeo": 0.02827,
+        "Luang Namtha": 0.02769,
+        "Phongsaly": 0.02619,
+        "Attapeu": 0.02214,
+        "Sekong": 0.01812,
+        "Xaisomboun": 0.01548
+    }
+}

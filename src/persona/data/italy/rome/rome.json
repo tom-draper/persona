@@ -1,0 +1,45 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Popolazione residente per municipio, Roma Capitale",
+                "year": 2015,
+                "note": "Population shares of Rome's 15 municipi.",
+                "url": "https://www.istat.it/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Historical Centre": 0.0651,
+        "Parioli-Nomentano": 0.0585,
+        "Monte Sacro": 0.0713,
+        "Tiburtina": 0.0618,
+        "Prenestino-Centocelle": 0.086,
+        "Roma delle Torri": 0.0894,
+        "Appio-Latino-Tuscolano": 0.1073,
+        "Appia Antica": 0.0457,
+        "EUR": 0.063,
+        "Ostia-Acilia": 0.0804,
+        "Arvalia-Portuense": 0.054,
+        "Monteverde": 0.0492,
+        "Aurelia": 0.0467,
+        "Monte Mario": 0.0664,
+        "Cassia-Flaminia": 0.0553
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

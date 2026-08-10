@@ -1,0 +1,166 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Statistical Office of the Republic of Serbia",
+                "year": 2022,
+                "url": "https://www.stat.gov.rs/en-us/",
+                "note": "Excludes Kosovo and Metohija."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Statistical Office of the Republic of Serbia",
+                "year": 2022,
+                "url": "https://www.stat.gov.rs/en-us/",
+                "note": "Excludes Kosovo and Metohija."
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2014,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0465,
+        "5-9": 0.0484,
+        "10-14": 0.0486,
+        "15-19": 0.0504,
+        "20-24": 0.0521,
+        "25-29": 0.0568,
+        "30-34": 0.0608,
+        "35-39": 0.0673,
+        "40-44": 0.0709,
+        "45-49": 0.0716,
+        "50-54": 0.0677,
+        "55-59": 0.0665,
+        "60-64": 0.0691,
+        "65-69": 0.0728,
+        "70-74": 0.0662,
+        "75-79": 0.0384,
+        "80-84": 0.0259,
+        "85+": 0.02
+    },
+    "sex": {
+        "Male": 0.475,
+        "Female": 0.525
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.811,
+        "Islam": 0.042,
+        "Roman Catholicism": 0.039,
+        "No religion": 0.013,
+        "Christianity or Other Christianity": 0.009,
+        "Protestantism": 0.008,
+        "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.626,
+        "Rural": 0.374
+    },
+    "marital status": {
+        "Single (never married)": 0.3369,
+        "Married": 0.5299,
+        "Cohabiting": 0.0622,
+        "Widowed": 0.012,
+        "Divorced": 0.059
+    },
+    "education": {
+        "No schooling": 0.0213,
+        "Primary education": 0.0645,
+        "Secondary education": 0.7195,
+        "Tertiary education": 0.1947
+    },
+    "occupation": {
+        "Managers": 0.0373,
+        "Professionals": 0.1759,
+        "Technicians and associate professionals": 0.1143,
+        "Clerical support workers": 0.0746,
+        "Service and sales workers": 0.1416,
+        "Skilled agricultural, forestry and fishery workers": 0.1622,
+        "Craft and related trades workers": 0.1072,
+        "Plant and machine operators and assemblers": 0.1133,
+        "Elementary occupations": 0.067,
+        "Armed forces occupations": 0.0066
+    },
+    "employment status": {
+        "Employed": 0.5493,
+        "Unemployed": 0.0421,
+        "Outside the labour force": 0.4086
+    },
+    "location": {
+        "Belgrade": 0.28756,
+        "South Bačka": 0.10384,
+        "Nišava": 0.05882,
+        "Raška": 0.05071,
+        "Srem": 0.04832,
+        "Šumadija": 0.04613,
+        "Mačva": 0.04539,
+        "South Banat": 0.04451,
+        "Zlatibor": 0.04355,
+        "Rasina": 0.03544,
+        "Pčinja": 0.03314,
+        "Moravica": 0.03237,
+        "Jablanica": 0.03155,
+        "Pomoravlje": 0.03113,
+        "North Bačka": 0.02739,
+        "Central Banat": 0.02697,
+        "Braničevo": 0.02674,
+        "Kolubara": 0.02642
+    }
+}

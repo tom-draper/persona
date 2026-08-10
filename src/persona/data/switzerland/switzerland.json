@@ -1,0 +1,171 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Structural Survey (religion, population 15+), Swiss Federal Statistical Office (FSO)",
+                "year": 2024,
+                "url": "https://www.bfs.admin.ch/bfs/en/home.html"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by canton, Swiss Federal Statistical Office (FSO)",
+                "year": 2023,
+                "url": "https://www.bfs.admin.ch/bfs/en/home.html"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2017,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0489,
+        "5-9": 0.051,
+        "10-14": 0.0502,
+        "15-19": 0.0484,
+        "20-24": 0.0515,
+        "25-29": 0.0603,
+        "30-34": 0.0703,
+        "35-39": 0.0718,
+        "40-44": 0.0708,
+        "45-49": 0.0676,
+        "50-54": 0.0717,
+        "55-59": 0.0755,
+        "60-64": 0.066,
+        "65-69": 0.0531,
+        "70-74": 0.0456,
+        "75-79": 0.0406,
+        "80-84": 0.0288,
+        "85+": 0.028
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "No religion": 0.368,
+        "Roman Catholicism": 0.3,
+        "Protestantism": 0.187,
+        "Christianity or Other Christianity": 0.06,
+        "Islam": 0.06,
+        "Other": 0.013
+    },
+    "residence": {
+        "Urban": 0.857,
+        "Rural": 0.143
+    },
+    "marital status": {
+        "Single (never married)": 0.3458,
+        "Married": 0.4972,
+        "Cohabiting": 0.0023,
+        "Widowed": 0.056,
+        "Divorced": 0.0986
+    },
+    "education": {
+        "No schooling": 0.0115,
+        "Primary education": 0.0425,
+        "Secondary education": 0.4656,
+        "Tertiary education": 0.4803
+    },
+    "occupation": {
+        "Managers": 0.0896,
+        "Professionals": 0.2723,
+        "Technicians and associate professionals": 0.1768,
+        "Clerical support workers": 0.118,
+        "Service and sales workers": 0.1344,
+        "Skilled agricultural, forestry and fishery workers": 0.0202,
+        "Craft and related trades workers": 0.0909,
+        "Plant and machine operators and assemblers": 0.0372,
+        "Elementary occupations": 0.0595,
+        "Armed forces occupations": 0.0012
+    },
+    "employment status": {
+        "Employed": 0.635,
+        "Unemployed": 0.0325,
+        "Outside the labour force": 0.3325
+    },
+    "location": {
+        "Zürich": 0.17903,
+        "Bern": 0.12022,
+        "Vaud": 0.0939,
+        "Aargau": 0.07999,
+        "St. Gallen": 0.0593,
+        "Geneva": 0.05836,
+        "Lucerne": 0.04798,
+        "Ticino": 0.04045,
+        "Valais": 0.04017,
+        "Fribourg": 0.03751,
+        "Basel-Landschaft": 0.03376,
+        "Thurgau": 0.03261,
+        "Solothurn": 0.03198,
+        "Grisons": 0.02306,
+        "Basel-Stadt": 0.02318,
+        "Neuchâtel": 0.02027,
+        "Schwyz": 0.01869,
+        "Zug": 0.01484,
+        "Schaffhausen": 0.00958,
+        "Jura": 0.0085,
+        "Appenzell Ausserrhoden": 0.00637,
+        "Nidwalden": 0.00502,
+        "Glarus": 0.00471,
+        "Obwalden": 0.00439,
+        "Uri": 0.00424,
+        "Appenzell Innerrhoden": 0.00188
+    }
+}

@@ -1,0 +1,172 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), IBGE",
+                "year": 2022,
+                "url": "https://www.ibge.gov.br/en/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by state, Brazilian Institute of Geography and Statistics (IBGE)",
+                "year": 2022,
+                "url": "https://www.ibge.gov.br/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2010,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0633,
+        "5-9": 0.0677,
+        "10-14": 0.0684,
+        "15-19": 0.0714,
+        "20-24": 0.076,
+        "25-29": 0.0775,
+        "30-34": 0.0768,
+        "35-39": 0.0796,
+        "40-44": 0.0774,
+        "45-49": 0.0688,
+        "50-54": 0.061,
+        "55-59": 0.0562,
+        "60-64": 0.0497,
+        "65-69": 0.0395,
+        "70-74": 0.0292,
+        "75-79": 0.0187,
+        "80-84": 0.0113,
+        "85+": 0.0076
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "religion": {
+        "Roman Catholicism": 0.568,
+        "Protestantism": 0.269,
+        "No religion": 0.0928,
+        "Other": 0.0407,
+        "Spiritism": 0.0184,
+        "Afro-Brazilian religions": 0.0105
+    },
+    "residence": {
+        "Urban": 0.882,
+        "Rural": 0.118
+    },
+    "marital status": {
+        "Single (never married)": 0.3433,
+        "Married": 0.3689,
+        "Cohabiting": 0.2052,
+        "Widowed": 0.0464,
+        "Divorced": 0.0362
+    },
+    "education": {
+        "No schooling": 0.0587,
+        "Primary education": 0.2761,
+        "Secondary education": 0.4628,
+        "Tertiary education": 0.2025
+    },
+    "occupation": {
+        "Managers": 0.0364,
+        "Professionals": 0.1337,
+        "Technicians and associate professionals": 0.0897,
+        "Clerical support workers": 0.0844,
+        "Service and sales workers": 0.2218,
+        "Skilled agricultural, forestry and fishery workers": 0.0449,
+        "Craft and related trades workers": 0.1312,
+        "Plant and machine operators and assemblers": 0.0947,
+        "Elementary occupations": 0.1551,
+        "Armed forces occupations": 0.0081
+    },
+    "employment status": {
+        "Employed": 0.5937,
+        "Unemployed": 0.0377,
+        "Outside the labour force": 0.3686
+    },
+    "location": {
+        "São Paulo": 0.21558,
+        "Minas Gerais": 0.10018,
+        "Rio de Janeiro": 0.08041,
+        "Bahia": 0.06951,
+        "Paraná": 0.0558,
+        "Rio Grande do Sul": 0.05244,
+        "Pernambuco": 0.04474,
+        "Ceará": 0.04343,
+        "Pará": 0.04088,
+        "Santa Catarina": 0.03881,
+        "Goiás": 0.03499,
+        "Maranhão": 0.03279,
+        "Amazonas": 0.02036,
+        "Espírito Santo": 0.01938,
+        "Paraíba": 0.01953,
+        "Mato Grosso": 0.01844,
+        "Rio Grande do Norte": 0.01617,
+        "Piauí": 0.01584,
+        "Alagoas": 0.01504,
+        "Distrito Federal": 0.01405,
+        "Mato Grosso do Sul": 0.01375,
+        "Sergipe": 0.01077,
+        "Rondônia": 0.0082,
+        "Tocantins": 0.00745,
+        "Acre": 0.00414,
+        "Amapá": 0.00378,
+        "Roraima": 0.00355
+    }
+}

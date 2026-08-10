@@ -1,0 +1,46 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Sixth National Population Census 2010, National Bureau of Statistics of China",
+                "year": 2010,
+                "note": "Population shares of Beijing's 16 districts.",
+                "url": "https://www.stats.gov.cn/english/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Dongcheng": 0.0469,
+        "Xicheng": 0.0634,
+        "Chaoyang": 0.1808,
+        "Fengtai": 0.1077,
+        "Shijingshan": 0.0314,
+        "Haidian": 0.1673,
+        "Mentougou": 0.0148,
+        "Fangshan": 0.0482,
+        "Tongzhou": 0.0604,
+        "Shunyi": 0.0447,
+        "Changping": 0.0847,
+        "Daxing": 0.0696,
+        "Huairou": 0.019,
+        "Pinggu": 0.0212,
+        "Miyun": 0.0239,
+        "Yanqing": 0.0162
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

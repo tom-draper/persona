@@ -1,0 +1,49 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census of Population 2021, Statistics Canada",
+                "year": 2021,
+                "note": "Population shares of Montreal's 19 boroughs (arrondissements).",
+                "url": "https://www12.statcan.gc.ca/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Ahuntsic-Cartierville": 0.0772,
+        "Anjou": 0.0252,
+        "Côte-des-Neiges–Notre-Dame-de-Grâce": 0.0965,
+        "Lachine": 0.0261,
+        "LaSalle": 0.0461,
+        "Le Plateau-Mont-Royal": 0.0613,
+        "Le Sud-Ouest": 0.048,
+        "L'Île-Bizard–Sainte-Geneviève": 0.011,
+        "Mercier–Hochelaga-Maisonneuve": 0.0793,
+        "Montréal-Nord": 0.0483,
+        "Outremont": 0.0147,
+        "Pierrefonds-Roxboro": 0.0407,
+        "Rivière-des-Prairies–Pointe-aux-Trembles": 0.0633,
+        "Rosemont–La Petite-Patrie": 0.0814,
+        "Saint-Laurent": 0.058,
+        "Saint-Leonard": 0.045,
+        "Verdun": 0.0405,
+        "Ville-Marie": 0.0572,
+        "Villeray–Saint-Michel–Parc-Extension": 0.0804
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

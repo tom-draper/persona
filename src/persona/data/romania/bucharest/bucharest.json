@@ -1,0 +1,36 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2011, National Institute of Statistics (INS)",
+                "year": 2011,
+                "note": "Population shares of Bucharest's six sectors.",
+                "url": "https://www.insse.ro/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Sector 1": 0.1197,
+        "Sector 2": 0.1834,
+        "Sector 3": 0.2046,
+        "Sector 4": 0.1528,
+        "Sector 5": 0.1442,
+        "Sector 6": 0.1953
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

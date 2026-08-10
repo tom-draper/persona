@@ -1,0 +1,155 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religion (15+ population), Statistics Netherlands (CBS)",
+                "year": 2025,
+                "url": "https://www.cbs.nl/en-gb"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by province, Statistics Netherlands (CBS)",
+                "year": 2023,
+                "url": "https://www.cbs.nl/en-gb"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2018,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0492,
+        "5-9": 0.0499,
+        "10-14": 0.0526,
+        "15-19": 0.0564,
+        "20-24": 0.0653,
+        "25-29": 0.0668,
+        "30-34": 0.0677,
+        "35-39": 0.0633,
+        "40-44": 0.0598,
+        "45-49": 0.0586,
+        "50-54": 0.0702,
+        "55-59": 0.0714,
+        "60-64": 0.0673,
+        "65-69": 0.0579,
+        "70-74": 0.0511,
+        "75-79": 0.0435,
+        "80-84": 0.0265,
+        "85+": 0.0226
+    },
+    "sex": {
+        "Male": 0.497,
+        "Female": 0.503
+    },
+    "religion": {
+        "No religion": 0.58,
+        "Roman Catholicism": 0.16,
+        "Protestantism": 0.12,
+        "Other": 0.07,
+        "Islam": 0.06
+    },
+    "residence": {
+        "Urban": 0.959,
+        "Rural": 0.041
+    },
+    "marital status": {
+        "Single (never married)": 0.3847,
+        "Married": 0.448,
+        "Cohabiting": 0.0163,
+        "Widowed": 0.0594,
+        "Divorced": 0.0916
+    },
+    "education": {
+        "Primary education": 0.0799,
+        "Secondary education": 0.457,
+        "Tertiary education": 0.4631
+    },
+    "occupation": {
+        "Managers": 0.0602,
+        "Professionals": 0.3313,
+        "Technicians and associate professionals": 0.1729,
+        "Clerical support workers": 0.082,
+        "Service and sales workers": 0.163,
+        "Skilled agricultural, forestry and fishery workers": 0.0138,
+        "Craft and related trades workers": 0.0633,
+        "Plant and machine operators and assemblers": 0.0385,
+        "Elementary occupations": 0.0721,
+        "Armed forces occupations": 0.0029
+    },
+    "employment status": {
+        "Employed": 0.6464,
+        "Unemployed": 0.0261,
+        "Outside the labour force": 0.3275
+    },
+    "location": {
+        "South Holland": 0.21362,
+        "North Holland": 0.16577,
+        "North Brabant": 0.14745,
+        "Gelderland": 0.1198,
+        "Utrecht": 0.07791,
+        "Overijssel": 0.06649,
+        "Limburg": 0.06335,
+        "Friesland": 0.03703,
+        "Groningen": 0.03347,
+        "Drenthe": 0.02819,
+        "Flevoland": 0.02497,
+        "Zeeland": 0.02196
+    }
+}

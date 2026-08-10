@@ -1,0 +1,158 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Global Religious Futures, Pew Research Center",
+                "year": 2020,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2015 Census, Statistics Sierra Leone",
+                "year": 2015,
+                "url": "https://www.statistics.sl/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2015,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2018,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1375,
+        "5-9": 0.1269,
+        "10-14": 0.1209,
+        "15-19": 0.1091,
+        "20-24": 0.0974,
+        "25-29": 0.0826,
+        "30-34": 0.0695,
+        "35-39": 0.0586,
+        "40-44": 0.0485,
+        "45-49": 0.0397,
+        "50-54": 0.0321,
+        "55-59": 0.0256,
+        "60-64": 0.0195,
+        "65-69": 0.0139,
+        "70-74": 0.009,
+        "75-79": 0.0056,
+        "80-84": 0.0026,
+        "85+": 0.001
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Islam": 0.785,
+        "Christianity or Other Christianity": 0.204,
+        "Other": 0.011
+    },
+    "residence": {
+        "Urban": 0.459,
+        "Rural": 0.541
+    },
+    "marital status": {
+        "Single (never married)": 0.3911,
+        "Married": 0.524,
+        "Cohabiting": 0.0062,
+        "Widowed": 0.052,
+        "Divorced": 0.0267
+    },
+    "education": {
+        "No schooling": 0.3971,
+        "Primary education": 0.2824,
+        "Secondary education": 0.27,
+        "Tertiary education": 0.0505
+    },
+    "occupation": {
+        "Managers": 0.0083,
+        "Professionals": 0.0391,
+        "Technicians and associate professionals": 0.0108,
+        "Clerical support workers": 0.0046,
+        "Service and sales workers": 0.2087,
+        "Skilled agricultural, forestry and fishery workers": 0.5572,
+        "Craft and related trades workers": 0.0615,
+        "Plant and machine operators and assemblers": 0.0342,
+        "Elementary occupations": 0.0713,
+        "Armed forces occupations": 0.0043
+    },
+    "employment status": {
+        "Employed": 0.5169,
+        "Unemployed": 0.0168,
+        "Outside the labour force": 0.4663
+    },
+    "location": {
+        "Western Urban": 0.13925,
+        "Port Loko": 0.08115,
+        "Kenema": 0.08043,
+        "Bombali": 0.07999,
+        "Bo": 0.07589,
+        "Tonkolili": 0.07008,
+        "Kailahun": 0.06942,
+        "Kono": 0.06674,
+        "Western Rural": 0.05859,
+        "Koinadugu": 0.05399,
+        "Pujehun": 0.04569,
+        "Kambia": 0.04556,
+        "Moyamba": 0.04201,
+        "Karene": 0.03766,
+        "Falaba": 0.02708,
+        "Bonthe": 0.02648
+    }
+}

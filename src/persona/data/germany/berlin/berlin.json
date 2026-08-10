@@ -1,0 +1,85 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age"
+                ],
+                "name": "Population by age, Berlin (NUTS 2 DE30), Eurostat",
+                "year": 2023,
+                "url": "https://ec.europa.eu/eurostat"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation (church membership and estimates), Amt für Statistik Berlin-Brandenburg",
+                "year": 2010,
+                "url": "https://www.statistik-berlin-brandenburg.de/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by borough, Amt für Statistik Berlin-Brandenburg",
+                "year": 2023,
+                "url": "https://www.statistik-berlin-brandenburg.de/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.049,
+        "5-9": 0.0482,
+        "10-14": 0.0446,
+        "15-19": 0.0419,
+        "20-24": 0.0537,
+        "25-29": 0.072,
+        "30-34": 0.0861,
+        "35-39": 0.083,
+        "40-44": 0.0725,
+        "45-49": 0.059,
+        "50-54": 0.064,
+        "55-59": 0.0719,
+        "60-64": 0.0621,
+        "65-69": 0.0487,
+        "70-74": 0.044,
+        "75-79": 0.0348,
+        "80-84": 0.0367,
+        "85+": 0.0279
+    },
+    "religion": {
+        "No religion": 0.6,
+        "Protestantism": 0.187,
+        "Roman Catholicism": 0.091,
+        "Islam": 0.085,
+        "Christianity or Other Christianity": 0.027,
+        "Other": 0.009
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    },
+    "location": {
+        "Pankow": 0.10941,
+        "Mitte": 0.1024,
+        "Tempelhof-Schöneberg": 0.09176,
+        "Charlottenburg-Wilmersdorf": 0.08847,
+        "Neukölln": 0.0851,
+        "Lichtenberg": 0.08042,
+        "Steglitz-Zehlendorf": 0.08005,
+        "Treptow-Köpenick": 0.07583,
+        "Friedrichshain-Kreuzberg": 0.07567,
+        "Marzahn-Hellersdorf": 0.07528,
+        "Reinickendorf": 0.06931,
+        "Spandau": 0.06629
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Censo Nacional 2022, INDEC",
+                "year": 2022,
+                "note": "Population shares of the 15 communes (comunas) of the Autonomous City of Buenos Aires.",
+                "url": "https://www.indec.gob.ar/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Comuna 1": 0.0716,
+        "Comuna 2": 0.0518,
+        "Comuna 3": 0.0629,
+        "Comuna 4": 0.0734,
+        "Comuna 5": 0.0622,
+        "Comuna 6": 0.065,
+        "Comuna 7": 0.0692,
+        "Comuna 8": 0.0655,
+        "Comuna 9": 0.0542,
+        "Comuna 10": 0.0554,
+        "Comuna 11": 0.0655,
+        "Comuna 12": 0.0759,
+        "Comuna 13": 0.0847,
+        "Comuna 14": 0.0796,
+        "Comuna 15": 0.0631
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

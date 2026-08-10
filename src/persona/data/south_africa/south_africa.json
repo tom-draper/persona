@@ -1,0 +1,154 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Census 2022 (religion), Statistics South Africa",
+                "year": 2022,
+                "url": "https://www.statssa.gov.za/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2022, Statistics South Africa",
+                "year": 2022,
+                "url": "https://www.statssa.gov.za/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2016,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-88), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0931,
+        "5-9": 0.0829,
+        "10-14": 0.0848,
+        "15-19": 0.0828,
+        "20-24": 0.0815,
+        "25-29": 0.0892,
+        "30-34": 0.0903,
+        "35-39": 0.0844,
+        "40-44": 0.071,
+        "45-49": 0.0548,
+        "50-54": 0.0459,
+        "55-59": 0.0396,
+        "60-64": 0.0346,
+        "65-69": 0.0264,
+        "70-74": 0.0177,
+        "75-79": 0.0094,
+        "80-84": 0.006,
+        "85+": 0.0056
+    },
+    "sex": {
+        "Male": 0.486,
+        "Female": 0.514
+    },
+    "religion": {
+        "Christianity or Other Christianity": 0.853,
+        "African traditional religion": 0.078,
+        "No religion": 0.031,
+        "Islam": 0.016,
+        "Hinduism": 0.011,
+        "Other": 0.011
+    },
+    "residence": {
+        "Urban": 0.638,
+        "Rural": 0.362
+    },
+    "marital status": {
+        "Single (never married)": 0.5737,
+        "Married": 0.2983,
+        "Cohabiting": 0.0546,
+        "Widowed": 0.0396,
+        "Divorced": 0.0338
+    },
+    "education": {
+        "No schooling": 0.05,
+        "Primary education": 0.1848,
+        "Secondary education": 0.6286,
+        "Tertiary education": 0.1366
+    },
+    "occupation": {
+        "Managers": 0.0878,
+        "Professionals": 0.0604,
+        "Technicians and associate professionals": 0.0939,
+        "Clerical support workers": 0.1078,
+        "Service and sales workers": 0.1598,
+        "Skilled agricultural, forestry and fishery workers": 0.0052,
+        "Craft and related trades workers": 0.1065,
+        "Plant and machine operators and assemblers": 0.0845,
+        "Elementary occupations": 0.2927,
+        "Armed forces occupations": 0.0014
+    },
+    "employment status": {
+        "Employed": 0.3758,
+        "Unemployed": 0.18,
+        "Outside the labour force": 0.4442
+    },
+    "location": {
+        "Gauteng": 0.24343,
+        "KwaZulu-Natal": 0.2003,
+        "Western Cape": 0.11983,
+        "Eastern Cape": 0.11656,
+        "Limpopo": 0.10596,
+        "Mpumalanga": 0.08292,
+        "North West": 0.06134,
+        "Free State": 0.04779,
+        "Northern Cape": 0.02186
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Colombia (religion), CIA",
+                "year": 2023,
+                "url": "https://www.cia.gov/the-world-factbook/countries/colombia/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population projections 2022, National Administrative Department of Statistics (DANE)",
+                "year": 2022,
+                "url": "https://www.dane.gov.co/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2015,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0679,
+        "5-9": 0.0671,
+        "10-14": 0.0709,
+        "15-19": 0.0771,
+        "20-24": 0.0842,
+        "25-29": 0.0879,
+        "30-34": 0.0839,
+        "35-39": 0.0759,
+        "40-44": 0.07,
+        "45-49": 0.0621,
+        "50-54": 0.0574,
+        "55-59": 0.0547,
+        "60-64": 0.0471,
+        "65-69": 0.0362,
+        "70-74": 0.0258,
+        "75-79": 0.0168,
+        "80-84": 0.0093,
+        "85+": 0.0057
+    },
+    "sex": {
+        "Male": 0.493,
+        "Female": 0.507
+    },
+    "religion": {
+        "Roman Catholicism": 0.636,
+        "Protestantism": 0.172,
+        "No religion": 0.162,
+        "Other": 0.01
+    },
+    "residence": {
+        "Urban": 0.788,
+        "Rural": 0.212
+    },
+    "marital status": {
+        "Single (never married)": 0.3345,
+        "Married": 0.2084,
+        "Cohabiting": 0.3132,
+        "Widowed": 0.0292,
+        "Divorced": 0.1147
+    },
+    "education": {
+        "No schooling": 0.0432,
+        "Primary education": 0.2959,
+        "Secondary education": 0.3403,
+        "Tertiary education": 0.3206
+    },
+    "occupation": {
+        "Managers": 0.0573,
+        "Professionals": 0.1111,
+        "Technicians and associate professionals": 0.0697,
+        "Clerical support workers": 0.0598,
+        "Service and sales workers": 0.2166,
+        "Skilled agricultural, forestry and fishery workers": 0.054,
+        "Craft and related trades workers": 0.1053,
+        "Plant and machine operators and assemblers": 0.0885,
+        "Elementary occupations": 0.2377
+    },
+    "employment status": {
+        "Employed": 0.5814,
+        "Unemployed": 0.0526,
+        "Outside the labour force": 0.366
+    },
+    "location": {
+        "Bogotá": 0.17257,
+        "Antioquia": 0.13345,
+        "Valle del Cauca": 0.08892,
+        "Cundinamarca": 0.04793,
+        "Atlántico": 0.05433,
+        "Santander": 0.04503,
+        "Bolívar": 0.04334,
+        "Córdoba": 0.03597,
+        "Norte de Santander": 0.032,
+        "Nariño": 0.03157,
+        "Cauca": 0.02937,
+        "Magdalena": 0.02836,
+        "Tolima": 0.0261,
+        "Cesar": 0.026,
+        "Boyacá": 0.02441,
+        "Huila": 0.02211,
+        "Meta": 0.02094,
+        "Caldas": 0.02008,
+        "La Guajira": 0.01942,
+        "Risaralda": 0.01895,
+        "Sucre": 0.01884,
+        "Quindío": 0.01104,
+        "Chocó": 0.01073,
+        "Casanare": 0.00857,
+        "Caquetá": 0.00812,
+        "Putumayo": 0.00715,
+        "Arauca": 0.00591,
+        "San Andrés y Providencia": 0.00126,
+        "Amazonas": 0.00159,
+        "Guaviare": 0.00175,
+        "Vichada": 0.00224,
+        "Guainía": 0.00101,
+        "Vaupés": 0.00095
+    }
+}

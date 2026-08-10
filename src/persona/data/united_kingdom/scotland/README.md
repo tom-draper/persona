@@ -1,5 +1,5 @@
 # Scotland
-**7 features:** age, sex, sexuality, ethnicity, religion, language and location.
+**13 features:** age, sex, sexuality, ethnicity, religion, residence, language, occupation, education, marital status, housing tenure, country of birth and location.
 
 ## Age
 
@@ -21,9 +21,33 @@
 
 ![Religion](img/religion.png)
 
+## Residence
+
+![Residence](img/residence.png)
+
 ## Language
 
 ![Language](img/language.png)
+
+## Occupation
+
+![Occupation](img/occupation.png)
+
+## Education
+
+![Education](img/education.png)
+
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
+## Housing Tenure
+
+![Housing Tenure](img/housing tenure.png)
+
+## Country Of Birth
+
+![Country Of Birth](img/country of birth.png)
 
 ## Location
 
@@ -31,6 +55,8 @@
 
 ## Sources
 
-https://en.wikipedia.org/wiki/Demography_of_Scotland
-
-https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/
+- [Country of birth, Scotland's Census 2011, National Records of Scotland (2011)](https://www.scotlandscensus.gov.uk/census-results/at-a-glance/country-of-birth/) — country of birth
+- [Demography of Scotland, Scotland's Census 2011, National Records of Scotland (2011)](https://www.scotlandscensus.gov.uk/census-results/at-a-glance/population/) — age, sex, sexuality, ethnicity, religion, language, location
+- [Housing, Scotland's Census 2022, National Records of Scotland (2022)](https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-housing/) — housing tenure
+- [Scotland's Census 2022, National Records of Scotland (2022)](https://www.scotlandscensus.gov.uk/2022-reports/scotland-s-census-2022-education-labour-market-and-travel-to-work/) — occupation, education, marital status
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

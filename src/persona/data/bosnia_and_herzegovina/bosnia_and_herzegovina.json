@@ -1,0 +1,155 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2013 Census (religion), Agency for Statistics of Bosnia and Herzegovina",
+                "year": 2013,
+                "url": "https://bhas.gov.ba/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2013 Census, Agency for Statistics of Bosnia and Herzegovina",
+                "year": 2013,
+                "url": "https://bhas.gov.ba/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2011,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.041,
+        "5-9": 0.0434,
+        "10-14": 0.0479,
+        "15-19": 0.0521,
+        "20-24": 0.0537,
+        "25-29": 0.0516,
+        "30-34": 0.0536,
+        "35-39": 0.0651,
+        "40-44": 0.0768,
+        "45-49": 0.0777,
+        "50-54": 0.0665,
+        "55-59": 0.0741,
+        "60-64": 0.0801,
+        "65-69": 0.0725,
+        "70-74": 0.0569,
+        "75-79": 0.0348,
+        "80-84": 0.0263,
+        "85+": 0.0259
+    },
+    "sex": {
+        "Male": 0.476,
+        "Female": 0.524
+    },
+    "religion": {
+        "Islam": 0.513,
+        "Eastern Orthodoxy": 0.308,
+        "Roman Catholicism": 0.152,
+        "Other": 0.027
+    },
+    "residence": {
+        "Urban": 0.527,
+        "Rural": 0.473
+    },
+    "marital status": {
+        "Single (never married)": 0.3663,
+        "Married": 0.5855,
+        "Cohabiting": 0.008,
+        "Widowed": 0.0128,
+        "Divorced": 0.0274
+    },
+    "education": {
+        "No schooling": 0.028,
+        "Primary education": 0.0637,
+        "Secondary education": 0.6468,
+        "Tertiary education": 0.2615
+    },
+    "occupation": {
+        "Managers": 0.026,
+        "Professionals": 0.1581,
+        "Technicians and associate professionals": 0.0807,
+        "Clerical support workers": 0.0597,
+        "Service and sales workers": 0.1813,
+        "Skilled agricultural, forestry and fishery workers": 0.1305,
+        "Craft and related trades workers": 0.1724,
+        "Plant and machine operators and assemblers": 0.0934,
+        "Elementary occupations": 0.0919,
+        "Armed forces occupations": 0.0061
+    },
+    "employment status": {
+        "Employed": 0.4358,
+        "Unemployed": 0.0541,
+        "Outside the labour force": 0.5101
+    },
+    "location": {
+        "Republika Srpska": 0.34788,
+        "Tuzla Canton": 0.12603,
+        "Sarajevo Canton": 0.11713,
+        "Zenica-Doboj Canton": 0.1032,
+        "Una-Sana Canton": 0.07739,
+        "Central Bosnia Canton": 0.07213,
+        "Herzegovina-Neretva Canton": 0.06287,
+        "West Herzegovina Canton": 0.02687,
+        "Canton 10": 0.02382,
+        "Brčko District": 0.02365,
+        "Posavina Canton": 0.01231,
+        "Bosnian-Podrinje Canton Goražde": 0.00672
+    }
+}

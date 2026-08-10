@@ -1,0 +1,155 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2022 Census (religion), Statistical Committee of Armenia (ArmStat)",
+                "year": 2022,
+                "url": "https://armstat.am/en/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Statistical Committee of Armenia (ArmStat)",
+                "year": 2022,
+                "url": "https://armstat.am/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2017,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2017,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0602,
+        "5-9": 0.0666,
+        "10-14": 0.0686,
+        "15-19": 0.0619,
+        "20-24": 0.0602,
+        "25-29": 0.067,
+        "30-34": 0.0843,
+        "35-39": 0.082,
+        "40-44": 0.0726,
+        "45-49": 0.0601,
+        "50-54": 0.0553,
+        "55-59": 0.06,
+        "60-64": 0.069,
+        "65-69": 0.0539,
+        "70-74": 0.0358,
+        "75-79": 0.0173,
+        "80-84": 0.0139,
+        "85+": 0.0111
+    },
+    "sex": {
+        "Male": 0.464,
+        "Female": 0.536
+    },
+    "religion": {
+        "Armenian Apostolic Church": 0.952,
+        "Other": 0.026,
+        "No religion": 0.006,
+        "Roman Catholicism": 0.006,
+        "Christianity or Other Christianity": 0.005,
+        "Yazidism": 0.005
+    },
+    "residence": {
+        "Urban": 0.659,
+        "Rural": 0.341
+    },
+    "marital status": {
+        "Single (never married)": 0.2469,
+        "Married": 0.5984,
+        "Cohabiting": 0.029,
+        "Widowed": 0.0977,
+        "Divorced": 0.028
+    },
+    "education": {
+        "No schooling": 0.0038,
+        "Primary education": 0.0153,
+        "Secondary education": 0.7221,
+        "Tertiary education": 0.2588
+    },
+    "occupation": {
+        "Managers": 0.0609,
+        "Professionals": 0.1449,
+        "Technicians and associate professionals": 0.088,
+        "Clerical support workers": 0.034,
+        "Service and sales workers": 0.1438,
+        "Skilled agricultural, forestry and fishery workers": 0.3031,
+        "Craft and related trades workers": 0.0915,
+        "Plant and machine operators and assemblers": 0.0546,
+        "Elementary occupations": 0.0791
+    },
+    "employment status": {
+        "Employed": 0.5175,
+        "Unemployed": 0.0764,
+        "Outside the labour force": 0.4061
+    },
+    "location": {
+        "Yerevan": 0.37053,
+        "Kotayk": 0.09202,
+        "Armavir": 0.08644,
+        "Ararat": 0.0849,
+        "Shirak": 0.0803,
+        "Lori": 0.07597,
+        "Gegharkunik": 0.07149,
+        "Aragatsotn": 0.04397,
+        "Tavush": 0.03919,
+        "Syunik": 0.03904,
+        "Vayots Dzor": 0.01615
+    }
+}

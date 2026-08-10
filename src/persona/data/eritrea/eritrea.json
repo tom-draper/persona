@@ -1,0 +1,150 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2010 Eritrea Population and Health Survey, National Statistics Office (Eritrea)",
+                "year": 2010,
+                "url": "https://dhsprogram.com/",
+                "note": "Estimates of Eritrea's religious composition vary considerably by source."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Regional population estimates, National Statistics Office (Eritrea)",
+                "year": 2010,
+                "url": "https://dhsprogram.com/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2002,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-88), ILOSTAT, International Labour Organization",
+                "year": 1996,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1329,
+        "5-9": 0.1265,
+        "10-14": 0.1274,
+        "15-19": 0.1211,
+        "20-24": 0.1002,
+        "25-29": 0.082,
+        "30-34": 0.0594,
+        "35-39": 0.0477,
+        "40-44": 0.0411,
+        "45-49": 0.0378,
+        "50-54": 0.0329,
+        "55-59": 0.0276,
+        "60-64": 0.0219,
+        "65-69": 0.0156,
+        "70-74": 0.0114,
+        "75-79": 0.0082,
+        "80-84": 0.0044,
+        "85+": 0.0019
+    },
+    "sex": {
+        "Male": 0.493,
+        "Female": 0.507
+    },
+    "religion": {
+        "Eritrean Orthodoxy": 0.563,
+        "Islam": 0.384,
+        "Roman Catholicism": 0.042,
+        "Protestantism": 0.008,
+        "Other": 0.003
+    },
+    "residence": {
+        "Urban": 0.345,
+        "Rural": 0.655
+    },
+    "marital status": {
+        "Single (never married)": 0.3011,
+        "Married": 0.5743,
+        "Cohabiting": 0.0211,
+        "Widowed": 0.0509,
+        "Divorced": 0.0526
+    },
+    "education": {
+        "No schooling": 0.4596,
+        "Primary education": 0.331,
+        "Secondary education": 0.175,
+        "Tertiary education": 0.0344
+    },
+    "occupation": {
+        "Managers": 0.0199,
+        "Professionals": 0.01,
+        "Technicians and associate professionals": 0.0113,
+        "Clerical support workers": 0.0796,
+        "Service and sales workers": 0.2698,
+        "Skilled agricultural, forestry and fishery workers": 0.022,
+        "Craft and related trades workers": 0.1518,
+        "Plant and machine operators and assemblers": 0.0939,
+        "Elementary occupations": 0.3417
+    },
+    "employment status": {
+        "Employed": 0.7367,
+        "Unemployed": 0.0468,
+        "Outside the labour force": 0.2165
+    },
+    "location": {
+        "Debub": 0.25361,
+        "Gash-Barka": 0.18955,
+        "Maekel": 0.18088,
+        "Northern Red Sea": 0.15413,
+        "Anseba": 0.15346,
+        "Southern Red Sea": 0.06836
+    }
+}

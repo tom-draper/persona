@@ -1,0 +1,176 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), National Institute of Statistics (INS Romania)",
+                "year": 2021,
+                "url": "https://www.insse.ro/cms/en",
+                "note": "13.9% did not state a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, National Institute of Statistics (INS Romania)",
+                "year": 2021,
+                "url": "https://www.insse.ro/cms/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2011,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0499,
+        "5-9": 0.0536,
+        "10-14": 0.0553,
+        "15-19": 0.0567,
+        "20-24": 0.0524,
+        "25-29": 0.0527,
+        "30-34": 0.0621,
+        "35-39": 0.0682,
+        "40-44": 0.0706,
+        "45-49": 0.079,
+        "50-54": 0.0812,
+        "55-59": 0.0652,
+        "60-64": 0.0556,
+        "65-69": 0.0641,
+        "70-74": 0.0549,
+        "75-79": 0.0343,
+        "80-84": 0.0243,
+        "85+": 0.0199
+    },
+    "sex": {
+        "Male": 0.484,
+        "Female": 0.516
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.734,
+        "Protestantism": 0.062,
+        "Roman Catholicism": 0.039,
+        "Other": 0.012,
+        "No religion": 0.008,
+        "Greek Catholicism": 0.006
+    },
+    "residence": {
+        "Urban": 0.522,
+        "Rural": 0.478
+    },
+    "marital status": {
+        "Single (never married)": 0.2551,
+        "Married": 0.5673,
+        "Cohabiting": 0.0209,
+        "Widowed": 0.1055,
+        "Divorced": 0.0512
+    },
+    "education": {
+        "No schooling": 0.0122,
+        "Primary education": 0.0564,
+        "Secondary education": 0.5697,
+        "Tertiary education": 0.3617
+    },
+    "occupation": {
+        "Managers": 0.0273,
+        "Professionals": 0.1835,
+        "Technicians and associate professionals": 0.0737,
+        "Clerical support workers": 0.0505,
+        "Service and sales workers": 0.184,
+        "Skilled agricultural, forestry and fishery workers": 0.0705,
+        "Craft and related trades workers": 0.17,
+        "Plant and machine operators and assemblers": 0.1388,
+        "Elementary occupations": 0.0962,
+        "Armed forces occupations": 0.0054
+    },
+    "employment status": {
+        "Employed": 0.4826,
+        "Unemployed": 0.0308,
+        "Outside the labour force": 0.4867
+    },
+    "location": {
+        "Bucharest": 0.10772,
+        "Iași": 0.04773,
+        "Prahova": 0.04361,
+        "Cluj": 0.04261,
+        "Constanța": 0.04115,
+        "Timiș": 0.04081,
+        "Suceava": 0.04031,
+        "Bacău": 0.03773,
+        "Dolj": 0.03761,
+        "Argeș": 0.03576,
+        "Bihor": 0.03459,
+        "Brașov": 0.03429,
+        "Ilfov": 0.03405,
+        "Mureș": 0.03251,
+        "Galați": 0.03117,
+        "Dâmbovița": 0.03008,
+        "Neamț": 0.02849,
+        "Maramureș": 0.02839,
+        "Arad": 0.02573,
+        "Buzău": 0.02541,
+        "Botoșani": 0.02464,
+        "Sibiu": 0.02436,
+        "Olt": 0.02405,
+        "Vaslui": 0.02351,
+        "Vâlcea": 0.02145,
+        "Satu Mare": 0.02074,
+        "Vrancea": 0.02104,
+        "Alba": 0.02045,
+        "Teleorman": 0.0203,
+        "Gorj": 0.01974
+    }
+}

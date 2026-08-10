@@ -1,0 +1,167 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Segunda Encuesta Nacional sobre Creencias y Actitudes Religiosas, CONICET",
+                "year": 2019,
+                "url": "https://www.conicet.gov.ar/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census 2022, National Institute of Statistics and Census (INDEC)",
+                "year": 2022,
+                "url": "https://www.indec.gob.ar/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2010,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0604,
+        "5-9": 0.0805,
+        "10-14": 0.081,
+        "15-19": 0.0772,
+        "20-24": 0.0763,
+        "25-29": 0.077,
+        "30-34": 0.0755,
+        "35-39": 0.071,
+        "40-44": 0.0695,
+        "45-49": 0.064,
+        "50-54": 0.0541,
+        "55-59": 0.0475,
+        "60-64": 0.044,
+        "65-69": 0.0384,
+        "70-74": 0.0316,
+        "75-79": 0.0236,
+        "80-84": 0.0152,
+        "85+": 0.0132
+    },
+    "sex": {
+        "Male": 0.496,
+        "Female": 0.504
+    },
+    "religion": {
+        "Roman Catholicism": 0.629,
+        "No religion": 0.189,
+        "Protestantism": 0.153,
+        "Other": 0.019
+    },
+    "residence": {
+        "Urban": 0.924,
+        "Rural": 0.076
+    },
+    "marital status": {
+        "Single (never married)": 0.3159,
+        "Married": 0.3632,
+        "Cohabiting": 0.2165,
+        "Widowed": 0.0686,
+        "Divorced": 0.0359
+    },
+    "education": {
+        "No schooling": 0.0107,
+        "Primary education": 0.3292,
+        "Secondary education": 0.3407,
+        "Tertiary education": 0.3193
+    },
+    "occupation": {
+        "Managers": 0.0458,
+        "Professionals": 0.1335,
+        "Technicians and associate professionals": 0.0912,
+        "Clerical support workers": 0.1155,
+        "Service and sales workers": 0.257,
+        "Skilled agricultural, forestry and fishery workers": 0.0018,
+        "Craft and related trades workers": 0.1362,
+        "Plant and machine operators and assemblers": 0.0906,
+        "Elementary occupations": 0.1259,
+        "Armed forces occupations": 0.0026
+    },
+    "employment status": {
+        "Employed": 0.5749,
+        "Unemployed": 0.0442,
+        "Outside the labour force": 0.3809
+    },
+    "location": {
+        "Buenos Aires Province": 0.38185,
+        "Córdoba": 0.08369,
+        "Santa Fe": 0.07724,
+        "Buenos Aires City": 0.06802,
+        "Mendoza": 0.04453,
+        "Tucumán": 0.03774,
+        "Salta": 0.03141,
+        "Entre Ríos": 0.03106,
+        "Misiones": 0.02787,
+        "Corrientes": 0.02642,
+        "Chaco": 0.02461,
+        "Santiago del Estero": 0.02312,
+        "San Juan": 0.01793,
+        "Jujuy": 0.01769,
+        "Río Negro": 0.01636,
+        "Neuquén": 0.01549,
+        "Formosa": 0.01324,
+        "Chubut": 0.01291,
+        "San Luis": 0.01181,
+        "Catamarca": 0.00936,
+        "La Rioja": 0.00836,
+        "La Pampa": 0.00788,
+        "Santa Cruz": 0.00735,
+        "Tierra del Fuego": 0.00405
+    }
+}

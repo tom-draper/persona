@@ -1,0 +1,47 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Census of Population and Housing 2020, Philippine Statistics Authority (PSA)",
+                "year": 2020,
+                "note": "Population shares of the 16 cities and one municipality of Metro Manila.",
+                "url": "https://psa.gov.ph/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Quezon City": 0.2136,
+        "Manila": 0.1332,
+        "Caloocan": 0.1199,
+        "Taguig": 0.091,
+        "Pasig": 0.058,
+        "Valenzuela": 0.0516,
+        "Parañaque": 0.0498,
+        "Las Piñas": 0.0437,
+        "Makati": 0.0454,
+        "Muntinlupa": 0.0392,
+        "Marikina": 0.0329,
+        "Pasay": 0.0318,
+        "Mandaluyong": 0.0307,
+        "Malabon": 0.0275,
+        "Navotas": 0.0179,
+        "San Juan": 0.0091,
+        "Pateros": 0.0047
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

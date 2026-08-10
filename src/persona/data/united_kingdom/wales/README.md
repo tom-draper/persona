@@ -1,5 +1,5 @@
 # Wales
-**8 features:** age, sex, sexuality, ethnicity, religion, language, relationship and location.
+**13 features:** age, sex, sexuality, ethnicity, religion, residence, language, occupation, education, marital status, housing tenure, country of birth and location.
 
 ## Age
 
@@ -21,13 +21,33 @@
 
 ![Religion](img/religion.png)
 
+## Residence
+
+![Residence](img/residence.png)
+
 ## Language
 
 ![Language](img/language.png)
 
-## Relationship
+## Occupation
 
-![Relationship](img/relationship.png)
+![Occupation](img/occupation.png)
+
+## Education
+
+![Education](img/education.png)
+
+## Marital Status
+
+![Marital Status](img/marital status.png)
+
+## Housing Tenure
+
+![Housing Tenure](img/housing tenure.png)
+
+## Country Of Birth
+
+![Country Of Birth](img/country of birth.png)
 
 ## Location
 
@@ -35,16 +55,14 @@
 
 ## Sources
 
-Age, sex and location taken from 2021 ONS Census data "Population and household estimates, England and Wales: Census 2021".
-
-https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021
-
-Sexuality taken from 2020 ONS Census data "Sexual orientation, UK: 2020".
-
-https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020
-
-Religion taken from 2011 ONS Census data "Religion in England and Wales 2011".
-
-https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/religion/articles/religioninenglandandwales2011/2012-12-11
-
-Relationship taken from 2011 ONS Census data
+- [Main language (TS024), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS024/editions/2021/versions/1) — language
+- [Population and household estimates, England and Wales: Census 2021, ONS (2021)](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/populationandhouseholdestimatesenglandandwalescensus2021) — age, sex, location
+- [Sexual orientation, UK: 2020, ONS (2020)](https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/sexuality/bulletins/sexualidentityuk/2020) — sexuality
+- [Ethnic group (TS021), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS021/editions/2021/versions/1) — ethnicity
+- [Religion (TS030), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS030/editions/2021/versions/1) — religion
+- [Occupation (TS063), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS063/editions/2021/versions/1) — occupation
+- [Highest level of qualification (TS067), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS067/editions/2021/versions/1) — education
+- [Legal partnership status (TS002), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS002/editions/2021/versions/3) — marital status
+- [Tenure of household (TS054), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS054/editions/2021/versions/1) — housing tenure
+- [Country of birth (TS012), Census 2021, ONS (2021)](https://www.ons.gov.uk/datasets/TS012/editions/2021/versions/1) — country of birth
+- [Urban population (% of total population), World Bank (2025)](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) — residence

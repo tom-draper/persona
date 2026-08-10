@@ -1,0 +1,154 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Panama (religion), CIA",
+                "year": 2015,
+                "url": "https://www.cia.gov/the-world-factbook/countries/panama/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2023 Census, Instituto Nacional de Estadística y Censo (INEC Panama)",
+                "year": 2023,
+                "url": "https://www.inec.gob.pa/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2013,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0807,
+        "5-9": 0.087,
+        "10-14": 0.0851,
+        "15-19": 0.0816,
+        "20-24": 0.0795,
+        "25-29": 0.0771,
+        "30-34": 0.0743,
+        "35-39": 0.0713,
+        "40-44": 0.0655,
+        "45-49": 0.0608,
+        "50-54": 0.0566,
+        "55-59": 0.0496,
+        "60-64": 0.0404,
+        "65-69": 0.0313,
+        "70-74": 0.0235,
+        "75-79": 0.0163,
+        "80-84": 0.0107,
+        "85+": 0.0087
+    },
+    "sex": {
+        "Male": 0.5,
+        "Female": 0.5
+    },
+    "religion": {
+        "Roman Catholicism": 0.632,
+        "Protestantism": 0.25,
+        "No religion": 0.076,
+        "Other": 0.042
+    },
+    "residence": {
+        "Urban": 0.662,
+        "Rural": 0.338
+    },
+    "marital status": {
+        "Single (never married)": 0.2747,
+        "Married": 0.5882,
+        "Widowed": 0.0094,
+        "Divorced": 0.1277
+    },
+    "education": {
+        "No schooling": 0.0347,
+        "Primary education": 0.2432,
+        "Secondary education": 0.3821,
+        "Tertiary education": 0.34
+    },
+    "occupation": {
+        "Managers": 0.0508,
+        "Professionals": 0.1183,
+        "Technicians and associate professionals": 0.0762,
+        "Clerical support workers": 0.0588,
+        "Service and sales workers": 0.2013,
+        "Skilled agricultural, forestry and fishery workers": 0.0964,
+        "Craft and related trades workers": 0.1383,
+        "Plant and machine operators and assemblers": 0.0746,
+        "Elementary occupations": 0.1853
+    },
+    "employment status": {
+        "Employed": 0.6076,
+        "Unemployed": 0.0554,
+        "Outside the labour force": 0.337
+    },
+    "location": {
+        "Panamá": 0.35416,
+        "Panamá Oeste": 0.16081,
+        "Chiriquí": 0.11589,
+        "Colón": 0.06937,
+        "Coclé": 0.066,
+        "Veraguas": 0.06391,
+        "Ngäbe-Buglé": 0.05218,
+        "Bocas del Toro": 0.03917,
+        "Herrera": 0.03003,
+        "Los Santos": 0.02422,
+        "Darién": 0.01334,
+        "Guna Yala": 0.00788,
+        "Emberá-Wounaan": 0.00304
+    }
+}

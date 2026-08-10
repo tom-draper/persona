@@ -1,0 +1,54 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population Census 2020, Statistics Bureau of Japan",
+                "year": 2020,
+                "note": "Population shares of Osaka city's 24 wards.",
+                "url": "https://www.stat.go.jp/english/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Abeno-ku": 0.0404,
+        "Asahi-ku": 0.0326,
+        "Chūō-ku": 0.0426,
+        "Fukushima-ku": 0.0294,
+        "Higashinari-ku": 0.0315,
+        "Higashisumiyoshi-ku": 0.0481,
+        "Higashiyodogawa-ku": 0.0634,
+        "Hirano-ku": 0.0668,
+        "Ikuno-ku": 0.0456,
+        "Jōtō-ku": 0.061,
+        "Kita-ku": 0.0513,
+        "Konohana-ku": 0.0228,
+        "Minato-ku": 0.0288,
+        "Miyakojima-ku": 0.0384,
+        "Naniwa-ku": 0.0286,
+        "Nishi-ku": 0.0402,
+        "Nishinari-ku": 0.0376,
+        "Nishiyodogawa-ku": 0.0352,
+        "Suminoe-ku": 0.0419,
+        "Sumiyoshi-ku": 0.0546,
+        "Taishō-ku": 0.0221,
+        "Tennōji-ku": 0.0306,
+        "Tsurumi-ku": 0.0398,
+        "Yodogawa-ku": 0.0668
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

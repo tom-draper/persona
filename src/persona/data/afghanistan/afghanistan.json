@@ -1,0 +1,165 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious composition estimate, Association of Religion Data Archives (ARDA)",
+                "year": 2025,
+                "url": "https://www.thearda.com/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, National Statistics and Information Authority (Afghanistan)",
+                "year": 2024,
+                "url": "https://nsia.gov.af/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2015,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2021,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1606,
+        "5-9": 0.1441,
+        "10-14": 0.1276,
+        "15-19": 0.1129,
+        "20-24": 0.1004,
+        "25-29": 0.0835,
+        "30-34": 0.065,
+        "35-39": 0.0496,
+        "40-44": 0.0398,
+        "45-49": 0.0329,
+        "50-54": 0.0259,
+        "55-59": 0.0196,
+        "60-64": 0.0144,
+        "65-69": 0.0102,
+        "70-74": 0.0068,
+        "75-79": 0.0042,
+        "80-84": 0.0019,
+        "85+": 0.0007
+    },
+    "sex": {
+        "Male": 0.505,
+        "Female": 0.495
+    },
+    "religion": {
+        "Islam": 0.999,
+        "Other": 0.001
+    },
+    "residence": {
+        "Urban": 0.259,
+        "Rural": 0.741
+    },
+    "marital status": {
+        "Single (never married)": 0.3369,
+        "Married": 0.6372,
+        "Widowed": 0.0247,
+        "Divorced": 0.0012
+    },
+    "education": {
+        "No schooling": 0.5989,
+        "Primary education": 0.2454,
+        "Secondary education": 0.1208,
+        "Tertiary education": 0.0349
+    },
+    "occupation": {
+        "Managers": 0.0177,
+        "Professionals": 0.0526,
+        "Technicians and associate professionals": 0.0126,
+        "Clerical support workers": 0.0015,
+        "Service and sales workers": 0.1119,
+        "Skilled agricultural, forestry and fishery workers": 0.4908,
+        "Craft and related trades workers": 0.1,
+        "Plant and machine operators and assemblers": 0.0493,
+        "Elementary occupations": 0.1353,
+        "Armed forces occupations": 0.0282
+    },
+    "employment status": {
+        "Employed": 0.3246,
+        "Unemployed": 0.05,
+        "Outside the labour force": 0.6254
+    },
+    "location": {
+        "Kabul": 0.19787,
+        "Herat": 0.07736,
+        "Nangarhar": 0.06105,
+        "Balkh": 0.05175,
+        "Helmand": 0.0515,
+        "Kandahar": 0.05083,
+        "Ghazni": 0.04848,
+        "Kunduz": 0.0409,
+        "Faryab": 0.03954,
+        "Takhar": 0.03898,
+        "Badakhshan": 0.03749,
+        "Baghlan": 0.03625,
+        "Paktia": 0.02756,
+        "Ghor": 0.02764,
+        "Parwan": 0.02627,
+        "Paktika": 0.02177,
+        "Jowzjan": 0.02152,
+        "Farah": 0.02004,
+        "Badghis": 0.01908,
+        "Daykundi": 0.01835,
+        "Kunar": 0.01776,
+        "Bamyan": 0.01762,
+        "Laghman": 0.01754,
+        "Kapisa": 0.01735,
+        "Uruzgan": 0.01551
+    }
+}

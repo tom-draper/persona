@@ -1,0 +1,164 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Bhutan (religion), CIA",
+                "year": 2020,
+                "url": "https://www.cia.gov/the-world-factbook/countries/bhutan/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2017 Population and Housing Census, National Statistics Bureau (Bhutan)",
+                "year": 2017,
+                "url": "https://www.nsb.gov.bt/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2017,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-88), ILOSTAT, International Labour Organization",
+                "year": 2015,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0615,
+        "5-9": 0.071,
+        "10-14": 0.0822,
+        "15-19": 0.088,
+        "20-24": 0.0923,
+        "25-29": 0.097,
+        "30-34": 0.105,
+        "35-39": 0.0907,
+        "40-44": 0.0752,
+        "45-49": 0.0581,
+        "50-54": 0.0464,
+        "55-59": 0.0386,
+        "60-64": 0.0303,
+        "65-69": 0.0249,
+        "70-74": 0.017,
+        "75-79": 0.0111,
+        "80-84": 0.0065,
+        "85+": 0.0041
+    },
+    "sex": {
+        "Male": 0.535,
+        "Female": 0.465
+    },
+    "religion": {
+        "Buddhism": 0.746,
+        "Hinduism": 0.226,
+        "Other": 0.019,
+        "Christianity or Other Christianity": 0.005,
+        "Islam": 0.004
+    },
+    "residence": {
+        "Urban": 0.434,
+        "Rural": 0.566
+    },
+    "marital status": {
+        "Single (never married)": 0.3104,
+        "Married": 0.6221,
+        "Cohabiting": 0.008,
+        "Widowed": 0.0283,
+        "Divorced": 0.0312
+    },
+    "education": {
+        "No schooling": 0.381,
+        "Primary education": 0.1782,
+        "Secondary education": 0.3407,
+        "Tertiary education": 0.1002
+    },
+    "occupation": {
+        "Managers": 0.0202,
+        "Professionals": 0.0868,
+        "Technicians and associate professionals": 0.0355,
+        "Clerical support workers": 0.0261,
+        "Service and sales workers": 0.0867,
+        "Skilled agricultural, forestry and fishery workers": 0.5798,
+        "Craft and related trades workers": 0.0546,
+        "Plant and machine operators and assemblers": 0.0443,
+        "Elementary occupations": 0.0345,
+        "Armed forces occupations": 0.0315
+    },
+    "employment status": {
+        "Employed": 0.6273,
+        "Unemployed": 0.0209,
+        "Outside the labour force": 0.3518
+    },
+    "location": {
+        "Thimphu": 0.1908,
+        "Chhukha": 0.09484,
+        "Samtse": 0.08608,
+        "Paro": 0.0637,
+        "Sarpang": 0.06327,
+        "Wangdue Phodrang": 0.05802,
+        "Trashigang": 0.0626,
+        "Mongar": 0.05109,
+        "Samdrup Jongkhar": 0.04824,
+        "Punakha": 0.03952,
+        "Dagana": 0.03433,
+        "Pemagatshel": 0.0325,
+        "Tsirang": 0.03077,
+        "Trongsa": 0.02745,
+        "Bumthang": 0.02451,
+        "Zhemgang": 0.02443,
+        "Trashiyangtse": 0.02379,
+        "Lhuentse": 0.01985,
+        "Haa": 0.01878,
+        "Gasa": 0.00543
+    }
+}

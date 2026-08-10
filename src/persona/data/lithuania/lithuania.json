@@ -1,0 +1,154 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), Statistics Lithuania",
+                "year": 2021,
+                "url": "https://www.stat.gov.lt/en",
+                "note": "13.7% did not declare a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, Statistics Lithuania",
+                "year": 2021,
+                "url": "https://www.stat.gov.lt/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2018,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0448,
+        "5-9": 0.0529,
+        "10-14": 0.0511,
+        "15-19": 0.0486,
+        "20-24": 0.0556,
+        "25-29": 0.0642,
+        "30-34": 0.0736,
+        "35-39": 0.0702,
+        "40-44": 0.0619,
+        "45-49": 0.0643,
+        "50-54": 0.0701,
+        "55-59": 0.0699,
+        "60-64": 0.074,
+        "65-69": 0.0587,
+        "70-74": 0.0476,
+        "75-79": 0.0344,
+        "80-84": 0.0304,
+        "85+": 0.0274
+    },
+    "sex": {
+        "Male": 0.472,
+        "Female": 0.528
+    },
+    "religion": {
+        "Roman Catholicism": 0.742,
+        "No religion": 0.063,
+        "Eastern Orthodoxy": 0.044,
+        "Other": 0.007,
+        "Christianity or Other Christianity": 0.003
+    },
+    "residence": {
+        "Urban": 0.691,
+        "Rural": 0.309
+    },
+    "marital status": {
+        "Single (never married)": 0.324,
+        "Married": 0.4921,
+        "Widowed": 0.0862,
+        "Divorced": 0.0977
+    },
+    "education": {
+        "No schooling": 0.0032,
+        "Primary education": 0.0393,
+        "Secondary education": 0.2743,
+        "Tertiary education": 0.6832
+    },
+    "occupation": {
+        "Managers": 0.099,
+        "Professionals": 0.3121,
+        "Technicians and associate professionals": 0.0921,
+        "Clerical support workers": 0.0446,
+        "Service and sales workers": 0.1222,
+        "Skilled agricultural, forestry and fishery workers": 0.0205,
+        "Craft and related trades workers": 0.124,
+        "Plant and machine operators and assemblers": 0.0731,
+        "Elementary occupations": 0.1091,
+        "Armed forces occupations": 0.0033
+    },
+    "employment status": {
+        "Employed": 0.5868,
+        "Unemployed": 0.0424,
+        "Outside the labour force": 0.3708
+    },
+    "location": {
+        "Vilnius": 0.29767,
+        "Kaunas": 0.20291,
+        "Klaipėda": 0.11752,
+        "Šiauliai": 0.09153,
+        "Panevėžys": 0.074,
+        "Marijampolė": 0.04751,
+        "Alytus": 0.04733,
+        "Telšiai": 0.04595,
+        "Utena": 0.04387,
+        "Tauragė": 0.0317
+    }
+}

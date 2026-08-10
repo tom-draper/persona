@@ -1,0 +1,150 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "The World Factbook: Costa Rica (religion), CIA",
+                "year": 2021,
+                "url": "https://www.cia.gov/the-world-factbook/countries/costa-rica/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, Instituto Nacional de Estadística y Censos (INEC Costa Rica)",
+                "year": 2022,
+                "url": "https://www.inec.cr/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2018,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0557,
+        "5-9": 0.0675,
+        "10-14": 0.0702,
+        "15-19": 0.0705,
+        "20-24": 0.0754,
+        "25-29": 0.0788,
+        "30-34": 0.0808,
+        "35-39": 0.0805,
+        "40-44": 0.0725,
+        "45-49": 0.0634,
+        "50-54": 0.0583,
+        "55-59": 0.0573,
+        "60-64": 0.052,
+        "65-69": 0.0405,
+        "70-74": 0.0304,
+        "75-79": 0.0215,
+        "80-84": 0.0134,
+        "85+": 0.0114
+    },
+    "sex": {
+        "Male": 0.494,
+        "Female": 0.506
+    },
+    "religion": {
+        "Roman Catholicism": 0.475,
+        "No religion": 0.27,
+        "Protestantism": 0.21,
+        "Other": 0.031,
+        "Jehovah's Witnesses": 0.014
+    },
+    "residence": {
+        "Urban": 0.797,
+        "Rural": 0.203
+    },
+    "marital status": {
+        "Single (never married)": 0.3528,
+        "Married": 0.3315,
+        "Cohabiting": 0.1618,
+        "Widowed": 0.0401,
+        "Divorced": 0.1138
+    },
+    "education": {
+        "No schooling": 0.0278,
+        "Primary education": 0.4407,
+        "Secondary education": 0.335,
+        "Tertiary education": 0.1965
+    },
+    "occupation": {
+        "Managers": 0.0147,
+        "Professionals": 0.1422,
+        "Technicians and associate professionals": 0.1071,
+        "Clerical support workers": 0.08,
+        "Service and sales workers": 0.1978,
+        "Skilled agricultural, forestry and fishery workers": 0.0268,
+        "Craft and related trades workers": 0.1148,
+        "Plant and machine operators and assemblers": 0.0903,
+        "Elementary occupations": 0.2262
+    },
+    "employment status": {
+        "Employed": 0.5371,
+        "Unemployed": 0.0395,
+        "Outside the labour force": 0.4234
+    },
+    "location": {
+        "San José": 0.32161,
+        "Alajuela": 0.20282,
+        "Cartago": 0.11243,
+        "Heredia": 0.09932,
+        "Puntarenas": 0.09411,
+        "Limón": 0.0886,
+        "Guanacaste": 0.08111
+    }
+}

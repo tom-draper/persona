@@ -1,0 +1,162 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2014 Census (religion), National Bureau of Statistics (Moldova)",
+                "year": 2014,
+                "url": "https://statistica.gov.md/en",
+                "note": "6.4% did not declare a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates, National Bureau of Statistics (Moldova)",
+                "year": 2024,
+                "url": "https://statistica.gov.md/en"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2014,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0583,
+        "5-9": 0.0736,
+        "10-14": 0.068,
+        "15-19": 0.0588,
+        "20-24": 0.0487,
+        "25-29": 0.0557,
+        "30-34": 0.0735,
+        "35-39": 0.083,
+        "40-44": 0.0696,
+        "45-49": 0.0641,
+        "50-54": 0.0597,
+        "55-59": 0.06,
+        "60-64": 0.0708,
+        "65-69": 0.0611,
+        "70-74": 0.0498,
+        "75-79": 0.0195,
+        "80-84": 0.0151,
+        "85+": 0.0106
+    },
+    "sex": {
+        "Male": 0.46,
+        "Female": 0.54
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.905,
+        "Christianity or Other Christianity": 0.026,
+        "No religion": 0.002,
+        "Other": 0.002
+    },
+    "residence": {
+        "Urban": 0.437,
+        "Rural": 0.563
+    },
+    "marital status": {
+        "Single (never married)": 0.2521,
+        "Married": 0.5709,
+        "Widowed": 0.1167,
+        "Divorced": 0.0603
+    },
+    "education": {
+        "No schooling": 0.0013,
+        "Primary education": 0.0534,
+        "Secondary education": 0.8098,
+        "Tertiary education": 0.1355
+    },
+    "occupation": {
+        "Managers": 0.0504,
+        "Professionals": 0.096,
+        "Technicians and associate professionals": 0.0393,
+        "Clerical support workers": 0.0157,
+        "Service and sales workers": 0.0875,
+        "Skilled agricultural, forestry and fishery workers": 0.497,
+        "Craft and related trades workers": 0.0786,
+        "Plant and machine operators and assemblers": 0.0473,
+        "Elementary occupations": 0.088
+    },
+    "employment status": {
+        "Employed": 0.712,
+        "Unemployed": 0.0109,
+        "Outside the labour force": 0.2771
+    },
+    "location": {
+        "Chișinău": 0.38438,
+        "Bălți": 0.05047,
+        "Orhei": 0.0423,
+        "Ungheni": 0.04046,
+        "Ialoveni": 0.03974,
+        "Cahul": 0.03885,
+        "Hîncești": 0.03708,
+        "Strășeni": 0.03275,
+        "Soroca": 0.03128,
+        "Anenii Noi": 0.03079,
+        "Căușeni": 0.03056,
+        "Fălești": 0.02991,
+        "Sîngerei": 0.02986,
+        "Drochia": 0.02868,
+        "Florești": 0.02843,
+        "Criuleni": 0.02825,
+        "Edineț": 0.02692,
+        "Călărași": 0.02341,
+        "Rîșcani": 0.0233,
+        "Ștefan Vodă": 0.02257
+    }
+}

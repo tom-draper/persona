@@ -1,0 +1,39 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Popolazione residente per municipio, Comune di Milano",
+                "year": 2024,
+                "note": "Population shares of Milan's nine boroughs (municipi).",
+                "url": "https://www.istat.it/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Municipio 1": 0.0701,
+        "Municipio 2": 0.1155,
+        "Municipio 3": 0.1025,
+        "Municipio 4": 0.1167,
+        "Municipio 5": 0.0895,
+        "Municipio 6": 0.1079,
+        "Municipio 7": 0.1247,
+        "Municipio 8": 0.1387,
+        "Municipio 9": 0.1345
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

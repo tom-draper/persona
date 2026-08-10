@@ -1,0 +1,155 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious composition estimate, Association of Religion Data Archives (ARDA)",
+                "year": 2025,
+                "url": "https://www.thearda.com/",
+                "note": "Islam combines Sunni, Shia and Alawite; the Druze (~3%) are not counted separately."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population estimates 2018, Central Bureau of Statistics (Syria)",
+                "year": 2018,
+                "url": "https://www.cbssyr.sy/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2006,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-88), ILOSTAT, International Labour Organization",
+                "year": 2010,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0963,
+        "5-9": 0.0871,
+        "10-14": 0.1199,
+        "15-19": 0.12,
+        "20-24": 0.1152,
+        "25-29": 0.0874,
+        "30-34": 0.0628,
+        "35-39": 0.0593,
+        "40-44": 0.0547,
+        "45-49": 0.0488,
+        "50-54": 0.0415,
+        "55-59": 0.034,
+        "60-64": 0.0262,
+        "65-69": 0.0194,
+        "70-74": 0.0131,
+        "75-79": 0.0081,
+        "80-84": 0.0041,
+        "85+": 0.0021
+    },
+    "sex": {
+        "Male": 0.5,
+        "Female": 0.5
+    },
+    "religion": {
+        "Islam": 0.956,
+        "Christianity or Other Christianity": 0.024,
+        "No religion": 0.02
+    },
+    "residence": {
+        "Urban": 0.721,
+        "Rural": 0.279
+    },
+    "marital status": {
+        "Single (never married)": 0.4351,
+        "Married": 0.5523,
+        "Widowed": 0.0116,
+        "Divorced": 0.001
+    },
+    "education": {
+        "No schooling": 0.1107,
+        "Primary education": 0.4274,
+        "Secondary education": 0.2781,
+        "Tertiary education": 0.1837
+    },
+    "occupation": {
+        "Managers": 0.0173,
+        "Professionals": 0.1154,
+        "Technicians and associate professionals": 0.0497,
+        "Clerical support workers": 0.0606,
+        "Service and sales workers": 0.1401,
+        "Skilled agricultural, forestry and fishery workers": 0.1076,
+        "Craft and related trades workers": 0.2801,
+        "Plant and machine operators and assemblers": 0.1181,
+        "Elementary occupations": 0.1111
+    },
+    "employment status": {
+        "Employed": 0.3189,
+        "Unemployed": 0.0501,
+        "Outside the labour force": 0.631
+    },
+    "location": {
+        "Aleppo": 0.21393,
+        "Rif Dimashq": 0.13169,
+        "Damascus": 0.10282,
+        "Homs": 0.08196,
+        "Hama": 0.07408,
+        "Idlib": 0.06808,
+        "Hasakah": 0.05919,
+        "Latakia": 0.05946,
+        "Deir ez-Zor": 0.05583,
+        "Daraa": 0.04641,
+        "Raqqa": 0.04274,
+        "Tartus": 0.03651,
+        "Suwayda": 0.02325,
+        "Quneitra": 0.00405
+    }
+}

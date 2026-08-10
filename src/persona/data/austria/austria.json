@@ -1,0 +1,153 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Religious affiliation, Statistics Austria",
+                "year": 2021,
+                "url": "https://www.statistik.at/en/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Population by state, Statistics Austria",
+                "year": 2022,
+                "url": "https://www.statistik.at/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2012,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0466,
+        "5-9": 0.0492,
+        "10-14": 0.0472,
+        "15-19": 0.0481,
+        "20-24": 0.0521,
+        "25-29": 0.0631,
+        "30-34": 0.0696,
+        "35-39": 0.0685,
+        "40-44": 0.0672,
+        "45-49": 0.064,
+        "50-54": 0.0729,
+        "55-59": 0.0788,
+        "60-64": 0.0711,
+        "65-69": 0.0566,
+        "70-74": 0.0459,
+        "75-79": 0.0376,
+        "80-84": 0.0352,
+        "85+": 0.0263
+    },
+    "sex": {
+        "Male": 0.492,
+        "Female": 0.508
+    },
+    "religion": {
+        "Roman Catholicism": 0.552,
+        "No religion": 0.224,
+        "Islam": 0.083,
+        "Other": 0.054,
+        "Eastern Orthodoxy": 0.049,
+        "Protestantism": 0.038
+    },
+    "residence": {
+        "Urban": 0.697,
+        "Rural": 0.303
+    },
+    "marital status": {
+        "Single (never married)": 0.1873,
+        "Married": 0.4406,
+        "Cohabiting": 0.3451,
+        "Widowed": 0.0022,
+        "Divorced": 0.0248
+    },
+    "education": {
+        "Primary education": 0.0442,
+        "Secondary education": 0.5181,
+        "Tertiary education": 0.4377
+    },
+    "occupation": {
+        "Managers": 0.0548,
+        "Professionals": 0.2276,
+        "Technicians and associate professionals": 0.1832,
+        "Clerical support workers": 0.0939,
+        "Service and sales workers": 0.1703,
+        "Skilled agricultural, forestry and fishery workers": 0.0283,
+        "Craft and related trades workers": 0.1144,
+        "Plant and machine operators and assemblers": 0.0499,
+        "Elementary occupations": 0.0752,
+        "Armed forces occupations": 0.0026
+    },
+    "employment status": {
+        "Employed": 0.5676,
+        "Unemployed": 0.0336,
+        "Outside the labour force": 0.3988
+    },
+    "location": {
+        "Vienna": 0.21517,
+        "Lower Austria": 0.18924,
+        "Upper Austria": 0.16767,
+        "Styria": 0.13957,
+        "Tyrol": 0.08512,
+        "Carinthia": 0.06288,
+        "Salzburg": 0.06246,
+        "Vorarlberg": 0.04474,
+        "Burgenland": 0.03315
+    }
+}

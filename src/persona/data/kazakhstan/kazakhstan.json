@@ -1,0 +1,164 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 National Census (religion), Bureau of National Statistics (Kazakhstan)",
+                "year": 2021,
+                "url": "https://stat.gov.kz/en/",
+                "note": "11% of respondents did not state a religion and are excluded from these shares."
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 National Census, Bureau of National Statistics (Kazakhstan)",
+                "year": 2021,
+                "url": "https://stat.gov.kz/en/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2015,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2013,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1046,
+        "5-9": 0.0987,
+        "10-14": 0.0921,
+        "15-19": 0.0741,
+        "20-24": 0.0586,
+        "25-29": 0.0651,
+        "30-34": 0.078,
+        "35-39": 0.0761,
+        "40-44": 0.0647,
+        "45-49": 0.058,
+        "50-54": 0.0525,
+        "55-59": 0.049,
+        "60-64": 0.0456,
+        "65-69": 0.0357,
+        "70-74": 0.0229,
+        "75-79": 0.0106,
+        "80-84": 0.0081,
+        "85+": 0.0059
+    },
+    "sex": {
+        "Male": 0.487,
+        "Female": 0.513
+    },
+    "religion": {
+        "Islam": 0.693,
+        "Eastern Orthodoxy": 0.172,
+        "No religion": 0.022,
+        "Other": 0.002
+    },
+    "residence": {
+        "Urban": 0.624,
+        "Rural": 0.376
+    },
+    "marital status": {
+        "Single (never married)": 0.2373,
+        "Married": 0.6154,
+        "Cohabiting": 0.026,
+        "Widowed": 0.0297,
+        "Divorced": 0.0916
+    },
+    "education": {
+        "No schooling": 0.0022,
+        "Primary education": 0.027,
+        "Secondary education": 0.7324,
+        "Tertiary education": 0.2384
+    },
+    "occupation": {
+        "Managers": 0.0538,
+        "Professionals": 0.1593,
+        "Technicians and associate professionals": 0.1102,
+        "Clerical support workers": 0.0387,
+        "Service and sales workers": 0.1514,
+        "Skilled agricultural, forestry and fishery workers": 0.1011,
+        "Craft and related trades workers": 0.0994,
+        "Plant and machine operators and assemblers": 0.0636,
+        "Elementary occupations": 0.2182,
+        "Armed forces occupations": 0.0044
+    },
+    "employment status": {
+        "Employed": 0.6454,
+        "Unemployed": 0.0323,
+        "Outside the labour force": 0.3223
+    },
+    "location": {
+        "Turkistan": 0.10718,
+        "Almaty (city)": 0.10904,
+        "Astana": 0.06809,
+        "Almaty Region": 0.07602,
+        "Jambyl": 0.06173,
+        "Shymkent": 0.06013,
+        "Karaganda": 0.05759,
+        "Aktobe": 0.04697,
+        "Kostanay": 0.04227,
+        "Kyzylorda": 0.0422,
+        "Akmola": 0.03992,
+        "Mangystau": 0.03867,
+        "Pavlodar": 0.03833,
+        "East Kazakhstan": 0.03711,
+        "Jetisu": 0.03549,
+        "Atyrau": 0.03502,
+        "West Kazakhstan": 0.03487,
+        "Abai": 0.03099,
+        "North Kazakhstan": 0.02717,
+        "Ulytau": 0.01122
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "Bevolking per stadsdeel, Centraal Bureau voor de Statistiek (CBS)",
+                "year": 2023,
+                "note": "Population shares of Amsterdam's seven boroughs (stadsdelen).",
+                "url": "https://www.cbs.nl/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "World Urbanization Prospects 2018, United Nations",
+                "year": 2018,
+                "note": "This dataset covers a major city; its population is treated as an urban agglomeration.",
+                "url": "https://population.un.org/wup/"
+            }
+        ]
+    },
+    "location": {
+        "Centrum": 0.1023,
+        "Nieuw-West": 0.1796,
+        "Noord": 0.1122,
+        "Oost": 0.1607,
+        "West": 0.1703,
+        "Zuid": 0.171,
+        "Zuidoost": 0.104
+    },
+    "residence": {
+        "Urban": 0.99,
+        "Rural": 0.01
+    }
+}

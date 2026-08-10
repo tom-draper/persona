@@ -1,0 +1,178 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Nigeria Demographic and Health Survey 2024",
+                "year": 2024,
+                "url": "https://dhsprogram.com/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "State population estimates, National Population Commission of Nigeria",
+                "year": 2019,
+                "url": "https://nationalpopulation.gov.ng/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2013,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2024,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1471,
+        "5-9": 0.1394,
+        "10-14": 0.1284,
+        "15-19": 0.111,
+        "20-24": 0.0922,
+        "25-29": 0.0757,
+        "30-34": 0.0637,
+        "35-39": 0.0547,
+        "40-44": 0.0476,
+        "45-49": 0.0388,
+        "50-54": 0.0298,
+        "55-59": 0.0232,
+        "60-64": 0.0179,
+        "65-69": 0.0131,
+        "70-74": 0.0086,
+        "75-79": 0.0052,
+        "80-84": 0.0024,
+        "85+": 0.0009
+    },
+    "sex": {
+        "Male": 0.506,
+        "Female": 0.494
+    },
+    "religion": {
+        "Islam": 0.577,
+        "Christianity or Other Christianity": 0.417,
+        "Other": 0.006
+    },
+    "residence": {
+        "Urban": 0.638,
+        "Rural": 0.362
+    },
+    "marital status": {
+        "Single (never married)": 0.3513,
+        "Married": 0.5946,
+        "Cohabiting": 0.007,
+        "Widowed": 0.0313,
+        "Divorced": 0.0158
+    },
+    "education": {
+        "No schooling": 0.2972,
+        "Primary education": 0.2206,
+        "Secondary education": 0.3731,
+        "Tertiary education": 0.109
+    },
+    "occupation": {
+        "Managers": 0.0078,
+        "Professionals": 0.0461,
+        "Technicians and associate professionals": 0.0218,
+        "Clerical support workers": 0.0093,
+        "Service and sales workers": 0.2951,
+        "Skilled agricultural, forestry and fishery workers": 0.3777,
+        "Craft and related trades workers": 0.1217,
+        "Plant and machine operators and assemblers": 0.0554,
+        "Elementary occupations": 0.065
+    },
+    "employment status": {
+        "Employed": 0.7999,
+        "Unemployed": 0.0253,
+        "Outside the labour force": 0.1748
+    },
+    "location": {
+        "Kano": 0.07133,
+        "Lagos": 0.06392,
+        "Katsina": 0.04654,
+        "Kaduna": 0.04165,
+        "Bauchi": 0.03773,
+        "Oyo": 0.03759,
+        "Rivers": 0.0352,
+        "Jigawa": 0.03392,
+        "Niger": 0.03113,
+        "Ogun": 0.02975,
+        "Sokoto": 0.02934,
+        "Benue": 0.02896,
+        "Borno": 0.02878,
+        "Anambra": 0.02802,
+        "Zamfara": 0.02661,
+        "Delta": 0.02656,
+        "Imo": 0.02586,
+        "Kebbi": 0.02503,
+        "Ondo": 0.02487,
+        "Akwa Ibom": 0.02392,
+        "Enugu": 0.022,
+        "Adamawa": 0.0227,
+        "Osun": 0.0212,
+        "Edo": 0.02232,
+        "Plateau": 0.02202,
+        "Kogi": 0.02079,
+        "Cross River": 0.02089,
+        "Abia": 0.01923,
+        "Ekiti": 0.01677,
+        "Gombe": 0.01813,
+        "Taraba": 0.01667,
+        "Yobe": 0.017,
+        "Kwara": 0.01631,
+        "Ebonyi": 0.01505,
+        "Nasarawa": 0.01317,
+        "Bayelsa": 0.01198,
+        "Federal Capital Territory": 0.00704
+    }
+}

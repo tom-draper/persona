@@ -1,0 +1,167 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "Global Religious Landscape, Pew Research Center",
+                "year": 2020,
+                "url": "https://www.pewresearch.org/religion/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2018 Census, Institut National de la Statistique (INSTAT Madagascar)",
+                "year": 2018,
+                "url": "https://www.instat.mg/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2008,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2022,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.1471,
+        "5-9": 0.1295,
+        "10-14": 0.1191,
+        "15-19": 0.1068,
+        "20-24": 0.0961,
+        "25-29": 0.0833,
+        "30-34": 0.0669,
+        "35-39": 0.0548,
+        "40-44": 0.0472,
+        "45-49": 0.0397,
+        "50-54": 0.0319,
+        "55-59": 0.0246,
+        "60-64": 0.0196,
+        "65-69": 0.0148,
+        "70-74": 0.01,
+        "75-79": 0.0048,
+        "80-84": 0.0025,
+        "85+": 0.0012
+    },
+    "sex": {
+        "Male": 0.502,
+        "Female": 0.498
+    },
+    "religion": {
+        "Christianity or Other Christianity": 0.846,
+        "No religion": 0.073,
+        "African traditional religion": 0.047,
+        "Islam": 0.031,
+        "Other": 0.003
+    },
+    "residence": {
+        "Urban": 0.329,
+        "Rural": 0.671
+    },
+    "marital status": {
+        "Single (never married)": 0.247,
+        "Married": 0.6008,
+        "Cohabiting": 0.0451,
+        "Widowed": 0.0309,
+        "Divorced": 0.0762
+    },
+    "education": {
+        "No schooling": 0.1728,
+        "Primary education": 0.6416,
+        "Secondary education": 0.1637,
+        "Tertiary education": 0.0219
+    },
+    "occupation": {
+        "Managers": 0.0048,
+        "Professionals": 0.0245,
+        "Technicians and associate professionals": 0.0126,
+        "Clerical support workers": 0.0088,
+        "Service and sales workers": 0.0639,
+        "Skilled agricultural, forestry and fishery workers": 0.5268,
+        "Craft and related trades workers": 0.0904,
+        "Plant and machine operators and assemblers": 0.0132,
+        "Elementary occupations": 0.2532,
+        "Armed forces occupations": 0.0018
+    },
+    "employment status": {
+        "Employed": 0.829,
+        "Unemployed": 0.026,
+        "Outside the labour force": 0.145
+    },
+    "location": {
+        "Analamanga": 0.14273,
+        "Vakinankaratra": 0.08183,
+        "Atsimo-Andrefana": 0.07097,
+        "Sofia": 0.05918,
+        "Atsinanana": 0.05856,
+        "Matsiatra Ambony": 0.05709,
+        "Alaotra-Mangoro": 0.04953,
+        "Sava": 0.0443,
+        "Atsimo-Atsinanana": 0.0405,
+        "Boeny": 0.03673,
+        "Androy": 0.03564,
+        "Itasy": 0.03542,
+        "Diana": 0.0351,
+        "Amoron'i Mania": 0.0329,
+        "Anosy": 0.03193,
+        "Fitovinany": 0.03162,
+        "Vatovavy": 0.02857,
+        "Menabe": 0.02764,
+        "Bongolava": 0.02661,
+        "Analanjirofo": 0.026,
+        "Ambatosoa": 0.01937,
+        "Betsiboka": 0.01556,
+        "Melaky": 0.01222
+    }
+}

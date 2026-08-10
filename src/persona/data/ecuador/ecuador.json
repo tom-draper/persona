@@ -1,0 +1,167 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2012 Census (religion), Instituto Nacional de Estadística y Censos (INEC)",
+                "year": 2012,
+                "url": "https://www.ecuadorencifras.gob.ec/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2022 Census, Instituto Nacional de Estadística y Censos (INEC)",
+                "year": 2022,
+                "url": "https://www.ecuadorencifras.gob.ec/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2010,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.0781,
+        "5-9": 0.0823,
+        "10-14": 0.0896,
+        "15-19": 0.0873,
+        "20-24": 0.0869,
+        "25-29": 0.0856,
+        "30-34": 0.0809,
+        "35-39": 0.0742,
+        "40-44": 0.0665,
+        "45-49": 0.0582,
+        "50-54": 0.0507,
+        "55-59": 0.0431,
+        "60-64": 0.0355,
+        "65-69": 0.0286,
+        "70-74": 0.0222,
+        "75-79": 0.0149,
+        "80-84": 0.009,
+        "85+": 0.0062
+    },
+    "sex": {
+        "Male": 0.499,
+        "Female": 0.501
+    },
+    "religion": {
+        "Roman Catholicism": 0.804,
+        "Protestantism": 0.113,
+        "No religion": 0.07,
+        "Other": 0.013
+    },
+    "residence": {
+        "Urban": 0.634,
+        "Rural": 0.366
+    },
+    "marital status": {
+        "Single (never married)": 0.3141,
+        "Married": 0.3509,
+        "Cohabiting": 0.2231,
+        "Widowed": 0.0391,
+        "Divorced": 0.0728
+    },
+    "education": {
+        "No schooling": 0.0547,
+        "Primary education": 0.3428,
+        "Secondary education": 0.4283,
+        "Tertiary education": 0.1742
+    },
+    "occupation": {
+        "Managers": 0.0097,
+        "Professionals": 0.075,
+        "Technicians and associate professionals": 0.0454,
+        "Clerical support workers": 0.0288,
+        "Service and sales workers": 0.1894,
+        "Skilled agricultural, forestry and fishery workers": 0.2144,
+        "Craft and related trades workers": 0.108,
+        "Plant and machine operators and assemblers": 0.0656,
+        "Elementary occupations": 0.2599,
+        "Armed forces occupations": 0.0038
+    },
+    "employment status": {
+        "Employed": 0.6237,
+        "Unemployed": 0.0213,
+        "Outside the labour force": 0.355
+    },
+    "location": {
+        "Guayas": 0.25928,
+        "Pichincha": 0.18239,
+        "Manabí": 0.09403,
+        "Los Ríos": 0.05305,
+        "Azuay": 0.04732,
+        "El Oro": 0.04219,
+        "Tungurahua": 0.03327,
+        "Esmeraldas": 0.0327,
+        "Santo Domingo de los Tsáchilas": 0.0291,
+        "Loja": 0.02866,
+        "Chimborazo": 0.02786,
+        "Cotopaxi": 0.02776,
+        "Imbabura": 0.02774,
+        "Santa Elena": 0.02277,
+        "Cañar": 0.01344,
+        "Sucumbíos": 0.01175,
+        "Bolívar": 0.01175,
+        "Morona Santiago": 0.01136,
+        "Orellana": 0.01075,
+        "Carchi": 0.0102,
+        "Napo": 0.00777,
+        "Pastaza": 0.00661,
+        "Zamora Chinchipe": 0.00655,
+        "Galápagos": 0.00169
+    }
+}

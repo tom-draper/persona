@@ -1,0 +1,153 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "features": [
+                    "age",
+                    "sex"
+                ],
+                "name": "World Population Prospects 2024, United Nations",
+                "year": 2024,
+                "note": "Age proportions derived from the 2023 five-year age-band population estimates.",
+                "url": "https://population.un.org/wpp/"
+            },
+            {
+                "features": [
+                    "religion"
+                ],
+                "name": "2021 Census (religion), State Statistical Office (North Macedonia)",
+                "year": 2021,
+                "url": "https://www.stat.gov.mk/"
+            },
+            {
+                "features": [
+                    "location"
+                ],
+                "name": "2021 Census, State Statistical Office (North Macedonia)",
+                "year": 2021,
+                "url": "https://www.stat.gov.mk/"
+            },
+            {
+                "features": [
+                    "residence"
+                ],
+                "name": "Urban population (% of total population), World Bank",
+                "year": 2025,
+                "note": "Split of the population between urban and rural areas.",
+                "url": "https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS"
+            },
+            {
+                "features": [
+                    "marital status"
+                ],
+                "name": "World Marriage Data 2019, United Nations",
+                "year": 2011,
+                "note": "Distribution of the population aged 15 and over by marital status, weighted to that year's age-sex structure. Consensual unions are shown separately; separated persons are counted with divorced.",
+                "url": "https://www.un.org/development/desa/pd/data/world-marriage-data"
+            },
+            {
+                "features": [
+                    "education"
+                ],
+                "name": "Wittgenstein Centre Human Capital Data Explorer (Version 3.0, SSP2 scenario), IIASA",
+                "year": 2020,
+                "note": "Highest level of schooling attained by the population aged 15 and over, harmonised to no schooling, primary, secondary and tertiary.",
+                "url": "https://dataexplorer.wittgensteincentre.org/wcde-v3/"
+            },
+            {
+                "features": [
+                    "occupation"
+                ],
+                "name": "Employment by sex and occupation (ISCO-08), ILOSTAT, International Labour Organization",
+                "year": 2025,
+                "note": "Distribution of employed persons by major occupational group, latest available labour-force survey.",
+                "url": "https://ilostat.ilo.org/data/"
+            },
+            {
+                "features": [
+                    "employment status"
+                ],
+                "name": "Labour force participation rate and unemployment rate (modelled ILO estimate), World Bank",
+                "year": 2025,
+                "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
+                "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            }
+        ]
+    },
+    "age": {
+        "0-4": 0.052,
+        "5-9": 0.0592,
+        "10-14": 0.0596,
+        "15-19": 0.056,
+        "20-24": 0.0586,
+        "25-29": 0.062,
+        "30-34": 0.0664,
+        "35-39": 0.0686,
+        "40-44": 0.0707,
+        "45-49": 0.0692,
+        "50-54": 0.0673,
+        "55-59": 0.069,
+        "60-64": 0.0666,
+        "65-69": 0.062,
+        "70-74": 0.0501,
+        "75-79": 0.0312,
+        "80-84": 0.019,
+        "85+": 0.0127
+    },
+    "sex": {
+        "Male": 0.486,
+        "Female": 0.514
+    },
+    "religion": {
+        "Eastern Orthodoxy": 0.461,
+        "Islam": 0.322,
+        "Christianity or Other Christianity": 0.139,
+        "Other": 0.073,
+        "Roman Catholicism": 0.004,
+        "No religion": 0.001
+    },
+    "residence": {
+        "Urban": 0.629,
+        "Rural": 0.371
+    },
+    "marital status": {
+        "Single (never married)": 0.3139,
+        "Married": 0.644,
+        "Cohabiting": 0.0114,
+        "Widowed": 0.0103,
+        "Divorced": 0.0204
+    },
+    "education": {
+        "No schooling": 0.0195,
+        "Primary education": 0.1214,
+        "Secondary education": 0.7342,
+        "Tertiary education": 0.1249
+    },
+    "occupation": {
+        "Managers": 0.0241,
+        "Professionals": 0.2002,
+        "Technicians and associate professionals": 0.1142,
+        "Clerical support workers": 0.0626,
+        "Service and sales workers": 0.1778,
+        "Skilled agricultural, forestry and fishery workers": 0.0559,
+        "Craft and related trades workers": 0.1121,
+        "Plant and machine operators and assemblers": 0.1312,
+        "Elementary occupations": 0.1125,
+        "Armed forces occupations": 0.0096
+    },
+    "employment status": {
+        "Employed": 0.4557,
+        "Unemployed": 0.0637,
+        "Outside the labour force": 0.4807
+    },
+    "location": {
+        "Skopje": 0.33049,
+        "Polog": 0.13696,
+        "Pelagonia": 0.11457,
+        "Southwestern": 0.09658,
+        "Northeastern": 0.08329,
+        "Eastern": 0.0818,
+        "Southeastern": 0.08079,
+        "Vardar": 0.07553
+    }
+}
