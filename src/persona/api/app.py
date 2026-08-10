@@ -17,6 +17,11 @@ try:
 except PackageNotFoundError:
     _VERSION = "0.1.1"
 
+try:
+    _VERSION = version("persona")
+except PackageNotFoundError:
+    _VERSION = "0.1.1"
+
 
 def _location_names(data: dict) -> list[str]:
     return sorted({v["name"] for v in data.values()})

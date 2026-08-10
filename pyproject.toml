@@ -7,7 +7,7 @@ name = "persona"
 version = "0.1.1"
 description = "Generate realistic character profiles from real-world demographic data"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.15"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Tom Draper", email = "tomjdraper1@gmail.com" }]
@@ -29,13 +29,17 @@ dependencies = [
     "colorama>=0.4.6",
     "numpy>=2.0",
     "fastapi>=0.139.0",
-    "uvicorn>=0.51.0",
 ]
 
 [project.urls]
 Homepage = "https://github.com/tom-draper/persona"
 Repository = "https://github.com/tom-draper/persona"
 Issues = "https://github.com/tom-draper/persona/issues"
+
+[project.optional-dependencies]
+api = [
+    "uvicorn>=0.51.0",
+]
 
 [project.scripts]
 persona = "persona.cli:run"

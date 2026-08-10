@@ -188,10 +188,10 @@ Limit to specific features using feature flags:
 persona <location> --age --sex --language
 ```
 
-Generate multiple personas at once with `-n`:
+Generate multiple personas at once with `--count`:
 
 ```bash
-persona <location> -n <count>
+persona <location> --count <count>
 ```
 
 Target a nested location by giving the path down the tree. This disambiguates
