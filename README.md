@@ -146,6 +146,22 @@ $ curl https://persona-api.vercel.app/v1/england/features/
 }
 ```
 
+## Python Library
+
+Install the package with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv add git+https://github.com/tom-draper/persona.git
+```
+
+Generate personas directly from Python:
+
+```python
+from persona import generate
+
+samples = generate("england", count=2, seed=42)
+```
+
 ## Command-line Tool
 
 ### Installation
