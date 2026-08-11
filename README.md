@@ -151,7 +151,7 @@ $ curl https://persona-api.vercel.app/v1/england/features/
 Install the package with [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv add git+https://github.com/tom-draper/persona.git
+uv add persona_generate
 ```
 
 Generate personas directly from Python:
@@ -182,7 +182,7 @@ persona <location>
 With pip:
 
 ```bash
-pip install git+https://github.com/tom-draper/persona.git
+pip install persona_generate
 
 # or locally...
 git clone https://github.com/tom-draper/persona.git

@@ -3,7 +3,7 @@ requires = ["setuptools>=77.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "persona"
+name = "persona_generate"
 version = "0.1.2"
 description = "Generate realistic character profiles from real-world demographic data"
 readme = "README.md"
@@ -51,7 +51,7 @@ where = ["src"]
 persona = ["data/**/*"]
 
 [dependency-groups]
-dev = ["persona[api]", "pytest>=9.1", "ruff>=0.15.0"]
+dev = ["persona_generate[api]", "pytest>=9.1", "ruff>=0.15.0"]
 scripts = ["matplotlib>=3.6"]
 
 [tool.pytest.ini_options]

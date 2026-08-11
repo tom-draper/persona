@@ -13,7 +13,7 @@ from persona.api.handler import (
 from persona.lib.generate import gen_api_samples
 
 try:
-    _VERSION = version("persona")
+    _VERSION = version("persona_generate")
 except PackageNotFoundError:
     _VERSION = "0.1.2"
 
