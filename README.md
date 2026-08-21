@@ -79,6 +79,11 @@ A partial path fixes the outer levels and fills in the rest at random — e.g.
 `/v1/united_kingdom/england/` always picks England, then randomly London or the
 rest of England.
 
+For an unambiguous, machine-readable list of every location, including nested
+ones, use `/v1/location-paths/`. It returns canonical paths such as
+`united_states_of_america/georgia`; `/v1/locations/` remains a flat list of
+display names for backwards compatibility.
+
 A city kept inside its country's tree (such as `london` under `england`) is a
 partial dataset: it overrides a few features (ethnicity, language, religion,
 location) and inherits everything else from the country. Addressing it by bare

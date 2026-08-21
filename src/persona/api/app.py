@@ -22,6 +22,11 @@ def _location_names(data: dict) -> list[str]:
     return sorted({v["name"] for v in data.values()})
 
 
+def _location_paths(data: dict) -> list[str]:
+    """Return canonical, unambiguous paths for every location node."""
+    return sorted(data)
+
+
 _EXAMPLE_RESPONSE = [
     {
         "age": 34,
@@ -82,6 +87,13 @@ async def help(request: Request) -> dict[str, str | list | dict]:
 async def locations(request: Request, response: Response) -> list[str]:
     response.headers["Cache-Control"] = "public, max-age=3600"
     return _location_names(request.app.state.data)
+
+
+@app.get("/v1/location-paths/")
+async def location_paths(request: Request, response: Response) -> list[str]:
+    """List locations by canonical path, preserving duplicate names."""
+    response.headers["Cache-Control"] = "public, max-age=3600"
+    return _location_paths(request.app.state.data)
 
 
 @app.get("/v1/{location:path}/features/")

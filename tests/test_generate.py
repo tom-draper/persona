@@ -591,6 +591,16 @@ def test_get_features_global_returns_world_baseline(api_data):
     }
 
 
+def test_location_paths_preserve_duplicate_location_names(api_data):
+    from persona.api.app import _location_paths
+
+    paths = _location_paths(api_data)
+
+    assert paths == sorted(paths)
+    assert "georgia" in paths
+    assert "united_states_of_america/georgia" in paths
+
+
 # ---------------------------------------------------------------------------
 # CLI helpers
 # ---------------------------------------------------------------------------
