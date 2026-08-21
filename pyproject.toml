@@ -51,7 +51,12 @@ where = ["src"]
 persona = ["data/**/*"]
 
 [dependency-groups]
-dev = ["persona_generate[api]", "pytest>=9.1", "ruff>=0.15.0"]
+dev = [
+    "httpx2>=2.12.0",
+    "persona_generate[api]",
+    "pytest>=9.1",
+    "ruff>=0.15.0",
+]
 scripts = ["matplotlib>=3.6"]
 
 [tool.pytest.ini_options]
