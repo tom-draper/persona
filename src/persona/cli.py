@@ -19,6 +19,14 @@ def pprint(data: list[dict]):
     print(Style.RESET_ALL, end="")
 
 
+def positive_int(value: str) -> int:
+    """Argparse converter for positive integer options."""
+    count = int(value)
+    if count < 1:
+        raise argparse.ArgumentTypeError("must be at least 1")
+    return count
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Generate realistic personas from real-world demographic data.",
@@ -43,7 +51,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--count",
-        type=int,
+        type=positive_int,
         default=1,
         metavar="COUNT",
         help="Number of personas to generate (default: 1)",

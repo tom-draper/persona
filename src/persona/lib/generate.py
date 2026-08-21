@@ -20,6 +20,13 @@ def normalise_weights(weights: Iterable[float]) -> np.ndarray:
     return p / p.sum()
 
 
+def validate_count(count: int) -> int:
+    """Ensure a requested sample count is positive."""
+    if count < 1:
+        raise ValueError("Count must be at least 1")
+    return count
+
+
 def select_sublocation(composite_path: Path, rng: np.random.Generator) -> str:
     with open(composite_path) as f:
         data = json.load(f)
@@ -476,6 +483,7 @@ def gen_api_samples(
         N: int - Number of personas to generate. Defaults to 1.
         seed: int|None - Random seed for reproducible output. Defaults to None.
     """
+    validate_count(N)
     rng = np.random.default_rng(seed)
     samples = []
     segments = _segments(location)
@@ -549,6 +557,7 @@ def gen_samples(
         N: int - Number of personas to generate. Defaults to 1.
         seed: int|None - Random seed for reproducible output. Defaults to None.
     """
+    validate_count(N)
     rng = np.random.default_rng(seed)
     samples = []
     cache: dict[Path, dict] = {}

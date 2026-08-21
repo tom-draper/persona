@@ -138,6 +138,12 @@ def test_gen_samples_england_count():
     assert len(samples) == 5
 
 
+@pytest.mark.parametrize("count", [0, -1])
+def test_gen_samples_rejects_non_positive_count(count):
+    with pytest.raises(ValueError, match="at least 1"):
+        gen_samples("england", N=count)
+
+
 def test_gen_samples_enabled_features_subset():
     samples = gen_samples("england", enabled_features={"age", "sex"}, N=3)
     assert len(samples) == 3
@@ -230,6 +236,14 @@ def test_gen_api_samples_count(api_data):
 
     samples = gen_api_samples(resolve_key("england", api_data), api_data, N=5)
     assert len(samples) == 5
+
+
+@pytest.mark.parametrize("count", [0, -1])
+def test_gen_api_samples_rejects_non_positive_count(api_data, count):
+    from persona.api.handler import resolve_key
+
+    with pytest.raises(ValueError, match="at least 1"):
+        gen_api_samples(resolve_key("england", api_data), api_data, N=count)
 
 
 def test_gen_api_samples_meta_not_in_output(api_data):
@@ -556,6 +570,14 @@ def test_get_enabled_features_returns_none_when_no_flags():
 
     args = build_parser().parse_args(["england"])
     assert get_enabled_features(args) is None
+
+
+@pytest.mark.parametrize("count", ["0", "-1"])
+def test_cli_rejects_non_positive_count(count):
+    from persona.cli import build_parser
+
+    with pytest.raises(SystemExit):
+        build_parser().parse_args(["england", "--count", count])
 
 
 def test_get_enabled_features_returns_set_when_flags_set():
