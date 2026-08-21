@@ -19,4 +19,4 @@ def generate(
     return gen_samples(location, enabled_features=features, N=count, seed=seed)
 
 
-__all__ = ["generate", "gen_samples", "list_all_features", "list_locations"]
+__all__ = ["gen_samples", "generate", "list_all_features", "list_locations"]
