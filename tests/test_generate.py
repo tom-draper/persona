@@ -453,6 +453,37 @@ def test_gen_sample_marital_status_gated_below_16():
         assert "marital status" not in sample
 
 
+def test_gen_sample_adult_features_do_not_depend_on_feature_order():
+    data = {"marital status": {"Single (never married)": 1.0}, "age": {"0-10": 1.0}}
+
+    sample = gen_sample(data, None, np.random.default_rng(0))
+
+    assert set(sample) == {"age"}
+    assert 0 <= sample["age"] <= 10
+
+
+def test_gen_api_samples_adult_features_do_not_depend_on_feature_order():
+    from persona.lib.generate import preprocess_location_data
+
+    data = preprocess_location_data(
+        {
+            "test": {
+                "key": "test",
+                "name": "test",
+                "leaf": {
+                    "marital status": {"Single (never married)": 1.0},
+                    "age": {"0-10": 1.0},
+                },
+                "composite": None,
+            }
+        }
+    )
+
+    sample = gen_api_samples("test", data, N=1, seed=0)[0]
+    assert set(sample) == {"age"}
+    assert 0 <= sample["age"] <= 10
+
+
 # ---------------------------------------------------------------------------
 # get_file_path / get_composite_path
 # ---------------------------------------------------------------------------

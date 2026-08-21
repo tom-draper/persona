@@ -294,15 +294,19 @@ def gen_sample(
     rng: np.random.Generator,
 ) -> dict[str, str | int]:
     sample = {}
+    # Draw age before every adult-only field. This must not depend on the order
+    # in which a dataset happens to serialize its feature keys.
+    age_data = data.get("age")
+    if age_data is not None and (enabled_features is None or "age" in enabled_features):
+        sample["age"] = gen_age(age_data, rng)
     for feature, _data in data.items():
         feature = feature.lower()
-        if feature == "_meta" or feature in CONDITIONAL_FEATURES:
+        if feature in {"_meta", "age", *CONDITIONAL_FEATURES}:
             continue
-        if enabled_features is None or feature in enabled_features:
-            if feature == "age":
-                sample[feature] = gen_age(_data, rng)
-            elif feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
-                sample[feature] = gen_feature(_data, rng)
+        if (enabled_features is None or feature in enabled_features) and (
+            feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16
+        ):
+            sample[feature] = gen_feature(_data, rng)
     if "name" in data and (enabled_features is None or "name" in enabled_features):
         sex = sample.get("sex")
         if sex is None and "sex" in data:
@@ -510,15 +514,19 @@ def gen_api_samples(
         merged = _merge_processed(chain, data)
 
         sample: dict[str, str | int] = {}
+        age_proc = merged.get("age")
+        if age_proc is not None and (enabled_features is None or "age" in enabled_features):
+            bucket = str(rng.choice(age_proc["keys"], p=age_proc["probs"]))
+            sample["age"] = _parse_age_bucket(bucket, rng)
+
         for feature, proc in merged.items():
             if feature in CONDITIONAL_FEATURES:
                 continue
+            if feature == "age":
+                continue
             if enabled_features is not None and feature not in enabled_features:
                 continue
-            if feature == "age":
-                bucket = str(rng.choice(proc["keys"], p=proc["probs"]))
-                sample["age"] = _parse_age_bucket(bucket, rng)
-            elif feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
+            if feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
                 sample[feature] = str(rng.choice(proc["options"], p=proc["probs"]))
 
         if "name" in merged and (enabled_features is None or "name" in enabled_features):
