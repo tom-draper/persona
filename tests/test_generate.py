@@ -12,6 +12,7 @@ from persona.lib.generate import (
     gen_age,
     gen_api_samples,
     gen_feature,
+    gen_income,
     gen_sample,
     gen_samples,
     list_locations,
@@ -116,6 +117,20 @@ def test_gen_feature_returns_native_str():
     rng = np.random.default_rng()
     feature = gen_feature({"Male": 0.49, "Female": 0.51}, rng)
     assert type(feature) is str
+
+
+def test_gen_income_draws_a_number_inside_a_finite_band():
+    income = gen_income({"USD 10,000-19,999/year": 1}, np.random.default_rng(1))
+    assert income.startswith("USD ") and income.endswith("/year")
+    assert (
+        10_000 <= int(income.removeprefix("USD ").removesuffix("/year").replace(",", "")) <= 19_999
+    )
+
+
+def test_gen_income_open_ended_band_has_a_bounded_tail():
+    income = gen_income({"USD 100,000+/year": 1}, np.random.default_rng(1))
+    amount = int(income.removeprefix("USD ").removesuffix("/year").replace(",", ""))
+    assert 100_000 <= amount <= 1_000_000
 
 
 # ---------------------------------------------------------------------------
@@ -674,6 +689,7 @@ def test_format_label_underscores_and_title():
     from persona.lib.format import format_label
 
     assert format_label("united_kingdom") == "United Kingdom"
+    assert format_label("united_states_of_america") == "United States of America"
     assert format_label("england") == "England"
 
 

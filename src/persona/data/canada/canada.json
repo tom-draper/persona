@@ -57,6 +57,12 @@
                 "year": 2025,
                 "note": "Population aged 15 and over split into employed, unemployed and outside the labour force, derived from the labour-force participation rate and the unemployment rate.",
                 "url": "https://data.worldbank.org/indicator/SL.TLF.CACT.ZS"
+            },
+            {
+                "features": ["income"],
+                "name": "Total income groups in 2020, Census Profile 2021, Statistics Canada",
+                "year": 2020,
+                "url": "https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/page.cfm?DGUIDlist=2021A000011124&GENDERlist=1&HEADERlist=10%2C9%2C8%2C7%2C11&Lang=E&STATISTIClist=1%2C4&SearchText=K7K+3M3"
             }
         ]
     },
@@ -267,5 +273,20 @@
         "Urdu": 0.005239713877661171,
         "Vietnamese": 0.004393111959464991,
         "Yiddish": 0.00046105236984860014
+    },
+    "income": {
+        "CAD 0/year": 1094320,
+        "CAD 1-9,999/year": 2434730,
+        "CAD 10,000-19,999/year": 3448185,
+        "CAD 20,000-29,999/year": 4635650,
+        "CAD 30,000-39,999/year": 3723680,
+        "CAD 40,000-49,999/year": 3290715,
+        "CAD 50,000-59,999/year": 2677465,
+        "CAD 60,000-69,999/year": 2073335,
+        "CAD 70,000-79,999/year": 1592465,
+        "CAD 80,000-89,999/year": 1239395,
+        "CAD 90,000-99,999/year": 965950,
+        "CAD 100,000-149,999/year": 2102630,
+        "CAD 150,000+/year": 1057615
     }
 }

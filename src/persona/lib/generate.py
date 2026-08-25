@@ -1,5 +1,6 @@
 import functools
 import json
+import re
 from collections.abc import Iterable
 from pathlib import Path
 
@@ -245,6 +246,29 @@ def gen_feature(data: dict, rng: np.random.Generator) -> str:
     return str(rng.choice(options, p=p))
 
 
+_INCOME_BAND = re.compile(r"^([A-Z]{3}) ([\d,]+)(?:-([\d,]+))?(\+)?/year$")
+
+
+def gen_income(income_data: dict, rng: np.random.Generator) -> str:
+    """Draw a synthetic annual amount from a published local-currency band."""
+    band = gen_feature(income_data, rng)
+    match = _INCOME_BAND.fullmatch(band)
+    if match is None:
+        raise ValueError(f"Invalid income band: {band!r}")
+    currency, lower, upper, open_ended = match.groups()
+    low = int(lower.replace(",", ""))
+    if upper:
+        amount = int(rng.integers(low, int(upper.replace(",", "")) + 1))
+    elif open_ended:
+        # Published top brackets do not give an upper limit. Use a bounded
+        # Pareto tail so amounts remain synthetic but do not cluster at its
+        # lower threshold or grow without limit.
+        amount = min(int(low * (1 + rng.pareto(2))), low * 10)
+    else:
+        amount = low
+    return f"{currency} {amount:,}/year"
+
+
 # Features drawn conditionally on already-generated fields rather than as an
 # independent marginal. "name" is picked from a {sex: {birth-decade: {name:
 # weight}}} table using the sample's own sex and age, so it lands era- and
@@ -306,7 +330,9 @@ def gen_sample(
         if (enabled_features is None or feature in enabled_features) and (
             feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16
         ):
-            sample[feature] = gen_feature(_data, rng)
+            sample[feature] = (
+                gen_income(_data, rng) if feature == "income" else gen_feature(_data, rng)
+            )
     if "name" in data and (enabled_features is None or "name" in enabled_features):
         sex = sample.get("sex")
         if sex is None and "sex" in data:
@@ -527,7 +553,11 @@ def gen_api_samples(
             if enabled_features is not None and feature not in enabled_features:
                 continue
             if feature not in ADULT_ONLY_FEATURES or sample.get("age", 16) >= 16:
-                sample[feature] = str(rng.choice(proc["options"], p=proc["probs"]))
+                if feature == "income":
+                    income_data = dict(zip(proc["options"], proc["probs"], strict=True))
+                    sample[feature] = gen_income(income_data, rng)
+                else:
+                    sample[feature] = str(rng.choice(proc["options"], p=proc["probs"]))
 
         if "name" in merged and (enabled_features is None or "name" in enabled_features):
             sex = sample.get("sex")

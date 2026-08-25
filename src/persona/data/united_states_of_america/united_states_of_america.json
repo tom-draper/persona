@@ -1,0 +1,17 @@
+{
+  "_meta": {"sources": [{"features": ["income"], "name": "PINC-01: total money income of people aged 15 and over, Current Population Survey Annual Social and Economic Supplement", "year": 2024, "url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/cps-pinc/pinc-01.2024.html"}]},
+  "income": {
+    "USD 0/year": 31800,
+    "USD 1-9,999/year": 30718,
+    "USD 10,000-19,999/year": 29620,
+    "USD 20,000-29,999/year": 28340,
+    "USD 30,000-39,999/year": 26415,
+    "USD 40,000-49,999/year": 22169,
+    "USD 50,000-59,999/year": 19461,
+    "USD 60,000-69,999/year": 16264,
+    "USD 70,000-79,999/year": 13363,
+    "USD 80,000-89,999/year": 10074,
+    "USD 90,000-99,999/year": 7617,
+    "USD 100,000+/year": 46420
+  }
+}

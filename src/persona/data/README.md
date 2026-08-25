@@ -32,6 +32,12 @@ countries:
 `name`, `occupation`, `employment status`, `ethnicity`, `language`,
 `housing tenure`, `country of birth`, `sexuality`.
 
+`income` is a synthetic annual amount in the local currency. The generator
+first selects an official source band using its published respondent counts,
+then draws uniformly inside a finite band. For an open-ended top band it uses a
+bounded Pareto draw, so the result is numeric without pretending that the
+source supplied an upper limit.
+
 `name` is the one feature not drawn as an independent marginal. A given name is
 picked *conditionally* on the persona's own `sex` and `age`: the data is a
 `{sex: {birth-decade: {name: weight}}}` table, and generation reads the drawn

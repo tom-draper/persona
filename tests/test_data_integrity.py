@@ -27,6 +27,7 @@ CANONICAL_FEATURES = {
     "employment status",
     "ethnicity",
     "housing tenure",
+    "income",
     "language",
     "location",
     "marital status",
@@ -165,6 +166,10 @@ def test_distributions_have_plausible_mass(path, loaded):
                     assert MIN_MASS <= mass <= MAX_MASS, (
                         f"{name(path)} :: name[{sex}][{cohort}] sums to {mass:.4f}"
                     )
+            continue
+        # Income sources publish respondent counts by band. Keep those raw
+        # counts rather than rounded shares; generation normalises weights.
+        if feature == "income":
             continue
         mass = sum(leaves(values))
         assert MIN_MASS <= mass <= MAX_MASS, f"{name(path)} :: {feature} sums to {mass:.4f}"

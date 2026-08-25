@@ -65,4 +65,4 @@ def clean_location(location: str) -> str:
 def format_label(label: str) -> str:
     """Turn a stored location/label token into a display string:
     ``united_kingdom`` -> ``United Kingdom``."""
-    return label.replace("_", " ").title()
+    return label.replace("_", " ").title().replace(" Of ", " of ")
