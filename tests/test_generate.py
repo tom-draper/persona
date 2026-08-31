@@ -185,6 +185,11 @@ def test_gen_samples_chile_includes_location():
     }
 
 
+def test_gen_samples_peru_includes_location():
+    sample = gen_samples("peru", N=1, seed=42)[0]
+    assert sample["location"] == "Lambayeque"
+
+
 def test_gen_samples_uk_composite():
     samples = gen_samples("united_kingdom", N=3)
     assert len(samples) == 3

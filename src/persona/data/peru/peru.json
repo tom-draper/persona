@@ -22,6 +22,15 @@
             },
             {
                 "features": [
+                    "location"
+                ],
+                "name": "Situación de la Población Peruana, 2024, Instituto Nacional de Estadística e Informática (INEI)",
+                "year": 2024,
+                "note": "Population projections by department; regional counts in the report are rounded to the nearest 100 people.",
+                "url": "https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1965/libro.pdf"
+            },
+            {
+                "features": [
                     "residence"
                 ],
                 "name": "Urban population (% of total population), World Bank",
@@ -86,6 +95,33 @@
         "75-79": 0.0166,
         "80-84": 0.0107,
         "85+": 0.0089
+    },
+    "location": {
+        "Amazonas": 0.012635729059,
+        "Áncash": 0.03531893391,
+        "Apurímac": 0.012532904014,
+        "Arequipa": 0.047170254771,
+        "Ayacucho": 0.01967483783,
+        "Cajamarca": 0.042531376328,
+        "Callao": 0.035536335433,
+        "Cusco": 0.041071260694,
+        "Huancavelica": 0.009844763561,
+        "Huánuco": 0.021931113096,
+        "Ica": 0.031208869982,
+        "Junín": 0.040560073329,
+        "La Libertad": 0.062579322177,
+        "Lambayeque": 0.040001880229,
+        "Lima": 0.332124894237,
+        "Loreto": 0.031070790636,
+        "Madre de Dios": 0.005790518943,
+        "Moquegua": 0.00590803328,
+        "Pasco": 0.007797076243,
+        "Piura": 0.063163956003,
+        "Puno": 0.035512832566,
+        "San Martín": 0.027777451349,
+        "Tacna": 0.011639795055,
+        "Tumbes": 0.007835268403,
+        "Ucayali": 0.018781728871
     },
     "sex": {
         "Male": 0.497,
