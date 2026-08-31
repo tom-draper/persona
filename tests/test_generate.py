@@ -163,6 +163,28 @@ def test_gen_samples_australia():
     assert len(samples) == 1
 
 
+def test_gen_samples_chile_includes_location():
+    sample = gen_samples("chile", N=1, seed=42)[0]
+    assert sample["location"] in {
+        "Arica y Parinacota",
+        "Tarapacá",
+        "Antofagasta",
+        "Atacama",
+        "Coquimbo",
+        "Valparaíso",
+        "Metropolitana de Santiago",
+        "Libertador General Bernardo O'Higgins",
+        "Maule",
+        "Ñuble",
+        "Biobío",
+        "La Araucanía",
+        "Los Ríos",
+        "Los Lagos",
+        "Aysén del General Carlos Ibáñez del Campo",
+        "Magallanes y de la Antártica Chilena",
+    }
+
+
 def test_gen_samples_uk_composite():
     samples = gen_samples("united_kingdom", N=3)
     assert len(samples) == 3

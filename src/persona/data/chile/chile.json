@@ -13,7 +13,8 @@
             },
             {
                 "features": [
-                    "religion"
+                    "religion",
+                    "location"
                 ],
                 "name": "Censo 2024, Instituto Nacional de Estadísticas (INE)",
                 "year": 2024,
@@ -86,6 +87,24 @@
         "75-79": 0.0243,
         "80-84": 0.0154,
         "85+": 0.0164
+    },
+    "location": {
+        "Arica y Parinacota": 0.013233943882,
+        "Tarapacá": 0.020010679404,
+        "Antofagasta": 0.034383178921,
+        "Atacama": 0.016189015495,
+        "Coquimbo": 0.045067344746,
+        "Valparaíso": 0.102597872171,
+        "Metropolitana de Santiago": 0.400463636348,
+        "Libertador General Bernardo O'Higgins": 0.053420179788,
+        "Maule": 0.060767410632,
+        "Ñuble": 0.027720618219,
+        "Biobío": 0.087284702003,
+        "La Araucanía": 0.05467529114,
+        "Los Ríos": 0.021548738687,
+        "Los Lagos": 0.04817441497,
+        "Aysén del General Carlos Ibáñez del Campo": 0.005451441828,
+        "Magallanes y de la Antártica Chilena": 0.009011531765
     },
     "sex": {
         "Male": 0.497,
