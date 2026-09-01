@@ -200,6 +200,11 @@ def test_gen_samples_israel_includes_location():
     assert "location" in sample
 
 
+def test_gen_samples_kazakhstan_includes_ethnicity():
+    sample = gen_samples("kazakhstan", N=1, seed=42)[0]
+    assert "ethnicity" in sample
+
+
 def test_gen_samples_uk_composite():
     samples = gen_samples("united_kingdom", N=3)
     assert len(samples) == 3

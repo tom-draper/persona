@@ -22,6 +22,15 @@
             },
             {
                 "features": [
+                    "ethnicity"
+                ],
+                "name": "Population by individual ethnic groups, Bureau of National Statistics (Kazakhstan)",
+                "year": 2024,
+                "note": "Population at the beginning of 2024. The 20 largest groups are listed; all remaining reported groups are combined as Other ethnicities.",
+                "url": "https://stat.gov.kz/en/industries/social-%C3%82%C2%ADstatistics/demography/publications/157662/"
+            },
+            {
+                "features": [
                     "location"
                 ],
                 "name": "2021 National Census, Bureau of National Statistics (Kazakhstan)",
@@ -98,6 +107,29 @@
     "sex": {
         "Male": 0.487,
         "Female": 0.513
+    },
+    "ethnicity": {
+        "Kazakhs": 0.709813374789,
+        "Russians": 0.148915220555,
+        "Uzbeks": 0.032973455616,
+        "Ukrainians": 0.018764498592,
+        "Uyghurs": 0.015054176827,
+        "Germans": 0.011198700679,
+        "Tatars": 0.010942084898,
+        "Azerbaijanis": 0.007629689802,
+        "Koreans": 0.006003341745,
+        "Turks": 0.004493496554,
+        "Dungans": 0.004190858648,
+        "Belarusians": 0.003746660276,
+        "Tajiks": 0.002790927472,
+        "Kurds": 0.002509703331,
+        "Kyrgyz": 0.001927039257,
+        "Poles": 0.001732368659,
+        "Chechens": 0.00172597947,
+        "Karakalpaks": 0.001289068767,
+        "Bashkirs": 0.001002154255,
+        "Ingush": 0.000893787622,
+        "Other ethnicities": 0.012403412186
     },
     "religion": {
         "Islam": 0.693,
