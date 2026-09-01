@@ -22,6 +22,15 @@
             },
             {
                 "features": [
+                    "location"
+                ],
+                "name": "Resident population by region, Statistics Agency under the President of the Republic of Uzbekistan",
+                "year": 2024,
+                "note": "Permanent resident population as of 1 April 2024.",
+                "url": "https://stat.uz/en/press-center/news-of-committee/52880-hududlar-kesi-mida-doi-miy-aholi-soni-4"
+            },
+            {
+                "features": [
                     "residence"
                 ],
                 "name": "Urban population (% of total population), World Bank",
@@ -77,6 +86,22 @@
         "75-79": 0.0078,
         "80-84": 0.0051,
         "85+": 0.0036
+    },
+    "location": {
+        "Karakalpakstan": 0.054345797047,
+        "Andijan": 0.092226613966,
+        "Bukhara": 0.055476648459,
+        "Jizzakh": 0.040973073292,
+        "Kashkadarya": 0.096771662703,
+        "Navoi": 0.029215465069,
+        "Namangan": 0.083323188135,
+        "Samarkand": 0.114364788858,
+        "Surkhandarya": 0.078231651395,
+        "Syrdarya": 0.024832739501,
+        "Tashkent Region": 0.08294713946,
+        "Fergana": 0.110366228124,
+        "Khorezm": 0.054183473878,
+        "Tashkent": 0.082741530112
     },
     "sex": {
         "Male": 0.504,
