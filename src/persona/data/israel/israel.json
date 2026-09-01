@@ -22,6 +22,15 @@
             },
             {
                 "features": [
+                    "location"
+                ],
+                "name": "Statistical Abstract of Israel, Central Bureau of Statistics",
+                "year": 2024,
+                "note": "Total population by district and area at 31 December 2024, using the source's geographic coverage and terminology.",
+                "url": "https://www.cbs.gov.il/he/publications/DocLib/2025/2.ShnatonPopulation/st02_12x.pdf"
+            },
+            {
+                "features": [
                     "residence"
                 ],
                 "name": "Urban population (% of total population), World Bank",
@@ -86,6 +95,15 @@
         "75-79": 0.0244,
         "80-84": 0.0139,
         "85+": 0.0155
+    },
+    "location": {
+        "Jerusalem District": 0.13229479206,
+        "Northern District": 0.157400600076,
+        "Haifa District": 0.115266159318,
+        "Central District": 0.239632801478,
+        "Tel Aviv District": 0.152909968804,
+        "Southern District": 0.151270689689,
+        "Judea and Samaria Area": 0.051224988575
     },
     "sex": {
         "Male": 0.498,
