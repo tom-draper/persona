@@ -443,6 +443,11 @@ def _segments(location: str) -> list[str]:
     return [clean_location(p) for p in location.replace("/", " ").split()]
 
 
+def _has_inheritable_features(features: dict) -> bool:
+    """Return whether a dataset provides a baseline beyond metadata or income."""
+    return any(feature not in {"_meta", "income"} for feature in features)
+
+
 def _expand_to_path(segments: list[str]) -> list[str]:
     """Expand a bare single name across any *leaf* ancestors it sits under, so a
     carved-out sublocation inherits those ancestors as overlay baseline. A city
@@ -451,11 +456,9 @@ def _expand_to_path(segments: list[str]) -> list[str]:
     while still overriding its own ethnicity/language/location — the same result
     as drawing London through the England composite.
 
-    Only ancestors that are themselves leaf datasets are prepended, so a bare
-    parent whose own parent is a pure composite is left untouched: ``england``
-    (under the composite-only ``united_kingdom``) and a US state (under the
-    composite-only ``united_states_of_america``) stay single-segment, as does a
-    top-level country. Multi-segment queries are returned unchanged."""
+    Only ancestors with features beyond metadata or income are prepended. This
+    avoids treating an income-only parent dataset as a demographic baseline.
+    Multi-segment queries are returned unchanged."""
     if len(segments) != 1:
         return segments
     node = get_file_path(segments[0])
@@ -463,7 +466,14 @@ def _expand_to_path(segments: list[str]) -> list[str]:
         return segments  # a composite or unknown name — nothing to inherit
     prefix: list[str] = []
     ancestor = node.parent.parent  # directory containing the target's directory
-    while ancestor != DATA_DIR and (ancestor / f"{ancestor.name}.json").exists():
+    while ancestor != DATA_DIR:
+        ancestor_file = ancestor / f"{ancestor.name}.json"
+        if not ancestor_file.exists():
+            break
+        with open(ancestor_file) as f:
+            ancestor_data = json.load(f)
+        if not _has_inheritable_features(ancestor_data):
+            break
         prefix.insert(0, clean_location(ancestor.name))
         ancestor = ancestor.parent
     return [*prefix, segments[0]] if prefix else segments
@@ -520,8 +530,8 @@ def gen_api_samples(
     # Expand a bare name across its leaf ancestors so a carved-out sublocation
     # (a city under a country) inherits them as overlay baseline — the
     # preloaded-data equivalent of _expand_to_path. Only consecutive leaf
-    # ancestors are prepended, so a bare parent under a pure composite (england,
-    # a US state) and multi-segment queries are left untouched.
+    # ancestors with features beyond metadata or income are prepended; an
+    # income-only parent is not treated as a demographic baseline.
     if len(segments) == 1:
         from persona.api.handler import resolve_key
 
@@ -529,7 +539,10 @@ def gen_api_samples(
         if key and "/" in key:
             parts = key.split("/")
             start = len(parts) - 1
-            while start > 0 and data.get("/".join(parts[:start]), {}).get("leaf"):
+            while start > 0:
+                leaf = data.get("/".join(parts[:start]), {}).get("leaf") or {}
+                if not _has_inheritable_features(leaf):
+                    break
                 start -= 1
             if start < len(parts) - 1:
                 segments = parts[start:]
